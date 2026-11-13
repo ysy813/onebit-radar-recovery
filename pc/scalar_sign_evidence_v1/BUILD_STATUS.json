@@ -1,0 +1,7 @@
+{
+  "status": "PC_RESEARCH_COMPLETE",
+  "quality_pass": false,
+  "deployment_ready": false,
+  "trained_new_weights": false,
+  "board_access": false
+}

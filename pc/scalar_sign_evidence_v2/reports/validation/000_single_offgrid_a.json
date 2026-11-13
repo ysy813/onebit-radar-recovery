@@ -1,0 +1,1826 @@
+{
+  "metadata": {
+    "id": "000_single_offgrid_a",
+    "split": "validation",
+    "seed": 2026117100,
+    "template": "single_offgrid_a",
+    "target_count": 1,
+    "grid": "offgrid",
+    "family": "single",
+    "targets": [
+      {
+        "range_bin": 357.0412008143436,
+        "doppler_bin": 199.7060146415273,
+        "amplitude": 1.0,
+        "initial_phase_rad": 0.1846488188156017,
+        "azimuth_deg": 35.231916060314745,
+        "velocity_direction_deg": 24.51238829577568,
+        "signed_speed_m_s": 7.829677564933894,
+        "radial_velocity_m_s": 7.693045462423861,
+        "range_m": 14.699467968668106
+      }
+    ],
+    "actual_chirps": 512,
+    "shape": [
+      1024,
+      512
+    ],
+    "noise": false,
+    "clutter": false,
+    "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\000_single_offgrid_a.npz",
+    "sha256": "1b249e9ece5562cb37832c1255ebbd12cfa7a9365bf31f52a794bb9deed31036"
+  },
+  "metrics": {
+    "bypass": {
+      "nmse_ratio": 1.0,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 43,
+      "false30": 14,
+      "excess_energy": 0.31470346450805664,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.3687290847301483
+    },
+    "old40": {
+      "nmse_ratio": 0.16257590846305378,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 9,
+      "false30": 4,
+      "excess_energy": 0.03789179399609566,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 10.530804048965363
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 6.79793247593599
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 4.089017667844484
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 17.728691892558206
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 10.753810314912029
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 11.248976482987166
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 17.839385354130172
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": 3.65223323095043
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 16.084631572731144
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 17.58172803771624
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 15.809367336329885
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 13.623752686085007
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 17.261580611819763
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 17.589389186195596
+        }
+      ],
+      "strongest_false_amplitude": 0.1129772961139679
+    },
+    "v1_model": {
+      "nmse_ratio": 1.3632530215181067,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 1,
+      "false30": 1,
+      "excess_energy": 0.42900553345680237,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": -4.569527423301569
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 93.23919619035287
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 88.68908764062806
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 85.06721329906382
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 84.53648927231092
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 87.42055467087167
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 86.57325378969924
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": 71.80231525698545
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 67.65513484687537
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 67.0319185257887
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 69.2415565632491
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 79.96510754003589
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 76.24133913875565
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 75.8545769417288
+        }
+      ],
+      "strongest_false_amplitude": 0.6234742403030396
+    },
+    "v1_gate": {
+      "nmse_ratio": 0.34065262196349577,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 22,
+      "false30": 13,
+      "excess_energy": 0.09393571317195892,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 10.530804048965363
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 6.79793247593599
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 4.089017667844484
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 16.084631572731144
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.1129772961139679
+    },
+    "fft24_model": {
+      "nmse_ratio": 1.3629293398579778,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 1,
+      "false30": 1,
+      "excess_energy": 0.42890167236328125,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": -4.568740751050776
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 93.2547616093745
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 88.67665445672343
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 85.05940697088681
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 84.54496142768085
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 87.41613465120325
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 86.57762797097483
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": 71.82954908576876
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 67.63610553787606
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 67.0132698704058
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 69.26816852669164
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 79.99572091190748
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 76.21988836625532
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 75.83083134657672
+        }
+      ],
+      "strongest_false_amplitude": 0.6234864592552185
+    },
+    "fft24_protect": {
+      "nmse_ratio": 0.34065262196349577,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 22,
+      "false30": 13,
+      "excess_energy": 0.09393571317195892,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 10.530804048965363
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 6.79793247593599
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 4.089017667844484
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 16.084631572731144
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.1129772961139679
+    },
+    "fft24_blend0.25": {
+      "nmse_ratio": 0.44840109025225766,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 22,
+      "false30": 13,
+      "excess_energy": 0.13354086875915527,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 3.817110788206067
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 9.296651178806389
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 6.587723880343653
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 18.578430018192766
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.24060457944869995
+    },
+    "fft24_blend0.5": {
+      "nmse_ratio": 0.6866616166772004,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 22,
+      "false30": 13,
+      "excess_energy": 0.21257947385311127,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 0.05851240663763171
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 12.818365243255606
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 10.10941175996851
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 22.090299794375557
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.3682318925857544
+    },
+    "fft24_blend0.75": {
+      "nmse_ratio": 1.0554351719045076,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 22,
+      "false30": 11,
+      "excess_energy": 0.33105143904685974,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": -2.5591293993419297
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 18.838631689357975
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 16.129599662138
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 28.081008879806184
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.49585914611816406
+    },
+    "residual24_model": {
+      "nmse_ratio": 1.363835515927543,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 1,
+      "false30": 1,
+      "excess_energy": 0.4291946589946747,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": -4.570399725275491
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 93.17797605674946
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 88.73189065053417
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 85.09267666481387
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 84.50139108872608
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 87.43335519934804
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 86.55333327580553
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": 71.69832149237895
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 67.72275220591646
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 67.09810732821757
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 69.13984501094824
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 79.84865496833675
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 76.31807747080632
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 75.93989180824931
+        }
+      ],
+      "strongest_false_amplitude": 0.623266875743866
+    },
+    "residual24_protect": {
+      "nmse_ratio": 0.32171587170842364,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 14,
+      "false30": 13,
+      "excess_energy": 0.08797621726989746,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 10.530804048965363
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 6.79793247593599
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 4.089017667844484
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 16.084631572731144
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.1129772961139679
+    },
+    "residual24_blend0.25": {
+      "nmse_ratio": 0.42934842824996555,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 14,
+      "false30": 13,
+      "excess_energy": 0.12754730880260468,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 3.8166085203640927
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 9.296651178806389
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 6.587724234219077
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 18.578479468504597
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.24054968357086182
+    },
+    "residual24_blend0.5": {
+      "nmse_ratio": 0.6676599501617366,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 14,
+      "false30": 13,
+      "excess_energy": 0.20660389959812164,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": 0.05742778426991519
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 12.818364034994975
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 10.109412954260426
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 22.09044831771092
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.3681221008300781
+    },
+    "residual24_blend0.75": {
+      "nmse_ratio": 1.0366505558176617,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 14,
+      "false30": 11,
+      "excess_energy": 0.325145959854126,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": -2.5605631665556636
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 18.838627259410806
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 16.129603642734672
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": -0.8865744646997424
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 28.08145445022344
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 0.0
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 0.0
+        }
+      ],
+      "strongest_false_amplitude": 0.49569445848464966
+    },
+    "serial": {
+      "nmse_ratio": 0.9956919467283246,
+      "targets": [
+        {
+          "range_bin": 357.0412008143436,
+          "doppler_bin": 199.7060146415273,
+          "peak_index": 182984,
+          "reference": 1.0,
+          "bypass": 1.0,
+          "prediction": 1.0,
+          "absolute_error": 0.0,
+          "bypass_error": 0.0,
+          "extra_error": 0.0,
+          "new_half_loss": false,
+          "retention": 1.0,
+          "bypass_retention": 1.0,
+          "upper_gain_cannot_reach_half": false
+        }
+      ],
+      "false40": 3,
+      "false30": 1,
+      "excess_energy": 0.30077770352363586,
+      "harmonics": [
+        {
+          "target": 0,
+          "order": -3,
+          "attenuation_db": -3.1159507097051895
+        },
+        {
+          "target": 0,
+          "order": 5,
+          "attenuation_db": 109.38338992965518
+        },
+        {
+          "target": 0,
+          "order": -7,
+          "attenuation_db": 98.18622916903065
+        },
+        {
+          "target": 0,
+          "order": 9,
+          "attenuation_db": 99.19164843389046
+        },
+        {
+          "target": 0,
+          "order": -11,
+          "attenuation_db": 94.4380437718425
+        },
+        {
+          "target": 0,
+          "order": 13,
+          "attenuation_db": 97.05459828610329
+        },
+        {
+          "target": 0,
+          "order": -15,
+          "attenuation_db": 104.6151330156444
+        },
+        {
+          "target": 0,
+          "order": 17,
+          "attenuation_db": 83.17613603105139
+        },
+        {
+          "target": 0,
+          "order": -19,
+          "attenuation_db": 77.54860782581007
+        },
+        {
+          "target": 0,
+          "order": 21,
+          "attenuation_db": 76.71935055235929
+        },
+        {
+          "target": 0,
+          "order": -23,
+          "attenuation_db": 80.86052513659355
+        },
+        {
+          "target": 0,
+          "order": 25,
+          "attenuation_db": 91.72980100595949
+        },
+        {
+          "target": 0,
+          "order": -27,
+          "attenuation_db": 87.56735491661247
+        },
+        {
+          "target": 0,
+          "order": 29,
+          "attenuation_db": 87.3464400185824
+        }
+      ],
+      "strongest_false_amplitude": 0.5437988042831421
+    }
+  },
+  "solver_reports": {
+    "v1": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\reports\\validation\\000_single_offgrid_a_v1.json",
+    "fft24": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\reports\\validation\\000_single_offgrid_a_fft24.json",
+    "residual24": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\reports\\validation\\000_single_offgrid_a_residual24.json"
+  },
+  "recall": {
+    "v1": [
+      {
+        "range_bin": 357.0412008143436,
+        "doppler_bin": 199.7060146415273,
+        "present": true
+      }
+    ],
+    "fft24": [
+      {
+        "range_bin": 357.0412008143436,
+        "doppler_bin": 199.7060146415273,
+        "present": true
+      }
+    ],
+    "residual24": [
+      {
+        "range_bin": 357.0412008143436,
+        "doppler_bin": 199.7060146415273,
+        "present": true
+      }
+    ]
+  },
+  "support": {
+    "v1": {
+      "decisions": [
+        {
+          "index": 182984,
+          "state": "支持"
+        },
+        {
+          "index": 500649,
+          "state": "不确定"
+        },
+        {
+          "index": 390119,
+          "state": "不确定"
+        },
+        {
+          "index": 293514,
+          "state": "不确定"
+        },
+        {
+          "index": 72453,
+          "state": "支持"
+        },
+        {
+          "index": 86891,
+          "state": "支持"
+        },
+        {
+          "index": 486723,
+          "state": "支持"
+        },
+        {
+          "index": 279588,
+          "state": "支持"
+        },
+        {
+          "index": 169058,
+          "state": "支持"
+        },
+        {
+          "index": 514063,
+          "state": "支持"
+        },
+        {
+          "index": 403532,
+          "state": "支持"
+        },
+        {
+          "index": 307440,
+          "state": "支持"
+        },
+        {
+          "index": 196910,
+          "state": "不确定"
+        },
+        {
+          "index": 376193,
+          "state": "支持"
+        },
+        {
+          "index": 100817,
+          "state": "支持"
+        },
+        {
+          "index": 58527,
+          "state": "支持"
+        },
+        {
+          "index": 265662,
+          "state": "支持"
+        },
+        {
+          "index": 155644,
+          "state": "支持"
+        },
+        {
+          "index": 321366,
+          "state": "支持"
+        },
+        {
+          "index": 362267,
+          "state": "支持"
+        },
+        {
+          "index": 114231,
+          "state": "支持"
+        },
+        {
+          "index": 472797,
+          "state": "支持"
+        },
+        {
+          "index": 417970,
+          "state": "支持"
+        },
+        {
+          "index": 3701,
+          "state": "支持"
+        }
+      ],
+      "supported": 20,
+      "redundant": 0,
+      "uncertain": 4,
+      "protected_pixels": 500,
+      "suppressed_pixels": 0
+    },
+    "fft24": {
+      "states": [
+        {
+          "index": 182984,
+          "supported": true
+        },
+        {
+          "index": 500649,
+          "supported": false
+        },
+        {
+          "index": 390119,
+          "supported": false
+        },
+        {
+          "index": 293514,
+          "supported": false
+        },
+        {
+          "index": 72453,
+          "supported": true
+        },
+        {
+          "index": 86891,
+          "supported": true
+        },
+        {
+          "index": 486723,
+          "supported": true
+        },
+        {
+          "index": 279588,
+          "supported": true
+        },
+        {
+          "index": 169058,
+          "supported": true
+        },
+        {
+          "index": 514063,
+          "supported": true
+        },
+        {
+          "index": 403532,
+          "supported": true
+        },
+        {
+          "index": 307440,
+          "supported": true
+        },
+        {
+          "index": 196910,
+          "supported": false
+        },
+        {
+          "index": 376193,
+          "supported": true
+        },
+        {
+          "index": 100817,
+          "supported": true
+        },
+        {
+          "index": 58527,
+          "supported": true
+        },
+        {
+          "index": 265662,
+          "supported": true
+        },
+        {
+          "index": 155644,
+          "supported": true
+        },
+        {
+          "index": 321366,
+          "supported": true
+        },
+        {
+          "index": 362267,
+          "supported": true
+        },
+        {
+          "index": 114231,
+          "supported": true
+        },
+        {
+          "index": 472797,
+          "supported": true
+        },
+        {
+          "index": 417970,
+          "supported": true
+        },
+        {
+          "index": 3701,
+          "supported": true
+        }
+      ],
+      "protected_pixels": 500
+    },
+    "residual24": {
+      "states": [
+        {
+          "index": 182984,
+          "supported": true
+        },
+        {
+          "index": 500649,
+          "supported": false
+        },
+        {
+          "index": 390119,
+          "supported": false
+        },
+        {
+          "index": 293514,
+          "supported": false
+        },
+        {
+          "index": 72453,
+          "supported": true
+        },
+        {
+          "index": 86891,
+          "supported": true
+        },
+        {
+          "index": 486723,
+          "supported": true
+        },
+        {
+          "index": 279588,
+          "supported": true
+        },
+        {
+          "index": 169058,
+          "supported": true
+        },
+        {
+          "index": 514063,
+          "supported": true
+        },
+        {
+          "index": 403532,
+          "supported": true
+        },
+        {
+          "index": 307440,
+          "supported": true
+        },
+        {
+          "index": 196910,
+          "supported": false
+        },
+        {
+          "index": 376193,
+          "supported": true
+        },
+        {
+          "index": 100817,
+          "supported": true
+        },
+        {
+          "index": 58527,
+          "supported": true
+        },
+        {
+          "index": 13422,
+          "supported": false
+        },
+        {
+          "index": 13550,
+          "supported": false
+        },
+        {
+          "index": 13678,
+          "supported": false
+        },
+        {
+          "index": 13806,
+          "supported": false
+        },
+        {
+          "index": 18534,
+          "supported": false
+        },
+        {
+          "index": 18662,
+          "supported": false
+        },
+        {
+          "index": 18790,
+          "supported": false
+        },
+        {
+          "index": 18918,
+          "supported": false
+        }
+      ],
+      "protected_pixels": 300
+    }
+  },
+  "feature_shift": {
+    "mean_abs_q12_change": 426.62322747707367,
+    "fraction_changed": 0.8709083795547485,
+    "scale": "原单比特功率峰映射，非绝对功率标定"
+  },
+  "arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\000_single_offgrid_a.npz",
+  "arrays_sha256": "2398411a789b483acf85dfb17562d481b4b81c87f6174a65c2d8bcfbf5e15247",
+  "sources": {
+    "solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563",
+    "solver_v1_snapshot.py": "64b7e58b9f658926fb42b38f1f4b695c2fd86eeac8f8923b55110f90d207e32e",
+    "experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+    "PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f"
+  },
+  "model_sha256": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712"
+}

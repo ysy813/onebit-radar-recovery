@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "inspection": "人工读取渲染后的PNG；中文标题/图例/坐标无缺字，版面未截断；四目标整数格峰保留，共用色标，显示聚合已标注",
+  "inspected": [
+    {
+      "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\test_002_n4_spread.png",
+      "sha256": "c1a622d9c76e30ab1b0c3b5fcda2768faa5f15ac2e83ed6d35dbeb8249af2bca"
+    },
+    {
+      "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\training.png",
+      "sha256": "dd4ac5cc33508248b142af301676b685715bd4bb2c72d3555b63f51cdd039d6f"
+    }
+  ],
+  "all_png_decoded": 16,
+  "scientific_images_not_browser_screenshot": true
+}

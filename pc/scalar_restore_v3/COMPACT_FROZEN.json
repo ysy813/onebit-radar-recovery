@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN_REQUIRES_FRESH_TEST",
+  "policy_sha256": "0ca8b0651d727f58f0efbc5daa61f32b0d72bc2e7dc18694a800ab7a9fb0bf80",
+  "guard_sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+  "weights_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+  "original_v2_float_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+  "no_neural_weights_changed": true,
+  "development_correction_status": "PASS",
+  "development_full_quality": "PASS"
+}

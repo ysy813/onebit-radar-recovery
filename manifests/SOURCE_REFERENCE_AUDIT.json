@@ -1,0 +1,91 @@
+{
+  "scope": "XPR File elements only; not a complete HDL/IP/build dependency proof",
+  "unresolved": [
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_3/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_4/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_5/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_6/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_7/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_8/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_9/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_10/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_11/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_14/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_15/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/synth_16/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/onebit_synth/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PSRCDIR/utils_1/imports/network_synth/design_1_wrapper.dcp",
+      "category": "omitted_checkpoint"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PPRDIR/../../../v5_SAR__radar/v5_SAR__radar/v5_interp_good2/v5_interp_good2/testfft_behav.wcfg",
+      "category": "external_or_missing"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PPRDIR/../../../v5_SAR__radar/v5_SAR__radar/v5_interp_good2/v5_interp_good2/testfft_behav1.wcfg",
+      "category": "external_or_missing"
+    },
+    {
+      "project": "hardware/radar1_scalar_compact_exp_v1/project/imaging_storage.xpr",
+      "reference": "$PPRDIR/../../../v5_SAR__radar/v5_SAR__radar/v5_interp_good2/v5_interp_good2/testfft_behav2.wcfg",
+      "category": "external_or_missing"
+    }
+  ],
+  "rebuild_executed": false
+}

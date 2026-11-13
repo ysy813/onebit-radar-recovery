@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Architecture figure source, vector structure and visual inspection only",
+  "png_size": [
+    3280,
+    1824
+  ],
+  "svg_valid": true,
+  "svg_is_vector_without_raster_images": true,
+  "labels_and_arrows_viewed": true,
+  "revised_heading_clear_of_power_path": true,
+  "reference_absent_from_inference": true,
+  "figure_report_sha256": "ac199e75af4d5033750cf49fdd91d99cfffd31e732b20da1c7988fa0ea28a63a",
+  "output_files": {
+    "network_understanding_v1\\figures\\08_network_architecture.png": "499948a4d159bab9daae18df8c321cae7ac045bf0474161ee7b9c7c6c6ce420d",
+    "network_understanding_v1\\figures\\08_network_architecture.svg": "aaba420150c1672c1caa896054e0e453af45bd64ceb4c9ceb01bc12a45982ed6"
+  },
+  "model_modified": false,
+  "new_quality_result": false
+}

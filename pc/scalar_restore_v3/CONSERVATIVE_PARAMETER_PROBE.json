@@ -1,0 +1,23 @@
+{
+  "status": "DEVELOPMENT_DIAGNOSTIC_NOT_BLIND",
+  "rows": [
+    {
+      "alpha": 0.5,
+      "core_gain": 0.4302492141723633,
+      "guard_gain": 0.8410377398504352,
+      "diagnosed_retention": 0.4972813189315209
+    },
+    {
+      "alpha": 0.75,
+      "core_gain": 0.44578105211257935,
+      "guard_gain": 0.8798033269850833,
+      "diagnosed_retention": 0.5202022907096729
+    },
+    {
+      "alpha": 1.0,
+      "core_gain": 0.4626508057117462,
+      "guard_gain": 0.9197217621675655,
+      "diagnosed_retention": 0.5438049082340153
+    }
+  ]
+}

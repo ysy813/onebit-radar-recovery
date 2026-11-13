@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\common.py",
+      "sha256": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+      "source_sha256": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\v2_protocol.json",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\PROTOCOL.json",
+      "sha256": "4269e4d70edcd0db5ad1cd2c2359a90a74577e9f0fd5a4a6a73b1e01334b342b",
+      "source_sha256": "4269e4d70edcd0db5ad1cd2c2359a90a74577e9f0fd5a4a6a73b1e01334b342b"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\compact_guard.py",
+      "sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+      "source_sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\config.json",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\config.json",
+      "sha256": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+      "source_sha256": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_float.pt",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\model_float.pt",
+      "sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+      "source_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\model_source.py",
+      "sha256": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+      "source_sha256": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\restore_power.py",
+      "sha256": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+      "source_sha256": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\root5.npy",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\root5.npy",
+      "sha256": "dc75d783724ea887227062ef4b7cd410f6ece3d34fb2603ce42ca46159dd0077",
+      "source_sha256": "dc75d783724ea887227062ef4b7cd410f6ece3d34fb2603ce42ca46159dd0077"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\scalar_guard.py",
+      "sha256": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+      "source_sha256": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\weights.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\baseline\\weights.npz",
+      "sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+      "source_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\fft_reference\\xfft_model.py",
+      "sha256": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+      "source_sha256": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_cmodel\\libgmp.dll",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\fft_reference\\xfft_cmodel\\libgmp.dll",
+      "sha256": "ab1009697ee84a694f5833acb160366e4cdd1a66eb6502de283796a0451894e8",
+      "source_sha256": "ab1009697ee84a694f5833acb160366e4cdd1a66eb6502de283796a0451894e8"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_cmodel\\libIp_xfft_v9_1_bitacc_cmodel.dll",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\fft_reference\\xfft_cmodel\\libIp_xfft_v9_1_bitacc_cmodel.dll",
+      "sha256": "45b1768bd87389186ec6e0845fdbf2429308501438a29b77edb1511f5e8f19d8",
+      "source_sha256": "45b1768bd87389186ec6e0845fdbf2429308501438a29b77edb1511f5e8f19d8"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_cmodel\\xfft_v9_1_bitacc_cmodel.h",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\source\\fft_reference\\xfft_cmodel\\xfft_v9_1_bitacc_cmodel.h",
+      "sha256": "24a4a8703ae8210a8e900803017977744c4ad10a5bc62a59bc4957e41c41b75e",
+      "source_sha256": "24a4a8703ae8210a8e900803017977744c4ad10a5bc62a59bc4957e41c41b75e"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\experiment.py",
+      "sha256": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+      "source_sha256": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\initial\\joint40.pt",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\candidate\\joint\\model_float.pt",
+      "sha256": "94e437226d7f30efea0a81e718148175d8e31c84b4a9744257eb2b2f3d270f16",
+      "source_sha256": "94e437226d7f30efea0a81e718148175d8e31c84b4a9744257eb2b2f3d270f16"
+    },
+    {
+      "copy": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\initial\\clean40.pt",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_constraints_v2\\initial\\model_float.pt",
+      "sha256": "8e1670cd51ea4d1aaee7c47c6af110f5ebb3f70852deef45a4471aff5b7ce97d",
+      "source_sha256": "8e1670cd51ea4d1aaee7c47c6af110f5ebb3f70852deef45a4471aff5b7ce97d"
+    }
+  ]
+}

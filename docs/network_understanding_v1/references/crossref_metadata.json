@@ -1,0 +1,193 @@
+[
+  {
+    "query": "A Convolutional De-quantization Network for Harmonics Suppression in One-bit SAR Imaging",
+    "status": "METADATA_RETRIEVED",
+    "title": [
+      "A Convolutional De-Quantization Network for Harmonics Suppression in One-Bit SAR Imaging"
+    ],
+    "DOI": "10.1109/tgrs.2023.3330530",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0354-6781",
+        "authenticated-orcid": false,
+        "given": "Cuiqi",
+        "family": "Si",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Radio Frequency Heterogeneous Integration, College of Electronics and Information Engineering, Shenzhen University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4264-2282",
+        "authenticated-orcid": false,
+        "given": "Bo",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Radio Frequency Heterogeneous Integration, College of Electronics and Information Engineering, Shenzhen University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4534-7625",
+        "authenticated-orcid": false,
+        "given": "Lei",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Radio Frequency Heterogeneous Integration, College of Electronics and Information Engineering, Shenzhen University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8285-2685",
+        "authenticated-orcid": false,
+        "given": "Shiqi",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Radio Frequency Heterogeneous Integration, College of Electronics and Information Engineering, Shenzhen University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tgrs.2023.3330530",
+    "container-title": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "abstract": null
+  },
+  {
+    "query": "The Bussgang Decomposition of Nonlinear Systems Basic Theory and MIMO Extensions",
+    "status": "METADATA_RETRIEVED",
+    "title": [
+      "The Bussgang Decomposition of Nonlinear Systems: Basic Theory and MIMO Extensions [Lecture Notes]"
+    ],
+    "DOI": "10.1109/msp.2020.3025538",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9059-2799",
+        "authenticated-orcid": false,
+        "given": "Ozlem Tugfe",
+        "family": "Demir",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5954-434X",
+        "authenticated-orcid": false,
+        "given": "Emil",
+        "family": "Bjornson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/msp.2020.3025538",
+    "container-title": [
+      "IEEE Signal Processing Magazine"
+    ],
+    "abstract": null
+  },
+  {
+    "query": "The spectrum of clipped noise",
+    "status": "METADATA_RETRIEVED",
+    "title": [
+      "The spectrum of clipped noise"
+    ],
+    "DOI": "10.1109/proc.1966.4567",
+    "author": [
+      {
+        "given": "J.H.",
+        "family": "Van Vleck",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "D.",
+        "family": "Middleton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          1966
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/proc.1966.4567",
+    "container-title": [
+      "Proceedings of the IEEE"
+    ],
+    "abstract": null
+  }
+]

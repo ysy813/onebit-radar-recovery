@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "package_files": 24,
+  "archive_crc_readback": true,
+  "archive_manifest_readback": true,
+  "all_payload_sha256_readback": true,
+  "archive_sha256": "1f9807b997d9e6842abbe581b9d91a613dad976d63eeddb79085bc500bc92dce",
+  "bit_sha256": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb",
+  "frozen_build_sources": {
+    "hls/scalar_compact.cpp": "e00bd7ff26965000e7fbc2d5e3eb504365b296355a679370e10e27ffeb4deae8",
+    "hls/parameters.h": "ab7794be1f882e217a5b311e25a1465f414fc88f723278d3e9fe77d1a91fbbd3",
+    "hls/build.tcl": "a70774700a595eaf38f2eea42782f53467d3c645e22153277c4942eed2cb994c",
+    "rtl/network_frame_control.v": "d63cd9fa6b9c44d73ec3c599629142c5c3083d53a05fbb15212e113d1c7067d4",
+    "model/runtime/weights.npz": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4"
+  },
+  "board_tested": false,
+  "experimental": true
+}

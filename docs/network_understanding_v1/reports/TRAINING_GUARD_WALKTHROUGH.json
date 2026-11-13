@@ -1,0 +1,395 @@
+{
+  "status": "PASS",
+  "scope": "Teaching algebra and existing point replay; not training or new quality evidence",
+  "training_source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v2\\runs\\protected_patch5\\training_source.py",
+  "training_source_sha256": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+  "training_source_matches_selected_config": true,
+  "extracted_loss_lines": [
+    65,
+    86
+  ],
+  "numpy_loss_terms": {
+    "log2_gain_head": 0.14845123862231294,
+    "log_amplitude": 0.21125308298923995,
+    "amplitude_squared": 0.018257826860294056,
+    "support_nonregression": 0.01529999998875298,
+    "center_relative_nonregression": 0.11733333333333332,
+    "artifact_overestimate": 0.23480338596978503,
+    "low_background_boost": 0.0125,
+    "explicit_peak_protection": 2.7
+  },
+  "numpy_total": 3.4578988677637184,
+  "executed_source_totals": {
+    "float64": 3.4578988677637184,
+    "float32": 3.4578990936279297
+  },
+  "source_loss_matches_independent_algebra": true,
+  "algebraic_examples": [
+    {
+      "name": "峰值与参考一致",
+      "x": 1.0,
+      "y": 1.0,
+      "raw": 0.0,
+      "support": 1,
+      "known": 0,
+      "low": 0,
+      "centers": 1,
+      "excess": 0,
+      "gain": 1.0,
+      "prediction": 1.0,
+      "target_log_gain": 0.0,
+      "absolute_error_before": 0.0,
+      "absolute_error_after": 0.0,
+      "relative_protection": 0.0,
+      "half_protection": 0.0,
+      "head_valid": true
+    },
+    {
+      "name": "伪影衰减仍受下限约束",
+      "x": 0.3,
+      "y": 0.01,
+      "raw": -3.0,
+      "support": 0,
+      "known": 0,
+      "low": 0,
+      "centers": 0,
+      "excess": 1,
+      "gain": 0.125,
+      "prediction": 0.0375,
+      "target_log_gain": -3.0,
+      "absolute_error_before": 0.29,
+      "absolute_error_after": 0.027499999999999997,
+      "relative_protection": 0.0,
+      "half_protection": 0.0,
+      "head_valid": true
+    },
+    {
+      "name": "支持弱峰被误压",
+      "x": 0.018,
+      "y": 0.02,
+      "raw": -1.3219280948873622,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 0,
+      "excess": 0,
+      "gain": 0.4,
+      "prediction": 0.0072,
+      "target_log_gain": 0.15192298599946533,
+      "absolute_error_before": 0.0020000000000000018,
+      "absolute_error_after": 0.0128,
+      "relative_protection": 0.4119999999999999,
+      "half_protection": 0.12800000000000006,
+      "head_valid": true
+    },
+    {
+      "name": "所需增强超出上限",
+      "x": 0.02,
+      "y": 0.08,
+      "raw": 0.5849625007211562,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 1,
+      "excess": 0,
+      "gain": 1.499999999250199,
+      "prediction": 0.029999999985003977,
+      "target_log_gain": 0.5849625,
+      "absolute_error_before": 0.06,
+      "absolute_error_after": 0.05000000001499602,
+      "relative_protection": 0.0,
+      "half_protection": 0.0,
+      "head_valid": true
+    },
+    {
+      "name": "低背景被放大",
+      "x": 0.001,
+      "y": 0.0001,
+      "raw": 0.32192809488736235,
+      "support": 0,
+      "known": 0,
+      "low": 1,
+      "centers": 0,
+      "excess": 1,
+      "gain": 1.25,
+      "prediction": 0.00125,
+      "target_log_gain": -3.0,
+      "absolute_error_before": 0.0009,
+      "absolute_error_after": 0.00115,
+      "relative_protection": 0.0,
+      "half_protection": 0.0,
+      "head_valid": true
+    },
+    {
+      "name": "输入严格为零",
+      "x": 0.0,
+      "y": 0.02,
+      "raw": 0.0,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 0,
+      "excess": 0,
+      "gain": 1.0,
+      "prediction": 0.0,
+      "target_log_gain": 0.5849625,
+      "absolute_error_before": 0.02,
+      "absolute_error_after": 0.02,
+      "relative_protection": 0.0,
+      "half_protection": 0.0,
+      "head_valid": false
+    },
+    {
+      "name": "原始分数超过增益上限",
+      "x": 0.03,
+      "y": 0.03,
+      "raw": 2.0,
+      "support": 1,
+      "known": 0,
+      "low": 0,
+      "centers": 0,
+      "excess": 0,
+      "gain": 1.499999999250199,
+      "prediction": 0.044999999977505964,
+      "target_log_gain": 0.0,
+      "absolute_error_before": 0.0,
+      "absolute_error_after": 0.014999999977505965,
+      "relative_protection": 0.4142857136430276,
+      "half_protection": 0.0,
+      "head_valid": true
+    },
+    {
+      "name": "原始分数低于增益下限",
+      "x": 0.08,
+      "y": 0.002,
+      "raw": -5.0,
+      "support": 0,
+      "known": 0,
+      "low": 1,
+      "centers": 0,
+      "excess": 1,
+      "gain": 0.125,
+      "prediction": 0.01,
+      "target_log_gain": -3.0,
+      "absolute_error_before": 0.078,
+      "absolute_error_after": 0.008,
+      "relative_protection": 0.0,
+      "half_protection": 0.0,
+      "head_valid": true
+    }
+  ],
+  "bounded_multiplicative_reachability": [
+    {
+      "input": 0.3,
+      "reference": 0.1,
+      "output_interval": [
+        0.0375,
+        0.44999999999999996
+      ],
+      "closest_amplitude": 0.1,
+      "unavoidable_absolute_error": 0.0
+    },
+    {
+      "input": 0.02,
+      "reference": 0.08,
+      "output_interval": [
+        0.0025,
+        0.03
+      ],
+      "closest_amplitude": 0.03,
+      "unavoidable_absolute_error": 0.05
+    },
+    {
+      "input": 0.08,
+      "reference": 0.002,
+      "output_interval": [
+        0.01,
+        0.12
+      ],
+      "closest_amplitude": 0.01,
+      "unavoidable_absolute_error": 0.008
+    },
+    {
+      "input": 0.0,
+      "reference": 0.02,
+      "output_interval": [
+        0.0,
+        0.0
+      ],
+      "closest_amplitude": 0.0,
+      "unavoidable_absolute_error": 0.02
+    }
+  ],
+  "mean_error_counterexample": {
+    "background_pixels": 10000,
+    "reference_target_amplitude": 0.1,
+    "baseline_background_error": 0.001,
+    "baseline_target_error": 0.0,
+    "damaged_target_amplitude": 0.02,
+    "baseline_mse": 9.99900009999e-07,
+    "damaged_mse": 6.399360063993601e-07,
+    "mse_ratio": 0.6400000000000001,
+    "target_amplitude_loss": 0.8
+  },
+  "existing_guard_points": [
+    {
+      "position": [
+        83,
+        0
+      ],
+      "label": "输入最大值锚定",
+      "power": 1286666655855754,
+      "power_relative_peak": 1.0,
+      "max3": 1286666655855754,
+      "max9": 1286666655855754,
+      "is_max9": true,
+      "near": true,
+      "amplitude_q16": 65536,
+      "parent3_q16": 207,
+      "parent5_q16": 2605,
+      "explained3": false,
+      "explained5": false,
+      "first_eligible": false,
+      "compact_eligible": false,
+      "center_z_q12": 4096,
+      "mean9_z_q12": 1852,
+      "compactness_q12": 4096,
+      "raw_gain_q14": 16406,
+      "first_guard_gain_q14": 16384,
+      "compact_weight_q12": 4096,
+      "final_gain_q14": 16384,
+      "existing_trace_and_output_exact": true
+    },
+    {
+      "position": [
+        774,
+        511
+      ],
+      "label": "被衰减的谱点，未标定真假",
+      "power": 58344130412905,
+      "power_relative_peak": 0.045345179458389465,
+      "max3": 58344130412905,
+      "max9": 58344130412905,
+      "is_max9": true,
+      "near": true,
+      "amplitude_q16": 13952,
+      "parent3_q16": 65536,
+      "parent5_q16": 1225,
+      "explained3": true,
+      "explained5": false,
+      "first_eligible": false,
+      "compact_eligible": false,
+      "center_z_q12": 3006,
+      "mean9_z_q12": 1620,
+      "compactness_q12": 4096,
+      "raw_gain_q14": 2048,
+      "first_guard_gain_q14": 2048,
+      "compact_weight_q12": 0,
+      "final_gain_q14": 2048,
+      "existing_trace_and_output_exact": true
+    },
+    {
+      "position": [
+        25,
+        0
+      ],
+      "label": "保护起作用的局部峰，未标定真假",
+      "power": 160521822565,
+      "power_relative_peak": 0.00012475789423348188,
+      "max3": 160521822565,
+      "max9": 160521822565,
+      "is_max9": true,
+      "near": true,
+      "amplitude_q16": 732,
+      "parent3_q16": 1518,
+      "parent5_q16": 9153,
+      "explained3": false,
+      "explained5": false,
+      "first_eligible": true,
+      "compact_eligible": true,
+      "center_z_q12": 1667,
+      "mean9_z_q12": 1058,
+      "compactness_q12": 3597,
+      "raw_gain_q14": 11460,
+      "first_guard_gain_q14": 16384,
+      "compact_weight_q12": 3597,
+      "final_gain_q14": 16384,
+      "existing_trace_and_output_exact": true
+    },
+    {
+      "position": [
+        200,
+        148
+      ],
+      "label": "紧凑保护再次提升的峰，未标定真假",
+      "power": 160601293586,
+      "power_relative_peak": 0.00012481965927622882,
+      "max3": 160601293586,
+      "max9": 160601293586,
+      "is_max9": true,
+      "near": true,
+      "amplitude_q16": 732,
+      "parent3_q16": 53,
+      "parent5_q16": 96,
+      "explained3": false,
+      "explained5": false,
+      "first_eligible": true,
+      "compact_eligible": true,
+      "center_z_q12": 1667,
+      "mean9_z_q12": 845,
+      "compactness_q12": 4096,
+      "raw_gain_q14": 7145,
+      "first_guard_gain_q14": 14022,
+      "compact_weight_q12": 4096,
+      "final_gain_q14": 16384,
+      "existing_trace_and_output_exact": true
+    }
+  ],
+  "eligible_guard_curve": [
+    {
+      "raw_gain": 0.125,
+      "after_soft": 0.125,
+      "after_fully_compact": 0.125
+    },
+    {
+      "raw_gain": 0.25,
+      "after_soft": 0.25,
+      "after_fully_compact": 0.25
+    },
+    {
+      "raw_gain": 0.3125,
+      "after_soft": 0.484375,
+      "after_fully_compact": 0.9677734375
+    },
+    {
+      "raw_gain": 0.375,
+      "after_soft": 0.6875,
+      "after_fully_compact": 1.0
+    },
+    {
+      "raw_gain": 0.4375,
+      "after_soft": 0.859375,
+      "after_fully_compact": 1.0
+    },
+    {
+      "raw_gain": 0.5,
+      "after_soft": 1.0,
+      "after_fully_compact": 1.0
+    },
+    {
+      "raw_gain": 1.0,
+      "after_soft": 1.0,
+      "after_fully_compact": 1.0
+    },
+    {
+      "raw_gain": 1.0999755859375,
+      "after_soft": 1.0999755859375,
+      "after_fully_compact": 1.0999755859375
+    }
+  ],
+  "selected_loss_history_available": false,
+  "neural_parameters_modified": false,
+  "training_run": false,
+  "new_quality_test_run": false,
+  "board_accessed": false
+}

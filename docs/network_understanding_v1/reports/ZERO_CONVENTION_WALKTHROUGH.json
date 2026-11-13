@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_289_complex_integer_cases_match_zero_indicator_identity": true,
+    "general_mean_formula_verified": true,
+    "symmetric_zero_mass_formula_verified": true,
+    "zero_mean_alone_not_sufficient": true,
+    "zero_indicator_frequency_and_power_identity": true,
+    "zero_indicator_is_not_only_dc": true,
+    "zero_convention_not_monotonic_in_each_bin_power": true,
+    "padding_closed_form_verified": true,
+    "padding_error_dc_energy_fraction_verified": true,
+    "padding_error_periodic_zeros_verified": true,
+    "source_operation_order_verified": true,
+    "two_operation_orders_have_expected_difference": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Input-convention mathematics; no quantizer change or model-quality experiment",
+  "distributions": [
+    {
+      "name": "对称且无零值",
+      "input_mean": 0.0,
+      "p_positive": 0.5,
+      "p_negative": 0.5,
+      "p_zero": 0.0,
+      "symmetric": true,
+      "quantized_mean": 0.0,
+      "mean_from_general_identity": 0.0,
+      "symmetric_zero_only_formula": 0.0
+    },
+    {
+      "name": "对称且含零值",
+      "input_mean": 0.0,
+      "p_positive": 0.4,
+      "p_negative": 0.4,
+      "p_zero": 0.2,
+      "symmetric": true,
+      "quantized_mean": 12.799999999999999,
+      "mean_from_general_identity": 12.8,
+      "symmetric_zero_only_formula": 12.8
+    },
+    {
+      "name": "均值为零但不对称",
+      "input_mean": 0.0,
+      "p_positive": 0.6666666666666666,
+      "p_negative": 0.3333333333333333,
+      "p_zero": 0.0,
+      "symmetric": false,
+      "quantized_mean": 21.333333333333332,
+      "mean_from_general_identity": 21.333333333333332,
+      "symmetric_zero_only_formula": null
+    },
+    {
+      "name": "全零有效采样",
+      "input_mean": 0.0,
+      "p_positive": 0.0,
+      "p_negative": 0.0,
+      "p_zero": 1.0,
+      "symmetric": true,
+      "quantized_mean": 64.0,
+      "mean_from_general_identity": 64.0,
+      "symmetric_zero_only_formula": 64.0
+    }
+  ],
+  "zero_indicator_direct_dft": {
+    "shape": [
+      16,
+      16
+    ],
+    "scope": "Constructed integer grid with direct unnormalized DFT; not radar data",
+    "i_zero_count": 25,
+    "q_zero_count": 32,
+    "sample_identity_exact": true,
+    "maximum_frequency_identity_error": 1.5279147255245803e-12,
+    "maximum_power_expansion_error": 6.51925802230835e-09,
+    "non_dc_indicator_bins": 255,
+    "bins_power_increased": 145,
+    "bins_power_decreased": 111
+  },
+  "hypothetical_padding_error": {
+    "scope": "Hypothetical quantize-after-padding error; current source quantizes before padding",
+    "shape": [
+      1024,
+      512
+    ],
+    "valid_chirps": 128,
+    "missing_chirps": 384,
+    "missing_complex_sample_value_if_misquantized": [
+      64,
+      64
+    ],
+    "maximum_closed_form_error": 1.6339146120286947e-11,
+    "ideal_error_support_range_bin": 0,
+    "dc_fraction_of_error_spectral_energy": 0.7500000000000252,
+    "expected_dc_energy_fraction": 0.75,
+    "nonzero_multiple_of_four_doppler_bins_are_zeros": true,
+    "examples": [
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 0,
+        "relative_amplitude_to_padding_dc": 1.0
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 1,
+        "relative_amplitude_to_padding_dc": 0.30010732186657324
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 2,
+        "relative_amplitude_to_padding_dc": 0.2122119172049579
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 3,
+        "relative_amplitude_to_padding_dc": 0.10004079588081784
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 4,
+        "relative_amplitude_to_padding_dc": 8.3241155073884e-17
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 5,
+        "relative_amplitude_to_padding_dc": 0.06003050447418951
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 8,
+        "relative_amplitude_to_padding_dc": 1.8856149885458743e-17
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 128,
+        "relative_amplitude_to_padding_dc": 1.023650374245754e-15
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 256,
+        "relative_amplitude_to_padding_dc": 5.053215498074302e-16
+      },
+      {
+        "natural_range_bin": 0,
+        "natural_doppler_bin": 511,
+        "relative_amplitude_to_padding_dc": 0.300107321866497
+      }
+    ],
+    "windowing_and_fixed_point_fft_not_modelled": true,
+    "no_claim_this_error_exists_in_current_runtime": true
+  },
+  "source_sha256": {
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_direct_dft_run": true,
+  "radar_data_fft_run": false,
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "quantizer_rule_modified": false,
+  "training_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

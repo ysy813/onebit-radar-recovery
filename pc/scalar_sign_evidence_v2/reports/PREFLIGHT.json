@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "gradient_error": 6.915166917108306e-07,
+  "original_v1_snapshot_exact": true,
+  "zero_residual_no_spurious_candidates": true
+}

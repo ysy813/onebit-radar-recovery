@@ -1,0 +1,109 @@
+{
+  "version": "scalar_restore_v3_compact_weakfix",
+  "quality_test_status": "FAIL",
+  "approved_for_pl_integration": false,
+  "research_only": true,
+  "context": 2,
+  "peak_anchor": false,
+  "feature_policy": "guarded_child",
+  "network": [
+    40,
+    32,
+    16,
+    1
+  ],
+  "parameters": 1857,
+  "gain_range": [
+    0.125,
+    1.5
+  ],
+  "power_guard": {
+    "version": "weak_peak_soft_v3",
+    "local_max_window": 9,
+    "near_window": 3,
+    "weak_power_upper_divisor": 16,
+    "detected_power_lower_divisor": 10000,
+    "near_peak_fraction": [
+      1,
+      2
+    ],
+    "anchor_frame_peak": true,
+    "valid_chirps_supported": [
+      128,
+      512
+    ],
+    "harmonic_exclusion_only_for_512": true,
+    "strong_parent_amplitude_q16": 16384,
+    "relative_harmonic_tolerance": [
+      1,
+      2
+    ],
+    "soft_band_q14": [
+      4096,
+      8192
+    ],
+    "runtime_requires_valid_chirp_metadata": true
+  },
+  "gain_q": 14,
+  "input": "uint64 power 1024x512, natural FFT order, all range bins",
+  "output": "same power units, Pout=sat_u64((Pin*g_q14^2+2^27)>>28)",
+  "external_features_q": 12,
+  "internal_activation_q": 16,
+  "coefficient_q": 16,
+  "bias_q": 32,
+  "zero_frame": "exact zero power; unity gain",
+  "sha256": {
+    "weights.npz": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+    "root5.npy": "dc75d783724ea887227062ef4b7cd410f6ece3d34fb2603ce42ca46159dd0077",
+    "model_float.pt": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+    "compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3"
+  },
+  "selection_report": "../COMPACT_FROZEN.json",
+  "independent_test_report": "../compact_fresh_test/report.json",
+  "rx_ids_user_confirmed": [
+    0,
+    3
+  ],
+  "rx_primary_layout": "rx_blocks_per_chirp",
+  "alternative_layout": "sample_interleaved stress test only",
+  "real_temporal_test_is_cross_scene": false,
+  "physical_target_labels_available": false,
+  "bit_rebuilt": false,
+  "board_accessed": false,
+  "weak_correction_status": "PASS",
+  "ready_for_board_test": false,
+  "neural_weights_changed": false,
+  "stored_parameter_sets": 1,
+  "compact_peak_policy": {
+    "version": "compact_peak_skip_v1",
+    "network_weights": "frozen_v2",
+    "network_weight_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+    "float_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+    "actual_chirps_changed": [
+      512
+    ],
+    "actual_chirps_unchanged": [
+      128
+    ],
+    "compact_fifthroot_mean9_ratio_transition": [
+      1.4,
+      1.6
+    ],
+    "v2_final_gain_transition": [
+      0.25,
+      0.5
+    ],
+    "input_power_min_relative_to_peak": 0.0001,
+    "weak_power_max_relative_to_peak": 0.0625,
+    "local_max_window": 9,
+    "exclude_explained_strong_third_fifth_harmonics": true,
+    "range_indices": [
+      0,
+      1023
+    ],
+    "output_power_formula": "sat_u64((Pin*g_q14^2+2^27)>>28)",
+    "source_sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "no_reference_or_literal_coordinates": true
+  }
+}

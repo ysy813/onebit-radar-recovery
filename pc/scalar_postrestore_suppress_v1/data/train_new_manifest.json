@@ -1,0 +1,1219 @@
+{
+  "records": [
+    {
+      "id": "train_new_000_single_grid_a",
+      "metadata": {
+        "seed": 20261113000,
+        "template": "single_grid_a",
+        "target_count": 1,
+        "grid": "grid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 77.0,
+            "doppler_bin": -203.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -0.9275462601689015,
+            "azimuth_deg": -2.424440994793642,
+            "velocity_direction_deg": 39.928157643960304,
+            "signed_speed_m_s": -10.581595264677532,
+            "radial_velocity_m_s": -7.819935877621299,
+            "range_m": 3.170107626251221
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          1,
+          5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "000_single_grid_a",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\000_single_grid_a_input.npz",
+        "sha256": "479ead8b23c0add6114c80fa1cf85be364a8bd1faeaa4de3a36de8baba1f4df3"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\000_single_grid_a_spectra.npz",
+      "source_arrays_sha256": "ac6f96dbe45fc697fe41e2559909702cf2d3828e48ec04a8753409fe16e72344",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\000_single_grid_a_solver.json",
+      "solver_report_sha256": "fd38bca035831eb40e857ee48e444bcee9b9a337298d51c8db5bec4bb8e4503d",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_001_single_offgrid_a",
+      "metadata": {
+        "seed": 20261113001,
+        "template": "single_offgrid_a",
+        "target_count": 1,
+        "grid": "offgrid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 430.62983298790124,
+            "doppler_bin": 3.944167523043414,
+            "amplitude": 1.0,
+            "initial_phase_rad": 0.10879343102607342,
+            "azimuth_deg": -34.531828868308665,
+            "velocity_direction_deg": -75.37575189681701,
+            "signed_speed_m_s": 0.2008431687701738,
+            "radial_velocity_m_s": 0.15193663606303412,
+            "range_m": 17.729128800600456
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          5,
+          20
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "001_single_offgrid_a",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\001_single_offgrid_a_input.npz",
+        "sha256": "6cfaf4d8183f641260005c062777f6cf4460e575d98a2bccfff50cc950aeca32"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\001_single_offgrid_a_spectra.npz",
+      "source_arrays_sha256": "a25f7ca0c8a3761c087c47a20617610cbf986bc650a7de0cc574dc99a000c3be",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\001_single_offgrid_a_solver.json",
+      "solver_report_sha256": "469cc0c144b3250b024275ea47bc5246f1c609d34fa186a143994651f1c92b4b",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_002_n4_spread",
+      "metadata": {
+        "seed": 20261113002,
+        "template": "n4_spread",
+        "target_count": 4,
+        "grid": "grid",
+        "family": "spread",
+        "targets": [
+          {
+            "range_bin": 656.0,
+            "doppler_bin": 29.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.5084486796894436,
+            "azimuth_deg": -0.9817771200587373,
+            "velocity_direction_deg": 43.714193813599664,
+            "signed_speed_m_s": 1.5715486674327825,
+            "radial_velocity_m_s": 1.1171336968030428,
+            "range_m": 27.007670166503907
+          },
+          {
+            "range_bin": 951.0,
+            "doppler_bin": 123.0,
+            "amplitude": 0.814160054263406,
+            "initial_phase_rad": 0.975119625497082,
+            "azimuth_deg": -10.493843745619756,
+            "velocity_direction_deg": 45.97535886308381,
+            "signed_speed_m_s": 8.577688772482189,
+            "radial_velocity_m_s": 4.738187748509457,
+            "range_m": 39.1528876956482
+          },
+          {
+            "range_bin": 874.0,
+            "doppler_bin": 100.0,
+            "amplitude": 0.6230009076293062,
+            "initial_phase_rad": 2.2958800875028613,
+            "azimuth_deg": -27.36833236447883,
+            "velocity_direction_deg": -51.420013649975274,
+            "signed_speed_m_s": 4.218437469962458,
+            "radial_velocity_m_s": 3.852185161389803,
+            "range_m": 35.98278006939697
+          },
+          {
+            "range_bin": 934.0,
+            "doppler_bin": -65.0,
+            "amplitude": 0.70898656880906,
+            "initial_phase_rad": 0.9427521567376624,
+            "azimuth_deg": 3.28898338526524,
+            "velocity_direction_deg": 20.771216443493273,
+            "signed_speed_m_s": -2.625176877844456,
+            "radial_velocity_m_s": -2.5039203549033715,
+            "range_m": 38.45299380413818
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          20,
+          39.5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "002_n4_spread",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\002_n4_spread_input.npz",
+        "sha256": "a1daa379de13964fdb412094650ddcaf70c8d5036a2d24e96873ae3f37a3a823"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\002_n4_spread_spectra.npz",
+      "source_arrays_sha256": "e25d97bd200dc08e637553c5bd8fb1df59b35edd91e1a8b86ed4fa2dafc0e6ef",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\002_n4_spread_solver.json",
+      "solver_report_sha256": "b7d7d53d79829b1b50fb7b4fcf18af90061371953b93914bb93a8e02b114c110",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_003_n4_near_pairs",
+      "metadata": {
+        "seed": 20261113003,
+        "template": "n4_near_pairs",
+        "target_count": 4,
+        "grid": "offgrid",
+        "family": "near_pairs",
+        "targets": [
+          {
+            "range_bin": 118.43462747881861,
+            "doppler_bin": -8.755439115489766,
+            "amplitude": 1.0,
+            "initial_phase_rad": 1.6041379205568953,
+            "azimuth_deg": 8.251494305761383,
+            "velocity_direction_deg": 0.5080034877334256,
+            "signed_speed_m_s": -0.34037957596958773,
+            "radial_velocity_m_s": -0.33727572642141534,
+            "range_m": 4.875980724452276
+          },
+          {
+            "range_bin": 119.33423474395876,
+            "doppler_bin": -4.755439115489766,
+            "amplitude": 0.8680683479468041,
+            "initial_phase_rad": 1.645598551603749,
+            "azimuth_deg": 47.425732367430726,
+            "velocity_direction_deg": 83.56469297155697,
+            "signed_speed_m_s": -0.22683358595549727,
+            "radial_velocity_m_s": -0.18318831996582327,
+            "range_m": 4.9130177614893125
+          },
+          {
+            "range_bin": 63.63330298405692,
+            "doppler_bin": 27.173246623199766,
+            "amplitude": 0.7210229563642785,
+            "initial_phase_rad": 1.3142187214671672,
+            "azimuth_deg": -47.702284698121446,
+            "velocity_direction_deg": -35.847128537674706,
+            "signed_speed_m_s": 1.0695777874668828,
+            "radial_velocity_m_s": 1.046763774286757,
+            "range_m": 2.6197976503027713
+          },
+          {
+            "range_bin": 64.30800843291205,
+            "doppler_bin": 32.173246623199766,
+            "amplitude": 0.7095700874540196,
+            "initial_phase_rad": -2.440254817293652,
+            "azimuth_deg": 3.2871252450130584,
+            "velocity_direction_deg": 56.47706771885326,
+            "signed_speed_m_s": 2.0685033276697804,
+            "radial_velocity_m_s": 1.2393730323562473,
+            "range_m": 2.647575428080549
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          1,
+          5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "003_n4_near_pairs",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\003_n4_near_pairs_input.npz",
+        "sha256": "db2a5df12506897b8fce4ace82749721e648a9eff78c2e5776005233bbdf31c5"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\003_n4_near_pairs_spectra.npz",
+      "source_arrays_sha256": "8635e2841fa5406b4e2385b94e9b28192d57b2d7a84f622551b8a55467795230",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\003_n4_near_pairs_solver.json",
+      "solver_report_sha256": "34748bd0580f543d1dd7c5baf3a57fc83edad76527220e38b63bab8d4b462bfa",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_004_n4_strong_weak",
+      "metadata": {
+        "seed": 20261113004,
+        "template": "n4_strong_weak",
+        "target_count": 4,
+        "grid": "grid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 180.0,
+            "doppler_bin": -41.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 0.02723990250680952,
+            "azimuth_deg": 21.177128641106734,
+            "velocity_direction_deg": 17.217479781644016,
+            "signed_speed_m_s": -1.5831750665394138,
+            "radial_velocity_m_s": -1.579395916169819,
+            "range_m": 7.410641204223633
+          },
+          {
+            "range_bin": 304.0,
+            "doppler_bin": 53.0,
+            "amplitude": 0.27454846900448215,
+            "initial_phase_rad": -0.9287372159731784,
+            "azimuth_deg": -43.60716444874353,
+            "velocity_direction_deg": -23.814037724931993,
+            "signed_speed_m_s": 2.169849830909515,
+            "radial_velocity_m_s": 2.0416581355365953,
+            "range_m": 12.515749589355469
+          },
+          {
+            "range_bin": 354.0,
+            "doppler_bin": 55.0,
+            "amplitude": 0.09860171146921001,
+            "initial_phase_rad": 0.3018433172428123,
+            "azimuth_deg": 33.63007563341641,
+            "velocity_direction_deg": 6.435282413903664,
+            "signed_speed_m_s": 2.382014728598799,
+            "radial_velocity_m_s": 2.1187018387643914,
+            "range_m": 14.574261034973144
+          },
+          {
+            "range_bin": 479.0,
+            "doppler_bin": -193.0,
+            "amplitude": 0.20960111277841037,
+            "initial_phase_rad": 2.269859584372737,
+            "azimuth_deg": -49.609176722639106,
+            "velocity_direction_deg": -77.2888944630858,
+            "signed_speed_m_s": -8.395515988581277,
+            "radial_velocity_m_s": -7.434717361482319,
+            "range_m": 19.720539649017333
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          5,
+          20
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "004_n4_strong_weak",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\004_n4_strong_weak_input.npz",
+        "sha256": "25b2fa3952437a3d45d486612a4ece0fc9e3b53209c9f4d76675ba70baabf8b4"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\004_n4_strong_weak_spectra.npz",
+      "source_arrays_sha256": "b8ff12a47fea1a59f6e14390147c0a1dab03c02437da0ddabc08ee7c2a39c2c7",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\004_n4_strong_weak_solver.json",
+      "solver_report_sha256": "03c570ce919a75bbdb2b5f5f3f98365d88a7fa1a7d049d2faab720790a7d70b9",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_005_n8_spread",
+      "metadata": {
+        "seed": 20261113005,
+        "template": "n8_spread",
+        "target_count": 8,
+        "grid": "offgrid",
+        "family": "spread",
+        "targets": [
+          {
+            "range_bin": 852.988057693175,
+            "doppler_bin": -168.9319660531053,
+            "amplitude": 1.0,
+            "initial_phase_rad": 2.676477863372523,
+            "azimuth_deg": 7.9334897055938,
+            "velocity_direction_deg": 15.180531719731704,
+            "signed_speed_m_s": -6.559976742258581,
+            "radial_velocity_m_s": -6.5075721291417805,
+            "range_m": 35.117713594731825
+          },
+          {
+            "range_bin": 544.3418045136818,
+            "doppler_bin": -129.11654185724618,
+            "amplitude": 0.4295743866086281,
+            "initial_phase_rad": 1.3790059157488859,
+            "azimuth_deg": 20.099294421348873,
+            "velocity_direction_deg": -29.160007772722082,
+            "signed_speed_m_s": -7.621097439960749,
+            "radial_velocity_m_s": -4.973808266324491,
+            "range_m": 22.410676698391867
+          },
+          {
+            "range_bin": 492.01394629924675,
+            "doppler_bin": 72.05005479264872,
+            "amplitude": 0.7961784567355176,
+            "initial_phase_rad": 0.5842110056437311,
+            "azimuth_deg": -10.14506671369876,
+            "velocity_direction_deg": 37.10771177071758,
+            "signed_speed_m_s": 4.089045499732603,
+            "radial_velocity_m_s": 2.7755015194956365,
+            "range_m": 20.2563267972104
+          },
+          {
+            "range_bin": 679.0602639706109,
+            "doppler_bin": 8.174558204582054,
+            "amplitude": 0.448305517447831,
+            "initial_phase_rad": 0.42499040192000503,
+            "azimuth_deg": 33.6336710475976,
+            "velocity_direction_deg": 53.794094335031744,
+            "signed_speed_m_s": 0.33545181066402063,
+            "radial_velocity_m_s": 0.3148991181660825,
+            "range_m": 27.957066512953254
+          },
+          {
+            "range_bin": 674.9737296695556,
+            "doppler_bin": 100.86712744716525,
+            "amplitude": 0.7189229675169568,
+            "initial_phase_rad": 2.309929041423241,
+            "azimuth_deg": 21.666677410384906,
+            "velocity_direction_deg": -2.142817566543293,
+            "signed_speed_m_s": 4.2470424948336225,
+            "radial_velocity_m_s": 3.8855885162398405,
+            "range_m": 27.788822960320623
+          },
+          {
+            "range_bin": 548.1924659790435,
+            "doppler_bin": -151.27350129286637,
+            "amplitude": 0.6853869857017201,
+            "initial_phase_rad": 2.130118267949939,
+            "azimuth_deg": -44.76813563115889,
+            "velocity_direction_deg": -21.808413585351083,
+            "signed_speed_m_s": -6.328699340990711,
+            "radial_velocity_m_s": -5.827335369918609,
+            "range_m": 22.56920931238479
+          },
+          {
+            "range_bin": 552.2559321309923,
+            "doppler_bin": -127.43346942961952,
+            "amplitude": 0.6833403918576046,
+            "initial_phase_rad": -1.3290539358556535,
+            "azimuth_deg": -19.68539784288224,
+            "velocity_direction_deg": -28.024501240370327,
+            "signed_speed_m_s": -4.961430213290121,
+            "radial_velocity_m_s": -4.908973200012013,
+            "range_m": 22.736503144038117
+          },
+          {
+            "range_bin": 655.059402995848,
+            "doppler_bin": 70.47015840469842,
+            "amplitude": 0.45449382251345316,
+            "initial_phase_rad": -1.4721424050111416,
+            "azimuth_deg": 52.77803086860352,
+            "velocity_direction_deg": 69.21084705924582,
+            "signed_speed_m_s": 2.830250768756965,
+            "radial_velocity_m_s": 2.7146409852736815,
+            "range_m": 26.968945572528696
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          20,
+          39.5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "005_n8_spread",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\005_n8_spread_input.npz",
+        "sha256": "d74b7366a2c279753de5eeafb7a27a72604f9f4aed5e061f3f24f3567b0c27c0"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\005_n8_spread_spectra.npz",
+      "source_arrays_sha256": "cceb2d7ff1cb5567d025e5626b3ff39e5c77d9c6519d9a58729bba914f21e35d",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\005_n8_spread_solver.json",
+      "solver_report_sha256": "f5ed0bf31fdc5eb17c0ebfb44395041c761c64b5d22cd1b12e46ab639c91cbbe",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_006_n8_near_pairs",
+      "metadata": {
+        "seed": 20261113006,
+        "template": "n8_near_pairs",
+        "target_count": 8,
+        "grid": "grid",
+        "family": "near_pairs",
+        "targets": [
+          {
+            "range_bin": 33.0,
+            "doppler_bin": 15.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.4891223087898189,
+            "azimuth_deg": -14.525620445690656,
+            "velocity_direction_deg": 23.752918194854708,
+            "signed_speed_m_s": 0.7360783972727306,
+            "radial_velocity_m_s": 0.5778277742084704,
+            "range_m": 1.358617554107666
+          },
+          {
+            "range_bin": 34.0,
+            "doppler_bin": 20.0,
+            "amplitude": 0.7273409508636983,
+            "initial_phase_rad": 0.8654028380909295,
+            "azimuth_deg": 17.796477983946005,
+            "velocity_direction_deg": -25.081576917605346,
+            "signed_speed_m_s": 1.0513554558859695,
+            "radial_velocity_m_s": 0.7704370322779606,
+            "range_m": 1.3997877830200196
+          },
+          {
+            "range_bin": 35.0,
+            "doppler_bin": -89.0,
+            "amplitude": 0.4622602726376168,
+            "initial_phase_rad": -1.1170605404430658,
+            "azimuth_deg": 5.420806357452236,
+            "velocity_direction_deg": -11.019685892717483,
+            "signed_speed_m_s": -3.5745949769436964,
+            "radial_velocity_m_s": -3.4284447936369244,
+            "range_m": 1.440958011932373
+          },
+          {
+            "range_bin": 36.0,
+            "doppler_bin": -84.0,
+            "amplitude": 0.39768211880242754,
+            "initial_phase_rad": 1.3425494067283257,
+            "azimuth_deg": -58.283192147286705,
+            "velocity_direction_deg": -17.51731277587215,
+            "signed_speed_m_s": -4.272384080835167,
+            "radial_velocity_m_s": -3.235835535567434,
+            "range_m": 1.4821282408447265
+          },
+          {
+            "range_bin": 104.0,
+            "doppler_bin": -132.0,
+            "amplitude": 0.7385433584888953,
+            "initial_phase_rad": -2.769782850756796,
+            "azimuth_deg": 29.701783712982433,
+            "velocity_direction_deg": 65.78229120608303,
+            "signed_speed_m_s": -6.2916920640048,
+            "radial_velocity_m_s": -5.08488441303454,
+            "range_m": 4.2817038068847655
+          },
+          {
+            "range_bin": 105.0,
+            "doppler_bin": -127.0,
+            "amplitude": 0.32490050204163745,
+            "initial_phase_rad": 0.7546009196668915,
+            "azimuth_deg": 43.99809289735151,
+            "velocity_direction_deg": 34.22514195133185,
+            "signed_speed_m_s": -4.964316603990951,
+            "radial_velocity_m_s": -4.892275154965049,
+            "range_m": 4.322874035797119
+          },
+          {
+            "range_bin": 32.0,
+            "doppler_bin": -22.0,
+            "amplitude": 0.6178776250605242,
+            "initial_phase_rad": -0.5636574855430507,
+            "azimuth_deg": 36.51115820879596,
+            "velocity_direction_deg": -10.188401427100217,
+            "signed_speed_m_s": -1.235711788605161,
+            "radial_velocity_m_s": -0.8474807355057565,
+            "range_m": 1.3174473251953125
+          },
+          {
+            "range_bin": 33.0,
+            "doppler_bin": -17.0,
+            "amplitude": 0.676478945183902,
+            "initial_phase_rad": -0.7246125900099609,
+            "azimuth_deg": 54.21746188932738,
+            "velocity_direction_deg": 43.10655671434601,
+            "signed_speed_m_s": -0.667380862127174,
+            "radial_velocity_m_s": -0.6548714774362665,
+            "range_m": 1.358617554107666
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          1,
+          5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "006_n8_near_pairs",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\006_n8_near_pairs_input.npz",
+        "sha256": "20c0c2e1d197ba9e2d9c6010c417005a715ae7b069393369155953c4a0813839"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\006_n8_near_pairs_spectra.npz",
+      "source_arrays_sha256": "192bf7142180f10ea0f9ad3f75285b47cd1c84e1245d9c891fcc17ff396b4e8a",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\006_n8_near_pairs_solver.json",
+      "solver_report_sha256": "0a3b6e89602d80e015b41b5c804e112a1250c5683c75074186310189be45480f",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_007_n8_strong_weak",
+      "metadata": {
+        "seed": 20261113007,
+        "template": "n8_strong_weak",
+        "target_count": 8,
+        "grid": "offgrid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 192.17312465817292,
+            "doppler_bin": 135.3542729641428,
+            "amplitude": 1.0,
+            "initial_phase_rad": 1.4336699612720798,
+            "azimuth_deg": -3.2234204410947385,
+            "velocity_direction_deg": 42.262742382078876,
+            "signed_speed_m_s": 7.4372198402764855,
+            "radial_velocity_m_s": 5.214097218431759,
+            "range_m": 7.911811532979227
+          },
+          {
+            "range_bin": 314.14408283820245,
+            "doppler_bin": -135.08406788017106,
+            "amplitude": 0.22932579226126953,
+            "initial_phase_rad": -0.9304520543360724,
+            "azimuth_deg": 31.69678242926547,
+            "velocity_direction_deg": 28.91796922756882,
+            "signed_speed_m_s": -5.2098144687950105,
+            "radial_velocity_m_s": -5.203688418281678,
+            "range_m": 12.933383801910141
+          },
+          {
+            "range_bin": 224.72535264007118,
+            "doppler_bin": 21.239519381486907,
+            "amplitude": 0.09913445881903882,
+            "initial_phase_rad": -3.090645302321449,
+            "azimuth_deg": 57.85369908363052,
+            "velocity_direction_deg": 103.65335715191135,
+            "signed_speed_m_s": 1.1735822541460612,
+            "radial_velocity_m_s": 0.8181856139641498,
+            "range_m": 9.251994210601097
+          },
+          {
+            "range_bin": 216.06103988687025,
+            "doppler_bin": -13.995796309279825,
+            "amplitude": 0.1363275963200307,
+            "initial_phase_rad": 1.2503847612432972,
+            "azimuth_deg": -13.1870736487909,
+            "velocity_direction_deg": -32.90769180498273,
+            "signed_speed_m_s": -0.5727353897315488,
+            "radial_velocity_m_s": -0.539143988644419,
+            "range_m": 8.895282471183592
+          },
+          {
+            "range_bin": 305.2315376579406,
+            "doppler_bin": -91.56258747444409,
+            "amplitude": 0.2906006504203852,
+            "initial_phase_rad": -1.0053255715900802,
+            "azimuth_deg": 49.554968682751635,
+            "velocity_direction_deg": 88.44456267007934,
+            "signed_speed_m_s": -4.531544735884801,
+            "radial_velocity_m_s": -3.527160408075093,
+            "range_m": 12.566452276647066
+          },
+          {
+            "range_bin": 357.46445141923857,
+            "doppler_bin": 66.0119930435364,
+            "amplitude": 0.061432910648495626,
+            "initial_phase_rad": -1.8026142112949066,
+            "azimuth_deg": -43.33421904209375,
+            "velocity_direction_deg": -61.42065972198047,
+            "signed_speed_m_s": 2.675082070851637,
+            "radial_velocity_m_s": 2.542904200760778,
+            "range_m": 14.716893292958924
+          },
+          {
+            "range_bin": 382.8782264774827,
+            "doppler_bin": 20.09553388298157,
+            "amplitude": 0.06900213915382332,
+            "initial_phase_rad": 1.3050802873238894,
+            "azimuth_deg": -13.578590078552537,
+            "velocity_direction_deg": 31.51712955108394,
+            "signed_speed_m_s": 1.0966005420173233,
+            "radial_velocity_m_s": 0.774117174342276,
+            "range_m": 15.763184229633897
+          },
+          {
+            "range_bin": 424.7311436186183,
+            "doppler_bin": 74.4357394413717,
+            "amplitude": 0.10171692648956872,
+            "initial_phase_rad": -0.7536729412804659,
+            "azimuth_deg": 46.821981200468414,
+            "velocity_direction_deg": 7.203652715725774,
+            "signed_speed_m_s": 3.7224041348658483,
+            "radial_velocity_m_s": 2.8674025095312974,
+            "range_m": 17.486278408984212
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          5,
+          20
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "007_n8_strong_weak",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\007_n8_strong_weak_input.npz",
+        "sha256": "1ea88cd0250aa0f546fee3945c966ad81fc4d4c2627821e87710c6ab79d9113f"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\007_n8_strong_weak_spectra.npz",
+      "source_arrays_sha256": "20a496de0fc9d161dd6c1e48c63d7a4a96c4de03d16c08b562938d09b58b7f97",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\007_n8_strong_weak_solver.json",
+      "solver_report_sha256": "1a5041d982089b0a29b7d931a655543070d1694ff2604c561be62841615996b6",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_008_collision_minus3_grid",
+      "metadata": {
+        "seed": 20261113008,
+        "template": "collision_minus3_grid",
+        "target_count": 2,
+        "grid": "grid",
+        "family": "collision_minus3",
+        "targets": [
+          {
+            "range_bin": 862.0,
+            "doppler_bin": -142.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 2.44726943872708,
+            "azimuth_deg": 8.146134117527765,
+            "velocity_direction_deg": 34.111882569876016,
+            "signed_speed_m_s": -6.084274243298758,
+            "radial_velocity_m_s": -5.47010292917352,
+            "range_m": 35.48873732244873
+          },
+          {
+            "range_bin": 486.0,
+            "doppler_bin": -86.0,
+            "amplitude": 0.15809051161761978,
+            "initial_phase_rad": -1.3907044472620718,
+            "azimuth_deg": 22.82291290770067,
+            "velocity_direction_deg": -3.009763511099777,
+            "signed_speed_m_s": -3.6806889881209863,
+            "radial_velocity_m_s": -3.3128792387952304,
+            "range_m": 20.00873125140381
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          20,
+          39.5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "008_collision_minus3_grid",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\008_collision_minus3_grid_input.npz",
+        "sha256": "eebea388dff0b9fbe8a595084321a6ec3ebea57a3134afbe986cf934782f27bc"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\008_collision_minus3_grid_spectra.npz",
+      "source_arrays_sha256": "6d2c156315c0e12594d9c1767a9405b9b78e305a0c2eae4bf1215351e9522266",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\008_collision_minus3_grid_solver.json",
+      "solver_report_sha256": "5d34e3af7cbcdc45fea6859c91ed04ebe3ab70d0bbfe97af465e09697fb242c5",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_009_collision_plus5_offgrid",
+      "metadata": {
+        "seed": 20261113009,
+        "template": "collision_plus5_offgrid",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "collision_plus5",
+        "targets": [
+          {
+            "range_bin": 115.90458770000264,
+            "doppler_bin": -36.40532214244467,
+            "amplitude": 1.0,
+            "initial_phase_rad": 2.700041881440799,
+            "azimuth_deg": 54.925660660061396,
+            "velocity_direction_deg": 99.35293974325103,
+            "signed_speed_m_s": -1.9637626160107278,
+            "radial_velocity_m_s": -1.4024004175274096,
+            "range_m": 4.771818407601062
+          },
+          {
+            "range_bin": 579.5229385000132,
+            "doppler_bin": -182.02661071222334,
+            "amplitude": 0.07430624587421245,
+            "initial_phase_rad": 0.1756852069620165,
+            "azimuth_deg": 55.273010867371,
+            "velocity_direction_deg": 78.54988940959977,
+            "signed_speed_m_s": -7.63330812495279,
+            "radial_velocity_m_s": -7.012002087637049,
+            "range_m": 23.85909203800531
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          1,
+          5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "009_collision_plus5_offgrid",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\009_collision_plus5_offgrid_input.npz",
+        "sha256": "4dcc924c5fd6f0c1da2346e67381e5968218fb5a19ec13be3f0346d17d2dbfa9"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\009_collision_plus5_offgrid_spectra.npz",
+      "source_arrays_sha256": "7679088767e2fb3566f6ec4fa068d819713bb546c2cb7e356aa18765eaaabb7f",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\009_collision_plus5_offgrid_solver.json",
+      "solver_report_sha256": "5c9128e5053e3b9c1ab557c9a730ec3e159e11bb3e546d7da5e603b87aeb8b77",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_010_near_collision_plus5",
+      "metadata": {
+        "seed": 20261113010,
+        "template": "near_collision_plus5",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "near_collision_plus5",
+        "targets": [
+          {
+            "range_bin": 157.2594452638924,
+            "doppler_bin": 19.55388312748546,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.8470739599062747,
+            "azimuth_deg": -27.379484963168117,
+            "velocity_direction_deg": -75.51098041538418,
+            "signed_speed_m_s": 1.1285967636771268,
+            "radial_velocity_m_s": 0.7532517843124991,
+            "range_m": 6.474407360144178
+          },
+          {
+            "range_bin": 787.897226319462,
+            "doppler_bin": 96.86941563742732,
+            "amplitude": 0.13395094638199428,
+            "initial_phase_rad": -2.077998407919066,
+            "azimuth_deg": 28.374775854237143,
+            "velocity_direction_deg": -21.56631760456427,
+            "signed_speed_m_s": 5.798221068187878,
+            "radial_velocity_m_s": 3.7315892551099887,
+            "range_m": 32.43790916698065
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          5,
+          20
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "010_near_collision_plus5",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\010_near_collision_plus5_input.npz",
+        "sha256": "608dff69395f2f5bb096b537be727daf7ff61ae1509062b918263832aff5fda4"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\010_near_collision_plus5_spectra.npz",
+      "source_arrays_sha256": "8935c07ae611f3121b7918cb6cc7a5a1839a8ceeb0c6c0ddd7f1643d7b14788f",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\010_near_collision_plus5_solver.json",
+      "solver_report_sha256": "7d170eb11f211ed2b77d3e02e94d5216252fe36acd5346bc79ede03211030c3f",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    },
+    {
+      "id": "train_new_011_n2_strong_weak_offgrid",
+      "metadata": {
+        "seed": 20261113011,
+        "template": "n2_strong_weak_offgrid",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 628.6658919466347,
+            "doppler_bin": -26.932513704320623,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.686412356484799,
+            "azimuth_deg": -20.257068759674475,
+            "velocity_direction_deg": -6.828860203335175,
+            "signed_speed_m_s": -1.0666507538876113,
+            "radial_velocity_m_s": -1.037490296507114,
+            "range_m": 25.88231868083185
+          },
+          {
+            "range_bin": 931.6380061106992,
+            "doppler_bin": -210.36548222389047,
+            "amplitude": 0.08120726646763836,
+            "initial_phase_rad": 2.7278169448895753,
+            "azimuth_deg": -48.150652992161994,
+            "velocity_direction_deg": -45.9805478657558,
+            "signed_speed_m_s": -8.10948393358637,
+            "radial_velocity_m_s": -8.103667890914812,
+            "range_m": 38.355749975026086
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "range_design_m": [
+          20,
+          39.5
+        ],
+        "note": "仅距离重映射，点频RD仿真；非完整近场或车载运动模型",
+        "id": "011_n2_strong_weak_offgrid",
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\011_n2_strong_weak_offgrid_input.npz",
+        "sha256": "53a16169a7ff008f520bdcf1c702433a7f5a15bc0a4deb830e48c80bc42f43a2"
+      },
+      "source_arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\011_n2_strong_weak_offgrid_spectra.npz",
+      "source_arrays_sha256": "66c389d91517020739099293f53c9da23d28f9c4dd9e108160d7efc8ef194ba4",
+      "model_key": "model",
+      "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\011_n2_strong_weak_offgrid_solver.json",
+      "solver_report_sha256": "b3b22f14e1b52505053298d29d498336c1d2c96dd3a471474fe43535d47e4818",
+      "origin": "新生成train_new",
+      "sources": {
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+        "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+      }
+    }
+  ],
+  "sources": {
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\build_report.py": "5b8a1f0009541d8af95e449c68ccf3fc68183f3c5c167fa345c19ee6a750651d",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\diagnose_geometry.py": "402f068f04aaf7e8bf6e62a335ccbc7dfb84dc39ebf3c31bed0f34af2e349fa0",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\features48.py": "15bccac599931c366c83bffdb79fb2f71523ddd9cacf63bfeddd1ca70800fca2",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\infer.py": "63cc8ed21d26ff773e735e6561b2add897e40ba68ad369c3d88bf9a85b5fedba",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\model48.py": "ae79a431467b2b22fa65718448203aa703cc81c7b597247f6562de22075da2d9",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\numerical_check.py": "f2807abd10cb63a3e1eb7c26bebce118c6c744e269b3a3e6af7ada75550cc391",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\preflight_features.py": "e891100192bc3022964f2970bb8dc013c908d793ee09daff71c2bed6692b3ff8",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\baseline\\scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\standard_check.py": "45e35323b78a6b900f6f887976c1057d47c569ec3a405c7d6a90eea4de6c9149",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\PROTOCOL.json": "b52ca6a182fdaf5b7e9847e04952fbddadd5363a37b48065eb780ea949f42a87",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\run.py": "e07f6b782296e2b5f7c34e2d1b362ee90356e3c0f74a8a75a86dc66d626d5965",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\experiment_v2.py": "3be66e49c4cd53bc2b40294ee9fcd5451b39470d5177f5e83937306ca390ea2b",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\PROTOCOL.json": "5f583be8fb7cecee1d4880c39f71fd413cb3df2a4014a33dc2cdf17c52c3a10f",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\solver.py": "bc4f06cc5eadd70e992004735d7c2ad52a8722dcbc29f2a9558259dc276ab563"
+  },
+  "frozen_sha256": null
+}

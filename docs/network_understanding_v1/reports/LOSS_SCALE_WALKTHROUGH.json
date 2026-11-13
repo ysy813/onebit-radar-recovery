@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_matches_selected_snapshot": true,
+    "three_source_derivatives_match_independent_formulas": true,
+    "common_relative_error_and_gain": true,
+    "amplitude_gradient_scales_quadratically": true,
+    "log_gradient_ratio_matches_offset_formula": true,
+    "head_equal_in_this_smooth_l1_linear_regime": true,
+    "epsilon_breaks_exact_ratio_target_invariance": true,
+    "all_other_loss_terms_zero_for_specified_masks": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Specified equal-weight two-score batch; all masks set to zero for algebra, not real training statistics",
+  "rows": [
+    {
+      "input_amplitude": 0.1,
+      "reference_amplitude": 0.12,
+      "reference_to_input_ratio": 1.2,
+      "specified_score": -1.0,
+      "specified_gain": 0.5,
+      "predicted_amplitude": 0.05,
+      "unclipped_ratio_target": 0.2630344058337938,
+      "smoothed_clipped_target": 0.2630103631203604,
+      "score_derivatives": {
+        "log2_gain_head": -0.175,
+        "log_amplitude": -0.06795560593724953,
+        "amplitude_squared": -0.04852030263919616
+      }
+    },
+    {
+      "input_amplitude": 0.001,
+      "reference_amplitude": 0.0012,
+      "reference_to_input_ratio": 1.2,
+      "specified_score": -1.0,
+      "specified_gain": 0.5,
+      "predicted_amplitude": 0.0005,
+      "unclipped_ratio_target": 0.2630344058337938,
+      "smoothed_clipped_target": 0.2606517545227997,
+      "score_derivatives": {
+        "log2_gain_head": -0.175,
+        "log_amplitude": -0.02310490601866485,
+        "amplitude_squared": -4.8520302639196165e-06
+      }
+    }
+  ],
+  "weak_to_strong_absolute_gradient_ratios": {
+    "log2_gain_head": 1.0,
+    "log_amplitude": 0.34000000000000014,
+    "amplitude_squared": 0.0001
+  },
+  "qualifications": [
+    "These are specified scores, not current MLP predictions",
+    "Masks and equal weights are held fixed; actual selection and normalized denominators may differ",
+    "The comparison concerns partial score derivatives, not MLP parameter updates or Adam steps",
+    "Log loss still gives vanishing score gradients as predicted amplitude tends to zero",
+    "Head gradients are equal here because both residuals are in the same SmoothL1 linear branch",
+    "The epsilon and valid-input cutoff prevent exact scale invariance of all head supervision",
+    "No component ablation benefit or actual weak-target learning rate is measured"
+  ],
+  "source_sha256": {
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18"
+  },
+  "script_sha256": "db08eb878594cddc34369a51ad30937a0077235b42d0eced5d4b6837c479610d",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_score_autograd_run": true,
+  "model_instantiated": false,
+  "model_backward_run": false,
+  "optimizer_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "radar_data_read": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false,
+  "original_full_quality_status_preserved": "FAIL"
+}

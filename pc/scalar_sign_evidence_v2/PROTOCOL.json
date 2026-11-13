@@ -1,0 +1,25 @@
+{
+ "date":"2026-11-11",
+ "purpose":"候选补全与组合适配消融；无窗、无新网络训练、无硬件修改",
+ "baseline":"scalar_multipeak48_v1/candidate/f40_repair/model_float.pt",
+ "development_sources":["scalar_sign_evidence_v1/data/test/007_n8_strong_weak.npz","scalar_sign_evidence_v1/data/test/009_collision_plus5_offgrid.npz"],
+ "splits":{
+  "validation":{"seed_base":2026117100,"templates":["single_offgrid_a","n4_spread","n8_near_pairs","n8_strong_weak","collision_plus5_offgrid","n2_strong_weak_offgrid"]},
+  "test":{"seed_base":2026118100,"templates":["single_grid_a","single_offgrid_a","n4_spread","n4_near_pairs","n4_strong_weak","n8_spread","n8_near_pairs","n8_strong_weak","collision_minus3_grid","collision_plus5_offgrid","near_collision_plus5","n2_strong_weak_offgrid"]}
+ },
+ "data":"新仿真种子；1024x512，先叠加所有复回波、统一缩放至实虚峰4000并取整，再对I/Q>=0取+64否则-64。无噪/杂波/窗。保存原始ADC、±1符号、多比特和单比特Xilinx位精确FFT功率。开发复用旧已知失败帧，非盲测。",
+ "solver":{"candidate_limit":24,"initial_candidates":16,"candidate_min_relative":0.008,"candidate_nms_radius":2,"fit_samples":4096,"evidence_samples":4096,"sample_seed":2026111191,"group_l1":0.0003,"ridge":0.0001,"amplitude_iterations":120,"frequency_iterations":160,"ablation_iterations":100,"pruning_iterations":100,"pruning_mismatch_max":0.001,"frequency_bound_bins":0.55,"logistic_temperature":1.0},
+ "candidate_arms":"两组先用相同原FFT前16候选与4096拟合符号估计回波。fft24组补原FFT后8候选；residual24组将拟合位置的q-csign(Aa)零填充至完整矩阵作FFT，取不与已有候选5x5重叠的前8峰，幅值门槛0.008相对于残差谱峰。不足8个以原FFT候选补齐。残差仅作提议，不能当作弱目标回波。两组均再以同一预算联合拟合/删减和同4096证据观测评估。最终候选数均不超过24，残差组多一次残差FFT；实际时间单列。",
+ "evidence":"沿用v1 logistic与符号错配两种改善。新增安全接口不采用v1的冗余强压规则；H0可解释观测不等于H1不存在。模型未收敛或证据不充分仍标不确定。",
+ "interfaces":{
+  "old40":"旧网络使用原单比特功率，不改变输入",
+  "v1_gate":"本轮同帧原v1算法与已冻结门槛的旧组合，作为迁移前对照",
+  "support_only":"残差恢复的H1/H0均收敛、logistic改善下界>0.001、符号错误改善下界>0、相对复系数>0.01时，5x5输出至少旁路；其他保持旧网，不额外压低",
+  "parallel":"(1-alpha)*旧网输出+alpha*残差恢复谱，alpha从0.25/0.5/0.75只用验证集选择；支持区域至少旧网/旁路较大值，其他不把模型的缺失直接当确定伪峰。输出非负。仍可能误压，必须评估",
+  "serial":"将残差恢复的归一化幅值平方乘原单比特功率峰得到uint64代理功率，再送冻结旧40维与旧保护。是分布适配压力对照；代理尺度非物理绝对功率，未重训不能判定所有串接都不适合"
+ },
+ "selection":"主要候选预定residual24_parallel；验证先最少新增逐目标半幅失败，再全部半幅失败，再参考外峰，再目标MAE，alpha并列按小值。冻结后生成最终test，不在最终测试改参数或换主候选。",
+ "gates":{"origin":"助手研究判据，非行业标准","no_new_half_vs_old":true,"all_targets_half":true,"artifact_ratio_to_old_max":0.9,"mae_increase_max":0.005,"max_target_retention_drop":0.05},
+ "metrics":"同位置参考峰保留率、所有/新增半幅失败、已失败目标进一步衰减；参考外-40dB峰和逐阶纯谐波最差/中位；候选召回(真值只用于事后)；CPU耗时、迭代收敛；参考外峰不等于CFAR虚警率",
+ "deployment_ready":false
+}

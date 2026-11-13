@@ -1,0 +1,23 @@
+{
+  "selection_input": "actual_chirps metadata already required by the power guard",
+  "profiles": {
+    "128": {
+      "model": "frozen_v2",
+      "float_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+      "runtime_weights_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+      "changed": false
+    },
+    "512": {
+      "model": "guardaware_conservative_alpha0p75",
+      "float_sha256": "1f23ac6c6de3708e179ae8ffd3081aa3831751d080c500c13101cee36e76e83b",
+      "changed": true
+    }
+  },
+  "reason": "Actual radar1 deployment uses512 valid chirps. Joint fine tuning created two numerical peak losses on128 development frames; retain the proven original128 function instead of accepting that regression.",
+  "no_reference_or_case_id_used_for_routing": true,
+  "hardware_target_actual_chirps": 512,
+  "weights_per_profile": 1857,
+  "macs_per_pixel": 1808,
+  "one_profile_inference_per_frame": true,
+  "declared_before_fresh_test": true
+}

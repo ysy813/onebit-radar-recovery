@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-12",
+  "purpose": "固定v2残差恢复，训练40维后级网络适应恢复谱并重点抑制强伪峰",
+  "initial_model": "scalar_multipeak48_v1/candidate/f40_repair/model_float.pt",
+  "fixed_frontend": "scalar_sign_evidence_v2/solver.py；参数原样使用v2/PROTOCOL.json；无窗、叠加后两电平±64",
+  "training_sources": "v2开发/验证/测试20帧、融合扫描的新测试12帧，均已看过，现明确转为训练；另生成12帧新训练，共44帧",
+  "templates": ["single_grid_a","single_offgrid_a","n4_spread","n4_near_pairs","n4_strong_weak","n8_spread","n8_near_pairs","n8_strong_weak","collision_minus3_grid","collision_plus5_offgrid","near_collision_plus5","n2_strong_weak_offgrid"],
+  "seeds": {"train_new": 20261113000,"validation": 20261114000,"test": 20261115000,"sampling": 720121,"training": 720122},
+  "new_scene_ranges": "新场景按模板序号轮换1–5m、5–20m、20–39.5m父目标范围；重新映射普通目标距离，整数频点四舍五入，谐波重合位置按更新后父目标重算并保留折叠，可能越出40m。每组12帧不是完整车载模拟。",
+  "model": {"structure":"40→32→16→1，1857参数；32个基础量派生40维，不新增特征","gain_min":0.015625,"gain_max":1.5,"score_min":-6,"score_max":0.5849625007211562,"train_guards":false,"initialization":"两组均从相同旧40维权重继续训练，有历史实测数据影响；不是随机初始化"},
+  "arms": {"adapt":"输入适配对照，基础幅值/分数监督与主要目标约束","suppress":"预定主候选，同适配损失，额外加强强伪峰分数、谐波和超额能量惩罚"},
+  "training": {"steps":8000,"batch_size":512,"learning_rate":0.0007,"checkpoints":[2000,4000,6000,8000],"device":"CPU","threads":2,"shared_batch_sampling":true},
+  "sampling": "每帧真目标5×5及参考峰中心、最强128个参考外局部伪峰5×5、各阶纯谐波/互调候选背景、恢复谱最强512像素、2048随机像素；保留源帧/像素索引。批次25%目标区域、50%伪影区域、25%全部池。",
+  "loss": "共同：幅值MSE×4、分数SmoothL1×0.2、主要目标中心幅值MSE×12、弱目标中心MSE×1；suppress另加伪影分数SmoothL1×2、伪影正超额幅值MSE×12。分数目标log2((Y+1e-6)/(X+1e-6))限于[-6,log2(1.5)]；对原始分数监督以避免限幅区零梯度。主要目标定义为参考中心相对幅值≥0.25，仅训练/评价使用，不用于推理。",
+  "selection": "每组仅验证集选checkpoint：先最少40m内主要目标半幅失败，再最少参考外峰均值，再最低最强参考外峰跨帧最大值、平均参考外超额能量、目标MAE。不按弱目标失败否决。主接口为suppress无保护，不事后改选有保护接口。",
+  "quality": {"range_m_max":40,"main_target_relative_amplitude_min":0.25,"main_retention_min":0.5,"false_peak_ratio_vs_model_max":0.8,"false_peak_ratio_vs_old_serial_max":0.9,"mean_excess_ratio_vs_model_max":0.8,"worst_false_peak_no_greater_than_model":true},
+  "criteria_origin": "助手预声明的小规模研究目标，不是行业标准；用户允许弱目标损失但未规定数值比例。弱目标损失/增强及各距离分组完整报告，不改称无目标遗漏。",
+  "evaluation": "同帧比较原单比特旧网、独立恢复、恢复接冻结旧网、适配对照、主候选无保护、同主候选加旧保护。背景在<=40m内优先统计，全自然频谱另报；真目标9×9排除，参考外峰沿用v2口径。",
+  "deployment_ready": false
+}

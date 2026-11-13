@@ -1,0 +1,421 @@
+{
+  "status": "PASS",
+  "scope": "Ten constructed independent scores only; masks are specified for algebra, not extracted from radar data",
+  "checks": {
+    "selected_training_source_hash_verified": true,
+    "eight_source_terms_captured": true,
+    "all_eighty_derivatives_match_source_autograd": true,
+    "total_derivative_matches_source": true,
+    "ten_total_derivatives_match_finite_difference": true,
+    "background_and_weak_point_have_opposite_directions": true,
+    "clipping_blocks_amplitude_but_not_valid_head": true,
+    "exact_zero_input_has_no_direct_score_gradient": true,
+    "tiny_input_has_amplitude_gradient_without_head": true,
+    "incompatible_references_require_tradeoff": true,
+    "shared_parameter_coupling_algebra_verified": true,
+    "frozen_sources_unchanged": true
+  },
+  "examples": [
+    {
+      "name": "过估计点",
+      "x": 0.3,
+      "y": 0.01,
+      "raw": -1.0,
+      "support": 0,
+      "known": 0,
+      "low": 0,
+      "centers": 0,
+      "excess": 1,
+      "gain": 0.5,
+      "predicted_amplitude": 0.15,
+      "target_score": -3.0,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.1039720770839918,
+      "term_score_derivatives": {
+        "log2_gain_head": 0.006862745098039215,
+        "log_amplitude": 0.002257563284854887,
+        "amplitude_squared": 0.00954497756836646,
+        "support_nonregression": 0.0,
+        "center_relative_nonregression": 0.0,
+        "artifact_overestimate": 5.458534046909568,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": 0.0
+      },
+      "total_score_derivative": 5.477199332860828,
+      "finite_difference": 5.477199332304394,
+      "scalar_negative_gradient_direction": "decrease_score"
+    },
+    {
+      "name": "被压低的受支持弱点",
+      "x": 0.018,
+      "y": 0.02,
+      "raw": -1.3219280948873622,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 1,
+      "excess": 0,
+      "gain": 0.4,
+      "predicted_amplitude": 0.0072,
+      "target_score": 0.15192298599946533,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.004990659700031605,
+      "term_score_derivatives": {
+        "log2_gain_head": -0.11666666666666665,
+        "log_amplitude": -0.03392291679349752,
+        "amplitude_squared": -0.0007121098693290999,
+        "support_nonregression": -0.004436141955583649,
+        "center_relative_nonregression": -0.11090354888959124,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": -1.996263880012642
+      },
+      "total_score_derivative": -2.2629052641873106,
+      "finite_difference": -2.262905264949211,
+      "scalar_negative_gradient_direction": "increase_score"
+    },
+    {
+      "name": "轻微误压的受支持点",
+      "x": 0.018,
+      "y": 0.02,
+      "raw": -0.15200309344504995,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 0,
+      "excess": 0,
+      "gain": 0.9,
+      "predicted_amplitude": 0.0162,
+      "target_score": 0.15192298599946533,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.011228984325071113,
+      "term_score_derivatives": {
+        "log2_gain_head": -0.018771904906867122,
+        "log_amplitude": -0.019264365025855892,
+        "amplitude_squared": -0.0002518237796179883,
+        "support_nonregression": -0.0,
+        "center_relative_nonregression": -0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": -2.2457968650142224
+      },
+      "total_score_derivative": -2.284084958726564,
+      "finite_difference": -2.2840849589478296,
+      "scalar_negative_gradient_direction": "increase_score"
+    },
+    {
+      "name": "低背景被增强",
+      "x": 0.001,
+      "y": 0.0001,
+      "raw": 0.32192809488736235,
+      "support": 0,
+      "known": 0,
+      "low": 1,
+      "centers": 0,
+      "excess": 1,
+      "gain": 1.25,
+      "predicted_amplitude": 0.00125,
+      "target_score": -3.0,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.0008664339756999317,
+      "term_score_derivatives": {
+        "log2_gain_head": 0.006862745098039215,
+        "log_amplitude": 0.0012625631704188442,
+        "amplitude_squared": 6.533764406917517e-07,
+        "support_nonregression": 0.0,
+        "center_relative_nonregression": 0.0,
+        "artifact_overestimate": 0.0014651491109522422,
+        "low_background_boost": 0.021660849392498294,
+        "explicit_peak_protection": 0.0
+      },
+      "total_score_derivative": 0.031251960148349286,
+      "finite_difference": 0.0312519596867844,
+      "scalar_negative_gradient_direction": "decrease_score"
+    },
+    {
+      "name": "分数低于下限",
+      "x": 0.08,
+      "y": 0.002,
+      "raw": -5.0,
+      "support": 0,
+      "known": 0,
+      "low": 1,
+      "centers": 0,
+      "excess": 1,
+      "gain": 0.125,
+      "predicted_amplitude": 0.01,
+      "target_score": -3.0,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.0,
+      "term_score_derivatives": {
+        "log2_gain_head": -0.006862745098039215,
+        "log_amplitude": 0.0,
+        "amplitude_squared": 0.0,
+        "support_nonregression": 0.0,
+        "center_relative_nonregression": 0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": 0.0
+      },
+      "total_score_derivative": -0.006862745098039216,
+      "finite_difference": -0.0068627450389158184,
+      "scalar_negative_gradient_direction": "increase_score"
+    },
+    {
+      "name": "分数高于上限",
+      "x": 0.03,
+      "y": 0.03,
+      "raw": 2.0,
+      "support": 1,
+      "known": 0,
+      "low": 0,
+      "centers": 0,
+      "excess": 0,
+      "gain": 1.499999999250199,
+      "predicted_amplitude": 0.044999999977505964,
+      "target_score": 0.0,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.0,
+      "term_score_derivatives": {
+        "log2_gain_head": 0.02745098039215686,
+        "log_amplitude": 0.0,
+        "amplitude_squared": 0.0,
+        "support_nonregression": 0.0,
+        "center_relative_nonregression": 0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": 0.0
+      },
+      "total_score_derivative": 0.027450980392156862,
+      "finite_difference": 0.027450980155663274,
+      "scalar_negative_gradient_direction": "decrease_score"
+    },
+    {
+      "name": "输入严格为零",
+      "x": 0.0,
+      "y": 0.02,
+      "raw": -0.4,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 0,
+      "excess": 0,
+      "gain": 0.757858283255199,
+      "predicted_amplitude": 0.0,
+      "target_score": 0.5849625,
+      "head_valid": false,
+      "amplitude_branch_score_derivative": 0.0,
+      "term_score_derivatives": {
+        "log2_gain_head": -0.0,
+        "log_amplitude": -0.0,
+        "amplitude_squared": -0.0,
+        "support_nonregression": -0.0,
+        "center_relative_nonregression": -0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": -0.0
+      },
+      "total_score_derivative": 0.0,
+      "finite_difference": 0.0,
+      "scalar_negative_gradient_direction": "no_direct_score_gradient"
+    },
+    {
+      "name": "微小输入未进入增益头监督",
+      "x": 1e-06,
+      "y": 1e-06,
+      "raw": -0.7,
+      "support": 0,
+      "known": 0,
+      "low": 1,
+      "centers": 0,
+      "excess": 0,
+      "gain": 0.6155722066724582,
+      "predicted_amplitude": 6.155722066724581e-07,
+      "target_score": 0.0,
+      "head_valid": false,
+      "amplitude_branch_score_derivative": 4.266821394860783e-07,
+      "term_score_derivatives": {
+        "log2_gain_head": -0.0,
+        "log_amplitude": -1.398097204599207e-06,
+        "amplitude_squared": -1.0755965464584099e-13,
+        "support_nonregression": -0.0,
+        "center_relative_nonregression": -0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": -0.0
+      },
+      "total_score_derivative": -1.3980973121588617e-06,
+      "finite_difference": -1.3979928326079971e-06,
+      "scalar_negative_gradient_direction": "increase_score"
+    },
+    {
+      "name": "参考超出增强上限",
+      "x": 0.02,
+      "y": 0.08,
+      "raw": 0.8,
+      "support": 1,
+      "known": 1,
+      "low": 0,
+      "centers": 1,
+      "excess": 0,
+      "gain": 1.499999999250199,
+      "predicted_amplitude": 0.029999999985003977,
+      "target_score": 0.5849625,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.0,
+      "term_score_derivatives": {
+        "log2_gain_head": 0.02508770833333333,
+        "log_amplitude": -0.0,
+        "amplitude_squared": -0.0,
+        "support_nonregression": -0.0,
+        "center_relative_nonregression": -0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": -0.0
+      },
+      "total_score_derivative": 0.025087708333333333,
+      "finite_difference": 0.025087708355187033,
+      "scalar_negative_gradient_direction": "decrease_score"
+    },
+    {
+      "name": "已达到最强允许衰减",
+      "x": 0.08,
+      "y": 0.002,
+      "raw": -3.4,
+      "support": 0,
+      "known": 0,
+      "low": 1,
+      "centers": 0,
+      "excess": 1,
+      "gain": 0.125,
+      "predicted_amplitude": 0.01,
+      "target_score": -3.0,
+      "head_valid": true,
+      "amplitude_branch_score_derivative": 0.0,
+      "term_score_derivatives": {
+        "log2_gain_head": -0.0027450980392156855,
+        "log_amplitude": 0.0,
+        "amplitude_squared": 0.0,
+        "support_nonregression": 0.0,
+        "center_relative_nonregression": 0.0,
+        "artifact_overestimate": 0.0,
+        "low_background_boost": 0.0,
+        "explicit_peak_protection": 0.0
+      },
+      "total_score_derivative": -0.0027450980392156855,
+      "finite_difference": -0.0027450979267484854,
+      "scalar_negative_gradient_direction": "increase_score"
+    }
+  ],
+  "per_term_maximum_derivative_error": {
+    "log2_gain_head": 1.3877787807814457e-17,
+    "log_amplitude": 6.938893903907228e-18,
+    "amplitude_squared": 1.0842021724855044e-19,
+    "support_nonregression": 8.673617379884035e-19,
+    "center_relative_nonregression": 1.3877787807814457e-17,
+    "artifact_overestimate": 0.0,
+    "low_background_boost": 3.469446951953614e-18,
+    "explicit_peak_protection": 4.440892098500626e-16
+  },
+  "total_maximum_derivative_error": 4.440892098500626e-16,
+  "maximum_finite_difference_error": 7.619003206116304e-10,
+  "identical_feature_squared_loss_examples": [
+    {
+      "weights": [
+        1.0,
+        1.0
+      ],
+      "common_input": 0.02,
+      "two_incompatible_references": [
+        0.002,
+        0.018
+      ],
+      "optimal_common_output": 0.009999999999999998,
+      "optimal_common_gain": 0.4999999999999999,
+      "squared_errors": [
+        6.399999999999997e-05,
+        6.4e-05
+      ],
+      "weighted_score_gradient_at_optimum": -2.0328790734103208e-20,
+      "both_references_exactly_recovered": false
+    },
+    {
+      "weights": [
+        1.0,
+        9.0
+      ],
+      "common_input": 0.02,
+      "two_incompatible_references": [
+        0.002,
+        0.018
+      ],
+      "optimal_common_output": 0.016399999999999998,
+      "optimal_common_gain": 0.8199999999999998,
+      "squared_errors": [
+        0.00020735999999999994,
+        2.560000000000002e-06
+      ],
+      "weighted_score_gradient_at_optimum": -2.168404344971009e-20,
+      "both_references_exactly_recovered": false
+    }
+  ],
+  "shared_parameter_algebra_example": {
+    "scope": "Generic scalar quadratic illustration; no current MLP evaluated or changed",
+    "jacobians": [
+      1.0,
+      4.0
+    ],
+    "targets": [
+      -2.0,
+      1.0
+    ],
+    "original_scores": [
+      0.0,
+      0.0
+    ],
+    "loss_derivatives_with_respect_to_scores": [
+      2.0,
+      -1.0
+    ],
+    "total_parameter_gradient": -2.0,
+    "hypothetical_learning_rate": 0.01,
+    "hypothetical_scores_after_step": [
+      0.02,
+      0.08
+    ],
+    "exact_linear_score_change": [
+      0.02,
+      0.08
+    ],
+    "individual_losses_before": [
+      2.0,
+      0.5
+    ],
+    "individual_losses_after": [
+      2.0402,
+      0.4232
+    ],
+    "total_loss_decreases": true,
+    "first_sample_loss_increases": true
+  },
+  "warning": "Score-space negative-gradient direction is not a guarantee of the shared MLP or Adam update direction",
+  "source_sha256": {
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_score_autograd_run": true,
+  "model_instantiated": false,
+  "model_backward_run": false,
+  "optimizer_run": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

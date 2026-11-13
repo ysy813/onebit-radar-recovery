@@ -1,0 +1,61 @@
+{
+  "revision": "radar1_scalar_compact_sd_fix_v1",
+  "ready_for_board_test": true,
+  "board_tested": false,
+  "experimental": true,
+  "quality_certified": false,
+  "upstream_overall_quality_status": "FAIL",
+  "parent_revision": "radar1_scalar_compact_exp_v1",
+  "software_issue": "SD-START-001",
+  "hardware_signature": "0x71",
+  "hardware_rebuilt": false,
+  "hardware_bit_sha256": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb",
+  "mode": "onebit_network_storage",
+  "control_word": 15,
+  "model": "scalar_restore_v3_compact_weakfix",
+  "model_weights_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+  "storage_always_raw": true,
+  "full_system_timing_signoff": false,
+  "inherited_timing": {
+    "wns_ns": 0.192,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.01,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 0.046,
+    "tpws_ns": 0.0,
+    "pulse_width_failing_endpoints": 0
+  },
+  "software_validation": {
+    "status": "PASS",
+    "regression_cases": [
+      "original_stale_zero_reproduces_FR_OK_bw_0",
+      "recount_header_2MiB_readback_keeper_FAT_mirror_and_remount",
+      "already_correct_free_count",
+      "stale_nonzero_free_count",
+      "genuinely_full_refused_without_writes",
+      "insufficient_one_cluster_refused_without_writes",
+      "FAT_read_error_refused_without_writes"
+    ],
+    "original_package_and_software_unchanged": true,
+    "original_bit_reused_exactly": true,
+    "psu_init_unchanged": true,
+    "bsp_headers_and_libraries_unchanged": true,
+    "raw_store_and_readback_functions_unchanged": true,
+    "elf_aarch64": true,
+    "elf_load_end_exclusive": "0x012bc100",
+    "aq_ar_exact": true,
+    "startup_scan_before_dma_and_network": true,
+    "board_tested": false,
+    "physical_card_modified_by_agent": false
+  },
+  "sha256": {
+    "design_1_wrapper.bit": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb",
+    "psu_init.tcl": "f68e32c9a0606771ba522dd494ed73f17244d198e309c6ac220cf8ceb6392cd1",
+    "onebit_network_storage.elf": "8e7f7b98ec059565df2636f15d4434f14106cb19963e12644d6961d5675bd5d5",
+    "program_onebit_network_storage.tcl": "00dc2cbfe7d452b18ebaccde538c283fb9ff75330b0dba1e90ccf1ee12f19c32",
+    "program_common.tcl": "5c44e7a11245ced9ee383bb79f18e8ab173edf3b95492078df53ada8a743b3f3",
+    "修复说明与操作步骤.md": "0dcffefe415f4d95fcb9eeba60c051f24875c0e5e1df3700eba92ce24fc5be33"
+  }
+}

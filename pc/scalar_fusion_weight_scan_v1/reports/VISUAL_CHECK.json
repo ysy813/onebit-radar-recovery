@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "method": "实际打开生成图像检查",
+  "files": ["results/validation_scan.png", "results/007_n8_strong_weak.png"],
+  "chinese_titles_axes_legends_rendered": true,
+  "missing_glyph_boxes_observed": false,
+  "critical_clipping_observed": false,
+  "note": "扫描曲线明确区分原保护与纯融合；新帧图统一−60～0dB色阶，4×2最大值池化仅用于预览。"
+}

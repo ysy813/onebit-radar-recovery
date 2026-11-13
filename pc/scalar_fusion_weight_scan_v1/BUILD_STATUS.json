@@ -1,0 +1,8 @@
+{
+  "status": "PC_SCAN_COMPLETE",
+  "selected_alpha": 0.0,
+  "quality_pass": false,
+  "validation_quality_pass": false,
+  "deployment_ready": false,
+  "weights_retrained": false
+}

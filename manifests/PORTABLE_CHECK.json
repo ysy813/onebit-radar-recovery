@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "frames": [
+    {
+      "id": "test_000_single_grid_a",
+      "output_max_abs_error": 0.0,
+      "gain_max_abs_error": 0.0,
+      "pixels": 524288
+    },
+    {
+      "id": "test_001_single_offgrid_a",
+      "output_max_abs_error": 0.0,
+      "gain_max_abs_error": 0.0,
+      "pixels": 524288
+    }
+  ],
+  "zero_input": "PASS",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "scipy": "1.16.2",
+  "torch": "2.8.0+cpu",
+  "new_quality_evaluation": false
+}

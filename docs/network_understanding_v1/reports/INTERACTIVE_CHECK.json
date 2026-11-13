@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "Teaching visualization runtime and layout only",
+  "rows": [
+    {
+      "viewport": 760,
+      "beta": 0.1,
+      "quantWeak": 2.0014206960205777e-16,
+      "symbolChange": 0,
+      "svgWidth": 728,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 760,
+      "beta": 0.3,
+      "quantWeak": 2.0014206960205777e-16,
+      "symbolChange": 0,
+      "svgWidth": 728,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 760,
+      "beta": 0.6,
+      "quantWeak": 0.5194059464715383,
+      "symbolChange": 19.59228515625,
+      "svgWidth": 728,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 360,
+      "beta": 0.1,
+      "quantWeak": 2.0014206960205777e-16,
+      "symbolChange": 0,
+      "svgWidth": 328,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 360,
+      "beta": 0.3,
+      "quantWeak": 2.0014206960205777e-16,
+      "symbolChange": 0,
+      "svgWidth": 328,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 360,
+      "beta": 0.6,
+      "quantWeak": 0.5194059464715383,
+      "symbolChange": 19.59228515625,
+      "svgWidth": 328,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 320,
+      "beta": 0.1,
+      "quantWeak": 2.0014206960205777e-16,
+      "symbolChange": 0,
+      "svgWidth": 288,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 320,
+      "beta": 0.3,
+      "quantWeak": 2.0014206960205777e-16,
+      "symbolChange": 0,
+      "svgWidth": 288,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    },
+    {
+      "viewport": 320,
+      "beta": 0.6,
+      "quantWeak": 0.5194059464715383,
+      "symbolChange": 19.59228515625,
+      "svgWidth": 288,
+      "noHorizontalOverflow": true,
+      "labelsOutsideSVG": []
+    }
+  ],
+  "browserErrors": [],
+  "legendToggle": true,
+  "modelModified": false,
+  "boardAccessed": false
+}

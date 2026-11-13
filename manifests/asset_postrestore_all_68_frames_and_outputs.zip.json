@@ -1,0 +1,915 @@
+{
+  "file": "postrestore_all_68_frames_and_outputs.zip",
+  "kind": "完整68帧输入/恢复谱、训练特征池及映射、最终输出；不包含所有历史实验数据",
+  "bytes": 1388073769,
+  "sha256": "5419f4bf4f372ea122ace186f150491c1f41274cc121bf254c6703cb06be35ed",
+  "files": [
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/000_single_grid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\000_single_grid_a.npz",
+      "bytes": 174575,
+      "sha256": "23a2450753d5e0a600cc922d3c6d967dabc673c0d08f9dd600d436c49219575a"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/001_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\001_single_offgrid_a.npz",
+      "bytes": 4892944,
+      "sha256": "7301813839101840192baae08ca9b20fe6197c8304afb7519259b8c5bcc8399e"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/002_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\002_n4_spread.npz",
+      "bytes": 5899329,
+      "sha256": "03591e29e9f1b71760734f0a1a6d8d760d11202cba3d458d78d94b4e0965823f"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/003_n4_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\003_n4_near_pairs.npz",
+      "bytes": 6523825,
+      "sha256": "455acd6ba9fb19f94cb3761b54b0a0e80ce67f976409010f9307f06a2c82311c"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/004_n4_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\004_n4_strong_weak.npz",
+      "bytes": 5780341,
+      "sha256": "9cb1d20d5cdd9896eb98e1d18b4b2afa66bcb84262468f5412acdcdb8081b41e"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/005_n8_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\005_n8_spread.npz",
+      "bytes": 6947444,
+      "sha256": "82c910c21f93106b8c09e8868dfa487521125555e36ec69629cb16f6ea61e302"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/006_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\006_n8_near_pairs.npz",
+      "bytes": 6040885,
+      "sha256": "9131a741022aac89f20d6c658bcbdff46adc86491998984f740c132f02e20bfd"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\007_n8_strong_weak.npz",
+      "bytes": 6713912,
+      "sha256": "7963600316f7a0fbbbdecde548ad681a0b7f8e7b5f75c45112cc4f100739e02a"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/008_collision_minus3_grid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\008_collision_minus3_grid.npz",
+      "bytes": 81483,
+      "sha256": "b5e473edcbd09cd575ba53bbe7f57d0cd5c4680e7d6715ebeffffa31b072f2f1"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\009_collision_plus5_offgrid.npz",
+      "bytes": 5860923,
+      "sha256": "9e17402675bd2edf641ab80ebe7d2f8b0327034029f76f12ecbea0c44665e093"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/010_near_collision_plus5.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\010_near_collision_plus5.npz",
+      "bytes": 5931148,
+      "sha256": "e6d42e7da37b8ce4c8fffa4c43423a4aec271c9fcd318816b68c230369a126ae"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/data/test/011_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\011_n2_strong_weak_offgrid.npz",
+      "bytes": 6216423,
+      "sha256": "22595c328d9546fd07ff8bd64119c312bd6ce3374b55c3d1c4eba372dfa995c4"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/000_single_grid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\000_single_grid_a.npz",
+      "bytes": 4033132,
+      "sha256": "57f52117bdfe693abf7953167391429d45ccc27e22a7e437e5a3c1d7bafea86a"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/001_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\001_single_offgrid_a.npz",
+      "bytes": 13141916,
+      "sha256": "7edb1923c315649baf3be6944e147cbbc062d5a10552d17aba73bbea1bdab407"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/002_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\002_n4_spread.npz",
+      "bytes": 13046825,
+      "sha256": "c7f30da11214931ff75f5d73f369b17bbe921edddfc8943976874fdbae2a16c1"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/003_n4_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\003_n4_near_pairs.npz",
+      "bytes": 13168525,
+      "sha256": "0104986ff7e556d59498c2ccbeb76e1a76fd8d2562305dbfbd6f6d10e767e5ab"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/004_n4_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\004_n4_strong_weak.npz",
+      "bytes": 13046795,
+      "sha256": "0d7bfe5c919c2484c06f83490fe2d4d6cc1d086fa3f711daf5cae38a75f3cd4f"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/005_n8_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\005_n8_spread.npz",
+      "bytes": 13153590,
+      "sha256": "e979eeffab744d878e84616ad7abb14a0429f202dca4031aa5bf59bb522777c3"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/006_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\006_n8_near_pairs.npz",
+      "bytes": 13007160,
+      "sha256": "f3ed64db28905b617bee01ff240890c0bdddb55bc197c906ae628c46dbee4baf"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\007_n8_strong_weak.npz",
+      "bytes": 13166447,
+      "sha256": "405360413328bcae2e112b7f4ffbc28dc3382666b30560a3e99922cb089cee3f"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/008_collision_minus3_grid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\008_collision_minus3_grid.npz",
+      "bytes": 3679580,
+      "sha256": "ab9739b098e7b9f4b73346abd8d52125bf6eecac960f1de5d16466b2340d6ec1"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\009_collision_plus5_offgrid.npz",
+      "bytes": 13163541,
+      "sha256": "738da42cc2bbdf5cea22f859a150d0d194731d7cf0e0f95b370def690eb4a48b"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/010_near_collision_plus5.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\010_near_collision_plus5.npz",
+      "bytes": 13198073,
+      "sha256": "8094e38dd1f56954b421c18c913894608e90ef5acac81e0f0de8a8f808fb1a27"
+    },
+    {
+      "path": "pc/scalar_fusion_weight_scan_v1/results/arrays/011_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\011_n2_strong_weak_offgrid.npz",
+      "bytes": 13201927,
+      "sha256": "78178f5fdd47219f96c5620591b9bd530f2b13d8e1f3b850c47f29be541273ca"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/000_single_grid_a_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\000_single_grid_a_input.npz",
+      "bytes": 51330,
+      "sha256": "cb7714ce45e9abca7340198b3eaa52f21540c2b9050ecae4802b583671816c4d"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/000_single_grid_a_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\000_single_grid_a_spectra.npz",
+      "bytes": 1840239,
+      "sha256": "0a6bbdcec09699cb6cf72d720087989a5e74ad6713daae47c96e9ebfab9acf20"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/001_single_offgrid_a_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\001_single_offgrid_a_input.npz",
+      "bytes": 5438101,
+      "sha256": "bbb2dd47284de8d4d447f6f609106b4f7ab123e0fbda130fb7a42b7e5ed44108"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/001_single_offgrid_a_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\001_single_offgrid_a_spectra.npz",
+      "bytes": 7528461,
+      "sha256": "5542dd853e15daf26d45724caee379f7a122f5a0362dcd267297a464dde9991f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/002_n4_spread_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\002_n4_spread_input.npz",
+      "bytes": 5907368,
+      "sha256": "b3d201f26d0172f3e6ca6d2d0b3b4537590a8e621518fb7bb1f075537b36007b"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/002_n4_spread_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\002_n4_spread_spectra.npz",
+      "bytes": 7403144,
+      "sha256": "bb8fd2e8f30b80ee9bdaa72255cca590de24dc93324f977cc9c849603399ba7f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/003_n4_near_pairs_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\003_n4_near_pairs_input.npz",
+      "bytes": 6635381,
+      "sha256": "8ddf5b301be4923f1a406f3ec94822b2829a211cb868d4a13f69b2199ce24411"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/003_n4_near_pairs_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\003_n4_near_pairs_spectra.npz",
+      "bytes": 7520084,
+      "sha256": "a10cdec9c71697dbc1339b2241a9594fc5b2d640642e9ae13936d065b20bb989"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/004_n4_strong_weak_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\004_n4_strong_weak_input.npz",
+      "bytes": 5733796,
+      "sha256": "1665d9068454fb6fea7eba1f7ddb870e1d2f4f358021bcfde2cf84a9564d8299"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/004_n4_strong_weak_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\004_n4_strong_weak_spectra.npz",
+      "bytes": 7404044,
+      "sha256": "f1e4c29deb5848ac98569e3ec6b595c0646f3bd796f462137137c71b3702518a"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/005_n8_spread_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\005_n8_spread_input.npz",
+      "bytes": 6790802,
+      "sha256": "cad95daac6c4f50ed3f57b5925e352b310ae8295161d88c0eabaeddd4d4851c6"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/005_n8_spread_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\005_n8_spread_spectra.npz",
+      "bytes": 7533017,
+      "sha256": "58db025e3a2f23d6ee7b9e9cda0bf0020ec7541e1a0fb554a122c81c6a5b518c"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/006_n8_near_pairs_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\006_n8_near_pairs_input.npz",
+      "bytes": 6027730,
+      "sha256": "a5f1010ab647100881cf15f44e47af1581d48b4e06b200722eb7e4ac4e8dc748"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/006_n8_near_pairs_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\006_n8_near_pairs_spectra.npz",
+      "bytes": 7385856,
+      "sha256": "f75668f4416770154efe4c07b51450292460acdb334fd246aebffccc7fed305d"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/007_n8_strong_weak_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\007_n8_strong_weak_input.npz",
+      "bytes": 6697447,
+      "sha256": "a750684778935b1b947156d920e70f47253924a847fc5c1d2d8de82824c7de00"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/007_n8_strong_weak_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\007_n8_strong_weak_spectra.npz",
+      "bytes": 7507533,
+      "sha256": "5288fb5c0b1c61d47598af8b84722d2d257359b7c9e3272a6d89ecce60e118e3"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/008_collision_minus3_grid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\008_collision_minus3_grid_input.npz",
+      "bytes": 61732,
+      "sha256": "9dca6d35f06f191cc68b8c9d8cb92d8000fb97e0ef5ba78a48e3686aeda74275"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/008_collision_minus3_grid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\008_collision_minus3_grid_spectra.npz",
+      "bytes": 1806504,
+      "sha256": "70cbf0c640a69f4ce5769519aa0fa60010e6882a4730fbc1c8922f2572995f1f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/009_collision_plus5_offgrid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\009_collision_plus5_offgrid_input.npz",
+      "bytes": 5480217,
+      "sha256": "2b2034416df25ac67560c2f80fa18d45da0e56fbf4db02991e6a32bbc080ad6d"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/009_collision_plus5_offgrid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\009_collision_plus5_offgrid_spectra.npz",
+      "bytes": 7509719,
+      "sha256": "210941c11d957ea043df47952d97de641feebd6ba9e35d9d8d2213ee5da23242"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/010_near_collision_plus5_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\010_near_collision_plus5_input.npz",
+      "bytes": 6133983,
+      "sha256": "dfde69d6446f3dfa70dbcf8fd5085c7c117e0e4dc76177c2ea95a394dde838d3"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/010_near_collision_plus5_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\010_near_collision_plus5_spectra.npz",
+      "bytes": 7522516,
+      "sha256": "f3aac772bf50cb9e7fce2d91a11f4017f2516324f9e0fabf76030cdcfc88d83f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/011_n2_strong_weak_offgrid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\011_n2_strong_weak_offgrid_input.npz",
+      "bytes": 6353209,
+      "sha256": "bd50c560268f936f36de8593f52e09d2f05cd4f768b3c94b5e520261ac098d6c"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/test/011_n2_strong_weak_offgrid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\test\\011_n2_strong_weak_offgrid_spectra.npz",
+      "bytes": 7542543,
+      "sha256": "1ca1b723ec7c86fe9db36babf4786043e950a6b124e4496b582ed6f88d472016"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/000_single_grid_a_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\000_single_grid_a_input.npz",
+      "bytes": 315017,
+      "sha256": "479ead8b23c0add6114c80fa1cf85be364a8bd1faeaa4de3a36de8baba1f4df3"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/000_single_grid_a_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\000_single_grid_a_spectra.npz",
+      "bytes": 2345261,
+      "sha256": "ac6f96dbe45fc697fe41e2559909702cf2d3828e48ec04a8753409fe16e72344"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/001_single_offgrid_a_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\001_single_offgrid_a_input.npz",
+      "bytes": 5457083,
+      "sha256": "6cfaf4d8183f641260005c062777f6cf4460e575d98a2bccfff50cc950aeca32"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/001_single_offgrid_a_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\001_single_offgrid_a_spectra.npz",
+      "bytes": 7504336,
+      "sha256": "a25f7ca0c8a3761c087c47a20617610cbf986bc650a7de0cc574dc99a000c3be"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/002_n4_spread_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\002_n4_spread_input.npz",
+      "bytes": 5933711,
+      "sha256": "a1daa379de13964fdb412094650ddcaf70c8d5036a2d24e96873ae3f37a3a823"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/002_n4_spread_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\002_n4_spread_spectra.npz",
+      "bytes": 7412506,
+      "sha256": "e25d97bd200dc08e637553c5bd8fb1df59b35edd91e1a8b86ed4fa2dafc0e6ef"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/003_n4_near_pairs_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\003_n4_near_pairs_input.npz",
+      "bytes": 6655081,
+      "sha256": "db2a5df12506897b8fce4ace82749721e648a9eff78c2e5776005233bbdf31c5"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/003_n4_near_pairs_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\003_n4_near_pairs_spectra.npz",
+      "bytes": 7498379,
+      "sha256": "8635e2841fa5406b4e2385b94e9b28192d57b2d7a84f622551b8a55467795230"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/004_n4_strong_weak_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\004_n4_strong_weak_input.npz",
+      "bytes": 5154144,
+      "sha256": "25b2fa3952437a3d45d486612a4ece0fc9e3b53209c9f4d76675ba70baabf8b4"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/004_n4_strong_weak_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\004_n4_strong_weak_spectra.npz",
+      "bytes": 6872701,
+      "sha256": "b8ff12a47fea1a59f6e14390147c0a1dab03c02437da0ddabc08ee7c2a39c2c7"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/005_n8_spread_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\005_n8_spread_input.npz",
+      "bytes": 6626696,
+      "sha256": "d74b7366a2c279753de5eeafb7a27a72604f9f4aed5e061f3f24f3567b0c27c0"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/005_n8_spread_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\005_n8_spread_spectra.npz",
+      "bytes": 7521229,
+      "sha256": "cceb2d7ff1cb5567d025e5626b3ff39e5c77d9c6519d9a58729bba914f21e35d"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/006_n8_near_pairs_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\006_n8_near_pairs_input.npz",
+      "bytes": 4425665,
+      "sha256": "20c0c2e1d197ba9e2d9c6010c417005a715ae7b069393369155953c4a0813839"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/006_n8_near_pairs_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\006_n8_near_pairs_spectra.npz",
+      "bytes": 5558597,
+      "sha256": "192bf7142180f10ea0f9ad3f75285b47cd1c84e1245d9c891fcc17ff396b4e8a"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/007_n8_strong_weak_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\007_n8_strong_weak_input.npz",
+      "bytes": 6690946,
+      "sha256": "1ea88cd0250aa0f546fee3945c966ad81fc4d4c2627821e87710c6ab79d9113f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/007_n8_strong_weak_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\007_n8_strong_weak_spectra.npz",
+      "bytes": 7534748,
+      "sha256": "20a496de0fc9d161dd6c1e48c63d7a4a96c4de03d16c08b562938d09b58b7f97"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/008_collision_minus3_grid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\008_collision_minus3_grid_input.npz",
+      "bytes": 105340,
+      "sha256": "eebea388dff0b9fbe8a595084321a6ec3ebea57a3134afbe986cf934782f27bc"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/008_collision_minus3_grid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\008_collision_minus3_grid_spectra.npz",
+      "bytes": 1843272,
+      "sha256": "6d2c156315c0e12594d9c1767a9405b9b78e305a0c2eae4bf1215351e9522266"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/009_collision_plus5_offgrid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\009_collision_plus5_offgrid_input.npz",
+      "bytes": 5562981,
+      "sha256": "4dcc924c5fd6f0c1da2346e67381e5968218fb5a19ec13be3f0346d17d2dbfa9"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/009_collision_plus5_offgrid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\009_collision_plus5_offgrid_spectra.npz",
+      "bytes": 7530837,
+      "sha256": "7679088767e2fb3566f6ec4fa068d819713bb546c2cb7e356aa18765eaaabb7f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/010_near_collision_plus5_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\010_near_collision_plus5_input.npz",
+      "bytes": 6407761,
+      "sha256": "608dff69395f2f5bb096b537be727daf7ff61ae1509062b918263832aff5fda4"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/010_near_collision_plus5_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\010_near_collision_plus5_spectra.npz",
+      "bytes": 7530582,
+      "sha256": "8935c07ae611f3121b7918cb6cc7a5a1839a8ceeb0c6c0ddd7f1643d7b14788f"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/011_n2_strong_weak_offgrid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\011_n2_strong_weak_offgrid_input.npz",
+      "bytes": 6274803,
+      "sha256": "53a16169a7ff008f520bdcf1c702433a7f5a15bc0a4deb830e48c80bc42f43a2"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_new/011_n2_strong_weak_offgrid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_new\\011_n2_strong_weak_offgrid_spectra.npz",
+      "bytes": 7531974,
+      "sha256": "66c389d91517020739099293f53c9da23d28f9c4dd9e108160d7efc8ef194ba4"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/train_pool.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_pool.npz",
+      "bytes": 3561279,
+      "sha256": "768f276b5412c117f5130a581d546b0256e4438edf7755fc1c7c25d9617e7174"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/000_single_grid_a_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\000_single_grid_a_input.npz",
+      "bytes": 83381,
+      "sha256": "a7b88bbe4329683dfc73bb01705342f0ac4f359857cfb7b4092a5bb2211d5c6b"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/000_single_grid_a_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\000_single_grid_a_spectra.npz",
+      "bytes": 1992170,
+      "sha256": "94c65778de61ada400866d7405dec832e2e3bb6ffaaf4f6e0aa249f941f0df8c"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/001_single_offgrid_a_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\001_single_offgrid_a_input.npz",
+      "bytes": 5562584,
+      "sha256": "48da712457a4c56bc08fa6db2f5d4c8d794f162efe3e7651283d28a89b4a61b0"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/001_single_offgrid_a_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\001_single_offgrid_a_spectra.npz",
+      "bytes": 7523784,
+      "sha256": "758005601d3dad85f8d30262bdede5078ea833a7c70a21dfb16cea8ed876f4e4"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/002_n4_spread_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\002_n4_spread_input.npz",
+      "bytes": 5927652,
+      "sha256": "788a5d29d0be8481e6bb621ca333576c7306f71253d52bc0eed56618d03781ca"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/002_n4_spread_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\002_n4_spread_spectra.npz",
+      "bytes": 7416924,
+      "sha256": "46c3253a201f9dcfdc8a9e9d4a2848c08ae84a351878bd60eac818c13ead094d"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/003_n4_near_pairs_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\003_n4_near_pairs_input.npz",
+      "bytes": 6671175,
+      "sha256": "55818041e47f8440781917d03f9f08a67a5ae3b928274db6c22879d76ca521df"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/003_n4_near_pairs_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\003_n4_near_pairs_spectra.npz",
+      "bytes": 7515558,
+      "sha256": "022dc58b33f2ca3b0e474b72fbecc738e9503e3b2efc209e7c80a33205462c45"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/004_n4_strong_weak_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\004_n4_strong_weak_input.npz",
+      "bytes": 5732373,
+      "sha256": "6fd6a24a89839fd83d2898a410672218be030d46d05362ed24dde6982d882b52"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/004_n4_strong_weak_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\004_n4_strong_weak_spectra.npz",
+      "bytes": 7399602,
+      "sha256": "0e3098d54c3607614c55ff39a72b62355f51d8fbd907baab8384a47ed7066f98"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/005_n8_spread_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\005_n8_spread_input.npz",
+      "bytes": 6781749,
+      "sha256": "e0efe713f259b58c51d4161be97b235c8724127699f160af54b1b72070e5a82b"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/005_n8_spread_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\005_n8_spread_spectra.npz",
+      "bytes": 7527067,
+      "sha256": "e8c7535afb13897397adeb081b018b4b50578db2c0f8ec05dfddfc345a40c5d2"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/006_n8_near_pairs_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\006_n8_near_pairs_input.npz",
+      "bytes": 6021390,
+      "sha256": "960fbdfda952580c9662fd21fed99875e77924b560074cd540218b8dc7b0f47e"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/006_n8_near_pairs_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\006_n8_near_pairs_spectra.npz",
+      "bytes": 7395705,
+      "sha256": "cce13d16b72bc2bcfa4629015a2bb93b5105030b1a66de7282789b36b9ed5c88"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/007_n8_strong_weak_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\007_n8_strong_weak_input.npz",
+      "bytes": 6682305,
+      "sha256": "bddf045992745d086f3166c2b6d371f1bbde2a206af82199c4d1820bfcb2a0ab"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/007_n8_strong_weak_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\007_n8_strong_weak_spectra.npz",
+      "bytes": 7532219,
+      "sha256": "f271b3097e640d43cbb85d18d72477644a8bcd50218e4ceb82f843cad29dd872"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/008_collision_minus3_grid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\008_collision_minus3_grid_input.npz",
+      "bytes": 270168,
+      "sha256": "e476a3ebf9dbeeca91c989f67706ef3a0b1d16bbd2188d85807b3ca4dff1f7e9"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/008_collision_minus3_grid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\008_collision_minus3_grid_spectra.npz",
+      "bytes": 2204039,
+      "sha256": "b1563e5d1615647b1b4430295c34def3dd0402ef9ef8a06dd672be6abbb44922"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/009_collision_plus5_offgrid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\009_collision_plus5_offgrid_input.npz",
+      "bytes": 4865621,
+      "sha256": "5ae4883e639579de3bfee02aa4d1a2c67d42080aec4374ef5ac451032cfb8f40"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/009_collision_plus5_offgrid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\009_collision_plus5_offgrid_spectra.npz",
+      "bytes": 7501381,
+      "sha256": "b3f386ed5b5ae234fff2160f3d46a0a44c93e2410168dd774257823e2117e012"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/010_near_collision_plus5_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\010_near_collision_plus5_input.npz",
+      "bytes": 6321760,
+      "sha256": "8b84b00c1b0462c0da8301340ed15e0c48a6087c38f819fed31d7a3f3962c911"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/010_near_collision_plus5_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\010_near_collision_plus5_spectra.npz",
+      "bytes": 7540277,
+      "sha256": "31787e25c34a4e1daf8e4bf745821c8e3c2c00fcbfa1a9bfaceac74a492c2c7e"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/011_n2_strong_weak_offgrid_input.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\011_n2_strong_weak_offgrid_input.npz",
+      "bytes": 6055094,
+      "sha256": "3f63263cd096d653ffa4167bdb40b5332e53c52ae8c767c7ea14e7276ac26032"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/data/validation/011_n2_strong_weak_offgrid_spectra.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\validation\\011_n2_strong_weak_offgrid_spectra.npz",
+      "bytes": 7543048,
+      "sha256": "da5d9a6f0cbd77cb6dca35e853a3af79133d1a5e5ea9500cee00d5bc56e42e09"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/reports/CLI_INPUT.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\reports\\CLI_INPUT.npz",
+      "bytes": 1888259,
+      "sha256": "fd0d3d23b375090ffb4e4bf812f84bce21c282d337a423f6d978a61e5d287cb5"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/reports/CLI_OUTPUT.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\reports\\CLI_OUTPUT.npz",
+      "bytes": 2960537,
+      "sha256": "848744bf3901b0784f95ccb6418588501335e29da89e9e244152bbb7b545e2e0"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_000_single_grid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_000_single_grid_a.npz",
+      "bytes": 9114799,
+      "sha256": "06e33771795549c71483c88c0c76d291430db0ad2397441f5506dcc02dd14b0a"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_001_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_001_single_offgrid_a.npz",
+      "bytes": 14997514,
+      "sha256": "e700cd5cc80800959cafbb5367d3f6662776ffee56af762d7b3447974f4c3397"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_002_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_002_n4_spread.npz",
+      "bytes": 14936487,
+      "sha256": "857c636e36134f7a8da7bafc60c1c811db3dbc84fbfe181f1015dc7f3dbb2a74"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_003_n4_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_003_n4_near_pairs.npz",
+      "bytes": 14986461,
+      "sha256": "58a521e8501eec8557ae0bc14d584f46b982cd334a6964611463f17bda35250e"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_004_n4_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_004_n4_strong_weak.npz",
+      "bytes": 14976339,
+      "sha256": "363a7e34593aa8c16113880fbe295f4f3ea6af0f9da8a896f4333e4a438f0f6a"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_005_n8_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_005_n8_spread.npz",
+      "bytes": 15014432,
+      "sha256": "1ef1113544c73a7d0599aa5b02ade513e00d31be09c312fc4ab0487346b01819"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_006_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_006_n8_near_pairs.npz",
+      "bytes": 14937554,
+      "sha256": "4cd1720da8c9496e7ced583134b047bada44e58a30b3f4bd4fa90bf8c6453ab9"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_007_n8_strong_weak.npz",
+      "bytes": 14982260,
+      "sha256": "f6d266ad8787998ed30a6ac5f1e69afa8642cd935166d3118d67aac1a5bd4731"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_008_collision_minus3_grid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_008_collision_minus3_grid.npz",
+      "bytes": 8799747,
+      "sha256": "2d6c410b97423c7cb7117ec04eea3fa32109e24986e8dc8254ccacb664dc4315"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_009_collision_plus5_offgrid.npz",
+      "bytes": 14945546,
+      "sha256": "eb7ac9a1cb68834d2e7567d5c037fda1141a60b679e4978fab05f7a5959abec1"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_010_near_collision_plus5.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_010_near_collision_plus5.npz",
+      "bytes": 14987900,
+      "sha256": "75f909e489d70b0cfb874df495f8abf89fbbafd57974cc6d12c0b238499fae89"
+    },
+    {
+      "path": "pc/scalar_postrestore_suppress_v1/results/arrays/test_011_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\results\\arrays\\test_011_n2_strong_weak_offgrid.npz",
+      "bytes": 15022239,
+      "sha256": "18518482dd4f6d2c6207dc0e892c7cf89d72769d0b3e5842dc3e136354ec32d0"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v1/data/test/007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\007_n8_strong_weak.npz",
+      "bytes": 6731539,
+      "sha256": "c19f22744fd75019f627f8f77d3ee5d541aaedd303656937962474ac879e6218"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v1/data/test/009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\009_collision_plus5_offgrid.npz",
+      "bytes": 5371806,
+      "sha256": "94fcee42f7fb62db65976d24b305b324f9404b5e23d420826bea835781dc8825"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/000_single_grid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\000_single_grid_a.npz",
+      "bytes": 38103,
+      "sha256": "2defbe5e99d899734f39c8c2b5883edc729235cb8d23239aab20237030cf70ca"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/001_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\001_single_offgrid_a.npz",
+      "bytes": 5395582,
+      "sha256": "a433efda247eda1e6548a9c67e91f1d16b16902f162c3d7c46add1c8e138f151"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/002_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\002_n4_spread.npz",
+      "bytes": 5889750,
+      "sha256": "3d4ce00d7198c7c09d80c35c68184169d5c81332810e633901c0e4601afd43b3"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/003_n4_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\003_n4_near_pairs.npz",
+      "bytes": 6532108,
+      "sha256": "36190787c3971343bae483df92660a7bdc8b77301794bab0256c72f1c01624dd"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/004_n4_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\004_n4_strong_weak.npz",
+      "bytes": 5743029,
+      "sha256": "3e8aac39b2bf74d1a00e65f57f6048486a9f8b88fd6df8bf3521aed8f1464462"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/005_n8_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\005_n8_spread.npz",
+      "bytes": 6873916,
+      "sha256": "1ad82d209bdd7665e36367a2e481d6995fc0ed9f5b5dfd4b8c27c51c919b1766"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/006_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\006_n8_near_pairs.npz",
+      "bytes": 6011397,
+      "sha256": "2194a0dfddc2f118d0769dfc02ae16af4f58e697cdfe208c0b525d2b8ab27a99"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\007_n8_strong_weak.npz",
+      "bytes": 6730910,
+      "sha256": "d03fae47cce96fb5a1e52f8fba43cf2177339d24e8ed6d592f76a800e2ea4c35"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/008_collision_minus3_grid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\008_collision_minus3_grid.npz",
+      "bytes": 217516,
+      "sha256": "ba1143377b4c7dde3bdd8c21d728f417694f989b02c24d8348d72794194db0fd"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\009_collision_plus5_offgrid.npz",
+      "bytes": 5702642,
+      "sha256": "6839b5982a7edbfddc0189292516213849b836abd827ebfc325b04b7aa3b6c2c"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/010_near_collision_plus5.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\010_near_collision_plus5.npz",
+      "bytes": 6047083,
+      "sha256": "2cdfd7c94d47747df351fdbd2702c52601574865cb6e59c68cd73bda08b2375e"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/test/011_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\test\\011_n2_strong_weak_offgrid.npz",
+      "bytes": 6347211,
+      "sha256": "845ceb102bebc9b6dd3931a64907b2a7a70f6b8b4adfef34d5061e4ba8580a80"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/validation/000_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\000_single_offgrid_a.npz",
+      "bytes": 4807487,
+      "sha256": "1b249e9ece5562cb37832c1255ebbd12cfa7a9365bf31f52a794bb9deed31036"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/validation/001_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\001_n4_spread.npz",
+      "bytes": 6721314,
+      "sha256": "2116ea337039b81bffb73ab8222782f51552f3bd87e13b088fd55f4254d2c862"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/validation/002_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\002_n8_near_pairs.npz",
+      "bytes": 5968838,
+      "sha256": "a43ad37882a70d95ae3ccf69f0616bad03cae43cea2f470b00de94c62b63a2df"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/validation/003_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\003_n8_strong_weak.npz",
+      "bytes": 6669160,
+      "sha256": "3edcd1b2e191c134cc29b47d00e0b218d825f7d7b71cd0280e60695229e0f039"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/validation/004_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\004_collision_plus5_offgrid.npz",
+      "bytes": 4773520,
+      "sha256": "1f929dc6107f892d6ed67873d2f38499d90806a3a0465e18174aad7c9123df2b"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/data/validation/005_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\data\\validation\\005_n2_strong_weak_offgrid.npz",
+      "bytes": 6421518,
+      "sha256": "b865999d7426471ce9add9ef522c58390f1aa173abc75aa75c74505532296d7e"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/development/007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\development\\007_n8_strong_weak.npz",
+      "bytes": 30043395,
+      "sha256": "1de6ba13ee4b2ff4ff337776c5ea73304457eb1b62ec000d2da66ad062de9995"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/development/009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\development\\009_collision_plus5_offgrid.npz",
+      "bytes": 30027674,
+      "sha256": "113ddde6c3e8af4a15bd8c483bea3a6f3b4ac77737c5ab30ecd8e6e6aa482503"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/000_single_grid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\000_single_grid_a.npz",
+      "bytes": 11284625,
+      "sha256": "0dd91b8dc798db398a49d9b7f63182a5b7939a8d6594cb793fc49c81f344e39e"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/001_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\001_single_offgrid_a.npz",
+      "bytes": 22627563,
+      "sha256": "cf96a2db79d57fa98ccdfd820ced87d4e1c6a8a2a0c113ec079785ae8ee00dce"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/002_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\002_n4_spread.npz",
+      "bytes": 22510539,
+      "sha256": "49ee999360d97e20cf131461d283a5bda031357d4ea4c44caa98e6a41fc61a92"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/003_n4_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\003_n4_near_pairs.npz",
+      "bytes": 22595490,
+      "sha256": "4115bce8bb2148abdc708bcf19fc26c1f2a3a21edcc42a28391af6c42e8cc869"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/004_n4_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\004_n4_strong_weak.npz",
+      "bytes": 22485881,
+      "sha256": "7aef7898fb9b887ed32e4e050327f69e96dfe52bad4ecf99d81abe516dda8d69"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/005_n8_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\005_n8_spread.npz",
+      "bytes": 22547582,
+      "sha256": "ff4f7bed9a5a70a6c736d3720157697066af501380fc919bd054383e8a2c8f93"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/006_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\006_n8_near_pairs.npz",
+      "bytes": 22453923,
+      "sha256": "7d3c124f96d8054e37ec6cf599467c712f52f626c7c40cd6f9173cdc249b3067"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/007_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\007_n8_strong_weak.npz",
+      "bytes": 22603072,
+      "sha256": "82ca2ffc26846efcd6e7f6252f4b20ce87b242e2879b314f4ba492bcabffd325"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/008_collision_minus3_grid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\008_collision_minus3_grid.npz",
+      "bytes": 11390951,
+      "sha256": "befdf60992710d27e63b5096e419e6fe7b3b034b657175cb7556424f819a563c"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/009_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\009_collision_plus5_offgrid.npz",
+      "bytes": 22404017,
+      "sha256": "04bca76560eeee7825211a1b2a00f9e8bfc465ec01903baf6ece52ee2599006e"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/010_near_collision_plus5.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\010_near_collision_plus5.npz",
+      "bytes": 22669903,
+      "sha256": "8535e7ebfabfb88afc90d5a3d4924cbeef50c621cd08b5b515b4efdd3c5571fb"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/test/011_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\test\\011_n2_strong_weak_offgrid.npz",
+      "bytes": 22631758,
+      "sha256": "9f3f8314bb811fcf818d624789f44433289003cc68bb4065aedb242abee1bd61"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/validation/000_single_offgrid_a.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\000_single_offgrid_a.npz",
+      "bytes": 30084512,
+      "sha256": "2398411a789b483acf85dfb17562d481b4b81c87f6174a65c2d8bcfbf5e15247"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/validation/001_n4_spread.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\001_n4_spread.npz",
+      "bytes": 30074284,
+      "sha256": "05b41b5c928dbbda8da520c0ab4cb0488ddb5d2e8b868ca60ead874d6ecb6707"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/validation/002_n8_near_pairs.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\002_n8_near_pairs.npz",
+      "bytes": 29946134,
+      "sha256": "95a608d6ed9a0d0377941ee8b3f72bf7761d5807463a855410f0381fd3383eb9"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/validation/003_n8_strong_weak.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\003_n8_strong_weak.npz",
+      "bytes": 30038260,
+      "sha256": "7b120c78087a1ab17153c3b329814506e62a99ac09e508f1f0db99f06bce75e2"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/validation/004_collision_plus5_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\004_collision_plus5_offgrid.npz",
+      "bytes": 29977545,
+      "sha256": "b0b46e363c93233faf17496cb1ffb480311a3df7063b2dac3dfc52289326730b"
+    },
+    {
+      "path": "pc/scalar_sign_evidence_v2/results/validation/005_n2_strong_weak_offgrid.npz",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v2\\results\\validation\\005_n2_strong_weak_offgrid.npz",
+      "bytes": 30107261,
+      "sha256": "9c808e3fee964a9f28bef51f1dd9b37a1733670ce1b16912aef8dec7892ec2f1"
+    }
+  ],
+  "zip_readback": "PASS"
+}

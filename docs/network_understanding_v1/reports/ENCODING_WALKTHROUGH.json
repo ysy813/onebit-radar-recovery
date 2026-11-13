@@ -1,0 +1,247 @@
+{
+  "status": "PASS",
+  "checks": {
+    "root_is_monotone_and_invertible_in_ideal_arithmetic": true,
+    "compression_ratio_matches_fifth_root": true,
+    "decoded_means_obey_jensen": true,
+    "decoded_maxima_commute": true,
+    "contrast_sign_counterexample_verified": true,
+    "isolated_peak_mean_gap_exact": true,
+    "gated_decoded_feature_is_rho_to_fifth": true,
+    "specified_flat_window_ratio_mapping_verified": true,
+    "compactness_transition_matches_frozen_formula": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Ideal fifth-root representation, Jensen inequality, gated feature and specified window algebra only",
+  "encoding_examples": [
+    {
+      "relative_amplitude": 1.0,
+      "relative_power": 1.0,
+      "ideal_encoding": 1.0
+    },
+    {
+      "relative_amplitude": 0.1,
+      "relative_power": 0.010000000000000002,
+      "ideal_encoding": 0.6309573444801932
+    },
+    {
+      "relative_amplitude": 0.01,
+      "relative_power": 0.0001,
+      "ideal_encoding": 0.39810717055349726
+    },
+    {
+      "relative_amplitude": 0.001,
+      "relative_power": 1e-06,
+      "ideal_encoding": 0.251188643150958
+    }
+  ],
+  "ideal_inverse_maximum_relative_error": 1.9984014443252818e-15,
+  "ideal_grid_points": 1001,
+  "window_examples": [
+    {
+      "name": "constant_nine",
+      "window_size": 9,
+      "center_amplitude": 0.125,
+      "decoded_encoded_mean": 0.12499999999999997,
+      "raw_amplitude_mean": 0.125,
+      "jensen_gap": 2.7755575615628914e-17,
+      "decoded_maximum": 0.12499999999999997,
+      "raw_amplitude_maximum": 0.125,
+      "center_minus_decoded_mean": 2.7755575615628914e-17,
+      "center_minus_raw_mean": 0.0
+    },
+    {
+      "name": "single_peak_nine",
+      "window_size": 9,
+      "center_amplitude": 0.5,
+      "decoded_encoded_mean": 8.467543904215141e-06,
+      "raw_amplitude_mean": 0.05555555555555555,
+      "jensen_gap": 0.055547088011651334,
+      "decoded_maximum": 0.49999999999999994,
+      "raw_amplitude_maximum": 0.5,
+      "center_minus_decoded_mean": 0.4999915324560958,
+      "center_minus_raw_mean": 0.4444444444444444
+    },
+    {
+      "name": "center_below_raw_mean",
+      "window_size": 9,
+      "center_amplitude": 0.1,
+      "decoded_encoded_mean": 0.00019543415562797128,
+      "raw_amplitude_mean": 0.12222222222222223,
+      "jensen_gap": 0.12202678806659426,
+      "decoded_maximum": 1.0,
+      "raw_amplitude_maximum": 1.0,
+      "center_minus_decoded_mean": 0.09980456584437203,
+      "center_minus_raw_mean": -0.022222222222222227
+    },
+    {
+      "name": "ramp_nine",
+      "window_size": 9,
+      "center_amplitude": 0.0,
+      "decoded_encoded_mean": 0.2722552755689146,
+      "raw_amplitude_mean": 0.5,
+      "jensen_gap": 0.2277447244310854,
+      "decoded_maximum": 1.0,
+      "raw_amplitude_maximum": 1.0,
+      "center_minus_decoded_mean": -0.2722552755689146,
+      "center_minus_raw_mean": -0.5
+    },
+    {
+      "name": "single_peak_eighty_one",
+      "window_size": 81,
+      "center_amplitude": 0.5,
+      "decoded_encoded_mean": 1.4339859953962202e-10,
+      "raw_amplitude_mean": 0.006172839506172839,
+      "jensen_gap": 0.00617283936277424,
+      "decoded_maximum": 0.49999999999999994,
+      "raw_amplitude_maximum": 0.5,
+      "center_minus_decoded_mean": 0.4999999998566014,
+      "center_minus_raw_mean": 0.49382716049382713
+    }
+  ],
+  "isolated_peak_exact_examples": [
+    {
+      "size": 9,
+      "decoded_encoded_mean": 1.6935087808430286e-05,
+      "raw_amplitude_mean": 0.1111111111111111,
+      "decoded_mean_to_raw_mean": 0.00015241579027587258,
+      "exact_ratio": "1/6561",
+      "rational_identity_verified": true
+    },
+    {
+      "size": 31,
+      "decoded_encoded_mean": 3.492943259127733e-08,
+      "raw_amplitude_mean": 0.03225806451612903,
+      "decoded_mean_to_raw_mean": 1.0828124103295972e-06,
+      "exact_ratio": "1/923521",
+      "rational_identity_verified": true
+    },
+    {
+      "size": 81,
+      "decoded_encoded_mean": 2.8679719907924413e-10,
+      "raw_amplitude_mean": 0.012345679012345678,
+      "decoded_mean_to_raw_mean": 2.3230573125418773e-08,
+      "exact_ratio": "1/43046721",
+      "rational_identity_verified": true
+    }
+  ],
+  "encoded_gate_examples": [
+    {
+      "constructed_amplitude": 0.1,
+      "encoded_gate_weight": 0.0,
+      "decoded_amplitude_feature": 0.0,
+      "expected_amplitude_times_rho5": 0.0,
+      "feature_power_equivalent_ratio": 0.0,
+      "identity_absolute_error": 0.0
+    },
+    {
+      "constructed_amplitude": 0.1,
+      "encoded_gate_weight": 0.25,
+      "decoded_amplitude_feature": 9.765625e-05,
+      "expected_amplitude_times_rho5": 9.765625e-05,
+      "feature_power_equivalent_ratio": 9.5367431640625e-07,
+      "identity_absolute_error": 0.0
+    },
+    {
+      "constructed_amplitude": 0.1,
+      "encoded_gate_weight": 0.5,
+      "decoded_amplitude_feature": 0.003125,
+      "expected_amplitude_times_rho5": 0.003125,
+      "feature_power_equivalent_ratio": 0.0009765625,
+      "identity_absolute_error": 0.0
+    },
+    {
+      "constructed_amplitude": 0.1,
+      "encoded_gate_weight": 0.75,
+      "decoded_amplitude_feature": 0.02373046875,
+      "expected_amplitude_times_rho5": 0.02373046875,
+      "feature_power_equivalent_ratio": 0.056313514709472656,
+      "identity_absolute_error": 0.0
+    },
+    {
+      "constructed_amplitude": 0.1,
+      "encoded_gate_weight": 1.0,
+      "decoded_amplitude_feature": 0.1,
+      "expected_amplitude_times_rho5": 0.1,
+      "feature_power_equivalent_ratio": 1.0,
+      "identity_absolute_error": 0.0
+    }
+  ],
+  "gated_maximum_identity_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    5.551115123125783e-17
+  ],
+  "specified_flat_window_thresholds": [
+    {
+      "window_size": 81,
+      "encoded_center_to_mean_ratio": 1.4,
+      "encoded_center_to_flat_background_ratio": 1.407035175879397,
+      "raw_amplitude_center_to_flat_background_ratio": 5.514736607233469,
+      "raw_power_center_to_flat_background_ratio": 30.412319847160912,
+      "raw_power_contrast_db": 14.830495493251256,
+      "constructed_center_encoding": 0.6,
+      "constructed_background_encoding": 0.4264285714285714,
+      "constructed_mean_encoding": 0.4285714285714286,
+      "denominator_floor_inactive": true,
+      "recovered_center_mean_ratio": 1.4,
+      "compactness_only_weight": 0.0
+    },
+    {
+      "window_size": 81,
+      "encoded_center_to_mean_ratio": 1.5,
+      "encoded_center_to_flat_background_ratio": 1.509433962264151,
+      "raw_amplitude_center_to_flat_background_ratio": 7.835569858711987,
+      "raw_power_center_to_flat_background_ratio": 61.3961550107558,
+      "raw_power_contrast_db": 17.881411739115453,
+      "constructed_center_encoding": 0.6,
+      "constructed_background_encoding": 0.39749999999999996,
+      "constructed_mean_encoding": 0.39999999999999997,
+      "denominator_floor_inactive": true,
+      "recovered_center_mean_ratio": 1.5,
+      "compactness_only_weight": 0.5
+    },
+    {
+      "window_size": 81,
+      "encoded_center_to_mean_ratio": 1.6,
+      "encoded_center_to_flat_background_ratio": 1.6120906801007557,
+      "raw_amplitude_center_to_flat_background_ratio": 10.887980542981413,
+      "raw_power_center_to_flat_background_ratio": 118.54812030434185,
+      "raw_power_contrast_db": 20.738946722077213,
+      "constructed_center_encoding": 0.6,
+      "constructed_background_encoding": 0.37218749999999995,
+      "constructed_mean_encoding": 0.37499999999999994,
+      "denominator_floor_inactive": true,
+      "recovered_center_mean_ratio": 1.6,
+      "compactness_only_weight": 1.0
+    }
+  ],
+  "qualifications": [
+    "These are constructed amplitudes and prescribed gate weights, not neural predictions",
+    "Ideal identities have integer-approximation differences in the frozen implementation",
+    "The rho5 factor affects a feature and is not applied directly to FFT power",
+    "Raw contrast mapping applies only to one center plus eighty identical background values with inactive floor",
+    "Compactness weight alone is not the full protection condition or final gain",
+    "No SNR, physical target label or restored-quality result is inferred"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_algebra_run": true,
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_fft_run": false,
+  "full_feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

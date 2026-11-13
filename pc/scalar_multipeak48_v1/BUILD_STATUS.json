@@ -1,0 +1,34 @@
+{
+  "status": "PC_48_FEATURE_ABLATION_COMPLETED",
+  "integrity_pass": true,
+  "quality_pass": false,
+  "feature_value": {
+    "f48_base": {
+      "new_half_losses": 1,
+      "worst_harmonic_regression_db": 4.280380865333181,
+      "conditions": {
+        "no_new_target_loss": false,
+        "harmonic_no_more_than_1db_regression": false,
+        "target_mae": true,
+        "actual_benefit": true
+      },
+      "passed": false
+    },
+    "f48_repair": {
+      "new_half_losses": 0,
+      "worst_harmonic_regression_db": 5.685130215616683,
+      "conditions": {
+        "no_new_target_loss": true,
+        "harmonic_no_more_than_1db_regression": false,
+        "target_mae": true,
+        "actual_benefit": false
+      },
+      "passed": false
+    }
+  },
+  "deployment_ready": false,
+  "bit_rebuilt": false,
+  "board_accessed": false,
+  "primary": "candidate/f48_repair/model_float.pt",
+  "integer_multitarget_coordinate_regression": true
+}

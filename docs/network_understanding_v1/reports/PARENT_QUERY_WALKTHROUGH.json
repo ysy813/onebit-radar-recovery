@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "scope": "Coordinate geometry and existing feature-record teaching only",
+  "checks": {
+    "all_3072_axis_coordinates_match_source": true,
+    "exact_inverse_always_included": true,
+    "forward_tolerance_sets_exhaustively_verified": true,
+    "per_axis_cardinality_verified": true,
+    "two_dimensional_counts_from_cartesian_product": true,
+    "same_maximum_from_different_support_locations": true,
+    "existing_winner_and_gain_preserved": true,
+    "frozen_sources_unchanged": true
+  },
+  "axes": [
+    {
+      "order": -3,
+      "dimension": "range",
+      "length": 1024,
+      "coordinates_checked": 1024,
+      "candidate_centers_per_axis": 3,
+      "support_positions_per_axis": 9,
+      "forward_residual_min": -4,
+      "forward_residual_max": 4,
+      "source_expression_matches_rational_rounding": true,
+      "exact_modular_inverse_always_included": true,
+      "full_forward_residual_set_matches": true,
+      "query_cardinality_constant": true
+    },
+    {
+      "order": -3,
+      "dimension": "doppler",
+      "length": 512,
+      "coordinates_checked": 512,
+      "candidate_centers_per_axis": 3,
+      "support_positions_per_axis": 9,
+      "forward_residual_min": -4,
+      "forward_residual_max": 4,
+      "source_expression_matches_rational_rounding": true,
+      "exact_modular_inverse_always_included": true,
+      "full_forward_residual_set_matches": true,
+      "query_cardinality_constant": true
+    },
+    {
+      "order": 5,
+      "dimension": "range",
+      "length": 1024,
+      "coordinates_checked": 1024,
+      "candidate_centers_per_axis": 5,
+      "support_positions_per_axis": 15,
+      "forward_residual_min": -7,
+      "forward_residual_max": 7,
+      "source_expression_matches_rational_rounding": true,
+      "exact_modular_inverse_always_included": true,
+      "full_forward_residual_set_matches": true,
+      "query_cardinality_constant": true
+    },
+    {
+      "order": 5,
+      "dimension": "doppler",
+      "length": 512,
+      "coordinates_checked": 512,
+      "candidate_centers_per_axis": 5,
+      "support_positions_per_axis": 15,
+      "forward_residual_min": -7,
+      "forward_residual_max": 7,
+      "source_expression_matches_rational_rounding": true,
+      "exact_modular_inverse_always_included": true,
+      "full_forward_residual_set_matches": true,
+      "query_cardinality_constant": true
+    }
+  ],
+  "parent_query_geometry": [
+    {
+      "order": -3,
+      "center_pairs": 9,
+      "encoded_support_points": 81,
+      "forward_child_tolerance_per_axis": 4
+    },
+    {
+      "order": 5,
+      "center_pairs": 25,
+      "encoded_support_points": 225,
+      "forward_child_tolerance_per_axis": 7
+    }
+  ],
+  "maximum_information_loss_example": {
+    "scope": "Constructed encoded-field lookup only; not an IQ scene or neural output",
+    "child": [
+      631,
+      401
+    ],
+    "exact_integer_parent": [
+      131,
+      37
+    ],
+    "alternative_support": [
+      472,
+      208
+    ],
+    "alternative_forward_child": [
+      632,
+      400
+    ],
+    "alternative_forward_residual": [
+      1,
+      -1
+    ],
+    "same_parent_cue_q12": [
+      4096,
+      4096
+    ],
+    "same_parent_cue_does_not_prove_same_other_features": true,
+    "winner_coordinates_are_not_in_the_two_parent_scalar_features": true
+  },
+  "existing_point": {
+    "observed": [
+      774,
+      511
+    ],
+    "existing_winner": [
+      83,
+      0
+    ],
+    "exact_integer_inverse": [
+      766,
+      171
+    ],
+    "winner_in_enumerated_support": true,
+    "winner_forward_residual": [
+      1,
+      1
+    ],
+    "existing_mlp_gain": 0.125,
+    "existing_final_gain": 0.125,
+    "physical_target_truth_available": false
+  },
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "network_understanding_v1/reports/FEATURE_WALKTHROUGH.json": "6f0372ca5fd62c1b626e26780de78f623dd1a776d03a18132e51a8a4b6364dd5"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "radar_feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

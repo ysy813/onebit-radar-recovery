@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="scalar_gain" xd:componentRef="scalar_gain" xd:initiationInterval="x" xd:clockPeriod="8" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(power)" xd:originalName="power" xd:direction="inout" xd:interfaceRef="m_axi_mem" xd:busTypeRef="aximm" xd:dataWidth="64" xd:bufferDirection="in"/>
+  <xd:arg xd:name="power" xd:originalName="power" xd:direction="in" xd:interfaceRef="power" xd:busTypeRef="register" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_mem"/>
+  <xd:arg xd:name="*(work)" xd:originalName="work" xd:direction="inout" xd:interfaceRef="m_axi_mem" xd:busTypeRef="aximm" xd:dataWidth="64" xd:bufferDirection="in"/>
+  <xd:arg xd:name="work" xd:originalName="work" xd:direction="in" xd:interfaceRef="work" xd:busTypeRef="register" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_mem"/>
+  <xd:arg xd:name="suppressed" xd:originalName="suppressed" xd:direction="out" xd:interfaceRef="suppressed" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="peak_power" xd:originalName="peak_power" xd:direction="out" xd:interfaceRef="peak_power" xd:busTypeRef="register" xd:dataWidth="64"/>
+  <xd:latencyEstimates xd:best-case="524301" xd:worst-case="295812315" xd:average-case="147636340"/>
+  <xd:resourceEstimates xd:LUT="48404" xd:FF="37741" xd:BRAM="0" xd:DSP="242"/>
+</xd:acceleratorMap>

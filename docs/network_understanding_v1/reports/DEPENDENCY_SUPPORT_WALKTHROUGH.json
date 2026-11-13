@@ -1,0 +1,1258 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_feature_configuration": true,
+    "expected_local_kernel_shapes_present": true,
+    "rational_parent_centers_match_source_index_expressions": true,
+    "child_31_by_1_plus_3_by_3_support_is_33_by_3": true,
+    "group_sizes_match_for_all_seven_positions": true,
+    "union_upper_bound_holds": true,
+    "selected_illustration_has_disjoint_groups": true,
+    "remote_scale_example_outside_conditional_support": true,
+    "delivered_cnn_maximum_receptive_fields_match": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Structural dependency sets of encoded-field features and delivered CNN topology only",
+  "conditioning": "Encoded field z treated as input; global normalization is a separate all-frame dependency",
+  "rows": [
+    {
+      "position": [
+        131,
+        37
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 585,
+      "overlap_count": 0,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              298,
+              158
+            ],
+            [
+              298,
+              329
+            ],
+            [
+              298,
+              500
+            ],
+            [
+              639,
+              158
+            ],
+            [
+              639,
+              329
+            ],
+            [
+              639,
+              500
+            ],
+            [
+              980,
+              158
+            ],
+            [
+              980,
+              329
+            ],
+            [
+              980,
+              500
+            ]
+          ],
+          "child_center": [
+            631,
+            401
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              110
+            ],
+            [
+              26,
+              212
+            ],
+            [
+              26,
+              315
+            ],
+            [
+              26,
+              417
+            ],
+            [
+              231,
+              7
+            ],
+            [
+              231,
+              110
+            ],
+            [
+              231,
+              212
+            ],
+            [
+              231,
+              315
+            ],
+            [
+              231,
+              417
+            ],
+            [
+              436,
+              7
+            ],
+            [
+              436,
+              110
+            ],
+            [
+              436,
+              212
+            ],
+            [
+              436,
+              315
+            ],
+            [
+              436,
+              417
+            ],
+            [
+              641,
+              7
+            ],
+            [
+              641,
+              110
+            ],
+            [
+              641,
+              212
+            ],
+            [
+              641,
+              315
+            ],
+            [
+              641,
+              417
+            ],
+            [
+              845,
+              7
+            ],
+            [
+              845,
+              110
+            ],
+            [
+              845,
+              212
+            ],
+            [
+              845,
+              315
+            ],
+            [
+              845,
+              417
+            ]
+          ],
+          "child_center": [
+            655,
+            185
+          ]
+        }
+      }
+    },
+    {
+      "position": [
+        83,
+        0
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 576,
+      "overlap_count": 9,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              314,
+              0
+            ],
+            [
+              314,
+              171
+            ],
+            [
+              314,
+              341
+            ],
+            [
+              655,
+              0
+            ],
+            [
+              655,
+              171
+            ],
+            [
+              655,
+              341
+            ],
+            [
+              996,
+              0
+            ],
+            [
+              996,
+              171
+            ],
+            [
+              996,
+              341
+            ]
+          ],
+          "child_center": [
+            775,
+            0
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              17,
+              0
+            ],
+            [
+              17,
+              102
+            ],
+            [
+              17,
+              205
+            ],
+            [
+              17,
+              307
+            ],
+            [
+              17,
+              410
+            ],
+            [
+              221,
+              0
+            ],
+            [
+              221,
+              102
+            ],
+            [
+              221,
+              205
+            ],
+            [
+              221,
+              307
+            ],
+            [
+              221,
+              410
+            ],
+            [
+              426,
+              0
+            ],
+            [
+              426,
+              102
+            ],
+            [
+              426,
+              205
+            ],
+            [
+              426,
+              307
+            ],
+            [
+              426,
+              410
+            ],
+            [
+              631,
+              0
+            ],
+            [
+              631,
+              102
+            ],
+            [
+              631,
+              205
+            ],
+            [
+              631,
+              307
+            ],
+            [
+              631,
+              410
+            ],
+            [
+              836,
+              0
+            ],
+            [
+              836,
+              102
+            ],
+            [
+              836,
+              205
+            ],
+            [
+              836,
+              307
+            ],
+            [
+              836,
+              410
+            ]
+          ],
+          "child_center": [
+            415,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "position": [
+        774,
+        511
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 582,
+      "overlap_count": 3,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              83,
+              0
+            ],
+            [
+              83,
+              171
+            ],
+            [
+              83,
+              342
+            ],
+            [
+              425,
+              0
+            ],
+            [
+              425,
+              171
+            ],
+            [
+              425,
+              342
+            ],
+            [
+              766,
+              0
+            ],
+            [
+              766,
+              171
+            ],
+            [
+              766,
+              342
+            ]
+          ],
+          "child_center": [
+            750,
+            3
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              155,
+              0
+            ],
+            [
+              155,
+              102
+            ],
+            [
+              155,
+              205
+            ],
+            [
+              155,
+              307
+            ],
+            [
+              155,
+              409
+            ],
+            [
+              360,
+              0
+            ],
+            [
+              360,
+              102
+            ],
+            [
+              360,
+              205
+            ],
+            [
+              360,
+              307
+            ],
+            [
+              360,
+              409
+            ],
+            [
+              564,
+              0
+            ],
+            [
+              564,
+              102
+            ],
+            [
+              564,
+              205
+            ],
+            [
+              564,
+              307
+            ],
+            [
+              564,
+              409
+            ],
+            [
+              769,
+              0
+            ],
+            [
+              769,
+              102
+            ],
+            [
+              769,
+              205
+            ],
+            [
+              769,
+              307
+            ],
+            [
+              769,
+              409
+            ],
+            [
+              974,
+              0
+            ],
+            [
+              974,
+              102
+            ],
+            [
+              974,
+              205
+            ],
+            [
+              974,
+              307
+            ],
+            [
+              974,
+              409
+            ]
+          ],
+          "child_center": [
+            798,
+            507
+          ]
+        }
+      }
+    },
+    {
+      "position": [
+        25,
+        0
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 585,
+      "overlap_count": 0,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              333,
+              0
+            ],
+            [
+              333,
+              171
+            ],
+            [
+              333,
+              341
+            ],
+            [
+              674,
+              0
+            ],
+            [
+              674,
+              171
+            ],
+            [
+              674,
+              341
+            ],
+            [
+              1016,
+              0
+            ],
+            [
+              1016,
+              171
+            ],
+            [
+              1016,
+              341
+            ]
+          ],
+          "child_center": [
+            949,
+            0
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              102
+            ],
+            [
+              5,
+              205
+            ],
+            [
+              5,
+              307
+            ],
+            [
+              5,
+              410
+            ],
+            [
+              210,
+              0
+            ],
+            [
+              210,
+              102
+            ],
+            [
+              210,
+              205
+            ],
+            [
+              210,
+              307
+            ],
+            [
+              210,
+              410
+            ],
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              102
+            ],
+            [
+              415,
+              205
+            ],
+            [
+              415,
+              307
+            ],
+            [
+              415,
+              410
+            ],
+            [
+              619,
+              0
+            ],
+            [
+              619,
+              102
+            ],
+            [
+              619,
+              205
+            ],
+            [
+              619,
+              307
+            ],
+            [
+              619,
+              410
+            ],
+            [
+              824,
+              0
+            ],
+            [
+              824,
+              102
+            ],
+            [
+              824,
+              205
+            ],
+            [
+              824,
+              307
+            ],
+            [
+              824,
+              410
+            ]
+          ],
+          "child_center": [
+            125,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "position": [
+        200,
+        148
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 585,
+      "overlap_count": 0,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              275,
+              121
+            ],
+            [
+              275,
+              292
+            ],
+            [
+              275,
+              463
+            ],
+            [
+              616,
+              121
+            ],
+            [
+              616,
+              292
+            ],
+            [
+              616,
+              463
+            ],
+            [
+              957,
+              121
+            ],
+            [
+              957,
+              292
+            ],
+            [
+              957,
+              463
+            ]
+          ],
+          "child_center": [
+            424,
+            68
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              40,
+              30
+            ],
+            [
+              40,
+              132
+            ],
+            [
+              40,
+              234
+            ],
+            [
+              40,
+              337
+            ],
+            [
+              40,
+              439
+            ],
+            [
+              245,
+              30
+            ],
+            [
+              245,
+              132
+            ],
+            [
+              245,
+              234
+            ],
+            [
+              245,
+              337
+            ],
+            [
+              245,
+              439
+            ],
+            [
+              450,
+              30
+            ],
+            [
+              450,
+              132
+            ],
+            [
+              450,
+              234
+            ],
+            [
+              450,
+              337
+            ],
+            [
+              450,
+              439
+            ],
+            [
+              654,
+              30
+            ],
+            [
+              654,
+              132
+            ],
+            [
+              654,
+              234
+            ],
+            [
+              654,
+              337
+            ],
+            [
+              654,
+              439
+            ],
+            [
+              859,
+              30
+            ],
+            [
+              859,
+              132
+            ],
+            [
+              859,
+              234
+            ],
+            [
+              859,
+              337
+            ],
+            [
+              859,
+              439
+            ]
+          ],
+          "child_center": [
+            1000,
+            228
+          ]
+        }
+      }
+    },
+    {
+      "position": [
+        0,
+        0
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 441,
+      "overlap_count": 144,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              171
+            ],
+            [
+              0,
+              341
+            ],
+            [
+              341,
+              0
+            ],
+            [
+              341,
+              171
+            ],
+            [
+              341,
+              341
+            ],
+            [
+              683,
+              0
+            ],
+            [
+              683,
+              171
+            ],
+            [
+              683,
+              341
+            ]
+          ],
+          "child_center": [
+            0,
+            0
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              102
+            ],
+            [
+              0,
+              205
+            ],
+            [
+              0,
+              307
+            ],
+            [
+              0,
+              410
+            ],
+            [
+              205,
+              0
+            ],
+            [
+              205,
+              102
+            ],
+            [
+              205,
+              205
+            ],
+            [
+              205,
+              307
+            ],
+            [
+              205,
+              410
+            ],
+            [
+              410,
+              0
+            ],
+            [
+              410,
+              102
+            ],
+            [
+              410,
+              205
+            ],
+            [
+              410,
+              307
+            ],
+            [
+              410,
+              410
+            ],
+            [
+              614,
+              0
+            ],
+            [
+              614,
+              102
+            ],
+            [
+              614,
+              205
+            ],
+            [
+              614,
+              307
+            ],
+            [
+              614,
+              410
+            ],
+            [
+              819,
+              0
+            ],
+            [
+              819,
+              102
+            ],
+            [
+              819,
+              205
+            ],
+            [
+              819,
+              307
+            ],
+            [
+              819,
+              410
+            ]
+          ],
+          "child_center": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "position": [
+        1023,
+        511
+      ],
+      "encoded_dependency_group_sizes": {
+        "local_statistics_and_neighbors": 81,
+        "parent_-3": 81,
+        "child_-3": 99,
+        "parent_5": 225,
+        "child_5": 99
+      },
+      "summed_group_sizes": 585,
+      "union_encoded_positions": 531,
+      "overlap_count": 54,
+      "centers": {
+        "-3": {
+          "parent_candidate_centers": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              171
+            ],
+            [
+              0,
+              342
+            ],
+            [
+              342,
+              0
+            ],
+            [
+              342,
+              171
+            ],
+            [
+              342,
+              342
+            ],
+            [
+              683,
+              0
+            ],
+            [
+              683,
+              171
+            ],
+            [
+              683,
+              342
+            ]
+          ],
+          "child_center": [
+            3,
+            3
+          ]
+        },
+        "5": {
+          "parent_candidate_centers": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              102
+            ],
+            [
+              0,
+              205
+            ],
+            [
+              0,
+              307
+            ],
+            [
+              0,
+              409
+            ],
+            [
+              205,
+              0
+            ],
+            [
+              205,
+              102
+            ],
+            [
+              205,
+              205
+            ],
+            [
+              205,
+              307
+            ],
+            [
+              205,
+              409
+            ],
+            [
+              409,
+              0
+            ],
+            [
+              409,
+              102
+            ],
+            [
+              409,
+              205
+            ],
+            [
+              409,
+              307
+            ],
+            [
+              409,
+              409
+            ],
+            [
+              614,
+              0
+            ],
+            [
+              614,
+              102
+            ],
+            [
+              614,
+              205
+            ],
+            [
+              614,
+              307
+            ],
+            [
+              614,
+              409
+            ],
+            [
+              819,
+              0
+            ],
+            [
+              819,
+              102
+            ],
+            [
+              819,
+              205
+            ],
+            [
+              819,
+              307
+            ],
+            [
+              819,
+              409
+            ]
+          ],
+          "child_center": [
+            1019,
+            507
+          ]
+        }
+      }
+    }
+  ],
+  "delivered_cnn_receptive_field_widths": {
+    "inputs": 1,
+    "c1": 1,
+    "c2": 3,
+    "c3": 7,
+    "c4": 13,
+    "c5": 21,
+    "h": 21
+  },
+  "ideal_global_scale_example": {
+    "position_outside_selected_support": [
+      900,
+      400
+    ],
+    "peak_power_multiplier": 4,
+    "encoded_value_multiplier": 0.8705505632961241,
+    "assumption": "Fixed point power and all local/associated raw values; only remote maximum rises; ideal continuous encoding"
+  },
+  "qualifications": [
+    "Sets are possible structural reads, not empirical gradients or learned importance",
+    "Overlapping groups are deduplicated; 585 is not valid as a universal exact count",
+    "Actual max selection, gating, rounding, weights and protection may suppress dependence",
+    "Global peak normalization means the full raw-power dependency is not confined to these sets",
+    "A global scalar normalization does not provide an arbitrary learned global interaction",
+    "Local CNN 21x21 and scalar sparse sets do not imply equal information or comparable quality"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "cdqob_pc_online_v1/model.py": "9848e904b03355e182e02913a2396c105feac60d590c50002ed1345cff17064a"
+  },
+  "script_sha256": "9d8c2f1b71bb54ad49fbef7f0074a595a7b14927616cd653d439d9eeff2c0b42",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "coordinate_support_enumeration_run": true,
+  "source_index_expressions_evaluated": true,
+  "radar_data_read": false,
+  "radar_fft_run": false,
+  "full_feature_extraction_run": false,
+  "model_instantiated": false,
+  "neural_layer_run": false,
+  "neural_inference_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false,
+  "original_full_quality_status_preserved": "FAIL"
+}

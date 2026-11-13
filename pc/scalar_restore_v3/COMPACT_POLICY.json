@@ -1,0 +1,31 @@
+{
+  "version": "compact_peak_skip_v1",
+  "network_weights": "frozen_v2",
+  "network_weight_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+  "float_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+  "actual_chirps_changed": [
+    512
+  ],
+  "actual_chirps_unchanged": [
+    128
+  ],
+  "compact_fifthroot_mean9_ratio_transition": [
+    1.4,
+    1.6
+  ],
+  "v2_final_gain_transition": [
+    0.25,
+    0.5
+  ],
+  "input_power_min_relative_to_peak": 0.0001,
+  "weak_power_max_relative_to_peak": 0.0625,
+  "local_max_window": 9,
+  "exclude_explained_strong_third_fifth_harmonics": true,
+  "range_indices": [
+    0,
+    1023
+  ],
+  "output_power_formula": "sat_u64((Pin*g_q14^2+2^27)>>28)",
+  "source_sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+  "no_reference_or_literal_coordinates": true
+}

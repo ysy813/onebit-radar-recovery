@@ -1,0 +1,43 @@
+{
+  "weak_correction": "PASS",
+  "full_quality": "FAIL",
+  "numeric": "PASS",
+  "files": [
+    {
+      "path": "compact_guard.py",
+      "sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd"
+    },
+    {
+      "path": "config.json",
+      "sha256": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+    },
+    {
+      "path": "model_float.pt",
+      "sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311"
+    },
+    {
+      "path": "model_source.py",
+      "sha256": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834"
+    },
+    {
+      "path": "README.md",
+      "sha256": "285def8e5fecc758f62b9833c404e733cb17369e8b8d108a2356e67e815679fd"
+    },
+    {
+      "path": "restore_power.py",
+      "sha256": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+    },
+    {
+      "path": "root5.npy",
+      "sha256": "dc75d783724ea887227062ef4b7cd410f6ece3d34fb2603ce42ca46159dd0077"
+    },
+    {
+      "path": "scalar_guard.py",
+      "sha256": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3"
+    },
+    {
+      "path": "weights.npz",
+      "sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4"
+    }
+  ]
+}

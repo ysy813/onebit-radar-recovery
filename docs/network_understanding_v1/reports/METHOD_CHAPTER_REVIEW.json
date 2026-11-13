@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "scope": "Method-writing consistency and manual source review only; no new quality claim",
+  "review_method": "Manual comparison of draft formulas and statements with current source and previously verified evidence; file digests record the reviewed versions",
+  "reviewed_distinctions": [
+    "Real-valued explanatory formulas versus integer PC numerical semantics",
+    "Reference used for training only; output Pout uses gain squared",
+    "All 32 base channels retained inside 40; derived values add representation, not observations",
+    "First 512 guard has a local-maximum alternative without a universal lower power bound",
+    "Frame-peak anchor follows first guard; second guard reads the updated gain",
+    "128 valid-chirp guard behavior differs; compact adds no 128 correction",
+    "Actual training predicts x*g before the two final inference guards",
+    "Compact retains frozen v2 neural weights",
+    "Known targets, numerical reference peaks and real physical targets kept separate",
+    "Original background quality FAIL and lack of broad-scene evidence retained"
+  ],
+  "sections": [
+    {
+      "section": "1",
+      "subject": "Input, same-source pairing and relative-amplitude target",
+      "source_files": [
+        "scalar_restore_v3/pc_candidate_compact/config.json",
+        "scalar_restore_v2/prepare_data.py",
+        "scalar_restore_v2/common_v2.py"
+      ],
+      "existing_reports": [
+        "DATA_PROVENANCE_WALKTHROUGH.json"
+      ]
+    },
+    {
+      "section": "2",
+      "subject": "Ideal harmonic mechanism and non-identifiability",
+      "source_files": [],
+      "existing_reports": [
+        "QUANTIZATION_THEORY_WALKTHROUGH.json",
+        "AMBIGUITY_RISK_WALKTHROUGH.json"
+      ]
+    },
+    {
+      "section": "3",
+      "subject": "Fixed 32-to-40 features and nonlocal cues",
+      "source_files": [
+        "scalar_restore_v3/pc_candidate_compact/model_source.py",
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py"
+      ],
+      "existing_reports": [
+        "FEATURE_EXPANSION_WALKTHROUGH.json"
+      ]
+    },
+    {
+      "section": "4",
+      "subject": "Shared MLP, parameter count and gain semantics",
+      "source_files": [
+        "scalar_restore_v3/pc_candidate_compact/config.json",
+        "scalar_restore_v3/pc_candidate_compact/model_source.py",
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py"
+      ],
+      "existing_reports": [
+        "NETWORK_ARCHITECTURE_FIGURE.json"
+      ]
+    },
+    {
+      "section": "5",
+      "subject": "Sequential input-only safeguards and valid-chirp branches",
+      "source_files": [
+        "scalar_restore_v3/pc_candidate_compact/scalar_guard.py",
+        "scalar_restore_v3/pc_candidate_compact/compact_guard.py"
+      ],
+      "existing_reports": [
+        "TRAINING_GUARD_WALKTHROUGH.json"
+      ]
+    },
+    {
+      "section": "6",
+      "subject": "Power output, zero-frame handling and inference order",
+      "source_files": [
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py"
+      ],
+      "existing_reports": [
+        "NETWORK_ARCHITECTURE_FIGURE.json"
+      ]
+    },
+    {
+      "section": "7",
+      "subject": "Actual eight-term training loss and frozen neural history",
+      "source_files": [
+        "scalar_restore_v2/runs/protected_patch5/training_source.py"
+      ],
+      "existing_reports": [
+        "TRAINING_GUARD_WALKTHROUGH.json",
+        "DATA_PROVENANCE_WALKTHROUGH.json"
+      ]
+    },
+    {
+      "section": "8",
+      "subject": "Scoped prior evidence and independent design versus RGB model",
+      "source_files": [
+        "scalar_restore_v3/pc_candidate_compact/config.json"
+      ],
+      "existing_reports": [
+        "EVIDENCE_WALKTHROUGH.json",
+        "ORIGINAL_SCALAR_COMPARISON.json"
+      ]
+    }
+  ],
+  "parameters": 1857,
+  "existing_512_metrics": {
+    "records": 8,
+    "record_ids": [
+      "compact_synth_128001_512",
+      "compact_synth_128003_512",
+      "compact_synth_128005_512",
+      "compact_synth_128007_512",
+      "compact_synth_128009_512",
+      "compact_synth_128011_512",
+      "compact_synth_128013_512",
+      "compact_synth_128015_512"
+    ],
+    "known_targets": 64,
+    "known_weak_targets": 48,
+    "new_half_losses": 0,
+    "baseline_below_half": 29,
+    "enhanced_below_half": 17,
+    "recovered_to_at_least_half": 12,
+    "weak_error_ratio": 0.7981362334858738,
+    "mean_frame_nmse_ratio": 0.39068104973082407,
+    "ratio_of_mean_nmse": 0.39072019888818277,
+    "pooled_normalized_sse_ratio": 0.3898983846274915,
+    "background_error_relative_to_v7": 1.202078254096308,
+    "numeric_reference_peak_drops": 1,
+    "source_frames": []
+  },
+  "full_quality_status_preserved": "FAIL",
+  "formal_publication_ready_claimed": false,
+  "manual_semantic_review_complete": true,
+  "new_novelty_review_run": false,
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "scalar_restore_v3/pc_candidate_compact/model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+    "scalar_restore_v3/pc_candidate_compact/compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v2/common_v2.py": "c60523f2b1b86a9fc555597d37a6d7bb45e866300f504d3b7caca77428643d7d",
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103"
+  },
+  "evidence_sha256": {
+    "network_understanding_v1/reports/NETWORK_ARCHITECTURE_FIGURE.json": "ac199e75af4d5033750cf49fdd91d99cfffd31e732b20da1c7988fa0ea28a63a",
+    "network_understanding_v1/reports/FEATURE_EXPANSION_WALKTHROUGH.json": "7dce71ad661a1e7ca1047772230349ee02a0276acf15b34225d892e557928371",
+    "network_understanding_v1/reports/TRAINING_GUARD_WALKTHROUGH.json": "405d0afe2b6c8d59965f30d31c663a5a90c220c24d964da0c7a6cfa967ca8e04",
+    "network_understanding_v1/reports/DATA_PROVENANCE_WALKTHROUGH.json": "479cdcd3d5b2de97baf3f599c03f9c8029fb1c3d32d04657f7ecd706c178e5f5",
+    "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json": "b5c33568c99e1d82dce29ff064ecf5538188dae89a49d16b5fa1d072d149af50",
+    "network_understanding_v1/reports/QUANTIZATION_THEORY_WALKTHROUGH.json": "4c383acec77c917940a87372c57326568d918f14c5fb589fad7602306736bad1",
+    "network_understanding_v1/reports/AMBIGUITY_RISK_WALKTHROUGH.json": "e643e7aad06df63fa865c838ee3574c6eb1de003a4665c8f3843517d12b537df",
+    "network_understanding_v1/reports/ORIGINAL_SCALAR_COMPARISON.json": "b8d697b5d70504a011e476e68fa83d8e88d97a2d7b464160503d82a3e8d6512d"
+  },
+  "draft_path": "network_understanding_v1/论文方法章节_网络限定稿.md",
+  "draft_sha256": "b6a220329a3029a8ce571e3611b5783fd8d896ab3ae3f38cc29ad9a4b1c5499c",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "training_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "model_parameters_modified": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

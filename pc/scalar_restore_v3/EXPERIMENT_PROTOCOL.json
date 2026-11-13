@@ -1,0 +1,38 @@
+{
+  "task": "Correct weak-target overattenuation while retaining the v2 network architecture and its observed background improvements",
+  "initial_model": "../scalar_restore_v2/runs/soft_patch5/step_30000.pt",
+  "initial_model_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+  "change": "Fine tune with the unchanged input-derived deployment guard included in the training loss, explicit peak-center loss, and v2 output distillation on background",
+  "quantization": "valid I/Q components >=0 -> +64, <0 -> -64; quantize before chirp zero-padding",
+  "range_indices": [0, 1023],
+  "training": {"old_manifest_split": "train", "new_synthetic_seeds": [120000, 120023]},
+  "development": {
+    "old_validation_and_historical": true,
+    "previous_102000_108000_116000_tests": "diagnostic only, never relabeled blind",
+    "new_synthetic_seeds": [121000, 121015],
+    "previous_known_failure": "confirm_synth_116013_512; diagnosis and selection only, not training"
+  },
+  "fresh_test": {
+    "synthetic_seeds": [124000, 124031],
+    "raw_frames_zero_based": [463, 527, 591],
+    "primary_layout": "rx_blocks_per_chirp",
+    "rx_ids": [0, 3],
+    "all_rx_from_a_source_frame_same_split": true,
+    "outputs_read_only_after_checkpoint_frozen": true,
+    "no_reselection_on_test": true,
+    "real_split_is_cross_scene": false
+  },
+  "quality_checks": {
+    "original_v7_nmse_group_max_ratio": 1.05,
+    "original_v7_background_error_group_max_ratio": 1.10,
+    "each_128_and512_synthetic_group_separate": true,
+    "no_new_known_targets_below_half_relative_to_bypass": true,
+    "known_weak_target_error_max_ratio_to_bypass": 1.05,
+    "each_target_error_max": "max(1.1*baseline_abs_error,baseline_abs_error+0.01)",
+    "each_frame_nmse_ratio_to_bypass_max": 1.05,
+    "real_no_new_numeric_half_peak_loss": true,
+    "real_gain_line_neighbor_ratio_max": 1.25,
+    "v2_nmse_and_background_group_nonregression_max_ratio": 1.05
+  },
+  "status_rules": "Weak-target correction, overall quality, numerical consistency, IP build and board validation are separate; preserve all failures. No IP/BIT/board work in this correction experiment."
+}

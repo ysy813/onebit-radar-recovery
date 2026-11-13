@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_matches_selected_training_snapshot": true,
+    "three_source_losses_and_derivatives_match": true,
+    "saturated_score_head_direction_is_up": true,
+    "opposing_directions_at_same_center": true,
+    "frozen_sources_unchanged": true
+  },
+  "rows": [
+    {
+      "position": [
+        774,
+        511
+      ],
+      "input_relative_amplitude": 0.21294407589409353,
+      "reference_relative_amplitude": 4.413173808676769e-05,
+      "saved_score": -5.3141326904296875,
+      "smoothed_clipped_goal": -3.0,
+      "head_loss_single_point": 0.6349464416503906,
+      "head_score_derivative_single_point": -0.35,
+      "isolated_negative_gradient_direction": "increase score",
+      "saved_mlp_gain": 0.125,
+      "training_head_gain": 0.125,
+      "strictly_below_lower_limit": true,
+      "source_and_independent_formula_match": true
+    },
+    {
+      "position": [
+        25,
+        0
+      ],
+      "input_relative_amplitude": 0.011169507340678992,
+      "reference_relative_amplitude": 0.016635492620372224,
+      "saved_score": -0.515289306640625,
+      "smoothed_clipped_goal": 0.5742749546165646,
+      "head_loss_single_point": 0.20634749144001635,
+      "head_score_derivative_single_point": -0.35,
+      "isolated_negative_gradient_direction": "increase score",
+      "saved_mlp_gain": 0.699462890625,
+      "training_head_gain": 0.6996526159331153,
+      "strictly_below_lower_limit": false,
+      "source_and_independent_formula_match": true
+    },
+    {
+      "position": [
+        200,
+        148
+      ],
+      "input_relative_amplitude": 0.01117227189412381,
+      "reference_relative_amplitude": 2.67328538406498e-05,
+      "saved_score": -1.1974029541015625,
+      "smoothed_clipped_goal": -3.0,
+      "head_loss_single_point": 0.4559089660644531,
+      "head_score_derivative_single_point": 0.35,
+      "isolated_negative_gradient_direction": "decrease score",
+      "saved_mlp_gain": 0.43609619140625,
+      "training_head_gain": 0.43605954161073657,
+      "strictly_below_lower_limit": false,
+      "source_and_independent_formula_match": true
+    }
+  ],
+  "scope": "Post-hoc head supervision at three saved development scores; not original training logs or a complete loss gradient",
+  "source_sha256": {
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18",
+    "network_understanding_v1/reports/POINT_TRACE.json": "19f76ecd0d9c0ce7ac051a39e686bea8a06709ba3b2d92713bd60c084f39655f",
+    "network_understanding_v1/reports/POINT_REFERENCE_WALKTHROUGH.json": "fe3b1916d40b15b587cb14bd90f4228fc813ddef52d5c26f3d8d17155514aad7"
+  },
+  "script_sha256": "293c802ed66a49cb0733d05eea0e3f42b0fb78ad5502caff6e88a2663876472e",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_single_point_head_autograd_run": true,
+  "model_instantiated": false,
+  "model_backward_run": false,
+  "optimizer_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "neural_inference_run": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false,
+  "original_full_quality_status_preserved": "FAIL"
+}

@@ -1,0 +1,57 @@
+{
+  "file": "radar1_scalar_compact_sd_fix_v1_runtime.zip",
+  "kind": "配套运行包，解压到仓库根目录；须按各版本说明使用",
+  "bytes": 8153368,
+  "sha256": "ab894df115d3daea5f45754a55c29d4aefae16cd9d3d7e559ccf7029c89448b5",
+  "files": [
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/BUILD_READY.json",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\BUILD_READY.json",
+      "bytes": 2523,
+      "sha256": "005c80f2c9e521107de9a5a8ff96d661383d1a66f428066b24a914186d0a296a"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/SHA256SUMS.txt",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\SHA256SUMS.txt",
+      "bytes": 548,
+      "sha256": "43faff50a413f08dd3a27bc2d58484d2d65ee772941b2ccb29b6f16ea51c0660"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/design_1_wrapper.bit",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\design_1_wrapper.bit",
+      "bytes": 7797812,
+      "sha256": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/onebit_network_storage.elf",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\onebit_network_storage.elf",
+      "bytes": 12023880,
+      "sha256": "8e7f7b98ec059565df2636f15d4434f14106cb19963e12644d6961d5675bd5d5"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/program_common.tcl",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\program_common.tcl",
+      "bytes": 1423,
+      "sha256": "5c44e7a11245ced9ee383bb79f18e8ab173edf3b95492078df53ada8a743b3f3"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/program_onebit_network_storage.tcl",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\program_onebit_network_storage.tcl",
+      "bytes": 121,
+      "sha256": "00dc2cbfe7d452b18ebaccde538c283fb9ff75330b0dba1e90ccf1ee12f19c32"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/psu_init.tcl",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\psu_init.tcl",
+      "bytes": 648854,
+      "sha256": "f68e32c9a0606771ba522dd494ed73f17244d198e309c6ac220cf8ceb6392cd1"
+    },
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/pkg/修复说明与操作步骤.md",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\pkg\\修复说明与操作步骤.md",
+      "bytes": 6855,
+      "sha256": "0dcffefe415f4d95fcb9eeba60c051f24875c0e5e1df3700eba92ce24fc5be33"
+    }
+  ],
+  "zip_readback": "PASS"
+}

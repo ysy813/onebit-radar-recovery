@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "full_frame_csim": true,
+  "zero_frame": true,
+  "rtl_mlp_cases": 464,
+  "rtl_guard_cases": 464,
+  "changed_guard_cases": 208,
+  "frame_cdc_pass": true,
+  "original_sources_unchanged": true,
+  "storage_fork_unchanged": true,
+  "ddr_scratch_bytes": 16777216,
+  "ddr_scratch_start": "0x31000000",
+  "ddr_scratch_end_exclusive": "0x32000000",
+  "hls_estimated_cycles": 295812315,
+  "hls_estimated_seconds_at_100mhz": 2.95812315,
+  "hls_estimate_excludes_actual_axi_stalls": true,
+  "active_generated_sources": {
+    "scalar_gain.v": "b52b003fac7d7390e512bbea1dd6a8d740466b078db3c0e46e2ea27b9a3b8802",
+    "scalar_gain_predict.v": "c92b4c3f991835de3db6fd99cc3ec16535f32fc36ed2e35c3f3309250d31cd22",
+    "scalar_gain_protect.v": "d3096f1abbe4d350bcf704c5d029016c19918e5f35995addb69a6daa210ae403"
+  }
+}

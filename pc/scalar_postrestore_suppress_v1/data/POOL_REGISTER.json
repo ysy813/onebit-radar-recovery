@@ -1,0 +1,229 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "id": "v2_development_007_n8_strong_weak",
+      "rows": 5532
+    },
+    {
+      "frame": 1,
+      "id": "v2_development_009_collision_plus5_offgrid",
+      "rows": 2611
+    },
+    {
+      "frame": 2,
+      "id": "v2_validation_000_single_offgrid_a",
+      "rows": 2608
+    },
+    {
+      "frame": 3,
+      "id": "v2_validation_001_n4_spread",
+      "rows": 5550
+    },
+    {
+      "frame": 4,
+      "id": "v2_validation_002_n8_near_pairs",
+      "rows": 3841
+    },
+    {
+      "frame": 5,
+      "id": "v2_validation_003_n8_strong_weak",
+      "rows": 5587
+    },
+    {
+      "frame": 6,
+      "id": "v2_validation_004_collision_plus5_offgrid",
+      "rows": 2582
+    },
+    {
+      "frame": 7,
+      "id": "v2_validation_005_n2_strong_weak_offgrid",
+      "rows": 4189
+    },
+    {
+      "frame": 8,
+      "id": "v2_test_000_single_grid_a",
+      "rows": 2589
+    },
+    {
+      "frame": 9,
+      "id": "v2_test_001_single_offgrid_a",
+      "rows": 2958
+    },
+    {
+      "frame": 10,
+      "id": "v2_test_002_n4_spread",
+      "rows": 3484
+    },
+    {
+      "frame": 11,
+      "id": "v2_test_003_n4_near_pairs",
+      "rows": 5409
+    },
+    {
+      "frame": 12,
+      "id": "v2_test_004_n4_strong_weak",
+      "rows": 3888
+    },
+    {
+      "frame": 13,
+      "id": "v2_test_005_n8_spread",
+      "rows": 3280
+    },
+    {
+      "frame": 14,
+      "id": "v2_test_006_n8_near_pairs",
+      "rows": 3422
+    },
+    {
+      "frame": 15,
+      "id": "v2_test_007_n8_strong_weak",
+      "rows": 5521
+    },
+    {
+      "frame": 16,
+      "id": "v2_test_008_collision_minus3_grid",
+      "rows": 2600
+    },
+    {
+      "frame": 17,
+      "id": "v2_test_009_collision_plus5_offgrid",
+      "rows": 2585
+    },
+    {
+      "frame": 18,
+      "id": "v2_test_010_near_collision_plus5",
+      "rows": 5181
+    },
+    {
+      "frame": 19,
+      "id": "v2_test_011_n2_strong_weak_offgrid",
+      "rows": 3801
+    },
+    {
+      "frame": 20,
+      "id": "scan_000_single_grid_a",
+      "rows": 2572
+    },
+    {
+      "frame": 21,
+      "id": "scan_001_single_offgrid_a",
+      "rows": 2557
+    },
+    {
+      "frame": 22,
+      "id": "scan_002_n4_spread",
+      "rows": 3896
+    },
+    {
+      "frame": 23,
+      "id": "scan_003_n4_near_pairs",
+      "rows": 5285
+    },
+    {
+      "frame": 24,
+      "id": "scan_004_n4_strong_weak",
+      "rows": 3623
+    },
+    {
+      "frame": 25,
+      "id": "scan_005_n8_spread",
+      "rows": 4098
+    },
+    {
+      "frame": 26,
+      "id": "scan_006_n8_near_pairs",
+      "rows": 3236
+    },
+    {
+      "frame": 27,
+      "id": "scan_007_n8_strong_weak",
+      "rows": 5589
+    },
+    {
+      "frame": 28,
+      "id": "scan_008_collision_minus3_grid",
+      "rows": 2598
+    },
+    {
+      "frame": 29,
+      "id": "scan_009_collision_plus5_offgrid",
+      "rows": 2603
+    },
+    {
+      "frame": 30,
+      "id": "scan_010_near_collision_plus5",
+      "rows": 5347
+    },
+    {
+      "frame": 31,
+      "id": "scan_011_n2_strong_weak_offgrid",
+      "rows": 4000
+    },
+    {
+      "frame": 32,
+      "id": "train_new_000_single_grid_a",
+      "rows": 2588
+    },
+    {
+      "frame": 33,
+      "id": "train_new_001_single_offgrid_a",
+      "rows": 2559
+    },
+    {
+      "frame": 34,
+      "id": "train_new_002_n4_spread",
+      "rows": 4325
+    },
+    {
+      "frame": 35,
+      "id": "train_new_003_n4_near_pairs",
+      "rows": 3720
+    },
+    {
+      "frame": 36,
+      "id": "train_new_004_n4_strong_weak",
+      "rows": 3977
+    },
+    {
+      "frame": 37,
+      "id": "train_new_005_n8_spread",
+      "rows": 3260
+    },
+    {
+      "frame": 38,
+      "id": "train_new_006_n8_near_pairs",
+      "rows": 3322
+    },
+    {
+      "frame": 39,
+      "id": "train_new_007_n8_strong_weak",
+      "rows": 5732
+    },
+    {
+      "frame": 40,
+      "id": "train_new_008_collision_minus3_grid",
+      "rows": 2597
+    },
+    {
+      "frame": 41,
+      "id": "train_new_009_collision_plus5_offgrid",
+      "rows": 3074
+    },
+    {
+      "frame": 42,
+      "id": "train_new_010_near_collision_plus5",
+      "rows": 5448
+    },
+    {
+      "frame": 43,
+      "id": "train_new_011_n2_strong_weak_offgrid",
+      "rows": 2707
+    }
+  ],
+  "rows": 165931,
+  "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_postrestore_suppress_v1\\data\\train_pool.npz",
+  "sha256": "768f276b5412c117f5130a581d546b0256e4438edf7755fc1c7c25d9617e7174",
+  "source_sha256": "e7b836d2735c60714257c6b8889ad5ec91f6327aa027d85ed8fd9a072b6351b4",
+  "fields": "f=32基础Q12特征，y/x=参考/恢复相对幅值，tag/main/weak=训练标签，frame/pixel=精确源映射"
+}

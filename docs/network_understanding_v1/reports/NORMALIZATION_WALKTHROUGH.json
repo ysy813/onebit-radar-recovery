@@ -1,0 +1,229 @@
+{
+  "status": "PASS",
+  "scope": "Relative amplitude coordinates, exact scalar algebra and constructed source-function calls only",
+  "checks": {
+    "positive_scaling_preserves_two_level_observation": true,
+    "source_independent_normalization_invariant": true,
+    "exact_relative_to_raw_scale_identity": true,
+    "specified_example_preserves_relative_not_absolute_power": true,
+    "remote_maximum_changes_center_representation": true,
+    "remote_maximum_changes_only_tested_upper_eligibility": true,
+    "constructed_guard_anchors_peak_despite_reachable_target": true,
+    "frozen_sources_unchanged": true
+  },
+  "sign_scale_cases": 867,
+  "normalization_cases": [
+    {
+      "reference_power_scale": 1,
+      "input_power_scale": 1,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 1,
+      "input_power_scale": 4,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 1,
+      "input_power_scale": 9,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 1,
+      "input_power_scale": 25,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 4,
+      "input_power_scale": 1,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 4,
+      "input_power_scale": 4,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 4,
+      "input_power_scale": 9,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 4,
+      "input_power_scale": 25,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 9,
+      "input_power_scale": 1,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 9,
+      "input_power_scale": 4,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 9,
+      "input_power_scale": 9,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 9,
+      "input_power_scale": 25,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 25,
+      "input_power_scale": 1,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 25,
+      "input_power_scale": 4,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 25,
+      "input_power_scale": 9,
+      "source_normalized_arrays_exact": true
+    },
+    {
+      "reference_power_scale": 25,
+      "input_power_scale": 25,
+      "source_normalized_arrays_exact": true
+    }
+  ],
+  "exact_scale_identity_cases": 144,
+  "prescribed_example": [
+    {
+      "input_power": 100.0,
+      "reference_power": 400.0,
+      "input_relative_amplitude": 1.0,
+      "reference_relative_amplitude": 1.0,
+      "hypothetical_exact_gain": 1.0,
+      "output_power": 100.0,
+      "output_equals_reference_times_scale": true
+    },
+    {
+      "input_power": 9.0,
+      "reference_power": 4.0,
+      "input_relative_amplitude": 0.3,
+      "reference_relative_amplitude": 0.1,
+      "hypothetical_exact_gain": 0.3333333333333333,
+      "output_power": 1.0,
+      "output_equals_reference_times_scale": true
+    },
+    {
+      "input_power": 1.0,
+      "reference_power": 1.0,
+      "input_relative_amplitude": 0.1,
+      "reference_relative_amplitude": 0.05,
+      "hypothetical_exact_gain": 0.5,
+      "output_power": 0.25,
+      "output_equals_reference_times_scale": true
+    }
+  ],
+  "output_to_reference_power_scale": 0.25,
+  "changed_frame_peak_example": [
+    {
+      "unchanged_center_power": 8,
+      "frame_peak_power": 100,
+      "relative_amplitude": 0.282842712474619,
+      "ideal_fifthroot_amplitude": 0.7767996097157338,
+      "satisfies_weak_upper_bound_only": false,
+      "upper_power_bound": 6
+    },
+    {
+      "unchanged_center_power": 8,
+      "frame_peak_power": 400,
+      "relative_amplitude": 0.1414213562373095,
+      "ideal_fifthroot_amplitude": 0.6762433378062414,
+      "satisfies_weak_upper_bound_only": true,
+      "upper_power_bound": 25
+    }
+  ],
+  "constructed_peak_anchor_example": {
+    "scope": "Constructed powers, features and prescribed gains; no neural predictions",
+    "input_power": [
+      [
+        100,
+        64,
+        0
+      ]
+    ],
+    "reference_power": [
+      [
+        25,
+        100,
+        0
+      ]
+    ],
+    "input_normalized_amplitude": [
+      [
+        1.0,
+        0.800000011920929,
+        0.0
+      ]
+    ],
+    "target_normalized_amplitude": [
+      [
+        0.5,
+        1.0,
+        0.0
+      ]
+    ],
+    "hypothetical_required_gain": [
+      [
+        0.5,
+        1.25,
+        1.0
+      ]
+    ],
+    "guarded_gain": [
+      [
+        1.0,
+        1.25,
+        1.0
+      ]
+    ],
+    "guarded_relative_amplitude": [
+      [
+        1.0,
+        1.0000000149011612,
+        0.0
+      ]
+    ],
+    "every_prescribed_gain_within_allowed_range": true,
+    "peak_gain_forced_to_one": true,
+    "peak_target_not_exactly_matched": true,
+    "statement_is_about_training_coordinate_not_arbitrary_renormalized_display": true
+  },
+  "limitations": [
+    "No assertion that the constructed pairs come from the same measured I/Q",
+    "Ideal scale cancellation is not a guarantee of bit-exact invariance with rounding or saturation",
+    "A changed upper-threshold eligibility is not the full protection mask or a predicted gain",
+    "No new restoration-quality evidence"
+  ],
+  "source_sha256": {
+    "scalar_restore_v2/common_v2.py": "c60523f2b1b86a9fc555597d37a6d7bb45e866300f504d3b7caca77428643d7d",
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_normalization_run": true,
+  "constructed_guard_run": true,
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "full_feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

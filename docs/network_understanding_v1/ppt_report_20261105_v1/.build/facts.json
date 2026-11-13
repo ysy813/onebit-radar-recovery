@@ -1,0 +1,274 @@
+{
+  "assets": {
+    "inference.png": {
+      "source": "network_understanding_v1/figures/08_network_architecture.png",
+      "crop": [
+        55,
+        115,
+        3230,
+        1090
+      ],
+      "sha256": "499948a4d159bab9daae18df8c321cae7ac045bf0474161ee7b9c7c6c6ce420d",
+      "connector_cleanup": [
+        1540,
+        650,
+        1625,
+        975
+      ]
+    },
+    "training.png": {
+      "source": "network_understanding_v1/figures/08_network_architecture.png",
+      "crop": [
+        55,
+        1200,
+        3230,
+        1635
+      ],
+      "sha256": "499948a4d159bab9daae18df8c321cae7ac045bf0474161ee7b9c7c6c6ce420d",
+      "connector_cleanup": [
+        2520,
+        0,
+        2640,
+        25
+      ]
+    },
+    "neighbors.png": {
+      "source": "network_understanding_v1/figures/05_feature_layout.png",
+      "crop": [
+        0,
+        0,
+        858,
+        884
+      ],
+      "sha256": "1704bd3529cd6816dfb4b21bfdf7580b1498d7efd35c827230885fce65333f04"
+    },
+    "harmonics.png": {
+      "source": "network_understanding_v1/figures/01_sign_harmonics.png",
+      "crop": [
+        0,
+        0,
+        2216,
+        758
+      ],
+      "sha256": "90922cb0323d252eb979d0aae537c5bff7e939108926038afa8dde842581a942"
+    },
+    "alias.png": {
+      "source": "network_understanding_v1/figures/02_alias_coordinates.png",
+      "crop": [
+        0,
+        0,
+        1604,
+        974
+      ],
+      "sha256": "6647f12f5c18c484e9c46ffde4d4a251668aa26e66cfb53d7a2ed45d7b5d723e"
+    },
+    "rd-reference.png": {
+      "source": "scalar_restore_v3/results_compact/images/compact_synth_128001_512.png",
+      "crop": [
+        0,
+        33,
+        743,
+        660
+      ],
+      "sha256": "d703d3e3642d25342603c18550cd03ee4669a52bbfe6597e7acb009aecfd0a23"
+    },
+    "rd-bypass.png": {
+      "source": "scalar_restore_v3/results_compact/images/compact_synth_128001_512.png",
+      "crop": [
+        750,
+        33,
+        1492,
+        660
+      ],
+      "sha256": "d703d3e3642d25342603c18550cd03ee4669a52bbfe6597e7acb009aecfd0a23"
+    },
+    "rd-compact.png": {
+      "source": "scalar_restore_v3/results_compact/images/compact_synth_128001_512.png",
+      "crop": [
+        750,
+        670,
+        1492,
+        1298
+      ],
+      "sha256": "d703d3e3642d25342603c18550cd03ee4669a52bbfe6597e7acb009aecfd0a23"
+    },
+    "rd-colorbar.png": {
+      "source": "scalar_restore_v3/results_compact/images/compact_synth_128001_512.png",
+      "crop": [
+        1520,
+        33,
+        1690,
+        1298
+      ],
+      "sha256": "d703d3e3642d25342603c18550cd03ee4669a52bbfe6597e7acb009aecfd0a23"
+    }
+  },
+  "groups": {
+    "synthetic_128": {
+      "records": 8,
+      "record_ids": [
+        "compact_synth_128000_128",
+        "compact_synth_128002_128",
+        "compact_synth_128004_128",
+        "compact_synth_128006_128",
+        "compact_synth_128008_128",
+        "compact_synth_128010_128",
+        "compact_synth_128012_128",
+        "compact_synth_128014_128"
+      ],
+      "known_targets": 56,
+      "known_weak_targets": 48,
+      "new_half_losses": 0,
+      "baseline_below_half": 13,
+      "enhanced_below_half": 0,
+      "recovered_to_at_least_half": 13,
+      "weak_error_ratio": 0.6415460134459174,
+      "mean_frame_nmse_ratio": 0.4782109133571573,
+      "ratio_of_mean_nmse": 0.4783088475449266,
+      "pooled_normalized_sse_ratio": 0.4784579133244327,
+      "background_error_relative_to_v7": 0.8559721303268201,
+      "numeric_reference_peak_drops": 0,
+      "source_frames": []
+    },
+    "synthetic_512": {
+      "records": 8,
+      "record_ids": [
+        "compact_synth_128001_512",
+        "compact_synth_128003_512",
+        "compact_synth_128005_512",
+        "compact_synth_128007_512",
+        "compact_synth_128009_512",
+        "compact_synth_128011_512",
+        "compact_synth_128013_512",
+        "compact_synth_128015_512"
+      ],
+      "known_targets": 64,
+      "known_weak_targets": 48,
+      "new_half_losses": 0,
+      "baseline_below_half": 29,
+      "enhanced_below_half": 17,
+      "recovered_to_at_least_half": 12,
+      "weak_error_ratio": 0.7981362334858738,
+      "mean_frame_nmse_ratio": 0.39068104973082407,
+      "ratio_of_mean_nmse": 0.39072019888818277,
+      "pooled_normalized_sse_ratio": 0.3898983846274915,
+      "background_error_relative_to_v7": 1.202078254096308,
+      "numeric_reference_peak_drops": 1,
+      "source_frames": []
+    },
+    "field_temporal_128": {
+      "records": 6,
+      "record_ids": [
+        "compact_field_rx0_0455",
+        "compact_field_rx0_0519",
+        "compact_field_rx0_0583",
+        "compact_field_rx3_0455",
+        "compact_field_rx3_0519",
+        "compact_field_rx3_0583"
+      ],
+      "known_targets": 0,
+      "known_weak_targets": 0,
+      "new_half_losses": 0,
+      "baseline_below_half": 0,
+      "enhanced_below_half": 0,
+      "recovered_to_at_least_half": 0,
+      "weak_error_ratio": null,
+      "mean_frame_nmse_ratio": 0.7858901510028656,
+      "ratio_of_mean_nmse": 0.8083166589545885,
+      "pooled_normalized_sse_ratio": 0.8162807496802429,
+      "background_error_relative_to_v7": 0.4987587795684746,
+      "numeric_reference_peak_drops": 0,
+      "source_frames": [
+        455,
+        519,
+        583
+      ]
+    }
+  },
+  "known_targets": {
+    "known_targets": 120,
+    "known_weak_targets": 96,
+    "new_half_losses": 0,
+    "baseline_below_half": 42,
+    "enhanced_below_half": 17,
+    "recovered_to_at_least_half": 25,
+    "weak_error_ratio": 0.7131314692335385
+  },
+  "result": {
+    "weak_correction_status": "PASS",
+    "full_original_quality_status": "FAIL",
+    "numeric_status": "PASS",
+    "diagnosed_targets": [
+      {
+        "id": "confirm_synth_116013_512",
+        "baseline": 0.5912711111156014,
+        "previous": 0.4613170540402579,
+        "corrected": 0.5912711111156014
+      },
+      {
+        "id": "v3_synth_124017_512",
+        "baseline": 0.5221816039098064,
+        "previous": 0.43565065575222534,
+        "corrected": 0.5221816039098064
+      }
+    ],
+    "development_known_targets": 570,
+    "development_new_half_losses": 0,
+    "fresh_known_targets": 120,
+    "fresh_known_weak_targets": 96,
+    "fresh_new_half_losses": 0,
+    "fresh_weak_mae_ratio_to_bypass": 0.7131314692335385,
+    "fresh_v2_nonregression": {
+      "field_temporal": {
+        "nmse_relative_to_v2": 1.0,
+        "background_error_relative_to_v2": 1.0
+      },
+      "synthetic_128": {
+        "nmse_relative_to_v2": 1.0,
+        "background_error_relative_to_v2": 1.0
+      },
+      "synthetic_512": {
+        "nmse_relative_to_v2": 1.0025782307308235,
+        "background_error_relative_to_v2": 1.0057854339524757
+      }
+    },
+    "failed_original_quality_checks": [
+      "each_acquisition_subgroup_background_at_most1p10_v7"
+    ],
+    "neural_weights_changed": false,
+    "parameters": 1857,
+    "active_model": "pc_candidate_compact",
+    "active_comparison": "results_compact/index.html",
+    "ip_built": false,
+    "bit_rebuilt": false,
+    "board_accessed": false
+  },
+  "frozen_sources": {
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+    "scalar_restore_v3/pc_candidate_compact/compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "scalar_restore_v3/pc_candidate_compact/scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "scalar_restore_v3/pc_candidate_compact/weights.npz": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+    "scalar_restore_v3/pc_candidate_compact/root5.npy": "dc75d783724ea887227062ef4b7cd410f6ece3d34fb2603ce42ca46159dd0077",
+    "scalar_restore_v3/pc_candidate_compact/model_float.pt": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18",
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+    "scalar_restore_v2/runs/soft_patch5/step_30000.pt": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v2/common_v2.py": "c60523f2b1b86a9fc555597d37a6d7bb45e866300f504d3b7caca77428643d7d",
+    "scalar_restore_v2/evaluate.py": "22eb821943c846ed42e582ee3e4767726795219b68326524ea75a7b89d18cb57",
+    "scalar_streak_fix_v1/common.py": "32df43f0344a183331bfd8d46a91990d7d8c5ee6e8877ed1f2b76b86bfce1913",
+    "radar1_scalar_compact_exp_v1/hls/scalar_compact.cpp": "e00bd7ff26965000e7fbc2d5e3eb504365b296355a679370e10e27ffeb4deae8",
+    "radar1_scalar_compact_exp_v1/hls/parameters.h": "ab7794be1f882e217a5b311e25a1465f414fc88f723278d3e9fe77d1a91fbbd3",
+    "radar1_scalar_compact_exp_v1/rtl/image_preprocess.v": "718e33d8420b22b96f9e01cb07a3efb4b7060d6568da6d57f4b5e0e436b3f017",
+    "radar1_scalar_compact_exp_v1/rtl/network_frame_control.v": "d63cd9fa6b9c44d73ec3c599629142c5c3083d53a05fbb15212e113d1c7067d4",
+    "radar1_scalar_compact_exp_v1/pkg/design_1_wrapper.bit": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb",
+    "radar1_scalar_compact_sd_fix_v1/pkg/design_1_wrapper.bit": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb",
+    "radar1_scalar_compact_sd_fix_v1/pkg/onebit_network_storage.elf": "8e7f7b98ec059565df2636f15d4434f14106cb19963e12644d6961d5675bd5d5",
+    "radar1_scalar_compact_sd_fix_v1/board_runs/log.txt": "958ee9e5fb52edebc58751d3ac42f5d096f0a8486e08b6c70dffef155e5c1c41",
+    "scalar_restore_v3/compact_fresh_test/report.json": "c8f293ec2b9fc53f75cc44bbe72c3a2fd67aee8770b6ee45f73238652fd79ad7",
+    "scalar_restore_v3/NUMERIC_VERIFICATION_COMPACT.json": "aaa153a4333d02ec5774aa9b324c9de165f7752223d876c517bd48d2086f9fe1",
+    "cdqob_pc_online_v1/model.py": "9848e904b03355e182e02913a2396c105feac60d590c50002ed1345cff17064a"
+  }
+}

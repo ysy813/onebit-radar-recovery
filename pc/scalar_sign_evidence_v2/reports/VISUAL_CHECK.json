@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "method": "实际打开并检查生成PNG",
+  "checked": [
+    "results/007_n8_strong_weak.png",
+    "results/008_collision_minus3_grid.png",
+    "results/010_near_collision_plus5_interfaces.png"
+  ],
+  "chinese_titles_axes_legends_rendered": true,
+  "missing_glyph_boxes_observed": false,
+  "critical_clipping_observed": false,
+  "common_color_scale_db": [-60, 0],
+  "preview_pooling": "4×2最大值池化，只用于全景显示；指标使用完整1024×512数组",
+  "note": "全景整数频点目标很小，配合同位置保留率曲线读取；独立恢复谱自身归一化，不代表绝对功率。"
+}

@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.67449",
+   "Default View_TopLeft":"-434,-110",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_read_pulse -pg 1 -lvl 0 -x -100 -y 20 -defaultsOSRD
+preplace port port-id_rready -pg 1 -lvl 5 -x 1780 -y 850 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -100 -y -80 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -100 -y -60 -defaultsOSRD
+preplace portBus rdata -pg 1 -lvl 0 -x -100 -y 750 -defaultsOSRD
+preplace inst xfft_0 -pg 1 -lvl 2 -x 690 -y 110 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 3 -x 1160 -y 120 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 2 -x 690 -y 620 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 2 -x 690 -y 380 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 1 -x 130 -y 380 -defaultsOSRD
+preplace inst DATA_RDAXI_0 -pg 1 -lvl 1 -x 130 -y 100 -defaultsOSRD
+preplace inst oneburstwrite_0 -pg 1 -lvl 4 -x 1570 -y 80 -defaultsOSRD
+preplace netloc DATA_RDAXI_0_m00_axi_rready 1 1 4 310J -100 NJ -100 NJ -100 1760
+preplace netloc DATA_RDAXI_0_m_axis_tdata 1 1 1 340 50n
+preplace netloc DATA_RDAXI_0_m_axis_tlast 1 1 1 360 70n
+preplace netloc DATA_RDAXI_0_m_axis_tvalid 1 1 1 370 110n
+preplace netloc axis_data_fifo_0_m_axis_tdata 1 3 1 1370 30n
+preplace netloc axis_data_fifo_0_m_axis_tvalid 1 3 1 1340 50n
+preplace netloc axis_data_fifo_0_s_axis_tready 1 2 1 920 70n
+preplace netloc m00_axi_aclk_0_1 1 0 4 -60 -60 350 -60 910 -10 1390
+preplace netloc m00_axi_aresetn_0_1 1 0 4 -80 -70 N -70 950 0 1350
+preplace netloc m00_axi_rdata_0_1 1 0 2 NJ 750 300
+preplace netloc oneburstwrite_0_rd_1dfifo_en 1 3 2 1360 -80 1740
+preplace netloc read_pulse_0_1 1 0 1 -70 20n
+preplace netloc xfft_0_m_axis_data_tdata 1 2 1 960 30n
+preplace netloc xfft_0_m_axis_data_tlast 1 2 2 940 10 1380J
+preplace netloc xfft_0_m_axis_data_tvalid 1 2 1 900 90n
+preplace netloc xfft_0_s_axis_data_tready 1 0 2 -50 -50 320
+preplace netloc xlconstant_2_dout 1 1 1 370 150n
+preplace netloc xlconstant_3_dout 1 1 2 330 -50 890
+preplace netloc xlconstant_4_dout 1 1 4 380 270 930 -90 N -90 1750
+levelinfo -pg 1 -100 130 690 1160 1570 1780
+pagesize -pg 1 -db -bbox -sgen -220 -120 1870 1040
+"
+}
+0

@@ -1,0 +1,391 @@
+{
+  "status": "PASS",
+  "scope": "Static coordinate/display arithmetic and four existing points; not a new imaging or quality test",
+  "table_bytes": 11377128,
+  "table_matches_existing_mapper": true,
+  "current_parameters": {
+    "a": 11184,
+    "fa_new": 98304000,
+    "xr_par": 107546253,
+    "yid_par": 1590676
+  },
+  "existing_parameter_and_ccid_match": true,
+  "actual_scalar_gather": {
+    "axi_data_width": 64,
+    "axi_burst_len": 1,
+    "multineighbor_weighting": false,
+    "maximum_linear_offset_exclusive": 4194304
+  },
+  "map_summary": {
+    "width": 1687,
+    "height": 843,
+    "output_pixels": 1422141,
+    "valid_pixels": 743611,
+    "outside_geometry_pixels": 676622,
+    "out_of_power_bank_pixels": 1908,
+    "unique_power_words": 398999,
+    "max_reuse_of_one_power_word": 6,
+    "preview_width": 844,
+    "preview_height": 422,
+    "preview_pixels": 356168,
+    "preview_valid_pixels": 185905,
+    "preview_unique_power_words": 174483,
+    "preview_source_row_step": 2,
+    "preview_source_col_step": 2,
+    "screen_window_origin": [
+      218,
+      149
+    ]
+  },
+  "pixel_address_checks": [
+    {
+      "output_row": 0,
+      "output_col": 0,
+      "ar_word": 0,
+      "aq_word": 46346,
+      "xid": 626,
+      "yid": 0,
+      "linear_byte_offset": 5008,
+      "geometry": false,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": true,
+      "scalar_matches_existing_mapper": true
+    },
+    {
+      "output_row": 0,
+      "output_col": 843,
+      "ar_word": 2761766,
+      "aq_word": 0,
+      "xid": 427,
+      "yid": 1023,
+      "linear_byte_offset": 4193624,
+      "geometry": true,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": false,
+      "scalar_matches_existing_mapper": true
+    },
+    {
+      "output_row": 210,
+      "output_col": 422,
+      "ar_word": 2490599,
+      "aq_word": 36300,
+      "xid": 583,
+      "yid": 923,
+      "linear_byte_offset": 3785272,
+      "geometry": true,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": true,
+      "scalar_matches_existing_mapper": true
+    },
+    {
+      "output_row": 421,
+      "output_col": 843,
+      "ar_word": 1382233,
+      "aq_word": 0,
+      "xid": 427,
+      "yid": 512,
+      "linear_byte_offset": 2100568,
+      "geometry": true,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": false,
+      "scalar_matches_existing_mapper": true
+    },
+    {
+      "output_row": 422,
+      "output_col": 844,
+      "ar_word": 4293588336,
+      "aq_word": 4294967139,
+      "xid": 427,
+      "yid": 511,
+      "linear_byte_offset": 2096472,
+      "geometry": true,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": true,
+      "scalar_matches_existing_mapper": true
+    },
+    {
+      "output_row": 600,
+      "output_col": 1000,
+      "ar_word": 4294019782,
+      "aq_word": 4294931712,
+      "xid": 275,
+      "yid": 351,
+      "linear_byte_offset": 1439896,
+      "geometry": true,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": true,
+      "scalar_matches_existing_mapper": true
+    },
+    {
+      "output_row": 842,
+      "output_col": 1686,
+      "ar_word": 0,
+      "aq_word": 4294901760,
+      "xid": 5739,
+      "yid": 0,
+      "linear_byte_offset": 45912,
+      "geometry": false,
+      "in_power_bank": true,
+      "retained_by_720p_decimation": true,
+      "scalar_matches_existing_mapper": true
+    }
+  ],
+  "existing_points": [
+    {
+      "natural_index": [
+        83,
+        0
+      ],
+      "shifted_column": 256,
+      "linear_index": 42752,
+      "power_address": "0x24053800",
+      "full_map_pixel_count": 0,
+      "preview_pixel_count": 0,
+      "example_output_pixels": [],
+      "example_screen_pixels": [],
+      "input_power": 1286666655855754,
+      "output_power": 1286666655855754,
+      "final_gain_q14": 16384,
+      "input_display_byte": 108,
+      "output_display_byte": 108,
+      "relative_power_db": 0.0,
+      "existing_output_matches": true
+    },
+    {
+      "natural_index": [
+        774,
+        511
+      ],
+      "shifted_column": 255,
+      "linear_index": 396543,
+      "power_address": "0x243067F8",
+      "full_map_pixel_count": 2,
+      "preview_pixel_count": 0,
+      "example_output_pixels": [
+        [
+          340,
+          1235
+        ],
+        [
+          341,
+          1236
+        ]
+      ],
+      "example_screen_pixels": [],
+      "input_power": 58344130412905,
+      "output_power": 911627037702,
+      "final_gain_q14": 2048,
+      "input_display_byte": 77,
+      "output_display_byte": 65,
+      "relative_power_db": -18.061799739837163,
+      "existing_output_matches": true
+    },
+    {
+      "natural_index": [
+        25,
+        0
+      ],
+      "shifted_column": 256,
+      "linear_index": 13056,
+      "power_address": "0x24019800",
+      "full_map_pixel_count": 0,
+      "preview_pixel_count": 0,
+      "example_output_pixels": [],
+      "example_screen_pixels": [],
+      "input_power": 160521822565,
+      "output_power": 160521822565,
+      "final_gain_q14": 16384,
+      "input_display_byte": 95,
+      "output_display_byte": 95,
+      "relative_power_db": 0.0,
+      "existing_output_matches": true
+    },
+    {
+      "natural_index": [
+        200,
+        148
+      ],
+      "shifted_column": 404,
+      "linear_index": 102804,
+      "power_address": "0x240C8CA0",
+      "full_map_pixel_count": 1,
+      "preview_pixel_count": 0,
+      "example_output_pixels": [
+        [
+          679,
+          857
+        ]
+      ],
+      "example_screen_pixels": [],
+      "input_power": 160601293586,
+      "output_power": 160601293586,
+      "final_gain_q14": 16384,
+      "input_display_byte": 100,
+      "output_display_byte": 100,
+      "relative_power_db": 0.0,
+      "existing_output_matches": true
+    }
+  ],
+  "existing_visible_pixel_traces": [
+    {
+      "label": "retained_pixel_attenuated",
+      "source_image_row_col": [
+        340,
+        1236
+      ],
+      "logical_screen_x_y": [
+        836,
+        319
+      ],
+      "natural_fft_index": [
+        775,
+        511
+      ],
+      "memory_column": 255,
+      "power_byte_address": "0x243077F8",
+      "input_power": 26069390404880,
+      "final_gain_q14": 2048,
+      "final_gain": 0.125,
+      "output_power": 407334225076,
+      "input_gray_byte": 192,
+      "output_gray_byte": 215,
+      "relative_power_db": -18.061799739841536,
+      "stored_example_output_exact": true
+    },
+    {
+      "label": "retained_pixel_unmodified",
+      "source_image_row_col": [
+        338,
+        1238
+      ],
+      "logical_screen_x_y": [
+        837,
+        318
+      ],
+      "natural_fft_index": [
+        778,
+        511
+      ],
+      "memory_column": 255,
+      "power_byte_address": "0x2430A7F8",
+      "input_power": 826758024464,
+      "final_gain_q14": 16384,
+      "final_gain": 1.0,
+      "output_power": 826758024464,
+      "input_gray_byte": 126,
+      "output_gray_byte": 126,
+      "relative_power_db": 0.0,
+      "stored_example_output_exact": true
+    },
+    {
+      "label": "retained_pixel_near_image_center",
+      "source_image_row_col": [
+        422,
+        844
+      ],
+      "logical_screen_x_y": [
+        640,
+        360
+      ],
+      "natural_fft_index": [
+        511,
+        171
+      ],
+      "memory_column": 427,
+      "power_byte_address": "0x241FFD58",
+      "input_power": 113555360,
+      "final_gain_q14": 3484,
+      "final_gain": 0.212646484375,
+      "output_power": 5134806,
+      "input_gray_byte": 6,
+      "output_gray_byte": 0,
+      "relative_power_db": -13.446835984511374,
+      "stored_example_output_exact": true
+    }
+  ],
+  "byte_display": {
+    "formula": "(power >> 24) & 255; repeat into R,G,B",
+    "monotone": false,
+    "counterexample": {
+      "input_power": 4294967296,
+      "output_power": 1073741824,
+      "amplitude_gain": 0.5,
+      "input_byte": 0,
+      "output_byte": 64,
+      "input_db": 0.0,
+      "output_db": -6.020599913279624
+    },
+    "skipped_pixels": "No write; existing initialized display words retained. Initial UINT64_MAX appears white."
+  },
+  "pc_display": {
+    "reference_scale": "reference own frame peak",
+    "bypass_and_enhanced_scale": "shared bypass frame peak",
+    "scalar": "20*log10(sqrt(power/scale))",
+    "limits_db": [
+      -60,
+      0
+    ],
+    "colormap": "turbo",
+    "coordinates": "Natural range index and fftshifted Doppler FFT index; not Cartesian SAR coordinates"
+  },
+  "mapped_metric_weighting_example": {
+    "rd_baseline_sse": 0.009999999999999995,
+    "rd_enhanced_sse": 0.006400000000000003,
+    "mapped_baseline_sse": 0.009999999999999995,
+    "mapped_enhanced_sse": 0.02560000000000001
+  },
+  "coherent_phase_ambiguity_example": {
+    "individual_powers": [
+      1,
+      1
+    ],
+    "same_phase_sum_power": 4,
+    "opposite_phase_sum_power": 0
+  },
+  "generated_source_copies": {
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo06_interp\\interp_ip_1.0\\src\\CCID_count.v": {
+      "path": "radar1_scalar_compact_exp_v1\\project\\imaging_storage.gen\\sources_1\\bd\\design_1\\ipshared\\c104\\src\\CCID_count.v",
+      "exists": true,
+      "sha_equal": true
+    },
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo06_interp\\interp_ip_1.0\\hdl\\interp_ip_v1_0_M00_AXI.v": {
+      "path": "radar1_scalar_compact_exp_v1\\project\\imaging_storage.gen\\sources_1\\bd\\design_1\\ipshared\\c104\\hdl\\interp_ip_v1_0_M00_AXI.v",
+      "exists": true,
+      "sha_equal": true
+    },
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo04_display\\display_1.0\\hdl\\display_v1_0_M00_AXI.v": {
+      "path": "radar1_scalar_compact_exp_v1\\project\\imaging_storage.gen\\sources_1\\bd\\design_1\\ipshared\\f48a\\hdl\\display_v1_0_M00_AXI.v",
+      "exists": true,
+      "sha_equal": true
+    },
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo05_hdmi_cam_picture4\\src\\video_display.v": {
+      "path": "radar1_scalar_compact_exp_v1\\project\\imaging_storage.gen\\sources_1\\bd\\design_1\\ipshared\\8176\\src\\video_display.v",
+      "exists": true,
+      "sha_equal": true
+    }
+  },
+  "source_sha256": {
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo06_interp\\interp_ip_1.0\\src\\CCID_count.v": "f219f4514fe61859c081c0aa721fed636bf834a3c2d961aeacd75bb6fb98e092",
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo06_interp\\interp_ip_1.0\\hdl\\interp_ip_v1_0_M00_AXI.v": "60eb642672e89bc28a9bf63dadb4c5419209a80a6323c32462094643b301148c",
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo04_display\\display_1.0\\hdl\\display_v1_0_M00_AXI.v": "606d7aee8710fadebebd49310c32dbb6943b6987ef4abe5cce8f8dae29bdfe05",
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo05_hdmi_cam_picture4\\src\\video_display.v": "66516d7a4fe708d1ab681ccc7a9b9d7cd3b5f4143e4a33b06b1c2b20c14eb400",
+    "radar1_scalar_compact_exp_v1\\ip_repo\\repo05_hdmi_cam_picture4\\component.xml": "01d767c6c5efc0a3635f2ac877c81075b4a22b1e0a067c6d8bf812f5fae1b3c7",
+    "radar1_scalar_compact_exp_v1\\software\\image_init.c": "cff9861119a58ace7776415ba3813bc9e03d5cec74427b1ef815606c0f97aa3e",
+    "radar1_scalar_compact_exp_v1\\software\\aq_ar.bin": "97fa3585260f1fe169d01bf612a69caa4d51d938524d44ed0bd55f9744b8536e",
+    "radar1_scalar_compact_exp_v1\\project\\imaging_storage.srcs\\sources_1\\bd\\design_1\\design_1.bd": "03bd393a12558141465f1de9248fe1df7d769ff5223a8697bb8e2672430f1f6c",
+    "scalar_restore_v3\\make_comparison.py": "c6f9e59204c7111eee4a5167d33712763e6dd95faab9e527eb01e45afafa3b5c",
+    "network_understanding_v1\\reports\\POINT_TRACE.json": "19f76ecd0d9c0ce7ac051a39e686bea8a06709ba3b2d92713bd60c084f39655f",
+    "scalar_restore_v3\\examples_compact\\diagnosed_512_power.npy": "4bcba69c0b1b60e6ce796bdaebfd6ff6773592b441bbdef37056c91de5f87457",
+    "scalar_restore_v3\\examples_compact\\diagnosed_512_expected.npz": "e285c90c262074a16f384cce79172a6f6f34e9bfb0eabd8a2e80255af79b1d13",
+    "radar1_v7_offline_compare_v1\\adapter.py": "04da4c343f79806577c0ad95b568321b4569d115c730772d5dcb742c93c0c54b"
+  },
+  "neural_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "feature_extraction_run": false,
+  "full_frame_neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "scope": "Output-head expressions with constructed coefficients; no trained CNN or MLP inference",
+  "checks": {
+    "wrapper_and_legacy_output_heads_match": true,
+    "complement_and_residual_rewrites_exact": true,
+    "identity_at_h1": true,
+    "h_below_one_never_darkens_a_channel": true,
+    "h_above_one_never_brightens_a_channel": true,
+    "white_channel_anchor": true,
+    "bounded_scalar_gain_is_not_same_head_family": true,
+    "rgb_head_does_not_enforce_even_toy_scalar_color_curve": true,
+    "rounded_rgb_can_lose_scalar_distinctions": true,
+    "frozen_sources_unchanged": true
+  },
+  "algebra_pairs_checked": 6006,
+  "examples": [
+    {
+      "input_channel": 0.0,
+      "coefficient_h": 0.5,
+      "output_channel": 0.5,
+      "effective_ratio_if_nonzero": null,
+      "scope": "Constructed output-head arithmetic; h not predicted by the author network"
+    },
+    {
+      "input_channel": 0.2,
+      "coefficient_h": 0.5,
+      "output_channel": 0.6,
+      "effective_ratio_if_nonzero": 2.9999999999999996,
+      "scope": "Constructed output-head arithmetic; h not predicted by the author network"
+    },
+    {
+      "input_channel": 0.2,
+      "coefficient_h": 1.0,
+      "output_channel": 0.19999999999999996,
+      "effective_ratio_if_nonzero": 0.9999999999999998,
+      "scope": "Constructed output-head arithmetic; h not predicted by the author network"
+    },
+    {
+      "input_channel": 0.2,
+      "coefficient_h": 1.25,
+      "output_channel": 0.0,
+      "effective_ratio_if_nonzero": 0.0,
+      "scope": "Constructed output-head arithmetic; h not predicted by the author network"
+    },
+    {
+      "input_channel": 0.8,
+      "coefficient_h": 0.5,
+      "output_channel": 0.9,
+      "effective_ratio_if_nonzero": 1.125,
+      "scope": "Constructed output-head arithmetic; h not predicted by the author network"
+    },
+    {
+      "input_channel": 1.0,
+      "coefficient_h": 4.0,
+      "output_channel": 1.0,
+      "effective_ratio_if_nonzero": 1.0,
+      "scope": "Constructed output-head arithmetic; h not predicted by the author network"
+    }
+  ],
+  "toy_off_color_curve": {
+    "scope": "Toy known grayscale encoding C(a)=(a,a,a), not a claim about the author colormap or learned output",
+    "scalar_input": 0.4,
+    "rgb_input": [
+      0.4,
+      0.4,
+      0.4
+    ],
+    "constructed_h": [
+      1.0,
+      0.5,
+      1.5
+    ],
+    "resulting_rgb": [
+      0.4,
+      0.7,
+      0.10000000000000009
+    ],
+    "has_exact_scalar_preimage_on_toy_curve": false
+  },
+  "toy_display_rounding": {
+    "scope": "Toy grayscale display rounding only; no author preprocessing inferred",
+    "two_distinct_relative_amplitudes": [
+      0.2,
+      0.2001
+    ],
+    "uint8_gray_values": [
+      51,
+      51
+    ],
+    "same_display_value": true
+  },
+  "operator_counterexamples": {
+    "nonzero_output_from_zero_color_channel": 0.5,
+    "effective_gain_above_scalar_limit": 2.9999999999999996,
+    "zero_output_from_positive_color_channel": 0.0,
+    "scalar_amplitude_from_zero_for_any_finite_gain": 0.0,
+    "positive_scalar_input_minimum_for_input_point2": 0.025,
+    "warning": "These compare algebraic head families, not the quality or actual coefficients of either trained model"
+  },
+  "invertible_rgb_conditions": [
+    "Known scalar-to-color encoding and normalization",
+    "Injectivity on the considered scalar interval",
+    "No unresolved rounding, clipping, resizing or image rendering ambiguity",
+    "Output lies on the known scalar color curve"
+  ],
+  "source_sha256": {
+    "cdqob_pc_online_v1/model.py": "9848e904b03355e182e02913a2396c105feac60d590c50002ed1345cff17064a",
+    "cdqob_pc_online_v1/reference/AoDnet.py": "0b5587db9fbd09d34c72d44757d523a42aa6b689f67e59e1fc2bfffc9aff7477",
+    "scalar_restore_v3/pc_candidate_compact/model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

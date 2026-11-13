@@ -1,0 +1,85 @@
+{
+  "records": [
+    {
+      "id": "000_single_offgrid_a",
+      "split": "development",
+      "seed": 2026114100,
+      "template": "single_offgrid_a",
+      "target_count": 1,
+      "grid": "offgrid",
+      "family": "single",
+      "targets": [
+        {
+          "range_bin": 205.73184875680113,
+          "doppler_bin": -189.91550354918195,
+          "amplitude": 1.0,
+          "initial_phase_rad": 0.15631208596373503,
+          "azimuth_deg": 52.250093607323706,
+          "velocity_direction_deg": 82.17621220672065,
+          "signed_speed_m_s": -8.441392616541776,
+          "radial_velocity_m_s": -7.315896846900311,
+          "range_m": 8.470027307879194
+        }
+      ],
+      "actual_chirps": 512,
+      "shape": [
+        1024,
+        512
+      ],
+      "noise": false,
+      "clutter": false,
+      "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\development\\000_single_offgrid_a.npz",
+      "sha256": "8392c044b7a98b737d7a52e12d54073e4cc2654dbefc47d8d458b643a2910ef6"
+    },
+    {
+      "id": "001_collision_plus5_grid",
+      "split": "development",
+      "seed": 2026114101,
+      "template": "collision_plus5_grid",
+      "target_count": 2,
+      "grid": "grid",
+      "family": "collision_plus5",
+      "targets": [
+        {
+          "range_bin": 394.0,
+          "doppler_bin": 148.0,
+          "amplitude": 1.0,
+          "initial_phase_rad": -1.6236785929984354,
+          "azimuth_deg": 54.5458547757613,
+          "velocity_direction_deg": 65.28428538670069,
+          "signed_speed_m_s": 5.802853366995887,
+          "radial_velocity_m_s": 5.701234038856908,
+          "range_m": 16.221070191467284
+        },
+        {
+          "range_bin": 946.0,
+          "doppler_bin": 228.0,
+          "amplitude": 0.08463745794986978,
+          "initial_phase_rad": 3.0864401514943802,
+          "azimuth_deg": 3.7083159818026203,
+          "velocity_direction_deg": -21.23277831837244,
+          "signed_speed_m_s": 9.686309991302362,
+          "radial_velocity_m_s": 8.78298216796875,
+          "range_m": 38.94703655108643
+        }
+      ],
+      "actual_chirps": 512,
+      "shape": [
+        1024,
+        512
+      ],
+      "noise": false,
+      "clutter": false,
+      "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\development\\001_collision_plus5_grid.npz",
+      "sha256": "b683c2f23168dd766443bd689daf3ac2bd56eb738d5f839b9f26a6a951fac9bb"
+    }
+  ],
+  "protocol_sha256": "567c7843bdd352004d451a9a58c6c4737dec205233770504a143466b429464bf",
+  "generator_code": {
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\run_experiment.py": "41c28ea7cedede7f145c7d812e284d329cf3f699541a5deaa7e00aa940e6ff40",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\experiment.py": "ebe8fd3ee4606ad79abd3f7f8e40f41a94f1660ac0912750b07a7879386c7f96",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\reference_v2.py": "a4e03d70f76bde7c59bf253c7ac47f3772ace95e075bce6be591d625421dd362",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\common.py": "d4e6da8562866009b2ccd98707f23cbbf8af64797f8d24ffab3b375432a6dbca",
+    "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\source\\fft_reference\\xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11"
+  }
+}

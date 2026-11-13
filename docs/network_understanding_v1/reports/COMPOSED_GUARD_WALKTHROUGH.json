@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "checks": {
+    "piecewise_and_convex_composition_match_exact": true,
+    "qualifying_gain_paths_stay_between_raw_and_unity": true,
+    "fixed_compactness_maps_monotone_in_gain": true,
+    "composed_quartic_matches_exact": true,
+    "saturation_threshold_root_verified": true,
+    "right_slope_limits_four_and_sixteen": true,
+    "second_application_not_generally_redundant": true,
+    "saved_point_full_compactness_matches": true,
+    "saved_point_formula_explains_record": true,
+    "original_quality_fail_preserved": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Conditional real-valued gain-map mathematics; not model quality or actual guard-mask inference",
+  "fixed_mask_and_compactness_cases": 65,
+  "quartic_cases": 5,
+  "full_compactness_table": [
+    {
+      "raw_gain": 0.125,
+      "first": 0.125,
+      "second": 0.125
+    },
+    {
+      "raw_gain": 0.2,
+      "first": 0.2,
+      "second": 0.2
+    },
+    {
+      "raw_gain": 0.25,
+      "first": 0.25,
+      "second": 0.25
+    },
+    {
+      "raw_gain": 0.26,
+      "first": 0.2896,
+      "second": 0.40212736
+    },
+    {
+      "raw_gain": 0.3,
+      "first": 0.44,
+      "second": 0.8656
+    },
+    {
+      "raw_gain": 0.3125,
+      "first": 0.484375,
+      "second": 0.9677734375
+    },
+    {
+      "raw_gain": 0.32,
+      "first": 0.5104,
+      "second": 1.0
+    },
+    {
+      "raw_gain": 0.4,
+      "first": 0.76,
+      "second": 1.0
+    },
+    {
+      "raw_gain": 0.5,
+      "first": 1.0,
+      "second": 1.0
+    },
+    {
+      "raw_gain": 0.7,
+      "first": 1.0,
+      "second": 1.0
+    },
+    {
+      "raw_gain": 1.0,
+      "first": 1.0,
+      "second": 1.0
+    },
+    {
+      "raw_gain": 1.25,
+      "first": 1.25,
+      "second": 1.25
+    },
+    {
+      "raw_gain": 1.5,
+      "first": 1.5,
+      "second": 1.5
+    }
+  ],
+  "full_restore_raw_gain_threshold": 0.3169872981077807,
+  "full_restore_raw_gain_interval": [
+    0.3169872981077807,
+    1.0
+  ],
+  "threshold_applies_only_if_both_masks_and_full_compactness_hold": true,
+  "threshold_is_not_a_target_probability": true,
+  "one_layer_right_slope_limit": 4.0,
+  "two_layer_right_slope_limit": 16.0,
+  "saved_point": {
+    "position": [
+      200,
+      148
+    ],
+    "raw_gain": 0.43609619140625,
+    "conceptual_first": 0.8558575958013535,
+    "saved_first": 0.8558349609375,
+    "conceptual_second": 1.0,
+    "saved_second": 1.0,
+    "compactness_from_saved_features": 1.0,
+    "full_input_guard_functions_executed": false
+  },
+  "qualifications": [
+    "512 valid-chirp path; the compact mask is a subset of the first mask",
+    "Full return threshold concerns raw attenuation gains at most one; gains above one are unchanged",
+    "Input masks and compactness are fixed while studying variation of raw gain",
+    "Real-valued threshold is not an asserted exact integer threshold",
+    "Continuity of this gain path does not imply continuity of the full input-dependent algorithm",
+    "Local gain sensitivity is not an SNR or noise-amplification measurement",
+    "No training conclusion or universal target-preservation guarantee"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "scalar_restore_v3/pc_candidate_compact/scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+    "scalar_restore_v3/pc_candidate_compact/compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "network_understanding_v1/reports/POINT_TRACE.json": "19f76ecd0d9c0ce7ac051a39e686bea8a06709ba3b2d92713bd60c084f39655f"
+  },
+  "script_sha256": "236f9000fcedc0c7269c628b63a6ad5cd011214db41d3ccdad05fa267d8c1a5c",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_gain_map_algebra_run": true,
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "full_guard_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

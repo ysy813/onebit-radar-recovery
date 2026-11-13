@@ -1,0 +1,27 @@
+{
+  "gate": {
+    "threshold": 0.001,
+    "se_multiplier": 2
+  },
+  "validation_selected_name": "gate_0.001_2",
+  "validation_summary": {
+    "frames": 6,
+    "targets": 18,
+    "below_half": 1,
+    "below_0_8": 2,
+    "new_half": 1,
+    "mean_target_error": 0.020131412376132276,
+    "minimum_retention": 0.1849922444341032,
+    "mean_false40": 113.0,
+    "mean_false30": 45.333333333333336,
+    "mean_nmse_ratio": 0.3326750067746264,
+    "upper_gain_cannot_reach_half": 0,
+    "new_half_vs_old40": 0,
+    "recovered_half_vs_old40": 0
+  },
+  "protocol_sha256": "567c7843bdd352004d451a9a58c6c4737dec205233770504a143466b429464bf",
+  "solver_sha256": "64b7e58b9f658926fb42b38f1f4b695c2fd86eeac8f8923b55110f90d207e32e",
+  "driver_sha256": "41c28ea7cedede7f145c7d812e284d329cf3f699541a5deaa7e00aa940e6ff40",
+  "model_sha256": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712",
+  "before_test_generation": true
+}

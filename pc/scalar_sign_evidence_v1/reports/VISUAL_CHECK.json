@@ -1,0 +1,6 @@
+{
+  "status":"PASS",
+  "reviewed_images":["results/007_n8_strong_weak.png","results/009_collision_plus5_offgrid.png"],
+  "observed":"中文标题、坐标、图例正常，无缺字或明显布局遮挡；五路同色阶，真值圈标注与目标保留率曲线可读。",
+  "scope":"可视化呈现检查，不是算法质量通过"
+}

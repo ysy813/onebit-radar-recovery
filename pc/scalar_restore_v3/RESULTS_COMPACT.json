@@ -1,0 +1,49 @@
+{
+  "weak_correction_status": "PASS",
+  "full_original_quality_status": "FAIL",
+  "numeric_status": "PASS",
+  "diagnosed_targets": [
+    {
+      "id": "confirm_synth_116013_512",
+      "baseline": 0.5912711111156014,
+      "previous": 0.4613170540402579,
+      "corrected": 0.5912711111156014
+    },
+    {
+      "id": "v3_synth_124017_512",
+      "baseline": 0.5221816039098064,
+      "previous": 0.43565065575222534,
+      "corrected": 0.5221816039098064
+    }
+  ],
+  "development_known_targets": 570,
+  "development_new_half_losses": 0,
+  "fresh_known_targets": 120,
+  "fresh_known_weak_targets": 96,
+  "fresh_new_half_losses": 0,
+  "fresh_weak_mae_ratio_to_bypass": 0.7131314692335385,
+  "fresh_v2_nonregression": {
+    "field_temporal": {
+      "nmse_relative_to_v2": 1.0,
+      "background_error_relative_to_v2": 1.0
+    },
+    "synthetic_128": {
+      "nmse_relative_to_v2": 1.0,
+      "background_error_relative_to_v2": 1.0
+    },
+    "synthetic_512": {
+      "nmse_relative_to_v2": 1.0025782307308235,
+      "background_error_relative_to_v2": 1.0057854339524757
+    }
+  },
+  "failed_original_quality_checks": [
+    "each_acquisition_subgroup_background_at_most1p10_v7"
+  ],
+  "neural_weights_changed": false,
+  "parameters": 1857,
+  "active_model": "pc_candidate_compact",
+  "active_comparison": "results_compact/index.html",
+  "ip_built": false,
+  "bit_rebuilt": false,
+  "board_accessed": false
+}

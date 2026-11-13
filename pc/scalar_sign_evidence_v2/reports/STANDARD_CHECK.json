@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "scope": "实现与数据完整性，不代表质量或部署通过",
+  "frames": 20,
+  "old_development_frames": 2,
+  "new_validation_frames": 6,
+  "new_frozen_test_frames": 12,
+  "exact_sign_components_checked": 20971520,
+  "fit_evidence_disjoint": true,
+  "residual_proposal_uses_fit_only": true,
+  "same_initial16": true,
+  "max24_candidates": true,
+  "frozen_sources_unchanged": true,
+  "cli_scene": "007_n8_strong_weak",
+  "cli_input_only_max_errors": {
+    "old40": 0.0,
+    "residual24_model": 0.0,
+    "residual24_protect": 0.0,
+    "residual24_blend0.75": 0.0
+  },
+  "preflight": {
+    "status": "PASS",
+    "gradient_error": 6.915166917108306e-07,
+    "original_v1_snapshot_exact": true,
+    "zero_residual_no_spurious_candidates": true
+  },
+  "visual_review": {
+    "status": "PASS",
+    "method": "实际打开并检查生成PNG",
+    "checked": [
+      "results/007_n8_strong_weak.png",
+      "results/008_collision_minus3_grid.png",
+      "results/010_near_collision_plus5_interfaces.png"
+    ],
+    "chinese_titles_axes_legends_rendered": true,
+    "missing_glyph_boxes_observed": false,
+    "critical_clipping_observed": false,
+    "common_color_scale_db": [
+      -60,
+      0
+    ],
+    "preview_pooling": "4×2最大值池化，只用于全景显示；指标使用完整1024×512数组",
+    "note": "全景整数频点目标很小，配合同位置保留率曲线读取；独立恢复谱自身归一化，不代表绝对功率。"
+  },
+  "records": [
+    {
+      "split": "development",
+      "id": "007_n8_strong_weak",
+      "input_sha256": "c19f22744fd75019f627f8f77d3ee5d541aaedd303656937962474ac879e6218",
+      "output_sha256": "1de6ba13ee4b2ff4ff337776c5ea73304457eb1b62ec000d2da66ad062de9995"
+    },
+    {
+      "split": "development",
+      "id": "009_collision_plus5_offgrid",
+      "input_sha256": "94fcee42f7fb62db65976d24b305b324f9404b5e23d420826bea835781dc8825",
+      "output_sha256": "113ddde6c3e8af4a15bd8c483bea3a6f3b4ac77737c5ab30ecd8e6e6aa482503"
+    },
+    {
+      "split": "validation",
+      "id": "000_single_offgrid_a",
+      "input_sha256": "1b249e9ece5562cb37832c1255ebbd12cfa7a9365bf31f52a794bb9deed31036",
+      "output_sha256": "2398411a789b483acf85dfb17562d481b4b81c87f6174a65c2d8bcfbf5e15247"
+    },
+    {
+      "split": "validation",
+      "id": "001_n4_spread",
+      "input_sha256": "2116ea337039b81bffb73ab8222782f51552f3bd87e13b088fd55f4254d2c862",
+      "output_sha256": "05b41b5c928dbbda8da520c0ab4cb0488ddb5d2e8b868ca60ead874d6ecb6707"
+    },
+    {
+      "split": "validation",
+      "id": "002_n8_near_pairs",
+      "input_sha256": "a43ad37882a70d95ae3ccf69f0616bad03cae43cea2f470b00de94c62b63a2df",
+      "output_sha256": "95a608d6ed9a0d0377941ee8b3f72bf7761d5807463a855410f0381fd3383eb9"
+    },
+    {
+      "split": "validation",
+      "id": "003_n8_strong_weak",
+      "input_sha256": "3edcd1b2e191c134cc29b47d00e0b218d825f7d7b71cd0280e60695229e0f039",
+      "output_sha256": "7b120c78087a1ab17153c3b329814506e62a99ac09e508f1f0db99f06bce75e2"
+    },
+    {
+      "split": "validation",
+      "id": "004_collision_plus5_offgrid",
+      "input_sha256": "1f929dc6107f892d6ed67873d2f38499d90806a3a0465e18174aad7c9123df2b",
+      "output_sha256": "b0b46e363c93233faf17496cb1ffb480311a3df7063b2dac3dfc52289326730b"
+    },
+    {
+      "split": "validation",
+      "id": "005_n2_strong_weak_offgrid",
+      "input_sha256": "b865999d7426471ce9add9ef522c58390f1aa173abc75aa75c74505532296d7e",
+      "output_sha256": "9c808e3fee964a9f28bef51f1dd9b37a1733670ce1b16912aef8dec7892ec2f1"
+    },
+    {
+      "split": "test",
+      "id": "000_single_grid_a",
+      "input_sha256": "2defbe5e99d899734f39c8c2b5883edc729235cb8d23239aab20237030cf70ca",
+      "output_sha256": "0dd91b8dc798db398a49d9b7f63182a5b7939a8d6594cb793fc49c81f344e39e"
+    },
+    {
+      "split": "test",
+      "id": "001_single_offgrid_a",
+      "input_sha256": "a433efda247eda1e6548a9c67e91f1d16b16902f162c3d7c46add1c8e138f151",
+      "output_sha256": "cf96a2db79d57fa98ccdfd820ced87d4e1c6a8a2a0c113ec079785ae8ee00dce"
+    },
+    {
+      "split": "test",
+      "id": "002_n4_spread",
+      "input_sha256": "3d4ce00d7198c7c09d80c35c68184169d5c81332810e633901c0e4601afd43b3",
+      "output_sha256": "49ee999360d97e20cf131461d283a5bda031357d4ea4c44caa98e6a41fc61a92"
+    },
+    {
+      "split": "test",
+      "id": "003_n4_near_pairs",
+      "input_sha256": "36190787c3971343bae483df92660a7bdc8b77301794bab0256c72f1c01624dd",
+      "output_sha256": "4115bce8bb2148abdc708bcf19fc26c1f2a3a21edcc42a28391af6c42e8cc869"
+    },
+    {
+      "split": "test",
+      "id": "004_n4_strong_weak",
+      "input_sha256": "3e8aac39b2bf74d1a00e65f57f6048486a9f8b88fd6df8bf3521aed8f1464462",
+      "output_sha256": "7aef7898fb9b887ed32e4e050327f69e96dfe52bad4ecf99d81abe516dda8d69"
+    },
+    {
+      "split": "test",
+      "id": "005_n8_spread",
+      "input_sha256": "1ad82d209bdd7665e36367a2e481d6995fc0ed9f5b5dfd4b8c27c51c919b1766",
+      "output_sha256": "ff4f7bed9a5a70a6c736d3720157697066af501380fc919bd054383e8a2c8f93"
+    },
+    {
+      "split": "test",
+      "id": "006_n8_near_pairs",
+      "input_sha256": "2194a0dfddc2f118d0769dfc02ae16af4f58e697cdfe208c0b525d2b8ab27a99",
+      "output_sha256": "7d3c124f96d8054e37ec6cf599467c712f52f626c7c40cd6f9173cdc249b3067"
+    },
+    {
+      "split": "test",
+      "id": "007_n8_strong_weak",
+      "input_sha256": "d03fae47cce96fb5a1e52f8fba43cf2177339d24e8ed6d592f76a800e2ea4c35",
+      "output_sha256": "82ca2ffc26846efcd6e7f6252f4b20ce87b242e2879b314f4ba492bcabffd325"
+    },
+    {
+      "split": "test",
+      "id": "008_collision_minus3_grid",
+      "input_sha256": "ba1143377b4c7dde3bdd8c21d728f417694f989b02c24d8348d72794194db0fd",
+      "output_sha256": "befdf60992710d27e63b5096e419e6fe7b3b034b657175cb7556424f819a563c"
+    },
+    {
+      "split": "test",
+      "id": "009_collision_plus5_offgrid",
+      "input_sha256": "6839b5982a7edbfddc0189292516213849b836abd827ebfc325b04b7aa3b6c2c",
+      "output_sha256": "04bca76560eeee7825211a1b2a00f9e8bfc465ec01903baf6ece52ee2599006e"
+    },
+    {
+      "split": "test",
+      "id": "010_near_collision_plus5",
+      "input_sha256": "2cdfd7c94d47747df351fdbd2702c52601574865cb6e59c68cd73bda08b2375e",
+      "output_sha256": "8535e7ebfabfb88afc90d5a3d4924cbeef50c621cd08b5b515b4efdd3c5571fb"
+    },
+    {
+      "split": "test",
+      "id": "011_n2_strong_weak_offgrid",
+      "input_sha256": "845ceb102bebc9b6dd3931a64907b2a7a70f6b8b4adfef34d5061e4ba8580a80",
+      "output_sha256": "9f3f8314bb811fcf818d624789f44433289003cc68bb4065aedb242abee1bd61"
+    }
+  ],
+  "quality_pass": false,
+  "deployment_ready": false
+}

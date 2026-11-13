@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "checks": {
+    "same_previously_diagnosed_record": true,
+    "frame_shape_matches": true,
+    "all_values_finite": true,
+    "saved_gains_in_frozen_interval": true,
+    "regions_are_a_partition": true,
+    "oracle_is_reachable_pointwise": true,
+    "current_is_reachable_pointwise": true,
+    "oracle_no_worse_than_current_or_bypass": true,
+    "oracle_zero_error_within_interval": true,
+    "boundary_cross_terms_nonnegative": true,
+    "projection_identity_matches": true,
+    "partition_totals_match": true,
+    "frozen_sources_unchanged": true
+  },
+  "record_id": "confirm_synth_116013_512",
+  "scope": "Reference-informed pointwise continuous-gain relaxation of an old synthetic development record, not new network performance",
+  "normalization": "Reference uses its own peak; bypass, saved output, and ideal multiplication share the input peak",
+  "amplitude_gain_interval": [
+    0.125,
+    1.5
+  ],
+  "reference_energy": 1.4481071101930936,
+  "bypass_sse": 0.32126458044985656,
+  "current_ideal_sse": 0.1325823674707627,
+  "current_saved_power_sse": 0.1325823674709403,
+  "oracle_sse": 0.004704722110448339,
+  "oracle_to_current_ideal_sse": 0.03548527756894846,
+  "bypass_nmse": 0.2218513935802846,
+  "current_ideal_nmse": 0.09155563600062976,
+  "oracle_nmse": 0.0032488771564839576,
+  "regions": [
+    {
+      "region": "reference_below_minimum",
+      "pixels": 153249,
+      "oracle_sse": 0.0032401901442294617,
+      "current_ideal_sse": 0.1132756377422902
+    },
+    {
+      "region": "reference_above_maximum",
+      "pixels": 11533,
+      "oracle_sse": 0.0014645319662188777,
+      "current_ideal_sse": 0.011661632876969823
+    },
+    {
+      "region": "reference_within_interval",
+      "pixels": 359506,
+      "oracle_sse": 0.0,
+      "current_ideal_sse": 0.00764509685150271
+    }
+  ],
+  "projection_identity": {
+    "oracle_floor": 0.004704722110448339,
+    "squared_distance_to_oracle": 0.10052542688669154,
+    "boundary_cross_term": 0.027352218473622885,
+    "reconstructed_current_sse": 0.13258236747076277
+  },
+  "qualifications": [
+    "Oracle uses the unavailable reference and independently selects every continuous gain",
+    "It relaxes shared parameters, feature ambiguity, composite training loss, fixed guards, and discrete gain constraints",
+    "The ratio is not a causal attribution or an achievable improvement estimate",
+    "It does not estimate the conditional Bayes risk or identify causes of the remaining error",
+    "Saved-power error is listed separately from ideal multiplication to avoid calling the relaxation bit-exact",
+    "This old synthetic development record does not establish generalization or new quality approval"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/compact_development/arrays/confirm_synth_116013_512.npz": "19b2e9f3dc9bef4c67696ee2e827495a6198f157bc8770dfa492d0fa7fd083af",
+    "network_understanding_v1/reports/POINT_REFERENCE_WALKTHROUGH.json": "fe3b1916d40b15b587cb14bd90f4228fc813ddef52d5c26f3d8d17155514aad7",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+  },
+  "script_sha256": "93d47e5940595c68a28da8ee48cd33e19cd08105e1b1f0271bdd2e329ee52dec",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "original_full_quality_status_preserved": "FAIL",
+  "saved_frame_reference_relaxation_run": true,
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "feature_extraction_run": false,
+  "guard_run": false,
+  "radar_fft_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

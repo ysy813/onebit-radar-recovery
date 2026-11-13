@@ -1,0 +1,68 @@
+{
+  "stage": "EXPERIMENTAL_READY_FOR_BOARD_TEST",
+  "bitstream_ready": true,
+  "board_tested": false,
+  "experimental": true,
+  "quality_certified": false,
+  "timing": {
+    "wns_ns": 0.192,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.01,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 0.046,
+    "tpws_ns": 0.0,
+    "pulse_width_failing_endpoints": 0
+  },
+  "resources": {
+    "lut": {
+      "used": 53577.0,
+      "available": 87840,
+      "percent": 60.99
+    },
+    "register": {
+      "used": 60039.0,
+      "available": 175680,
+      "percent": 34.18
+    },
+    "bram36": {
+      "used": 119.5,
+      "available": 128,
+      "percent": 93.36
+    },
+    "uram": {
+      "used": 43.0,
+      "available": 48,
+      "percent": 89.58
+    },
+    "dsp": {
+      "used": 262.0,
+      "available": 728,
+      "percent": 35.99
+    }
+  },
+  "full_system_timing_signoff": false,
+  "preflight": {
+    "status": "PASS",
+    "full_frame_csim": true,
+    "zero_frame": true,
+    "rtl_mlp_cases": 464,
+    "rtl_guard_cases": 464,
+    "changed_guard_cases": 208,
+    "frame_cdc_pass": true,
+    "original_sources_unchanged": true,
+    "storage_fork_unchanged": true,
+    "ddr_scratch_bytes": 16777216,
+    "ddr_scratch_start": "0x31000000",
+    "ddr_scratch_end_exclusive": "0x32000000",
+    "hls_estimated_cycles": 295812315,
+    "hls_estimated_seconds_at_100mhz": 2.95812315,
+    "hls_estimate_excludes_actual_axi_stalls": true,
+    "active_generated_sources": {
+      "scalar_gain.v": "b52b003fac7d7390e512bbea1dd6a8d740466b078db3c0e46e2ea27b9a3b8802",
+      "scalar_gain_predict.v": "c92b4c3f991835de3db6fd99cc3ec16535f32fc36ed2e35c3f3309250d31cd22",
+      "scalar_gain_protect.v": "d3096f1abbe4d350bcf704c5d029016c19918e5f35995addb69a6daa210ae403"
+    }
+  }
+}

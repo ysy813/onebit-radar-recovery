@@ -1,0 +1,5 @@
+ELF_READY raw_imaging
+ELF_READY onebit_bypass
+ELF_READY onebit_network
+ELF_READY onebit_network_storage
+SCALAR_SOFTWARE_PASS

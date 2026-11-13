@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_sources_unchanged": true,
+    "split_counts": true,
+    "split_seed_disjoint": true,
+    "split_input_disjoint": true,
+    "all_source_hashes": true,
+    "all_shapes": true,
+    "sum_then_sign_stored_consistency": true,
+    "echo_regeneration": true,
+    "bit_exact_fft_sample": true,
+    "adapt_checkpoint_hash": true,
+    "adapt_finite_1857_changed": true,
+    "adapt_gain_metadata": true,
+    "adapt_shared_sources_budget": true,
+    "suppress_checkpoint_hash": true,
+    "suppress_finite_1857_changed": true,
+    "suppress_gain_metadata": true,
+    "suppress_shared_sources_budget": true,
+    "pool_hash": true,
+    "pool_shape_bounds": true,
+    "pool_provenance_recomputed_16_per_frame": true,
+    "output_hash_finite_nonnegative": true,
+    "gain_range": true,
+    "full_frame_output_recompute": true,
+    "metrics_independent_reference": true,
+    "cli_input_no_truth": true,
+    "label_free_cli_same_output": true,
+    "python_syntax": true,
+    "json_parse": true,
+    "html_local_links": true
+  },
+  "checked_source_frames": 68,
+  "weights": {
+    "adapt": {
+      "parameter_count": 1857,
+      "changed_parameters": 1713,
+      "max_abs_change": 1.295289158821106,
+      "sha256": "0229f57bb62a899a5ced4bf93f849b8c32acfd31ad3b6460935535bf485f4987",
+      "selected_step": 4000
+    },
+    "suppress": {
+      "parameter_count": 1857,
+      "changed_parameters": 1712,
+      "max_abs_change": 3.001650094985962,
+      "sha256": "337ec1ba6088a48729b1b6a64bd42863548d30e387b79d3c9f82715aa0cecab5",
+      "selected_step": 4000
+    }
+  },
+  "max_full_frame_error": 0.0,
+  "cli_max_error": 0.0,
+  "quality_separate": true,
+  "visual_review_separate": true,
+  "not_rtl_or_board_validation": true
+}

@@ -1,0 +1,3295 @@
+{
+  "status": "PASS",
+  "checks": {
+    "selected_manifest_hash_matches": true,
+    "selected_records_exactly_all_train": true,
+    "selected_pair_files_match_all_hashes": true,
+    "paired_numeric_shapes_and_types": true,
+    "counts_verified": true,
+    "same_raw_frame_split_consistent": true,
+    "same_frame_layouts_use_same_payload": true,
+    "all_recorded_raw_payload_hashes_match": true,
+    "train_validation_frames_disjoint": true,
+    "train_temporal_test_frames_disjoint": true,
+    "train_compact_frames_disjoint": true,
+    "train_validation_seeds_disjoint": true,
+    "train_compact_seeds_disjoint": true,
+    "exact_training_snapshots": true,
+    "v7_is_guarded_initial_source": true,
+    "v7_first16_copied_and_new_columns_zero": true,
+    "v7_hidden_biases_and_second_layer_copied": true,
+    "guarded_output_head_reset": true,
+    "added_neighbor_columns_learned": true,
+    "selected_initial_source_verified": true,
+    "core_source_field_is_checkpoint_hash": true,
+    "selected_neural_state_equals_protected": true,
+    "current_neural_state_equals_selected": true,
+    "current_network_1857_parameters": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Training provenance and source-payload/tensor audit only; not training, inference, or a new generalization result",
+  "counts": {
+    "families": {
+      "prior_controlled": 20,
+      "historical_capture": 6,
+      "field_capture": 24,
+      "new_synthetic": 12
+    },
+    "groups": {
+      "synthetic": 32,
+      "historical_development": 6,
+      "field_temporal": 24
+    },
+    "actual_chirps": {
+      "128": 30,
+      "512": 32
+    },
+    "pair_records": 62,
+    "pool_entries": 1396736,
+    "field_unique_source_frames": 6,
+    "field_rx_ids": [
+      0,
+      3
+    ],
+    "field_layouts": [
+      "rx_blocks_per_chirp",
+      "sample_interleaved"
+    ],
+    "historical_unique_source_frames": 6,
+    "synthetic_unique_seeds": 32,
+    "selected_stage_optimizer_steps": 30000,
+    "selected_stage_batch_size": 3072,
+    "selected_stage_sample_presentations": 92160000
+  },
+  "training_records": [
+    {
+      "id": "prior_controlled_train_case_000",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92000,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_000.npz",
+      "pair_bytes": 8556805,
+      "pair_sha256": "9b1c49c873910e06903dbc6d8648c0fd6c1f3229b43589a0071ece232a1bc7e7",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_001",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92001,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_001.npz",
+      "pair_bytes": 8723447,
+      "pair_sha256": "63c3deedae0bbe563a940dc1191059e1c7eaa83eb2acb2ffb418813db4047818",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_002",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92002,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_002.npz",
+      "pair_bytes": 8821841,
+      "pair_sha256": "6da16f1d55d1a27e4d10066a5bbbe4a6cf098d496abb10fbe8cc1602e6d1d96e",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_003",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92003,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_003.npz",
+      "pair_bytes": 8595303,
+      "pair_sha256": "9b58b3aff9aef2477406d5ca113cc4f5555d9684c9a270f795b6416f9f9db9ad",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_004",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92004,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_004.npz",
+      "pair_bytes": 8567227,
+      "pair_sha256": "b41f5beaa0a391679b4f8ded94a57b671cacec05c457b11d1e29fd72934c1392",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_005",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92005,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_005.npz",
+      "pair_bytes": 8726501,
+      "pair_sha256": "28cd811adda17683444bdd50773f3972ab24d7cf91426592566bd53e4aeaa77b",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_006",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92006,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_006.npz",
+      "pair_bytes": 8806854,
+      "pair_sha256": "6f6856ae8d1ded5b1ea7f69a81cc3c14e4a298a7ab1ac997f6dc2f917c58ba13",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_007",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92007,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_007.npz",
+      "pair_bytes": 8661299,
+      "pair_sha256": "02562a9cc9a1350cf656e5b593b2203c3676fd67e8774b36055703d95c0da32c",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_008",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92008,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_008.npz",
+      "pair_bytes": 8499607,
+      "pair_sha256": "1eefd641fe5756379365c99d0c10d1b6dd66721c6a74b2dfc699b8fbf6b6cc5b",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_009",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92009,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_009.npz",
+      "pair_bytes": 8613998,
+      "pair_sha256": "05796ef346bf5a2cef758f9d6a344c229b0667ca8b3fff5606cf2e6c42fcd22d",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_010",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92010,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_010.npz",
+      "pair_bytes": 8787987,
+      "pair_sha256": "39bb9de4e474b716f08e840db5c30ad57f8aeab167ee6b5bc1c812171e3e4b1f",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_011",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92011,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_011.npz",
+      "pair_bytes": 8609586,
+      "pair_sha256": "1d57e03a3a3cb37e07f6ede100c61c52d039a83670303dbe6c0bd08cfa2c911e",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_012",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92012,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_012.npz",
+      "pair_bytes": 8573847,
+      "pair_sha256": "473365c56a020d8e565dc5dfa5a08407b4ab274b14948aea4fe504e343474b4a",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_013",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92013,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_013.npz",
+      "pair_bytes": 8659858,
+      "pair_sha256": "5f5d583f1a3fcb79177ad67034bf67b3e73395c3b65fabd571905f0931944003",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_014",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92014,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_014.npz",
+      "pair_bytes": 8810086,
+      "pair_sha256": "ca30f273ba10de4a0161190d305992e4e085af95f84108ba24154d19704c1757",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_015",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92015,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_015.npz",
+      "pair_bytes": 8590208,
+      "pair_sha256": "ee9d012a9f4eea0bec971aa050020f1bf582124295cd9083a9380f20cb385138",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_016",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92016,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_016.npz",
+      "pair_bytes": 8558087,
+      "pair_sha256": "23c048d4a85a559247ee3bd544deee264abd848d3620afdc9f262ae3b7fb5d86",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_017",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92017,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_017.npz",
+      "pair_bytes": 8653650,
+      "pair_sha256": "5c0261718ae8702e0e339c37b46907220bad2ae12b3a9d99b53ea13a5bc9d3d2",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_018",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92018,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_018.npz",
+      "pair_bytes": 8825571,
+      "pair_sha256": "775bb40930a727fc482bcea1772b16ee86762414d1ab638cacb3d1b24bd09a1d",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "prior_controlled_train_case_019",
+      "split": "train",
+      "group": "synthetic",
+      "family": "prior_controlled",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 92019,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/prior_controlled_train_case_019.npz",
+      "pair_bytes": 8557986,
+      "pair_sha256": "5c4cab1c92864d3a67b04ac828d539d7af9753c2b6ffd2102459465b5ab9e992",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "historical_0000",
+      "split": "train",
+      "group": "historical_development",
+      "family": "historical_capture",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": 0,
+      "seed": null,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/historical_0000.npz",
+      "pair_bytes": 7982874,
+      "pair_sha256": "50af541f9af679117ab486c5fda3e9f1ace92c5bc9cdde906eb67b689e67294c",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "historical_0012",
+      "split": "train",
+      "group": "historical_development",
+      "family": "historical_capture",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": 12,
+      "seed": null,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/historical_0012.npz",
+      "pair_bytes": 8016865,
+      "pair_sha256": "8356a63b5231bb1b984994df7675fefc419e962321bd3044f733787f575aacfd",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "historical_0024",
+      "split": "train",
+      "group": "historical_development",
+      "family": "historical_capture",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": 24,
+      "seed": null,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/historical_0024.npz",
+      "pair_bytes": 8629040,
+      "pair_sha256": "3fd72381c30e8b7763e0594f93255e8d98f026f35f6236e1b11022da10c22059",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "historical_0036",
+      "split": "train",
+      "group": "historical_development",
+      "family": "historical_capture",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": 36,
+      "seed": null,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/historical_0036.npz",
+      "pair_bytes": 8209165,
+      "pair_sha256": "9c57f96fd4f0cb598039e18593bd4f74b9c4bb98afaffce7fbc482ab66db6d10",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "historical_0048",
+      "split": "train",
+      "group": "historical_development",
+      "family": "historical_capture",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": 48,
+      "seed": null,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/historical_0048.npz",
+      "pair_bytes": 8562786,
+      "pair_sha256": "dd50ff9bccd4c1a826bc36e876b8e28a9b1b28ed3f1df15ab3958e273935a45d",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "historical_0060",
+      "split": "train",
+      "group": "historical_development",
+      "family": "historical_capture",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": 60,
+      "seed": null,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/historical_0060.npz",
+      "pair_bytes": 8317478,
+      "pair_sha256": "03badde31267942eae2f11362fdd9fe7b0c41bff7cf28b3c6bb2bd20b69f4596",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0015",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 15,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "bbc7f10d15866757187cadd35e0e9fa6aa8144ec43bc3d670ed7eb8d3c0f20bd",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx0_0015.npz",
+      "pair_bytes": 8096457,
+      "pair_sha256": "e94a4b075665b50ad433b3564db8421477f184c707c43818a51efff161da84a5",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0015",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 15,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "bbc7f10d15866757187cadd35e0e9fa6aa8144ec43bc3d670ed7eb8d3c0f20bd",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx3_0015.npz",
+      "pair_bytes": 8255812,
+      "pair_sha256": "83fa93bf3a3af55d30606d898cc5076d08b845228794a3577bb43c86b0f3064d",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0015",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 15,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "bbc7f10d15866757187cadd35e0e9fa6aa8144ec43bc3d670ed7eb8d3c0f20bd",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx0_0015.npz",
+      "pair_bytes": 8234827,
+      "pair_sha256": "03d3149727899ea4391ba22ca59cb57b955d77273dfe9d160282b224c22fa3bd",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0015",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 15,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "bbc7f10d15866757187cadd35e0e9fa6aa8144ec43bc3d670ed7eb8d3c0f20bd",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx3_0015.npz",
+      "pair_bytes": 8233620,
+      "pair_sha256": "dff2c01e52ef6dc85b5f67db46233f46fff869203a3c066cd69da62cee4ff7cf",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0079",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 79,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "a87e529e358c9258769bc23282d73dcbfc71f6345d62007875629d4652bb3877",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx0_0079.npz",
+      "pair_bytes": 8131909,
+      "pair_sha256": "a6e8c193a16588583aa3435e20530958a74e79859be2f06dd48a0750984bd0c2",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0079",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 79,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "a87e529e358c9258769bc23282d73dcbfc71f6345d62007875629d4652bb3877",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx3_0079.npz",
+      "pair_bytes": 8268113,
+      "pair_sha256": "2a0e69ba2be68d8f907f712f9a5269e57aa2a8f341cd1fb046063320fb6db770",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0079",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 79,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "a87e529e358c9258769bc23282d73dcbfc71f6345d62007875629d4652bb3877",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx0_0079.npz",
+      "pair_bytes": 8256497,
+      "pair_sha256": "419a054bf3011e219d081f8f33d08282b6acb9c5c049d6cce5ce85fc2c29ff98",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0079",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 79,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "a87e529e358c9258769bc23282d73dcbfc71f6345d62007875629d4652bb3877",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx3_0079.npz",
+      "pair_bytes": 8251946,
+      "pair_sha256": "ea1d45240111e8c673f8b48ba1effc50b9e4e3ca963949c04bb886836fae6dbe",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0143",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 143,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "50c372fe73d8d8f2b7622dce18b8e556885c4b55171a02cfaaaa9cb119bbb021",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx0_0143.npz",
+      "pair_bytes": 8174262,
+      "pair_sha256": "c9942a87032822716fb60da686283ecbad9202d31dc9d6dfdce880a95a917629",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0143",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 143,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "50c372fe73d8d8f2b7622dce18b8e556885c4b55171a02cfaaaa9cb119bbb021",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx3_0143.npz",
+      "pair_bytes": 8338271,
+      "pair_sha256": "e6de1885c68d0fc0f363683107f99173516dd139da631c650c9e8eb36bdb4187",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0143",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 143,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "50c372fe73d8d8f2b7622dce18b8e556885c4b55171a02cfaaaa9cb119bbb021",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx0_0143.npz",
+      "pair_bytes": 8312076,
+      "pair_sha256": "48f81b0b8ba58001ef6f28a6479c429f63038fc1a79c3491b78901c3dbc57ebe",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0143",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 143,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "50c372fe73d8d8f2b7622dce18b8e556885c4b55171a02cfaaaa9cb119bbb021",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx3_0143.npz",
+      "pair_bytes": 8315561,
+      "pair_sha256": "8661d2536d57e1426a79de7881134a000cf6cabe6b1485f85757c354f639b177",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0207",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 207,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "699f34f8409ba36e74e5e60a42b3ee253a0a2f171558f21318bb2909a01429f9",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx0_0207.npz",
+      "pair_bytes": 8195151,
+      "pair_sha256": "b37b0b21db23fb0a3f43329846f226d211f2db5c5c308f9f3bd49a2a3d76b2ee",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0207",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 207,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "699f34f8409ba36e74e5e60a42b3ee253a0a2f171558f21318bb2909a01429f9",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx3_0207.npz",
+      "pair_bytes": 8347689,
+      "pair_sha256": "1ab1af3759cb6a7206f2132037c3058910080305cf059028fd4cd4b972499edd",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0207",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 207,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "699f34f8409ba36e74e5e60a42b3ee253a0a2f171558f21318bb2909a01429f9",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx0_0207.npz",
+      "pair_bytes": 8326843,
+      "pair_sha256": "908bdfe8975d281dff9dd2cf9be2bfd8e1960a9bb9fbd47cc328b1fca8423911",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0207",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 207,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "699f34f8409ba36e74e5e60a42b3ee253a0a2f171558f21318bb2909a01429f9",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx3_0207.npz",
+      "pair_bytes": 8319978,
+      "pair_sha256": "1d47872b627c668726528702c185c792281812e59dd62972cf60921b11f57adb",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0271",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 271,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "23c07fa20e7cab6aba279ca185dfcf4f2998705cb55ff83d096c6a48637daacc",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx0_0271.npz",
+      "pair_bytes": 8242947,
+      "pair_sha256": "f819906b2d1cf4b1b69d848ba1e30508a9f9e3177c95bf7a6faf1a93c005ca90",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0271",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 271,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "23c07fa20e7cab6aba279ca185dfcf4f2998705cb55ff83d096c6a48637daacc",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx3_0271.npz",
+      "pair_bytes": 8376995,
+      "pair_sha256": "548fd38c336ac86f81eee45e72ccc257f989b0b8fc671ab344f0484f39417a2e",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0271",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 271,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "23c07fa20e7cab6aba279ca185dfcf4f2998705cb55ff83d096c6a48637daacc",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx0_0271.npz",
+      "pair_bytes": 8362054,
+      "pair_sha256": "824b4be9803fdfa07533928d0e368a3e8b4caaf06b88d0151481b525f589a7ec",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0271",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 271,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "23c07fa20e7cab6aba279ca185dfcf4f2998705cb55ff83d096c6a48637daacc",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx3_0271.npz",
+      "pair_bytes": 8358031,
+      "pair_sha256": "212d9bc5c6ee13352aa84736df22d81a011d483a485d0be9a95096631c0ab2dd",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0303",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 303,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "0e1a184e6de4d2dc0fe94365f84a883dd75636a1f65f4c5f03f9248d763f94cb",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx0_0303.npz",
+      "pair_bytes": 8234548,
+      "pair_sha256": "54c20c5a5ae52bc658c887bd92e3c2a9357bcc9a8474560a607c293f10e68553",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0303",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 303,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "rx_blocks_per_chirp",
+      "raw_frame_sha256": "0e1a184e6de4d2dc0fe94365f84a883dd75636a1f65f4c5f03f9248d763f94cb",
+      "pair_path": "scalar_restore_v2/pairs/field_rx_blocks_per_chirp_rx3_0303.npz",
+      "pair_bytes": 8361699,
+      "pair_sha256": "0cb0ddb6fe23765712d95bb49e42ae986e77e09ad6c1ef5c590fa58a770b8285",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0303",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 303,
+      "seed": null,
+      "rx_id": 0,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "0e1a184e6de4d2dc0fe94365f84a883dd75636a1f65f4c5f03f9248d763f94cb",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx0_0303.npz",
+      "pair_bytes": 8347106,
+      "pair_sha256": "a56f861b7dcb9ce7bf45b8f5011392cad7d67fd486820725e6a181ae48f85a33",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0303",
+      "split": "train",
+      "group": "field_temporal",
+      "family": "field_capture",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": 303,
+      "seed": null,
+      "rx_id": 3,
+      "layout_assumed": "sample_interleaved",
+      "raw_frame_sha256": "0e1a184e6de4d2dc0fe94365f84a883dd75636a1f65f4c5f03f9248d763f94cb",
+      "pair_path": "scalar_restore_v2/pairs/field_sample_interleaved_rx3_0303.npz",
+      "pair_bytes": 8351923,
+      "pair_sha256": "24e6bca4fe3fe79681f713e8e01c56d0dcfa252c16b09b04feb9d74e9f3a9cae",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100000_128",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100000,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100000_128.npz",
+      "pair_bytes": 8455777,
+      "pair_sha256": "09733945ba0570481c88a5b3f5ef40886b6e0baa9b2ce64ca6bcf6aa4f0a3c87",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100001_512",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100001,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100001_512.npz",
+      "pair_bytes": 8710043,
+      "pair_sha256": "4a6582760623a904d98cbd162f72c03126d5b7abc1c1eba24f49e42275f83303",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100002_128",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100002,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100002_128.npz",
+      "pair_bytes": 8716099,
+      "pair_sha256": "ac136b5bfe65ba51c38c892f4afa79321360657118ba788d5754591f5fb9335b",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100003_512",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100003,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100003_512.npz",
+      "pair_bytes": 8681560,
+      "pair_sha256": "88e004f113df69b7515b8f1a7a5ab87e84ab4469cd0fcaf73f58969bcbc4388d",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100004_128",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100004,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100004_128.npz",
+      "pair_bytes": 8497104,
+      "pair_sha256": "11834850ed6cb89038b3d4fe2fc9421571457ad86d30d4757866535ba64fdc98",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100005_512",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100005,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100005_512.npz",
+      "pair_bytes": 8717289,
+      "pair_sha256": "4f073f7f795288bbc527c40c01377d8ecf30c11130309b85dfa265fbe1e11406",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100006_128",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100006,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100006_128.npz",
+      "pair_bytes": 8703001,
+      "pair_sha256": "88e5a3061f1f5b66cd42410f3027bc8467153e90328f5d7526cf03023c9e6d72",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100007_512",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100007,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100007_512.npz",
+      "pair_bytes": 8536708,
+      "pair_sha256": "fd6a1e9cfb63da5b1c275fad9bbb6ea81fed5df907367b161b67523eda026916",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100008_128",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100008,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100008_128.npz",
+      "pair_bytes": 8475333,
+      "pair_sha256": "4e11d1fb34d00fc61ff1cb04ad75afddb2541865ce11600f3fdf9bd51aa1b051",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100009_512",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100009,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100009_512.npz",
+      "pair_bytes": 8711369,
+      "pair_sha256": "32b98c00c08b6feb95a76c382e1a6a251c95b6f7e6e6c33334c0135548a6ffcc",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100010_128",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 128,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100010,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100010_128.npz",
+      "pair_bytes": 8692719,
+      "pair_sha256": "baf4278b7946f395773683661f9f73275dfe1f0ba36c9f6a8a7c974538fccd21",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    },
+    {
+      "id": "synth_100011_512",
+      "split": "train",
+      "group": "synthetic",
+      "family": "new_synthetic",
+      "actual_chirps": 512,
+      "samples": 22528,
+      "source_frame_zero_based": null,
+      "seed": 100011,
+      "rx_id": null,
+      "layout_assumed": null,
+      "raw_frame_sha256": null,
+      "pair_path": "scalar_restore_v2/pairs/synth_100011_512.npz",
+      "pair_bytes": 8616922,
+      "pair_sha256": "b9667206d6c110b0c1f14c41bac4bc4014ae02863759d6f53636200c133cfff3",
+      "pair_hash_matches_manifest": true,
+      "pair_hash_matches_selected_training": true,
+      "headers": {
+        "reference": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "base": {
+          "shape": [
+            1024,
+            512
+          ],
+          "dtype": "uint64",
+          "fortran_order": false
+        },
+        "features": {
+          "shape": [
+            8,
+            524288
+          ],
+          "dtype": "uint16",
+          "fortran_order": false
+        }
+      }
+    }
+  ],
+  "manifest_split_group_counts": {
+    "train|synthetic": 32,
+    "validation|synthetic": 12,
+    "train|historical_development": 6,
+    "train|field_temporal": 24,
+    "validation|field_temporal": 8,
+    "temporal_test|field_temporal": 12
+  },
+  "field_split_frames": {
+    "train": [
+      15,
+      79,
+      143,
+      207,
+      271,
+      303
+    ],
+    "validation": [
+      351,
+      383
+    ],
+    "temporal_test": [
+      447,
+      511,
+      575
+    ]
+  },
+  "synthetic_split_seeds": {
+    "train": [
+      92000,
+      92001,
+      92002,
+      92003,
+      92004,
+      92005,
+      92006,
+      92007,
+      92008,
+      92009,
+      92010,
+      92011,
+      92012,
+      92013,
+      92014,
+      92015,
+      92016,
+      92017,
+      92018,
+      92019,
+      100000,
+      100001,
+      100002,
+      100003,
+      100004,
+      100005,
+      100006,
+      100007,
+      100008,
+      100009,
+      100010,
+      100011
+    ],
+    "validation": [
+      93000,
+      93001,
+      93002,
+      93003,
+      93004,
+      93005,
+      101000,
+      101001,
+      101002,
+      101003,
+      101004,
+      101005
+    ]
+  },
+  "compact_test": {
+    "records": 22,
+    "synthetic_seeds": [
+      128000,
+      128001,
+      128002,
+      128003,
+      128004,
+      128005,
+      128006,
+      128007,
+      128008,
+      128009,
+      128010,
+      128011,
+      128012,
+      128013,
+      128014,
+      128015
+    ],
+    "field_source_frames": [
+      455,
+      519,
+      583
+    ],
+    "field_records": 6,
+    "field_physical_layout_confirmed": false,
+    "train_raw_payload_overlap": [],
+    "note": "Already examined historical test records; temporal separation within one capture is not independent-scene validation"
+  },
+  "raw_payload_audit": {
+    "path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_v7_offline_compare_v1\\data\\radar_raw.bin",
+    "frame_bytes": 1048576,
+    "frames": [
+      {
+        "frame_zero_based": 15,
+        "bytes": 1048576,
+        "sha256": "bbc7f10d15866757187cadd35e0e9fa6aa8144ec43bc3d670ed7eb8d3c0f20bd",
+        "recorded_hashes": [
+          "bbc7f10d15866757187cadd35e0e9fa6aa8144ec43bc3d670ed7eb8d3c0f20bd"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 79,
+        "bytes": 1048576,
+        "sha256": "a87e529e358c9258769bc23282d73dcbfc71f6345d62007875629d4652bb3877",
+        "recorded_hashes": [
+          "a87e529e358c9258769bc23282d73dcbfc71f6345d62007875629d4652bb3877"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 143,
+        "bytes": 1048576,
+        "sha256": "50c372fe73d8d8f2b7622dce18b8e556885c4b55171a02cfaaaa9cb119bbb021",
+        "recorded_hashes": [
+          "50c372fe73d8d8f2b7622dce18b8e556885c4b55171a02cfaaaa9cb119bbb021"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 207,
+        "bytes": 1048576,
+        "sha256": "699f34f8409ba36e74e5e60a42b3ee253a0a2f171558f21318bb2909a01429f9",
+        "recorded_hashes": [
+          "699f34f8409ba36e74e5e60a42b3ee253a0a2f171558f21318bb2909a01429f9"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 271,
+        "bytes": 1048576,
+        "sha256": "23c07fa20e7cab6aba279ca185dfcf4f2998705cb55ff83d096c6a48637daacc",
+        "recorded_hashes": [
+          "23c07fa20e7cab6aba279ca185dfcf4f2998705cb55ff83d096c6a48637daacc"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 303,
+        "bytes": 1048576,
+        "sha256": "0e1a184e6de4d2dc0fe94365f84a883dd75636a1f65f4c5f03f9248d763f94cb",
+        "recorded_hashes": [
+          "0e1a184e6de4d2dc0fe94365f84a883dd75636a1f65f4c5f03f9248d763f94cb"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 351,
+        "bytes": 1048576,
+        "sha256": "91e8ab84a67b50fb00ebb4d1c7a0e2949c44a7948b95eb82dade7922aed1d540",
+        "recorded_hashes": [
+          "91e8ab84a67b50fb00ebb4d1c7a0e2949c44a7948b95eb82dade7922aed1d540"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 383,
+        "bytes": 1048576,
+        "sha256": "8335170bb12a8c3c05829b63e545de47def1c4f2ebfed8de35e3dcaa04732929",
+        "recorded_hashes": [
+          "8335170bb12a8c3c05829b63e545de47def1c4f2ebfed8de35e3dcaa04732929"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 447,
+        "bytes": 1048576,
+        "sha256": "f8ae269b563626f8cc544947adcf623667b24abae88cf0c1cffa50941f53fb3c",
+        "recorded_hashes": [
+          "f8ae269b563626f8cc544947adcf623667b24abae88cf0c1cffa50941f53fb3c"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 455,
+        "bytes": 1048576,
+        "sha256": "938ca73e029d9ce65df4192a17cd77dcca28c98eb2d98ed3ea1cb8f259fa44cc",
+        "recorded_hashes": [
+          "938ca73e029d9ce65df4192a17cd77dcca28c98eb2d98ed3ea1cb8f259fa44cc"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 511,
+        "bytes": 1048576,
+        "sha256": "822b4697e1cc5ec0b9008fa706e81ffc661b93785dc2a210f3d66baea83f4164",
+        "recorded_hashes": [
+          "822b4697e1cc5ec0b9008fa706e81ffc661b93785dc2a210f3d66baea83f4164"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 519,
+        "bytes": 1048576,
+        "sha256": "71aa4ca13fb55014b94c3cb1706e950dd173f89c2b1e2470f45c5ad94bd8e3dc",
+        "recorded_hashes": [
+          "71aa4ca13fb55014b94c3cb1706e950dd173f89c2b1e2470f45c5ad94bd8e3dc"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 575,
+        "bytes": 1048576,
+        "sha256": "073f2931b538df9e9a6d1b0a05cc2199030d7557fdc1921ce2032c0e60ad2e68",
+        "recorded_hashes": [
+          "073f2931b538df9e9a6d1b0a05cc2199030d7557fdc1921ce2032c0e60ad2e68"
+        ],
+        "matches": true
+      },
+      {
+        "frame_zero_based": 583,
+        "bytes": 1048576,
+        "sha256": "2433418ca00f5288cc74f0097ede7b9b14dd7c3b717e8adabcc2a3b9e468d092",
+        "recorded_hashes": [
+          "2433418ca00f5288cc74f0097ede7b9b14dd7c3b717e8adabcc2a3b9e468d092"
+        ],
+        "matches": true
+      }
+    ]
+  },
+  "checkpoints": {
+    "v7": {
+      "path": "scalar_enhance_v1/release/scalar_gain_v7_candidate/model_float.pt",
+      "sha256": "830a0d3dd1bd4b87dca7fef79a83b798f561653b81ba50b78547ee1c1bff43a1",
+      "step": 24000,
+      "parameter_count": 1089,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          16
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    },
+    "guarded_initial": {
+      "path": "scalar_restore_v2/runs/guarded_patch5/step_00000.pt",
+      "sha256": "53374f447bf1f4d1d3878ab1fe3689b9b1dfab7ea999e432d8048888d7510d7f",
+      "step": 0,
+      "parameter_count": 1857,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          40
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    },
+    "guarded_final": {
+      "path": "scalar_restore_v2/runs/guarded_patch5/step_50000.pt",
+      "sha256": "02245a87660ef9bfa131895eab85d5424d17aa7b91036a743bf93faa53ed4de7",
+      "step": 50000,
+      "parameter_count": 1857,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          40
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    },
+    "protected_initial": {
+      "path": "scalar_restore_v2/runs/protected_patch5/step_00000.pt",
+      "sha256": "dd55525dcd1684c1ac5ea09c9e6eba21dfd80da2014c1097cb1e8e70686b573b",
+      "step": 0,
+      "parameter_count": 1857,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          40
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    },
+    "protected_final": {
+      "path": "scalar_restore_v2/runs/protected_patch5/step_30000.pt",
+      "sha256": "bb29003c669a61b482c632b7434753294e9c476d02308030b2430d73d9c11af3",
+      "step": 30000,
+      "parameter_count": 1857,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          40
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    },
+    "selected": {
+      "path": "scalar_restore_v2/runs/soft_patch5/step_30000.pt",
+      "sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+      "step": 30000,
+      "parameter_count": 1857,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          40
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    },
+    "current": {
+      "path": "scalar_restore_v3/pc_candidate_compact/model_float.pt",
+      "sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+      "step": 30000,
+      "parameter_count": 1857,
+      "shapes": {
+        "layers.0.weight": [
+          32,
+          40
+        ],
+        "layers.0.bias": [
+          32
+        ],
+        "layers.2.weight": [
+          16,
+          32
+        ],
+        "layers.2.bias": [
+          16
+        ],
+        "layers.4.weight": [
+          1,
+          16
+        ],
+        "layers.4.bias": [
+          1
+        ]
+      }
+    }
+  },
+  "added_neighbor_weight_nonzero_count": 672,
+  "checkpoint_interpretation": {
+    "source_initial": "guarded_patch5/step_50000.pt",
+    "core_source_sha256": "Hash of protected_patch5/step_30000.pt, NOT a Python source-code hash",
+    "selected_stage": "30,000 further optimizer steps after guarded 50,000-step stage",
+    "original_rgb_network": "Not the teacher or target of the selected 62-record scalar-supervision stage; no full-history claim made here",
+    "model_float_metadata": "soft checkpoint includes rule metadata; neural tensors match protected final exactly"
+  },
+  "source_chain": [
+    "scalar_restore_v2/common_v2.py -> scalar_streak_fix_v1/common.py",
+    "fft2 -> radar1_v7_fullrange_compare_v2/xfft_model.py -> Xilinx bit-accurate C model",
+    "power64 -> radar1_v7_fullrange_compare_v2/adapter.py -> uint64 squared-magnitude arithmetic"
+  ],
+  "reference_boundary": "Paired multibit numeric FFT output, not a clutter-free or physically complete target truth",
+  "missing_evidence": {
+    "selected_stage_loss_jsonl_exists": false,
+    "all_unknown_real_targets_labeled": false,
+    "independent_scene_generalization_proved": false,
+    "full_earlier_pretraining_history_audited": false
+  },
+  "source_sha256": {
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18",
+    "scalar_restore_v2/manifest.json": "4b0a472b48605d882865bbe490093f70006a207da2fa8934ca2981eb60a3d5db",
+    "scalar_restore_v3/compact_test_manifest.json": "c0fedbaa16ce22d1b277c335cbff044a41381c1b5c208e6b203ddb95a551fc22",
+    "scalar_restore_v2/runs/guarded_patch5/config.json": "96469e0fd91161129f18db7d5731f0f169a7984cca21f515662767179779b8a1",
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+    "scalar_restore_v2/runs/guarded_patch5/training_source.py": "6fe1bb4ddbdbce79ee3559353d9c21fbbe08a3d0184d7b3054403ae7763fbb20",
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v2/common_v2.py": "c60523f2b1b86a9fc555597d37a6d7bb45e866300f504d3b7caca77428643d7d",
+    "scalar_restore_v2/runs/protected_patch5/model_source.py": "e73de0a3786691db3ad1704c8d39fe8113277dba42b7cf288095604457804bfe",
+    "scalar_restore_v2/freeze_soft.py": "efa8c37145f6dd9b123713c1829d50b507e7ec8050054b062ec1dc891b9670f6",
+    "scalar_streak_fix_v1/common.py": "32df43f0344a183331bfd8d46a91990d7d8c5ee6e8877ed1f2b76b86bfce1913",
+    "scalar_streak_fix_v1/inspect_new_capture.py": "971ebd990282f8b3470e753da168288d4430403e8d1a59b2fa49cfcc6f082336",
+    "scalar_streak_fix_v1/controlled.py": "835b6a86b14aade0d112805d3bb48c2bbe70f6901528458ecf19e6691db89bb1",
+    "radar1_v7_fullrange_compare_v2/xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+    "radar1_v7_fullrange_compare_v2/adapter.py": "7def2a0ba9a6bfb5f8c8e4a15fb623405f29ec0d5affcc45e0ccf89ce8b54a5f",
+    "scalar_enhance_v1/release/scalar_gain_v7_candidate/model_float.pt": "830a0d3dd1bd4b87dca7fef79a83b798f561653b81ba50b78547ee1c1bff43a1",
+    "scalar_restore_v2/runs/guarded_patch5/step_00000.pt": "53374f447bf1f4d1d3878ab1fe3689b9b1dfab7ea999e432d8048888d7510d7f",
+    "scalar_restore_v2/runs/guarded_patch5/step_50000.pt": "02245a87660ef9bfa131895eab85d5424d17aa7b91036a743bf93faa53ed4de7",
+    "scalar_restore_v2/runs/protected_patch5/step_00000.pt": "dd55525dcd1684c1ac5ea09c9e6eba21dfd80da2014c1097cb1e8e70686b573b",
+    "scalar_restore_v2/runs/protected_patch5/step_30000.pt": "bb29003c669a61b482c632b7434753294e9c476d02308030b2430d73d9c11af3",
+    "scalar_restore_v2/runs/soft_patch5/step_30000.pt": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311",
+    "scalar_restore_v3/pc_candidate_compact/model_float.pt": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_quality_holdout_evaluated": false,
+  "raw_payload_hashes_recomputed": true,
+  "checkpoint_tensors_read_only": true,
+  "hardware_built": false,
+  "board_accessed": false
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Mathematical demo only; no model-quality claim",
+  "complex_harmonic_coefficient_max_error": 3.936767591309878e-06,
+  "complex_harmonic_coefficient_errors": {
+    "1": 3.936767578242778e-06,
+    "-3": 3.936767579600141e-06,
+    "5": 3.936767582165684e-06,
+    "-7": 3.936767586071245e-06,
+    "9": 3.936767591309878e-06
+  },
+  "scale_nonidentifiability_verified": true,
+  "alias_example": {
+    "1": [
+      131,
+      37
+    ],
+    "-3": [
+      631,
+      401
+    ],
+    "5": [
+      655,
+      185
+    ],
+    "-7": [
+      107,
+      253
+    ]
+  },
+  "figures": [
+    "01_sign_harmonics",
+    "02_alias_coordinates",
+    "03_encoding_and_guard"
+  ],
+  "network_training_run": false,
+  "network_inference_run": false,
+  "board_accessed": false
+}

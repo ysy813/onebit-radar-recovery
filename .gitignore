@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.Xil/
+*.runs/
+*.cache/
+*.gen/
+*.sim/
+*.dcp
+*.jou
+*.wdb
+*.zip
+.env

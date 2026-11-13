@@ -1,0 +1,30 @@
+{
+  "status": "GENERATED_NOT_CSIM",
+  "cases": [
+    {
+      "name": "weak512",
+      "changed": 524166,
+      "suppressed": 517433,
+      "amplified": 6733,
+      "max_gain": 24576,
+      "peak": 1286666655855754
+    },
+    {
+      "name": "history512",
+      "changed": 524049,
+      "suppressed": 512162,
+      "amplified": 11887,
+      "max_gain": 24576,
+      "peak": 521337233412837
+    },
+    {
+      "name": "u64_edges",
+      "changed": 524257,
+      "suppressed": 521530,
+      "amplified": 2727,
+      "max_gain": 24576,
+      "peak": 18446744073709551615
+    }
+  ],
+  "weights_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4"
+}

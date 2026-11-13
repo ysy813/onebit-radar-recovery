@@ -1,0 +1,14 @@
+{"kind":"deck","id":"pr/xjl9yk","name":"Deck"}
+{"kind":"layout","id":"ly/kfmlgrm5","editable":false,"name":"Master","type":"master"}
+{"kind":"layout","id":"ly/qhcf2lwr","editable":false,"name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","id":"ly/x4ny5ofm","editable":false,"name":"Section Header","type":"sectionHeader","placeholders":[{"name":"title","type":"title"}]}
+{"kind":"layout","id":"ly/zilg3218","editable":false,"name":"Title and Body","type":"tx","placeholders":[{"name":"title","type":"title"},{"name":"body","type":"body"}]}
+{"kind":"layout","id":"ly/szm9czi1","editable":false,"name":"Title and Two Column","type":"twoColTx","placeholders":[{"name":"title","type":"title"},{"name":"Left column","type":"body"},{"name":"Right column","type":"body"}]}
+{"kind":"layout","id":"ly/yxo7ypcz","editable":false,"name":"Title and One Column","type":"tx","placeholders":[{"name":"title","type":"title"},{"name":"body","type":"body"}]}
+{"kind":"layout","id":"ly/u5g3ydwf","editable":false,"name":"Blank","type":"blank"}
+{"kind":"slide","id":"sl/bgymha","slideIndex":0,"layout":{"id":"ly/u5g3ydwf","name":"Blank"},"title":"单比特二维频谱的","textShapes":4,"backgroundColor":"rgba(23,50,77,1)"}
+{"kind":"textbox","id":"sh/43qdonqt","slideIndex":0,"position":{"left":78,"top":140,"width":1124,"height":190},"text":"单比特二维频谱的\n轻量标量恢复网络","geometry":"rect","lineWidth":0,"style":{"fontSize":60,"typeface":"Microsoft YaHei","color":"#FFFFFF","bold":true,"alignment":"left"}}
+{"kind":"textbox","id":"sh/32hwfi98","slideIndex":0,"position":{"left":82,"top":370,"width":1090,"height":65},"text":"机理特征与共享MLP的幅值增益估计","geometry":"rect","lineWidth":0,"style":{"fontSize":32,"typeface":"Microsoft YaHei","color":"#BFE1E2","alignment":"left"}}
+{"kind":"textbox","id":"sh/i18vmd8n","slideIndex":0,"position":{"left":82,"top":462,"width":1100,"height":55},"text":"当前 compact 模型的作用、结构、训练与证据","geometry":"rect","lineWidth":0,"style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#FFFFFF","alignment":"left"}}
+{"kind":"textbox","id":"sh/dsjels7a","slideIndex":0,"position":{"left":82,"top":635,"width":1100,"height":35},"text":"网络原理汇报    2026.11.05","geometry":"rect","lineWidth":0,"style":{"fontSize":21,"typeface":"Microsoft YaHei","color":"#BFE1E2","alignment":"left"}}
+{"kind":"notes","id":"nt/bgymha","slideIndex":0,"text":"本次汇报讨论当前冻结compact标量网络。研究任务是修正单比特I/Q经过二维FFT后的相对幅值失真。重点是信号机理、固定特征、小型MLP、训练监督和保护规则，不涉及部署。完整方法的效果由学习参数与固定保护共同形成。\n来源：C:/Users/yang/Desktop/SAR_IMAGE/scalar_restore_v3/pc_candidate_compact/config.json"}

@@ -1,0 +1,25 @@
+{
+  "date":"2026-11-11",
+  "purpose":"无窗零阈值单比特数据的有限符号证据基准和冻结40维网络门控验证；不训练新MLP，不宣称复现完整DR-GAMP或原创认证",
+  "shape":[1024,512],
+  "baseline":"scalar_multipeak48_v1/candidate/f40_repair/model_float.pt",
+  "baseline_history":"仿真续训40维候选，继承权重有历史实测影响；非现有板端冻结compact模型",
+  "splits":{
+    "development":{"seed_base":2026114100,"templates":["single_offgrid_a","collision_plus5_grid"]},
+    "validation":{"seed_base":2026115100,"templates":["single_grid_a","single_offgrid_a","n4_spread","n8_near_pairs","collision_plus5_grid","n2_strong_weak_offgrid"]},
+    "test":{"seed_base":2026116100,"templates":["single_grid_a","single_offgrid_a","n4_spread","n4_near_pairs","n4_strong_weak","n8_spread","n8_near_pairs","n8_strong_weak","collision_minus3_grid","collision_plus5_offgrid","near_collision_plus5","n2_strong_weak_offgrid"]}
+  },
+  "data":"调用旧scene/echo生成器，新种子；多个复点频回波先叠加，统一缩放至实虚最大4000取整，符号>=0取正。无噪/杂波/窗；保存整数I/Q、±1符号、Xilinx位精确多比特和单比特功率。没有真实雷达数据或完整车载模型。",
+  "solver":{"candidate_limit":24,"candidate_min_relative":0.008,"candidate_nms_radius":2,"fit_samples":4096,"evidence_samples":4096,"sample_seed":2026111191,"group_l1":0.0003,"ridge":0.0001,"amplitude_iterations":120,"frequency_iterations":160,"ablation_iterations":100,"pruning_iterations":100,"pruning_mismatch_max":0.001,"frequency_bound_bins":0.55,"logistic_temperature":1.0},
+  "candidate":"从未加窗符号的复FFT中按幅值寻找3x3局部峰，5x5 NMS，最多24；复邻点Jacobsen细化每轴限±0.5格。候选不使用真值或已知目标数；后续固定候选集合，估计复系数并在各自初始整数格±0.55内细化频率。",
+  "fit":"平均I/Q符号logistic负对数似然+组L1平滑复系数惩罚+L2；先幅值再幅值/频率联合L-BFGS-B。不是完整GAMP、不是高斯probit最大似然。零阈值尺度由正则固定，输出只解释相对幅值。",
+  "hypotheses":"开发修正后：全候选拟合后按系数从小到大尝试删除，每次用fit样本重新拟合复系数与频率，仅当fit符号错配<=0.001接受，得到稀疏源集合；不看evidence或真值。对每个B，H0为该集合去掉B，H1为H0加B，两者重新拟合系数、固定已由fit确定的频率，再到独立evidence样本比较logistic损失及符号错配。属于有限候选和贪心稀疏先验下的条件检验，非全局无偏检测。",
+  "gate_grid":{"loss_threshold":[0.0005,0.001,0.002],"se_multiplier":[2,3]},
+  "gate":"开发修正后：logistic改善下界>阈值、符号错误改善下界>0且复系数相对最大>0.01，支持中心5x5输出至少旁路；B未被稀疏模型选择、符号错误改善上界<阈值、H0错配<0.001且H0/H1均优化收敛，按稀疏先验标记冗余，中心5x5增益至多0.125；其余不动原网。支持区域优先，全帧最大点保护。标准误只反映抽样波动，不是存在概率；零阈值下不改变符号的弱目标仍可能被错删，必须作为失败报告。",
+  "comparison":["同帧多比特参考","单比特旁路","冻结40维修正模型加原保护","候选非线性恢复归一化谱","冻结网络加符号证据门控"],
+  "selection":"验证集网格选择：先相对旧网新增逐目标半幅损失数，再全部半幅失败，再参考外峰均值，再目标MAE。参数与源码冻结后生成test，最终测试不重新选门槛。开发只做实现及收敛诊断，任何修改必须记录。",
+  "quality_gates":{"origin":"助手预声明研究判据，不是行业或硬件验收标准","no_new_target_half_vs_old":true,"all_targets_at_least_half":true,"mean_false40_ratio_to_old_max":0.9,"mean_target_mae_increase_max":0.005},
+  "metrics":"目标5x5参考峰处保留率/半幅失败；排除目标9x9、输出>2参考且超额>0.0001、峰幅值>=0.01、3x3局部峰及半径2 NMS计数；谐波-3,+5,-7,+9等只在不与真目标重合且参考足够低时评估。固定阈值诊断不是CFAR虚警率。候选召回独立报告。",
+  "scope":"仅PC浮点方法验证；FFT及量化复用位精确路径，新增优化器未定点/综合。8192个复符号若紧凑打包需2048字节，但抽样索引/字典/优化器及访问另计，不称BRAM够用或可实时部署。",
+  "deployment_ready":false
+}

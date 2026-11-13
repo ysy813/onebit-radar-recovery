@@ -1,0 +1,466 @@
+{
+  "status": "PASS",
+  "checks": {
+    "sign_probability_matches_independent_gaussian_quadrature": true,
+    "sign_mean_and_derivative_verified": true,
+    "weak_signal_expected_fundamental_nearly_proportional": true,
+    "third_order_complex_harmonic_identity_verified": true,
+    "weak_third_harmonic_expansion_matches": true,
+    "conditional_mean_coefficients_real_by_symmetry": true,
+    "strong_signal_limit_approaches_noiseless_single_tone": true,
+    "repeated_measurement_mean_variance_has_expected_scaling": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Known-Gaussian conditional sign information, analytic moments and mathematical phase quadrature only",
+  "hypotheses": [
+    "Real component observation is s+n, with fixed s and n Gaussian(0,sigma^2)",
+    "Complex example has signal A exp(j theta) and Gaussian noise of per-component standard deviation sigma",
+    "Repeated-measurement variance assumes independent identically distributed noise at fixed s",
+    "Known fixed sigma supplies a statistical amplitude reference absent from arbitrary sign observations",
+    "Current network does not estimate sigma, invert erf or reconstruct the conditional complex mean"
+  ],
+  "cdf_cases": [
+    {
+      "signal_to_known_sigma": -4.0,
+      "probability_positive": 3.1671241833119965e-05,
+      "independently_integrated_probability": 3.167124183311996e-05,
+      "integral_absolute_error": 6.776263578034403e-21,
+      "normalized_mean": -0.9999366575163338,
+      "actual_level_mean": -63.99594608104536,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.00026766045152977074,
+      "finite_difference_derivative": 0.0002676604493601076,
+      "derivative_absolute_error": 2.169663157903373e-12
+    },
+    {
+      "signal_to_known_sigma": -2.0,
+      "probability_positive": 0.022750131948179216,
+      "independently_integrated_probability": 0.02275013194817921,
+      "integral_absolute_error": 6.938893903907228e-18,
+      "normalized_mean": -0.9544997361036417,
+      "actual_level_mean": -61.08798311063307,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.10798193302637613,
+      "finite_difference_derivative": 0.10798193303407365,
+      "derivative_absolute_error": 7.697523174421406e-12
+    },
+    {
+      "signal_to_known_sigma": -1.0,
+      "probability_positive": 0.15865525393145707,
+      "independently_integrated_probability": 0.15865525393145707,
+      "integral_absolute_error": 0.0,
+      "normalized_mean": -0.6826894921370857,
+      "actual_level_mean": -43.69212749677349,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.48394144903828673,
+      "finite_difference_derivative": 0.48394144903651787,
+      "derivative_absolute_error": 1.7688628339840307e-12
+    },
+    {
+      "signal_to_known_sigma": -0.2,
+      "probability_positive": 0.42074029056089696,
+      "independently_integrated_probability": 0.420740290560897,
+      "integral_absolute_error": 5.551115123125783e-17,
+      "normalized_mean": -0.15851941887820606,
+      "actual_level_mean": -10.145242808205188,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.7820853879509118,
+      "finite_difference_derivative": 0.7820853879375588,
+      "derivative_absolute_error": 1.3352985384074145e-11
+    },
+    {
+      "signal_to_known_sigma": 0.0,
+      "probability_positive": 0.5,
+      "independently_integrated_probability": 0.5000000000000001,
+      "integral_absolute_error": 1.1102230246251565e-16,
+      "normalized_mean": 0.0,
+      "actual_level_mean": 0.0,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.7978845608028654,
+      "finite_difference_derivative": 0.7978845607895675,
+      "derivative_absolute_error": 1.3297918322052737e-11
+    },
+    {
+      "signal_to_known_sigma": 0.2,
+      "probability_positive": 0.579259709439103,
+      "independently_integrated_probability": 0.5792597094391032,
+      "integral_absolute_error": 2.220446049250313e-16,
+      "normalized_mean": 0.15851941887820606,
+      "actual_level_mean": 10.145242808205188,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.7820853879509118,
+      "finite_difference_derivative": 0.7820853879375588,
+      "derivative_absolute_error": 1.3352985384074145e-11
+    },
+    {
+      "signal_to_known_sigma": 1.0,
+      "probability_positive": 0.8413447460685428,
+      "independently_integrated_probability": 0.8413447460685431,
+      "integral_absolute_error": 3.3306690738754696e-16,
+      "normalized_mean": 0.6826894921370857,
+      "actual_level_mean": 43.69212749677349,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.48394144903828673,
+      "finite_difference_derivative": 0.48394144903651787,
+      "derivative_absolute_error": 1.7688628339840307e-12
+    },
+    {
+      "signal_to_known_sigma": 2.0,
+      "probability_positive": 0.9772498680518209,
+      "independently_integrated_probability": 0.9772498680518209,
+      "integral_absolute_error": 0.0,
+      "normalized_mean": 0.9544997361036417,
+      "actual_level_mean": 61.08798311063307,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.10798193302637613,
+      "finite_difference_derivative": 0.10798193303407365,
+      "derivative_absolute_error": 7.697523174421406e-12
+    },
+    {
+      "signal_to_known_sigma": 4.0,
+      "probability_positive": 0.9999683287581669,
+      "independently_integrated_probability": 0.999968328758167,
+      "integral_absolute_error": 1.1102230246251565e-16,
+      "normalized_mean": 0.9999366575163338,
+      "actual_level_mean": 63.99594608104536,
+      "bernoulli_mean_matches": true,
+      "derivative": 0.00026766045152977074,
+      "finite_difference_derivative": 0.0002676604493601076,
+      "derivative_absolute_error": 2.169663157903373e-12
+    }
+  ],
+  "complex_tone_phase_samples": 32768,
+  "complex_tone_cases": [
+    {
+      "amplitude_to_known_per_component_sigma": 0.025,
+      "small_signal_expansion_check_applied": true,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 0.01994555577352841,
+          "imaginary": -6.279955210502586e-21
+        },
+        {
+          "order": -3,
+          "real": -5.193952252679178e-07,
+          "imaginary": -2.168404344971009e-19
+        },
+        {
+          "order": 5,
+          "real": 1.217316601253432e-11,
+          "imaginary": 2.168404344971009e-19
+        }
+      ],
+      "linear_fundamental": 0.019947114020071637,
+      "cubic_fundamental": 0.019945555651788818,
+      "cubic_third": -5.19456094272699e-07,
+      "fundamental_relative_linear_error": 7.811889688190277e-05,
+      "fundamental_absolute_cubic_error": 1.2173959410000101e-10,
+      "third_relative_cubic_error": 0.00011717834375675431,
+      "third_to_fundamental_ratio": -2.6040649414104325e-05
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 0.05,
+      "small_signal_expansion_check_applied": true,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 0.03988176498878709,
+          "imaginary": -4.3728075902003255e-20
+        },
+        {
+          "order": -3,
+          "real": -4.153701402420098e-06,
+          "imaginary": 4.336808689942018e-19
+        },
+        {
+          "order": 5,
+          "real": 3.893892200866611e-10,
+          "imaginary": 8.673617379884035e-19
+        }
+      ],
+      "linear_fundamental": 0.039894228040143274,
+      "cubic_fundamental": 0.03988176109388073,
+      "cubic_third": -4.155648754181592e-06,
+      "fundamental_relative_linear_error": 0.00031240236917597607,
+      "fundamental_absolute_cubic_error": 3.894906355772498e-09,
+      "third_relative_cubic_error": 0.00046860355065725905,
+      "third_to_fundamental_ratio": -0.0001041503906255886
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 0.1,
+      "small_signal_expansion_check_applied": true,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 0.07968884504989832,
+          "imaginary": -8.597384414631148e-20
+        },
+        {
+          "order": -3,
+          "real": -3.318293314486442e-05,
+          "imaginary": 1.734723475976807e-18
+        },
+        {
+          "order": 5,
+          "real": 1.2441005888680357e-08,
+          "imaginary": 0.0
+        }
+      ],
+      "linear_fundamental": 0.07978845608028655,
+      "cubic_fundamental": 0.07968872051018619,
+      "cubic_third": -3.324519003345274e-05,
+      "fundamental_relative_linear_error": 0.0012484391261813636,
+      "fundamental_absolute_cubic_error": 1.2453971212633697e-07,
+      "third_relative_cubic_error": 0.0018726585267123167,
+      "third_to_fundamental_ratio": -0.0004164062501355924
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 0.2,
+      "small_signal_expansion_check_applied": true,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 0.1587830004579842,
+          "imaginary": 1.1519648082658485e-19
+        },
+        {
+          "order": -3,
+          "real": -0.00026397674376090526,
+          "imaginary": -3.469446951953614e-18
+        },
+        {
+          "order": 5,
+          "real": 3.956343218366326e-07,
+          "imaginary": 0.0
+        }
+      ],
+      "linear_fundamental": 0.1595769121605731,
+      "cubic_fundamental": 0.15877902759977022,
+      "cubic_third": -0.0002659615202676219,
+      "fundamental_relative_linear_error": 0.004975103803174336,
+      "fundamental_absolute_cubic_error": 3.972858213990849e-06,
+      "third_relative_cubic_error": 0.007462645365838885,
+      "third_to_fundamental_ratio": -0.0016625000346353607
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 0.5,
+      "small_signal_expansion_check_applied": false,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 0.3868549984241868,
+          "imaginary": 2.168404344971009e-19
+        },
+        {
+          "order": -3,
+          "real": -0.003966795059898831,
+          "imaginary": 6.938893903907228e-18
+        },
+        {
+          "order": 5,
+          "real": 3.6992033621225176e-05,
+          "imaginary": -6.938893903907228e-18
+        }
+      ],
+      "linear_fundamental": 0.3989422804014327,
+      "cubic_fundamental": 0.3864753341388879,
+      "cubic_third": -0.004155648754181591,
+      "fundamental_relative_linear_error": 0.03029832276760228,
+      "fundamental_absolute_cubic_error": 0.0003796642852988974,
+      "third_relative_cubic_error": 0.045445056946337735,
+      "third_to_fundamental_ratio": -0.010253958397997063
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 1.0,
+      "small_signal_expansion_check_applied": false,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 0.7094229326587931,
+          "imaginary": 4.336808689942018e-19
+        },
+        {
+          "order": -3,
+          "real": -0.02772083979982638,
+          "imaginary": 0.0
+        },
+        {
+          "order": 5,
+          "real": 0.001016607105288496,
+          "imaginary": -6.938893903907228e-18
+        }
+      ],
+      "linear_fundamental": 0.7978845608028654,
+      "cubic_fundamental": 0.6981489907025072,
+      "cubic_third": -0.03324519003345273,
+      "fundamental_relative_linear_error": 0.11087020916291257,
+      "fundamental_absolute_cubic_error": 0.011273941956285838,
+      "third_relative_cubic_error": 0.1661699099348661,
+      "third_to_fundamental_ratio": -0.039075195519735345
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 2.0,
+      "small_signal_expansion_check_applied": false,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 1.0750218207644204,
+          "imaginary": -5.204170427930421e-18
+        },
+        {
+          "order": -3,
+          "real": -0.13715592633794885,
+          "imaginary": 1.3877787807814457e-17
+        },
+        {
+          "order": 5,
+          "real": 0.018540949291921516,
+          "imaginary": 0.0
+        }
+      ],
+      "linear_fundamental": 1.5957691216057308,
+      "cubic_fundamental": 0.7978845608028654,
+      "cubic_third": -0.2659615202676218,
+      "fundamental_relative_linear_error": 0.32632997705665107,
+      "fundamental_absolute_cubic_error": 0.277137259961555,
+      "third_relative_cubic_error": 0.4843016155121361,
+      "third_to_fundamental_ratio": -0.12758431846566684
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 5.0,
+      "small_signal_expansion_check_applied": false,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 1.2469155310627542,
+          "imaginary": 1.3877787807814457e-17
+        },
+        {
+          "order": -3,
+          "real": -0.35204910174370224,
+          "imaginary": 1.3877787807814457e-17
+        },
+        {
+          "order": 5,
+          "real": 0.15234989630929874,
+          "imaginary": 1.3877787807814457e-17
+        }
+      ],
+      "linear_fundamental": 3.989422804014327,
+      "cubic_fundamental": -8.477523458530445,
+      "cubic_third": -4.15564875418159,
+      "fundamental_relative_linear_error": 0.6874446273761571,
+      "fundamental_absolute_cubic_error": 9.7244389895932,
+      "third_relative_cubic_error": 0.9152842016810359,
+      "third_to_fundamental_ratio": -0.2823359666100626
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 20.0,
+      "small_signal_expansion_check_applied": false,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 1.271644992290815,
+          "imaginary": 6.938893903907228e-18
+        },
+        {
+          "order": -3,
+          "real": -0.41965349795281326,
+          "imaginary": -4.163336342344337e-17
+        },
+        {
+          "order": 5,
+          "real": 0.24679421419377046,
+          "imaginary": 1.3877787807814457e-17
+        }
+      ],
+      "linear_fundamental": 15.957691216057308,
+      "cubic_fundamental": -781.9268695868082,
+      "cubic_third": -265.9615202676218,
+      "fundamental_relative_linear_error": 0.9203114676757731,
+      "fundamental_absolute_cubic_error": 783.198514579099,
+      "third_relative_cubic_error": 0.9984221270147254,
+      "third_to_fundamental_ratio": -0.3300083753696266
+    },
+    {
+      "amplitude_to_known_per_component_sigma": 100.0,
+      "small_signal_expansion_check_applied": false,
+      "coefficients": [
+        {
+          "order": 1,
+          "real": 1.2731758779820836,
+          "imaginary": 2.7755575615628914e-17
+        },
+        {
+          "order": -3,
+          "real": -0.42422221952270495,
+          "imaginary": -5.551115123125783e-17
+        },
+        {
+          "order": 5,
+          "real": 0.25432976614846864,
+          "imaginary": -4.163336342344337e-17
+        }
+      ],
+      "linear_fundamental": 79.78845608028654,
+      "cubic_fundamental": -99655.78164427789,
+      "cubic_third": -33245.19003345272,
+      "fundamental_relative_linear_error": 0.9840431067283598,
+      "fundamental_absolute_cubic_error": 99657.05482015587,
+      "third_relative_cubic_error": 0.9999872395910777,
+      "third_to_fundamental_ratio": -0.3332000133360009
+    }
+  ],
+  "cubic_identity_maximum_errors": [
+    7.152448122690996e-18,
+    1.962615573354719e-17,
+    3.925231146709438e-17,
+    7.850462293418876e-17
+  ],
+  "independent_repetition_examples": [
+    {
+      "independent_identical_repetitions": 1,
+      "output_mean": 10.145242808205188,
+      "standard_deviation_of_mean": 63.190775025810225
+    },
+    {
+      "independent_identical_repetitions": 100,
+      "output_mean": 10.145242808205188,
+      "standard_deviation_of_mean": 6.319077502581022
+    },
+    {
+      "independent_identical_repetitions": 10000,
+      "output_mean": 10.145242808205188,
+      "standard_deviation_of_mean": 0.6319077502581022
+    }
+  ],
+  "qualifications": [
+    "Expected spectrum is not the spectrum of every individual quantized frame",
+    "The cubic polynomial is a weak-amplitude expansion; large-a entries are not valid signal predictions",
+    "Power of conditional mean is not expected power",
+    "Information surviving in signs need not all survive power and 40-dimensional feature compression",
+    "Unknown deterministic harmonic collisions remain nonidentifiable",
+    "No claim that adding noise improves the current radar chain or model",
+    "No new quality, detection-rate or SNR result"
+  ],
+  "source_sha256": {
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "deterministic_mathematical_quadrature_run": true,
+  "random_sampling_run": false,
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

@@ -1,0 +1,15 @@
+{
+  "file": "compact_sd_board_data.zip",
+  "kind": "compact网络＋SD实测原始RX0 I/Q：60块，120MiB",
+  "bytes": 94210923,
+  "sha256": "2011a013ce18dacbddcfefbb09dcfd000fc449d0bc8f752ec3acf5e8367f65a2",
+  "files": [
+    {
+      "path": "hardware/radar1_scalar_compact_sd_fix_v1/board_runs/LNG00001.BIN",
+      "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\radar1_scalar_compact_sd_fix_v1\\board_runs\\LNG00001.BIN",
+      "bytes": 125829120,
+      "sha256": "f5c0dbb6674d97eabb0067bad3c182f99d15878e42af2fecbbc99a595fcc8e25"
+    }
+  ],
+  "zip_readback": "PASS"
+}

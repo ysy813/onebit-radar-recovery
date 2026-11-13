@@ -1,0 +1,15 @@
+{
+  "status": "WEAK_CORRECTION_FROZEN_REQUIRES_FRESH_TEST",
+  "path": "runs\\conservative_a0.75\\model.pt",
+  "sha256": "1f23ac6c6de3708e179ae8ffd3081aa3831751d080c500c13101cee36e76e83b",
+  "development_report": "development_profiled/report.json",
+  "development_correction": "PASS",
+  "development_original_full_quality": "PASS",
+  "protocol_sha256": "9e6e3fa08596d2b702a62560b9f86a621de022d034b5b6a4d82fd6f835d895e7",
+  "correction_acceptance_sha256": "fd34cc4c98a97bcc7dd1360bbf0ea7f3d41c170bcffe7dc734c97a98ad7c1521",
+  "profile_policy_sha256": "0e1c0b1bd5c819248a1dc3046491b7d33db85b6bc5ba48e6ac61189bf3aa9f4f",
+  "test_not_read": true,
+  "ip_built": false,
+  "bit_rebuilt": false,
+  "board_accessed": false
+}

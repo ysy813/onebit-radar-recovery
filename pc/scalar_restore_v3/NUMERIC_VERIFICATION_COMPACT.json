@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "checks": {
+    "standalone_exact": true,
+    "float_fixed_mae_at_most0p0003": true,
+    "float_fixed_max_at_most0p01": true,
+    "new_guard_never_reduces_v2_gain": true,
+    "u64_guard_arithmetic_exact": true,
+    "u64_saturation_exact": true,
+    "zero_frame_exact": true,
+    "original_neural_weights_exactly_preserved": true,
+    "original_q16_integer_bounds_still_apply": true,
+    "isolated_cli_exact": true,
+    "original_raw_capture_preserved": true
+  },
+  "rows": [
+    {
+      "id": "historical_0024",
+      "features_exact": true,
+      "gain_exact": true,
+      "power_exact": true,
+      "float_fixed_gain_mae": 9.30672925107956e-05,
+      "float_fixed_gain_max": 0.0032737255096435547,
+      "no_power_decrease_relative_v2": true
+    },
+    {
+      "id": "historical_0036",
+      "features_exact": true,
+      "gain_exact": true,
+      "power_exact": true,
+      "float_fixed_gain_mae": 6.406604964581675e-05,
+      "float_fixed_gain_max": 0.0021778345108032227,
+      "no_power_decrease_relative_v2": true
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0351",
+      "features_exact": true,
+      "gain_exact": true,
+      "power_exact": true,
+      "float_fixed_gain_mae": 7.939655517930078e-05,
+      "float_fixed_gain_max": 0.0015705227851867676,
+      "no_power_decrease_relative_v2": true
+    },
+    {
+      "id": "confirm_synth_116013_512",
+      "features_exact": true,
+      "gain_exact": true,
+      "power_exact": true,
+      "float_fixed_gain_mae": 6.0076246882090345e-05,
+      "float_fixed_gain_max": 0.002224564552307129,
+      "no_power_decrease_relative_v2": true
+    },
+    {
+      "id": "v3_synth_124017_512",
+      "features_exact": true,
+      "gain_exact": true,
+      "power_exact": true,
+      "float_fixed_gain_mae": 5.866240186946925e-05,
+      "float_fixed_gain_max": 0.002547740936279297,
+      "no_power_decrease_relative_v2": true
+    }
+  ],
+  "isolated_cli": [
+    {
+      "id": "compact_synth_128001_512",
+      "exact": true,
+      "stdout": "PC_INTEGER_REFERENCE_COMPLETE"
+    },
+    {
+      "id": "compact_field_rx0_0455",
+      "exact": true,
+      "stdout": "PC_INTEGER_REFERENCE_COMPLETE"
+    }
+  ],
+  "full_quality": "FAIL",
+  "weak_correction": "PASS",
+  "scope": "PC numeric only; no IP/BIT/board verification"
+}

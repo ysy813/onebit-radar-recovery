@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_gain_config_and_lut_match": true,
+    "amplitude_and_power_db_are_equal": true,
+    "two_gain_ratio_bounds_match_grid": true,
+    "ideal_harmonic_floors_match": true,
+    "fixed_common_gain_preserves_component_ratio": true,
+    "uniform_darkening_does_not_improve_ratio": true,
+    "existing_four_point_outputs_preserved": true,
+    "integer_rounding_exception_explicit": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Gain arithmetic and previously published four-point traces; not a new quality or detection experiment",
+  "gain_table": [
+    {
+      "amplitude_gain": 0.125,
+      "power_multiplier": 0.015625,
+      "amplitude_change_db": -18.06179973983887,
+      "power_change_db": -18.06179973983887
+    },
+    {
+      "amplitude_gain": 0.25,
+      "power_multiplier": 0.0625,
+      "amplitude_change_db": -12.041199826559248,
+      "power_change_db": -12.041199826559248
+    },
+    {
+      "amplitude_gain": 0.5,
+      "power_multiplier": 0.25,
+      "amplitude_change_db": -6.020599913279624,
+      "power_change_db": -6.020599913279624
+    },
+    {
+      "amplitude_gain": 0.75,
+      "power_multiplier": 0.5625,
+      "amplitude_change_db": -2.498774732165999,
+      "power_change_db": -2.498774732165999
+    },
+    {
+      "amplitude_gain": 1.0,
+      "power_multiplier": 1.0,
+      "amplitude_change_db": 0.0,
+      "power_change_db": 0.0
+    },
+    {
+      "amplitude_gain": 1.5,
+      "power_multiplier": 2.25,
+      "amplitude_change_db": 3.5218251811136247,
+      "power_change_db": 3.5218251811136247
+    }
+  ],
+  "contrast_bounds": {
+    "scope": "Necessary algebraic bounds from two gains; simultaneous attainability by the trained MLP is not proved",
+    "unanchored_maximum_amplitude_ratio_multiplier": 12.0,
+    "unanchored_maximum_power_ratio_multiplier": 144.0,
+    "unanchored_maximum_contrast_improvement_db": 21.5836249209525,
+    "unanchored_minimum_contrast_change_db": -21.5836249209525,
+    "anchored_numerator_gain": 1.0,
+    "anchored_maximum_amplitude_ratio_multiplier": 8.0,
+    "anchored_maximum_contrast_improvement_db": 18.06179973983887,
+    "current_gain_lut_q14_min": 2048,
+    "current_gain_lut_q14_max": 24576
+  },
+  "ideal_single_tone_harmonic_limits": [
+    {
+      "order": -3,
+      "assumptions": "Ideal separated single-tone harmonic, main amplitude normalized to one and anchored, no alias collision, leakage, windowing or numerical rounding",
+      "before_relative_amplitude": 0.3333333333333333,
+      "before_relative_db": -9.542425094393248,
+      "minimum_allowed_relative_amplitude": 0.041666666666666664,
+      "minimum_allowed_relative_power": 0.001736111111111111,
+      "minimum_allowed_relative_db": -27.604224834232124,
+      "scalar_reference_zero_not_exactly_reachable": true,
+      "chosen_gain_is_structural_limit_not_new_model_prediction": true
+    },
+    {
+      "order": 5,
+      "assumptions": "Ideal separated single-tone harmonic, main amplitude normalized to one and anchored, no alias collision, leakage, windowing or numerical rounding",
+      "before_relative_amplitude": 0.2,
+      "before_relative_db": -13.979400086720375,
+      "minimum_allowed_relative_amplitude": 0.025,
+      "minimum_allowed_relative_power": 0.0006250000000000001,
+      "minimum_allowed_relative_db": -32.04119982655924,
+      "scalar_reference_zero_not_exactly_reachable": true,
+      "chosen_gain_is_structural_limit_not_new_model_prediction": true
+    }
+  ],
+  "fixed_same_bin_example": {
+    "scope": "Fixed common gain applied to a hypothetical separated component-power accounting; no radar SNR estimated",
+    "signal_power": 9.0,
+    "noise_power": 1.0,
+    "common_gain": 0.125,
+    "output_signal_power": 0.140625,
+    "output_noise_power": 0.015625,
+    "component_power_ratio_before": 9.0,
+    "component_power_ratio_after": 9.0,
+    "warning": "Measured |S+N|^2 also contains a cross term; a data-dependent gain requires separate statistical analysis"
+  },
+  "uniform_darkening_example": {
+    "input_amplitudes": [
+      0.1,
+      0.01
+    ],
+    "common_gain": 0.125,
+    "input_ratio": 10.0,
+    "output_ratio": 10.0,
+    "common_change_db": -18.06179973983887,
+    "contrast_change_db": 0.0
+  },
+  "existing_points": [
+    {
+      "position": [
+        83,
+        0
+      ],
+      "input_power": 1286666655855754,
+      "output_power": 1286666655855754,
+      "final_gain": 1.0,
+      "ideal_same_point_change_db": 0.0,
+      "actual_integer_power_ratio": 1.0,
+      "actual_integer_change_db": 0.0,
+      "existing_output_exact": true,
+      "physical_truth_available": false
+    },
+    {
+      "position": [
+        774,
+        511
+      ],
+      "input_power": 58344130412905,
+      "output_power": 911627037702,
+      "final_gain": 0.125,
+      "ideal_same_point_change_db": -18.06179973983887,
+      "actual_integer_power_ratio": 0.01562500000000616,
+      "actual_integer_change_db": -18.061799739837163,
+      "existing_output_exact": true,
+      "physical_truth_available": false
+    },
+    {
+      "position": [
+        25,
+        0
+      ],
+      "input_power": 160521822565,
+      "output_power": 160521822565,
+      "final_gain": 1.0,
+      "ideal_same_point_change_db": 0.0,
+      "actual_integer_power_ratio": 1.0,
+      "actual_integer_change_db": 0.0,
+      "existing_output_exact": true,
+      "physical_truth_available": false
+    },
+    {
+      "position": [
+        200,
+        148
+      ],
+      "input_power": 160601293586,
+      "output_power": 160601293586,
+      "final_gain": 1.0,
+      "ideal_same_point_change_db": 0.0,
+      "actual_integer_power_ratio": 1.0,
+      "actual_integer_change_db": 0.0,
+      "existing_output_exact": true,
+      "physical_truth_available": false
+    }
+  ],
+  "integer_rounding_exception": {
+    "input_power": 1,
+    "gain": 0.125,
+    "ideal_output_power": 0.015625,
+    "rounded_output_power": 0,
+    "explanation": "Real-valued lower bound is not a positive lower bound after integer rounding"
+  },
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "scalar_restore_v3/pc_candidate_compact/weights.npz": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+    "network_understanding_v1/reports/POINT_TRACE.json": "19f76ecd0d9c0ce7ac051a39e686bea8a06709ba3b2d92713bd60c084f39655f"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

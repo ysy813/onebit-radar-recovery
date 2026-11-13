@@ -1,0 +1,560 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_gain_bounds_match": true,
+    "prior_collision_evidence_pass": true,
+    "positive_factor_sign_certificate": true,
+    "risk_decomposition_exact": true,
+    "residual_bound_and_projection_terms_nonnegative": true,
+    "bounded_optimum_matches_all_comparisons": true,
+    "zero_input_risk_independent_of_gain": true,
+    "ambiguous_pair_optimal_average_improves_bypass": true,
+    "protection_can_reduce_present_case_error": true,
+    "protection_can_increase_absent_case_and_average_error": true,
+    "protection_risk_increase_exact": true,
+    "prescribed_prior_shift_changes_ideal_gain_and_risk": true,
+    "original_quality_fail_preserved": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Exact rational teaching example, not current-model inference or a new quality experiment",
+  "sign_factor_certificate": [
+    {
+      "beta": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "minimum_factor": {
+        "fraction": "1",
+        "decimal": 1.0
+      },
+      "maximum_factor": {
+        "fraction": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "beta": {
+        "fraction": "3/10",
+        "decimal": 0.3
+      },
+      "minimum_factor": {
+        "fraction": "1/10",
+        "decimal": 0.1
+      },
+      "maximum_factor": {
+        "fraction": "13/10",
+        "decimal": 1.3
+      }
+    }
+  ],
+  "distributions_checked": 8,
+  "risk_comparisons": 56,
+  "risk_rows": [
+    {
+      "name": "same_observation_p_1/10",
+      "a": {
+        "fraction": "1/9",
+        "decimal": 0.1111111111111111
+      },
+      "b": {
+        "fraction": "1/100",
+        "decimal": 0.01
+      },
+      "c": {
+        "fraction": "9/1000",
+        "decimal": 0.009
+      },
+      "unconstrained_gain": {
+        "fraction": "9/100",
+        "decimal": 0.09
+      },
+      "bounded_gain": {
+        "fraction": "1/8",
+        "decimal": 0.125
+      },
+      "residual_risk": {
+        "fraction": "81/10000",
+        "decimal": 0.0081
+      },
+      "bound_cost": {
+        "fraction": "49/360000",
+        "decimal": 0.0001361111111111111
+      },
+      "bounded_risk": {
+        "fraction": "593/72000",
+        "decimal": 0.00823611111111111
+      }
+    },
+    {
+      "name": "same_observation_p_1/4",
+      "a": {
+        "fraction": "1/9",
+        "decimal": 0.1111111111111111
+      },
+      "b": {
+        "fraction": "1/40",
+        "decimal": 0.025
+      },
+      "c": {
+        "fraction": "9/400",
+        "decimal": 0.0225
+      },
+      "unconstrained_gain": {
+        "fraction": "9/40",
+        "decimal": 0.225
+      },
+      "bounded_gain": {
+        "fraction": "9/40",
+        "decimal": 0.225
+      },
+      "residual_risk": {
+        "fraction": "27/1600",
+        "decimal": 0.016875
+      },
+      "bound_cost": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "bounded_risk": {
+        "fraction": "27/1600",
+        "decimal": 0.016875
+      }
+    },
+    {
+      "name": "same_observation_p_1/2",
+      "a": {
+        "fraction": "1/9",
+        "decimal": 0.1111111111111111
+      },
+      "b": {
+        "fraction": "1/20",
+        "decimal": 0.05
+      },
+      "c": {
+        "fraction": "9/200",
+        "decimal": 0.045
+      },
+      "unconstrained_gain": {
+        "fraction": "9/20",
+        "decimal": 0.45
+      },
+      "bounded_gain": {
+        "fraction": "9/20",
+        "decimal": 0.45
+      },
+      "residual_risk": {
+        "fraction": "9/400",
+        "decimal": 0.0225
+      },
+      "bound_cost": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "bounded_risk": {
+        "fraction": "9/400",
+        "decimal": 0.0225
+      }
+    },
+    {
+      "name": "same_observation_p_3/4",
+      "a": {
+        "fraction": "1/9",
+        "decimal": 0.1111111111111111
+      },
+      "b": {
+        "fraction": "3/40",
+        "decimal": 0.075
+      },
+      "c": {
+        "fraction": "27/400",
+        "decimal": 0.0675
+      },
+      "unconstrained_gain": {
+        "fraction": "27/40",
+        "decimal": 0.675
+      },
+      "bounded_gain": {
+        "fraction": "27/40",
+        "decimal": 0.675
+      },
+      "residual_risk": {
+        "fraction": "27/1600",
+        "decimal": 0.016875
+      },
+      "bound_cost": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "bounded_risk": {
+        "fraction": "27/1600",
+        "decimal": 0.016875
+      }
+    },
+    {
+      "name": "same_observation_p_9/10",
+      "a": {
+        "fraction": "1/9",
+        "decimal": 0.1111111111111111
+      },
+      "b": {
+        "fraction": "9/100",
+        "decimal": 0.09
+      },
+      "c": {
+        "fraction": "81/1000",
+        "decimal": 0.081
+      },
+      "unconstrained_gain": {
+        "fraction": "81/100",
+        "decimal": 0.81
+      },
+      "bounded_gain": {
+        "fraction": "81/100",
+        "decimal": 0.81
+      },
+      "residual_risk": {
+        "fraction": "81/10000",
+        "decimal": 0.0081
+      },
+      "bound_cost": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "bounded_risk": {
+        "fraction": "81/10000",
+        "decimal": 0.0081
+      }
+    },
+    {
+      "name": "variable_input",
+      "a": {
+        "fraction": "3/25",
+        "decimal": 0.12
+      },
+      "b": {
+        "fraction": "13/150",
+        "decimal": 0.08666666666666667
+      },
+      "c": {
+        "fraction": "19/300",
+        "decimal": 0.06333333333333334
+      },
+      "unconstrained_gain": {
+        "fraction": "13/18",
+        "decimal": 0.7222222222222222
+      },
+      "bounded_gain": {
+        "fraction": "13/18",
+        "decimal": 0.7222222222222222
+      },
+      "residual_risk": {
+        "fraction": "1/1350",
+        "decimal": 0.0007407407407407407
+      },
+      "bound_cost": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "bounded_risk": {
+        "fraction": "1/1350",
+        "decimal": 0.0007407407407407407
+      }
+    },
+    {
+      "name": "upper_bound_active",
+      "a": {
+        "fraction": "1/100",
+        "decimal": 0.01
+      },
+      "b": {
+        "fraction": "1/25",
+        "decimal": 0.04
+      },
+      "c": {
+        "fraction": "17/100",
+        "decimal": 0.17
+      },
+      "unconstrained_gain": {
+        "fraction": "4",
+        "decimal": 4.0
+      },
+      "bounded_gain": {
+        "fraction": "3/2",
+        "decimal": 1.5
+      },
+      "residual_risk": {
+        "fraction": "1/100",
+        "decimal": 0.01
+      },
+      "bound_cost": {
+        "fraction": "1/16",
+        "decimal": 0.0625
+      },
+      "bounded_risk": {
+        "fraction": "29/400",
+        "decimal": 0.0725
+      }
+    },
+    {
+      "name": "lower_bound_active",
+      "a": {
+        "fraction": "1/4",
+        "decimal": 0.25
+      },
+      "b": {
+        "fraction": "1/200",
+        "decimal": 0.005
+      },
+      "c": {
+        "fraction": "1/5000",
+        "decimal": 0.0002
+      },
+      "unconstrained_gain": {
+        "fraction": "1/50",
+        "decimal": 0.02
+      },
+      "bounded_gain": {
+        "fraction": "1/8",
+        "decimal": 0.125
+      },
+      "residual_risk": {
+        "fraction": "1/10000",
+        "decimal": 0.0001
+      },
+      "bound_cost": {
+        "fraction": "441/160000",
+        "decimal": 0.00275625
+      },
+      "bounded_risk": {
+        "fraction": "457/160000",
+        "decimal": 0.00285625
+      }
+    }
+  ],
+  "same_observation_prior_examples": [
+    {
+      "present_probability": {
+        "fraction": "1/10",
+        "decimal": 0.1
+      },
+      "mean_reference": {
+        "fraction": "3/100",
+        "decimal": 0.03
+      },
+      "ideal_gain": {
+        "fraction": "1/8",
+        "decimal": 0.125
+      },
+      "output_amplitude": {
+        "fraction": "1/24",
+        "decimal": 0.041666666666666664
+      },
+      "ambiguity_variance": {
+        "fraction": "81/10000",
+        "decimal": 0.0081
+      }
+    },
+    {
+      "present_probability": {
+        "fraction": "1/4",
+        "decimal": 0.25
+      },
+      "mean_reference": {
+        "fraction": "3/40",
+        "decimal": 0.075
+      },
+      "ideal_gain": {
+        "fraction": "9/40",
+        "decimal": 0.225
+      },
+      "output_amplitude": {
+        "fraction": "3/40",
+        "decimal": 0.075
+      },
+      "ambiguity_variance": {
+        "fraction": "27/1600",
+        "decimal": 0.016875
+      }
+    },
+    {
+      "present_probability": {
+        "fraction": "1/2",
+        "decimal": 0.5
+      },
+      "mean_reference": {
+        "fraction": "3/20",
+        "decimal": 0.15
+      },
+      "ideal_gain": {
+        "fraction": "9/20",
+        "decimal": 0.45
+      },
+      "output_amplitude": {
+        "fraction": "3/20",
+        "decimal": 0.15
+      },
+      "ambiguity_variance": {
+        "fraction": "9/400",
+        "decimal": 0.0225
+      }
+    },
+    {
+      "present_probability": {
+        "fraction": "3/4",
+        "decimal": 0.75
+      },
+      "mean_reference": {
+        "fraction": "9/40",
+        "decimal": 0.225
+      },
+      "ideal_gain": {
+        "fraction": "27/40",
+        "decimal": 0.675
+      },
+      "output_amplitude": {
+        "fraction": "9/40",
+        "decimal": 0.225
+      },
+      "ambiguity_variance": {
+        "fraction": "27/1600",
+        "decimal": 0.016875
+      }
+    },
+    {
+      "present_probability": {
+        "fraction": "9/10",
+        "decimal": 0.9
+      },
+      "mean_reference": {
+        "fraction": "27/100",
+        "decimal": 0.27
+      },
+      "ideal_gain": {
+        "fraction": "81/100",
+        "decimal": 0.81
+      },
+      "output_amplitude": {
+        "fraction": "27/100",
+        "decimal": 0.27
+      },
+      "ambiguity_variance": {
+        "fraction": "81/10000",
+        "decimal": 0.0081
+      }
+    }
+  ],
+  "prescribed_protection_example": {
+    "prescribed_return_fraction": {
+      "fraction": "1/2",
+      "decimal": 0.5
+    },
+    "before_gain": {
+      "fraction": "9/20",
+      "decimal": 0.45
+    },
+    "after_gain": {
+      "fraction": "29/40",
+      "decimal": 0.725
+    },
+    "before_output": {
+      "fraction": "3/20",
+      "decimal": 0.15
+    },
+    "after_output": {
+      "fraction": "29/120",
+      "decimal": 0.24166666666666667
+    },
+    "absent_error_before": {
+      "fraction": "9/400",
+      "decimal": 0.0225
+    },
+    "absent_error_after": {
+      "fraction": "841/14400",
+      "decimal": 0.058402777777777776
+    },
+    "present_error_before": {
+      "fraction": "9/400",
+      "decimal": 0.0225
+    },
+    "present_error_after": {
+      "fraction": "49/14400",
+      "decimal": 0.0034027777777777776
+    },
+    "mean_error_before": {
+      "fraction": "9/400",
+      "decimal": 0.0225
+    },
+    "mean_error_after": {
+      "fraction": "89/2880",
+      "decimal": 0.03090277777777778
+    },
+    "mean_bypass_error": {
+      "fraction": "101/1800",
+      "decimal": 0.05611111111111111
+    },
+    "mean_error_increase": {
+      "fraction": "121/14400",
+      "decimal": 0.008402777777777778
+    },
+    "exact_increase": {
+      "fraction": "121/14400",
+      "decimal": 0.008402777777777778
+    },
+    "actual_guard_executed": false,
+    "actual_guard_mask_inferred": false
+  },
+  "prescribed_prior_shift": {
+    "training_present_probability": {
+      "fraction": "1/2",
+      "decimal": 0.5
+    },
+    "new_present_probability": {
+      "fraction": "1/10",
+      "decimal": 0.1
+    },
+    "inherited_ideal_gain": {
+      "fraction": "9/20",
+      "decimal": 0.45
+    },
+    "new_ideal_gain": {
+      "fraction": "1/8",
+      "decimal": 0.125
+    },
+    "inherited_gain_new_risk": {
+      "fraction": "9/400",
+      "decimal": 0.0225
+    },
+    "new_bounded_optimum_risk": {
+      "fraction": "593/72000",
+      "decimal": 0.00823611111111111
+    },
+    "actual_training_distribution_estimated": false
+  },
+  "assumptions": [
+    "Ideal continuous-phase harmonic amplitudes; no finite radar FFT computed",
+    "Class probabilities are prescribed, not estimated from real data",
+    "Squared-amplitude risk, not the eight-term actual training objective",
+    "A clipped risk optimum is not a claimed output of the frozen MLP",
+    "A halfway return is prescribed; current guard masks were not evaluated",
+    "Risk identities do not estimate the current model's irreducible error"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "network_understanding_v1/reports/HARMONIC_COLLISION_WALKTHROUGH.json": "80a032fac11dd45703b879b2368f0c8a2d3a10d63c0068f88a4b6c81d38e801c"
+  },
+  "script_sha256": "a318dc3a75a740c23b7e0c1ee20303eca107ae74bb8eeda8edad3f609a45173b",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "exact_constructed_algebra_run": true,
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "actual_guard_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

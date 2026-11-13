@@ -1,0 +1,1751 @@
+=== PAGE 1 ===
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+5221316
+A Convolutional De-Quantization Network for
+Harmonics Suppression in One-Bit SAR Imaging
+Cuiqi Si , Bo Zhao , Member, IEEE, Lei Huang , Senior Member, IEEE, and Shiqi Liu
+Abstract— One-bit synthetic aperture radar (SAR) imaging,
+which collects echoes into one-bit quantized samples, is a highly
+promising technique for the faster SAR images acquisition and
+simplified implementations in numerous applications. Harmonics,
+accompanied with one-bit sampling operation, are one of the
+fundamental factors that trigger severe aliasing artifacts problem
+in frequency domain. For one-bit SAR imaging, rather than
+sampling the echoes with extremely high rate to alleviate the
+effects of harmonics, a convolutional de-quantization network,
+termed as CDQOB-net, is proposed to establish de-aliasing in a
+transformed imagery domain. The proposed method starts with a
+fresh interpretation on the regular range-Doppler (RD) imaging,
+which is also referred to as the 2-D transformed domain of SAR
+echo. Then, in the light of deep learning framework for image
+restoration, an alternative method designed in the perspective
+of harmonics is specifically analyzed, wherein the degradation
+caused by harmonics in transformed domain is sufficiently
+estimated. Consequently, as a data-driven method, our two-stage
+CDQOB-net is proposed and trained to handle aliasing harmonics
+and multiple distortions, which can significantly improve the
+quality of one-bit SAR imaging. The proposed method is easy to
+implement and computationally efficient. Extensive experiments
+on simulated and real SAR data also demonstrate its validation
+and effectiveness.
+Index Terms— Deep neural networks, Fourier image restora-
+tion, harmonic suppression, one-bit sampling, synthetic aperture
+radar (SAR) imaging.
+NOMENCLATURE
+z(x p, yq)
+Scattering properties of point target located at
+(x p, yq).
+b(τ, η)
+Received signal at ηth pulse in τth sequence.
+bdc(τ, η)
+Received signal after de-chirped operation.
+bdc(τ, 1η)
+Received
+signal
+for
+instantaneous
+SAR
+imaging.
+bob(τ, 1η)
+One-bit quantization echoes in proposed sig-
+nal model.
+Z, ˆZ
+Surveillance patch, reconstructed region.
+ZRD
+Decoupled range-Doppler image.
+Manuscript received 24 May 2023; revised 28 September 2023; accepted 30
+October 2023. Date of publication 6 November 2023; date of current version
+20 November 2023. This work was supported in part by the National Natural
+Science Foundation of China under Grant 62171293, Grant 61925108, and
+Grant U1913203; in part by the Joint Fund of Ministry of Education and
+Equipment Development Department under Grant 8091B032224; in part
+by the Guangdong Basic and Applied Basic Research Foundation under
+Grant 2022A1515110125; and in part by the Huzhou Key Laboratory of
+Terahertz Integrated Circuits and Systems under Grant HKLTICY23KF04.
+(Corresponding author: Bo Zhao.)
+The
+authors
+are
+with
+the
+State
+Key
+Laboratory
+of
+Radio
+Fre-
+quency Heterogeneous Integration, College of Electronics and Information
+Engineering, Shenzhen University, Shenzhen, Guangdong 518061, China
+(e-mail: b_zhao@126.com).
+Digital Object Identifier 10.1109/TGRS.2023.3330530
+B f
+Full-sampled multibit 2-D SAR echo.
+Bdc
+De-chirped 2-D echo in our proposed signal
+model.
+Bt
+Received 2-D echo with specific thresholding
+strategy.
+B
+One-bit quantized 2-D SAR echo.
+N0
+Approximated noise of system measurement.
+N
+Noise matrix of the proposed signal model.
+N0
+Noise distribution.
+F(·)
+Function of 2-D Fourier transformation.
+Q(·)
+Function of one-bit quantization operator.
+A(·)
+Function of aliasing effects.
+D(·)
+Function of the degradation effects.
+d(·)
+Function
+of
+the
+distorted
+effects
+for
+harmonics.
+I. INTRODUCTION
+S
+YTHETIC aperture radar (SAR) has been applied in
+various remote sensing applications [1], particularly it can
+illuminate the surveillance regions with high resolution in all
+time of day and under severe weather conditions [2]. Due to
+these merits, SAR image formation [3], [4] has become an
+important research topic, and how to deduce the geometry
+characteristics of ground patches from the observed raw SAR
+data [5] is the most essential task in imaging operation. As a
+wideband signal is usually transmitted for SAR imaging to
+guarantee high resolution, a high sampling rate is required
+for undistorted echo collection, which also leads to a huge
+volume of data. Even though the de-chirping technology has
+been adopted to reduce the sampling rate [6], the remained
+data is still excessive for SAR image formation. To generate
+SAR images from raw data, resources including storage,
+transmission, and computing power are desperately demanded,
+which not only slows down the whole processing chain, but
+also brings great burden to hardware. Motivated by faster
+and cheaper SAR imaging, one-bit quantization technology
+has been utilized. By mapping the multivalued raw data into
+signed sequences {+1, −1} [7], [8], [9], an extremely simple
+and high efficient imaging structure are implemented for SAR
+echo processing [10], and the reduced data amounts alleviate
+the storage and transmission burdens as well.
+One-bit quantization, which performs many-to-one mapping
+on the raw data, is regarded as a complicated nonlinear
+process. As a result, the compressed one-bit raw SAR echoes
+pose challenges to information recovery, say, SAR imaging
+algorithm. For one-bit signal processing, existing methods can
+1558-0644 © 2023 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission.
+See https://www.ieee.org/publications/rights/index.html for more information.
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 2 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+be generally classified into two categories, i.e., prior-based
+methods and redundant sampling strategy-based methods. The
+prior-based methods usually make a sparsity assumption on the
+signal, and employee methodologies such as statistical signal
+processing [11], [12], [13], [14], matrix sensing [15], [16], and
+compressive sensing (CS) [17], [18] scheme to solve the one-
+bit imaging as an optimization problem. As the information
+to be recovered are constrained by the sparse prior, the one-
+bit data, even suffers significant degradation compared to the
+multibit data, is still redundant for the sparse information.
+The prior-based methods can therefore work effectively. How-
+ever, in the SAR imaging application, the sparsity-constrained
+algorithms focus on several strong scatterers and ignore the
+other weak targets in the SAR scenario, resulting in too brief
+images with absence of important properties. Moreover, these
+algorithms usually convert the 2-D backscattering coefficient
+matrix into 1-D vector, which destructs the internal spatial
+structures adversely.
+When the sparsity assumption is not satisfied, the redundant
+sampling strategy is adopted [7], [10], [19]. By using an
+over-sampling rate that is much greater than the Nyquist
+rate, the number of one-bit samples is increased, while an
+extra space is extended in the frequency domain. Superfluous
+frequency-domain space is able to accommodate the high-
+order harmonics caused by sudden flips between one-bit data.
+In this way, the spectrum aliasing is avoided for high-order
+harmonics, making them suppressible through a matched filter,
+and thus improves the quality of one-bit signal processing for
+a more common case. In general, both categories of methods
+require a superfluity of samples although the quantization level
+has been decreased into one-bit, and suffer from hand-designed
+hyperparameters that hinder the one-bit signal processing from
+high efficiency.
+When the one-bit data is collected at a regular Nyquist rate
+without additional prior involved, a great challenge is posed for
+the existing methods. From the perspective of CS, non-sparse
+assumption makes the equations in the optimization problem
+under-determined. In the view of spectrum analysis, the high-
+order harmonics, whose bandwidths have been multiplied in
+one-bit quantization and are much greater than the original sig-
+nal, will alias seriously when collected at the regular Nyquist
+rate being slightly larger than the signal bandwidth. Therefore,
+how to recover the information deep-seated in the one-bit data
+is an essential problem for one-bit signal processing to achieve
+better performance at lower data volume.
+As an alternative, deep learning-based methods [20] have
+attracted considerable attentions due to their favorable recon-
+struction or recovery performances. Very recently, deep neural
+architectures are combined with radar signal processing to
+solve signal recovery issues, termed as “deep unfolding” [21]
+architectures. In these models, researchers designed deep con-
+volutional networks [22] to unfold the iterative procedures of
+approximation in model-based optimization problem, such as
+alternating direction method of multipliers (ADMM)-net [23]
+and deep-fixed-point continuation (FPC) [24]. It avoids manu-
+factured parameters and offers high reconstruction accuracy
+in specific applications, such as direction-of-arrival (DOA)
+estimation.
+In this work, with the first attempt to tackle the one-bit
+radar imaging problem through the deep learning framework,
+we investigate the following two questions as: 1) Can we train
+a deep model to handle multiple variant degradation in one-bit
+measurement and 2) Is it possible to directly use 2-D echo data
+to train the model with high practicability? Instead of repre-
+senting multiple harmonics caused by one-bit quantization as
+plain noises, it is motivated to describe harmonics as strongly
+signal-dependent and adverse degradation of spatial variant.
+In addition, in order to preserve spatial-structured correlations
+in SAR imaging, we directly encode one-bit echoes into 2-D
+Fourier domains, and also offer a convincing explanation for
+aliased harmonics in the transformed domain. To eliminate
+these serious impacts and to improve the efficiency for one-
+bit SAR imaging, a convolutional de-quantization network
+(CDQOB-net) framework is proposed and trained to pinpoint
+the root of aliased artifacts, and estimate the harmonic kernel
+separately from system noises. Then, with a step-by-step
+processing, the one-bit SAR imaging task can be accomplished
+with high quality.
+The main contributions are summarized as follows.
+1) A simple yet effective signal formulation model is
+proposed for one-bit SAR imaging. The proposed signal
+model goes beyond the widely used 2-D SAR data disen-
+tangled assumption and works for instant range-Doppler
+(RD) images in transformed domain, thus making a
+substantial preprocess step toward developing a practical
+convolutional neural networks (CNNs)-based one-bit
+recovery resolver in real-world applications.
+2) A novel module is developed to represent the high-
+ordered harmonic degradation, which depends exclu-
+sively on the input baseband signal and are distorted
+by aliasing impact. Therefore, with this harmonic esti-
+mation module, a CDQOB-net is proposed and learned
+for one-bit SAR imaging.
+3) To quantify the plausibility of our proposed scheme,
+simulated and real-measured one-bit SAR imagery
+dataset are established. We show that the proposed
+model learned from simulation and real data not only
+can perform competitive results against several represen-
+tative one-bit SAR imaging methods, but also produce
+more plausible results for down-streamed imaging tasks,
+such as target recognition in SAR interpretation [25].
+The rest of this work is organized as follows. Section II
+briefly introduces the proposed signal model. Then, Section III
+proposes deep learning-based framework for one-bit SAR
+imaging in detail. In Section IV, extensive experiments are
+conducted to validate the effectiveness and demonstrate the
+superiority of the proposed model. Finally, Section V con-
+cludes the whole frameworks.
+II. SIGNAL MODEL FORMULATION
+In this section, two representative methods for one-bit signal
+processing are specified, the prior-based methods solved by
+CS framework and the redundant sampling strategy processed
+through matched filter. In addition, an instantaneous SAR
+imaging model based on de-chirp mechanism is proposed.
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 3 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+In this signal model, the obtained RD images, which are
+debated as range-azimuth decoupled, play a pivotal role in
+the 2-D Fourier transformed domain and the task of one-bit
+SAR imaging.
+A. Related Works
+In general, denote fast time τ and slow time η separately
+involved in SAR surveillance. In the fast time domain, the SAR
+transmits signal and collects the reflected echo to acquire Nτ
+samples. Such a process is repeated in the slow time domain,
+leading to Nη echo sequences. Accordingly, assuming that
+B f ∈CNτ ×Nη is the fully sampled 2-D echo data, and a matrix
+9 ∼= ψ(τ, η)Nτ ×Nη contains both the under-sampling and
+quantization operations. Regarding one-bit signal processing,
+radar system measurement matrix 9 specifically satisfies the
+one-bit quantization function Q, where Q(·) = sign(ℜ(·))+j·
+sign(ℑ(·)), sign(·) stands for the function which retains only
+the sign of the data, while ℜ(·) and ℑ(·) denote the real and
+imaginary parts of complex numbers, respectively. Then the
+one-bit 2-D SAR echoes can be expressed as
+B = 9(B f ) = Q(4a ◦B f ◦4r)
+(1)
+where B ∈[−1, 1]Nτ ×Nη is the binary measurement matrix,
+4a ∈[0, 1]Nτ ×Nη and 4r ∈[0, 1]Nτ ×Nη are the sampling strat-
+egy, respectively, in azimuth and range directions. ◦denotes
+Hadamard product operator.
+As previously mentioned, based on optimization method,
+one-bit SAR imaging reformulates the inverse model as iter-
+atively approximating the desired patch Z. To be specific,
+many of the published methods generalize (1) into a under-
+determined linear form
+B = 8Z + N0
+(2)
+where 8 corresponds to measurement matrix and N0 the obser-
+vation noise. In order to solve this problem, it is necessary
+to exploit the prior knowledge of Z, thus the optimization
+problem can be reformulated as
+ˆz = arg min
+z
+α||z||q +
+M
+X
+i=1
+f ((b8z)i) s.t.||z||2 = 1.
+(3)
+Notably, z ∈RN×1 is vectorized as stacking columns of
+Z one-by-one with N = Np × Nq and the corresponding
+measurement vector b ∈RM×M, where M = Nτ × Nη is
+the diagonalized matrix of the stretched operation of matrix
+B element-wise. In (3), α is the trade-off hyperparameter,
+and ℓq, (0 ≤q ≤1) is the regularization term involving the
+sparsity of z, and f (b8z) constrains the sign consistency in
+one-bit signal reconstruction termed as f (x) = x2/2, if x ≥0
+and 0, otherwise. The recovered ˆz is reshaped into matrix ˆZ
+after the optimization.
+As remarked earlier, the performances of prior-based meth-
+ods, such as approximate message passing (AMP) [26] and
+non-convex optimization [27], depend mainly on a prior
+sparsity assumption of the domain, which is not always able to
+be complied with in real-world scene. Besides, the complexity
+of the model estimation grows exponentially with the scale of
+observations.
+To improve the efficiency and adapt to more practical situa-
+tions, associated with threshold strategies, one-bit quantization
+can then be reformulated as
+Bt ≜Q(B f −V)
+(4)
+where V = [v1, v2, . . . , vM]T denotes the thresholds for one-
+bit quantization. To be specific, the threshold-based method
+usually refers to proposing comparison signals, such as [28]
+and [29] to suppress harmonics of the linear frequency mod-
+ulated (LFM) signals. Zhao et al. [7] offer a single-frequency
+threshold method, in which vi changes at frequency f0, i.e.,
+v(tr) = At exp( j2π f0tr + jϕ), where At is the amplitude
+of the threshold and ϕ is the initial phase. Then with the
+single-frequency threshold strategy, the one-bit LFM can be
+accurately analyzed by setting three hyperparameters. How-
+ever, to achieve high imaging accuracy, it still suffers from
+higher discrete samples, and the increased data draws back
+the efficiency in some extent.
+B. Signal Model Formulation
+In SAR system, LFM pulses are transmitted at a constant
+repetition frequency. Let matrix Z ∈RNP×NQ denote the
+reconstructed SAR image, whose element indexed by z(x p, yq)
+is the reflector coefficient associated with the target located
+at (x p, yq) in surveillance patches. Assume that x p and yq
+are indexed by p = 1, 2, 3, . . . , Np, and q = 1, 2, 3, . . . , Nq,
+respectively, wherein Np and Nq denote the sample number
+along the range and azimuth direction. Then, corresponding to
+the range and azimuth time τ and η, the echo data b(τ, η) at
+discrete time (τ, η) can be accumulated and expressed as
+b(τ, η) =
+NP
+X
+p=1
+NQ
+X
+q=1
+z(x p, yq) · rect
+τ −2R(η, x p, yq)/c
+Tr
+
+· exp
+
+−j4π fc
+R(η, x p, yq)
+c
+
+· exp
+ 
+jπkr
+
+τ −R(η, x p, yq)
+c
+2!
+(5)
+where j = √−1 represents the imaginary unit, fc is the carrier
+frequency, c is the light speed, kr represents the chirp rate, and
+Tr the pulsewidth.
+Let R(η, x p, yq) denote the instantaneous slant range from
+the position (x p, yq) to the moving platform at slow time η.
+It follows that:
+R(η, x p, yq) =
+q
+(xη −x p)2 + y2q
+(6)
+where xη is the coordinates exhibited by the moving radar
+platform at azimuth time η. Since B f ∈CNτ ×Nη is the fully
+sampled 2-D echo data, the discrete model can be obtained
+according to (5). That is,
+B f (τ, η) =
+NP
+X
+p=1
+NQ
+X
+q=1
+A(τ, η, p, q)z(x p, yq)
+(7)
+where A denotes the imaging geometry relationships between
+radar and the illuminated scenario, then each of its element is
+given by
+A(τ, η, p, q) = rect
+τ −2R(η, x p, yq)/c
+Tr
+
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 4 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+· exp
+
+−j4π fc
+R(η, x p, yq)
+c
+
+· exp
+ 
+jπkr
+
+τ −R(η, x p, yq)
+c
+2!
+.
+(8)
+To collect the echo reflected by the scenario with high
+fidelity, a sample rate fs being greater than the bandwidth of
+the LFM signal is required according to the Nyquist sampling
+theorem, and a multibit quantization is preferred to suppress
+quantization errors. Therefore, a high-performance analog-to-
+digital converter (ADC) is seriously desired for SAR echo
+collection. For sampling rate reduction, a reference signal,
+sref(τ) = exp(−jπkrτ 2), principled by chirp rate kr is mixed
+with b(τ, η) before data collection. Such a process is known
+as de-chirping and has the advantage of low sampling rate for
+small observation scenario. By this mean, the received data
+can be represented as
+bdc(τ, η) =
+Np
+X
+x p=1
+Nq
+X
+yq=1
+z(x p, yq) · rect
+τ −2R(η, x p, yq)/c
+Tr
+
+· exp
+
+−j4π fc
+R(η, x p, yq)
+c
+
+· exp
+
+−j4πkrτ R(η, x p, yq)
+c
+
+· exp
+
+jπkr
+4R(η, x p, yq)2
+c2
+
+.
+(9)
+It is worth to note that with the reference signal sref(τ), the
+center of the scene is equivalently moved to the position
+of radar, while the received echoes can be considered as
+accumulating or sensing the narrow band spectrum [30].
+Then, a compelling explanation of the proposed instant
+range-azimuth decoupled image is given. In (9), the last
+exponential term represents the residual video phase (RVP),
+whose effect is small enough to be neglected. With regard
+to the slant range of scatterers, only the second exponential
+term, say exp
+−j4πkrτ R(η, x p, yq)/c
+
+, is involved to analyze
+the echo in fast time domain. From the expression, it is simple
+to represent frequencies of τ as
+fτ = −kr
+2R(η, x p, yq)
+c
+(10)
+where the frequency can be determined by R(η, x p, yq). Sup-
+pose that v is the velocity of radar platform, with (6), the
+instant slant range for automotive SAR imaging geometry can
+be expressed as
+R(η, x p, yq) =
+q
+(x p −vη)2 + y2q.
+(11)
+Besides, along the azimuth dimension, by denoting the phase
+of the first exponential term as 2 = −2R(η, x p, yq)/λ with
+λ being the wavelength, the Doppler frequency of echoes fη
+can be calculated as
+fη(η) =d2
+dη
+= −2
+λ
+d
+q
+(x p −vη)2 + y2q
+dη
+≈−2
+λd
+
+
+q
+x2p + y2q −
+vx p
+q
+x2p + y2q
+η
++
+
+
+v2
+2
+q
+x2p + y2q
+−
+v2x2
+p
+2
+x2p + y2q
+3/2
+
+η2 + · · ·
+
+/dη
+= −2
+λ
+
+−
+vx p
+q
+x2p + y2q
++
+
+
+v2
+q
+x2p + y2q
+−
+v2x2
+p
+2
+x2p + y2q
+3/2
+!
+η + · · ·
+!
+.
+(12)
+In (12), Taylor expansion at η is utilized to approximate 2,
+therefore fη is determined by the location indexed as (x p, yq),
+and the coherent processing time η.
+In this article, a short time period 1η is employed for
+coherently imaging, and the center of the sub-aperture is set
+to η = 0. In this way, the analysis on the Doppler frequency
+history is then limited to a scope [−1η/2, 1η/2]. For a
+sufficiently small 1η, we have that
+fη(1η/2) ≈fη(−1η/2) ≈fη0 = 2
+λ
+vx p
+q
+x2p + y2q
+.
+(13)
+As previously emphasized, it is expected to explain plau-
+sibility for the range-azimuth decoupled image. With a
+sufficiently short period 1η in slow time dimension, fτ can be
+computed by the slant range as R(η, x p, yq) = (x2
+p + y2
+q)1/2,
+where η is considered to be 0. Then this echo model for
+instantaneous sub-aperture imaging can be written as
+bdc(τ, 1η) ≈
+NP
+X
+p=1
+NQ
+X
+q=1
+z(x p, yq) · rect
+τ −2R(η, x p, yq)/c
+Tr
+
+· exp( j2π fττ) exp
+j2π fη0η
+
+.
+(14)
+Let Fτ and Fη denote the Fourier transform matrix in fast
+and slow time domain, respectively, the RD image of the
+surveillance region can be denoted as
+ˆZRD = FτBdcFη + N0
+(15)
+where N0 is the noise matrix. In (15), notably, Bdc ∈CNτ ×N1η
+is sufficiently sampled for SAR imaging, and the subscript η
+in Fη concisely represents the sampling rate corresponding to
+short period 1η. The surveillance region Z can be approxi-
+mately obtained by a coordinate conversion of ˆZRD.
+To sum up, with reference signal sref and de-chirp mech-
+anism, we make efforts to state that it is sensible to reduce
+redundancy of SAR echoes along the slow time domain by
+collecting the most coherent phase periods, which is called a
+sub-SAR imaging. It is proved that the scattering character-
+istics of targets in patch ground can be effectively detected
+and recognized in a sub-SAR imagery. Herein, a simple SAR
+image obtained on a moving vehicle is given in Fig. 1.
+Specifically, Fig. 1(a) represents the decoupled RD image
+ˆZRD of the ground patch, and Fig. 1(b) is the actual SAR
+image Z after coordinate conversion with a given velocity
+v, while Fig. 1(c) is the optical image. Combined with (15),
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 5 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+Fig. 1.
+Illustration and visualization of the proposed sub-SAR imaging
+process. The location of the moving radar is represented as origin of the
+coordinates. (a) Decoupled RD ˆZRD image of the ground patch. (b) Actual
+SAR image Z after coordinate conversion with a given velocity. (c) Optical
+image.
+it is obvious to know that ˆZRD is sufficient to describe the
+information of observed regions. Along with the vertical and
+horizontal directions of ˆZRD, the position of the targets can
+be jointly guaranteed, and the scattering coefficients are also
+yielded by the amplitude in frequency spectrum image. Then,
+Fig. 1(b) demonstrates that an acceptable imaging result can
+be obtained by the proposed signal model. Due to the limited
+space, the operation of coordinate conversion from (a) to (b)
+will be additionally discussed in Appendix A. Furthermore, the
+plausibility and the significance of the sub-SAR image will be
+demonstrated in our proposed one-bit SAR imaging module in
+Section III and experimentally shown in Section IV.
+III. CONVOLUTIONAL DE-QUANTIZATION NETWORK
+In this section, the proposed CDQOB-net is explained.
+We first elaborate the one-bit SAR imaging scheme in
+Section II-B, based on which the CDQOB-net is designed.
+Then, an analysis of harmonic degradation in transformed
+domain is presented, with which the architecture of CDQOB-
+net is described in detail. In addition, the training and
+computational complexity of the proposed network is stated.
+A. Problem Statement and Transformed Formula
+As illustrated in (14) and (15), the received 2-D echoes can
+be represented as
+Bdc = F−1
+τ ZF−1
+η
++ N
+(16)
+where N ∈RNτ ×N1η is the noise matrix in system measure-
+ment, and F−1
+τ
+and F−1
+η
+are the inverse Fourier operators along
+range and azimuth directions. Then, with one-bit quantization
+function Q, the observed echoes can be expressed as
+B = Q(F−1
+τ ZF−1
+η
++ N).
+(17)
+To solve the above equations, instead of directly operating
+Fourier coding on one-bit matrix B to approximate ˆZRD,
+an alternative way is provided with the intuition that the
+scattering characteristics of the targets are reflected as the
+frequency properties in Bdc. With this insight, we turn to
+analyze one-bit quantized echoes which are projected into the
+2-D frequency spectrum domain. In the transformed domain,
+besides, one-bit recovery can be considered as a specific
+image restoration problem. In particular, according to (15),
+we define F(B) as 2-D Fourier transformations for B, which
+can be considered as F(·) = Fτ(·)Fη. It is intuitive to
+declare that now we are making efforts to recover F(Bdc)
+from F(B).
+Therefore, in the imagery domain, the transformed one-
+bit quantization error is considered as two individual parts:
+the noise-like behaved high-order harmonics and the inter-
+modulation components which have strongly correlative
+information with baseband signal. It is known that former
+errors exhibit as Gaussian-like distribution in system, and
+a typical denoising-based framework would work well in
+a strictly distributed condition. On the other side, along
+with the sampling representation reduced to binary form, the
+high-ordered harmonics will constantly emerge. Due to the
+under-sampling rate for one-bit form, the aliased impacts of
+multiple harmonics are distortedly placed and discontinuously
+correlated. Correspondingly, relied on the typical restoration
+framework, the RD image acquired from the one-bit data, say
+F(B), would be formulated as
+F(B) = H ◦F(Bdc) + N0.
+(18)
+In this setting, F(B) is the observed quantization image,
+and F(Bdc) is the ideal “clean” image to be recovered in
+transformed domain. H is a nonlinear operator that corresponds
+to the responses of Fourier transformation in one-bit quanti-
+zation, ◦is the Hadamard product and N0 accounts for the
+former error, including noise under Fourier imaging operator
+and harmonics with infinite orders, which can be commonly
+assumed as i.i.d. Gaussian noise with standard deviation σ.
+Note that H is strongly correlated with Bdc, and induced by
+aliasing impact, H adversely degrades the back-scatterings of
+the regions of interest.
+Mathematically, the “clean” counterpart of an one-bit image
+can then be cast as a minimization problem
+ˆF(Bdc) = arg min
+F(Bdc)
+d(F(Bdc); H, F(B)) + αR(F(Bdc)). (19)
+The first term d(· ; · , ·) is the data fidelity term, which
+measures the proximity of the estimation to the observation.
+R(F(Bdc)) is the regularization term and α is the trade-
+off parameter. Simply speaking, the data fidelity term in
+(19) conveys that the estimated solutions should not only
+accord with harmonic aliasing process, but also have the
+desired property of the clean scene. To facilitate clarity in this
+presentation, Nomenclature section summarizes the frequently
+used symbols.
+B. Perspective From Harmonic Analysis for Data Fidelity
+Harmonic Degradation: Before solving the restoration prob-
+lem in (18), it is important to have a clear understanding of
+the data fidelity term, which contains harmonic description
+H. As with (14), the one-bit sampling echo can be primarily
+considered as
+bob(τ, 1η) ≈bdc(τ, 1η) +
+∞
+X
+k=1,2,3
+e−kβ(k) X
+p
+X
+q
+z(x p, yq)
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 6 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+rect
+τ −2R(η, x p, yq)/c
+Tr
+
+(−1)k exp( j2π(2k + 1) fττ)
+(−1)k exp( j2π(2k + 1) fη0η)
+(20)
+where (2k+1) denotes the order of harmonics with k ∈N, and
+e−kβ(k) represent the decay coefficient of (2k + 1)th harmonic
+amplitudes. In the proposed signal model, it is beneficial
+to consider the impact of one-bit SAR echoes as a sum of
+multiple ordered harmonics. By transforming bob(τ, η) into a
+2-D Fourier imagery domain F(B), the intrinsic connections
+between the one-bit sampling mechanism and harmonic degra-
+dation can be practically modeled as
+F(B) = F(Bdc) +
+∞
+X
+k=1,2,3
+e−kβ(k)FτB2k+1Fη.
+(21)
+At the right side of (21), B2k+1 symbolizes the echo matrix
+of (2k+1)th harmonics. As remarked previously, Fτ ∈CNτ ×Nτ
+is the Fourier transformation matrix along range dimension,
+each element can be expanded by
+Wn f
+τ
+= e−j2π
+n f
+Nτ τ
+(22)
+where n f
+= 1, 2, . . . , Np represents the index of discrete
+frequency which is proportionally related to fτ, and τ scopes
+from 0 to Nτ −1 regarding discrete sampling rate along fast
+time dimension. Uniformly, the expansions of Fη ∈CNη×Nη
+can be represented as
+Wm f
+η
+= e−j2π
+m f
+Nη η
+(23)
+where m f relates to fη and η changes step-wisely in range
+[0, Nη −1] abided by short period sampling rate in slow time
+direction.
+Without loss of generality, suppose in one-bit SAR imaging,
+once the sampling rate increases to infinite value, the harmon-
+ics can be denoted by infinite Fourier transform along two
+dimensions. To be specific, in (21), we take k = 1 as an
+example, the third harmonic is ideally assumed to appear at
+(−3 fτ, −3 fη) in the unbounded 2-D Fourier space. However,
+the limited sample-rate fs systematically leads to severe alias-
+ing in RD images, also by fs the distortions along range and
+azimuth directions can be speculated.
+As Fig. 2 illustrates, diverse aliased harmonics appear in
+the RD images when simulated point targets are located at
+different positions. Based on the proposed signal model, the
+locations of arbitrary target or its harmonics in one-bit imaging
+are equivalently represented by the corresponding frequencies
+after Fourier transformation. Therefore, in the transformed
+domain, assume Ak( fτ) and Ak( fη) indicate the aliased fre-
+quencies of (2k + 1)th harmonics along 2-D, respectively.
+Associated with (21) and (22), the locations of (2k + 1)th
+harmonics can be ascertained as
+Ak( fτ) = (−1)k(2k + 1) fτ −⌊(−1)k (2k + 1) fτ
+Fτ
+⌋Fτ
+Ak( fη) = (−1)k(2k + 1) fη −⌊(−1)k (2k + 1) fη
+Fη
+⌋Fη
+(24)
+where Fτ and Fη are the sampling rate along range and
+Doppler dimensions, respectively.
+Fig. 2.
+Illustration of multiple harmonics in one-bit RD image. The moving
+radar lies at the origin of the RD coordinate.
+H-estimation Module: Since accurate modeling of aliasing
+impact plays a key role in successful one-bit recovery, it is
+preferable to learn a mapping function, which covers more
+extensive features of harmonic in degradation space. In the
+light of harmonic representation H, Fig. 2 simply visualizes the
+aliasing harmonics of multiple point targets. In the illustration,
+there are three significant components need to be clarified.
+First, the yellow panel illustrates the decoupled RD domain
+in whole, while inside the panel, each picture displays har-
+monics in transformed domain regarding each single point
+target separately. Then, the RD images present that the relative
+positions of the harmonic degradation are mutually determined
+by range and Doppler dimensions. Besides, diverse shapes of
+harmonics are together depended on these 2-D. Eventually,
+irrespective of inter-modulation, as (20) assumed, in the trans-
+formed domain, one-bit RD image with several point targets
+is actually composed of images in each of which the target
+locates at counterpart position. The four dashed lines with
+arrows intend that those four images are superimposed to
+constitute the top RD image, while the solid lines mean the
+bottom degraded image is included in the yellow panels.
+To better encode H then, in accordance
+with (21),
+we describe one-bit image generation model as
+F(B) = F(Bdc)D(B) + d(1 −D(B)).
+(25)
+There are two critical parameters: D(B) and d. The space D
+contains the effects of degraded amplitudes as well as aliased
+directions of each target in patch ground, denoted by Ak
+in (24). Then, d represents the distortion function regarding
+harmonics, each dk is the distorted shapes of (2k+1)th ordered
+harmonics. In this setting, Ak is the global aliasing principle
+for all (2k + 1)th harmonics, which is consistent with the
+terms in (24). Besides, D(B) is defined as the degradation
+space for harmonics, which contains e−kβ(k), where β(k) is
+the degradation coefficient function of (2k + 1)th harmonics,
+and the quantized transmission matrix Ak(B), which denotes
+the kth aliased locations (patterns) for observed one-bit 2-D
+echo in the transformed domain.
+Without loss of generality, we set the degradation space
+as: D(B) = 1 −e−kβ(k)Ak(B). Considering when k = 0,
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 7 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+the
+degradation
+turns
+to:
+D(B)
+=
+1 −A0(B),
+(25)
+becomes: F(B) = F(Bdc)(1 −A0(B)) + d0(A0(B)), where
+F(Bdc)A0(B) = d0(A0(B)) denotes that the baseband compo-
+nent does not suffer the impacts of aliasing and distortions
+with sufficient Nyquist rate. Then, when k approaches to
+∞, the corresponding degradation D(B) = 1, which means
+the observed scene is carpeted thoroughly with the degraded
+effect. Thus, (25) can be represented as
+F(B) = F(Bdc) + d0(A0(B)) + d1(e−β(1)A1(B))
++ · · · + dk(e−kβ(k)Ak(B)).
+(26)
+Specifically, suppose a scene with P point, one-bit quanti-
+zation can be equivalently considered as disposing a mess of
+disturbed points Pd in the observed patch Z. According to (26),
+k = 0 is the special case that there exists no degradation effects
+in this analysis region, which can equivalently be regarded
+as the false points coincide with the location of P point.
+When k ̸= 0, and k increases to ∞denoting that all possible
+distances of Pd are inclusive, and where each k amounts
+to particular patterns of disturbance caused by correspondent
+(2k +1)th harmonics. In the transformed domain, these distur-
+bances are exhibiting as aliased degradation D and distorted
+shapes dk.
+Therefore, by reformulating (25) as
+F(Bdc) = D(B)−1(F(B) −d(1 −D(B)).
+(27)
+The “clean” SAR image can be recovered by iteratively
+revealing the amplitudes and directions of the aliasing patterns
+of harmonics in one-bit SAR image. The separate estimations
+of the transmission matrix D(B) from the one-bit image F(B)
+and the distorted function d may lead to a suboptimal solution
+for the reconstructed image. To avoid the accumulated errors,
+these two critical parameters are unified into one expression
+ˆF(Bdc) = H(B)F(B) −H(B), where
+H(B) = D(B)−1(F(B) −d(1 −D(B)))
+F(B) −1
+.
+(28)
+In this way, both dk and D(B) are merged into the new
+harmonic variable H, which is dependent on F(B). Therefore,
+we can propose a model with input one-bit RD images, and
+minimize the reconstruction error between the output ˆF(Bdc)
+and the ground-truth RD image. Thus far, the data fidelity term
+d(F(Bdc); H, F(B)) can be re-expressed as
+min ||F(Bdc) −(H(B)F(B) −H(B))||2
+2.
+(29)
+In this setting, a diagram is exhibited to show the module
+of H-estimation, in which the harmonic degradation can be
+estimated from the input one-bit RD images.
+In Fig. 3, a plain CNN architecture is configured to obtain
+the nonlinear mapping, hitherto, we have made efforts to state
+that the aliased harmonics can equivalently be described in
+the transformed imagery domain, which facilitates in solving
+the issues in one-bit quantization as estimating the harmonic
+spaces in RD domain. The goal of one-bit recovery can be
+considered as ˆz = CNN(F(B); 2), where 2 denotes the
+network parameters for harmonic inference.
+Fig. 3.
+Simple configuration of the proposed harmonic estimation module.
+C. Proposed Network Design
+From the above analysis, it is clear that the success of de-
+quantization CNN scheme depends mainly on how well the
+function H(B) can estimate the realizations of one-bit quanti-
+zation. In this part, we further exploit the evidences in imagery
+domain for improving the quality of our generation. It has
+been proved that a good choice of regularizer has an important
+effect on the quality of the reconstructed images. Inspired by
+the perceptual loss, the image generated by CNN is used as
+a reference image, with which an additional regularization is
+imposed to compute the overall objective function in (19).
+Constrained Optimization: The role of the regularizer R(·)
+is critical since it encodes the prior knowledge by penalizing
+the solutions that do not feature desired properties. Rather
+than involving a typical ℓq norm in (3) for the sparse prior-
+ity, an additional regularization term, which takes perceptual
+similarity into account, is utilized here. It contributes that
+the desired reconstructions should have coherent high-level
+features with grounded patches. Particularly, the ResNet-loss
+based R(F(Bdc)) is defined as
+R(F(Bdc)) = 1
+2|| fResnet(F(Bdc)) −fResnet( ˆF(Bdc))||2
+2
+(30)
+where
+fResnet(·) represents the general features embedded
+by ResNet architectures, which constrains that the generated
+images tend to behave similar to ground truth in the gen-
+eralized spaces. Therefore, imposing the constraint on the
+proposed H-estimation module, a unified objective formulation
+can be obtained
+ˆz = arg min
+2
+||F(Bdc) −CNN(F(B); 2)||2
+2 + αR(F(Bdc)).
+(31)
+For resolving those complex noisy images, step-by-step
+processing is leveraged here. To be concrete, the first step
+exploits multiple harmonic features from one-bit 2-D SAR
+echo in transformed domain. Then, relied on CNN with
+optimization algorithms, the recovery of clean SAR image is
+conducted by minimizing pixel-domain and perceptual loss
+simultaneously.
+The proposed CDQOB-net consists of two modules: a
+H-estimation module that estimates harmonic H(B) from input
+F(B), followed by a clean image generation module that
+utilizes H(B) as the input-adaptive parameters to estimate
+F(Bdc). The H-estimation module is responsible for revealing
+the degraded harmonic levels.
+As depicted in Fig. 3, several convolutional layers, conv1,
+conv2, conv3, are used to form multiscale features. Then,
+by fusing these varied features with concatenated layers,
+concat1, concat2, concat3, features at different scales can be
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 8 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+Fig. 4.
+Schema for our proposed signal model-based de-harmonic algorithm
+for one-bit SAR imaging.
+captured. It is worth to point out that such multiscaled design
+can compensate for the information loss during convolutions.
+Following the H-estimation, the clean image generation mod-
+ule including an element-wise multiplication layer and several
+element-wise addition layers is presented to recover image via
+calculating (31). CDQOB-net clearly produces more accurate
+structural details and distorted conditions, since the jointly esti-
+mation of D(B) and d enables a mutually refinement of each
+other. The inaccurate estimation of other hyperparameters such
+as β(k)(the degradation coefficients) can also be compensated
+and compromised in this formulations.
+D. Network Training
+In the training phase, the network parameters 2
+=
+{21, 22, . . . , 2L}, where 2l denotes the set of parameters
+for the lth layer, are learned using a loss minimization strategy
+given the |O| pairs of training data {F(B)i, F(Bdc)i}|O|
+i=1. Here,
+F(B)i is the one-bit RD image input and F(Bdc)i is the
+corresponding ground-truth image. As Algorithm 1 presents,
+parameters 2 are first pre-trained by optimizing the following
+loss function with Adam:
+L(2) =
+1
+|O|
+|O|
+X
+i=1
+||CNN(F(B)i, 2) −F(Bdc)i||2
+(32)
+in which all the weights in 2 are initialized to Gaussian
+random variables. The mini-batch size is set to 64, and the
+initial learning rate starts at 10−3, when the training error L
+stops decreasing, the learning rate drops to 10−4. Then, to fine-
+tune the model, the loss function is substituted for
+L f t(2) =
+1
+|O|
+|O|
+X
+i=1
+||CNN(F(B)i, 2) −F(Bdc)i||2
++α|| fResnet(CNN(F(B)i, 2))−fResnet(F(Bdc)i)||2
+(33)
+where a smaller learning rate 10−5 is set for additionally
+100 epochs, and fResnet denotes the fine-trained ResNet50
+architecture. It should be necessary to note that on the human
+perceptual front, the general spatial information in images can
+be embedded by general deep models.
+To sum up, an illustration of our proposed method,
+CDQOB-net, is presented in Fig. 4. In the radar imaging
+Algorithm 1 Optimization Procedures of Proposed Model
+Input: Set iteration of two steps respectively as t = 1, T =
+1, and βt = 0.001, γ0 = 0.0001 is the initial learning rate
+for training. Initialize 20. Image pair {F(B)i, F(Bdc)i}|O|
+i=1,
+epoch1 = 100, epoch2 = 100
+Start the Initial Training Process.
+while t < epoch1 do
+step1: 2t = 2t−1 −βt∂L/∂2;
+step2: t ←t + 1;
+step3: Compute the training error L(2t) −L(2t−1),
+change the learning rate βt to 0.0001 when training error
+stops decreasing;
+end while
+Start the FINE-tune Process.
+while T < epoch2 do
+step4: Load the pre-trained weights 2T = 2t;
+step5: 2T +1 = 2T −γ0∂L f t/∂2;
+step6: Let T = T + 1 and return to step 5.
+Stop when the loss function L f t stopped decreasing.
+end while
+Output: Final representation matrix ˆF(Bdc)
+forward model, a transmitter illuminates a scene with FMCW
+pulse in the mmWave band. Objects in the scene reflect some
+energy back to the receiver as the platform moves, which for-
+mats the measured radar data block b(τ, η). With the proposed
+signal model, the echoes are collected and transformed to 2-D
+spectrum F(B) and F(Bdc). Next, the H-estimation module
+represents the space of harmonic degradation using a convo-
+lution neural network. During the restoration, the weights 2 of
+the CNN are updated to minimize the loss(difference) between
+the simulated RD images and the acquired ones. Finally, one-
+bit SAR image ˆF(Bdc) can be achieved.
+IV. EXPERIMENTAL ANALYSIS
+In this section, we evaluate our proposed model with exten-
+sive experiments. In the first place, we detail the experimental
+setup, including datasets, comparison methods, and parameter
+settings. Then, we verify the performance of proposed model
+by comparing it with CS-based SAR imaging methods and
+threshold strategy-based algorithm in [31]. Finally, for the
+high-level SAR imaging tasks, such as object detection and
+recognition, through interpolating precise velocities of mov-
+ing radar, we illustrate the imaging results by CDQOB-net
+qualitatively.
+A. Experimental Setups
+Datasets: Realistic vehicle borne RD images for one-
+bit SAR imaging (RVB-oSAR) dataset are conducted as
+the baseline for validated experiments. RVB-oSAR is the
+first large-scale dataset collected for one-bit SAR imaging,
+including simulated and real-time telemetry data, the system
+parameters and geometry configurations are illustrated in
+Table I. It should be stressed that the new RVB-oSAR has
+comprised diversely imagery content and data patterns, such as
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 9 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+TABLE I
+SYSTEM AND GEOMETRY PARAMETERS OF THE EXPERIMENTS
+simulated RD images with multiple point targets and, respec-
+tively, the RD images collected in the campus of Shenzhen
+University (SZU), Shenzhen, Guangdong, China. The training
+set consists of 1000 simulated images and 15 000 real-world
+measured images, which are simultaneously randomly split as
+validation data. The simulated SAR dataset, as Table I listed
+for experimental setting, is assumed that the radar platform
+moves along the y-axis with a constant velocity v.
+First and foremost, the size of SAR echo is set as Nτ =
+1024 according to fast time sampling rate fs after de-chirp,
+besides, with pulse repetition frequency (PRF) is set to 5000,
+say 1/Tr. The imaging interval 1η is selected as Nη = 480,
+through which the interval time, 480/5000 = 0.096s, for
+instant SAR imaging can be sufficiently sampled. Subse-
+quently, it is possible to obtain SAR echo Bdc ∈CNτ ×Nη
+based on (14), then by signum function Q, we can analogously
+get one-bit quantized echoes B ∈CNτ ×Nη. As previously
+remarked, the observed echoes Bdc, B can be converted by 2-D
+Fourier transformation, which are individually contemplated as
+F(Bdc) and F(B).
+Besides, taking into account the limited detection ability
+of MMW radar we utilize, those imaginary transformations
+F(Bdc) and F(B) have to hold half along the range dimension.
+After removing the counterpart of negative frequency, the size
+of observation is NP = 512 and NQ = 480. On the other side,
+to enhance the illuminance of the observation, a bit extra parts
+along the range dimension of RD images are omitted, thus
+the final imaging size changes to NP = 480, and NQ = 480.
+Until now, the adjusted RD imaging results F(B) ∈RNP×NQ,
+F(Bdc) ∈RNP×NQ are utilized as input and ground truth
+(label), respectively, to train the proposed model.
+In the nutshell, to establish RVB-oSAR, in the simulated
+data front, various imaging scenes are set in accord with
+Table I. To be specific, the velocity in simulated RD images is
+changing at a range of [2, 5.6]m/s, which is basically consid-
+ered to have parallel properties with realistic vehicle-mounted
+SAR imaging. The interval of changing velocity is set to 0.1,
+the numbers of targets are randomly set between [10, 50],
+and the scattering coefficients are randomly set among a
+range of [10, 15]. In the front of the real-measured imaging
+scene, we use AWR1243 module for signal transmission and
+the DCA1000 module for data collection. As illustrated in
+Fig. 5, (a) shows the AWR1243 and DCA1000 module and
+(b) records the vehicle-borne radar in the real map. With the
+assembled devices exhibited above, the echoes of vehicle-
+borne SAR covering nearly the entire regions of SZU campus
+are collected. Thus, the large-scale SAR dataset involves in
+diverse targets, such as cars in the parking lot, bicycles,
+Fig. 5.
+Devices for collecting real SAR image data. (a) Assemble module
+of AWR1243 and DCA1000. (b) Vehicle-borne radar in the real scenarios.
+walkers, a variety of trees, and man-made structures. With
+these multiobjects, complex scenes of echoes can be rendered
+and collected. We still use the Fourier transformation F(Bdc) ∈
+RNP×NQ as ground truth, and Fourier transformed one-bit
+echoes F(B) ∈RNP×NQ as input for training.
+In this section, two evaluation metrics of quantitative results,
+the peak signal-to-noise ratios (PSNRs) and structural sim-
+ilarity (SSIM) measure, are leveraged for the reconstructed
+qualities of the proposed algorithm. To make a simple state-
+ment, x and y are suggested to substitute the recovered images
+ˆF(Bdc) and the ground truth F(Bdc) in the following.
+Assuming that
+PSNR(x, y) = 10 log10
+1
+pmse
+(34)
+where pmse denotes the pixel-wise mean square error between
+recovered image x and the ground truth y, which can be rep-
+resented as: PNp
+m=1
+PNq
+n=1(x(m, n) −y(m, n))2/NpNq, where
+x(m, n) and y(m, n) denote the pixel value indexed at (m, n)
+in corresponding images. Then, the simplified structure simi-
+larity index is defined as
+SSIM(x, y) =
+(2µxµy + c1)(σxy + c2)
+(µ2x + µ2y + c1)(σ 2x + σ 2y + c2)
+(35)
+where µx and µy denote the mean values of x and y,
+respectively, and σx and σy are the standard variations of x
+and y, respectively, σxy is the covariance between x and y, c1
+and c2 are both constants.
+Comparison Methods and Parameter Settings: To demon-
+strate the performance of the CDQOB-net, we present and
+compare the recovered results with some representative one-
+bit SAR imaging methods. Specifically, binary iterative hard
+thresholding (BIHT [18], [32]), and its variant (BIHT2 [18]),
+compressive sampling matching pursuit (CoSaMP [33]), 1-bit
+CVX [34], [35], and shift frequency (SF [31]) are included.
+The first three methods resort to CS measurement matrix, with
+an under-determined linear representation for one-bit quanti-
+zation and the priority of sparse observations. As previously
+remarked, (3) denotes the optimization function constraint by
+the assumption. In these CS-based one-bit SAR image models,
+the sparsity parameter K is fixed to 100 for real SAR echoes,
+while in simulation front, set K as the number of targets,
+which is assumed to be known as a prior. As for SF method,
+the sampling rate parameter for SAR imaging increases to 6 fs,
+and the shift frequency is set to fs/4 according to [31].
+Each group of experiments is implemented on three com-
+ponents: quantitative measurements, qualitative measurements,
+and resource consumption, which can relatively display the
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 10 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+Fig. 6.
+Simulated region with multiple targets. (a) Ground truth, (b) SF, (c) 1-bit CVX, (d) CoSaMP, (e) BIHT, (f) BIHT2, (g) input one-bit RD image, and
+(h) recovered RD image using CDQOB-net.
+performances of evaluation methods in comprehensive way.
+Among them, the quantitative experiment is based on the
+average performance of PSNR and SSIM in all test images.
+In qualitative aspect, in order to fully demonstrate the perfor-
+mance of the proposed methods, we do not deliberately select
+the RD images with the best or worst effect, but randomly
+select several results, with which intend to reflect the general
+levels of all methods. In the resource consumption front, all
+the models are running on the same machine, the per-image
+average running time will be analyzed and recorded in the
+following.
+To be specific, we implement all methods on X86-64, which
+is equipped with Intel1 Core2 i9-10900 KF CPU work station
+on a 3.70 GHz 10-cores, with 64 GB RAM, NVIDIA GeForce
+RTX 3090 (24 GB RAM) platform. The proposed CDQOB-
+net is implemented on TensorFlow2.3, while the compared
+methods are implemented on MATLAB 2019a. In order to
+demonstrate the effectiveness of the proposed model, some
+subjective (or empirical) quality and the task-oriented perfor-
+mances are additionally attached.
+B. Experiments on Simulation and Real-World Images
+In this part, we illustrate the performances of the proposed
+model in simulated and real-world SAR imaging, respec-
+tively. Figs. 6–9 report the quality of image restoration,
+to be consistent with the system arrangement, the position of
+vehicle-mounted radar is holden in the center of bottom border
+of RD images. The horizontal direction shows the properties
+alongside range dimension, while the vertical exhibits the
+embedded features of Doppler frequency spectrum. Fig. 6
+reveals a simulated region with multiple targets measured at
+velocity v = 2.5 m/s. As the caption prompted, sub-figure
+g displays competitive RD imaging results, which strongly
+1Registered trademark.
+2Trademarked.
+support and validate the proposed CDQOB-net. In addition,
+the left Figs. 7–9 demonstrate the real-measured ground patch
+as the aforementioned.
+Then, the proposed RVB-oSAR dataset enables us to com-
+pare those de-quantization results in terms of PSNR and
+SSIM. Tables II and III display the average PSNR and
+SSIM results on real and simulated SAR dataset, respec-
+tively. Since the CDQOB-net is initialized and optimized
+under mean square error loss first, it is not that surprising
+to perform a higher PSNR values than other competitors.
+Moreover, CDQOB-net obtains greater SSIM overall other
+methods in real-measured data, despite the fact that SSIM
+is not directly related to the optimization process. It is
+well known that SSIM can reflect the human perception
+more accurately, which correspondingly validate the func-
+tion of the regularization operation R(·) in the fine-tuned
+optimization.
+To train the proposed model, we split the RVB-oSAR
+dataset into two sets, a training set which consists of 13 500
+RD image pairs and the validation set which contains the
+remaining 1500 images. Note that the images used for com-
+parisons are strictly excluded from the training set. During
+the training process, the weights {2i}L
+i=0 are initialized using
+random variables of truncated normal distribution. We use
+ReLU neurons, with the momentum and decay parameters
+setting to 0.95 and 0.0001, respectively. We use a batch size
+of 16 images (480 × 480) and set the initial learning rate to
+0.001. Two-stepped training is adopted then, first the simple
+function of MSE loss is optimized to pre-train the weights
+{2i}L
+i=0 in CDQOB-net. The model takes around 80 training
+epochs to converge, and always perform well after 100 epochs.
+Then, to fine-tune the model, we resort to constrain the
+perceptual loss by minimizing errors between the general
+features.
+From the remarkable performances, the proposed model
+obtains competitive results in both metrics. To make it more
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 11 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+Fig. 7.
+Real measured scenario with trees and pedestrian. (a) Ground truth, (b) SF, (c) 1-bit CVX, (d) CoSaMP, (e) BIHT, (f) BIHT2, (g) input one-bit RD
+image, and (h) recovered RD image using CDQOB-net.
+TABLE II
+AVERAGE PSNR AND SSIM RESULTS ON REAL SAR DATA
+TABLE III
+AVERAGE PSNR AND SSIM RESULTS ON SIMULATED SAR DATA
+Fig. 8.
+Real scenario of construction site for (a) Ground truth, (b) SF, (c) 1-bit CVX, (d) CoSaMP, (e) BIHT, (f) BIHT2, (g) input one-bit RD image, and
+(h) recovered RD image using CDQOB-net.
+convinced, we additionally implement the proposed network
+module on high-level SAR imaging task, such as target
+recognition. Figs. 10–12 show the SAR imaging results after
+coordinate conversion via velocity interpolation in real-world
+scene. In the specific setting for RVB-oSAR dataset, to start
+with the de-chirped mechanism, maximum detection range of
+the MMW radar is proportional to sampling rate fs, which can
+be represented as rmax = c fs/2kr. With parameters illustrated
+in Table I, the maximum range is computed as 20 m, the angle
+of horizontal velocity is set to θh = 120◦, therefore, the final
+SAR image is adjusted as a sector area with a maximum radius
+of 20 m.
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 12 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+Fig. 9.
+Bicycle parking lot for (a) Ground truth, (b) SF, (c) 1-bit CVX, (d) CoSaMP, (e) BIHT, (f) BIHT2, (g) input one-bit RD image, and (h) recovered
+RD image using CDQOB-net.
+Fig. 10. Range of 20 m with automobiles and buildings in automotive system.
+(a) Ground truth, (b) direct one-bit SAR imaging, (c) one-bit SAR imaging
+using CDQOB-net, and (d) optical image.
+From those figures, we reckon that with the proposed
+module, CDQOB-net can accomplish the task of one-bit SAR
+imaging with high performances. Otherwise, some high-level
+tasks, such as object recognition, in SAR image interpretation
+are convinced to achieve. In Figs. 10–12, we mark some
+common objects in colored capital letters in both the SAR and
+optical images. To name a few, in Fig. 10, we can tell the car
+(red A–D) and tree (black E) easily with regard to the image
+pictured by camera, while the small lamppost (yellow F)
+can be slightly discriminated by the hollow columns. Then,
+in Fig. 11, trees (magenta G–I) and the man-made stairs
+(light pink K) can be directly recognized, the small objects,
+pedestrians (the green L and M) can still be seen on SAR
+imaging using the CDQOB-net. Additionally, the lamppost
+(light yellow F) here is not hollow, so it has different features
+with that in Fig. 10. In ultimate, Fig. 12 projects several
+bicycles stowed near the school building. As marked in SAR
+images, columns with capital letters (white O, P, Q) can be
+evidently distinguished in the company of the optical images
+in sub-figure (d). In column marked by Q, the optical frame
+merely pictures a bunch of bikes lined up, however, with SAR
+Fig. 11.
+Range of 20 m with multiple trees in automotive system.
+(a) Ground truth, (b) direct one-bit SAR imaging, (c) one-bit SAR imaging
+using CDQOB-net, and (d) optical image.
+Fig. 12.
+Range of 20 m with an array of bicycles and building in automotive
+system. (a) Ground truth, (b) direct one-bit SAR imaging, (c) one-bit SAR
+imaging using CDQOB-net, and (d) optical image.
+images, it is capable to conceive different parking status of the
+objects we are interested in.
+Additionally, to evaluate the validity of our proposed model,
+we experiment CDQOB-net in the enlarged scenario, which is
+completely irrelevant to RVB-oSAR. To perform the remote
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 13 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+Fig. 13.
+Range of 40 m with grass land in UAV system. (a) Ground truth,
+(b) direct one-bit SAR imaging, (c) one-bit SAR imaging using CDQOB-net,
+and (d) optical image.
+Fig. 14.
+Range of 100 m with gate and overpass in UAV system. (a) Ground
+truth, (b) direct one-bit SAR imaging, (c) one-bit SAR imaging using
+CDQOB-net, and (d) optical image.
+sensing on our signal model, we collect complex data by the
+AWR2243 radar installed under an unmanned aerial vehicle
+(UAV). The drone observes regions of interests in different
+ranges as 40, 100, 200 m. The parameter settings are listed in
+Appendix B.
+It is worth to mention that the acquired echo data by UAV
+are completely different from RVB-oSAR dataset in radar
+parameter settings. Therefore, the image size is much larger
+than the pairs of RD images in our training procedure. To meet
+the requirements of image size and shapes, the RD images
+from UAV SAR system are adjusted before feeding into the
+H-estimation module. Figs. 13–15 show the restored results,
+respectively, in 40,100, and 200 m scenarios and compare
+the UAV SAR imagery in visualization. The receivable results
+reveal that the scattering properties of the target are captured
+by the proposed model, and the aliased harmonics can be
+suppressed in some degree.
+To be specific, with newly platform and different parameter
+settings, the architectures can be efficiently recovered. For
+instance, the entrance of the parking lot (marked by pink “V”
+in Fig. 13), the front gate (marked by “U”), and footbridge
+(marked by “T”) in Fig. 14 is displayed in detail. Then, a brand
+new object (bench marked in “W”) can also be restored as
+Fig. 13 depicts. Moreover, in a different view as Fig. 15 shows,
+the plants in campus landscaping, such as trees and bushes,
+can also be imaged in our proposed module.
+Overall, we consider that with the proposed module for one-
+bit de-quantization, it is helpful to alleviate the impacts of
+clutters in 2-D SAR echoes, which simultaneously contributes
+Fig. 15.
+Range of 200 m with tree-lawns and building in UAV system.
+(a) Ground truth, (b) direct one-bit SAR imaging, (c) one-bit SAR imaging
+using CDQOB-net, and (d) optical image.
+TABLE IV
+COMPARISONS OF THE RUNNING TIME (IN SECONDS)
+to the downstream tasks in the scheme of SAR image under-
+standing. Beyond that, the generalization of the proposed
+CDQOB-net can be further verified.
+C. Running Time Comparison and Analysis
+The running times of different imaging methods are com-
+pared in Table IV.
+The results demonstrate promising
+efficiency of the proposed CDQOB-net. In addition, the com-
+putational complexity of each method is discussed. BIHT
+and its variant BIHT2 (one-sided ℓ2 norm) are considered
+as the most fundamental proponents in solving one-bit signal
+recovery based on CS framework. In general, the compu-
+tational complexities of BIHT and BIHT2 are, respectively,
+O(M · N) and O(M2 · N), where M and N denote the
+dimensions of measurement matrix. In 2-D one-bit recovery,
+N is restricted by the length of the received signal, which is
+vectorized as N = Nτ · Nη, and M ⩽N. Then, the CoSaMP,
+which has actively pursued in improving the optimization of
+orthogonal matching pursuit (OMP), has an decreased time
+complexity as O(K · N + N · log(N)), where K is set as the
+sparsity coefficient, and K ≪N. As for 1-bit CVX, which is
+performed through linear programming, the time complexity
+turns to O
+K · log( 2N
+K )
+
+.
+Apart
+from
+CS-based
+one-bit
+recovery,
+SF
+offers
+a
+threshold-based method through shifting frequency and simul-
+taneously increasing extra samples for one-bit SAR imaging.
+For its simple implementation, the complexity is mainly con-
+sumed on the 2-D FFT process, viz., O(β · N · log(N)), where
+β is the constant representing multiple numbers of sampling
+rate fs, and Nτ and Nη are the samples along range and
+Doppler dimension in RD imaging. Herein, β is set as 6,
+Nτ = 1024, and Nη = 480.
+Finally, the proposed CDQOB-net can be trained offline,
+and we merely concern the computational complexity in
+testing time. For concreteness, most computations are tended
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 14 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+to centralize in the convolution layers, and the floating points
+operations (FLOPs) in each layer can be obtained by 2H ·
+W(CinK 2
+e + 1)Cout, where in our specific module, H and
+W are the height and width of hidden feature maps, Cin
+and Cout are numbers of input and output channels respec-
+tively, Ke corresponds to the kernel size. In CDQOB-net, the
+computational complexity is determined by two parts: one is
+2-D Fourier transformation for RD Images, which requires
+O(N · log(N)); the other part is the optimization module for
+one-bit SAR imaging, which is computed as O(γ · NP · NQ),
+where γ assimilates the kernel size(Ke = {1, 3, 5}) and the
+number of channels Cin = {3, 16, 32, 64}, Cout = {3, 32, 64}.
+NP = 480 and NQ = 480 are the adjusted size of our input
+RD images. In summary, the complexity of our CDQOB-net
+is concluded as O
+γ · NP · NQ + N · log(N)
+
+. With the GPU
+acceleration, our model can accomplish the imaging task more
+efficiently.
+V. CONCLUDING REMARKS
+In this article, CDQOB-net is proposed to estimate and
+suppress multiple harmonics in Fourier imagery domain. For
+one-bit SAR imaging subsequently, this two-step module is
+trained to provide a high image quality via a data-driven
+restoration method. Rather than utilizing extra samples to
+absorb the impacts caused by nonlinear signum function, the
+proposed CDQOB-net provides an alternative framework that
+learns the nonlinear degradation and irreversible spectrum
+aliasing effects in transformed domain. Based on specific-
+defined decoupling RD images, a preliminary statement of
+instantaneous SAR imaging is given. Beyond that, RVB-oSAR
+dataset is specifically established for further exploiting the
+new insights of one-bit signal processing. The results on
+simulations and real-measured SAR data have confirmed that
+the proposed network is faster implemented and offers a com-
+petitive performances compared with other existing methods.
+APPENDIX A
+INSTANTANEOUS SAR IMAGING ALGORITHM
+To derive the imaging algorithm for SAR imaging, several
+coordinate systems need to be set up as Fig. 16 diagrams.
+During the imaging interval, echoes are collected through
+2-D sampling. The collected data distribute in the data plane
+spanned by the fast time tτ and slow time tη. As illustrated
+in Fig. 16, by performing 2-D Fourier transform on the raw
+data, the RD data can be obtained. Coordinate system a
+displays a rectangular coordinate system, along which the
+characteristics of different scatterers can be distinguished,
+respectively, in range and Doppler dimensions. Note that our
+proposed CDQOB-net is implemented on the RD plane.
+Afterward, as vehicle moves continuously, suppose a scat-
+terer located at (x, y, z), the distance between mounted radar
+and the scatterer (x, y, z) is calculated as
+R(η) =
+p
+(x −vη)2 + y2 + (z −h)2
+(I.1)
+where η denotes the discrete slow time in consistent with the
+previous description. Conformed with coordinate system c,
+x-axis indicates the direction the vehicle moves, y-axis lies
+Fig. 16.
+Visualization of the proposed automotive SAR imaging system and
+its related coordinate transforming procedure.
+Fig. 17.
+Systematic diagram for UAV SAR system.
+in the horizontal plane which is perpendicular to the x-axis,
+and z-axis is perpendicular to the horizontal plane and positive
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 15 ===
+SI et al.: CONVOLUTIONAL DE-QUANTIZATION NETWORK
+5221316
+TABLE V
+PARAMETER SETTINGS FOR UAV SAR SYSTEM
+upward. In Section II, we have reformulated the imaging
+geometric spaces in the sight of radar, represented by (6), x
+and y are denoted identically as x p and yq, while h = z is set
+for imaging plane, v represents velocity of the moving vehicle.
+In coordinate system b, the velocity of vehicle is decom-
+posed into the radial and orthemetric components along the
+azimuth direction. Since only the radial-velocity relates to
+Doppler frequency, the Doppler frequency of the scatterer is
+fη = 2v sin φ
+λ
+= 2v
+λ
+x p −vη
+R(η)
+(I.2)
+where φ describes the flare angle of a scatterer to the positive
+R-axis. Once v is known, through an interpolation on RD
+images, the coordinates b can be obtained.
+APPENDIX B
+PARAMETER SETTING FOR UAV SAR SYSTEM
+As presented in Fig. 17, the AWR2243 radar is installed
+below a UAV (Model: DJI Matrice 600 Pro) for SAR data
+collection. Different parameters are set to support different
+observed ranges as 40, 100, and 200 m. Detailed parameters
+are listed in Table V.
+REFERENCES
+[1] J. C. Curlander and R. N. Mcdonough, Synthetic Aperture Radar:
+Systems and Signal Processing. Hoboken, NJ, USA: Wiley, 1991.
+[2] A. Moreira, P. Prats-Iraola, M. Younis, G. Krieger, I. Hajnsek, and
+K. P. Papathanassiou, “A tutorial on synthetic aperture radar,” IEEE
+Geosci. Remote Sens. Mag., vol. 1, no. 1, pp. 6–43, Mar. 2013.
+[3] L. Zhao, L. Wang, L. Yang, A. M. Zoubir, and G. Bi, “The race to
+improve radar imagery: An overview of recent progress in statistical
+sparsity-based techniques,” IEEE Signal Process. Mag., vol. 33, no. 6,
+pp. 85–102, Nov. 2016.
+[4] A. Reigber et al., “Very-high-resolution airborne synthetic aperture radar
+imaging: Signal processing and applications,” Proc. IEEE, vol. 101,
+no. 3, pp. 759–783, Mar. 2013.
+[5] J. Lunden, V. Koivunen, and H. V. Poor, “Spectrum exploration and
+exploitation for cognitive radio: Recent advances,” IEEE Signal Process.
+Mag., vol. 32, no. 3, pp. 123–140, May 2015.
+[6] I. G. Cumming and F. H. Wong, Digital Processing of Synthetic Aperture
+Radar Data: Algorithms and Implementation. Norwood, MA, USA:
+Artech House, 2004.
+[7] B. Zhao, L. Huang, and W. Bao, “One-bit SAR imaging based on single-
+frequency thresholds,” IEEE Trans. Geosci. Remote Sens., vol. 57, no. 9,
+pp. 7017–7032, Sep. 2019.
+[8] C. Qian and J. Li, “ADMM for harmonic retrieval from one-bit sampling
+with time-varying thresholds,” in Proc. IEEE Int. Conf. Acoust., Speech
+Signal Process. (ICASSP), Mar. 2017, pp. 3699–3703.
+[9] A. Bhandari, M. H. Conde, and O. Loffeld, “One-bit time-resolved
+imaging,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 42, no. 7,
+pp. 1630–1641, Jul. 2020.
+[10] B. Zhao, L. Huang, and B. Jin, “Strategy for SAR imaging quality
+improvement with low-precision sampled data,” IEEE Trans. Geosci.
+Remote Sens., vol. 59, no. 4, pp. 3150–3160, Apr. 2021.
+[11] Y.-H. Xiao, D. Ramírez, P. J. Schreier, C. Qian, and L. Huang, “One-bit
+target detection in collocated MIMO radar and performance degradation
+analysis,” 2020, arXiv:2012.10780.
+[12] X. Dong and Y. Zhang, “A MAP approach for 1-bit compressive sensing
+in synthetic aperture radar imaging,” IEEE Geosci. Remote Sens. Lett.,
+vol. 12, no. 6, pp. 1237–1241, Jun. 2015.
+[13] O. Dabeer and A. Karnik, “Signal parameter estimation using 1-bit
+dithered quantization,” IEEE Trans. Inf. Theory, vol. 52, no. 12,
+pp. 5389–5405, Dec. 2006.
+[14] F. Li, J. Fang, H. Li, and L. Huang, “Robust one-bit Bayesian com-
+pressed sensing with sign-flip errors,” IEEE Signal Process. Lett.,
+vol. 22, no. 7, pp. 857–861, Jul. 2015.
+[15] E. Mason, I.-Y. Son, and B. Yazici, “Passive synthetic aperture radar
+imaging using low-rank matrix recovery methods,” IEEE J. Sel. Topics
+Signal Process., vol. 9, no. 8, pp. 1570–1582, Dec. 2015.
+[16] W. Pu, X. Wang, J. Wu, Y. Huang, and J. Yang, “Video SAR imaging
+based on low-rank tensor recovery,” IEEE Trans. Neural Netw. Learn.
+Syst., vol. 32, no. 1, pp. 188–202, Jan. 2021.
+[17] P. T. Boufounos and R. G. Baraniuk, “1-bit compressive sensing,” in
+Proc. 42nd Annu. Conf. Inf. Sci. Syst., Mar. 2008, pp. 16–21.
+[18] L. Jacques, J. N. Laska, P. T. Boufounos, and R. G. Baraniuk, “Robust
+1-bit compressive sensing via binary stable embeddings of sparse vec-
+tors,” IEEE Trans. Inf. Theory, vol. 59, no. 4, pp. 2082–2102, Apr. 2013.
+[19] V. Pascazio and G. Schirinzi, “Synthetic aperture radar imaging by one-
+bit coded signals,” Electron. Commun. Eng. J., vol. 10, no. 1, pp. 17–28,
+Feb. 1998.
+[20] A. Mousavi and R. G. Baraniuk, “Learning to invert: Signal recovery
+via deep convolutional networks,” in Proc. IEEE Int. Conf. Acoust.,
+Speech Signal Process. (ICASSP), New Orleans, LA, USA, Mar. 2017,
+pp. 2272–2276.
+[21] V. Monga, Y. Li, and Y. C. Eldar, “Algorithm unrolling: Interpretable,
+efficient deep learning for signal and image processing,” IEEE Signal
+Process. Mag., vol. 38, no. 2, pp. 18–44, Mar. 2021.
+[22] J. R. Hershey, J. L. Roux, and F. Weninger, “Deep unfolding:
+Model-based inspiration of novel deep architectures,” Sep. 2014,
+arXiv:1409.2574.
+[23] Y. Yang, J. Sun, H. Li, and Z. Xu, “ADMM-CSNet: A deep learning
+approach for image compressive sensing,” IEEE Trans. Pattern Anal.
+Mach. Intell., vol. 42, no. 3, pp. 521–538, Mar. 2020.
+[24] P. Xiao, B. Liao, and N. Deligiannis, “DeepFPC: Deep unfolding of
+a fixed-point continuation algorithm for sparse signal recovery from
+quantized measurements,” Signal Process., vol. 176, no. 107699, 2020.
+[25] S. Chen, H. Wang, F. Xu, and Y.-Q. Jin, “Target classification using
+the deep convolutional networks for SAR images,” IEEE Trans. Geosci.
+Remote Sens., vol. 54, no. 8, pp. 4806–4817, Aug. 2016.
+[26] D. L. Donoho, A. Maleki, and A. Montanari, “Message-passing algo-
+rithms for compressed sensing,” Proc. Nat. Acad. Sci. USA, vol. 106,
+no. 45, pp. 18914–18919, Nov. 2009.
+[27] P. Xiao, B. Liao, and J. Li, “One-bit compressive sensing via Schur-
+concave function minimization,” IEEE Trans. Signal Process., vol. 67,
+no. 16, pp. 4139–4151, 2019.
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 
+
+
+=== PAGE 16 ===
+5221316
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, VOL. 61, 2023
+[28] L.-B. Guo, J.-L. Tang, Y.-Y. Dong, and C.-X. Dong, “One-bit LFM
+signal recovery via random threshold strategy,” Digit. Signal Process.,
+vol. 111, Apr. 2021, Art. no. 102965.
+[29] A. Ameri, A. Bose, J. Li, and M. Soltanalian, “One-bit radar processing
+with time-varying sampling thresholds,” IEEE Trans. Signal Process.,
+vol. 67, no. 20, pp. 5297–5308, Oct. 2019.
+[30] H. Sun, A. Nallanathan, C.-X. Wang, and Y. Chen, “Wideband spec-
+trum sensing for cognitive radio networks: A survey,” IEEE Wireless
+Commun., vol. 20, no. 2, pp. 74–81, Apr. 2013.
+[31] Y. Geng, B. Zhao, L. Huang, C. Yi, T. Pan, and C. Huang, “Vehicle-
+mounted 1-bit SAR imaging based on frequency shifted dechirping
+echo,” in Proc. IEEE 93rd Veh. Technol. Conf. (VTC-Spring), Helsinki,
+Finland, Apr. 2021, pp. 1–5.
+[32] Z. Zhou, T. Sun, and L. Cheng, “Projective iterative hard thresholding
+algorithm for sparse signal recovery,” in Proc. Int. Conf. Estima-
+tion, Detection Inf. Fusion (ICEDIF), Berlin, Germany, Jan. 2015,
+pp. 258–264.
+[33] D. Needell and J. A. Tropp, “CoSaMP: Iterative signal recovery from
+incomplete and inaccurate samples,” Appl. Comput. Harmon. Anal.,
+vol. 26, no. 3, pp. 301–321, May 2009.
+[34] Y. Plan and R. Vershynin, “Robust 1-bit compressed sensing and sparse
+logistic regression: A convex programming approach,” IEEE Trans. Inf.
+Theory, vol. 59, no. 1, pp. 482–494, Jan. 2013.
+[35] L. Zhang, T. Yang, R. Jin, and Z. H. Zhou, “Online stochastic linear
+optimization under one-bit feedback,” in Proc. 33rd Int. Conf. Mach.
+Learn. (ICML), 2016, pp. 392–401.
+Cuiqi Si received the B.S. and Ph.D. degrees from
+Xidian University, Xi’an, China, in 2010 and 2019,
+respectively.
+She is currently a Post-Doctoral Researcher at
+Shenzhen University, Shenzhen, China. Her research
+interests include one-bit quantization analysis and
+deep neural network learning.
+Bo Zhao (Member, IEEE) was born in Henan,
+China. He received the B.Sc. and Ph.D. degrees from
+Xidian University, Xi’an, China, in 2010 and 2015,
+respectively.
+From 2015 to 2018, he was a Post-Doctoral
+Researcher with the College of Information Engi-
+neering, Shenzhen University, Shenzhen, China.
+He is currently an Associate Professor with the
+College of Information Engineering, Shenzhen Uni-
+versity. His research interests include radar imaging,
+synthetic aperture radar (SAR) countermeasure, and
+one-bit radar signal processing.
+Lei Huang (Senior Member, IEEE) was born in
+Guangdong, China. He received the B.Sc., M.Sc.,
+and Ph.D. degrees in electronic engineering from
+Xidian University, Xi’an, China, in 2000, 2003, and
+2005, respectively.
+From 2005 to 2006, he was a Research Associate
+with the Department of Electrical and Computer
+Engineering, Duke University, Durham, NC, USA.
+From 2009 to 2010, he was a Research Fellow with
+the Department of Electronic Engineering, City Uni-
+versity of Hong Kong, Hong Kong, and a Research
+Associate with the Department of Electronic Engineering, Chinese University
+of Hong Kong, Hong Kong. From 2012 to 2014, he was a Professor with the
+Department of Electronic and Information Engineering, Harbin Institute of
+Technology, Shenzhen Graduate School, Shenzhen, China. Since 2014, he has
+been with the College of Electronics and Information Engineering, Shenzhen
+University, Shenzhen, where he is currently a Distinguished Professor and
+an Executive Dean. His research interests include spectral estimation, array
+signal processing, statistical signal processing, and their applications in radar,
+navigation and wireless communications.
+Shiqi Liu received the Ph.D. degree in informa-
+tion and communication engineering from the South
+China University of Technology, Guangzhou, China,
+in 2014.
+He has been an Engineer at the Southwest
+China Research Institute of Electronic Equipment,
+Chengdu, China, since 2014. And since 2019, he has
+been a Research Associate Professor at Shenzhen
+University, Shenzhen, China. His research interests
+include cognitive radio, spectrum sensing, radar
+signal processing, synthetic aperture radar (SAR)
+jamming/anti-jamming, and integration of radar and communication.
+Authorized licensed use limited to: SHENZHEN UNIVERSITY. Downloaded on January 12,2024 at 09:06:09 UTC from IEEE Xplore.  Restrictions apply. 

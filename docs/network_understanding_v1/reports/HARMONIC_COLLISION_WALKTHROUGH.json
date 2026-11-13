@@ -1,0 +1,356 @@
+{
+  "status": "PASS",
+  "checks": {
+    "trigonometric_factorizations": true,
+    "analytic_factor_bounds_positive": true,
+    "same_quantized_input_for_distinct_references": true,
+    "outside_examples_change_symbols": true,
+    "reference_amplitudes_verified": true,
+    "expected_onebit_harmonic_ratios": true,
+    "current_size_grid_examples_identical": true,
+    "integer_iq_examples_identical_after_onebit": true,
+    "strict_modular_inverse_verified": true,
+    "neighbor_tolerance_explains_existing_query": true,
+    "existing_strong_attenuation_reproduced": true,
+    "source_frozen_files_unchanged": true
+  },
+  "scope": "Analytic target/harmonic ambiguity, numerical teaching demonstrations and existing coordinate record only",
+  "phase_samples": 65536,
+  "quantizer_c": 1,
+  "analytic_families": [
+    {
+      "order": -3,
+      "real_beta_open_interval": [
+        -1.0,
+        0.3333333333333333
+      ],
+      "baseline_onebit_relative_amplitude_integral": 0.33333333435464285,
+      "rows": [
+        {
+          "beta": -0.9,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.09999999999999998,
+          "trigonometric_factor_identity_error": 2.220446049250313e-15,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.9,
+          "multibit_relative_amplitude_integral": 0.8999999999999999,
+          "onebit_relative_amplitude_integral": 0.33333333435464285,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 2.7,
+          "best_bounded_gain_if_reference_were_known": 1.5,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": -0.3,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.7,
+          "trigonometric_factor_identity_error": 8.881784197001252e-16,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.3,
+          "multibit_relative_amplitude_integral": 0.30000000000000004,
+          "onebit_relative_amplitude_integral": 0.33333333435464285,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 0.8999999999999999,
+          "best_bounded_gain_if_reference_were_known": 0.8999999999999999,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.0,
+          "inside_open_interval": true,
+          "factor_lower_bound": 1.0,
+          "trigonometric_factor_identity_error": 0.0,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.0,
+          "multibit_relative_amplitude_integral": 1.3877787807814457e-17,
+          "onebit_relative_amplitude_integral": 0.33333333435464285,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 0.0,
+          "best_bounded_gain_if_reference_were_known": 0.125,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.1,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.7,
+          "trigonometric_factor_identity_error": 4.440892098500626e-16,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.1,
+          "multibit_relative_amplitude_integral": 0.09999999999999998,
+          "onebit_relative_amplitude_integral": 0.33333333435464285,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 0.30000000000000004,
+          "best_bounded_gain_if_reference_were_known": 0.30000000000000004,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.3,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.10000000000000009,
+          "trigonometric_factor_identity_error": 8.881784197001252e-16,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.3,
+          "multibit_relative_amplitude_integral": 0.3,
+          "onebit_relative_amplitude_integral": 0.33333333435464285,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 0.8999999999999999,
+          "best_bounded_gain_if_reference_were_known": 0.8999999999999999,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": -1.1,
+          "inside_open_interval": false,
+          "factor_lower_bound": -0.10000000000000009,
+          "trigonometric_factor_identity_error": 2.886579864025407e-15,
+          "component_sign_changes": 12628,
+          "same_full_quantized_sequence": false,
+          "ideal_multibit_relative_amplitude": 1.1,
+          "multibit_relative_amplitude_integral": 1.1,
+          "onebit_relative_amplitude_integral": 0.8958238524785632,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 3.3000000000000003,
+          "best_bounded_gain_if_reference_were_known": 1.5,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.4,
+          "inside_open_interval": false,
+          "factor_lower_bound": -0.20000000000000018,
+          "trigonometric_factor_identity_error": 1.1102230246251565e-15,
+          "component_sign_changes": 30156,
+          "same_full_quantized_sequence": false,
+          "ideal_multibit_relative_amplitude": 0.4,
+          "multibit_relative_amplitude_integral": 0.4,
+          "onebit_relative_amplitude_integral": 0.024781757331357793,
+          "ideal_same_input_relative_amplitude": 0.3333333333333333,
+          "desired_gain_if_reference_were_known": 1.2000000000000002,
+          "best_bounded_gain_if_reference_were_known": 1.2000000000000002,
+          "desired_gain_is_model_prediction": false
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "real_beta_open_interval": [
+        -0.2,
+        0.8
+      ],
+      "baseline_onebit_relative_amplitude_integral": 0.20000000183835706,
+      "rows": [
+        {
+          "beta": -0.15,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.25,
+          "trigonometric_factor_identity_error": 9.992007221626409e-16,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.15,
+          "multibit_relative_amplitude_integral": 0.15000000000000002,
+          "onebit_relative_amplitude_integral": 0.20000000183835706,
+          "ideal_same_input_relative_amplitude": 0.2,
+          "desired_gain_if_reference_were_known": 0.75,
+          "best_bounded_gain_if_reference_were_known": 0.75,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.0,
+          "inside_open_interval": true,
+          "factor_lower_bound": 1.0,
+          "trigonometric_factor_identity_error": 0.0,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.0,
+          "multibit_relative_amplitude_integral": 1.962615573354719e-17,
+          "onebit_relative_amplitude_integral": 0.20000000183835706,
+          "ideal_same_input_relative_amplitude": 0.2,
+          "desired_gain_if_reference_were_known": 0.0,
+          "best_bounded_gain_if_reference_were_known": 0.125,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.2,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.75,
+          "trigonometric_factor_identity_error": 1.2212453270876722e-15,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.2,
+          "multibit_relative_amplitude_integral": 0.2,
+          "onebit_relative_amplitude_integral": 0.20000000183835706,
+          "ideal_same_input_relative_amplitude": 0.2,
+          "desired_gain_if_reference_were_known": 1.0,
+          "best_bounded_gain_if_reference_were_known": 1.0,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.7,
+          "inside_open_interval": true,
+          "factor_lower_bound": 0.125,
+          "trigonometric_factor_identity_error": 3.9968028886505635e-15,
+          "component_sign_changes": 0,
+          "same_full_quantized_sequence": true,
+          "ideal_multibit_relative_amplitude": 0.7,
+          "multibit_relative_amplitude_integral": 0.7,
+          "onebit_relative_amplitude_integral": 0.20000000183835706,
+          "ideal_same_input_relative_amplitude": 0.2,
+          "desired_gain_if_reference_were_known": 3.5,
+          "best_bounded_gain_if_reference_were_known": 1.5,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": -0.25,
+          "inside_open_interval": false,
+          "factor_lower_bound": -0.25,
+          "trigonometric_factor_identity_error": 1.4432899320127035e-15,
+          "component_sign_changes": 19228,
+          "same_full_quantized_sequence": false,
+          "ideal_multibit_relative_amplitude": 0.25,
+          "multibit_relative_amplitude_integral": 0.25,
+          "onebit_relative_amplitude_integral": 0.03948252435148446,
+          "ideal_same_input_relative_amplitude": 0.2,
+          "desired_gain_if_reference_were_known": 1.25,
+          "best_bounded_gain_if_reference_were_known": 1.25,
+          "desired_gain_is_model_prediction": false
+        },
+        {
+          "beta": 0.9,
+          "inside_open_interval": false,
+          "factor_lower_bound": -0.125,
+          "trigonometric_factor_identity_error": 5.10702591327572e-15,
+          "component_sign_changes": 16176,
+          "same_full_quantized_sequence": false,
+          "ideal_multibit_relative_amplitude": 0.9,
+          "multibit_relative_amplitude_integral": 0.9000000000000001,
+          "onebit_relative_amplitude_integral": 0.8206093603789474,
+          "ideal_same_input_relative_amplitude": 0.2,
+          "desired_gain_if_reference_were_known": 4.5,
+          "best_bounded_gain_if_reference_were_known": 1.5,
+          "desired_gain_is_model_prediction": false
+        }
+      ]
+    }
+  ],
+  "signed_beta_meaning": "Real coefficient; negative beta means a pi phase shift, not negative power",
+  "grid_demonstrations": [
+    {
+      "order": -3,
+      "beta": 0.3,
+      "base_bin": [
+        211,
+        37
+      ],
+      "component_bin": [
+        391,
+        401
+      ],
+      "grid": [
+        1024,
+        512
+      ],
+      "same_full_quantized_sequence": true,
+      "constructed_integer_iq": {
+        "scale": 10000,
+        "max_abs_component": 13000,
+        "original_multibit_components_changed": 1048576,
+        "fits_signed_int16": true,
+        "same_quantized_sequence": true,
+        "same_as_ideal_quantized_sequence": true,
+        "scope": "Constructed rounded integer I/Q; not measured ADC or a radar quality test"
+      }
+    },
+    {
+      "order": 5,
+      "beta": 0.7,
+      "base_bin": [
+        211,
+        37
+      ],
+      "component_bin": [
+        31,
+        185
+      ],
+      "grid": [
+        1024,
+        512
+      ],
+      "same_full_quantized_sequence": true,
+      "constructed_integer_iq": {
+        "scale": 10000,
+        "max_abs_component": 17000,
+        "original_multibit_components_changed": 1048576,
+        "fits_signed_int16": true,
+        "same_quantized_sequence": true,
+        "same_as_ideal_quantized_sequence": true,
+        "scope": "Constructed rounded integer I/Q; not measured ADC or a radar quality test"
+      }
+    }
+  ],
+  "existing_coordinate_example": {
+    "source": "Existing feature report, no new network evaluation",
+    "observed_bin": [
+      774,
+      511
+    ],
+    "strong_support_bin": [
+      83,
+      0
+    ],
+    "strong_support_exact_third_bin": [
+      775,
+      0
+    ],
+    "observed_offset_periodic": [
+      -1,
+      -1
+    ],
+    "exact_modular_inverse": [
+      341,
+      341
+    ],
+    "strict_integer_inverse_of_observed": [
+      766,
+      171
+    ],
+    "strict_parent_maps_back": [
+      774,
+      511
+    ],
+    "tolerance_query_winner": {
+      "candidate": [
+        83,
+        0
+      ],
+      "support_q12": 4096,
+      "support_source": [
+        83,
+        0
+      ]
+    },
+    "enumerated_candidate_count": 9,
+    "actual_input_relative_amplitude": 0.21294407589409353,
+    "existing_mlp_gain": 0.125,
+    "existing_final_gain": 0.125,
+    "ideal_unrounded_output_relative_amplitude": 0.02661800948676169,
+    "gain_power_ratio": 0.015625,
+    "power_change_db": -18.06179973983887,
+    "true_target_status": "Unknown; an association and a gain do not identify physical truth"
+  },
+  "source_sha256": {
+    "network_understanding_v1/reports/FEATURE_WALKTHROUGH.json": "6f0372ca5fd62c1b626e26780de78f623dd1a776d03a18132e51a8a4b6364dd5"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_data_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

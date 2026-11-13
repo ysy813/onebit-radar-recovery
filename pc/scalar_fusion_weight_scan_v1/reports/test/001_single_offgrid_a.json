@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "id": "001_single_offgrid_a",
+    "split": "new_test",
+    "seed": 20261112001,
+    "template": "single_offgrid_a",
+    "target_count": 1,
+    "grid": "offgrid",
+    "family": "single",
+    "targets": [
+      {
+        "range_bin": 249.4398246112782,
+        "doppler_bin": -166.69214689456885,
+        "amplitude": 1.0,
+        "initial_phase_rad": 2.8001938541431235,
+        "azimuth_deg": -23.130463281333412,
+        "velocity_direction_deg": -13.319161993828438,
+        "signed_speed_m_s": -6.516599941957756,
+        "radial_velocity_m_s": -6.421290147874674,
+        "range_m": 10.269494679103635
+      }
+    ],
+    "actual_chirps": 512,
+    "shape": [
+      1024,
+      512
+    ],
+    "noise": false,
+    "clutter": false,
+    "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\001_single_offgrid_a.npz",
+    "sha256": "7301813839101840192baae08ca9b20fe6197c8304afb7519259b8c5bcc8399e"
+  },
+  "metrics": {
+    "old40": {
+      "false40": 11,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        7.470885276794434,
+        5.275739669799805,
+        10.583118438720703,
+        16.253110885620117,
+        1.0825763940811157,
+        3.664022922515869,
+        17.85373306274414,
+        12.440689086914062,
+        6.112445831298828,
+        17.988136291503906,
+        12.133447647094727,
+        5.768791198730469,
+        17.85228729248047,
+        11.89974594116211
+      ],
+      "harmonic_worsening_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "model": {
+      "false40": 0,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        68.88184356689453,
+        64.17516326904297,
+        68.93841552734375,
+        66.68891143798828,
+        57.765098571777344,
+        56.57316207885742,
+        63.80198669433594,
+        62.96005630493164,
+        68.24876403808594,
+        67.20246124267578,
+        63.19171905517578,
+        62.329986572265625,
+        59.014503479003906,
+        58.45039749145508
+      ],
+      "harmonic_worsening_db": [
+        -61.41096115112305,
+        -58.89942169189453,
+        -58.35530090332031,
+        -50.43579864501953,
+        -56.682518005371094,
+        -52.909141540527344,
+        -45.9482536315918,
+        -50.519371032714844,
+        -62.136322021484375,
+        -49.214324951171875,
+        -51.05827331542969,
+        -56.56119918823242,
+        -41.16221618652344,
+        -46.55065155029297
+      ]
+    },
+    "old_alpha075": {
+      "false40": 8,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        19.50521469116211,
+        17.304534912109375,
+        22.607881546020508,
+        28.26601219177246,
+        0.0,
+        15.683319091796875,
+        29.801881790161133,
+        24.436599731445312,
+        18.14532470703125,
+        0.0,
+        24.14287567138672,
+        0.0,
+        29.777984619140625,
+        0.0
+      ],
+      "harmonic_worsening_db": [
+        -12.034329414367676,
+        -12.02879524230957,
+        -12.024764060974121,
+        -12.01290225982666,
+        1.0825763940811157,
+        -12.019296646118164,
+        -11.948148727416992,
+        -11.995911598205566,
+        -12.032878875732422,
+        17.988136291503906,
+        -12.009428024291992,
+        5.768791198730469,
+        -11.92569637298584,
+        11.89974594116211
+      ]
+    },
+    "selected_protected": {
+      "false40": 13,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        7.470885276794434,
+        5.275739669799805,
+        10.583118438720703,
+        16.253110885620117,
+        0.0,
+        3.664022922515869,
+        17.85373306274414,
+        12.440689086914062,
+        6.112445831298828,
+        0.0,
+        12.133447647094727,
+        0.0,
+        17.85228729248047,
+        0.0
+      ],
+      "harmonic_worsening_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0825763940811157,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        17.988136291503906,
+        0.0,
+        5.768791198730469,
+        0.0,
+        11.89974594116211
+      ]
+    },
+    "selected_linear": {
+      "false40": 11,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        7.470885276794434,
+        5.275739669799805,
+        10.583118438720703,
+        16.253110885620117,
+        1.0825763940811157,
+        3.664022922515869,
+        17.85373306274414,
+        12.440689086914062,
+        6.112445831298828,
+        17.988136291503906,
+        12.133447647094727,
+        5.768791198730469,
+        17.85228729248047,
+        11.89974594116211
+      ],
+      "harmonic_worsening_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\001_single_offgrid_a.npz",
+  "arrays_sha256": "7edb1923c315649baf3be6944e147cbbc062d5a10552d17aba73bbea1bdab407",
+  "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\reports\\test\\001_single_offgrid_a_solver.json",
+  "solver_sha256": "e3cd1745aa74fd22925654561fc58c4cd49ee6ac396b25eaaeea504e82e88895",
+  "support": [
+    {
+      "index": 127833,
+      "supported": true
+    },
+    {
+      "index": 141812,
+      "supported": false
+    },
+    {
+      "index": 154767,
+      "supported": false
+    },
+    {
+      "index": 114367,
+      "supported": false
+    },
+    {
+      "index": 100900,
+      "supported": false
+    },
+    {
+      "index": 87945,
+      "supported": false
+    },
+    {
+      "index": 168234,
+      "supported": true
+    },
+    {
+      "index": 208634,
+      "supported": false
+    },
+    {
+      "index": 195167,
+      "supported": false
+    },
+    {
+      "index": 181700,
+      "supported": false
+    },
+    {
+      "index": 73966,
+      "supported": false
+    },
+    {
+      "index": 47545,
+      "supported": true
+    },
+    {
+      "index": 34078,
+      "supported": true
+    },
+    {
+      "index": 222101,
+      "supported": false
+    },
+    {
+      "index": 60499,
+      "supported": true
+    },
+    {
+      "index": 262501,
+      "supported": false
+    },
+    {
+      "index": 412396,
+      "supported": false
+    },
+    {
+      "index": 137537,
+      "supported": false
+    },
+    {
+      "index": 162967,
+      "supported": false
+    },
+    {
+      "index": 336700,
+      "supported": false
+    },
+    {
+      "index": 87271,
+      "supported": false
+    },
+    {
+      "index": 61841,
+      "supported": false
+    },
+    {
+      "index": 386966,
+      "supported": false
+    },
+    {
+      "index": 213233,
+      "supported": false
+    }
+  ],
+  "harmonic_labels": [
+    {
+      "target": 0,
+      "order": -3
+    },
+    {
+      "target": 0,
+      "order": 5
+    },
+    {
+      "target": 0,
+      "order": -7
+    },
+    {
+      "target": 0,
+      "order": 9
+    },
+    {
+      "target": 0,
+      "order": -11
+    },
+    {
+      "target": 0,
+      "order": 13
+    },
+    {
+      "target": 0,
+      "order": -15
+    },
+    {
+      "target": 0,
+      "order": 17
+    },
+    {
+      "target": 0,
+      "order": -19
+    },
+    {
+      "target": 0,
+      "order": 21
+    },
+    {
+      "target": 0,
+      "order": -23
+    },
+    {
+      "target": 0,
+      "order": 25
+    },
+    {
+      "target": 0,
+      "order": -27
+    },
+    {
+      "target": 0,
+      "order": 29
+    }
+  ],
+  "target_peak_indices": [
+    127833
+  ],
+  "frozen_sha256": "d795be239af05b25eb56381d7b1abbd0c5c0912efe32c7f50cf7610af9be4242"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_sources": true,
+    "all_png_decode": true,
+    "python_syntax": true,
+    "final_html_local_links": true
+  },
+  "standard_check_sha256": "dc43f0db7798ea7ffafdf3d95968762dfa0055376fbda5aed69a800cd40ead51",
+  "visual_check_sha256": "f6b4fdfa9624a89b6c69500696a05a37a7c4ec44cc0ee61c0ca48af53009b25d"
+}

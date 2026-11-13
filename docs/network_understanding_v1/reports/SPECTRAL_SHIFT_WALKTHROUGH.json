@@ -1,0 +1,350 @@
+{
+  "status": "PASS",
+  "checks": {
+    "selected_policy_matches": true,
+    "specified_original_child_features": true,
+    "special_shift_sets_are_quarters": true,
+    "constructed_special_shifts_commute": true,
+    "constructed_generic_shifts_have_counterexamples": true,
+    "ten_bin_shift_breaks_both_child_hints": true,
+    "fftshift_case_is_not_generic_failure": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Source child-feature calculation on a specified encoded field and modular algebra; no end-to-end model equivariance or quality claim",
+  "original_source": [
+    131,
+    37
+  ],
+  "axes": [
+    {
+      "length": 1024,
+      "shifts_by_order": {
+        "-3": [
+          0,
+          256,
+          512,
+          768
+        ],
+        "5": [
+          0,
+          256,
+          512,
+          768
+        ]
+      },
+      "same_allowed_shifts": true,
+      "expected_quarter_shifts": true
+    },
+    {
+      "length": 512,
+      "shifts_by_order": {
+        "-3": [
+          0,
+          128,
+          256,
+          384
+        ],
+        "5": [
+          0,
+          128,
+          256,
+          384
+        ]
+      },
+      "same_allowed_shifts": true,
+      "expected_quarter_shifts": true
+    }
+  ],
+  "examples": [
+    {
+      "circular_shift": [
+        0,
+        0
+      ],
+      "shifted_source": [
+        131,
+        37
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        1,
+        0
+      ],
+      "shifted_source": [
+        132,
+        37
+      ],
+      "index_identity_for_both_orders": false,
+      "different_pixels_by_order": {
+        "minus3": 54,
+        "plus5": 54
+      },
+      "child_values_at_shifted_source": [
+        0,
+        0
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        10,
+        0
+      ],
+      "shifted_source": [
+        141,
+        37
+      ],
+      "index_identity_for_both_orders": false,
+      "different_pixels_by_order": {
+        "minus3": 54,
+        "plus5": 54
+      },
+      "child_values_at_shifted_source": [
+        0,
+        0
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        0,
+        1
+      ],
+      "shifted_source": [
+        131,
+        38
+      ],
+      "index_identity_for_both_orders": false,
+      "different_pixels_by_order": {
+        "minus3": 54,
+        "plus5": 54
+      },
+      "child_values_at_shifted_source": [
+        0,
+        0
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        256,
+        0
+      ],
+      "shifted_source": [
+        387,
+        37
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        512,
+        0
+      ],
+      "shifted_source": [
+        643,
+        37
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        0,
+        128
+      ],
+      "shifted_source": [
+        131,
+        165
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        0,
+        256
+      ],
+      "shifted_source": [
+        131,
+        293
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        256,
+        128
+      ],
+      "shifted_source": [
+        387,
+        165
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    },
+    {
+      "circular_shift": [
+        512,
+        256
+      ],
+      "shifted_source": [
+        643,
+        293
+      ],
+      "index_identity_for_both_orders": true,
+      "different_pixels_by_order": {
+        "minus3": 0,
+        "plus5": 0
+      },
+      "child_values_at_shifted_source": [
+        2048,
+        1600
+      ],
+      "shifted_original_child_values": [
+        2048,
+        1600
+      ]
+    }
+  ],
+  "ten_bin_coordinate_example": [
+    {
+      "order": -3,
+      "original_child": [
+        631,
+        401
+      ],
+      "original_child_moved_ten": [
+        641,
+        401
+      ],
+      "child_of_source_moved_ten": [
+        601,
+        401
+      ]
+    },
+    {
+      "order": 5,
+      "original_child": [
+        655,
+        185
+      ],
+      "original_child_moved_ten": [
+        665,
+        185
+      ],
+      "child_of_source_moved_ten": [
+        705,
+        185
+      ]
+    }
+  ],
+  "coordinate_condition": "(h-1)*delta == 0 mod axis length, for h=-3 and h=5",
+  "qualifications": [
+    "No claim that an arbitrary encoded field is realizable as a sign-IQ FFT",
+    "Other base features are placeholders unused by the two child outputs",
+    "Feature differences do not prove a particular final gain changes",
+    "Special child-feature symmetries do not certify the full pipeline or change the input convention"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/model_source.py": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834",
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+  },
+  "script_sha256": "77684397b1e8cb0486c8b6571002c6017f0aa5b21044ad60050bae860645e88c",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "original_full_quality_status_preserved": "FAIL",
+  "constructed_child_feature_run": true,
+  "radar_data_read": false,
+  "radar_fft_run": false,
+  "full_feature_extraction_run": false,
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "guard_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

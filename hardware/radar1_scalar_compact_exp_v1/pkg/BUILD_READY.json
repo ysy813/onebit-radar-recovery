@@ -1,0 +1,162 @@
+{
+  "revision": "radar1_scalar_compact_exp_v1",
+  "ready_for_board_test": true,
+  "board_tested": false,
+  "experimental": true,
+  "user_authorized_experimental_bit_rebuild": true,
+  "quality_certified": false,
+  "upstream_overall_quality_status": "FAIL",
+  "model": "scalar_restore_v3_compact_weakfix",
+  "model_weights_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+  "neural_weights_retrained": false,
+  "input_radar_profile": "1024 ADC samples,512 valid chirps,4RX",
+  "range_bins_inclusive": [
+    0,
+    1023
+  ],
+  "same_bit_for_all_modes": true,
+  "modes": {
+    "raw_imaging": 1,
+    "onebit_bypass": 5,
+    "onebit_network": 13,
+    "onebit_network_storage": 15
+  },
+  "hardware_signature": "0x71",
+  "display_mode": "1280x720p60",
+  "radar_scanout_pixels": [
+    844,
+    422
+  ],
+  "storage_always_raw": true,
+  "whole_image_frame_skipping": true,
+  "preflight": {
+    "status": "PASS",
+    "full_frame_csim": true,
+    "zero_frame": true,
+    "rtl_mlp_cases": 464,
+    "rtl_guard_cases": 464,
+    "changed_guard_cases": 208,
+    "frame_cdc_pass": true,
+    "original_sources_unchanged": true,
+    "storage_fork_unchanged": true,
+    "ddr_scratch_bytes": 16777216,
+    "ddr_scratch_start": "0x31000000",
+    "ddr_scratch_end_exclusive": "0x32000000",
+    "hls_estimated_cycles": 295812315,
+    "hls_estimated_seconds_at_100mhz": 2.95812315,
+    "hls_estimate_excludes_actual_axi_stalls": true,
+    "active_generated_sources": {
+      "scalar_gain.v": "b52b003fac7d7390e512bbea1dd6a8d740466b078db3c0e46e2ea27b9a3b8802",
+      "scalar_gain_predict.v": "c92b4c3f991835de3db6fd99cc3ec16535f32fc36ed2e35c3f3309250d31cd22",
+      "scalar_gain_protect.v": "d3096f1abbe4d350bcf704c5d029016c19918e5f35995addb69a6daa210ae403"
+    }
+  },
+  "elfs": {
+    "raw_imaging": {
+      "sha256": "d804205e49d891a93ae424ebda4baf2f701024c403aa2e780d4eda1ad4fd4f09",
+      "load_end_exclusive": "0x00de60c0",
+      "aq_ar_exact": true
+    },
+    "onebit_bypass": {
+      "sha256": "c7b55b4216a1603bb2d237ca1f132c72bc44b82e2e7e820f2d7e6d16b5b0cdb9",
+      "load_end_exclusive": "0x00de60c0",
+      "aq_ar_exact": true
+    },
+    "onebit_network": {
+      "sha256": "1e0861b57502602d47cb283133d5bd1731816b1756ce8564c1780f5127d8c6d4",
+      "load_end_exclusive": "0x00de60c0",
+      "aq_ar_exact": true
+    },
+    "onebit_network_storage": {
+      "sha256": "f4ddeb2b8db2bf86be7a66b22826156c42b4c7d8628906bb3928d58ee4022339",
+      "load_end_exclusive": "0x012bc140",
+      "aq_ar_exact": true
+    }
+  },
+  "timing_closed_for_analyzed_paths": true,
+  "timing": {
+    "wns_ns": 0.192,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.01,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 0.046,
+    "tpws_ns": 0.0,
+    "pulse_width_failing_endpoints": 0
+  },
+  "bus_skew": {
+    "status": "ANALYZED_CONSTRAINTS_PASS",
+    "constraints_total": 25,
+    "constraints_checked": 23,
+    "legacy_camera_constraints_unanalyzed": 2,
+    "worst_slack_ns": 2.761
+  },
+  "full_system_timing_signoff": false,
+  "constraint_scope": {
+    "full_system_timing_signoff": false,
+    "unclocked_sequential_cells_by_block": {
+      "cam_axi_data_0": 81,
+      "ov5640_dri_0": 123
+    },
+    "unclocked_latches_by_block": {
+      "interp_ip_0": 214
+    },
+    "legacy_external_io_constraint_gaps_retained": true
+  },
+  "resources": {
+    "lut": {
+      "used": 53577.0,
+      "available": 87840,
+      "percent": 60.99
+    },
+    "register": {
+      "used": 60039.0,
+      "available": 175680,
+      "percent": 34.18
+    },
+    "bram36": {
+      "used": 119.5,
+      "available": 128,
+      "percent": 93.36
+    },
+    "uram": {
+      "used": 43.0,
+      "available": 48,
+      "percent": 89.58
+    },
+    "dsp": {
+      "used": 262.0,
+      "available": 728,
+      "percent": 35.99
+    }
+  },
+  "invalid_table_pixels_skipped": 1908,
+  "original_projects_modified": false,
+  "sha256": {
+    "constraint_scope.json": "2e4a57865dcdb9b0922c3162955583a1666a40b04105f48cb0e878e1e05f20f8",
+    "design_1_wrapper.bit": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb",
+    "design_1_wrapper.ltx": "cf31e95943beb6b823566e8bf5d7cea0e547d9c44e3ab18b5b146de07df7fad1",
+    "drc.rpt": "e4c4c03a2334522dd2db102750356a2cfc46d23ffb9ee01f2019017f45bb9a68",
+    "interval_bounds.json": "a937c3eca2293a0866b2a63e41f6852531eea97143054534ee09e0615cc9bd75",
+    "numeric_validation.json": "92a064fd9c691ae91bb6f66f8b2f7b9881c5ac8a518fc4aa74173ec3fa7f5318",
+    "onebit_bypass.elf": "c7b55b4216a1603bb2d237ca1f132c72bc44b82e2e7e820f2d7e6d16b5b0cdb9",
+    "onebit_network.elf": "1e0861b57502602d47cb283133d5bd1731816b1756ce8564c1780f5127d8c6d4",
+    "onebit_network_storage.elf": "f4ddeb2b8db2bf86be7a66b22826156c42b4c7d8628906bb3928d58ee4022339",
+    "preflight.json": "a5f6250fff8f9ed40e6022dda712257107a73587ddb6543360b88ab66fbcf253",
+    "program_common.tcl": "fc1adaf7dce249e78430f3074ae396e982f123ce29b2331ece7d3c3f09597267",
+    "program_onebit_bypass.tcl": "203f4808bea2e771d1ceb15b40b333e8d2d463836b99580bb115570c0611fdf6",
+    "program_onebit_network.tcl": "22299d0fd20f0b2af2380bc615f618086820c03a7ee98b54dd4ca6f7022727c8",
+    "program_onebit_network_storage.tcl": "8407e62c3956688a579271975a6f51b816c9cba7be434e5058557acea46af72d",
+    "program_raw_imaging.tcl": "8587232298358052de1121792e828e870dc58c2d08a18689abfd7f25f9f42cf0",
+    "psu_init.tcl": "f68e32c9a0606771ba522dd494ed73f17244d198e309c6ac220cf8ceb6392cd1",
+    "raw_imaging.elf": "d804205e49d891a93ae424ebda4baf2f701024c403aa2e780d4eda1ad4fd4f09",
+    "README.md": "596a58ddf8bfc17c3d2df043d74ba26de1e950576e6933adcec34a323658db17",
+    "route_status.rpt": "db30fb50bc1b98bcde5b59a1d919a2e8ae3ca203f77a66df7cc6600beeb4c78f",
+    "scalar_network.xsa": "05eba931c13e973022a50219032e65ce5368a44c07007e5e85d46797f8486b90",
+    "timing_summary.rpt": "52dc31a3d5f4c9095b90b86215dbf63cf5fd09d6942646061105f13f78f8d5cf",
+    "utilization.rpt": "52fb805f1b650698b9f7aa3fff2df1336f13625c6ec36af1c4a896346dead7fa",
+    "上板测试步骤.md": "3727f9124f210f36e8044a99fa0b9153d90337a4ae3a0919793b5d563df48dff",
+    "工程与网络说明.md": "25149c7e315c5945076a8305e2ca6a2139babc44e2e097ca742d4dafe3421f02"
+  }
+}

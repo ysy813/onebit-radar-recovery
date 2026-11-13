@@ -1,0 +1,32 @@
+{
+  "borderline": {
+    "frame": "005_n2_strong_weak_offgrid",
+    "target": 2,
+    "source_pixel": 218491,
+    "old_retention": 0.5000017881393433,
+    "model_retention": 0.0001699134154478088,
+    "unprotected": true,
+    "half_alpha_bound": 3.577481493266532e-06,
+    "drop005_alpha_bound": 0.10003363341093063
+  },
+  "ignoring_half_threshold_but_keep_drop_mae": {
+    "frames": 6,
+    "targets": 25,
+    "below_half": 2,
+    "new_half": 1,
+    "max_drop": 0.04998317360877991,
+    "mean_false40": 98.0,
+    "mae": 0.03317193940281868,
+    "worst_harmonic_worsening_db": 17.839385986328125,
+    "harmonic_regions_worse_1db": 19,
+    "worst_harmonic_attenuation_db": -2.6462316513061523
+  },
+  "alpha": 0.1,
+  "protection_floor_worst": {
+    "frame": "000_single_offgrid_a",
+    "target": 1,
+    "order": -15,
+    "db": 17.839385986328125
+  },
+  "note": "事后解释阈值敏感性，不改变冻结alpha或质量规则"
+}

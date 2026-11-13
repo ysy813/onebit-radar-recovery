@@ -1,0 +1,578 @@
+=== PAGE 1 ===
+1
+The Bussgang Decomposition of Non-Linear
+Systems: Basic Theory and MIMO Extensions
+¨Ozlem Tu˘gfe Demir, Member, IEEE, and Emil Bj¨ornson, Senior Member, IEEE
+Many of the systems that appear in various signal processing applications are non-linear,
+for example, due to hardware impairments such as non-linear ampliﬁers and ﬁnite-resolution
+quantization. The Bussgang decomposition is a popular tool for analyzing the performance of
+systems that involve such non-linear components. In a nutshell, the decomposition provides an
+exact probabilistic relationship between the output and the input of a non-linearity: the output
+is equal to a scaled version of the input plus uncorrelated distortion. The decomposition can
+either be used to compute exact performance results or lower bounds where the uncorrelated
+distortion is treated as independent noise. This lecture note explains the basic theory, provides
+key examples, extends the theory to complex-valued vector signals, and clariﬁes some potential
+misconceptions.
+I. RELEVANCE
+The origin of the decomposition is a technical report by Julian J. Bussgang from 1952 [1].
+Interestingly, the decomposition is not explicitly stated in his report, but rather a consequence
+of his results. In fact, it is mainly non-trivial extensions of his results that are utilized in current
+research; for example, applications to complex-valued multiple-input multiple-output (MIMO)
+systems are popular in the communication community. There is no standard reference that
+presents and proves those extended results, and it can be hard to differentiate between which
+results are exact and which are mere approximations. This lecture note ﬁlls these gaps.
+II. PREREQUISITES
+This lecture note requires basic knowledge of random variables, linear algebra, signals and
+systems, and estimation theory.
+The authors are with the Department of Electrical Engineering (ISY), Link¨oping University, 581 83 Link¨oping, Sweden (e-
+mail: ozlem.tugfe.demir@liu.se, emil.bjornson@liu.se). The authors were partially supported by ELLIIT and the Wallenberg AI,
+Autonomous Systems and Software Program (WASP) funded by the Knut and Alice Wallenberg Foundation.
+May 5, 2020
+DRAFT
+arXiv:2005.01597v1  [eess.SP]  4 May 2020
+
+
+=== PAGE 2 ===
+2
+III. ORIGINAL BUSSGANG DECOMPOSITION FOR REAL GAUSSIAN RANDOM VARIABLES
+In the original paper [1], Bussgang considers two jointly Gaussian stationary random processes
+f(t) and g(t). The process f(t) undergoes a non-linear memoryless distortion represented by
+the function U(·). The resulting non-Gaussian random process is
+F(t) = U
+f(t)
+
+.
+(1)
+Bussgang computed the cross-correlation of the two random variables obtained by sampling F(t)
+and g(t) at speciﬁc time instances. Let x = f(t1) ∈R and y = g(t2) ∈R denote the zero-mean
+Gaussian random variables obtained by sampling at time t1 and t2, respectively. Moreover, let
+z = F(t1) = U(x) ∈R be the sampled output of the non-linear distortion function. We then
+have the following main result from [1, Sec. III].
+Theorem 1 (The Bussgang theorem). The cross-correlation of z = U(x) and y is
+Czy = E {U(x)y} = E {U(x)x}
+E {x2}
+|
+{z
+}
+≜B
+E {xy} = BCxy,
+(2)
+where B is called the Bussgang gain and Cxy ≜E {xy} is the cross-correlation of x and y.
+The Bussgang theorem shows that the cross-correlation between two Gaussian signals is the
+same before and after one of them has passed through a non-linear function, except for a scaling
+factor B. The value of B depends on the choice of U(·) but the theorem holds for any function.
+A consequence of Theorem 1 for y = x is that the output signal can be decomposed as
+z = U(x) = Bx + η,
+(3)
+where η is a zero-mean random variable that is uncorrelated to both x and y. This is the Bussgang
+decomposition in its elementary form and shows that the output contains the useful part Bx and
+the distortion part η. In other words, the output of a non-linear function is equal to a scaled
+version of the input plus the uncorrelated distortion η. Note that η and x are not independent.
+Since η = U(x) −Bx is a deterministic function of x, the distortion term is non-Gaussian
+distributed and statistically dependent on x. Even if the Bussgang decomposition is named after
+Bussgang, the result is not explicitly stated in [1].
+IV. BUSSGANG DECOMPOSITION FOR COMPLEX RANDOM VARIABLES
+The Bussgang theorem was extended to the complex case in [2]. We will present this result and
+then provide a direct proof that is inspired by [3]. For notational convenience, in the remainder
+DRAFT
+May 5, 2020
+
+
+=== PAGE 3 ===
+3
+of this lecture note, we use Cx ≜E{|x|2} to denote the power of a signal x and we use
+Cxy ≜E {xy∗} to denote the cross-correlation between x and y.
+Theorem 2 (The complex Bussgang theorem). Consider the jointly circularly symmetric complex
+Gaussian random variables x ∈C and y ∈C. Let z = U(x) ∈C be the output of a deterministic
+function. The cross-correlations Czy ≜E {zy∗} and Cxy ≜E {xy∗} are then related as
+Czy = E {U (x) y∗} = E {U(x)x∗}
+E {|x|2}
+|
+{z
+}
+≜B=Czx/Cx
+E {xy∗} = BCxy.
+(4)
+Proof: We begin by decomposing y into two parts:
+y = E {yx∗}
+E {|x|2}x +
+
+y −E{yx∗}
+E {|x|2}x
+
+|
+{z
+}
+≜ϵ
+.
+(5)
+Interestingly, this is equivalent to computing a minimum-mean squared error (MMSE) estimate
+of y given x, with ϵ representing the estimation error. Hence, it follows that the second part, ϵ,
+in (5) is uncorrelated with x:
+E {ϵx∗} = E
+
+y −E {yx∗}
+E {|x|2}x
+
+x∗
+
+= E{yx∗} −E {yx∗}
+E {|x|2}E
+
+|x|2	
+= 0.
+(6)
+Since x and y are jointly Gaussian, the fact that x and ϵ are uncorrelated implies that they are
+also independent complex Gaussian variables. By using the decomposition in (5), it follows that
+Czy = E {U (x) y∗} = E {U(x)x∗}
+E {|x|2}
+E {xy∗} + E {U (x) ϵ∗}
+|
+{z
+}
+=0
+= BCxy
+(7)
+by using that the independence between x and ϵ implies E{U(x)ϵ∗} = E{U(x)}E{ϵ∗} = 0.
+The complex Bussgang theorem is the natural complex-valued extension of Theorem 1. The
+corresponding complex Bussgang decomposition is given by (3) with the only exception that the
+Bussgang gain is now computed as B = Czx
+Cx = E{U(x)x∗}
+E{|x|2}
+instead.
+A ﬁrst use case of the Bussgang decomposition is to quantify the signal-to-distortion ratio
+(SDR) at the output of the distortion function. The SDR is simply the power ratio of the desired
+signal Bx to the additive distortion η:
+SDR = E {|Bx|2}
+E {|η|2} =
+|B|2Cx
+Cz −|B|2Cx
+,
+(8)
+where we have used that the additive distortion η is uncorrelated with the desired signal x.
+A second use case is to analyze the performance of a communication system where x ∼
+NC(0, Cx) is the transmitted information signal. Suppose the received signal is noisy distorted
+May 5, 2020
+DRAFT
+
+
+=== PAGE 4 ===
+4
+Fig. 1: Some common sources of hardware impairments in a wireless receiver.
+signal U(x) + w, where U(·) models the hardware distortion and w is thermal noise with power
+σ2. The hardware distortion might, for example, be caused of a sequence of non-ideal blocks
+in the receiver hardware [4], as illustrated in Fig. 1. The ﬁrst block is the low-noise ampliﬁer
+(LNA) that can distort both the amplitude and phase of the input signal. In the yellow ﬁgure, the
+amplitude distortion is exempliﬁed and clipping occurs for input signals with large amplitudes.
+The second block is the in-phase/quadrature (I/Q) demodulator that might have mismatches
+between its branches leading to I/Q imbalance. In the green curve, the effect of I/Q imbalance
+is shown on a QPSK constellation where the actual transmitted points are affected by leakage
+from the mirror subcarriers. Finally, in the analog-to-digital converter (ADC) block, the real and
+imaginary parts of the received signal are quantized to be represented by a ﬁnite number of bits.
+Quantization distortion is inevitable even if a large number of ADC bits are used [5], [6]. We
+can use the Bussgang decomposition in (3) to rewrite the received signal as
+U(x) + w =
+Bx
+|{z}
+Desired signal
++
+η + w
+| {z }
+Uncorrelated signal
+.
+(9)
+This signal contains a desired part Bx and an uncorrelated additive “noise” term η + w. Since
+the latter term is uncorrelated with x, we can utilize the Worst case uncorrelated additive noise
+theorem from [7] to compute an achievable data rate. That theorem says that the worst distribution
+of η + w from a rate perspective is independent complex Gaussian, in which case the rate is
+log2
+
+1 +
+E {|Bx|2}
+E {|η|2} + σ2
+
+= log2
+
+1 +
+|B|2Cx
+Cz −|B|2Cx + σ2
+
+bit per channel use.
+(10)
+One can possibly achieve a larger rate than (10), by somehow making use of the information
+content in η. But we achieve (10) if we treat η as independent Gaussian noise in the decoder.
+DRAFT
+May 5, 2020
+
+
+=== PAGE 5 ===
+5
+A. Alternative Computation of the Bussgang Gain and Two Examples
+If the distortion function U(x) is differentiable, there is an alternative way of computing the
+Bussgang gain that might be easier. We will exemplify how to compute it in the real-valued case
+where x ∼N(0, Cx) has the probability density function (PDF) p(x) =
+1
+√2πCxe−x2/(2Cx). Note
+that the derivative of this PDF is p′(x) = −x
+Cxp(x). We can then rewrite the Bussgang gain as
+B = E{U(x)x}
+Cx
+=
+Z ∞
+−∞
+U(x)x
+Cx
+p(x)dx
+(a)
+= −
+Z ∞
+−∞
+U(x)p′(x)dx
+(b)
+=
+Z ∞
+−∞
+U ′(x)p(x)dx = E{U ′(x)},
+(11)
+where we identify p′(x) in (a) and integrate by parts to get (b). The last expression in (11)
+reveals that the Bussgang gain can be also computed as the expected value of the ﬁrst derivative
+of the distortion function. This result is a special case of Price’s Theorem [8, Example 9-17].
+Example 1 (One-bit quantization). Consider a real-valued signal x ∼N(0, Cx) that enters
+the non-linear distortion function U(x) = sgn(x), which represents one-bit quantization. The
+Bussgang gain can then be found as B = E{U ′(x)} = 2E{δ(x)} = 2p(0) =
+q
+2
+πCx, where δ(x)
+is the Dirac function. The same Bussgang gain can be computed as B = E{U(x)x}
+E{x2}
+= E{|x|}
+Cx .
+A similar alternative way of computing the Bussgang gain exists in the complex-valued case,
+where the derivative of the distortion function U(x) is deﬁned as [9]:
+∂U(x)
+∂x
+= 1
+2
+ ∂U(x)
+∂ℜ{x} −j ∂U(x)
+∂ℑ{x}
+
+.
+(12)
+One can then show that the Bussgang gain can be computed as [9]
+B = E
+∂U(x)
+∂x
+
+.
+(13)
+Example 2 (Third-order non-linearity). Consider a complex-valued signal x ∼NC(0, Cx) that
+enters the third-order non-linear distortion function U(x) = |x|2x, which might model a non-
+linear ampliﬁer [3], [10]. The Bussgang gain can be obtained as B =
+E{|x|4}
+E{|x|2} = 2Cx. The same
+number is found by evaluating B = E
+n
+∂U(x)
+∂x
+o
+= E{2|x|2} = 2Cx using (12).
+B. Additive Quantization Noise Model is Nothing But Bussgang Decomposition
+The Bussgang decomposition is unique in the sense that it is the only decomposition U(x) =
+Bx+η of a distorted signal having the property that the additive distortion noise η is uncorrelated
+with the desired signal x. No other value of B can be used to achieve that.
+One seemingly different decomposition is the Additive Quantization Noise Model (AQNM)
+originally proposed in [5] to model quantization errors. This model is sometimes described as
+May 5, 2020
+DRAFT
+
+
+=== PAGE 6 ===
+6
+an alternative decomposition, however, AQNM is nothing but the Bussgang decomposition for
+quantization. In [5, Lemma 1], a scalar quantizer function Q(·) is considered, which has the
+property E {x|Q(x)} = Q(x), which means that each quantization interval is represented by its
+mean value. When the input is x ∼NC(0, Cx), it is shown that the output can be expressed as
+a summation of a scaled version of x plus an uncorrelated distortion term η as follows:
+z = Q(x) = (1 −β)x + η,
+(14)
+where β = E
+
+|x −z|2	
+/Cx and E
+
+|η|2	
+= β(1 −β)Cx.
+We will show that (14) equals the Bussgang decomposition x = Bx + η, where the Bussgang
+gain B = Czx/Cx equals 1 −β. Using the assumption E {x|Q(x)} = Q(x) from [5], we have
+Czx = E {Q(x)x∗} = E {E {Q(x)x∗|Q(x)}} = E {Q(x)Q∗(x)} = Cz.
+(15)
+By utilizing this result, the scaling 1 −β in (14) can be rewritten as
+1 −β = 1 −E
+
+|x −z|2	
+Cx
+= 1 −Cx + Cz −Czx −C∗
+zx
+Cx
+= Czx
+Cx
+= B.
+(16)
+Hence, the AQNM is a special case of the Bussgang decomposition for distortion functions that
+satisfy a particular condition. The bottomline is that the Bussgang decomposition is unique but
+the value of B depends on the distortion function.
+V. EXTENSION TO MIMO SYSTEMS
+In recent years, it has become popular to analyze MIMO systems that are subject to hardware
+impairments, in particular, in MIMO communications [6], [11], [12]. In this part, we extend the
+Bussgang results to be applicable to such cases.
+Consider two jointly circularly symmetric Gaussian random vectors x ∼NC (0, Cx) and y ∼
+NC (0, Cy), which both have length M. The correlation matrices are denoted as Cx = E{xxH}
+and Cy = E{yyH} and are assumed to have full rank. The cross-correlation matrix is denoted
+as Cxy = E {xyH}. Using this notation, we can generalize the Bussgang theorem as follows.
+Theorem 3 (Bussgang Theorem for MIMO Distortions). Consider the jointly circularly sym-
+metric Gaussian random vectors x and y. Let U : CM →CM denote a distortion function
+and z = U(x) is the distorted signal when using x as input. The cross-correlation matrix
+Czy = E
+
+zyH	
+of z and y is a linear transformation of the cross-correlation matrix Cxy of x
+and y:
+Czy = CzxC−1
+x Cxy.
+(17)
+DRAFT
+May 5, 2020
+
+
+=== PAGE 7 ===
+7
+Proof: The proof is a matrix extension of the proof of Theorem 2. Let us express y as a
+summation of the MMSE estimate of it given x and the estimation error ϵ ∈CM:
+y = CyxC−1
+x x + ϵ,
+(18)
+where ϵ is deﬁned as ϵ = y −CyxC−1
+x x. If we multiply both sides of (18) by xH from the right
+and take the expectation, we obtain
+Cyx = CyxC−1
+x Cx + E
+
+ϵx
+H	
+= Cyx + E
+
+ϵx
+H	
+,
+(19)
+from which it follows that E
+
+ϵxH	
+= 0. Hence, ϵ and x are uncorrelated, which implies that
+they are also independent since these are jointly Gaussian variables. Finally, we obtain (17) as
+Czy = E{zy
+H} = E{zx
+H}C−1
+x C
+H
+yx + E{zϵ
+H} = CzxC−1
+x Cxy
+(20)
+by utilizing that CH
+yx = Cxy and that E
+
+zϵH	
+= 0 since z and ϵ are independent.
+From this theorem we notice that the Bussgang gain is represented by the matrix
+B = CzxC−1
+x
+(21)
+and we call it a MIMO extension since the distortion function takes multiple inputs and provide
+multiple outputs. It is possible to extend the result to case where Cx is rank-deﬁcient, in which
+case the inverse in (21) is replaced by a pseudo-inverse; see [3, Section II.A] for details.
+A consequence of Theorem 3 is the Bussgang decomposition for MIMO functions:
+z = U(x) = Bx + η,
+(22)
+where the additive distortion term η is uncorrelated both with x and any other random vector
+y that is correlated with x. This result is illustrated in Fig. 2(a).
+A. Element-Wise Distortion for MIMO Systems
+The Bussgang decomposition for MIMO functions has been widely used to model the hardware
+impairments in multiple-antenna communication systems [6], [11]. In this case, M is the number
+of receive antennas and the distortion function represents impairments in the antenna branches.
+A common assumption is that there is no crosstalk between the branches, so that each one can
+be separately modeled in the way shown in Fig. 1. The distortion function then has the form
+z = U(x) =
+
+
+U1(x1)
+...
+UM(xM)
+
+,
+(23)
+May 5, 2020
+DRAFT
+
+
+=== PAGE 8 ===
+8
+x
+y
+Non-linear
+memoryless distortion
+U(·)
+z = U(x)
+= Bx + η
+Cxy
+Czy = BCxy
+(a) Bussgang decomposition for jointly Gaussian ran-
+dom vectors x and y.
+x
+x
+z
+z = Bx + η
+η
+Bussgang
+gain,B
+Non-linear
+memoryless distortion
+U(·)
+(b) Generalized Bussgang decomposition for non-Gaussian
+random vector x.
+Fig. 2: Bussgang decomposition for non-linear memoryless distortion function U(·).
+where xm denotes the mth element of x. Hence, each output is a distorted version of only the
+input having the same index. We can then simplify the Bussgang matrix by utilizing Theorem 3.
+More precisely, it follows that Czx = DCx, where D = diag(d1, . . . , dM) is a diagonal matrix
+and dm = E{Um(xm)x∗
+m}
+E{|xm|2}
+is the Bussgang gain corresponding to the mth component of the distortion
+function, i.e., zm = Um(xm). Hence, the Bussgang gain matrix of the overall MIMO distortion
+becomes B = CzxC−1
+x
+= D and we obtain the simpliﬁed Bussgang decomposition
+z = Dx + η =
+
+
+d1x1
+...
+dMxM
+
++ η.
+(24)
+Hence, when an element-wise distortion function affects the Gaussian signal x, the output z is
+an element-wise scaled version of x plus a distortion vector η that is uncorrelated with x.
+B. Are the Elements of Distortion η Uncorrelated?
+Since the Bussgang gain matrix is diagonal when having element-wise distortions, one may
+tend to think that the elements of the distortion η will also be uncorrelated, so that we effectively
+get one separate Bussgang decomposition per received signal. However, this is generally not the
+case as we will show next. Let Cη = E{ηηH} ∈CM×M denote the correlation matrix of the
+distortion vector η. Using the fact that η is uncorrelated with x, it can be computed as
+Cη = Cz −BCxB
+H.
+(25)
+Whenever the input signal x contains correlated elements, such that Cx is non-diagonal, the
+correlation matrix will likely also be non-diagonal. This is intuitively quite clear: If two (almost)
+identical signals are sent through identical hardware components, then the distortion should also
+DRAFT
+May 5, 2020
+
+
+=== PAGE 9 ===
+9
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0
+0.2
+0.4
+0.6
+0.8
+1
+Fig. 3: The CDF of the absolute value of the correlation coefﬁcient between elements in η.
+be (almost) identical. This type of correlation typically appears in wireless communications since
+each receive antenna observes a different linear combination of the same transmitted information
+signals. Some conditions for when the correlation can be neglected, so that Cη is approximately
+diagonal, are derived in [3]. However, it is rather common that the correlation is neglected
+without motivation (cf. [6], [12]), which might lead to substantial approximation errors.
+As an example, we consider a setup where a 4-antenna receiver quantiﬁes the real and
+imaginary parts of each entry in the received signal x using identical b-bit ADCs. The input
+signal is generated as x = Hs, where H ∈C4×4 is the MIMO channel matrix from a 4-
+antenna transmitter. We consider Rayleigh fading where H has independent NC(0, 1)-distributed
+entries. For each channel realization, H is assumed perfectly known and the transmitted signal is
+s ∼NC(0, I4), so x is conditionally complex Gaussian distributed. The Bussgang decomposition
+then says that the ADC output can be written as z = Dx + η. To demonstrate that the elements
+of η are correlated, Fig. 3 shows the cumulative distribution function (CDF) of the normalized
+off-diagonal elements of Cη (i.e., the correlation coefﬁcients) for different number of ADC bits.
+When the ADC resolution is low, most of the correlation coefﬁcients are non-zero and some are
+rather large. However, when the ADC resolution is high, the off-diagonal elements are almost
+zero and can potentially be approximated as zero when quantifying communication rates.
+C. Generalized Bussgang Decomposition for Non-Gaussian Input Signals
+In the Bussgang theorem, we are utilizing that x and y are Gaussian signals. The main result
+cannot be generalized to non-Gaussian signals. However, we can always decompose the distorted
+signal according to (22) using the Bussgang gain matrix B = CzxC−1
+x , but it generally won’t be
+a diagonal matrix, even if an element-wise distortion of the type in (23) is used. The intuition
+is that Bx is the linear MMSE estimate of z given a non-Gaussian distributed observation x. In
+May 5, 2020
+DRAFT
+
+
+=== PAGE 10 ===
+10
+this analogy, η is the estimation error which is uncorrelated with x since
+E {ηx
+H} = E
+z −CzxC−1
+x x
+
+x
+H	
+=Czx −CzxC−1
+x Cx = 0.
+(26)
+The generalized Bussgang decomposition for non-Gaussian input x is illustrated in Fig. 2(b).
+It is suitable both for quantifying the SDR and to the analyze the performance of non-linear
+communication systems. For example, [10] did this using practically modulated data signals. The
+paper also shows that although treating the uncorrelated distortion η as independent Gaussian
+noise is convenient, one can increase the performance by exploiting its information content.
+VI. LESSONS LEARNED
+The Bussgang decomposition establishes that the output of a non-linear function is a scaled
+version of the random input signal plus an uncorrelated distortion term. It is an exact and unique
+representation. The distortion is not independent and not Gaussian, but can be treated as that to
+obtain a lower bound on the communication performance. The decomposition can be extended
+to MIMO systems but then the entries of the distortion vector are generally mutually correlated.
+REFERENCES
+[1] J. J. Bussgang, “Crosscorrelation functions of amplitude-distorted Gaussian signals,” Research Laboratory of Electronics,
+Massachusetts Institute of Technology, Tech. Rep. 216, 1952.
+[2] J. Minkoff, “The role of AM-to-PM conversion in memoryless nonlinear systems,” IEEE Trans. Commun., vol. 33, no. 2,
+pp. 139–144, 1985.
+[3] E. Bj¨ornson, L. Sanguinetti, and J. Hoydis, “Hardware distortion correlation has negligible impact on UL massive MIMO
+spectral efﬁciency,” IEEE Trans. Commun., vol. 67, no. 2, pp. 1085–1098, Feb 2019.
+[4] T. Schenk, RF imperfections in high-rate wireless systems: Impact and digital compensation.
+Springer, 2008.
+[5] A. K. Fletcher, S. Rangan, V. K. Goyal, and K. Ramchandran, “Robust predictive quantization: Analysis and design via
+convex optimization,” IEEE Journal of Selected Topics in Signal Processing, vol. 1, no. 4, pp. 618–632, 2007.
+[6] Q. Bai, A. Mezghani, and J. A. Nossek, “On the optimization of ADC resolution in multi-antenna systems,” in IEEE
+ISWCS, 2013.
+[7] B. Hassibi and B. M. Hochwald, “How much training is needed in multiple-antenna wireless links?” IEEE Trans. Inform.
+Theory, vol. 49, no. 4, pp. 951–963, 2003.
+[8] A. Papoulis and S. U. Pillai, Probability, Random Variables, and Stochastic Processes, 4th ed.
+McGraw-Hill Higher
+Education, 2002.
+[9] W. McGee, “Circularly complex Gaussian noise–a Price theorem and a Mehler expansion,” IEEE Transactions on
+Information Theory, vol. 15, no. 2, pp. 317–319, 1969.
+[10]
+¨O. T. Demir and E. Bj¨ornson, “Channel estimation in massive MIMO under hardware non-linearities: Bayesian methods
+versus deep learning,” IEEE Open Journal of the Communications Society, vol. 1, pp. 109–124, 2020.
+[11] E. Bj¨ornson, J. Hoydis, M. Kountouris, and M. Debbah, “Massive MIMO systems with non-ideal hardware: Energy
+efﬁciency, estimation, and capacity limits,” IEEE Trans. Inform. Theory, vol. 60, no. 11, pp. 7112–7139, 2014.
+[12] L. Xu, X. Lu, S. Jin, F. Gao, and Y. Zhu, “On the uplink achievable rate of massive MIMO system with low-resolution
+ADC and RF impairments,” IEEE Communications Letters, vol. 23, no. 3, pp. 502–505, 2019.
+DRAFT
+May 5, 2020

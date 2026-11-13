@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "all_external_q12_features_inclusive": [
+    0,
+    4096
+  ],
+  "accumulator_bits": 48,
+  "activation_bits": 32,
+  "layers": [
+    {
+      "layer": 0,
+      "accumulator_bits_required": 38,
+      "max_abs_partial_accumulator": 82932328400,
+      "activation_lower": 0,
+      "activation_upper": 427455
+    },
+    {
+      "layer": 1,
+      "accumulator_bits_required": 41,
+      "max_abs_partial_accumulator": 551969084122,
+      "activation_lower": 0,
+      "activation_upper": 3665133
+    },
+    {
+      "layer": 2,
+      "accumulator_bits_required": 41,
+      "max_abs_partial_accumulator": 712541947321,
+      "activation_lower": -9207502,
+      "activation_upper": 1651419
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "input_sha256": "fd0d3d23b375090ffb4e4bf812f84bce21c282d337a423f6d978a61e5d287cb5",
+  "output_sha256": "848744bf3901b0784f95ccb6418588501335e29da89e9e244152bbb7b545e2e0",
+  "weights_sha256": "337ec1ba6088a48729b1b6a64bd42863548d30e387b79d3c9f82715aa0cecab5",
+  "no_truth_or_reference": true,
+  "frontend_included": false,
+  "deployment_ready": false
+}

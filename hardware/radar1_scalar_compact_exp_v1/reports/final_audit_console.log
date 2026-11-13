@@ -1,0 +1,152 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source {scripts\audit_final.tcl} -notrace
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.ip_user_files'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_3/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_3/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_4/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_4/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_5/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_5/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_6/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_6/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_7/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_7/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_8/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_8/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_9/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_9/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_10/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_10/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_11/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_11/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_14/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_14/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_15/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_15/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_16/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_16/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/onebit_synth/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/onebit_synth/design_1_wrapper.dcp
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/network_synth/design_1_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/network_synth/design_1_wrapper.dcp
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_3/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_4/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_5/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_6/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_7/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_8/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_9/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_10/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_11/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_14/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_15/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_16/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/onebit_synth/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/network_synth/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_3/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_4/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_5/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_6/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_7/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_8/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_9/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_10/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_11/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_14/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_15/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/synth_16/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/onebit_synth/design_1_wrapper.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.srcs/utils_1/imports/network_synth/design_1_wrapper.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo00_cam_axi_data_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo01_ov5640'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo02_test_udp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo03_ddr4_read_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo04_display'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo05_hdmi_cam_picture4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo06_interp'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo07_hdmi_and'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo08_onedfftread'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo09_oneburstwrite'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo10_fftshift_write'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo11_fftshift_read'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo12_hdmi9'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo13_eth_udp_loop_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo14_zynq_write'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo15_ddr4_write_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo16_RD_DMA'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/ip_repo/repo17_v1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/hls/project/solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1662.418 ; gain = 0.000
+INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1-i
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2262.105 ; gain = 13.148
+INFO: [Netlist 29-17] Analyzing 5204 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/mmcm_clk_in' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4060.980 ; gain = 162.031
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4060.980 ; gain = 162.031
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/project/imaging_storage.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4083.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 914 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 32 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 250 instances
+  DSP48E2 => DSP48E2 (inverted pins: ALUMODE[1], ALUMODE[0]) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 9 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 19 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 2 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 18 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 48 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 128 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 50 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 320 instances
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:01:12 . Memory (MB): peak = 4083.719 ; gain = 2421.301
+HDMI_CLOCK_ALIGNED design_1_i/hdmi_serdes_clocks_0/inst/clock_5x HDMI_GEARBOX
+HDMI_CLOCK_ALIGNED design_1_i/hdmi_serdes_clocks_0/inst/clock_2_5x HDMI_GEARBOX
+OPTIONAL_CAMERA_READ_FIFO_CELLS 510
+RADAR_SCANOUT_FIFO_PRESENT 680
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-164] This design has multiple clocks. Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+report_clock_interaction: Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 4233.191 ; gain = 147.914
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-91] UpdateTimingParams: No interconnect No Cell Dly, Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-433] Consider using Xilinx recommended XPM_CDC modules to avoid Critical severities
+INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
+Command: report_methodology -file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/reports/methodology.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/yang/Desktop/SAR_IMAGE/radar1_scalar_compact_exp_v1/reports/methodology.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:04 ; elapsed = 00:00:40 . Memory (MB): peak = 4555.738 ; gain = 321.367
+INFO: [Vivado 12-3442] The output from report_compile_order is primarily targeted for human readability and ease of use. The 'get_files' command, with the -compile_order and -used_in options, produces this same information in a format that is better suited for automated scripts.
+NETWORK_FINAL_IMPLEMENTATION_AUDIT_PASS
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 23:43:24 2026...

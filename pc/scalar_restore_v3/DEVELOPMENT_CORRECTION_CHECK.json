@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checks": {
+    "no_new_known_target_below_half": true,
+    "known_weak_target_error_not_worse": true,
+    "each_known_target_error": true,
+    "each_frame_better_than_bypass": true,
+    "real_no_new_numeric_peak_loss": true,
+    "real_no_periodic_gain_stripes": true,
+    "v2_background_and_nmse_nonregression": true,
+    "diagnosed_target_no_longer_below_half": true
+  },
+  "diagnosed_target": {
+    "range_bin": 221.22016878153164,
+    "doppler_bin": 204.79734852527713,
+    "amplitude": 0.03,
+    "kind": "alias_column_weak",
+    "measured_peak_bin": [
+      221,
+      205
+    ],
+    "reference": 0.03000229707849799,
+    "baseline": 0.01773949152962387,
+    "enhanced": 0.01557619172028873,
+    "baseline_retention": 0.5912711111156014,
+    "enhanced_retention": 0.5191666384588884,
+    "newly_below_half": false,
+    "baseline_abs_error": 0.012262805548874121,
+    "enhanced_abs_error": 0.01442610535820926
+  },
+  "original_full_quality_status": "PASS",
+  "original_full_quality_checks": {
+    "all_groups_nmse_at_most1p05_v7": true,
+    "all_groups_background_error_at_most1p10_v7": true,
+    "no_new_known_target_below_half": true,
+    "known_weak_target_error_not_worse": true,
+    "each_known_target_error": true,
+    "each_frame_better_than_bypass": true,
+    "real_no_new_numeric_peak_loss": true,
+    "real_no_periodic_gain_stripes": true,
+    "each_acquisition_subgroup_nmse_at_most1p05_v7": true,
+    "each_acquisition_subgroup_background_at_most1p10_v7": true,
+    "v2_background_and_nmse_nonregression": true
+  },
+  "scope": "User-requested weak-target correction; not a replacement of full quality verdict"
+}

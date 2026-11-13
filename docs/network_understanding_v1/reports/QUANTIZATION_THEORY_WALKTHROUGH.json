@@ -1,0 +1,311 @@
+{
+  "status": "PASS",
+  "checks": {
+    "harmonic_coefficients": true,
+    "absent_orders": true,
+    "constant_modulus": true,
+    "scale_invariance": true,
+    "intermodulation_present": true,
+    "intermodulation_quadrature_stable": true,
+    "gaussian_projection": true,
+    "gaussian_residual_power": true,
+    "arcsine_integral": true,
+    "residual_not_white": true,
+    "ambiguity_bound": true,
+    "per_bin_cross_term_not_discarded": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Deterministic mathematical teaching checks; not a model quality, data, or hardware test",
+  "complex_tone_coefficients": [
+    {
+      "order": -15,
+      "measured_real": -0.08488263618623308,
+      "measured_imag": 9.979248077673225e-06,
+      "predicted_real": -0.08488263631567752,
+      "absolute_error": 9.97924807851276e-06
+    },
+    {
+      "order": -11,
+      "measured_real": -0.11574904942645249,
+      "measured_imag": 9.979248063438084e-06,
+      "predicted_real": -0.11574904952137845,
+      "absolute_error": 9.979248063889568e-06
+    },
+    {
+      "order": -7,
+      "measured_real": -0.1818913634731873,
+      "measured_imag": 9.97924805361955e-06,
+      "predicted_real": -0.18189136353359467,
+      "absolute_error": 9.979248053802381e-06
+    },
+    {
+      "order": -3,
+      "measured_real": -0.4244131815524987,
+      "measured_imag": 9.979248048137823e-06,
+      "predicted_real": -0.4244131815783876,
+      "absolute_error": 9.979248048171405e-06
+    },
+    {
+      "order": 1,
+      "measured_real": 1.2732395447265326,
+      "measured_imag": 9.979248047051886e-06,
+      "predicted_real": 1.2732395447351628,
+      "absolute_error": 9.979248047055618e-06
+    },
+    {
+      "order": 5,
+      "measured_real": 0.25464790890388445,
+      "measured_imag": 9.97924805028888e-06,
+      "predicted_real": 0.25464790894703254,
+      "absolute_error": 9.979248050382162e-06
+    },
+    {
+      "order": 9,
+      "measured_real": 0.14147106044846242,
+      "measured_imag": 9.979248058001461e-06,
+      "predicted_real": 0.1414710605261292,
+      "absolute_error": 9.979248058303694e-06
+    },
+    {
+      "order": 13,
+      "measured_real": 0.09794150332898116,
+      "measured_imag": 9.979248070023095e-06,
+      "predicted_real": 0.09794150344116635,
+      "absolute_error": 9.979248070653678e-06
+    }
+  ],
+  "absent_orders": [
+    {
+      "order": -5,
+      "coefficient_magnitude": 1.18774731498903e-16
+    },
+    {
+      "order": -1,
+      "coefficient_magnitude": 1.0274484662343186e-16
+    },
+    {
+      "order": 0,
+      "coefficient_magnitude": 0.0
+    },
+    {
+      "order": 2,
+      "coefficient_magnitude": 1.3934052264812926e-16
+    },
+    {
+      "order": 3,
+      "coefficient_magnitude": 6.254634441385502e-17
+    },
+    {
+      "order": 7,
+      "coefficient_magnitude": 7.847107497254942e-17
+    }
+  ],
+  "ideal_tone_energy": {
+    "total_power_per_c_squared": 2.0,
+    "fundamental_power_per_c_squared": 1.6211389382774044,
+    "fundamental_fraction": 0.8105694691387022,
+    "other_harmonic_fraction": 0.1894305308612978,
+    "fundamental_to_other_db": 6.313402652679288,
+    "third_to_fundamental_power_db": -9.542425094393248,
+    "fifth_to_fundamental_power_db": -13.979400086720375,
+    "scope": "Continuous ideal complex tone, phase-averaged; not a radar SNR guarantee"
+  },
+  "two_tone_phase_integrals": [
+    {
+      "phase_grid": 512,
+      "secondary_to_primary_amplitude": 0.3,
+      "coefficients": [
+        {
+          "k": 1,
+          "l": 0,
+          "mixed_real": 1.2441661759549196,
+          "mixed_imag": -0.00031149238120726326,
+          "mixed_magnitude": 1.2441662149479031,
+          "sum_of_separately_quantized_magnitude": 1.2732475342535265
+        },
+        {
+          "k": 0,
+          "l": 1,
+          "mixed_real": 0.1929538620314681,
+          "mixed_imag": -8.58938059869619e-06,
+          "mixed_magnitude": 0.19295386222264713,
+          "sum_of_separately_quantized_magnitude": 1.2732475342535268
+        },
+        {
+          "k": 2,
+          "l": -1,
+          "mixed_real": -0.18423442109696858,
+          "mixed_imag": 0.00013669845398602215,
+          "mixed_magnitude": 0.1842344718107946,
+          "sum_of_separately_quantized_magnitude": 3.8188318619558264e-18
+        },
+        {
+          "k": -2,
+          "l": -1,
+          "mixed_real": -0.18416973945178125,
+          "mixed_imag": -0.00014707618812266968,
+          "mixed_magnitude": 0.18416979817858872,
+          "sum_of_separately_quantized_magnitude": 2.680661094463546e-18
+        },
+        {
+          "k": 1,
+          "l": 1,
+          "mixed_real": -9.367506770274758e-17,
+          "mixed_imag": -7.589415207398531e-18,
+          "mixed_magnitude": 9.398200642838307e-17,
+          "sum_of_separately_quantized_magnitude": 1.95223840859923e-16
+        }
+      ]
+    },
+    {
+      "phase_grid": 1024,
+      "secondary_to_primary_amplitude": 0.3,
+      "coefficients": [
+        {
+          "k": 1,
+          "l": 0,
+          "mixed_real": 1.2440950457068192,
+          "mixed_imag": -8.158622975266397e-05,
+          "mixed_magnitude": 1.2440950483819817,
+          "sum_of_separately_quantized_magnitude": 1.2732415421081733
+        },
+        {
+          "k": 0,
+          "l": 1,
+          "mixed_real": 0.1931911225088778,
+          "mixed_imag": -3.283957737856176e-05,
+          "mixed_magnitude": 0.19319112529999422,
+          "sum_of_separately_quantized_magnitude": 1.2732415421081709
+        },
+        {
+          "k": 2,
+          "l": -1,
+          "mixed_real": -0.1844003135416727,
+          "mixed_imag": 1.3873507984979948e-05,
+          "mixed_magnitude": 0.18440031406356505,
+          "sum_of_separately_quantized_magnitude": 2.708683698182996e-18
+        },
+        {
+          "k": -2,
+          "l": -1,
+          "mixed_real": -0.18439619631777718,
+          "mixed_imag": -7.303703448936668e-05,
+          "mixed_magnitude": 0.184396210782306,
+          "sum_of_separately_quantized_magnitude": 6.368523437184714e-18
+        },
+        {
+          "k": 1,
+          "l": 1,
+          "mixed_real": 3.2959746043559335e-17,
+          "mixed_imag": 4.228388472693467e-18,
+          "mixed_magnitude": 3.322986801556594e-17,
+          "sum_of_separately_quantized_magnitude": 3.9901144140202475e-17
+        }
+      ]
+    }
+  ],
+  "gaussian_projection": {
+    "c": 64.0,
+    "sigma": 2.0,
+    "b_formula": 25.532305945691693,
+    "b_integral": 25.532305954608745,
+    "eta_x_integral": 3.566821137566353e-08,
+    "eta_power_integral": 1488.4054105610035,
+    "eta_power_formula": 1488.4054123823867,
+    "correlated_power_fraction": 0.6366197723675814,
+    "residual_power_fraction": 0.3633802276324186
+  },
+  "gaussian_arcsine_integrals": [
+    {
+      "input_correlation": -0.95,
+      "sign_correlation_integral": -0.7978363037109375,
+      "sign_correlation_formula": -0.7978347517914802,
+      "absolute_error": 1.5519194572766182e-06
+    },
+    {
+      "input_correlation": -0.75,
+      "sign_correlation_integral": -0.5399017333984375,
+      "sign_correlation_formula": -0.5398930876747683,
+      "absolute_error": 8.64572366920946e-06
+    },
+    {
+      "input_correlation": -0.25,
+      "sign_correlation_integral": -0.1608734130859375,
+      "sign_correlation_formula": -0.16086124651033248,
+      "absolute_error": 1.2166575605015995e-05
+    },
+    {
+      "input_correlation": 0.0,
+      "sign_correlation_integral": 0.0,
+      "sign_correlation_formula": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "input_correlation": 0.25,
+      "sign_correlation_integral": 0.160858154296875,
+      "sign_correlation_formula": 0.16086124651033248,
+      "absolute_error": 3.0922134574840054e-06
+    },
+    {
+      "input_correlation": 0.75,
+      "sign_correlation_integral": 0.539886474609375,
+      "sign_correlation_formula": 0.5398930876747683,
+      "absolute_error": 6.61306539329054e-06
+    },
+    {
+      "input_correlation": 0.95,
+      "sign_correlation_integral": 0.7978363037109375,
+      "sign_correlation_formula": 0.7978347517914802,
+      "absolute_error": 1.5519194572766182e-06
+    }
+  ],
+  "gaussian_colored_residual_examples": [
+    {
+      "input_correlation": 0.0,
+      "residual_correlation": 0.0
+    },
+    {
+      "input_correlation": 0.5,
+      "residual_correlation": 0.04134360101931532
+    },
+    {
+      "input_correlation": 0.75,
+      "residual_correlation": 0.1717987211517525
+    },
+    {
+      "input_correlation": 0.9,
+      "residual_correlation": 0.3850226511313968
+    }
+  ],
+  "nonidentifiability_lower_bound_example": {
+    "labels": [
+      0.1,
+      0.3
+    ],
+    "same_observation": true,
+    "unrestricted_best_prediction": 0.2,
+    "irreducible_mean_squared_error": 0.009999999999999998,
+    "zero_input_multiplicative_prediction": 0.0,
+    "zero_input_multiplicative_mean_squared_error": 0.05,
+    "scope": "Equal-prior ideal ambiguity example; not an empirical radar bound"
+  },
+  "per_bin_cross_term_example": {
+    "desired_power": 1.0,
+    "distortion_power": 0.25,
+    "cross_term": -1.0,
+    "actual_total_power": 0.25,
+    "sum_without_cross_term": 1.25,
+    "scope": "Algebra example only; not samples claimed to be uncorrelated"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_data_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

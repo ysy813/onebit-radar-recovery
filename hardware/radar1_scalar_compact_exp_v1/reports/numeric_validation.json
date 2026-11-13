@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "weak512",
+      "changed": 524166,
+      "suppressed": 517433,
+      "amplified": 6733,
+      "max_gain": 24576,
+      "peak": 1286666655855754,
+      "output_sha256": "41db55c429d703f3718cfc4ea5112681ba1b672598c4bcb478e15503096e4c57"
+    },
+    {
+      "name": "history512",
+      "changed": 524049,
+      "suppressed": 512162,
+      "amplified": 11887,
+      "max_gain": 24576,
+      "peak": 521337233412837,
+      "output_sha256": "c925faf3e9a98068f2581cc81fbaffb61d4e060aa21448d728a375902f83cb40"
+    },
+    {
+      "name": "u64_edges",
+      "changed": 524257,
+      "suppressed": 521530,
+      "amplified": 2727,
+      "max_gain": 24576,
+      "peak": 18446744073709551615,
+      "output_sha256": "43eabcab07662479996b86a3cf3e8d02bc79376180c6a7288ad5f6280a63d055"
+    }
+  ],
+  "weights_sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+  "full_frames": 3,
+  "zero_frame_pass": true,
+  "includes_uint64_extremes": true,
+  "includes_gain_above_unity": true
+}

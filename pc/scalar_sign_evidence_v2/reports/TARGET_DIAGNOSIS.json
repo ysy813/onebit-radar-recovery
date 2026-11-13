@@ -1,0 +1,4138 @@
+{
+  "development": [
+    {
+      "id": "007_n8_strong_weak",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            275,
+            304
+          ],
+          "fitted": [
+            274.81892046255217,
+            304.3950303643317
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.18519032981703276,
+            0.3876074097906894
+          ],
+          "fit_error_bins": [
+            0.0041107923691470205,
+            0.00742295454097075
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.5828430100741321,
+          "sign_error_improvement_lower": 0.4083056549012274
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 2,
+      "retention": {
+        "bypass": 0.5667524336970289,
+        "old40": 0.8194456772847424,
+        "v1_model": 0.00268621888254717,
+        "v1_gate": 0.8194456772847424,
+        "fft24_model": 0.0026167103957463037,
+        "fft24_protect": 0.8194456772847424,
+        "fft24_blend0.25": 0.6152384613000479,
+        "fft24_blend0.5": 0.4110311926048417,
+        "fft24_blend0.75": 0.2068239502648914,
+        "residual24_model": 1.1493229756475327,
+        "residual24_protect": 0.8194456772847424,
+        "residual24_blend0.25": 0.9019150150530679,
+        "residual24_blend0.5": 0.9843843001108818,
+        "residual24_blend0.75": 1.0668536905897188,
+        "serial": 1.7239844634712993
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            208,
+            347
+          ],
+          "fitted": [
+            207.87727939038245,
+            347.4200313864973
+          ],
+          "origin": "符号残差",
+          "integer_error_bins": [
+            0.09697251498312198,
+            0.4252398642630624
+          ],
+          "fit_error_bins": [
+            0.02574809463442307,
+            0.005208477765791031
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0015682643511317168,
+          "sign_error_improvement_lower": -0.0001696492592883807
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 3,
+      "retention": {
+        "bypass": 0.5658231673695429,
+        "old40": 0.5658231673695429,
+        "v1_model": 1.321268323430001,
+        "v1_gate": 0.5658231673695429,
+        "fft24_model": 1.3948900058484452,
+        "fft24_protect": 0.5658231673695429,
+        "fft24_blend0.25": 0.7730898606564789,
+        "fft24_blend0.5": 0.9803566192745733,
+        "fft24_blend0.75": 1.187623247230351,
+        "residual24_model": 1.2249291679580459,
+        "residual24_protect": 0.5658231673695429,
+        "residual24_blend0.25": 0.730599651183879,
+        "residual24_blend0.5": 0.8953762003293736,
+        "residual24_blend0.75": 1.0601526841437097,
+        "serial": 1.405035020114157
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            204,
+            394
+          ],
+          "fitted": [
+            203.5687576600889,
+            393.55334451215566
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4585128185984786,
+            0.46697913102741495
+          ],
+          "fit_error_bins": [
+            0.027270478687341893,
+            0.020323643183132845
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.004358694657079258,
+          "sign_error_improvement_lower": 5.380150312555795e-05
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 4,
+      "retention": {
+        "bypass": 0.562397544942809,
+        "old40": 0.8435963174142136,
+        "v1_model": 1.3441470149609955,
+        "v1_gate": 0.8435963174142136,
+        "fft24_model": 1.2753898948963251,
+        "fft24_protect": 0.8435963174142136,
+        "fft24_blend0.25": 0.9515447117847415,
+        "fft24_blend0.5": 1.0594931061552695,
+        "fft24_blend0.75": 1.1674415005257974,
+        "residual24_model": 1.7727557421842792,
+        "residual24_protect": 0.8435963174142136,
+        "residual24_blend0.25": 1.0758861219465474,
+        "residual24_blend0.5": 1.3081760297992464,
+        "residual24_blend0.75": 1.5404658343315802,
+        "serial": 1.8114915803201155
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            436,
+            55
+          ],
+          "fitted": [
+            435.8851468981184,
+            55.35582740660268
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.11598470726335108,
+            0.36959683416881717
+          ],
+          "fit_error_bins": [
+            0.001131605381715417,
+            0.013769427566131753
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.028461780118131164,
+          "sign_error_improvement_lower": 0.016755165646931247
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 5,
+      "retention": {
+        "bypass": 0.5580385611918521,
+        "old40": 0.7133520179226106,
+        "v1_model": 1.1435434212345406,
+        "v1_gate": 0.7133520179226106,
+        "fft24_model": 1.1578402358627307,
+        "fft24_protect": 0.7133520179226106,
+        "fft24_blend0.25": 0.824474087215995,
+        "fft24_blend0.5": 0.9355960972759617,
+        "fft24_blend0.75": 1.0467181073359284,
+        "residual24_model": 1.1035369339906347,
+        "residual24_protect": 0.7133520179226106,
+        "residual24_blend0.25": 0.8108982617479711,
+        "residual24_blend0.5": 0.9084444463399138,
+        "residual24_blend0.75": 1.0059906309318565,
+        "serial": 1.1370795152953124
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            298,
+            446
+          ],
+          "fitted": [
+            298.3501133731256,
+            445.8864618207737
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4027677619891392,
+            0.12680024955420777
+          ],
+          "fit_error_bins": [
+            0.05265438886351603,
+            0.013262070327982656
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.007294389739985689,
+          "sign_error_improvement_lower": 0.0032274369923978295
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 6,
+      "retention": {
+        "bypass": 0.560866688177399,
+        "old40": 0.7674261072637346,
+        "v1_model": 1.0497785190134044,
+        "v1_gate": 0.7674261072637346,
+        "fft24_model": 1.032501672061658,
+        "fft24_protect": 0.7674261072637346,
+        "fft24_blend0.25": 0.8336949529153631,
+        "fft24_blend0.5": 0.8999638896626962,
+        "fft24_blend0.75": 0.9662328264100294,
+        "residual24_model": 0.9779658620668923,
+        "residual24_protect": 0.7674261072637346,
+        "residual24_blend0.25": 0.8200610231905979,
+        "residual24_blend0.5": 0.8726959391174611,
+        "residual24_blend0.75": 0.9253308550443244,
+        "serial": 1.0270312839046825
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            432,
+            62
+          ],
+          "fitted": [
+            432.12948646783724,
+            62.07352292676432
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.14104993034777635,
+            0.06232369489521261
+          ],
+          "fit_error_bins": [
+            0.011563462510537192,
+            0.011199231869113646
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.007194063669470502,
+          "sign_error_improvement_lower": 0.0022953737808124076
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 7,
+      "retention": {
+        "bypass": 0.5674393853813828,
+        "old40": 0.5851025749253141,
+        "v1_model": 0.00023857411260029917,
+        "v1_gate": 0.5851025749253141,
+        "fft24_model": 0.00027283582587924273,
+        "fft24_protect": 0.5851025749253141,
+        "fft24_blend0.25": 0.43889512990198903,
+        "fft24_blend0.5": 0.29268771935728266,
+        "fft24_blend0.75": 0.14648027433395755,
+        "residual24_model": 0.9557200063082081,
+        "residual24_protect": 0.5851025749253141,
+        "residual24_blend0.25": 0.6777569672496564,
+        "residual24_blend0.5": 0.7704112906167612,
+        "residual24_blend0.75": 0.8630656139838658,
+        "serial": 1.393913875582249
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            85,
+            12
+          ],
+          "fitted": [
+            84.57510110371081,
+            11.675328616786212
+          ],
+          "origin": "符号残差",
+          "integer_error_bins": [
+            0.38242471680189283,
+            0.3255089644996474
+          ],
+          "fit_error_bins": [
+            0.042474179487328456,
+            0.0008375812858503195
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.00020067148135763922,
+          "sign_error_improvement_lower": 0.00037384053397567516
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 8,
+      "retention": {
+        "bypass": 0.5639780532897337,
+        "old40": 0.8459671180053313,
+        "v1_model": 1.197455976720205,
+        "v1_gate": 0.8459671180053313,
+        "fft24_model": 1.1621203995995264,
+        "fft24_protect": 0.8459671180053313,
+        "fft24_blend0.25": 0.9250054574392454,
+        "fft24_blend0.5": 1.0040437968731595,
+        "fft24_blend0.75": 1.0830821363070737,
+        "residual24_model": 1.513787733899907,
+        "residual24_protect": 0.8459671180053313,
+        "residual24_blend0.25": 1.0129222719789752,
+        "residual24_blend0.5": 1.1798774259526192,
+        "residual24_blend0.75": 1.3468325037848017,
+        "serial": 1.5813279512487541
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            49,
+            479
+          ],
+          "fitted": [
+            48.809466543952524,
+            479.1637673130193
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.15515877136192557,
+            0.15789461220970225
+          ],
+          "fit_error_bins": [
+            0.03537468468556426,
+            0.005872700809618436
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.015376651627322345,
+          "sign_error_improvement_lower": 0.008223612661115216
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "009_collision_plus5_offgrid",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            215,
+            123
+          ],
+          "fitted": [
+            214.8959883977192,
+            122.68609363767092
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.10546208765481424,
+            0.3120938717411832
+          ],
+          "fit_error_bins": [
+            0.001450485374107302,
+            0.0018124905878948994
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6537898450111242,
+          "sign_error_improvement_lower": 0.3822910155568652
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "009_collision_plus5_offgrid",
+      "target": 2,
+      "retention": {
+        "bypass": 1.7175561303113513,
+        "old40": 0.4506698016779651,
+        "v1_model": 0.00014948877984998947,
+        "v1_gate": 0.21469451628891892,
+        "fft24_model": 0.00014979370030332364,
+        "fft24_protect": 0.4506698016779651,
+        "fft24_blend0.25": 0.3380398168111154,
+        "fft24_blend0.5": 0.22540980401095523,
+        "fft24_blend0.75": 0.11277979819412265,
+        "residual24_model": 3.5441279265170693,
+        "residual24_protect": 1.7175561303113513,
+        "residual24_blend0.25": 1.7175561303113513,
+        "residual24_blend0.5": 1.997398850130862,
+        "residual24_blend0.75": 2.7707633883239655,
+        "serial": 2.922867191187197
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            50,
+            101
+          ],
+          "fitted": [
+            50.4727280257915,
+            101.43385389439544
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4726895617257014,
+            0.4395306412941409
+          ],
+          "fit_error_bins": [
+            3.8464065823973215e-05,
+            0.005676746898700458
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.015236235356158175,
+          "sign_error_improvement_lower": 6.470321924148634e-05
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    }
+  ],
+  "validation": [
+    {
+      "id": "000_single_offgrid_a",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            357,
+            200
+          ],
+          "fitted": [
+            357.0429560158332,
+            199.7059736311071
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0412008143435969,
+            0.29398535847269613
+          ],
+          "fit_error_bins": [
+            0.001755201489686442,
+            4.101042020465684e-05
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6244173699080219,
+          "sign_error_improvement_lower": 0.3272421887890703
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "001_n4_spread",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            308,
+            408
+          ],
+          "fitted": [
+            308.29468098493123,
+            407.57720089280923
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.2969737470385212,
+            0.4170978112413195
+          ],
+          "fit_error_bins": [
+            0.0022927621072881266,
+            0.00570129594939317
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.42680243870773527,
+          "sign_error_improvement_lower": 0.19462489768323393
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "001_n4_spread",
+      "target": 2,
+      "retention": {
+        "bypass": 0.838847414061162,
+        "old40": 0.9022319663264502,
+        "v1_model": 1.2806419119764307,
+        "v1_gate": 0.9022319663264502,
+        "fft24_model": 1.2733830445755476,
+        "fft24_protect": 0.9022319663264502,
+        "fft24_blend0.25": 0.9950197097498594,
+        "fft24_blend0.5": 1.0878075577287292,
+        "fft24_blend0.75": 1.1805953011521384,
+        "residual24_model": 1.2983756681878091,
+        "residual24_protect": 0.9022319663264502,
+        "residual24_blend0.25": 1.0012678395140597,
+        "residual24_blend0.5": 1.1003038172571298,
+        "residual24_blend0.75": 1.1993397950001996,
+        "serial": 1.3730259667668379
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            73,
+            58
+          ],
+          "fitted": [
+            73.0036171984722,
+            57.6987520916196
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.011080102810183234,
+            0.2799547019181432
+          ],
+          "fit_error_bins": [
+            0.007462904338012777,
+            0.02129320646227484
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.08793748624560252,
+          "sign_error_improvement_lower": 0.0415601288971204
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "001_n4_spread",
+      "target": 3,
+      "retention": {
+        "bypass": 0.8372381279668315,
+        "old40": 0.8675409764223642,
+        "v1_model": 1.3239002896870677,
+        "v1_gate": 0.8675409764223642,
+        "fft24_model": 1.3154774639449214,
+        "fft24_protect": 0.8675409764223642,
+        "fft24_blend0.25": 0.9795250294845698,
+        "fft24_blend0.5": 1.0915092477110162,
+        "fft24_blend0.75": 1.2034933558279688,
+        "residual24_model": 1.3562058646738904,
+        "residual24_protect": 0.8675409764223642,
+        "residual24_blend0.25": 0.9897071847215589,
+        "residual24_blend0.5": 1.1118734480755008,
+        "residual24_blend0.75": 1.2340396013199486,
+        "serial": 1.3720988488162513
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            57,
+            492
+          ],
+          "fitted": [
+            57.10414288671024,
+            492.3331913906569
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.09436837038367685,
+            0.342407585441606
+          ],
+          "fit_error_bins": [
+            0.009774516326501725,
+            0.009216194784698928
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.08242888192786224,
+          "sign_error_improvement_lower": 0.03878263134394194
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "001_n4_spread",
+      "target": 4,
+      "retention": {
+        "bypass": 0.8125507197113755,
+        "old40": 0.8180060875702351,
+        "v1_model": 0.5408609334794108,
+        "v1_gate": 0.8180060875702351,
+        "fft24_model": 0.5463770409611858,
+        "fft24_protect": 0.8180060875702351,
+        "fft24_blend0.25": 0.8180060875702351,
+        "fft24_blend0.5": 0.8180060875702351,
+        "fft24_blend0.75": 0.8180060875702351,
+        "residual24_model": 0.5808843759971185,
+        "residual24_protect": 0.8180060875702351,
+        "residual24_blend0.25": 0.8180060875702351,
+        "residual24_blend0.5": 0.8180060875702351,
+        "residual24_blend0.75": 0.8180060875702351,
+        "serial": 0.5927261218509128
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            208,
+            436
+          ],
+          "fitted": [
+            207.82939511619315,
+            435.68595862628115
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.1750076546238688,
+            0.32526162035742345
+          ],
+          "fit_error_bins": [
+            0.004402770817023338,
+            0.011220246638572462
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.06246030284125958,
+          "sign_error_improvement_lower": 0.0321575334585332
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            277,
+            16
+          ],
+          "fitted": [
+            276.9973022212743,
+            16.0034735920619
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.002697778725689659,
+            0.0034735920618800264
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.2800246206261153,
+          "sign_error_improvement_lower": 0.1430685425100785
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 2,
+      "retention": {
+        "bypass": 0.9318583863463342,
+        "old40": 0.9686572169927122,
+        "v1_model": 1.0085940271183345,
+        "v1_gate": 0.9686572169927122,
+        "fft24_model": 1.0076088390341966,
+        "fft24_protect": 0.9686572169927122,
+        "fft24_blend0.25": 0.9783951452935914,
+        "fft24_blend0.5": 0.9881329824324382,
+        "fft24_blend0.75": 0.9978709107333175,
+        "residual24_model": 1.0058464034618235,
+        "residual24_protect": 0.9686572169927122,
+        "residual24_blend0.25": 0.9779545591910063,
+        "residual24_blend0.5": 0.9872518102272678,
+        "residual24_blend0.75": 0.9965490612635295,
+        "serial": 1.508769559611719
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            282,
+            20
+          ],
+          "fitted": [
+            282.00220274819753,
+            20.004139358068603
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0022027481975328556,
+            0.004139358068584897
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.06905935138701065,
+          "sign_error_improvement_lower": 0.0477415598833061
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 3,
+      "retention": {
+        "bypass": 0.9637721038228256,
+        "old40": 0.9747133767520033,
+        "v1_model": 1.0058505384588101,
+        "v1_gate": 0.9747133767520033,
+        "fft24_model": 1.0051948246837048,
+        "fft24_protect": 0.9747133767520033,
+        "fft24_blend0.25": 0.9823337216821415,
+        "fft24_blend0.5": 0.9899541348234286,
+        "fft24_blend0.75": 0.9975744115424178,
+        "residual24_model": 1.0058175924738546,
+        "residual24_protect": 0.9747133767520033,
+        "residual24_blend0.25": 0.9824894477352535,
+        "residual24_blend0.5": 0.9902654505073545,
+        "residual24_blend0.75": 0.9980415214906045,
+        "serial": 1.051184964080009
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            149,
+            499
+          ],
+          "fitted": [
+            149.00711933453343,
+            499.0030880315666
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.007119334533399524,
+            0.0030880315666763636
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.24373802155056354,
+          "sign_error_improvement_lower": 0.12824956039437943
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 4,
+      "retention": {
+        "bypass": 0.9343711298612452,
+        "old40": 0.9798236181521568,
+        "v1_model": 1.0131102320767624,
+        "v1_gate": 0.9798236181521568,
+        "fft24_model": 1.0118321434209834,
+        "fft24_protect": 0.9798236181521568,
+        "fft24_blend0.25": 0.987825793323627,
+        "fft24_blend0.5": 0.99582788078657,
+        "fft24_blend0.75": 1.0038299682495133,
+        "residual24_model": 1.0048460715350747,
+        "residual24_protect": 0.9798236181521568,
+        "residual24_blend0.25": 0.986079253425018,
+        "residual24_blend0.5": 0.9923348009893522,
+        "residual24_blend0.75": 0.9985904362622134,
+        "serial": 1.417173943550792
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            152,
+            504
+          ],
+          "fitted": [
+            152.0139259752686,
+            503.99269665253155
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.013925975268648472,
+            0.007303347468450738
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.07547891260971545,
+          "sign_error_improvement_lower": 0.04955121955795855
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 5,
+      "retention": {
+        "bypass": 0.7271590108119493,
+        "old40": 0.7573389850812512,
+        "v1_model": 0.9788276910751761,
+        "v1_gate": 0.7573389850812512,
+        "fft24_model": 0.9821798433336584,
+        "fft24_protect": 0.7573389850812512,
+        "fft24_blend0.25": 0.8135491804343113,
+        "fft24_blend0.5": 0.8697593757873716,
+        "fft24_blend0.75": 0.9259696479805982,
+        "residual24_model": 0.9897910923344481,
+        "residual24_protect": 0.7573389850812512,
+        "residual24_blend0.25": 0.8154519734744672,
+        "residual24_blend0.5": 0.8735650387078496,
+        "residual24_blend0.75": 0.9316781039412321,
+        "serial": 1.3807174366550798
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            342,
+            49
+          ],
+          "fitted": [
+            342.0025963298247,
+            49.00675076703523
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.002596329824655186,
+            0.006750767035214267
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.07060138827013707,
+          "sign_error_improvement_lower": 0.04300839246423507
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 6,
+      "retention": {
+        "bypass": 0.8923219983197535,
+        "old40": 0.91568663749048,
+        "v1_model": 0.9995671086426986,
+        "v1_gate": 0.91568663749048,
+        "fft24_model": 1.0005427330872674,
+        "fft24_protect": 0.91568663749048,
+        "fft24_blend0.25": 0.9369006613896768,
+        "fft24_blend0.5": 0.9581146852888737,
+        "fft24_blend0.75": 0.9793287091880705,
+        "residual24_model": 1.00882611082812,
+        "residual24_protect": 0.91568663749048,
+        "residual24_blend0.25": 0.9389714653526239,
+        "residual24_blend0.5": 0.9622563741593,
+        "residual24_blend0.75": 0.985541282965976,
+        "serial": 1.0763110241838787
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            345,
+            52
+          ],
+          "fitted": [
+            344.99909220075574,
+            52.00228578537054
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.000907799244259877,
+            0.002285785370531812
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.18484965794297153,
+          "sign_error_improvement_lower": 0.10189582420690452
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 7,
+      "retention": {
+        "bypass": 0.9242139110091232,
+        "old40": 0.9467777559943075,
+        "v1_model": 0.9919795112808644,
+        "v1_gate": 0.9467777559943075,
+        "fft24_model": 0.9920348725448542,
+        "fft24_protect": 0.9467777559943075,
+        "fft24_blend0.25": 0.958092001000462,
+        "fft24_blend0.5": 0.9694063142695808,
+        "fft24_blend0.75": 0.9807206275386996,
+        "residual24_model": 0.9941325251726507,
+        "residual24_protect": 0.9467777559943075,
+        "residual24_blend0.25": 0.95861639709167,
+        "residual24_blend0.5": 0.970455106451997,
+        "residual24_blend0.75": 0.9822938158123238,
+        "serial": 1.0356962740435813
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            136,
+            480
+          ],
+          "fitted": [
+            135.99083256845677,
+            480.0008816260935
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.009167431543232851,
+            0.000881626093473642
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.22423420938634595,
+          "sign_error_improvement_lower": 0.11825075377898386
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n8_near_pairs",
+      "target": 8,
+      "retention": {
+        "bypass": 0.8994648600676793,
+        "old40": 0.9246634671093188,
+        "v1_model": 0.9986659252619269,
+        "v1_gate": 0.9246634671093188,
+        "fft24_model": 0.9992457638569571,
+        "fft24_protect": 0.9246634671093188,
+        "fft24_blend0.25": 0.9433090608562943,
+        "fft24_blend0.5": 0.9619546546032698,
+        "fft24_blend0.75": 0.9806001701099816,
+        "residual24_model": 1.003933920463921,
+        "residual24_protect": 0.9246634671093188,
+        "residual24_blend0.25": 0.9444811000080353,
+        "residual24_blend0.5": 0.9642987329067517,
+        "residual24_blend0.75": 0.9841162875652044,
+        "serial": 1.0718269093773538
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            139,
+            483
+          ],
+          "fitted": [
+            139.00303983847664,
+            482.9988128287091
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.003039838476638579,
+            0.0011871712908941845
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.20448095843587888,
+          "sign_error_improvement_lower": 0.11205768571223644
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            150,
+            361
+          ],
+          "fitted": [
+            150.41796168655713,
+            361.266553864057
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4197732180624598,
+            0.27488448274198163
+          ],
+          "fit_error_bins": [
+            0.0018115315053250924,
+            0.008330618685022273
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6057327268020967,
+          "sign_error_improvement_lower": 0.4029184984055294
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 2,
+      "retention": {
+        "bypass": 0.5198418765730749,
+        "old40": 0.7797628148596124,
+        "v1_model": 1.5244451823425473,
+        "v1_gate": 0.7797628148596124,
+        "fft24_model": 1.5204136914888715,
+        "fft24_protect": 0.7797628148596124,
+        "fft24_blend0.25": 0.9649254866708037,
+        "fft24_blend0.5": 1.1500882216101596,
+        "fft24_blend0.75": 1.3352509565495154,
+        "residual24_model": 2.004833471057946,
+        "residual24_protect": 0.7797628148596124,
+        "residual24_blend0.25": 1.0860304315630722,
+        "residual24_blend0.5": 1.3922981113946968,
+        "residual24_blend0.75": 1.6985657912263215,
+        "serial": 2.592064663441659
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            167,
+            151
+          ],
+          "fitted": [
+            166.8546997828601,
+            151.20923140807713
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.15271902254255565,
+            0.22366881373068281
+          ],
+          "fit_error_bins": [
+            0.007418805402608086,
+            0.01443740565355256
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.014034027200257239,
+          "sign_error_improvement_lower": 0.007264729815641241
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 3,
+      "retention": {
+        "bypass": 0.525387560311155,
+        "old40": 0.7880813152672611,
+        "v1_model": 0.00013553445900385557,
+        "v1_gate": 0.7880813152672611,
+        "fft24_model": 0.00014308832048801827,
+        "fft24_protect": 0.7880813152672611,
+        "fft24_blend0.25": 0.5910967445004421,
+        "fft24_blend0.5": 0.3941121989330947,
+        "fft24_blend0.75": 0.19712764076601152,
+        "residual24_model": 0.5057871594178035,
+        "residual24_protect": 0.7880813152672611,
+        "residual24_blend0.25": 0.7175077763048967,
+        "residual24_blend0.5": 0.6469342373425323,
+        "residual24_blend0.75": 0.5763606983801679,
+        "serial": 0.7586807391267053
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            264,
+            77
+          ],
+          "fitted": [
+            264.53164589166494,
+            77.16212074407053
+          ],
+          "origin": "符号残差",
+          "integer_error_bins": [
+            0.392448018680966,
+            0.08313225861493834
+          ],
+          "fit_error_bins": [
+            0.13919787298391384,
+            0.07898848545562487
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.00010209433982098722,
+          "sign_error_improvement_lower": -0.0010677306363976425
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 13880,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 115,
+        "evidence_changed_sign_components": 91,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": true
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 4,
+      "retention": {
+        "bypass": 0.518891542784347,
+        "old40": 0.7783373141765205,
+        "v1_model": 0.7392509703977588,
+        "v1_gate": 0.7783373141765205,
+        "fft24_model": 0.7633820801960258,
+        "fft24_protect": 0.7783373141765205,
+        "fft24_blend0.25": 0.7745985056813969,
+        "fft24_blend0.5": 0.7708596971862732,
+        "fft24_blend0.75": 0.7671208886911496,
+        "residual24_model": 0.6376420098216602,
+        "residual24_protect": 0.7783373141765205,
+        "residual24_blend0.25": 0.7431634701593097,
+        "residual24_blend0.5": 0.7079896978560818,
+        "residual24_blend0.75": 0.672815853838871,
+        "serial": 0.9564630147324904
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            325,
+            210
+          ],
+          "fitted": [
+            325.0196541389637,
+            209.97900289691347
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.061337528460626345,
+            0.04338374446970761
+          ],
+          "fit_error_bins": [
+            0.08099166742431407,
+            0.06438084755623663
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0010334083625256323,
+          "sign_error_improvement_lower": -0.0002698107614234696
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 29308,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 252,
+        "evidence_changed_sign_components": 247,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": true
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 5,
+      "retention": {
+        "bypass": 0.519380274278109,
+        "old40": 0.7790703798065035,
+        "v1_model": 1.0197545128800478,
+        "v1_gate": 0.7790703798065035,
+        "fft24_model": 1.0004509576733898,
+        "fft24_protect": 0.7790703798065035,
+        "fft24_blend0.25": 0.8344155874945448,
+        "fft24_blend0.5": 0.8897606687399466,
+        "fft24_blend0.75": 0.9451057499853485,
+        "residual24_model": 1.484424068634582,
+        "residual24_protect": 0.7790703798065035,
+        "residual24_blend0.25": 0.9554088020135232,
+        "residual24_blend0.5": 1.1317472242205429,
+        "residual24_blend0.75": 1.3080856464275623,
+        "serial": 2.2266361661731926
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            98,
+            110
+          ],
+          "fitted": [
+            97.5415248694223,
+            110.07553368083856
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4483252567833915,
+            0.06865318240437546
+          ],
+          "fit_error_bins": [
+            0.010149873794375708,
+            0.006880498434213678
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.01017283931745996,
+          "sign_error_improvement_lower": 0.004775127836931755
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 6,
+      "retention": {
+        "bypass": 0.5199383851208024,
+        "old40": 0.5199383851208024,
+        "v1_model": 0.0005092234832029063,
+        "v1_gate": 0.5199383851208024,
+        "fft24_model": 0.0005076568364038598,
+        "fft24_protect": 0.5199383851208024,
+        "fft24_blend0.25": 0.39008070009215895,
+        "fft24_blend0.5": 0.26022301506351553,
+        "fft24_blend0.75": 0.13036534150655713,
+        "residual24_model": 0.7673530344075297,
+        "residual24_protect": 0.5199383851208024,
+        "residual24_blend0.25": 0.5817920130274291,
+        "residual24_blend0.5": 0.6436456868207959,
+        "residual24_blend0.75": 0.7054994065009029,
+        "serial": 1.1510295974980347
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            176,
+            497
+          ],
+          "fitted": [
+            175.71768313763192,
+            496.6418089939307
+          ],
+          "origin": "符号残差",
+          "integer_error_bins": [
+            0.27355860573288737,
+            0.3461220220162886
+          ],
+          "fit_error_bins": [
+            0.008758256635132966,
+            0.012068984053030363
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0001267650544745949,
+          "sign_error_improvement_lower": -0.0006906182751372874
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 7,
+      "retention": {
+        "bypass": 0.5176295600765811,
+        "old40": 0.7764443401148717,
+        "v1_model": 0.8338256283387933,
+        "v1_gate": 0.7764443401148717,
+        "fft24_model": 0.8142388257276726,
+        "fft24_protect": 0.7764443401148717,
+        "fft24_blend0.25": 0.7858929745883135,
+        "fft24_blend0.5": 0.795341556780789,
+        "fft24_blend0.75": 0.8047901912542308,
+        "residual24_model": 1.6974068640726245,
+        "residual24_protect": 0.7764443401148717,
+        "residual24_blend0.25": 1.0066849580340684,
+        "residual24_blend0.5": 1.2369256282342314,
+        "residual24_blend0.75": 1.4671661938724616,
+        "serial": 1.9089610621819357
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            145,
+            304
+          ],
+          "fitted": [
+            145.3611366315816,
+            304.0555766721876
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.34379899948351067,
+            0.020598045056544834
+          ],
+          "fit_error_bins": [
+            0.01733763209801964,
+            0.0349786271310677
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.01023516045609791,
+          "sign_error_improvement_lower": 0.0044992874695581235
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n8_strong_weak",
+      "target": 8,
+      "retention": {
+        "bypass": 0.515997531954906,
+        "old40": 0.6381627391126927,
+        "v1_model": 0.7876902524494129,
+        "v1_gate": 0.6381627391126927,
+        "fft24_model": 0.7712192868763096,
+        "fft24_protect": 0.6381627391126927,
+        "fft24_blend0.25": 0.6714268979738497,
+        "fft24_blend0.5": 0.7046910129945012,
+        "fft24_blend0.75": 0.7379551280151527,
+        "residual24_model": 1.2206433015477978,
+        "residual24_protect": 0.6381627391126927,
+        "residual24_blend0.25": 0.7837828358809635,
+        "residual24_blend0.5": 0.9294030203302452,
+        "residual24_blend0.75": 1.075023204779527,
+        "serial": 1.687101369244202
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            171,
+            367
+          ],
+          "fitted": [
+            171.00694443279096,
+            367.03784423655554
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.015793058473775545,
+            0.02723463981715213
+          ],
+          "fit_error_bins": [
+            0.008848625682844613,
+            0.010609596738390792
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0038078181998567016,
+          "sign_error_improvement_lower": 0.0003726748541780754
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "004_collision_plus5_offgrid",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            426,
+            2
+          ],
+          "fitted": [
+            426.2182498574721,
+            1.8939250097130014
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.2168343688503569,
+            0.10584769794297699
+          ],
+          "fit_error_bins": [
+            0.001415488621660188,
+            0.00022729234399321285
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.658069292799899,
+          "sign_error_improvement_lower": 0.48489286736860615
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "004_collision_plus5_offgrid",
+      "target": 2,
+      "retention": {
+        "bypass": 1.0215859192238763,
+        "old40": 0.47768370398286286,
+        "v1_model": 8.014784726853532e-05,
+        "v1_gate": 0.12769823990298454,
+        "fft24_model": 8.014833505551142e-05,
+        "fft24_protect": 0.47768370398286286,
+        "fft24_blend0.25": 0.35828282261102073,
+        "fft24_blend0.5": 0.23888191529144545,
+        "fft24_blend0.75": 0.11948103391960334,
+        "residual24_model": 8.01480563200965e-05,
+        "residual24_protect": 0.47768370398286286,
+        "residual24_blend0.25": 0.35828282261102073,
+        "residual24_blend0.5": 0.23888191529144545,
+        "residual24_blend0.75": 0.11948103391960334,
+        "serial": 1.0018507040012063e-05
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            83,
+            9
+          ],
+          "fitted": [
+            83.08837749314108,
+            9.465819366518577
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.08417184425161395,
+            0.47076151028500135
+          ],
+          "fit_error_bins": [
+            0.0042056488894104405,
+            0.004942143766413665
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": false,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.01535855883687593,
+          "sign_error_improvement_lower": -0.0003453091375686437
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 46745,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 341,
+        "evidence_changed_sign_components": 381,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": true,
+      "primary_new_half": false,
+      "primary_drop_over_005": true
+    },
+    {
+      "id": "005_n2_strong_weak_offgrid",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.25": 1.0,
+        "fft24_blend0.5": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.25": 1.0,
+        "residual24_blend0.5": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            162,
+            457
+          ],
+          "fitted": [
+            162.43903375260135,
+            457.29241694300833
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4387249904697228,
+            0.2920981089587258
+          ],
+          "fit_error_bins": [
+            0.00030876213156716403,
+            0.0003188340497217723
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6034430067859134,
+          "sign_error_improvement_lower": 0.4151563320107729
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n2_strong_weak_offgrid",
+      "target": 2,
+      "retention": {
+        "bypass": 0.5000018045224665,
+        "old40": 0.5000018045224665,
+        "v1_model": 0.0001750229208513369,
+        "v1_gate": 0.0625002255653083,
+        "fft24_model": 0.00017533657501552004,
+        "fft24_protect": 0.5000018045224665,
+        "fft24_blend0.25": 0.375045194033823,
+        "fft24_blend0.5": 0.2500885604102762,
+        "fft24_blend0.75": 0.12513194992163282,
+        "residual24_model": 0.00016991341702390428,
+        "residual24_protect": 0.5000018045224665,
+        "residual24_blend0.25": 0.3750438290745215,
+        "residual24_blend0.5": 0.25008585362657654,
+        "residual24_blend0.75": 0.12512788974608333,
+        "serial": 2.8820153429826354e-05
+      },
+      "near_candidates": [],
+      "remove_target_audit": {
+        "full_changed_sign_components": 12944,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 96,
+        "evidence_changed_sign_components": 113,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": true,
+      "primary_new_half": true,
+      "primary_drop_over_005": true
+    }
+  ],
+  "test": [
+    {
+      "id": "000_single_grid_a",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            194,
+            480
+          ],
+          "fitted": [
+            194.00125081113617,
+            479.9992440948149
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0012508111361739793,
+            0.0007559051850876131
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6250215416915035,
+          "sign_error_improvement_lower": 0.3344077096879465
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "001_single_offgrid_a",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            143,
+            144
+          ],
+          "fitted": [
+            143.17060708355592,
+            143.9633214007694
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.17189183352331838,
+            0.03882023341424201
+          ],
+          "fit_error_bins": [
+            0.0012847499673398488,
+            0.002141634183658425
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6092522494384996,
+          "sign_error_improvement_lower": 0.4979757524363096
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n4_spread",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            446,
+            348
+          ],
+          "fitted": [
+            446.00459646214574,
+            347.9997319967479
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.004596462145741498,
+            0.00026800325213116594
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.4921073569065432,
+          "sign_error_improvement_lower": 0.29162866650414326
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n4_spread",
+      "target": 2,
+      "retention": {
+        "bypass": 0.7598223084087281,
+        "old40": 0.8162153579364968,
+        "v1_model": 1.2801660001655615,
+        "v1_gate": 0.8162153579364968,
+        "fft24_model": 1.2829042110811246,
+        "fft24_protect": 0.8162153579364968,
+        "fft24_blend0.75": 1.1662319350188417,
+        "residual24_model": 0.8655793227828706,
+        "residual24_protect": 0.8162153579364968,
+        "residual24_blend0.75": 0.8532383734220279,
+        "serial": 1.298368984174306
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            121,
+            75
+          ],
+          "fitted": [
+            121.00114787875256,
+            75.01475797179728
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.001147878752590259,
+            0.014757971797280334
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.010108810169269521,
+          "sign_error_improvement_lower": 0.0041034709804279364
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n4_spread",
+      "target": 3,
+      "retention": {
+        "bypass": 0.7250026879545843,
+        "old40": 0.8052291212487673,
+        "v1_model": 0.6148926507737725,
+        "v1_gate": 0.8052291212487673,
+        "fft24_model": 0.6388107362538002,
+        "fft24_protect": 0.8052291212487673,
+        "fft24_blend0.75": 0.8052291212487673,
+        "residual24_model": 0.8305547733465496,
+        "residual24_protect": 0.8052291212487673,
+        "residual24_blend0.75": 0.8242233347225365,
+        "serial": 0.9398996906548267
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            443,
+            69
+          ],
+          "fitted": [
+            443.00283728237275,
+            68.98692338219917
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.00283728237275227,
+            0.013076617800834356
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.029504139632486374,
+          "sign_error_improvement_lower": 0.015589371587423803
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "002_n4_spread",
+      "target": 4,
+      "retention": {
+        "bypass": 0.7644344266626409,
+        "old40": 0.8996008431511765,
+        "v1_model": 1.3493858639473009,
+        "v1_gate": 0.8996008431511765,
+        "fft24_model": 1.3512604246907878,
+        "fft24_protect": 0.8996008431511765,
+        "fft24_blend0.75": 1.238345506250826,
+        "residual24_model": 1.5015692656511805,
+        "residual24_protect": 0.8996008431511765,
+        "residual24_blend0.75": 1.3510771830812385,
+        "serial": 1.6644286352318007
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            373,
+            214
+          ],
+          "fitted": [
+            372.9803770686245,
+            214.00616899877775
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.019622931375522512,
+            0.006168998777752677
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0782925512177635,
+          "sign_error_improvement_lower": 0.043666143180084105
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n4_near_pairs",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            192,
+            149
+          ],
+          "fitted": [
+            191.92091212981663,
+            148.6094478635842
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.10343132309083103,
+            0.3849709601295217
+          ],
+          "fit_error_bins": [
+            0.024343452907487517,
+            0.005581176286312939
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.3447116851018044,
+          "sign_error_improvement_lower": 0.1711184848496998
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n4_near_pairs",
+      "target": 2,
+      "retention": {
+        "bypass": 0.9177657313950982,
+        "old40": 0.9112118724649108,
+        "v1_model": 0.9863979658917025,
+        "v1_gate": 0.9177657313950982,
+        "fft24_model": 0.983078295052012,
+        "fft24_protect": 0.9177657313950982,
+        "fft24_blend0.75": 0.9651116723903583,
+        "residual24_model": 0.9708540577388329,
+        "residual24_protect": 0.9177657313950982,
+        "residual24_blend0.75": 0.9559435114203524,
+        "serial": 0.9774314652607567
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            195,
+            153
+          ],
+          "fitted": [
+            194.85834180787543,
+            152.61697672150262
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.10343132309083103,
+            0.3849709601295217
+          ],
+          "fit_error_bins": [
+            0.03822686903373551,
+            0.001947681632145759
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.24501659292235858,
+          "sign_error_improvement_lower": 0.11097013519588853
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n4_near_pairs",
+      "target": 3,
+      "retention": {
+        "bypass": 0.8652499204974905,
+        "old40": 0.887007911641037,
+        "v1_model": 0.9971451272766262,
+        "v1_gate": 0.887007911641037,
+        "fft24_model": 0.9870509825657975,
+        "fft24_protect": 0.887007911641037,
+        "fft24_blend0.75": 0.9620401930947907,
+        "residual24_model": 0.988295369671234,
+        "residual24_protect": 0.887007911641037,
+        "residual24_blend0.75": 0.9629734399442348,
+        "serial": 0.9983689050358721
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            139,
+            377
+          ],
+          "fitted": [
+            138.74877174159047,
+            376.852013608756
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.1994079816423664,
+            0.14853048172369654
+          ],
+          "fit_error_bins": [
+            0.05182027676710277,
+            0.0005440904797069379
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.14667283717741472,
+          "sign_error_improvement_lower": 0.07288847143289694
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "003_n4_near_pairs",
+      "target": 4,
+      "retention": {
+        "bypass": 0.9512481328118468,
+        "old40": 0.9700014000763495,
+        "v1_model": 1.0768384060080398,
+        "v1_gate": 0.9700014000763495,
+        "fft24_model": 1.0613290854278241,
+        "fft24_protect": 0.9700014000763495,
+        "fft24_blend0.75": 1.0384971640899554,
+        "residual24_model": 1.0675857143864391,
+        "residual24_protect": 0.9700014000763495,
+        "residual24_blend0.75": 1.0431896358089168,
+        "serial": 1.083224164310543
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            143,
+            381
+          ],
+          "fitted": [
+            142.86289646117956,
+            380.848331617867
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.1994079816423664,
+            0.14853048172369654
+          ],
+          "fit_error_bins": [
+            0.062304442821982775,
+            0.0031379004092286777
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.11515282979035009,
+          "sign_error_improvement_lower": 0.05922915604739076
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "004_n4_strong_weak",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            116,
+            134
+          ],
+          "fitted": [
+            115.9991107451768,
+            134.00423796468903
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0008892548232211084,
+            0.004237964689025375
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.5925231638353845,
+          "sign_error_improvement_lower": 0.44653209170080593
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "004_n4_strong_weak",
+      "target": 2,
+      "retention": {
+        "bypass": 0.5320739235544989,
+        "old40": 0.5320739235544989,
+        "v1_model": 1.4376245512300514,
+        "v1_gate": 0.5320739235544989,
+        "fft24_model": 1.432718160424715,
+        "fft24_protect": 0.5320739235544989,
+        "fft24_blend0.75": 1.207557101207161,
+        "residual24_model": 1.3239298031435984,
+        "residual24_protect": 0.5320739235544989,
+        "residual24_blend0.75": 1.1259658011196159,
+        "serial": 1.9858947047153974
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            332,
+            56
+          ],
+          "fitted": [
+            331.97784766795104,
+            56.02373710568068
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.022152332048960943,
+            0.02373710568065235
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0005582989792714678,
+          "sign_error_improvement_lower": -0.0010986328125
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "004_n4_strong_weak",
+      "target": 3,
+      "retention": {
+        "bypass": 0.5301615134524286,
+        "old40": 0.7952422701786429,
+        "v1_model": 1.208181586404448,
+        "v1_gate": 0.7952422701786429,
+        "fft24_model": 1.2169301135219028,
+        "fft24_protect": 0.7952422701786429,
+        "fft24_blend0.75": 1.1115081020193336,
+        "residual24_model": 1.3237586341215863,
+        "residual24_protect": 0.7952422701786429,
+        "residual24_blend0.75": 1.1916295684692277,
+        "serial": 1.985638001849134
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            102,
+            511
+          ],
+          "fitted": [
+            102.00415280068394,
+            510.9910989592675
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.004152800683982605,
+            0.008901040732553156
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0012511356808033434,
+          "sign_error_improvement_lower": -0.00042519338890238873
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "004_n4_strong_weak",
+      "target": 4,
+      "retention": {
+        "bypass": 0.5271890395041534,
+        "old40": 0.6381355827464507,
+        "v1_model": 0.9782804120042651,
+        "v1_gate": 0.6381355827464507,
+        "fft24_model": 0.9774925903602213,
+        "fft24_protect": 0.6381355827464507,
+        "fft24_blend0.75": 0.8926534022955609,
+        "residual24_model": 0.9877624629390334,
+        "residual24_protect": 0.6381355827464507,
+        "residual24_blend0.75": 0.9003557301231312,
+        "serial": 1.48164369440855
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            443,
+            354
+          ],
+          "fitted": [
+            443.00547939270854,
+            353.996282078311
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.005479392708593878,
+            0.0037179216890308453
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": false,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0027597630522984895,
+          "sign_error_improvement_lower": 0.000552389468454772
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0383376434972487,
+        "old40": 1.0890377626321164,
+        "v1_model": 0.9971382879232543,
+        "v1_gate": 1.0890377626321164,
+        "fft24_model": 0.9979331660925163,
+        "fft24_protect": 1.0890377626321164,
+        "fft24_blend0.75": 1.0890377626321164,
+        "residual24_model": 1.0016433508860858,
+        "residual24_protect": 1.0890377626321164,
+        "residual24_blend0.75": 1.0890377626321164,
+        "serial": 1.0679141927617228
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            130,
+            19
+          ],
+          "fitted": [
+            129.57342914954458,
+            19.488360063525235
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4261600446875491,
+            0.48631677918999117
+          ],
+          "fit_error_bins": [
+            0.00041080576789909173,
+            0.0020432843352296004
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.3385794057609962,
+          "sign_error_improvement_lower": 0.18196998324516178
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 2,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            178,
+            119
+          ],
+          "fitted": [
+            178.0408064479488,
+            119.00398639492937
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.03705685711463502,
+            0.004995434860660453
+          ],
+          "fit_error_bins": [
+            0.0037495908342179973,
+            0.00100903993129009
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.26018674351424487,
+          "sign_error_improvement_lower": 0.13365688792948618
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 3,
+      "retention": {
+        "bypass": 0.9553195163645123,
+        "old40": 0.9778847697065606,
+        "v1_model": 1.0035718413911991,
+        "v1_gate": 0.9778847697065606,
+        "fft24_model": 0.9969259974725531,
+        "fft24_protect": 0.9778847697065606,
+        "fft24_blend0.75": 0.992165690531055,
+        "residual24_model": 0.9830002996457748,
+        "residual24_protect": 0.9778847697065606,
+        "residual24_blend0.75": 0.9817213998364006,
+        "serial": 1.0066993421929802
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            64,
+            112
+          ],
+          "fitted": [
+            64.36595884498831,
+            111.87539045460409
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.36181157868782066,
+            0.11389568900744962
+          ],
+          "fit_error_bins": [
+            0.004147266300492447,
+            0.010713856388434806
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.1400889111085151,
+          "sign_error_improvement_lower": 0.0873643444623596
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 4,
+      "retention": {
+        "bypass": 0.9678586850388621,
+        "old40": 0.9926104285392804,
+        "v1_model": 1.0173829631680422,
+        "v1_gate": 0.9926104285392804,
+        "fft24_model": 1.0176553332688323,
+        "fft24_protect": 0.9926104285392804,
+        "fft24_blend0.75": 1.0113941070864443,
+        "residual24_model": 1.002200194299098,
+        "residual24_protect": 0.9926104285392804,
+        "residual24_blend0.75": 0.9998027686578732,
+        "serial": 1.0463645321803379
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            233,
+            412
+          ],
+          "fitted": [
+            233.34967481639444,
+            411.65186817747923
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.3542322832588525,
+            0.3570536989398079
+          ],
+          "fit_error_bins": [
+            0.004557466864412163,
+            0.0089218764189809
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.17470705084234853,
+          "sign_error_improvement_lower": 0.09440669758070959
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 5,
+      "retention": {
+        "bypass": 0.9505901438953732,
+        "old40": 0.9990943531818754,
+        "v1_model": 1.023860787475828,
+        "v1_gate": 0.9990943531818754,
+        "fft24_model": 1.018240294180759,
+        "fft24_protect": 0.9990943531818754,
+        "fft24_blend0.75": 1.0134537891795155,
+        "residual24_model": 1.0096930202543175,
+        "residual24_protect": 0.9990943531818754,
+        "residual24_blend0.75": 1.0070433139831616,
+        "serial": 1.0694093789078387
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            322,
+            212
+          ],
+          "fitted": [
+            322.1627963040463,
+            212.0695108649918
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.15046838120446182,
+            0.06204474411762817
+          ],
+          "fit_error_bins": [
+            0.012327922841905092,
+            0.0074661208741417795
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.08032061203611952,
+          "sign_error_improvement_lower": 0.053423993761268634
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 6,
+      "retention": {
+        "bypass": 0.9546259234861942,
+        "old40": 0.9708820442446428,
+        "v1_model": 1.0263048169805904,
+        "v1_gate": 0.9708820442446428,
+        "fft24_model": 1.0209862502864389,
+        "fft24_protect": 0.9708820442446428,
+        "fft24_blend0.75": 1.0084601987759898,
+        "residual24_model": 1.0061599839659576,
+        "residual24_protect": 0.9708820442446428,
+        "residual24_blend0.75": 0.9973404990356289,
+        "serial": 1.0371726247017827
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            262,
+            53
+          ],
+          "fitted": [
+            262.39659529321625,
+            52.60722218120521
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4035780816706733,
+            0.38890346192567904
+          ],
+          "fit_error_bins": [
+            0.006982788454422462,
+            0.003874356869090434
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.10450613116636218,
+          "sign_error_improvement_lower": 0.06315526918224873
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 7,
+      "retention": {
+        "bypass": 0.9561001660729114,
+        "old40": 1.005877574799775,
+        "v1_model": 1.0375111831355637,
+        "v1_gate": 1.005877574799775,
+        "fft24_model": 1.0365546567380066,
+        "fft24_protect": 1.005877574799775,
+        "fft24_blend0.75": 1.0288853695122278,
+        "residual24_model": 1.023835748533469,
+        "residual24_protect": 1.005877574799775,
+        "residual24_blend0.75": 1.0193462218412663,
+        "serial": 1.0893877400691077
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            367,
+            59
+          ],
+          "fitted": [
+            366.56952883523974,
+            58.99114314062489
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4299120881246381,
+            0.007645388495632233
+          ],
+          "fit_error_bins": [
+            0.0005590766356817767,
+            0.0012114708794683793
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.15730577329065243,
+          "sign_error_improvement_lower": 0.0937133557548722
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "005_n8_spread",
+      "target": 8,
+      "retention": {
+        "bypass": 0.9662673925891793,
+        "old40": 0.9864962635359171,
+        "v1_model": 1.0042242454446193,
+        "v1_gate": 0.9864962635359171,
+        "fft24_model": 1.0006054849890311,
+        "fft24_protect": 0.9864962635359171,
+        "fft24_blend0.75": 0.9970781952778306,
+        "residual24_model": 1.015407279593697,
+        "residual24_protect": 0.9864962635359171,
+        "residual24_blend0.75": 1.008179525579252,
+        "serial": 1.0354873305819068
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            141,
+            349
+          ],
+          "fitted": [
+            141.43361389449012,
+            349.09728483219783
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.43583398102822457,
+            0.10155550644094546
+          ],
+          "fit_error_bins": [
+            0.0022200865381023505,
+            0.004270674243116446
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.17066548604245355,
+          "sign_error_improvement_lower": 0.096685669071074
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            194,
+            434
+          ],
+          "fitted": [
+            193.99765463044076,
+            434.00346205119234
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0023453695592365875,
+            0.003462051192400395
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.27854543951097516,
+          "sign_error_improvement_lower": 0.1496296500553346
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 2,
+      "retention": {
+        "bypass": 1.0382638220315659,
+        "old40": 1.0859185176216137,
+        "v1_model": 1.001234687650737,
+        "v1_gate": 1.0859185176216137,
+        "fft24_model": 0.9997195185528296,
+        "fft24_protect": 1.0859185176216137,
+        "fft24_blend0.75": 1.0859185176216137,
+        "residual24_model": 1.0004162335917806,
+        "residual24_protect": 1.0859185176216137,
+        "residual24_blend0.75": 1.0859185176216137,
+        "serial": 1.098845844024727
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            198,
+            437
+          ],
+          "fitted": [
+            198.006976040417,
+            437.0059461217884
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.006976040416930118,
+            0.005946121788383607
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.13156932668341972,
+          "sign_error_improvement_lower": 0.07916510903785691
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 3,
+      "retention": {
+        "bypass": 0.920805871845024,
+        "old40": 0.9563814707068757,
+        "v1_model": 0.9998900200108555,
+        "v1_gate": 0.9563814707068757,
+        "fft24_model": 1.0008179717601864,
+        "fft24_protect": 0.9563814707068757,
+        "fft24_blend0.75": 0.9897088641331623,
+        "residual24_model": 1.0025906319059357,
+        "residual24_protect": 0.9563814707068757,
+        "residual24_blend0.75": 0.9910383592424742,
+        "serial": 1.0497094736438142
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            63,
+            445
+          ],
+          "fitted": [
+            63.00434516822111,
+            444.99579111127633
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0043451682211070874,
+            0.004208888723724158
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.21075562456430827,
+          "sign_error_improvement_lower": 0.11262743857975244
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 4,
+      "retention": {
+        "bypass": 0.91285606504641,
+        "old40": 0.9601035299522725,
+        "v1_model": 1.0043577622695226,
+        "v1_gate": 0.9601035299522725,
+        "fft24_model": 1.0050632178894285,
+        "fft24_protect": 0.9601035299522725,
+        "fft24_blend0.75": 0.9938232739856884,
+        "residual24_model": 1.007535995026915,
+        "residual24_protect": 0.9601035299522725,
+        "residual24_blend0.75": 0.9956779225971568,
+        "serial": 1.0924607170553935
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            68,
+            449
+          ],
+          "fitted": [
+            67.99841217913428,
+            449.00736886170085
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0015878208657227333,
+            0.007368861700797424
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.1696512116611749,
+          "sign_error_improvement_lower": 0.09963133776116963
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 5,
+      "retention": {
+        "bypass": 1.0146413559329863,
+        "old40": 1.0731640460741256,
+        "v1_model": 1.0220012544811319,
+        "v1_gate": 1.0731640460741256,
+        "fft24_model": 1.0218738236833218,
+        "fft24_protect": 1.0731640460741256,
+        "fft24_blend0.75": 1.0731640460741256,
+        "residual24_model": 1.0210345513593757,
+        "residual24_protect": 1.0731640460741256,
+        "residual24_blend0.75": 1.0731640460741256,
+        "serial": 1.099057907191688
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            321,
+            445
+          ],
+          "fitted": [
+            320.99794085138234,
+            444.9916863355163
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0020591486176613216,
+            0.008313664483694083
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.14661240173249002,
+          "sign_error_improvement_lower": 0.08371452406046129
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 6,
+      "retention": {
+        "bypass": 0.9924813665674507,
+        "old40": 1.0212550859543024,
+        "v1_model": 1.0094038382054626,
+        "v1_gate": 1.0212550859543024,
+        "fft24_model": 1.0103014209914656,
+        "fft24_protect": 1.0212550859543024,
+        "fft24_blend0.75": 1.0212550859543024,
+        "residual24_model": 1.0078706506924158,
+        "residual24_protect": 1.0212550859543024,
+        "residual24_blend0.75": 1.0212550859543024,
+        "serial": 1.0537612543598782
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            325,
+            448
+          ],
+          "fitted": [
+            324.98878516122136,
+            447.99465193459787
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.011214838778641933,
+            0.005348065402131397
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.21253513035826144,
+          "sign_error_improvement_lower": 0.11993177048605898
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 7,
+      "retention": {
+        "bypass": 0.8999997416352936,
+        "old40": 0.9424069295799169,
+        "v1_model": 1.004546291370069,
+        "v1_gate": 0.9424069295799169,
+        "fft24_model": 1.0053820680716805,
+        "fft24_protect": 0.9424069295799169,
+        "fft24_blend0.75": 0.9896382503250593,
+        "residual24_model": 0.9934069964235037,
+        "residual24_protect": 0.9424069295799169,
+        "residual24_blend0.75": 0.9806569631507669,
+        "serial": 1.2019836314696426
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            273,
+            321
+          ],
+          "fitted": [
+            273.0053524259566,
+            320.9987951756065
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.005352425956516527,
+            0.0012048243934259517
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.09881132115666322,
+          "sign_error_improvement_lower": 0.06427188740355505
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "006_n8_near_pairs",
+      "target": 8,
+      "retention": {
+        "bypass": 0.9161488031721758,
+        "old40": 0.9541166642880389,
+        "v1_model": 1.0028510452887576,
+        "v1_gate": 0.9541166642880389,
+        "fft24_model": 1.0009056900871711,
+        "fft24_protect": 0.9541166642880389,
+        "fft24_blend0.75": 0.9892084336373881,
+        "residual24_model": 0.9966069111265906,
+        "residual24_protect": 0.9541166642880389,
+        "residual24_blend0.75": 0.9859843691075798,
+        "serial": 1.0639435789494909
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            278,
+            324
+          ],
+          "fitted": [
+            278.00590684413197,
+            324.0046041405965
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.005906844131914113,
+            0.004604140596484285
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.18606052721192098,
+          "sign_error_improvement_lower": 0.10193075061911858
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            88,
+            315
+          ],
+          "fitted": [
+            88.197350490121,
+            314.5475256117412
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.19653258200276014,
+            0.4577950000596047
+          ],
+          "fit_error_bins": [
+            0.000817908118278865,
+            0.005320611800812003
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.583319432991677,
+          "sign_error_improvement_lower": 0.3989504449006717
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 2,
+      "retention": {
+        "bypass": 0.5787788407461811,
+        "old40": 0.8681682611192717,
+        "v1_model": 0.000898146533956642,
+        "v1_gate": 0.8681682611192717,
+        "fft24_model": 0.0009102769462776027,
+        "fft24_protect": 0.8681682611192717,
+        "fft24_blend0.75": 0.21772478441939203,
+        "residual24_model": 1.8265910283240228,
+        "residual24_protect": 0.8681682611192717,
+        "residual24_blend0.75": 1.5869852868235454,
+        "serial": 2.739886443087455
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            115,
+            361
+          ],
+          "fitted": [
+            115.03733531362687,
+            361.4210756901178
+          ],
+          "origin": "符号残差",
+          "integer_error_bins": [
+            0.018980480676248135,
+            0.4467849670807027
+          ],
+          "fit_error_bins": [
+            0.018354832950649325,
+            0.025709276962970762
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.00925202306982032,
+          "sign_error_improvement_lower": 0.006796880961926547
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 3,
+      "retention": {
+        "bypass": 0.5671707173477085,
+        "old40": 0.8031572130333192,
+        "v1_model": 1.1821612790462348,
+        "v1_gate": 0.8031572130333192,
+        "fft24_model": 1.180298566776443,
+        "fft24_protect": 0.8031572130333192,
+        "fft24_blend0.75": 1.0860132099424136,
+        "residual24_model": 1.7825297591669274,
+        "residual24_protect": 0.8031572130333192,
+        "residual24_blend0.75": 1.5376867514212647,
+        "serial": 1.8993777712361783
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            327,
+            44
+          ],
+          "fitted": [
+            327.06487372634626,
+            43.92088062933463
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.08671005638359475,
+            0.09367162833399334
+          ],
+          "fit_error_bins": [
+            0.02183633003733121,
+            0.01455225766858348
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.03122370542051818,
+          "sign_error_improvement_lower": 0.019840644921880857
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 4,
+      "retention": {
+        "bypass": 0.5663440936737738,
+        "old40": 0.8403213708989038,
+        "v1_model": 0.0009005864879408949,
+        "v1_gate": 0.8403213708989038,
+        "fft24_model": 0.0009665984968511001,
+        "fft24_protect": 0.8403213708989038,
+        "fft24_blend0.75": 0.21080529735633943,
+        "residual24_model": 1.0028404468111392,
+        "residual24_protect": 0.8403213708989038,
+        "residual24_blend0.75": 0.962210702821176,
+        "serial": 1.4284844699984927
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            442,
+            123
+          ],
+          "fitted": [
+            442.29936871604673,
+            122.91980780942121
+          ],
+          "origin": "符号残差",
+          "integer_error_bins": [
+            0.3383805243406641,
+            0.20089631156946552
+          ],
+          "fit_error_bins": [
+            0.039011808293935246,
+            0.12070412099069472
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0005701914865261068,
+          "sign_error_improvement_lower": 2.5125750264326984e-05
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 5,
+      "retention": {
+        "bypass": 0.5593653943199071,
+        "old40": 0.778584491166728,
+        "v1_model": 1.0947887433290393,
+        "v1_gate": 0.778584491166728,
+        "fft24_model": 1.068159264152788,
+        "fft24_protect": 0.778584491166728,
+        "fft24_blend0.75": 0.9957655933704453,
+        "residual24_model": 1.0153902943273831,
+        "residual24_protect": 0.778584491166728,
+        "residual24_blend0.75": 0.9561888435372193,
+        "serial": 1.070485653840403
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            163,
+            456
+          ],
+          "fitted": [
+            163.32966976531443,
+            456.06247908793523
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.3275563924498215,
+            0.04070865638232135
+          ],
+          "fit_error_bins": [
+            0.0021133728646418604,
+            0.02177043155290903
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.008704871330146828,
+          "sign_error_improvement_lower": 0.0019058350171861594
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 6,
+      "retention": {
+        "bypass": 0.5652100983178827,
+        "old40": 0.7675390408324911,
+        "v1_model": 1.2376315425390871,
+        "v1_gate": 0.7675390408324911,
+        "fft24_model": 1.2151286974999989,
+        "fft24_protect": 0.7675390408324911,
+        "fft24_blend0.75": 1.103231283333122,
+        "residual24_model": 1.1139035104654835,
+        "residual24_protect": 0.7675390408324911,
+        "residual24_blend0.75": 1.0273123752467992,
+        "serial": 1.135387456066997
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            156,
+            18
+          ],
+          "fitted": [
+            155.6594181033559,
+            18.243543135396173
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.3044270531698885,
+            0.25832287687507005
+          ],
+          "fit_error_bins": [
+            0.03615484347426445,
+            0.014779741478889719
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0056617501637352165,
+          "sign_error_improvement_lower": 0.00047537686029530354
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 7,
+      "retention": {
+        "bypass": 0.5634673549910156,
+        "old40": 0.8452010060634592,
+        "v1_model": 1.1446714561465385,
+        "v1_gate": 0.8452010060634592,
+        "fft24_model": 1.1253589441174385,
+        "fft24_protect": 0.8452010060634592,
+        "fft24_blend0.75": 1.0553194331808793,
+        "residual24_model": 1.1351576732948747,
+        "residual24_protect": 0.8452010060634592,
+        "residual24_blend0.75": 1.0626685329100851,
+        "serial": 1.1958509236076444
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            339,
+            47
+          ],
+          "fitted": [
+            339.1026650406112,
+            47.154263923395746
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.1056335632885066,
+            0.14825709785475283
+          ],
+          "fit_error_bins": [
+            0.00296852267729264,
+            0.006006825541021499
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.00810103440325674,
+          "sign_error_improvement_lower": 0.002428724603302966
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "007_n8_strong_weak",
+      "target": 8,
+      "retention": {
+        "bypass": 0.5613806306737942,
+        "old40": 0.6376522181036699,
+        "v1_model": 1.217199629660714,
+        "v1_gate": 0.6376522181036699,
+        "fft24_model": 1.2047608820207678,
+        "fft24_protect": 0.6376522181036699,
+        "fft24_blend0.75": 1.0629837160414934,
+        "residual24_model": 1.1219099568003585,
+        "residual24_protect": 0.6376522181036699,
+        "residual24_blend0.75": 1.0008454890837803,
+        "serial": 1.162995545222828
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            445,
+            12
+          ],
+          "fitted": [
+            444.7931193687305,
+            12.42527799221967
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.21921364587365133,
+            0.42307547276880086
+          ],
+          "fit_error_bins": [
+            0.012333014604109849,
+            0.002202519450861473
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.008348969062695099,
+          "sign_error_improvement_lower": 0.002428724603302966
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "008_collision_minus3_grid",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            413,
+            54
+          ],
+          "fitted": [
+            413.00055345515,
+            54.001029113656216
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.0005534551499977169,
+            0.0010291136562159409
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6579952754270265,
+          "sign_error_improvement_lower": 0.4933725048387586
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "008_collision_minus3_grid",
+      "target": 2,
+      "retention": {
+        "bypass": 6.475110958541709,
+        "old40": 1.3587299639294288,
+        "v1_model": 2.2899030277975378e-10,
+        "v1_gate": 1.3587299639294288,
+        "fft24_model": 2.2905402148532758e-10,
+        "fft24_protect": 1.3587299639294288,
+        "fft24_blend0.75": 0.3396824909823572,
+        "residual24_model": 2.2905402148532758e-10,
+        "residual24_protect": 1.3587299639294288,
+        "residual24_blend0.75": 0.3396824909823572,
+        "serial": 4.4583331331167354e-11
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            809,
+            350
+          ],
+          "fitted": [
+            808.9937397098863,
+            349.9995355813138
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.0,
+            0.0
+          ],
+          "fit_error_bins": [
+            0.006260290113687006,
+            0.0004644186861924027
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": false,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.012960570294200854,
+          "sign_error_improvement_lower": -0.001016237627044927
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 16384,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 126,
+        "evidence_changed_sign_components": 135,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": true,
+      "primary_new_half": true,
+      "primary_drop_over_005": true
+    },
+    {
+      "id": "009_collision_plus5_offgrid",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            70,
+            390
+          ],
+          "fitted": [
+            70.40541959528389,
+            389.72339761051614
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.40422529369391214,
+            0.2771154936590392
+          ],
+          "fit_error_bins": [
+            0.0011943015899760212,
+            0.0005131041751837984
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6588671718558474,
+          "sign_error_improvement_lower": 0.4922451806546404
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "009_collision_plus5_offgrid",
+      "target": 2,
+      "retention": {
+        "bypass": 2.647358463547662,
+        "old40": 1.4338781412135413,
+        "v1_model": 0.00022076873770108987,
+        "v1_gate": 0.33091980794345777,
+        "fft24_model": 0.00022076842886451428,
+        "fft24_protect": 1.4338781412135413,
+        "fft24_blend0.75": 0.3586351230983125,
+        "residual24_model": 0.00022076799649330844,
+        "residual24_protect": 2.647358463547662,
+        "residual24_blend0.75": 2.647358463547662,
+        "serial": 2.7595999561663555e-05
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            352,
+            413
+          ],
+          "fitted": [
+            352.0205806552562,
+            412.6147270352222
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.021126468469674364,
+            0.3855774682953097
+          ],
+          "fit_error_bins": [
+            0.0005458132134776861,
+            0.0003045035175546218
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": false,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.01472948591465661,
+          "sign_error_improvement_lower": 1.788903705396503e-07
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 16401,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 123,
+        "evidence_changed_sign_components": 129,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": true,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "010_near_collision_plus5",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            284,
+            115
+          ],
+          "fitted": [
+            284.0550843518932,
+            115.14010290617448
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.056203451956093886,
+            0.14556286283476538
+          ],
+          "fit_error_bins": [
+            0.0011191000629082737,
+            0.005459956660303078
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": false,
+          "logistic_improvement_lower": 0.6034341976957156,
+          "sign_error_improvement_lower": 0.4000407581982941
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "010_near_collision_plus5",
+      "target": 2,
+      "retention": {
+        "bypass": 0.45545683884770205,
+        "old40": 0.560786796237727,
+        "v1_model": 0.08699523483866348,
+        "v1_gate": 0.560786796237727,
+        "fft24_model": 0.09033077602416051,
+        "fft24_protect": 0.560786796237727,
+        "fft24_blend0.75": 0.20794478961922716,
+        "residual24_model": 0.10609869106005057,
+        "residual24_protect": 0.560786796237727,
+        "residual24_blend0.75": 0.2197707216253072,
+        "serial": 0.05609942393576879
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            396,
+            64
+          ],
+          "fitted": [
+            396.29890779436636,
+            63.753217015866504
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            1.8810172597806059,
+            1.1721856858260935
+          ],
+          "fit_error_bins": [
+            1.5821094654142485,
+            0.9254027016925761
+          ],
+          "target_inside_refinement_box": false,
+          "retained_in_sparse_explanation": true,
+          "protected": false,
+          "h0_converged": false,
+          "h1_converged": false,
+          "logistic_improvement_lower": 0.0008721528084588866,
+          "sign_error_improvement_lower": -0.0006906182751372874
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 24084,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 181,
+        "evidence_changed_sign_components": 167,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": true,
+      "primary_new_half": true,
+      "primary_drop_over_005": true
+    },
+    {
+      "id": "011_n2_strong_weak_offgrid",
+      "target": 1,
+      "retention": {
+        "bypass": 1.0,
+        "old40": 1.0,
+        "v1_model": 1.0,
+        "v1_gate": 1.0,
+        "fft24_model": 1.0,
+        "fft24_protect": 1.0,
+        "fft24_blend0.75": 1.0,
+        "residual24_model": 1.0,
+        "residual24_protect": 1.0,
+        "residual24_blend0.75": 1.0,
+        "serial": 1.0
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            144,
+            428
+          ],
+          "fitted": [
+            143.5685223533453,
+            427.8762785837225
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.4312194460919727,
+            0.12377364596466123
+          ],
+          "fit_error_bins": [
+            0.0002582005627118633,
+            5.2229687184990325e-05
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": true,
+          "protected": true,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.6169981339374611,
+          "sign_error_improvement_lower": 0.2852028311228908
+        }
+      ],
+      "remove_target_audit": null,
+      "residual_model_failure": false,
+      "primary_new_half": false,
+      "primary_drop_over_005": false
+    },
+    {
+      "id": "011_n2_strong_weak_offgrid",
+      "target": 2,
+      "retention": {
+        "bypass": 0.5062188055199963,
+        "old40": 0.7593281894156934,
+        "v1_model": 2.4424864799406218e-05,
+        "v1_gate": 0.7593281894156934,
+        "fft24_model": 2.4321972379438487e-05,
+        "fft24_protect": 0.7593281894156934,
+        "fft24_blend0.75": 0.18985028913314386,
+        "residual24_model": 5.025927883981435e-05,
+        "residual24_protect": 0.7593281894156934,
+        "residual24_blend0.75": 0.18986973822763853,
+        "serial": 8.307014874497042e-06
+      },
+      "near_candidates": [
+        {
+          "integer": [
+            334,
+            389
+          ],
+          "fitted": [
+            333.60184112638836,
+            389.04121776126624
+          ],
+          "origin": "原FFT前16",
+          "integer_error_bins": [
+            0.3547169924975151,
+            0.03654518669895879
+          ],
+          "fit_error_bins": [
+            0.043441881114176795,
+            0.004672574567280208
+          ],
+          "target_inside_refinement_box": true,
+          "retained_in_sparse_explanation": false,
+          "protected": false,
+          "h0_converged": true,
+          "h1_converged": true,
+          "logistic_improvement_lower": 0.0002171760371403226,
+          "sign_error_improvement_lower": -0.00035390367067546496
+        }
+      ],
+      "remove_target_audit": {
+        "full_changed_sign_components": 36830,
+        "full_total": 1048576,
+        "fit_changed_sign_components": 296,
+        "evidence_changed_sign_components": 298,
+        "note": "按相同回波生成/缩放/ADC取整规则移除该目标；事后可辨识性审计，不用于推理。不变化说明至少存在此同符号替代场景；有变化不证明全局唯一可辨识。"
+      },
+      "residual_model_failure": true,
+      "primary_new_half": true,
+      "primary_drop_over_005": true
+    }
+  ]
+}

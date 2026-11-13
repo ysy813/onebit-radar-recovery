@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-212,-610",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_sys_rst_n -pg 1 -lvl 0 -x -90 -y -280 -defaultsOSRD
+preplace port port-id_key0 -pg 1 -lvl 0 -x -90 -y -260 -defaultsOSRD
+preplace port port-id_eth_rxc -pg 1 -lvl 0 -x -90 -y -240 -defaultsOSRD
+preplace port port-id_eth_rx_ctl -pg 1 -lvl 0 -x -90 -y -220 -defaultsOSRD
+preplace port port-id_eth_txc -pg 1 -lvl 5 -x 1550 -y -170 -defaultsOSRD
+preplace port port-id_eth_tx_ctl -pg 1 -lvl 5 -x 1550 -y -190 -defaultsOSRD
+preplace portBus eth_rxd -pg 1 -lvl 0 -x -90 -y -200 -defaultsOSRD
+preplace portBus eth_txd -pg 1 -lvl 5 -x 1550 -y -260 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 4 -x 1240 -y -370 -defaultsOSRD
+preplace inst eth_udp_loop_0 -pg 1 -lvl 1 -x 110 -y -230 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1240 -y -120 -defaultsOSRD
+preplace inst rst_eth_udp_loop_0_250M -pg 1 -lvl 2 -x 530 -y -330 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 1 -x 110 -y 10 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 3 -x 850 -y 10 -defaultsOSRD
+preplace inst test_udp_0 -pg 1 -lvl 2 -x 530 -y -100 -defaultsOSRD
+preplace netloc eth_udp_loop_0_axis_clk 1 0 4 -50 -60 290 -450 730 -280 960
+preplace netloc eth_udp_loop_0_fifo2fft_axis_tvalid 1 1 2 300 -480 760
+preplace netloc eth_udp_loop_0_rd_data_count 1 1 2 330 -430 710
+preplace netloc test_udp_0_rd_en 1 0 3 -70 -470 NJ -470 740
+preplace netloc sys_rst_n_0_1 1 0 1 N -280
+preplace netloc key_0_1 1 0 1 N -260
+preplace netloc eth_rxc_0_1 1 0 1 N -240
+preplace netloc eth_rx_ctl_0_1 1 0 1 N -220
+preplace netloc eth_rxd_0_1 1 0 1 N -200
+preplace netloc eth_udp_loop_0_fifo2fft_axis_tdata 1 1 2 270 10 750
+preplace netloc eth_udp_loop_0_eth_txc 1 1 4 320J -220 NJ -220 970 -240 1520J
+preplace netloc eth_udp_loop_0_eth_tx_ctl 1 1 4 310J -230 NJ -230 950 -250 1530J
+preplace netloc eth_udp_loop_0_eth_txd 1 1 4 280J -210 720J -260 N -260 NJ
+preplace netloc rst_eth_udp_loop_0_250M_peripheral_aresetn 1 1 3 350 -460 750 -270 940
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 4 340 -490 NJ -490 N -490 1530
+preplace netloc test_udp_0_M00_AXI 1 0 4 -60 -440 N -440 700 -180 N
+preplace netloc axi_interconnect_0_M00_AXI 1 3 2 940 -460 1510
+levelinfo -pg 1 -90 110 530 850 1240 1550
+pagesize -pg 1 -db -bbox -sgen -220 -710 1680 740
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_clkrst_cnt":"1"
+}

@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "checks": {
+    "closed_form_matches_direct_sums": true,
+    "first_zeros_match": true,
+    "shorter_aperture_neighbors_nonzero": true,
+    "full_aperture_integer_neighbor_zero": true,
+    "off_grid_multibit_tone_has_nonzero_neighbors": true,
+    "two_dimensional_product_matches": true,
+    "paired_source_quantizes_before_padding": true,
+    "chirp_count_passed_to_guards_not_mlp": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Constructed rectangular-observation DFT mathematics and source reading only",
+  "assumption": "No window weighting beyond the finite rectangular observation; ideal linear DFT",
+  "rows": [
+    {
+      "valid_chirps": 128,
+      "padded_dft_length": 512,
+      "first_zero_offset_bins": 4.0,
+      "relative_amplitudes": [
+        {
+          "offset_bins": 0.0,
+          "amplitude": 1.0
+        },
+        {
+          "offset_bins": 0.5,
+          "amplitude": 0.9744968871275518
+        },
+        {
+          "offset_bins": 1.0,
+          "amplitude": 0.9003219655997196
+        },
+        {
+          "offset_bins": 2.0,
+          "amplitude": 0.6366357516148734
+        },
+        {
+          "offset_bins": 3.0,
+          "amplitude": 0.30012238764245386
+        },
+        {
+          "offset_bins": 4.0,
+          "amplitude": 3.898563231830956e-17
+        }
+      ]
+    },
+    {
+      "valid_chirps": 512,
+      "padded_dft_length": 512,
+      "first_zero_offset_bins": 1.0,
+      "relative_amplitudes": [
+        {
+          "offset_bins": 0.0,
+          "amplitude": 1.0
+        },
+        {
+          "offset_bins": 0.5,
+          "amplitude": 0.6366207710540869
+        },
+        {
+          "offset_bins": 1.0,
+          "amplitude": 3.898196293364603e-17
+        },
+        {
+          "offset_bins": 2.0,
+          "amplitude": 3.89826967718962e-17
+        },
+        {
+          "offset_bins": 3.0,
+          "amplitude": 3.898391987862589e-17
+        },
+        {
+          "offset_bins": 4.0,
+          "amplitude": 3.898563231830956e-17
+        }
+      ]
+    }
+  ],
+  "off_grid_multibit_example": {
+    "constructed_tone_frequency_in_512_grid": 37.25,
+    "valid_chirps": 512,
+    "sampled_bins": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "relative_amplitudes": [
+      0.18006502868659993,
+      0.9003166692458155,
+      0.30010649798748984,
+      0.12861908824740753
+    ]
+  },
+  "maximum_closed_form_error": 2.220446049250313e-16,
+  "separable_2d_example": {
+    "direct_magnitude": 0.49719380158160104,
+    "product_magnitude": 0.49719380158160104
+  },
+  "interpretation": [
+    "Finite-observation sidelobes exist in multibit references without sign quantization",
+    "Zero padding samples the same finite-observation spectrum more densely; no added observations",
+    "The table is not a current network gain, a physical scene diagnosis, or a quality result",
+    "The current MLP has no separate chirp-count argument; fixed guards receive the count"
+  ],
+  "source_sha256": {
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "radar1_v7_fullrange_compare_v2/xfft_model.py": "c88427cd509ee6cd3dfa14031f887fbaabcbb15314776b606e61e25f13743d11",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+  },
+  "script_sha256": "d8f05787b57cba3270534572bb63f5cfbab2a1cda6056603d120a50f1142904d",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_direct_dft_run": true,
+  "radar_data_read": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "guard_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false,
+  "original_full_quality_status_preserved": "FAIL"
+}

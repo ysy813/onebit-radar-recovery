@@ -1,0 +1,104 @@
+IMAGING_INIT_PASS: AQ_AR=0x23000000, displays=0x25000000/0x26000000, bytes=11377128.
+Image preprocessing: startup mode selected after buffer initialization.
+DISPLAY_MODE=1280x720p60, scanout=844x422, COMPACT_EXP_V1.
+NETWORK_RANGE_BINS=0..1023; POWER_READ_GUARD=4MiB; MODEL=COMPACT_WEAKFIX_Q16.
+
+Build: radar1-scalar-compact-sd-fix-v1, period expectation=500 ms, limit=0 blocks (0=continuous).
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=32768 total_clusters=242304 cached_free=0.
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+SD_SPACE: counted_free=242291 free_MiB=7571 raw_blocks_available=3785.
+SD_FSINFO_STALE: cached=0 actual=242291; using scanned count.
+SD_SPACE_PASS: FAT allocation verified.
+SD_MANIFEST_PASS: 0:/RUN00002.CSV header_bytes=121 synced.
+New segment: 0:/LNG00001.BIN, max=256 MiB.
+SG DMA armed: 64 buffers, 128 MiB, non-cyclic ownership.
+DMA_CONFIG: control/status stream disabled (BSP=0); raw capture needs no status packets.
+DMA_DIAG ARMED: CR=00010003 SR=00010008 errors=00000000 faults=0 branch=0.
+DMA_DESC: CUR=00000000:27F00040 TAIL=00000000:27F00FC0.
+DMA_RING: Hw=64 Free=0 Pre=0 Post=0 head=27F00000 tail=27F00FC0.
+DMA_BD0: next=27F00040 buf=28000000 ctrl=00200000 sts=00000000.
+DMA_BD1: next=27F00080 buf=28200000 ctrl=00200000 sts=00000000.
+DMA_BD2: next=27F000C0 buf=28400000 ctrl=00200000 sts=00000000.
+DMA_BD3: next=27F00100 buf=28600000 ctrl=00200000 sts=00000000.
+DMA_POOL0: C5535571 55E49774 C5535461 54E49374 (live sample, not an integrity verdict).
+BRANCH_ENABLE=3 (bit0=imaging, bit1=storage).
+IMAGE_MODE_REQUEST=ONE_BIT, amplitude=64, I/Q signed separately.
+NETWORK_REQUEST=1, scalar-compact-exp-v1, power64 gain-squared, PL inference.
+NET: enabled=0 busy=0 done=0 image_in=0 image_skip=0 infer_ms=0 fault=0 status=00007101.
+ACTION: PL_KEY2 once, wait 5 sec, then Trigger Frame. Frames=60 for first test (0=continuous), Periodicity=500 ms, click Set.
+For continuous mode, Stop Frame in Studio; do not cut power to request a clean stop.
+Stored=1 files=1 pending=1/64 max_pending=1 write=586 ms max_write=586 faults=0 fnv=E576277C.
+PROFILE: freeze=11 write=579 sync=6 csv=0 cycle=598 avg_busy=598 ms.
+WARNING: measured processing average >= 500 ms; increase radar Periodicity.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=2 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=3 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=4 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=5 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=6 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=7 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=0 image_in=1 image_skip=8 infer_ms=0 fault=0 status=0000710E.
+NET: enabled=1 busy=1 done=1 image_in=1 image_skip=9 infer_ms=3886 fault=0 status=0001710F.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=9 infer_ms=3886 fault=0 status=0001710B.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=10 infer_ms=3886 fault=0 status=0001710E.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=11 infer_ms=3886 fault=0 status=0001710E.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=12 infer_ms=3886 fault=0 status=0001710E.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=13 infer_ms=3886 fault=0 status=0001710E.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=14 infer_ms=3886 fault=0 status=0001710E.
+Stored=16 files=1 pending=0/64 max_pending=1 write=157 ms max_write=659 faults=0 fnv=BC20425C.
+PROFILE: freeze=11 write=153 sync=3 csv=1 cycle=171 avg_busy=334 ms.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=15 infer_ms=3886 fault=0 status=0001710E.
+NET: enabled=1 busy=1 done=1 image_in=2 image_skip=16 infer_ms=3886 fault=0 status=0001710E.
+NET: enabled=1 busy=1 done=2 image_in=2 image_skip=18 infer_ms=3888 fault=0 status=0002710F.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=19 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=20 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=22 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=23 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=24 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=25 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=2 image_in=3 image_skip=26 infer_ms=3888 fault=0 status=0002710E.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=27 infer_ms=3888 fault=0 status=0003710B.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=28 infer_ms=3888 fault=0 status=0003710E.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=29 infer_ms=3888 fault=0 status=0003710E.
+Stored=32 files=1 pending=0/64 max_pending=1 write=362 ms max_write=707 faults=0 fnv=25F1C0E0.
+PROFILE: freeze=11 write=341 sync=20 csv=2 cycle=376 avg_busy=393 ms.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=31 infer_ms=3888 fault=0 status=0003710E.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=32 infer_ms=3888 fault=0 status=0003710E.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=34 infer_ms=3888 fault=0 status=0003710E.
+NET: enabled=1 busy=1 done=3 image_in=4 image_skip=35 infer_ms=3888 fault=0 status=0003710E.
+NET: enabled=1 busy=1 done=4 image_in=4 image_skip=35 infer_ms=3888 fault=0 status=0004710F.
+NET: enabled=1 busy=1 done=4 image_in=4 image_skip=36 infer_ms=3888 fault=0 status=0004710F.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=37 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=38 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=39 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=40 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=41 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=42 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=43 infer_ms=3888 fault=0 status=0004710E.
+NET: enabled=1 busy=1 done=4 image_in=5 image_skip=44 infer_ms=3888 fault=0 status=0004710E.
+Stored=48 files=1 pending=0/64 max_pending=1 write=210 ms max_write=707 faults=0 fnv=D3C89BE7.
+PROFILE: freeze=11 write=202 sync=7 csv=2 cycle=223 avg_busy=411 ms.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=45 infer_ms=3888 fault=0 status=0005710B.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=46 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=47 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=48 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=49 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=51 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=52 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=5 image_in=6 image_skip=53 infer_ms=3888 fault=0 status=0005710E.
+NET: enabled=1 busy=1 done=6 image_in=6 image_skip=54 infer_ms=3888 fault=0 status=0006710F.
+NET: enabled=1 busy=0 done=6 image_in=6 image_skip=54 infer_ms=3888 fault=0 status=00067109.
+No complete block for 5000 ms; stopping and draining saved data.
+NET: enabled=1 busy=0 done=6 image_in=6 image_skip=54 infer_ms=3888 fault=0 status=00067109.
+Recording ended: 60 blocks, elapsed=46671 ms. Click Stop Frame now.
+DMA_DIAG BEFORE_RESET: CR=00010003 SR=00011008 errors=00000000 faults=0 branch=3.
+DMA_DESC: CUR=00000000:27F00F40 TAIL=00000000:27F00EC0.
+DMA_RING: Hw=64 Free=0 Pre=0 Post=0 head=27F00F00 tail=27F00EC0.
+DMA_BD0: next=27F00040 buf=28000000 ctrl=00200000 sts=00000000.
+DMA_BD1: next=27F00080 buf=28200000 ctrl=00200000 sts=00000000.
+DMA_BD2: next=27F000C0 buf=28400000 ctrl=00200000 sts=00000000.
+DMA_BD3: next=27F00100 buf=28600000 ctrl=00200000 sts=00000000.
+DMA_POOL0: 005EFF28 0078FF7F 005CFFBF 002D0009 (live sample, not an integrity verdict).
+Verifying saved files...
+Readback PASS: 0:/LNG00001.BIN, blocks=60.
+RESULT: PASS, stored=60 blocks, files=1, max_pending=1, acquisition_error=0.
+Manifest: 0:/RUN00002.CSV. Partial files retained.

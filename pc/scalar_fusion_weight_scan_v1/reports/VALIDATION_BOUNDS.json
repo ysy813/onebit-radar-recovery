@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "frame": "003_n8_strong_weak",
+      "target": 3,
+      "source_pixel": 135245,
+      "old_retention": 0.7880812883377075,
+      "model_retention": 0.5057871341705322,
+      "unprotected": true,
+      "half_alpha_bound": 1.0,
+      "drop005_alpha_bound": 0.17712020874023438
+    },
+    {
+      "frame": "003_n8_strong_weak",
+      "target": 4,
+      "source_pixel": 166610,
+      "old_retention": 0.778337299823761,
+      "model_retention": 0.6376420259475708,
+      "unprotected": true,
+      "half_alpha_bound": 1.0,
+      "drop005_alpha_bound": 0.3553779721260071
+    },
+    {
+      "frame": "004_collision_plus5_offgrid",
+      "target": 2,
+      "source_pixel": 42505,
+      "old_retention": 0.4776836931705475,
+      "model_retention": 8.014805644052103e-05,
+      "unprotected": true,
+      "half_alpha_bound": null,
+      "drop005_alpha_bound": 0.1046893373131752
+    },
+    {
+      "frame": "005_n2_strong_weak_offgrid",
+      "target": 2,
+      "source_pixel": 218491,
+      "old_retention": 0.5000017881393433,
+      "model_retention": 0.0001699134154478088,
+      "unprotected": true,
+      "half_alpha_bound": 3.577481493266532e-06,
+      "drop005_alpha_bound": 0.10003363341093063
+    }
+  ]
+}

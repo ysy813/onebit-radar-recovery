@@ -1,0 +1,270 @@
+{
+  "scope": "Documentation/source audit only; not a new model quality or board test",
+  "status": "PASS",
+  "checks": {
+    "frozen_sources_unchanged": true,
+    "matching_training_snapshot": true,
+    "deployed_weight_matches_config": true,
+    "selected_float_checkpoint_matches": true,
+    "sd_fix_uses_same_bit": true,
+    "architecture": true,
+    "parameter_count": true,
+    "mac_count": true,
+    "quality_fail_preserved": true,
+    "weak_correction_pass": true,
+    "source_numeric_pass": true,
+    "board_log_scoped_pass": true
+  },
+  "shapes": {
+    "w0": [
+      32,
+      40
+    ],
+    "b0": [
+      32
+    ],
+    "w1": [
+      16,
+      32
+    ],
+    "b1": [
+      16
+    ],
+    "w2": [
+      1,
+      16
+    ],
+    "b2": [
+      1
+    ]
+  },
+  "parameters": 1857,
+  "mac_per_point": 1808,
+  "mlp_mac_per_1024x512_frame": 947912704,
+  "original_conv_macs": [
+    9,
+    864,
+    28000,
+    100352,
+    248832,
+    384
+  ],
+  "original_parameters": 378575,
+  "original_mac_per_frame": 198412075008,
+  "core_mac_ratio": 209.31471238938053,
+  "training": {
+    "record_count": 62,
+    "pool_samples": 1396736,
+    "record_prefix_counts": {
+      "prior_controlled": 20,
+      "historical_0000": 1,
+      "historical_0012": 1,
+      "historical_0024": 1,
+      "historical_0036": 1,
+      "historical_0048": 1,
+      "historical_0060": 1,
+      "field_rx": 12,
+      "field_sample": 12,
+      "synth_100000": 1,
+      "synth_100001": 1,
+      "synth_100002": 1,
+      "synth_100003": 1,
+      "synth_100004": 1,
+      "synth_100005": 1,
+      "synth_100006": 1,
+      "synth_100007": 1,
+      "synth_100008": 1,
+      "synth_100009": 1,
+      "synth_100010": 1,
+      "synth_100011": 1
+    },
+    "protect_strength": 20.0,
+    "learning_rate": 0.00015,
+    "selected_training_code": "scalar_restore_v2/runs/protected_patch5/training_source.py"
+  },
+  "existing_quality_summary": {
+    "passed": false,
+    "checks": {
+      "all_groups_nmse_at_most1p05_v7": true,
+      "all_groups_background_error_at_most1p10_v7": true,
+      "no_new_known_target_below_half": true,
+      "known_weak_target_error_not_worse": true,
+      "each_known_target_error": true,
+      "each_frame_better_than_bypass": true,
+      "real_no_new_numeric_peak_loss": true,
+      "real_no_periodic_gain_stripes": true,
+      "each_acquisition_subgroup_nmse_at_most1p05_v7": true,
+      "each_acquisition_subgroup_background_at_most1p10_v7": false,
+      "v2_background_and_nmse_nonregression": true
+    },
+    "groups": {
+      "field_temporal": {
+        "mean_nmse_ratio": 0.7858901510028656,
+        "v7_mean_nmse_ratio": 0.8883920894103925,
+        "nmse_relative_to_v7": 0.8846208339433151,
+        "background_error_relative_to_v7": 0.4987587795684746,
+        "background_power_relative_to_v7": 0.4869193887122196,
+        "extra_reference_peaks_below_half": 0
+      },
+      "synthetic": {
+        "mean_nmse_ratio": 0.4344459815439907,
+        "v7_mean_nmse_ratio": 0.5221452869417624,
+        "nmse_relative_to_v7": 0.832040415587332,
+        "background_error_relative_to_v7": 0.8896710030665674,
+        "background_power_relative_to_v7": 0.871788784334744,
+        "extra_reference_peaks_below_half": 1
+      }
+    },
+    "acquisition_subgroups": {
+      "synthetic_128": {
+        "mean_nmse_ratio": 0.4782109133571573,
+        "v7_mean_nmse_ratio": 0.551932243686725,
+        "nmse_relative_to_v7": 0.8664304700933333,
+        "background_error_relative_to_v7": 0.8559721303268201
+      },
+      "synthetic_512": {
+        "mean_nmse_ratio": 0.39068104973082407,
+        "v7_mean_nmse_ratio": 0.4923583301967998,
+        "nmse_relative_to_v7": 0.7934892653784603,
+        "background_error_relative_to_v7": 1.202078254096308
+      }
+    },
+    "known_targets": 120,
+    "known_weak_targets": 96,
+    "weak_mae_ratio": 0.7131314692335385,
+    "new_targets_below_half": 0,
+    "baseline_targets_below_half": 42,
+    "enhanced_targets_below_half": 17,
+    "v2_nonregression": {
+      "field_temporal": {
+        "nmse_relative_to_v2": 1.0,
+        "background_error_relative_to_v2": 1.0
+      },
+      "synthetic_128": {
+        "nmse_relative_to_v2": 1.0,
+        "background_error_relative_to_v2": 1.0
+      },
+      "synthetic_512": {
+        "nmse_relative_to_v2": 1.0025782307308235,
+        "background_error_relative_to_v2": 1.0057854339524757
+      }
+    }
+  },
+  "existing_board_final": {
+    "enabled": "1",
+    "busy": "0",
+    "done": "6",
+    "image_in": "6",
+    "image_skip": "54",
+    "infer_ms": "3888",
+    "fault": "0",
+    "status": "00067109"
+  },
+  "original_quality_status": "FAIL",
+  "source_manifest": {
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": {
+      "bytes": 5847,
+      "sha256": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+    },
+    "scalar_restore_v3/pc_candidate_compact/model_source.py": {
+      "bytes": 3628,
+      "sha256": "9b06dd3a4baf2766ac0cb7c114810c89250986052c20178973bcd8d34f867834"
+    },
+    "scalar_restore_v3/pc_candidate_compact/compact_guard.py": {
+      "bytes": 1930,
+      "sha256": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd"
+    },
+    "scalar_restore_v3/pc_candidate_compact/scalar_guard.py": {
+      "bytes": 2619,
+      "sha256": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3"
+    },
+    "scalar_restore_v3/pc_candidate_compact/config.json": {
+      "bytes": 3309,
+      "sha256": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95"
+    },
+    "scalar_restore_v3/pc_candidate_compact/weights.npz": {
+      "bytes": 14052,
+      "sha256": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4"
+    },
+    "scalar_restore_v3/pc_candidate_compact/root5.npy": {
+      "bytes": 131200,
+      "sha256": "dc75d783724ea887227062ef4b7cd410f6ece3d34fb2603ce42ca46159dd0077"
+    },
+    "scalar_restore_v3/pc_candidate_compact/model_float.pt": {
+      "bytes": 20537,
+      "sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311"
+    },
+    "scalar_restore_v2/runs/soft_patch5/config.json": {
+      "bytes": 16179,
+      "sha256": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18"
+    },
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": {
+      "bytes": 7252,
+      "sha256": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103"
+    },
+    "scalar_restore_v2/runs/soft_patch5/step_30000.pt": {
+      "bytes": 20537,
+      "sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311"
+    },
+    "scalar_restore_v2/prepare_data.py": {
+      "bytes": 4799,
+      "sha256": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035"
+    },
+    "scalar_restore_v2/common_v2.py": {
+      "bytes": 1201,
+      "sha256": "c60523f2b1b86a9fc555597d37a6d7bb45e866300f504d3b7caca77428643d7d"
+    },
+    "scalar_restore_v2/evaluate.py": {
+      "bytes": 9588,
+      "sha256": "22eb821943c846ed42e582ee3e4767726795219b68326524ea75a7b89d18cb57"
+    },
+    "scalar_streak_fix_v1/common.py": {
+      "bytes": 2763,
+      "sha256": "32df43f0344a183331bfd8d46a91990d7d8c5ee6e8877ed1f2b76b86bfce1913"
+    },
+    "radar1_scalar_compact_exp_v1/hls/scalar_compact.cpp": {
+      "bytes": 9143,
+      "sha256": "e00bd7ff26965000e7fbc2d5e3eb504365b296355a679370e10e27ffeb4deae8"
+    },
+    "radar1_scalar_compact_exp_v1/hls/parameters.h": {
+      "bytes": 519677,
+      "sha256": "ab7794be1f882e217a5b311e25a1465f414fc88f723278d3e9fe77d1a91fbbd3"
+    },
+    "radar1_scalar_compact_exp_v1/rtl/image_preprocess.v": {
+      "bytes": 2027,
+      "sha256": "718e33d8420b22b96f9e01cb07a3efb4b7060d6568da6d57f4b5e0e436b3f017"
+    },
+    "radar1_scalar_compact_exp_v1/rtl/network_frame_control.v": {
+      "bytes": 2932,
+      "sha256": "d63cd9fa6b9c44d73ec3c599629142c5c3083d53a05fbb15212e113d1c7067d4"
+    },
+    "radar1_scalar_compact_exp_v1/pkg/design_1_wrapper.bit": {
+      "bytes": 7797812,
+      "sha256": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb"
+    },
+    "radar1_scalar_compact_sd_fix_v1/pkg/design_1_wrapper.bit": {
+      "bytes": 7797812,
+      "sha256": "f884d829c217130fb930f85f78019975b1f5d4263f4dd38a482f73ef0d3d73cb"
+    },
+    "radar1_scalar_compact_sd_fix_v1/pkg/onebit_network_storage.elf": {
+      "bytes": 12023880,
+      "sha256": "8e7f7b98ec059565df2636f15d4434f14106cb19963e12644d6961d5675bd5d5"
+    },
+    "radar1_scalar_compact_sd_fix_v1/board_runs/log.txt": {
+      "bytes": 8516,
+      "sha256": "958ee9e5fb52edebc58751d3ac42f5d096f0a8486e08b6c70dffef155e5c1c41"
+    },
+    "scalar_restore_v3/compact_fresh_test/report.json": {
+      "bytes": 308666,
+      "sha256": "c8f293ec2b9fc53f75cc44bbe72c3a2fd67aee8770b6ee45f73238652fd79ad7"
+    },
+    "scalar_restore_v3/NUMERIC_VERIFICATION_COMPACT.json": {
+      "bytes": 2378,
+      "sha256": "aaa153a4333d02ec5774aa9b324c9de165f7752223d876c517bd48d2086f9fe1"
+    },
+    "cdqob_pc_online_v1/model.py": {
+      "bytes": 2337,
+      "sha256": "9848e904b03355e182e02913a2396c105feac60d590c50002ed1345cff17064a"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Failed to find real location of C:\Users\yang\AppData\Local\Programs\Python\Python313\python.exe
+GOLDEN_READY weak512 {'name': 'weak512', 'changed': 524166, 'suppressed': 517433, 'amplified': 6733, 'max_gain': 24576, 'peak': 1286666655855754}
+GOLDEN_READY history512 {'name': 'history512', 'changed': 524049, 'suppressed': 512162, 'amplified': 11887, 'max_gain': 24576, 'peak': 521337233412837}
+GOLDEN_READY u64_edges {'name': 'u64_edges', 'changed': 524257, 'suppressed': 521530, 'amplified': 2727, 'max_gain': 24576, 'peak': 18446744073709551615}

@@ -1,0 +1,610 @@
+{
+  "records": [
+    {
+      "id": "prior_controlled_train_case_000",
+      "pair_sha256": "9b1c49c873910e06903dbc6d8648c0fd6c1f3229b43589a0071ece232a1bc7e7",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_001",
+      "pair_sha256": "63c3deedae0bbe563a940dc1191059e1c7eaa83eb2acb2ffb418813db4047818",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_002",
+      "pair_sha256": "6da16f1d55d1a27e4d10066a5bbbe4a6cf098d496abb10fbe8cc1602e6d1d96e",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_003",
+      "pair_sha256": "9b58b3aff9aef2477406d5ca113cc4f5555d9684c9a270f795b6416f9f9db9ad",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_004",
+      "pair_sha256": "b41f5beaa0a391679b4f8ded94a57b671cacec05c457b11d1e29fd72934c1392",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_005",
+      "pair_sha256": "28cd811adda17683444bdd50773f3972ab24d7cf91426592566bd53e4aeaa77b",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_006",
+      "pair_sha256": "6f6856ae8d1ded5b1ea7f69a81cc3c14e4a298a7ab1ac997f6dc2f917c58ba13",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_007",
+      "pair_sha256": "02562a9cc9a1350cf656e5b593b2203c3676fd67e8774b36055703d95c0da32c",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_008",
+      "pair_sha256": "1eefd641fe5756379365c99d0c10d1b6dd66721c6a74b2dfc699b8fbf6b6cc5b",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_009",
+      "pair_sha256": "05796ef346bf5a2cef758f9d6a344c229b0667ca8b3fff5606cf2e6c42fcd22d",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_010",
+      "pair_sha256": "39bb9de4e474b716f08e840db5c30ad57f8aeab167ee6b5bc1c812171e3e4b1f",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_011",
+      "pair_sha256": "1d57e03a3a3cb37e07f6ede100c61c52d039a83670303dbe6c0bd08cfa2c911e",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_012",
+      "pair_sha256": "473365c56a020d8e565dc5dfa5a08407b4ab274b14948aea4fe504e343474b4a",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_013",
+      "pair_sha256": "5f5d583f1a3fcb79177ad67034bf67b3e73395c3b65fabd571905f0931944003",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_014",
+      "pair_sha256": "ca30f273ba10de4a0161190d305992e4e085af95f84108ba24154d19704c1757",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_015",
+      "pair_sha256": "ee9d012a9f4eea0bec971aa050020f1bf582124295cd9083a9380f20cb385138",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_016",
+      "pair_sha256": "23c048d4a85a559247ee3bd544deee264abd848d3620afdc9f262ae3b7fb5d86",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_017",
+      "pair_sha256": "5c0261718ae8702e0e339c37b46907220bad2ae12b3a9d99b53ea13a5bc9d3d2",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_018",
+      "pair_sha256": "775bb40930a727fc482bcea1772b16ee86762414d1ab638cacb3d1b24bd09a1d",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 512
+    },
+    {
+      "id": "prior_controlled_train_case_019",
+      "pair_sha256": "5c4cab1c92864d3a67b04ac828d539d7af9753c2b6ffd2102459465b5ab9e992",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "historical_0000",
+      "pair_sha256": "50af541f9af679117ab486c5fda3e9f1ace92c5bc9cdde906eb67b689e67294c",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 512
+    },
+    {
+      "id": "historical_0012",
+      "pair_sha256": "8356a63b5231bb1b984994df7675fefc419e962321bd3044f733787f575aacfd",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 512
+    },
+    {
+      "id": "historical_0024",
+      "pair_sha256": "3fd72381c30e8b7763e0594f93255e8d98f026f35f6236e1b11022da10c22059",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 512
+    },
+    {
+      "id": "historical_0036",
+      "pair_sha256": "9c57f96fd4f0cb598039e18593bd4f74b9c4bb98afaffce7fbc482ab66db6d10",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 512
+    },
+    {
+      "id": "historical_0048",
+      "pair_sha256": "dd50ff9bccd4c1a826bc36e876b8e28a9b1b28ed3f1df15ab3958e273935a45d",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 512
+    },
+    {
+      "id": "historical_0060",
+      "pair_sha256": "03badde31267942eae2f11362fdd9fe7b0c41bff7cf28b3c6bb2bd20b69f4596",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 512
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0015",
+      "pair_sha256": "e94a4b075665b50ad433b3564db8421477f184c707c43818a51efff161da84a5",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0015",
+      "pair_sha256": "83fa93bf3a3af55d30606d898cc5076d08b845228794a3577bb43c86b0f3064d",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0015",
+      "pair_sha256": "03d3149727899ea4391ba22ca59cb57b955d77273dfe9d160282b224c22fa3bd",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0015",
+      "pair_sha256": "dff2c01e52ef6dc85b5f67db46233f46fff869203a3c066cd69da62cee4ff7cf",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0079",
+      "pair_sha256": "a6e8c193a16588583aa3435e20530958a74e79859be2f06dd48a0750984bd0c2",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0079",
+      "pair_sha256": "2a0e69ba2be68d8f907f712f9a5269e57aa2a8f341cd1fb046063320fb6db770",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0079",
+      "pair_sha256": "419a054bf3011e219d081f8f33d08282b6acb9c5c049d6cce5ce85fc2c29ff98",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0079",
+      "pair_sha256": "ea1d45240111e8c673f8b48ba1effc50b9e4e3ca963949c04bb886836fae6dbe",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0143",
+      "pair_sha256": "c9942a87032822716fb60da686283ecbad9202d31dc9d6dfdce880a95a917629",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0143",
+      "pair_sha256": "e6de1885c68d0fc0f363683107f99173516dd139da631c650c9e8eb36bdb4187",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0143",
+      "pair_sha256": "48f81b0b8ba58001ef6f28a6479c429f63038fc1a79c3491b78901c3dbc57ebe",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0143",
+      "pair_sha256": "8661d2536d57e1426a79de7881134a000cf6cabe6b1485f85757c354f639b177",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0207",
+      "pair_sha256": "b37b0b21db23fb0a3f43329846f226d211f2db5c5c308f9f3bd49a2a3d76b2ee",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0207",
+      "pair_sha256": "1ab1af3759cb6a7206f2132037c3058910080305cf059028fd4cd4b972499edd",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0207",
+      "pair_sha256": "908bdfe8975d281dff9dd2cf9be2bfd8e1960a9bb9fbd47cc328b1fca8423911",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0207",
+      "pair_sha256": "1d47872b627c668726528702c185c792281812e59dd62972cf60921b11f57adb",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0271",
+      "pair_sha256": "f819906b2d1cf4b1b69d848ba1e30508a9f9e3177c95bf7a6faf1a93c005ca90",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0271",
+      "pair_sha256": "548fd38c336ac86f81eee45e72ccc257f989b0b8fc671ab344f0484f39417a2e",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0271",
+      "pair_sha256": "824b4be9803fdfa07533928d0e368a3e8b4caaf06b88d0151481b525f589a7ec",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0271",
+      "pair_sha256": "212d9bc5c6ee13352aa84736df22d81a011d483a485d0be9a95096631c0ab2dd",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0303",
+      "pair_sha256": "54c20c5a5ae52bc658c887bd92e3c2a9357bcc9a8474560a607c293f10e68553",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx3_0303",
+      "pair_sha256": "0cb0ddb6fe23765712d95bb49e42ae986e77e09ad6c1ef5c590fa58a770b8285",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx0_0303",
+      "pair_sha256": "a56f861b7dcb9ce7bf45b8f5011392cad7d67fd486820725e6a181ae48f85a33",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "field_sample_interleaved_rx3_0303",
+      "pair_sha256": "24e6bca4fe3fe79681f713e8e01c56d0dcfa252c16b09b04feb9d74e9f3a9cae",
+      "samples": 24576,
+      "known_centers": 0,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100000_128",
+      "pair_sha256": "09733945ba0570481c88a5b3f5ef40886b6e0baa9b2ce64ca6bcf6aa4f0a3c87",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100001_512",
+      "pair_sha256": "4a6582760623a904d98cbd162f72c03126d5b7abc1c1eba24f49e42275f83303",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "synth_100002_128",
+      "pair_sha256": "ac136b5bfe65ba51c38c892f4afa79321360657118ba788d5754591f5fb9335b",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100003_512",
+      "pair_sha256": "88e004f113df69b7515b8f1a7a5ab87e84ab4469cd0fcaf73f58969bcbc4388d",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "synth_100004_128",
+      "pair_sha256": "11834850ed6cb89038b3d4fe2fc9421571457ad86d30d4757866535ba64fdc98",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100005_512",
+      "pair_sha256": "4f073f7f795288bbc527c40c01377d8ecf30c11130309b85dfa265fbe1e11406",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "synth_100006_128",
+      "pair_sha256": "88e5a3061f1f5b66cd42410f3027bc8467153e90328f5d7526cf03023c9e6d72",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100007_512",
+      "pair_sha256": "fd6a1e9cfb63da5b1c275fad9bbb6ea81fed5df907367b161b67523eda026916",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "synth_100008_128",
+      "pair_sha256": "4e11d1fb34d00fc61ff1cb04ad75afddb2541865ce11600f3fdf9bd51aa1b051",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100009_512",
+      "pair_sha256": "32b98c00c08b6feb95a76c382e1a6a251c95b6f7e6e6c33334c0135548a6ffcc",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "synth_100010_128",
+      "pair_sha256": "baf4278b7946f395773683661f9f73275dfe1f0ba36c9f6a8a7c974538fccd21",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "synth_100011_512",
+      "pair_sha256": "b9667206d6c110b0c1f14c41bac4bc4014ae02863759d6f53636200c133cfff3",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120000_128",
+      "pair_sha256": "25c9e3d75d9528a88d9f62414e0c0ea1a54d79492e1313fd2af9f0a9f0fde686",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120001_512",
+      "pair_sha256": "be3f5930773ebe42bba4b57a21b430eed91f02ac4c445964998b75962b46dcc5",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120002_128",
+      "pair_sha256": "6e10f58b2a7bf29b150a394067f697828a50e1c37e110ec54a0d066ab2fee42e",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120003_512",
+      "pair_sha256": "3b9682240fc62783f449519d433fd8cb5113aaa01cf1c59dcbf5a5642b80afa4",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120004_128",
+      "pair_sha256": "03df02985eaf43d7c981ae6efcd20cb5c9775940efdaaa6bae5bf9851b86c1eb",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120005_512",
+      "pair_sha256": "f7a1f947057e6bd4c920e3d0fc1ea4b9cf038180ed764964ecd6b1a4cb6e7c0c",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120006_128",
+      "pair_sha256": "cc1e0cb52a60c7a506530bea3f6260310248a9527fdf85588748193b1ae142ae",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120007_512",
+      "pair_sha256": "0c3830b5d2266182672c2c9970ae0be1adde3525eb2e8ed31c0402f61e1272de",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120008_128",
+      "pair_sha256": "f6ebec6b3be9e253f324b5840111c8de3672c1a550cfeb5b060b45a760bc56f3",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120009_512",
+      "pair_sha256": "52f803c39f9d9a12ec81e3525fcb93ca89d6602b30ceaff1c554ae4bc0754550",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120010_128",
+      "pair_sha256": "01c1c68ac915281871d1862b61bde106ba943f74afea1a87db9aa836b75445e4",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120011_512",
+      "pair_sha256": "87e2f1c311003cd83acd9961f4efcc5eabe6a1f5a9fe191e1931ea4808530c8a",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120012_128",
+      "pair_sha256": "abfcab3f4f5ac04b5e65ce55472b20a7a12b37b8cc812d04a2394ac65c3bb464",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120013_512",
+      "pair_sha256": "e3e7f293e144f680a4fa09e9ee9c688497fddab7e44bf4ff8a2a0bc2ad95ee13",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120014_128",
+      "pair_sha256": "f952b594ecb8fd5840123277d71d72325bb82f472aa23812d5b24fcf94755e74",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120015_512",
+      "pair_sha256": "73f24989ff5c64f78b7db3d0f1249c5d68836781ea8b14ec5d200dd2ee989a67",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120016_128",
+      "pair_sha256": "d6cf7f59474009216ed415ef06e41885c8ceebbb874878a2451cf89d849c397f",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120017_512",
+      "pair_sha256": "7589df726289140f68f82cfc00f5ec0ec76bb50dacda9c6d17a6fb19d5c4d7c1",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120018_128",
+      "pair_sha256": "fe08e12850b7de9ae95316b70c05d8827ae49934dc12130d781bbb814c909a96",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120019_512",
+      "pair_sha256": "08031c1ac172aa43dc23a35dffd772d0616b1039938381854badd5dcd4a0d6b2",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120020_128",
+      "pair_sha256": "e892eccaf018125b7e86e077124c25940e019a0550ca26d4f111090fd76126d0",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120021_512",
+      "pair_sha256": "fe821ca345078b2f29d3f0e6afd63c0ba26edf90ccac73f1bdb0118154602a25",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    },
+    {
+      "id": "v3_synth_120022_128",
+      "pair_sha256": "3c9bd9dfcd3cd021f58248fd5bbbec6e6116f5569fc6297f7a5b6dbb8061eeb4",
+      "samples": 24576,
+      "known_centers": 7,
+      "actual_chirps": 128
+    },
+    {
+      "id": "v3_synth_120023_512",
+      "pair_sha256": "9051a0c248f62857af9c8442ec98a8d0390e532cf64ef56601125a13840fd554",
+      "samples": 24576,
+      "known_centers": 8,
+      "actual_chirps": 512
+    }
+  ],
+  "columns": "32 Q12 scaled features; input/reference amplitude; known-center; reference-local-peak; background; artifact; input-guard-mask; anchor; actual-chirps; v2-floating-final-gain",
+  "teacher_float_only_for_training": true,
+  "quality_comparisons_are_integer": true,
+  "no_previous_test_in_training": true
+}

@@ -1,0 +1,3 @@
+独立实验部署工程，来源radar1_scalar_v7_fullrange_v3。用户已授权将scalar_restore_v3/pc_candidate_compact部署并重建BIT。原整体背景质量门槛FAIL保留，本版仅实验上板资格。源radar1、所有已有发布包和模型只读。不自动访问板卡。只使用本目录新生成pkg/BUILD_READY.json对应的BIT/ELF。网络为40-32-16-1 Q16冻结v2权重加512chirp两层弱峰保护，必须整帧逐点核对。保持全距离、两电平、720p60、原始SD和四ELF模式。
+
+最终已离线构建并发布，状态EXPERIMENTAL_READY_FOR_BOARD_TEST；pkg/BUILD_READY.json与reports/STANDARD_CHECK.json均已通过。运行ZIP SHA256=1f9807b997d9e6842abbe581b9d91a613dad976d63eeddb79085bc500bc92dce。WNS+0.192ns、WHS+0.010ns；BRAM119.5/128。没有上板，不得以本次离线通过替代实际恢复质量或旧完整时序签核。已发布文件冻结，后续硬件修改另建目录。

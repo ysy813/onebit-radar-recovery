@@ -1,0 +1,97 @@
+{
+  "summary": {
+    "bypass": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 0,
+      "below_0_8": 12,
+      "new_half": 0,
+      "mean_target_error": 0.04261747852939626,
+      "minimum_retention": 0.5000069522926464,
+      "mean_false40": 329.3333333333333,
+      "mean_false30": 52.75,
+      "mean_nmse_ratio": 1.0,
+      "upper_gain_cannot_reach_half": 0,
+      "new_half_vs_old40": 0,
+      "recovered_half_vs_old40": 3
+    },
+    "old40": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 3,
+      "below_0_8": 11,
+      "new_half": 3,
+      "mean_target_error": 0.0270442434222154,
+      "minimum_retention": 0.3550021287816307,
+      "mean_false40": 109.0,
+      "mean_false30": 43.416666666666664,
+      "mean_nmse_ratio": 0.3809385985624496,
+      "upper_gain_cannot_reach_half": 0,
+      "new_half_vs_old40": 0,
+      "recovered_half_vs_old40": 0
+    },
+    "model": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 5,
+      "below_0_8": 7,
+      "new_half": 5,
+      "mean_target_error": 0.04111827901757634,
+      "minimum_retention": 2.515699168266126e-09,
+      "mean_false40": 10.583333333333334,
+      "mean_false30": 7.416666666666667,
+      "mean_nmse_ratio": 0.5181245521961911,
+      "upper_gain_cannot_reach_half": 0,
+      "new_half_vs_old40": 2,
+      "recovered_half_vs_old40": 0
+    },
+    "gated": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 3,
+      "below_0_8": 11,
+      "new_half": 3,
+      "mean_target_error": 0.027548907182948744,
+      "minimum_retention": 0.21469451628891892,
+      "mean_false40": 109.33333333333333,
+      "mean_false30": 43.083333333333336,
+      "mean_nmse_ratio": 0.41120157225997583,
+      "upper_gain_cannot_reach_half": 0,
+      "new_half_vs_old40": 0,
+      "recovered_half_vs_old40": 0
+    }
+  },
+  "frames": [
+    "000_single_grid_a",
+    "001_single_offgrid_a",
+    "002_n4_spread",
+    "003_n4_near_pairs",
+    "004_n4_strong_weak",
+    "005_n8_spread",
+    "006_n8_near_pairs",
+    "007_n8_strong_weak",
+    "008_collision_minus3_grid",
+    "009_collision_plus5_offgrid",
+    "010_near_collision_plus5",
+    "011_n2_strong_weak_offgrid"
+  ],
+  "candidates": {
+    "recalled": 44,
+    "targets": 46
+  },
+  "solver": {
+    "mean_seconds": 14.091863383344995,
+    "max_seconds": 30.331663699820638,
+    "converged": 4,
+    "frames": 12,
+    "mean_evidence_mismatch": 0.006072998046875
+  },
+  "gates": {
+    "no_new_target_half_vs_old": true,
+    "all_targets_at_least_half": false,
+    "artifact": false,
+    "target_mae": true
+  },
+  "quality_pass": false,
+  "deployment_ready": false
+}

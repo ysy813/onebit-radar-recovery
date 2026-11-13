@@ -1,0 +1,383 @@
+{
+  "status": "DIAGNOSTIC_NOT_A_CHANGED_QUALITY_VERDICT",
+  "reference_background_definition": "reference amplitude<0.003 with known-target neighborhoods excluded",
+  "reference_threshold_db": -50.45757490560675,
+  "summary": {
+    "bypass": {
+      "bg_error": 1.6895197289217059,
+      "total_error": 2.180315148669195,
+      "bg_power": 1.9484029436365655,
+      "reference_power": 10.159626364707947,
+      "bg_pixels": 4187731,
+      "fp003": 4917,
+      "fp01": 765,
+      "fp03": 87,
+      "bg_error_rms": 0.00063517331668716,
+      "bg_error_rms_db": -63.94215509382744,
+      "bg_error_fraction_total": 0.7748970280525468,
+      "nmse": 0.21460583986071335,
+      "bg_error_relative_to_v7": 2.9815501794887047
+    },
+    "v7": {
+      "bg_error": 0.5666581567349088,
+      "total_error": 1.0455412634591956,
+      "bg_power": 0.6750603984560044,
+      "reference_power": 10.159626364707947,
+      "bg_pixels": 4187731,
+      "fp003": 2283,
+      "fp01": 557,
+      "fp03": 81,
+      "bg_error_rms": 0.000367850358682174,
+      "bg_error_rms_db": -68.6865763230202,
+      "bg_error_fraction_total": 0.5419758899425052,
+      "nmse": 0.10291138925060767,
+      "bg_error_relative_to_v7": 1.0
+    },
+    "v2": {
+      "bg_error": 0.6751580968480096,
+      "total_error": 0.8535093148682088,
+      "bg_power": 0.7614315029689476,
+      "reference_power": 10.159626364707947,
+      "bg_pixels": 4187731,
+      "fp003": 1380,
+      "fp01": 719,
+      "fp03": 110,
+      "bg_error_rms": 0.00040152570352780694,
+      "bg_error_rms_db": -67.92573296571399,
+      "bg_error_fraction_total": 0.7910377603228167,
+      "nmse": 0.08400991180473832,
+      "bg_error_relative_to_v7": 1.191473358008784
+    }
+  },
+  "background_extra_relative_to_total_v7_error": 0.10377394360709061,
+  "rows": [
+    {
+      "id": "confirm_synth_116001_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.27128999516844265,
+          "total_error": 0.30868947870742175,
+          "bg_power": 0.3084939461140183,
+          "reference_power": 1.4446710348129272,
+          "bg_pixels": 523206,
+          "fp003": 570,
+          "fp01": 105,
+          "fp03": 10,
+          "bg_max_amplitude": 0.23069316403993545,
+          "bg_p999_amplitude": 0.0055780197745172
+        },
+        "v7": {
+          "bg_error": 0.06807136449812576,
+          "total_error": 0.11523346579850396,
+          "bg_power": 0.08150472648653906,
+          "reference_power": 1.4446710348129272,
+          "bg_pixels": 523206,
+          "fp003": 229,
+          "fp01": 63,
+          "fp03": 7,
+          "bg_max_amplitude": 0.07651285726275503,
+          "bg_p999_amplitude": 0.0029496470207066904
+        },
+        "v2": {
+          "bg_error": 0.08641846061321415,
+          "total_error": 0.11827747831392287,
+          "bg_power": 0.09687239991389825,
+          "reference_power": 1.4446710348129272,
+          "bg_pixels": 523206,
+          "fp003": 188,
+          "fp01": 99,
+          "fp03": 12,
+          "bg_max_amplitude": 0.061778441219671,
+          "bg_p999_amplitude": 0.004172075132789723
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116003_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.14420908869719357,
+          "total_error": 0.23019162769291418,
+          "bg_power": 0.17013227560266603,
+          "reference_power": 1.102101445198059,
+          "bg_pixels": 523705,
+          "fp003": 588,
+          "fp01": 82,
+          "fp03": 10,
+          "bg_max_amplitude": 0.057698442852596246,
+          "bg_p999_amplitude": 0.00497715517167106
+        },
+        "v7": {
+          "bg_error": 0.06707711129322826,
+          "total_error": 0.14331756886351132,
+          "bg_power": 0.08024502598417728,
+          "reference_power": 1.102101445198059,
+          "bg_pixels": 523705,
+          "fp003": 347,
+          "fp01": 72,
+          "fp03": 10,
+          "bg_max_amplitude": 0.057698442852596246,
+          "bg_p999_amplitude": 0.0036115554782739463
+        },
+        "v2": {
+          "bg_error": 0.07144381015048427,
+          "total_error": 0.09190745575194574,
+          "bg_power": 0.08244190484181417,
+          "reference_power": 1.102101445198059,
+          "bg_pixels": 523705,
+          "fp003": 176,
+          "fp01": 82,
+          "fp03": 12,
+          "bg_max_amplitude": 0.057698442852596246,
+          "bg_p999_amplitude": 0.003932328655482468
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116005_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.30029125710274435,
+          "total_error": 0.31709424291741195,
+          "bg_power": 0.34207423078718124,
+          "reference_power": 1.4395781755447388,
+          "bg_pixels": 523291,
+          "fp003": 771,
+          "fp01": 119,
+          "fp03": 12,
+          "bg_max_amplitude": 0.21423041627813816,
+          "bg_p999_amplitude": 0.005955862584108925
+        },
+        "v7": {
+          "bg_error": 0.08910386148774728,
+          "total_error": 0.11435858309370253,
+          "bg_power": 0.10485785754520595,
+          "reference_power": 1.4395781755447388,
+          "bg_pixels": 523291,
+          "fp003": 295,
+          "fp01": 81,
+          "fp03": 12,
+          "bg_max_amplitude": 0.07630912532954341,
+          "bg_p999_amplitude": 0.0034972185809762565
+        },
+        "v2": {
+          "bg_error": 0.11204879748180072,
+          "total_error": 0.12615401937425322,
+          "bg_power": 0.12426481772706396,
+          "reference_power": 1.4395781755447388,
+          "bg_pixels": 523291,
+          "fp003": 205,
+          "fp01": 103,
+          "fp03": 16,
+          "bg_max_amplitude": 0.054267115993552384,
+          "bg_p999_amplitude": 0.004735210737227554
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116007_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.14740947656951003,
+          "total_error": 0.2381436761416813,
+          "bg_power": 0.1723111090420111,
+          "reference_power": 1.0950661897659302,
+          "bg_pixels": 523718,
+          "fp003": 568,
+          "fp01": 89,
+          "fp03": 10,
+          "bg_max_amplitude": 0.055992105014651745,
+          "bg_p999_amplitude": 0.004927895300938834
+        },
+        "v7": {
+          "bg_error": 0.07032314093716746,
+          "total_error": 0.14822079360285642,
+          "bg_power": 0.08349108999150928,
+          "reference_power": 1.0950661897659302,
+          "bg_pixels": 523718,
+          "fp003": 330,
+          "fp01": 82,
+          "fp03": 10,
+          "bg_max_amplitude": 0.055992105014651745,
+          "bg_p999_amplitude": 0.0035867730639902754
+        },
+        "v2": {
+          "bg_error": 0.07510426243370748,
+          "total_error": 0.09421011496348398,
+          "bg_power": 0.08575267411868102,
+          "reference_power": 1.0950661897659302,
+          "bg_pixels": 523718,
+          "fp003": 171,
+          "fp01": 87,
+          "fp03": 13,
+          "bg_max_amplitude": 0.055992105014651745,
+          "bg_p999_amplitude": 0.004224953086719225
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116009_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.294740490286468,
+          "total_error": 0.3125934020478243,
+          "bg_power": 0.3347740672825077,
+          "reference_power": 1.4434326887130737,
+          "bg_pixels": 523308,
+          "fp003": 717,
+          "fp01": 103,
+          "fp03": 15,
+          "bg_max_amplitude": 0.21959649781826704,
+          "bg_p999_amplitude": 0.005773895558718738
+        },
+        "v7": {
+          "bg_error": 0.09042193264331418,
+          "total_error": 0.11578501057171682,
+          "bg_power": 0.10518505873032148,
+          "reference_power": 1.4434326887130737,
+          "bg_pixels": 523308,
+          "fp003": 279,
+          "fp01": 69,
+          "fp03": 15,
+          "bg_max_amplitude": 0.08169193446059039,
+          "bg_p999_amplitude": 0.0033897497407667336
+        },
+        "v2": {
+          "bg_error": 0.1070985936534539,
+          "total_error": 0.12178776839886149,
+          "bg_power": 0.11785022886860821,
+          "reference_power": 1.4434326887130737,
+          "bg_pixels": 523308,
+          "fp003": 173,
+          "fp01": 97,
+          "fp03": 16,
+          "bg_max_amplitude": 0.05601870097612353,
+          "bg_p999_amplitude": 0.004477822818440644
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116011_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.12788524763094514,
+          "total_error": 0.22920327624249448,
+          "bg_power": 0.15473776481316176,
+          "reference_power": 1.0993406772613525,
+          "bg_pixels": 523618,
+          "fp003": 540,
+          "fp01": 78,
+          "fp03": 5,
+          "bg_max_amplitude": 0.04916957756399864,
+          "bg_p999_amplitude": 0.004851519944340797
+        },
+        "v7": {
+          "bg_error": 0.05289518604978826,
+          "total_error": 0.14317301313789405,
+          "bg_power": 0.06647152123221553,
+          "reference_power": 1.0993406772613525,
+          "bg_pixels": 523618,
+          "fp003": 324,
+          "fp01": 70,
+          "fp03": 4,
+          "bg_max_amplitude": 0.04916957756399864,
+          "bg_p999_amplitude": 0.0034464058738567387
+        },
+        "v2": {
+          "bg_error": 0.061340077927614145,
+          "total_error": 0.08728473287558837,
+          "bg_power": 0.0731765268955698,
+          "reference_power": 1.0993406772613525,
+          "bg_pixels": 523618,
+          "fp003": 142,
+          "fp01": 79,
+          "fp03": 10,
+          "bg_max_amplitude": 0.04916957756399864,
+          "bg_p999_amplitude": 0.0038642669142143708
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116013_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.3026392020667422,
+          "total_error": 0.32126458042052397,
+          "bg_power": 0.34388529768326026,
+          "reference_power": 1.4481067657470703,
+          "bg_pixels": 523230,
+          "fp003": 770,
+          "fp01": 115,
+          "fp03": 21,
+          "bg_max_amplitude": 0.21294407589409353,
+          "bg_p999_amplitude": 0.0059066982153171636
+        },
+        "v7": {
+          "bg_error": 0.0908285639076915,
+          "total_error": 0.11945869313654482,
+          "bg_power": 0.10529336777290367,
+          "reference_power": 1.4481067657470703,
+          "bg_pixels": 523230,
+          "fp003": 267,
+          "fp01": 65,
+          "fp03": 19,
+          "bg_max_amplitude": 0.0739013681356097,
+          "bg_p999_amplitude": 0.0033260181205766754
+        },
+        "v2": {
+          "bg_error": 0.11341310493321213,
+          "total_error": 0.12990030672054892,
+          "bg_power": 0.12433017014664374,
+          "reference_power": 1.4481067657470703,
+          "bg_pixels": 523230,
+          "fp003": 190,
+          "fp01": 101,
+          "fp03": 22,
+          "bg_max_amplitude": 0.0567936258349166,
+          "bg_p999_amplitude": 0.004627595854107378
+        }
+      }
+    },
+    {
+      "id": "confirm_synth_116015_512",
+      "metrics": {
+        "bypass": {
+          "bg_error": 0.10105497139966027,
+          "total_error": 0.22313486449892314,
+          "bg_power": 0.12199425231175896,
+          "reference_power": 1.087329387664795,
+          "bg_pixels": 523655,
+          "fp003": 393,
+          "fp01": 74,
+          "fp03": 4,
+          "bg_max_amplitude": 0.05237008367073559,
+          "bg_p999_amplitude": 0.004435226334371836
+        },
+        "v7": {
+          "bg_error": 0.03793699591784606,
+          "total_error": 0.14599413525446567,
+          "bg_power": 0.04801175071313219,
+          "reference_power": 1.087329387664795,
+          "bg_pixels": 523655,
+          "fp003": 212,
+          "fp01": 55,
+          "fp03": 4,
+          "bg_max_amplitude": 0.04036784948056325,
+          "bg_p999_amplitude": 0.0027663283448164286
+        },
+        "v2": {
+          "bg_error": 0.04829098965452286,
+          "total_error": 0.08398743846960434,
+          "bg_power": 0.0567427804566685,
+          "reference_power": 1.087329387664795,
+          "bg_pixels": 523655,
+          "fp003": 135,
+          "fp01": 71,
+          "fp03": 9,
+          "bg_max_amplitude": 0.042319649708053894,
+          "bg_p999_amplitude": 0.0034081211936337133
+        }
+      }
+    }
+  ]
+}

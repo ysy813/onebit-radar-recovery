@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_multibit_relative_tone_amplitudes_match": true,
+    "chosen_examples_away_from_sign_boundaries": true,
+    "relative_change_can_change_both_symbols_and_power": true,
+    "positive_global_scale_preserves_symbols": true,
+    "different_relative_amplitudes_share_one_sign_cell": true,
+    "no_component_sign_root_inside_selected_open_cell": true,
+    "same_symbol_cell_has_identical_computed_power": true,
+    "power_ambiguity_uses_distinct_symbol_sequences": true,
+    "exact_integer_symbol_circular_shift_identity": true,
+    "ideal_dft_shift_theorem_matches_numerical_sums": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Specified 32-sample two-tone family with ideal direct DFT; no current network or radar data evaluated",
+  "signal": "exp(j*(2*pi*3*m/32+0.23)) + rho*exp(j*(2*pi*7*m/32+0.61))",
+  "quantizer": "64*(sgn_plus(real)+j*sgn_plus(imag))",
+  "samples": 32,
+  "rows": [
+    {
+      "relative_input_tone_amplitude": 0.0,
+      "multibit_bin7_to_bin3": 1.4367039031901888e-16,
+      "sign_component_changes_from_rho0": 0,
+      "onebit_bin7_to_bin3": 0.10242764012508904,
+      "onebit_power_change_max_from_rho0": 0.0,
+      "minimum_component_distance_from_zero": 0.03364410880821115
+    },
+    {
+      "relative_input_tone_amplitude": 0.1,
+      "multibit_bin7_to_bin3": 0.09999999999999992,
+      "sign_component_changes_from_rho0": 4,
+      "onebit_bin7_to_bin3": 0.10242764012508912,
+      "onebit_power_change_max_from_rho0": 4.774847184307873e-12,
+      "minimum_component_distance_from_zero": 0.0595252837136828
+    },
+    {
+      "relative_input_tone_amplitude": 0.2,
+      "multibit_bin7_to_bin3": 0.19999999999999993,
+      "sign_component_changes_from_rho0": 8,
+      "onebit_bin7_to_bin3": 0.28365945432446865,
+      "onebit_power_change_max_from_rho0": 502.1620635664576,
+      "minimum_component_distance_from_zero": 0.033314352542051645
+    },
+    {
+      "relative_input_tone_amplitude": 0.4,
+      "multibit_bin7_to_bin3": 0.39999999999999997,
+      "sign_component_changes_from_rho0": 8,
+      "onebit_bin7_to_bin3": 0.28365945432446865,
+      "onebit_power_change_max_from_rho0": 502.1620635664576,
+      "minimum_component_distance_from_zero": 0.2286109352365333
+    },
+    {
+      "relative_input_tone_amplitude": 0.8,
+      "multibit_bin7_to_bin3": 0.8000000000000002,
+      "sign_component_changes_from_rho0": 8,
+      "onebit_bin7_to_bin3": 0.28365945432446865,
+      "onebit_power_change_max_from_rho0": 502.1620635664576,
+      "minimum_component_distance_from_zero": 0.061964853481355275
+    },
+    {
+      "relative_input_tone_amplitude": 1.0,
+      "multibit_bin7_to_bin3": 0.9999999999999998,
+      "sign_component_changes_from_rho0": 16,
+      "onebit_bin7_to_bin3": 1.0765548844965525,
+      "onebit_power_change_max_from_rho0": 4135.4569343595695,
+      "minimum_component_distance_from_zero": 0.04520062425660787
+    }
+  ],
+  "selected_open_sign_cell": {
+    "lower": 0.1658833226035829,
+    "upper": 0.8629303857455545,
+    "checked_ratios": [
+      0.2,
+      0.4,
+      0.8
+    ],
+    "distinct_thresholds_in_0_to_1_rounded": [
+      0.036110688175,
+      0.165883322604,
+      0.862930385746,
+      0.910681328891
+    ]
+  },
+  "power_only_ambiguity": {
+    "first_rho": 0.0,
+    "second_rho": 0.1,
+    "changed_sign_components": 4,
+    "exact_circular_shift_samples": 11,
+    "maximum_complex_shift_identity_residual": 1.828892868439158e-13,
+    "maximum_relative_power_residual": 7.167761700304716e-16
+  },
+  "interpretation": [
+    "A finite sign word can retain some relative-amplitude distinctions while collapsing others",
+    "Fixed-frequency fixed-phase affine sign inequalities create open constant-observation cells",
+    "Distinct sign sequences related by circular shift have equal ideal DFT power",
+    "Current power/features cannot automatically use all information present in complex sign sequences",
+    "Toy signs, thresholds and spectral ratios are not network predictions, physical target labels or generic monotonic calibration",
+    "No equality claim for the current finite-precision Xilinx FFT follows from the ideal shift example"
+  ],
+  "source_sha256": {
+    "scalar_restore_v2/prepare_data.py": "4088928327277b29de34f8ad1c80ec283580f0b15da9ff7c23400b2eb7e00035",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a"
+  },
+  "script_sha256": "949feb0f9f26f84449937dc1e12cbaeb605f245b733b4a10cbbd15a762c12112",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "constructed_direct_dft_run": true,
+  "radar_data_read": false,
+  "radar_fft_run": false,
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "feature_extraction_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false,
+  "original_full_quality_status_preserved": "FAIL"
+}

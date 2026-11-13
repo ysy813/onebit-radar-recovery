@@ -1,0 +1,11 @@
+{
+  "full_system_timing_signoff": false,
+  "unclocked_sequential_cells_by_block": {
+    "cam_axi_data_0": 81,
+    "ov5640_dri_0": 123
+  },
+  "unclocked_latches_by_block": {
+    "interp_ip_0": 214
+  },
+  "legacy_external_io_constraint_gaps_retained": true
+}

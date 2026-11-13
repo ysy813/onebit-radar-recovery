@@ -1,0 +1,367 @@
+{
+  "status": "PASS",
+  "checks": {
+    "existing_release_file_hashes_match": true,
+    "trace_example_and_original_paired_archive_match": true,
+    "same_existing_synthetic_development_record": true,
+    "four_saved_point_gains_and_final_powers_match": true,
+    "saved_previous_stage_matches_first_guard": true,
+    "pointwise_error_conditions_match_known_reference": true,
+    "two_known_synthetic_target_rows_match_existing_report": true,
+    "attenuation_example_reduces_reference_error": true,
+    "first_protection_example_reduces_mlp_error": true,
+    "compact_can_revoke_useful_mlp_attenuation": true,
+    "known_weak_peak_returns_to_bypass_but_not_reference": true,
+    "known_collision_target_can_benefit_from_attenuation": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Reference interpretation of an already diagnosed synthetic development frame, not a new quality experiment",
+  "record_id": "confirm_synth_116013_512",
+  "prior_split": "development_including_previously_failed_test",
+  "input_peak_power": 1286666655855754,
+  "reference_peak_power": 2449410994044425402,
+  "point_rows": [
+    {
+      "position": [
+        83,
+        0
+      ],
+      "reference_power": 2449410994044425402,
+      "input_power": 1286666655855754,
+      "input_relative_amplitude": 1.0,
+      "reference_relative_amplitude": 1.0,
+      "reference_to_input_ratio": 1.0,
+      "known_reference_bounded_gain": 1.0,
+      "stages": {
+        "bypass": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 1286666655855754,
+          "relative_amplitude": 1.0,
+          "ideal_amplitude_without_output_rounding": 1.0,
+          "absolute_error": 0.0,
+          "squared_error": 0.0,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "mlp": {
+          "gain_q14": 16406,
+          "gain": 1.0013427734375,
+          "reconstructed_power": 1290124379384650,
+          "relative_amplitude": 1.0013427734375,
+          "ideal_amplitude_without_output_rounding": 1.0013427734375,
+          "absolute_error": 0.0013427734375,
+          "squared_error": 1.8030405044555664e-06,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "first_guard": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 1286666655855754,
+          "relative_amplitude": 1.0,
+          "ideal_amplitude_without_output_rounding": 1.0,
+          "absolute_error": 0.0,
+          "squared_error": 0.0,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "compact": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 1286666655855754,
+          "relative_amplitude": 1.0,
+          "ideal_amplitude_without_output_rounding": 1.0,
+          "absolute_error": 0.0,
+          "squared_error": 0.0,
+          "ideal_squared_error_improves_bypass": false
+        }
+      },
+      "exact_selected_synthetic_target_labels": [
+        "strong_static"
+      ],
+      "physical_target_label_inferred": false
+    },
+    {
+      "position": [
+        774,
+        511
+      ],
+      "reference_power": 4770498097,
+      "input_power": 58344130412905,
+      "input_relative_amplitude": 0.21294407589409353,
+      "reference_relative_amplitude": 4.413173808676769e-05,
+      "reference_to_input_ratio": 0.0002072456719045631,
+      "known_reference_bounded_gain": 0.125,
+      "stages": {
+        "bypass": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 58344130412905,
+          "relative_amplitude": 0.21294407589409353,
+          "ideal_amplitude_without_output_rounding": 0.21294407589409353,
+          "absolute_error": 0.21289994415600677,
+          "squared_error": 0.0453263862216308,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "mlp": {
+          "gain_q14": 2048,
+          "gain": 0.125,
+          "reconstructed_power": 911627037702,
+          "relative_amplitude": 0.026618009486766937,
+          "ideal_amplitude_without_output_rounding": 0.02661800948676169,
+          "absolute_error": 0.02657387774868017,
+          "squared_error": 0.000706170978601799,
+          "ideal_squared_error_improves_bypass": true
+        },
+        "first_guard": {
+          "gain_q14": 2048,
+          "gain": 0.125,
+          "reconstructed_power": 911627037702,
+          "relative_amplitude": 0.026618009486766937,
+          "ideal_amplitude_without_output_rounding": 0.02661800948676169,
+          "absolute_error": 0.02657387774868017,
+          "squared_error": 0.000706170978601799,
+          "ideal_squared_error_improves_bypass": true
+        },
+        "compact": {
+          "gain_q14": 2048,
+          "gain": 0.125,
+          "reconstructed_power": 911627037702,
+          "relative_amplitude": 0.026618009486766937,
+          "ideal_amplitude_without_output_rounding": 0.02661800948676169,
+          "absolute_error": 0.02657387774868017,
+          "squared_error": 0.000706170978601799,
+          "ideal_squared_error_improves_bypass": true
+        }
+      },
+      "exact_selected_synthetic_target_labels": [],
+      "physical_target_label_inferred": false
+    },
+    {
+      "position": [
+        25,
+        0
+      ],
+      "reference_power": 677849054788809,
+      "input_power": 160521822565,
+      "input_relative_amplitude": 0.011169507340678992,
+      "reference_relative_amplitude": 0.016635492620372224,
+      "reference_to_input_ratio": 1.489366729702239,
+      "known_reference_bounded_gain": 1.489366729702239,
+      "stages": {
+        "bypass": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 160521822565,
+          "relative_amplitude": 0.011169507340678992,
+          "ideal_amplitude_without_output_rounding": 0.011169507340678992,
+          "absolute_error": 0.005465985279693232,
+          "squared_error": 2.9876995077823095e-05,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "mlp": {
+          "gain_q14": 11460,
+          "gain": 0.699462890625,
+          "reconstructed_power": 78535034479,
+          "relative_amplitude": 0.007812655891362654,
+          "ideal_amplitude_without_output_rounding": 0.007812655891368484,
+          "absolute_error": 0.00882283672900957,
+          "squared_error": 7.78424479467603e-05,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "first_guard": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 160521822565,
+          "relative_amplitude": 0.011169507340678992,
+          "ideal_amplitude_without_output_rounding": 0.011169507340678992,
+          "absolute_error": 0.005465985279693232,
+          "squared_error": 2.9876995077823095e-05,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "compact": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 160521822565,
+          "relative_amplitude": 0.011169507340678992,
+          "ideal_amplitude_without_output_rounding": 0.011169507340678992,
+          "absolute_error": 0.005465985279693232,
+          "squared_error": 2.9876995077823095e-05,
+          "ideal_squared_error_improves_bypass": false
+        }
+      },
+      "exact_selected_synthetic_target_labels": [],
+      "physical_target_label_inferred": false
+    },
+    {
+      "position": [
+        200,
+        148
+      ],
+      "reference_power": 1750460482,
+      "input_power": 160601293586,
+      "input_relative_amplitude": 0.01117227189412381,
+      "reference_relative_amplitude": 2.67328538406498e-05,
+      "reference_to_input_ratio": 0.002392785826731469,
+      "known_reference_bounded_gain": 0.125,
+      "stages": {
+        "bypass": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 160601293586,
+          "relative_amplitude": 0.01117227189412381,
+          "ideal_amplitude_without_output_rounding": 0.01117227189412381,
+          "absolute_error": 0.011145539040283162,
+          "squared_error": 0.0001242230404984761,
+          "ideal_squared_error_improves_bypass": false
+        },
+        "mlp": {
+          "gain_q14": 7145,
+          "gain": 0.43609619140625,
+          "reconstructed_power": 30543136052,
+          "relative_amplitude": 0.004872185222352009,
+          "ideal_amplitude_without_output_rounding": 0.004872185222382484,
+          "absolute_error": 0.0048454523685113595,
+          "squared_error": 2.3478408655512344e-05,
+          "ideal_squared_error_improves_bypass": true
+        },
+        "first_guard": {
+          "gain_q14": 14022,
+          "gain": 0.8558349609375,
+          "reconstructed_power": 117632976438,
+          "relative_amplitude": 0.009561620880096745,
+          "ideal_amplitude_without_output_rounding": 0.00956162088009058,
+          "absolute_error": 0.009534888026256096,
+          "squared_error": 9.091408967324187e-05,
+          "ideal_squared_error_improves_bypass": true
+        },
+        "compact": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 160601293586,
+          "relative_amplitude": 0.01117227189412381,
+          "ideal_amplitude_without_output_rounding": 0.01117227189412381,
+          "absolute_error": 0.011145539040283162,
+          "squared_error": 0.0001242230404984761,
+          "ideal_squared_error_improves_bypass": false
+        }
+      },
+      "exact_selected_synthetic_target_labels": [],
+      "physical_target_label_inferred": false
+    }
+  ],
+  "known_synthetic_target_rows": [
+    {
+      "position": [
+        221,
+        205
+      ],
+      "synthetic_kind": "alias_column_weak",
+      "input_relative_amplitude": 0.01773949152962387,
+      "reference_relative_amplitude": 0.03000229707849799,
+      "stages": {
+        "bypass": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 404900563450,
+          "relative_amplitude": 0.01773949152962387,
+          "ideal_amplitude_without_output_rounding": 0.01773949152962387,
+          "absolute_error": 0.012262805548874121,
+          "squared_error": 0.00015037639992949794
+        },
+        "first_guard": {
+          "gain_q14": 12783,
+          "gain": 0.78021240234375,
+          "reconstructed_power": 246475683923,
+          "relative_amplitude": 0.01384057130269333,
+          "ideal_amplitude_without_output_rounding": 0.013840571302684443,
+          "absolute_error": 0.01616172577580466,
+          "squared_error": 0.0002612013800523087
+        },
+        "compact": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 404900563450,
+          "relative_amplitude": 0.01773949152962387,
+          "ideal_amplitude_without_output_rounding": 0.01773949152962387,
+          "absolute_error": 0.012262805548874121,
+          "squared_error": 0.00015037639992949794
+        }
+      },
+      "first_retention": 0.4613170540402579,
+      "compact_retention": 0.5912711111156014,
+      "raw_mlp_gain_not_evaluated": true,
+      "physical_target_label_inferred": false
+    },
+    {
+      "position": [
+        416,
+        1
+      ],
+      "synthetic_kind": "true_harmonic_collision",
+      "input_relative_amplitude": 0.1396743866025737,
+      "reference_relative_amplitude": 0.06900967427683846,
+      "stages": {
+        "bypass": {
+          "gain_q14": 16384,
+          "gain": 1.0,
+          "reconstructed_power": 25101495220100,
+          "relative_amplitude": 0.1396743866025737,
+          "ideal_amplitude_without_output_rounding": 0.1396743866025737,
+          "absolute_error": 0.07066471232573523,
+          "squared_error": 0.004993501568078917
+        },
+        "first_guard": {
+          "gain_q14": 11492,
+          "gain": 0.701416015625,
+          "reconstructed_power": 12349544742083,
+          "relative_amplitude": 0.0979698517356436,
+          "ideal_amplitude_without_output_rounding": 0.09796985173564313,
+          "absolute_error": 0.028960177458805136,
+          "squared_error": 0.0008386918784454851
+        },
+        "compact": {
+          "gain_q14": 11492,
+          "gain": 0.701416015625,
+          "reconstructed_power": 12349544742083,
+          "relative_amplitude": 0.0979698517356436,
+          "ideal_amplitude_without_output_rounding": 0.09796985173564313,
+          "absolute_error": 0.028960177458805136,
+          "squared_error": 0.0008386918784454851
+        }
+      },
+      "first_retention": 1.4196538784204198,
+      "compact_retention": 1.4196538784204198,
+      "raw_mlp_gain_not_evaluated": true,
+      "physical_target_label_inferred": false
+    }
+  ],
+  "normalization": "Reference uses its own peak; all prediction stages use the SAME input peak",
+  "original_quality_status_preserved": "FAIL",
+  "source_sha256": {
+    "network_understanding_v1/reports/POINT_TRACE.json": "19f76ecd0d9c0ce7ac051a39e686bea8a06709ba3b2d92713bd60c084f39655f",
+    "scalar_restore_v3/compact_development/arrays/confirm_synth_116013_512.npz": "19b2e9f3dc9bef4c67696ee2e827495a6198f157bc8770dfa492d0fa7fd083af",
+    "scalar_restore_v3/compact_development/report.json": "84bfc9ed665fc7f8217d6b9f00d0771e58da20b2ba744941ddd3a986d6cfcddf",
+    "scalar_restore_v3/compact_experiment.py": "a614d9c2335c369794729bbd662b92a148e83b487ec59cc172266ac9a220d0fb",
+    "scalar_restore_v3/compact_release.py": "2d3d18398a5179e55a2a50024401a78fea44209c655caf7ba009519474c4d8fc",
+    "scalar_restore_v3/RUNTIME_PACKAGE_COMPACT.json": "1598b64a8e8e7c6445eaed89d4f607b1f1519a73fe70954f0ebdeb41e6abe77c",
+    "scalar_restore_v3/examples_compact/diagnosed_512_power.npy": "4bcba69c0b1b60e6ce796bdaebfd6ff6773592b441bbdef37056c91de5f87457",
+    "scalar_restore_v3/examples_compact/diagnosed_512_expected.npz": "e285c90c262074a16f384cce79172a6f6f34e9bfb0eabd8a2e80255af79b1d13"
+  },
+  "script_sha256": "47a34ff5df28ab9e8dff779e2978ba66c52ef5517942ade2998fea4ab71de385",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "existing_saved_point_reference_comparison_run": true,
+  "scalar_power_arithmetic_run": true,
+  "model_instantiated": false,
+  "neural_layer_run": false,
+  "neural_inference_run": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "guard_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "new_dataset_generated": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

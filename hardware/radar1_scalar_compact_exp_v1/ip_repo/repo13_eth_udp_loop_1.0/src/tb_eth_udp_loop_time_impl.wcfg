@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_eth_udp_loop_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_eth_udp_loop" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="74700001fs"></ZoomEndTime>
+      <Cursor1Time time="14228606fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="213"></NameColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="50" />
+   <wvobject fp_name="/tb_eth_udp_loop/phy_tx_clk" type="logic">
+      <obj_property name="ElementShortName">phy_tx_clk</obj_property>
+      <obj_property name="ObjectShortName">phy_tx_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/phy_tx_clk_delay" type="logic">
+      <obj_property name="ElementShortName">phy_tx_clk_delay</obj_property>
+      <obj_property name="ObjectShortName">phy_tx_clk_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/phy_tx_ctl" type="logic">
+      <obj_property name="ElementShortName">phy_tx_ctl</obj_property>
+      <obj_property name="ObjectShortName">phy_tx_ctl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/phy_tx_data" type="array">
+      <obj_property name="ElementShortName">phy_tx_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_tx_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/sys_rst_n" type="logic">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/key" type="logic">
+      <obj_property name="ElementShortName">key</obj_property>
+      <obj_property name="ObjectShortName">key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/eth_rxc" type="logic">
+      <obj_property name="ElementShortName">eth_rxc</obj_property>
+      <obj_property name="ObjectShortName">eth_rxc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/eth_rx_ctl" type="logic">
+      <obj_property name="ElementShortName">eth_rx_ctl</obj_property>
+      <obj_property name="ObjectShortName">eth_rx_ctl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/eth_rxd" type="array">
+      <obj_property name="ElementShortName">eth_rxd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">eth_rxd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/eth_txc" type="logic">
+      <obj_property name="ElementShortName">eth_txc</obj_property>
+      <obj_property name="ObjectShortName">eth_txc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/eth_tx_ctl" type="logic">
+      <obj_property name="ElementShortName">eth_tx_ctl</obj_property>
+      <obj_property name="ObjectShortName">eth_tx_ctl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/eth_txd" type="array">
+      <obj_property name="ElementShortName">eth_txd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">eth_txd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/arp_data" type="array">
+      <obj_property name="ElementShortName">arp_data[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">arp_data[0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/short_data" type="array">
+      <obj_property name="ElementShortName">short_data[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">short_data[0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/fd1" type="array">
+      <obj_property name="ElementShortName">fd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/err" type="array">
+      <obj_property name="ElementShortName">err[31:0]</obj_property>
+      <obj_property name="ObjectShortName">err[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/read_code" type="array">
+      <obj_property name="ElementShortName">read_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_code[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/str" type="array">
+      <obj_property name="ElementShortName">str[320:0]</obj_property>
+      <obj_property name="ObjectShortName">str[320:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/DATA_FILE" type="array">
+      <obj_property name="ElementShortName">DATA_FILE[703:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_FILE[703:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/BOARD_MAC" type="array">
+      <obj_property name="ElementShortName">BOARD_MAC[47:0]</obj_property>
+      <obj_property name="ObjectShortName">BOARD_MAC[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/BOARD_IP" type="array">
+      <obj_property name="ElementShortName">BOARD_IP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BOARD_IP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/RADAR_MAC" type="array">
+      <obj_property name="ElementShortName">RADAR_MAC[47:0]</obj_property>
+      <obj_property name="ObjectShortName">RADAR_MAC[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/RADAR_IP" type="array">
+      <obj_property name="ElementShortName">RADAR_IP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RADAR_IP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/UDP_PERIOD" type="array">
+      <obj_property name="ElementShortName">UDP_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">UDP_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/SYS_PERIOD" type="array">
+      <obj_property name="ElementShortName">SYS_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SYS_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/T_HOLD" type="other">
+      <obj_property name="ElementShortName">T_HOLD</obj_property>
+      <obj_property name="ObjectShortName">T_HOLD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/PREAMBEL_LEN" type="array">
+      <obj_property name="ElementShortName">PREAMBEL_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PREAMBEL_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/ETH_HEAD_LEN" type="array">
+      <obj_property name="ElementShortName">ETH_HEAD_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ETH_HEAD_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/IP_HEAD_LEN" type="array">
+      <obj_property name="ElementShortName">IP_HEAD_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IP_HEAD_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/UDP_HEAD_LEN" type="array">
+      <obj_property name="ElementShortName">UDP_HEAD_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">UDP_HEAD_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/CRC_LEN" type="array">
+      <obj_property name="ElementShortName">CRC_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CRC_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/UDP_PACK_NUM" type="array">
+      <obj_property name="ElementShortName">UDP_PACK_NUM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">UDP_PACK_NUM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/ARP_LEN" type="array">
+      <obj_property name="ElementShortName">ARP_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ARP_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/abs_fft_out" type="array">
+      <obj_property name="ElementShortName">abs_fft_out[32:0]</obj_property>
+      <obj_property name="ObjectShortName">abs_fft_out[32:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/abs_imag" type="array">
+      <obj_property name="ElementShortName">abs_imag[31:0]</obj_property>
+      <obj_property name="ObjectShortName">abs_imag[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/abs_real" type="array">
+      <obj_property name="ElementShortName">abs_real[31:0]</obj_property>
+      <obj_property name="ObjectShortName">abs_real[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fft2fft_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">fft2fft_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">fft2fft_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fft2fft_axis_tdata" type="array">
+      <obj_property name="ElementShortName">fft2fft_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fft2fft_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fft2fft_axis_tuser" type="array">
+      <obj_property name="ElementShortName">fft2fft_axis_tuser[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fft2fft_axis_tuser[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fft2fft_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">fft2fft_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">fft2fft_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fifo2fft_axis_tdata" type="array">
+      <obj_property name="ElementShortName">fifo2fft_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo2fft_axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fifo2fft_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">fifo2fft_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">fifo2fft_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fifo2fft_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">fifo2fft_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">fifo2fft_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/fifo2fft_axis_tready" type="logic">
+      <obj_property name="ElementShortName">fifo2fft_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">fifo2fft_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/udp2fifo_axis_tdata" type="array">
+      <obj_property name="ElementShortName">udp2fifo_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">udp2fifo_axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/udp2fifo_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">udp2fifo_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">udp2fifo_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/udp2fifo_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">udp2fifo_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">udp2fifo_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/udp2fifo_axis_tready" type="logic">
+      <obj_property name="ElementShortName">udp2fifo_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">udp2fifo_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="group368" type="group">
+      <obj_property name="label">fifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/s_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/s_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">s_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/s_axis_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/s_aresetn" type="logic">
+         <obj_property name="ElementShortName">s_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s_aresetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/s_aclk" type="logic">
+         <obj_property name="ElementShortName">s_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/m_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/m_axis_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/m_axis_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/m_aclk" type="logic">
+         <obj_property name="ElementShortName">m_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/m_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_eth_udp_loop/u_eth_udp_loop/u_async_fifo_128x32/s_axis_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "eight_512_synthetic_cases": true,
+    "background_ratio_matches_frozen_report": true,
+    "aggregates_match_rows": true,
+    "v2_quality_verdict_preserved": true,
+    "frozen_model_unchanged": true,
+    "explanation_written": true
+  },
+  "scope": "Background diagnostic only; no new model, IP, BIT, ELF, or board access",
+  "rms_change_db": 0.7608433573062143,
+  "source_model_sha256": "40454b2fcd38275ef8eb75746904afafbafeef582aefcb2755c7ba00f7c22311"
+}

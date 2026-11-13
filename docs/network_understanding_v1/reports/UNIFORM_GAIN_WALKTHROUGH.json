@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "checks": {
+    "same_old_diagnostic_record": true,
+    "previous_saved_sse_matches": true,
+    "optimum_is_interior": true,
+    "uniform_normal_equation_holds": true,
+    "scalar_quadratic_identity_holds": true,
+    "oracle_uniform_no_worse_than_bypass": true,
+    "saved_and_ideal_compact_better_than_all_constant_gains": true,
+    "nonuniform_error_identity_holds": true,
+    "frame_peak_kept_but_overestimate_attenuated": true,
+    "uniform_can_be_better_at_individual_point": true,
+    "frozen_sources_unchanged": true
+  },
+  "record_id": "confirm_synth_116013_512",
+  "scope": "Additional arithmetic explanation of one previously diagnosed synthetic development frame; no new quality gate",
+  "normalization": "Reference uses its own peak; bypass, uniform and compact use the SAME input peak",
+  "uniform_oracle": {
+    "gain_interval": [
+      0.125,
+      1.5
+    ],
+    "unconstrained_optimum": 0.8220149808938264,
+    "selected_gain": 0.8220149808938264,
+    "input_amplitude_energy": 1.7496740782298807,
+    "input_reference_inner_product": 1.4382583039865589,
+    "uses_reference": true,
+    "peak_anchor_enforced": false,
+    "sse": 0.2658372379211952
+  },
+  "bypass_sse": 0.32126458044985656,
+  "compact_saved_sse": 0.1325823674709403,
+  "compact_ideal_sse": 0.1325823674707627,
+  "compact_to_optimal_uniform_sse": 0.4987351226927923,
+  "relative_sse_reduction_from_uniform": 0.5012648773072077,
+  "nonuniform_error_identity": {
+    "uniform_sse": 0.2658372379211952,
+    "squared_departure_from_uniform": 0.14713794657006388,
+    "residual_cross_term": -0.2803928170204961,
+    "compact_ideal_sse": 0.1325823674707627
+  },
+  "point_rows": [
+    {
+      "position": [
+        83,
+        0
+      ],
+      "reference": 1.0,
+      "bypass": 1.0,
+      "uniform": 0.8220149808938264,
+      "compact": 1.0,
+      "uniform_squared_error": 0.03167866702622498,
+      "compact_squared_error": 0.0
+    },
+    {
+      "position": [
+        774,
+        511
+      ],
+      "reference": 4.413173808676769e-05,
+      "bypass": 0.21294407589409353,
+      "uniform": 0.17504322047753682,
+      "compact": 0.026618009486766937,
+      "uniform_squared_error": 0.030624681059637913,
+      "compact_squared_error": 0.000706170978601799
+    },
+    {
+      "position": [
+        25,
+        0
+      ],
+      "reference": 0.016635492620372224,
+      "bypass": 0.011169507340678992,
+      "uniform": 0.009181502363241697,
+      "compact": 0.011169507340678992,
+      "uniform_squared_error": 5.556197075339683e-05,
+      "compact_squared_error": 2.9876995077823095e-05
+    },
+    {
+      "position": [
+        200,
+        148
+      ],
+      "reference": 2.67328538406498e-05,
+      "bypass": 0.01117227189412381,
+      "uniform": 0.009183774867588817,
+      "compact": 0.01117227189412381,
+      "uniform_squared_error": 8.38514184415491e-05,
+      "compact_squared_error": 0.0001242230404984761
+    }
+  ],
+  "qualifications": [
+    "Uniform gain is an analytic reference-informed comparison, not a new trained or deployable model",
+    "The constant-gain class is relaxed to allow changing the input peak; current compact preserves its peak",
+    "No independent rescaling of the uniform or compact output is performed",
+    "This one saved development frame does not establish generalization or all-frame superiority",
+    "The result concerns the full compact combination, not the isolated neural MLP",
+    "No superiority over all simple nonlinear rules, filters, thresholds or retrained baselines is proved",
+    "Total error improvement is not a guarantee of improvement at each target or pixel"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/compact_development/arrays/confirm_synth_116013_512.npz": "19b2e9f3dc9bef4c67696ee2e827495a6198f157bc8770dfa492d0fa7fd083af",
+    "network_understanding_v1/reports/BOUNDED_ORACLE_WALKTHROUGH.json": "370ec0d98934ae34c0ead10643c2efe2bba800b1990aefdb8c4f1cb988fdb73d"
+  },
+  "script_sha256": "e984a507e7f6a090c4e6e4c0d11b86fa8f8a5f23c1a5934420541403a43c60b6",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "saved_frame_uniform_gain_accounting_run": true,
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "feature_extraction_run": false,
+  "guard_run": false,
+  "radar_fft_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false,
+  "original_full_quality_status_preserved": "FAIL"
+}

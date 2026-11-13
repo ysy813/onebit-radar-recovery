@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "checks": {
+    "same_previously_read_development_array": true,
+    "regions_disjoint_and_exhaustive": true,
+    "region_pixel_counts_sum_to_full": true,
+    "region_sse_sum_matches_full": true,
+    "regional_reductions_sum_to_full": true,
+    "final_nmse_matches_existing_report": true,
+    "first_stage_nmse_matches_existing_report": true,
+    "original_background_metrics_reproduced": true,
+    "compact_decreases_target_neighborhood_error": true,
+    "compact_increases_background_error": true,
+    "background_region_explains_most_reduction": true,
+    "final_background_better_than_bypass_but_worse_than_v7": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Error-accounting explanation for one existing synthetic diagnostic frame; not a new quality test",
+  "record_id": "confirm_synth_116013_512",
+  "original_split": "development_including_previously_failed_test",
+  "regions": [
+    {
+      "region": "known_target_neighborhoods",
+      "pixels": 392,
+      "sse": {
+        "bypass": 0.013393813771543528,
+        "first_guard": 0.006829371682335637,
+        "compact": 0.006718546702212827
+      },
+      "bypass_to_compact_reduction": 0.006675267069330701,
+      "contribution_to_total_reduction": 0.03537835900873502,
+      "compact_minus_first_guard": -0.00011082498012280999
+    },
+    {
+      "region": "reference_low_background",
+      "pixels": 523230,
+      "sse": {
+        "bypass": 0.3032895521211646,
+        "first_guard": 0.11691624266036793,
+        "compact": 0.11970912844074594
+      },
+      "bypass_to_compact_reduction": 0.18358042368041866,
+      "contribution_to_total_reduction": 0.9729609420095804,
+      "compact_minus_first_guard": 0.002792885780378007
+    },
+    {
+      "region": "remaining",
+      "pixels": 666,
+      "sse": {
+        "bypass": 0.00458121455714852,
+        "first_guard": 0.006154692327981551,
+        "compact": 0.006154692327981551
+      },
+      "bypass_to_compact_reduction": -0.0015734777708330304,
+      "contribution_to_total_reduction": -0.00833930101831514,
+      "compact_minus_first_guard": 0.0
+    }
+  ],
+  "reference_energy": 1.4481071101930936,
+  "total_sse": {
+    "bypass": 0.32126458044985656,
+    "first_guard": 0.12990030667068508,
+    "compact": 0.1325823674709403
+  },
+  "total_nmse": {
+    "bypass": 0.2218513935802846,
+    "first_guard": 0.08970352106990477,
+    "compact": 0.09155563600075238
+  },
+  "full_frame_nmse_ratio": 0.41268902810664476,
+  "total_sse_reduction": 0.18868221297891627,
+  "background_positive_error": {
+    "bypass": 0.3026392020667422,
+    "first_guard": 0.11341310493321213,
+    "compact": 0.1162059907136508
+  },
+  "v7_background_positive_error_from_existing_report": 0.0908285639076915,
+  "final_background_positive_relative_to_v7": 1.2793991858304643,
+  "qualifications": [
+    "All predictions use the input peak; reference uses its own peak",
+    "Region squared errors use float64 reference, with a float32-derived background mask",
+    "Original positive-background metric also uses float32 reference values",
+    "Known-target neighborhoods include other content and are not isolated target amplitudes",
+    "The remaining region is not assumed to be noise or false targets",
+    "Regional contribution percentages are bookkeeping, not causal feature attribution",
+    "This diagnosed frame is not the eight-frame fresh synthetic_512 group",
+    "No detection-rate, physical-target, or statistical-independence conclusion"
+  ],
+  "source_sha256": {
+    "scalar_restore_v3/compact_development/arrays/confirm_synth_116013_512.npz": "19b2e9f3dc9bef4c67696ee2e827495a6198f157bc8770dfa492d0fa7fd083af",
+    "scalar_restore_v3/compact_development/report.json": "84bfc9ed665fc7f8217d6b9f00d0771e58da20b2ba744941ddd3a986d6cfcddf",
+    "scalar_restore_v2/evaluate.py": "22eb821943c846ed42e582ee3e4767726795219b68326524ea75a7b89d18cb57",
+    "scalar_restore_v2/common_v2.py": "c60523f2b1b86a9fc555597d37a6d7bb45e866300f504d3b7caca77428643d7d",
+    "scalar_streak_fix_v1/common.py": "32df43f0344a183331bfd8d46a91990d7d8c5ee6e8877ed1f2b76b86bfce1913",
+    "network_understanding_v1/reports/POINT_REFERENCE_WALKTHROUGH.json": "fe3b1916d40b15b587cb14bd90f4228fc813ddef52d5c26f3d8d17155514aad7"
+  },
+  "script_sha256": "8f99470a9601933f7e094bed3b0d38aa522e68bbcafabe10c560a99b80b7866d",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "original_full_quality_status_preserved": "FAIL",
+  "saved_frame_metric_accounting_run": true,
+  "model_instantiated": false,
+  "neural_inference_run": false,
+  "feature_extraction_run": false,
+  "guard_run": false,
+  "radar_fft_run": false,
+  "training_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "new_dataset_generated": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

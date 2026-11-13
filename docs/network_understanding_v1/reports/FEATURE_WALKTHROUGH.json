@@ -1,0 +1,2391 @@
+{
+  "status": "PASS",
+  "scope": "Feature/code teaching only; toy fields are not physical scene validation",
+  "source": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\examples_compact\\diagnosed_512_power.npy",
+  "source_sha256": "4bcba69c0b1b60e6ce796bdaebfd6ff6773592b441bbdef37056c91de5f87457",
+  "actual_point_checks": [
+    {
+      "label": "输入最大值锚定",
+      "position": [
+        83,
+        0
+      ],
+      "base_q12": [
+        4096,
+        4096,
+        2795,
+        1852,
+        1295,
+        2149,
+        3006,
+        2763,
+        1597,
+        1810,
+        2535,
+        2002,
+        1703,
+        1813,
+        2042,
+        2864,
+        2251,
+        1889,
+        2601,
+        2928,
+        3215,
+        2724,
+        1972,
+        2210,
+        3105,
+        2440,
+        2064,
+        1630,
+        1884,
+        2638,
+        2072,
+        1757
+      ],
+      "mlp_q16": [
+        65536,
+        65536,
+        44720,
+        29632,
+        20720,
+        34384,
+        48096,
+        44208,
+        65536,
+        207,
+        2605,
+        13952,
+        9153,
+        65536,
+        65536,
+        55840,
+        25552,
+        28960,
+        40560,
+        32032,
+        27248,
+        29008,
+        32672,
+        45824,
+        36016,
+        30224,
+        41616,
+        46848,
+        51440,
+        43584,
+        31552,
+        35360,
+        49680,
+        39040,
+        33024,
+        26080,
+        30144,
+        42208,
+        33152,
+        28112
+      ],
+      "parent_details": [
+        {
+          "order": -3,
+          "candidates": [
+            {
+              "candidate": [
+                996,
+                0
+              ],
+              "support_q12": 1295,
+              "support_source": [
+                997,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                996,
+                171
+              ],
+              "support_q12": 971,
+              "support_source": [
+                995,
+                172
+              ]
+            },
+            {
+              "candidate": [
+                996,
+                341
+              ],
+              "support_q12": 967,
+              "support_source": [
+                996,
+                340
+              ]
+            },
+            {
+              "candidate": [
+                314,
+                0
+              ],
+              "support_q12": 1182,
+              "support_source": [
+                315,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                314,
+                171
+              ],
+              "support_q12": 946,
+              "support_source": [
+                313,
+                170
+              ]
+            },
+            {
+              "candidate": [
+                314,
+                341
+              ],
+              "support_q12": 1021,
+              "support_source": [
+                314,
+                340
+              ]
+            },
+            {
+              "candidate": [
+                655,
+                0
+              ],
+              "support_q12": 1099,
+              "support_source": [
+                654,
+                1
+              ]
+            },
+            {
+              "candidate": [
+                655,
+                171
+              ],
+              "support_q12": 941,
+              "support_source": [
+                656,
+                171
+              ]
+            },
+            {
+              "candidate": [
+                655,
+                341
+              ],
+              "support_q12": 902,
+              "support_source": [
+                656,
+                341
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              996,
+              0
+            ],
+            "support_q12": 1295,
+            "support_source": [
+              997,
+              0
+            ]
+          }
+        },
+        {
+          "order": 5,
+          "candidates": [
+            {
+              "candidate": [
+                17,
+                0
+              ],
+              "support_q12": 1398,
+              "support_source": [
+                17,
+                1
+              ]
+            },
+            {
+              "candidate": [
+                17,
+                102
+              ],
+              "support_q12": 1346,
+              "support_source": [
+                16,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                17,
+                205
+              ],
+              "support_q12": 1086,
+              "support_source": [
+                17,
+                206
+              ]
+            },
+            {
+              "candidate": [
+                17,
+                307
+              ],
+              "support_q12": 1189,
+              "support_source": [
+                16,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                17,
+                410
+              ],
+              "support_q12": 1054,
+              "support_source": [
+                17,
+                409
+              ]
+            },
+            {
+              "candidate": [
+                221,
+                0
+              ],
+              "support_q12": 1859,
+              "support_source": [
+                222,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                221,
+                102
+              ],
+              "support_q12": 2149,
+              "support_source": [
+                221,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                221,
+                205
+              ],
+              "support_q12": 1829,
+              "support_source": [
+                221,
+                205
+              ]
+            },
+            {
+              "candidate": [
+                221,
+                307
+              ],
+              "support_q12": 2121,
+              "support_source": [
+                221,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                221,
+                410
+              ],
+              "support_q12": 1137,
+              "support_source": [
+                220,
+                410
+              ]
+            },
+            {
+              "candidate": [
+                426,
+                0
+              ],
+              "support_q12": 1801,
+              "support_source": [
+                426,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                426,
+                102
+              ],
+              "support_q12": 1245,
+              "support_source": [
+                427,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                426,
+                205
+              ],
+              "support_q12": 1108,
+              "support_source": [
+                427,
+                206
+              ]
+            },
+            {
+              "candidate": [
+                426,
+                307
+              ],
+              "support_q12": 1248,
+              "support_source": [
+                427,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                426,
+                410
+              ],
+              "support_q12": 1921,
+              "support_source": [
+                426,
+                410
+              ]
+            },
+            {
+              "candidate": [
+                631,
+                0
+              ],
+              "support_q12": 1157,
+              "support_source": [
+                631,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                631,
+                102
+              ],
+              "support_q12": 1128,
+              "support_source": [
+                631,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                631,
+                205
+              ],
+              "support_q12": 1103,
+              "support_source": [
+                631,
+                205
+              ]
+            },
+            {
+              "candidate": [
+                631,
+                307
+              ],
+              "support_q12": 1091,
+              "support_source": [
+                631,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                631,
+                410
+              ],
+              "support_q12": 1151,
+              "support_source": [
+                632,
+                409
+              ]
+            },
+            {
+              "candidate": [
+                836,
+                0
+              ],
+              "support_q12": 1297,
+              "support_source": [
+                835,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                836,
+                102
+              ],
+              "support_q12": 1073,
+              "support_source": [
+                835,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                836,
+                205
+              ],
+              "support_q12": 1021,
+              "support_source": [
+                836,
+                204
+              ]
+            },
+            {
+              "candidate": [
+                836,
+                307
+              ],
+              "support_q12": 1089,
+              "support_source": [
+                835,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                836,
+                410
+              ],
+              "support_q12": 1099,
+              "support_source": [
+                836,
+                411
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              221,
+              102
+            ],
+            "support_q12": 2149,
+            "support_source": [
+              221,
+              102
+            ]
+          }
+        }
+      ],
+      "child_details": [
+        {
+          "order": -3,
+          "child": [
+            775,
+            0
+          ],
+          "winner": {
+            "position": [
+              774,
+              511
+            ],
+            "z_q12": 3006,
+            "mean31_q12": 1798,
+            "denominator_q12": 1798,
+            "ratio_q12": 4096,
+            "score_q12": 3006
+          }
+        },
+        {
+          "order": 5,
+          "child": [
+            415,
+            0
+          ],
+          "winner": {
+            "position": [
+              416,
+              1
+            ],
+            "z_q12": 2763,
+            "mean31_q12": 1009,
+            "denominator_q12": 1009,
+            "ratio_q12": 4096,
+            "score_q12": 2763
+          }
+        }
+      ],
+      "physical_relative_amplitude": 1.0,
+      "raw_gain": 1.0013427734375,
+      "final_gain": 1.0,
+      "code_features_exact": true,
+      "existing_neural_vector_exact": true
+    },
+    {
+      "label": "被衰减的谱点，未标定真假",
+      "position": [
+        774,
+        511
+      ],
+      "base_q12": [
+        3006,
+        3006,
+        2347,
+        1620,
+        4096,
+        1848,
+        1997,
+        0,
+        1442,
+        1565,
+        2106,
+        1770,
+        1458,
+        1563,
+        1753,
+        2340,
+        1981,
+        1698,
+        2009,
+        2249,
+        2567,
+        2143,
+        1855,
+        2092,
+        2773,
+        2364,
+        1961,
+        1558,
+        1717,
+        2281,
+        1957,
+        1602
+      ],
+      "mlp_q16": [
+        48096,
+        48096,
+        37552,
+        25920,
+        65536,
+        29568,
+        31952,
+        0,
+        13952,
+        65536,
+        1225,
+        1805,
+        0,
+        -23680,
+        65536,
+        9904,
+        23072,
+        25040,
+        33696,
+        28320,
+        23328,
+        25008,
+        28048,
+        37440,
+        31696,
+        27168,
+        32144,
+        35984,
+        41072,
+        34288,
+        29680,
+        33472,
+        44368,
+        37824,
+        31376,
+        24928,
+        27472,
+        36496,
+        31312,
+        25632
+      ],
+      "parent_details": [
+        {
+          "order": -3,
+          "candidates": [
+            {
+              "candidate": [
+                766,
+                342
+              ],
+              "support_q12": 950,
+              "support_source": [
+                767,
+                341
+              ]
+            },
+            {
+              "candidate": [
+                766,
+                0
+              ],
+              "support_q12": 1678,
+              "support_source": [
+                767,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                766,
+                171
+              ],
+              "support_q12": 986,
+              "support_source": [
+                767,
+                170
+              ]
+            },
+            {
+              "candidate": [
+                83,
+                342
+              ],
+              "support_q12": 1192,
+              "support_source": [
+                83,
+                341
+              ]
+            },
+            {
+              "candidate": [
+                83,
+                0
+              ],
+              "support_q12": 4096,
+              "support_source": [
+                83,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                83,
+                171
+              ],
+              "support_q12": 1167,
+              "support_source": [
+                83,
+                170
+              ]
+            },
+            {
+              "candidate": [
+                425,
+                342
+              ],
+              "support_q12": 971,
+              "support_source": [
+                424,
+                342
+              ]
+            },
+            {
+              "candidate": [
+                425,
+                0
+              ],
+              "support_q12": 1801,
+              "support_source": [
+                426,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                425,
+                171
+              ],
+              "support_q12": 982,
+              "support_source": [
+                424,
+                171
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              83,
+              0
+            ],
+            "support_q12": 4096,
+            "support_source": [
+              83,
+              0
+            ]
+          }
+        },
+        {
+          "order": 5,
+          "candidates": [
+            {
+              "candidate": [
+                155,
+                102
+              ],
+              "support_q12": 1290,
+              "support_source": [
+                156,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                155,
+                205
+              ],
+              "support_q12": 1084,
+              "support_source": [
+                154,
+                204
+              ]
+            },
+            {
+              "candidate": [
+                155,
+                307
+              ],
+              "support_q12": 1187,
+              "support_source": [
+                156,
+                308
+              ]
+            },
+            {
+              "candidate": [
+                155,
+                409
+              ],
+              "support_q12": 1068,
+              "support_source": [
+                154,
+                409
+              ]
+            },
+            {
+              "candidate": [
+                155,
+                0
+              ],
+              "support_q12": 1592,
+              "support_source": [
+                156,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                360,
+                102
+              ],
+              "support_q12": 1187,
+              "support_source": [
+                361,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                360,
+                205
+              ],
+              "support_q12": 1141,
+              "support_source": [
+                360,
+                204
+              ]
+            },
+            {
+              "candidate": [
+                360,
+                307
+              ],
+              "support_q12": 1180,
+              "support_source": [
+                359,
+                308
+              ]
+            },
+            {
+              "candidate": [
+                360,
+                409
+              ],
+              "support_q12": 1331,
+              "support_source": [
+                360,
+                409
+              ]
+            },
+            {
+              "candidate": [
+                360,
+                0
+              ],
+              "support_q12": 1430,
+              "support_source": [
+                360,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                564,
+                102
+              ],
+              "support_q12": 1149,
+              "support_source": [
+                564,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                564,
+                205
+              ],
+              "support_q12": 1065,
+              "support_source": [
+                565,
+                205
+              ]
+            },
+            {
+              "candidate": [
+                564,
+                307
+              ],
+              "support_q12": 1030,
+              "support_source": [
+                563,
+                308
+              ]
+            },
+            {
+              "candidate": [
+                564,
+                409
+              ],
+              "support_q12": 1079,
+              "support_source": [
+                563,
+                408
+              ]
+            },
+            {
+              "candidate": [
+                564,
+                0
+              ],
+              "support_q12": 1159,
+              "support_source": [
+                565,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                769,
+                102
+              ],
+              "support_q12": 1014,
+              "support_source": [
+                769,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                769,
+                205
+              ],
+              "support_q12": 1065,
+              "support_source": [
+                770,
+                204
+              ]
+            },
+            {
+              "candidate": [
+                769,
+                307
+              ],
+              "support_q12": 937,
+              "support_source": [
+                768,
+                306
+              ]
+            },
+            {
+              "candidate": [
+                769,
+                409
+              ],
+              "support_q12": 1036,
+              "support_source": [
+                768,
+                408
+              ]
+            },
+            {
+              "candidate": [
+                769,
+                0
+              ],
+              "support_q12": 1848,
+              "support_source": [
+                770,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                974,
+                102
+              ],
+              "support_q12": 1071,
+              "support_source": [
+                975,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                974,
+                205
+              ],
+              "support_q12": 1086,
+              "support_source": [
+                974,
+                206
+              ]
+            },
+            {
+              "candidate": [
+                974,
+                307
+              ],
+              "support_q12": 1018,
+              "support_source": [
+                974,
+                306
+              ]
+            },
+            {
+              "candidate": [
+                974,
+                409
+              ],
+              "support_q12": 1024,
+              "support_source": [
+                974,
+                408
+              ]
+            },
+            {
+              "candidate": [
+                974,
+                0
+              ],
+              "support_q12": 1208,
+              "support_source": [
+                974,
+                1
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              769,
+              0
+            ],
+            "support_q12": 1848,
+            "support_source": [
+              770,
+              511
+            ]
+          }
+        }
+      ],
+      "child_details": [
+        {
+          "order": -3,
+          "child": [
+            750,
+            3
+          ],
+          "winner": {
+            "position": [
+              749,
+              2
+            ],
+            "z_q12": 1997,
+            "mean31_q12": 1141,
+            "denominator_q12": 1141,
+            "ratio_q12": 4096,
+            "score_q12": 1997
+          }
+        },
+        {
+          "order": 5,
+          "child": [
+            798,
+            507
+          ],
+          "winner": {
+            "position": [
+              797,
+              506
+            ],
+            "z_q12": 880,
+            "mean31_q12": 871,
+            "denominator_q12": 871,
+            "ratio_q12": 0,
+            "score_q12": 0
+          }
+        }
+      ],
+      "physical_relative_amplitude": 0.21294407589409353,
+      "raw_gain": 0.125,
+      "final_gain": 0.125,
+      "code_features_exact": true,
+      "existing_neural_vector_exact": true
+    },
+    {
+      "label": "保护起作用的局部峰，未标定真假",
+      "position": [
+        25,
+        0
+      ],
+      "base_q12": [
+        1667,
+        1667,
+        1335,
+        1058,
+        1929,
+        2763,
+        1827,
+        0,
+        638,
+        1187,
+        1182,
+        1586,
+        827,
+        1065,
+        1323,
+        1246,
+        1508,
+        979,
+        1211,
+        1024,
+        1433,
+        1304,
+        1180,
+        1086,
+        1465,
+        1262,
+        1051,
+        1076,
+        1522,
+        1537,
+        1084,
+        990
+      ],
+      "mlp_q16": [
+        26672,
+        26672,
+        21360,
+        16928,
+        30864,
+        44208,
+        29232,
+        0,
+        732,
+        1518,
+        9153,
+        1157,
+        0,
+        678,
+        -5493,
+        491,
+        10208,
+        18992,
+        18912,
+        25376,
+        13232,
+        17040,
+        21168,
+        19936,
+        24128,
+        15664,
+        19376,
+        16384,
+        22928,
+        20864,
+        18880,
+        17376,
+        23440,
+        20192,
+        16816,
+        17216,
+        24352,
+        24592,
+        17344,
+        15840
+      ],
+      "parent_details": [
+        {
+          "order": -3,
+          "candidates": [
+            {
+              "candidate": [
+                1016,
+                0
+              ],
+              "support_q12": 1929,
+              "support_source": [
+                1016,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                1016,
+                171
+              ],
+              "support_q12": 946,
+              "support_source": [
+                1015,
+                172
+              ]
+            },
+            {
+              "candidate": [
+                1016,
+                341
+              ],
+              "support_q12": 937,
+              "support_source": [
+                1015,
+                342
+              ]
+            },
+            {
+              "candidate": [
+                333,
+                0
+              ],
+              "support_q12": 1428,
+              "support_source": [
+                332,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                333,
+                171
+              ],
+              "support_q12": 902,
+              "support_source": [
+                332,
+                172
+              ]
+            },
+            {
+              "candidate": [
+                333,
+                341
+              ],
+              "support_q12": 941,
+              "support_source": [
+                332,
+                340
+              ]
+            },
+            {
+              "candidate": [
+                674,
+                0
+              ],
+              "support_q12": 1352,
+              "support_source": [
+                673,
+                1
+              ]
+            },
+            {
+              "candidate": [
+                674,
+                171
+              ],
+              "support_q12": 862,
+              "support_source": [
+                673,
+                171
+              ]
+            },
+            {
+              "candidate": [
+                674,
+                341
+              ],
+              "support_q12": 868,
+              "support_source": [
+                674,
+                340
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              1016,
+              0
+            ],
+            "support_q12": 1929,
+            "support_source": [
+              1016,
+              0
+            ]
+          }
+        },
+        {
+          "order": 5,
+          "candidates": [
+            {
+              "candidate": [
+                5,
+                0
+              ],
+              "support_q12": 1692,
+              "support_source": [
+                6,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                5,
+                102
+              ],
+              "support_q12": 1086,
+              "support_source": [
+                6,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                5,
+                205
+              ],
+              "support_q12": 1217,
+              "support_source": [
+                5,
+                205
+              ]
+            },
+            {
+              "candidate": [
+                5,
+                307
+              ],
+              "support_q12": 1060,
+              "support_source": [
+                5,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                5,
+                410
+              ],
+              "support_q12": 1208,
+              "support_source": [
+                5,
+                409
+              ]
+            },
+            {
+              "candidate": [
+                210,
+                0
+              ],
+              "support_q12": 1904,
+              "support_source": [
+                210,
+                1
+              ]
+            },
+            {
+              "candidate": [
+                210,
+                102
+              ],
+              "support_q12": 1185,
+              "support_source": [
+                210,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                210,
+                205
+              ],
+              "support_q12": 1323,
+              "support_source": [
+                211,
+                206
+              ]
+            },
+            {
+              "candidate": [
+                210,
+                307
+              ],
+              "support_q12": 1345,
+              "support_source": [
+                211,
+                308
+              ]
+            },
+            {
+              "candidate": [
+                210,
+                410
+              ],
+              "support_q12": 1379,
+              "support_source": [
+                211,
+                410
+              ]
+            },
+            {
+              "candidate": [
+                415,
+                0
+              ],
+              "support_q12": 2763,
+              "support_source": [
+                416,
+                1
+              ]
+            },
+            {
+              "candidate": [
+                415,
+                102
+              ],
+              "support_q12": 1239,
+              "support_source": [
+                416,
+                103
+              ]
+            },
+            {
+              "candidate": [
+                415,
+                205
+              ],
+              "support_q12": 1634,
+              "support_source": [
+                416,
+                206
+              ]
+            },
+            {
+              "candidate": [
+                415,
+                307
+              ],
+              "support_q12": 1486,
+              "support_source": [
+                416,
+                308
+              ]
+            },
+            {
+              "candidate": [
+                415,
+                410
+              ],
+              "support_q12": 1296,
+              "support_source": [
+                416,
+                411
+              ]
+            },
+            {
+              "candidate": [
+                619,
+                0
+              ],
+              "support_q12": 1320,
+              "support_source": [
+                618,
+                511
+              ]
+            },
+            {
+              "candidate": [
+                619,
+                102
+              ],
+              "support_q12": 1312,
+              "support_source": [
+                620,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                619,
+                205
+              ],
+              "support_q12": 1145,
+              "support_source": [
+                620,
+                206
+              ]
+            },
+            {
+              "candidate": [
+                619,
+                307
+              ],
+              "support_q12": 1261,
+              "support_source": [
+                620,
+                307
+              ]
+            },
+            {
+              "candidate": [
+                619,
+                410
+              ],
+              "support_q12": 1227,
+              "support_source": [
+                620,
+                411
+              ]
+            },
+            {
+              "candidate": [
+                824,
+                0
+              ],
+              "support_q12": 1151,
+              "support_source": [
+                823,
+                0
+              ]
+            },
+            {
+              "candidate": [
+                824,
+                102
+              ],
+              "support_q12": 1182,
+              "support_source": [
+                824,
+                102
+              ]
+            },
+            {
+              "candidate": [
+                824,
+                205
+              ],
+              "support_q12": 959,
+              "support_source": [
+                823,
+                204
+              ]
+            },
+            {
+              "candidate": [
+                824,
+                307
+              ],
+              "support_q12": 1033,
+              "support_source": [
+                825,
+                306
+              ]
+            },
+            {
+              "candidate": [
+                824,
+                410
+              ],
+              "support_q12": 1040,
+              "support_source": [
+                825,
+                410
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              415,
+              0
+            ],
+            "support_q12": 2763,
+            "support_source": [
+              416,
+              1
+            ]
+          }
+        }
+      ],
+      "child_details": [
+        {
+          "order": -3,
+          "child": [
+            949,
+            0
+          ],
+          "winner": {
+            "position": [
+              948,
+              1
+            ],
+            "z_q12": 1827,
+            "mean31_q12": 1131,
+            "denominator_q12": 1131,
+            "ratio_q12": 4096,
+            "score_q12": 1827
+          }
+        },
+        {
+          "order": 5,
+          "child": [
+            125,
+            0
+          ],
+          "winner": {
+            "position": [
+              124,
+              511
+            ],
+            "z_q12": 1068,
+            "mean31_q12": 1211,
+            "denominator_q12": 1211,
+            "ratio_q12": 0,
+            "score_q12": 0
+          }
+        }
+      ],
+      "physical_relative_amplitude": 0.011169507340678992,
+      "raw_gain": 0.699462890625,
+      "final_gain": 1.0,
+      "code_features_exact": true,
+      "existing_neural_vector_exact": true
+    },
+    {
+      "label": "紧凑保护再次提升的峰，未标定真假",
+      "position": [
+        200,
+        148
+      ],
+      "base_q12": [
+        1667,
+        1667,
+        1065,
+        845,
+        986,
+        1111,
+        0,
+        69,
+        986,
+        795,
+        1018,
+        706,
+        720,
+        891,
+        827,
+        1036,
+        891,
+        803,
+        1096,
+        1133,
+        1169,
+        963,
+        676,
+        993,
+        997,
+        868,
+        676,
+        776,
+        803,
+        963,
+        874,
+        834
+      ],
+      "mlp_q16": [
+        26672,
+        26672,
+        17040,
+        13520,
+        15776,
+        17776,
+        0,
+        1104,
+        732,
+        53,
+        96,
+        0,
+        0,
+        2143,
+        3564,
+        654,
+        15776,
+        12720,
+        16288,
+        11296,
+        11520,
+        14256,
+        13232,
+        16576,
+        14256,
+        12848,
+        17536,
+        18128,
+        18704,
+        15408,
+        10816,
+        15888,
+        15952,
+        13888,
+        10816,
+        12416,
+        12848,
+        15408,
+        13984,
+        13344
+      ],
+      "parent_details": [
+        {
+          "order": -3,
+          "candidates": [
+            {
+              "candidate": [
+                957,
+                463
+              ],
+              "support_q12": 954,
+              "support_source": [
+                957,
+                463
+              ]
+            },
+            {
+              "candidate": [
+                957,
+                121
+              ],
+              "support_q12": 908,
+              "support_source": [
+                957,
+                121
+              ]
+            },
+            {
+              "candidate": [
+                957,
+                292
+              ],
+              "support_q12": 880,
+              "support_source": [
+                958,
+                293
+              ]
+            },
+            {
+              "candidate": [
+                275,
+                463
+              ],
+              "support_q12": 954,
+              "support_source": [
+                276,
+                464
+              ]
+            },
+            {
+              "candidate": [
+                275,
+                121
+              ],
+              "support_q12": 986,
+              "support_source": [
+                274,
+                121
+              ]
+            },
+            {
+              "candidate": [
+                275,
+                292
+              ],
+              "support_q12": 932,
+              "support_source": [
+                274,
+                291
+              ]
+            },
+            {
+              "candidate": [
+                616,
+                463
+              ],
+              "support_q12": 979,
+              "support_source": [
+                616,
+                463
+              ]
+            },
+            {
+              "candidate": [
+                616,
+                121
+              ],
+              "support_q12": 963,
+              "support_source": [
+                616,
+                122
+              ]
+            },
+            {
+              "candidate": [
+                616,
+                292
+              ],
+              "support_q12": 937,
+              "support_source": [
+                615,
+                291
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              275,
+              121
+            ],
+            "support_q12": 986,
+            "support_source": [
+              274,
+              121
+            ]
+          }
+        },
+        {
+          "order": 5,
+          "candidates": [
+            {
+              "candidate": [
+                40,
+                30
+              ],
+              "support_q12": 997,
+              "support_source": [
+                40,
+                29
+              ]
+            },
+            {
+              "candidate": [
+                40,
+                132
+              ],
+              "support_q12": 971,
+              "support_source": [
+                41,
+                132
+              ]
+            },
+            {
+              "candidate": [
+                40,
+                234
+              ],
+              "support_q12": 923,
+              "support_source": [
+                40,
+                233
+              ]
+            },
+            {
+              "candidate": [
+                40,
+                337
+              ],
+              "support_q12": 932,
+              "support_source": [
+                40,
+                338
+              ]
+            },
+            {
+              "candidate": [
+                40,
+                439
+              ],
+              "support_q12": 963,
+              "support_source": [
+                41,
+                440
+              ]
+            },
+            {
+              "candidate": [
+                245,
+                30
+              ],
+              "support_q12": 1057,
+              "support_source": [
+                245,
+                29
+              ]
+            },
+            {
+              "candidate": [
+                245,
+                132
+              ],
+              "support_q12": 971,
+              "support_source": [
+                244,
+                131
+              ]
+            },
+            {
+              "candidate": [
+                245,
+                234
+              ],
+              "support_q12": 1011,
+              "support_source": [
+                245,
+                233
+              ]
+            },
+            {
+              "candidate": [
+                245,
+                337
+              ],
+              "support_q12": 941,
+              "support_source": [
+                244,
+                338
+              ]
+            },
+            {
+              "candidate": [
+                245,
+                439
+              ],
+              "support_q12": 1007,
+              "support_source": [
+                244,
+                438
+              ]
+            },
+            {
+              "candidate": [
+                450,
+                30
+              ],
+              "support_q12": 954,
+              "support_source": [
+                450,
+                31
+              ]
+            },
+            {
+              "candidate": [
+                450,
+                132
+              ],
+              "support_q12": 827,
+              "support_source": [
+                450,
+                132
+              ]
+            },
+            {
+              "candidate": [
+                450,
+                234
+              ],
+              "support_q12": 937,
+              "support_source": [
+                450,
+                233
+              ]
+            },
+            {
+              "candidate": [
+                450,
+                337
+              ],
+              "support_q12": 927,
+              "support_source": [
+                451,
+                337
+              ]
+            },
+            {
+              "candidate": [
+                450,
+                439
+              ],
+              "support_q12": 1111,
+              "support_source": [
+                450,
+                438
+              ]
+            },
+            {
+              "candidate": [
+                654,
+                30
+              ],
+              "support_q12": 923,
+              "support_source": [
+                655,
+                30
+              ]
+            },
+            {
+              "candidate": [
+                654,
+                132
+              ],
+              "support_q12": 1043,
+              "support_source": [
+                654,
+                131
+              ]
+            },
+            {
+              "candidate": [
+                654,
+                234
+              ],
+              "support_q12": 963,
+              "support_source": [
+                655,
+                234
+              ]
+            },
+            {
+              "candidate": [
+                654,
+                337
+              ],
+              "support_q12": 986,
+              "support_source": [
+                654,
+                336
+              ]
+            },
+            {
+              "candidate": [
+                654,
+                439
+              ],
+              "support_q12": 959,
+              "support_source": [
+                654,
+                440
+              ]
+            },
+            {
+              "candidate": [
+                859,
+                30
+              ],
+              "support_q12": 959,
+              "support_source": [
+                860,
+                29
+              ]
+            },
+            {
+              "candidate": [
+                859,
+                132
+              ],
+              "support_q12": 891,
+              "support_source": [
+                860,
+                133
+              ]
+            },
+            {
+              "candidate": [
+                859,
+                234
+              ],
+              "support_q12": 946,
+              "support_source": [
+                859,
+                233
+              ]
+            },
+            {
+              "candidate": [
+                859,
+                337
+              ],
+              "support_q12": 880,
+              "support_source": [
+                858,
+                337
+              ]
+            },
+            {
+              "candidate": [
+                859,
+                439
+              ],
+              "support_q12": 1024,
+              "support_source": [
+                860,
+                439
+              ]
+            }
+          ],
+          "winner": {
+            "candidate": [
+              450,
+              439
+            ],
+            "support_q12": 1111,
+            "support_source": [
+              450,
+              438
+            ]
+          }
+        }
+      ],
+      "child_details": [
+        {
+          "order": -3,
+          "child": [
+            424,
+            68
+          ],
+          "winner": {
+            "position": [
+              423,
+              67
+            ],
+            "z_q12": 819,
+            "mean31_q12": 819,
+            "denominator_q12": 819,
+            "ratio_q12": 0,
+            "score_q12": 0
+          }
+        },
+        {
+          "order": 5,
+          "child": [
+            1000,
+            228
+          ],
+          "winner": {
+            "position": [
+              999,
+              227
+            ],
+            "z_q12": 979,
+            "mean31_q12": 804,
+            "denominator_q12": 804,
+            "ratio_q12": 289,
+            "score_q12": 69
+          }
+        }
+      ],
+      "physical_relative_amplitude": 0.01117227189412381,
+      "raw_gain": 0.43609619140625,
+      "final_gain": 1.0,
+      "code_features_exact": true,
+      "existing_neural_vector_exact": true
+    }
+  ],
+  "toy_child_gate": [
+    {
+      "name": "紧凑孤立峰",
+      "source": [
+        131,
+        37
+      ],
+      "third_child": [
+        631,
+        401
+      ],
+      "source_center_q12": 4096,
+      "child_center_q12": 2584,
+      "child_mean31_q12": 83,
+      "denominator_q12": 128,
+      "child_gated_support_q12": 2584,
+      "offsets": [
+        -20,
+        -19,
+        -18,
+        -17,
+        -16,
+        -15,
+        -14,
+        -13,
+        -12,
+        -11,
+        -10,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "profile_q12": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2584,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "沿距离方向平滑脊线",
+      "source": [
+        131,
+        37
+      ],
+      "third_child": [
+        631,
+        401
+      ],
+      "source_center_q12": 4096,
+      "child_center_q12": 2584,
+      "child_mean31_q12": 2584,
+      "denominator_q12": 2584,
+      "child_gated_support_q12": 0,
+      "offsets": [
+        -20,
+        -19,
+        -18,
+        -17,
+        -16,
+        -15,
+        -14,
+        -13,
+        -12,
+        -11,
+        -10,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "profile_q12": [
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584,
+        2584
+      ]
+    }
+  ],
+  "feature_layout": [
+    [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    [
+      26,
+      27,
+      0,
+      28,
+      29
+    ],
+    [
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    [
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  ],
+  "total_mlp_features": 40,
+  "neural_parameters_modified": false,
+  "neural_quality_test_run": false,
+  "board_accessed": false
+}

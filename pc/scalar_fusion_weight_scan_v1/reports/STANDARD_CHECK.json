@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "冻结代码/模型、数据来源、数值规则和同数据指标复现，不代表质量通过",
+  "referenced_old_frames": 18,
+  "new_test_frames": 12,
+  "alpha_count_per_interface": 101,
+  "exact_sign_components": 12582912,
+  "old_metric_max_retention_error": 5.9341218605624135e-08,
+  "new_seeds_disjoint": true,
+  "quality_pass": false,
+  "visual_check": {
+    "status": "PASS",
+    "method": "实际打开生成图像检查",
+    "files": [
+      "results/validation_scan.png",
+      "results/007_n8_strong_weak.png"
+    ],
+    "chinese_titles_axes_legends_rendered": true,
+    "missing_glyph_boxes_observed": false,
+    "critical_clipping_observed": false,
+    "note": "扫描曲线明确区分原保护与纯融合；新帧图统一−60～0dB色阶，4×2最大值池化仅用于预览。"
+  }
+}

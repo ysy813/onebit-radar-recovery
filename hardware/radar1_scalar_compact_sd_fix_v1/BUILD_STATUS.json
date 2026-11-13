@@ -1,0 +1,13 @@
+{
+  "stage": "SOFTWARE_SD_FIX_READY_FOR_BOARD_TEST",
+  "issue": "SD-START-001",
+  "physical_root_cause_confirmed_read_only": true,
+  "software_build": "PASS",
+  "fatfs_regression": "PASS",
+  "standard_checks": "PASS",
+  "bitstream_rebuilt": false,
+  "original_sources_modified": false,
+  "board_tested": false,
+  "quality_certified": false,
+  "full_system_timing_signoff": false
+}

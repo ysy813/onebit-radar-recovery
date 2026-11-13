@@ -1,0 +1,74 @@
+{
+  "summary": {
+    "old40": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 1,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "mean_false40": 129.58333333333334,
+      "mae": 0.02060813659235187,
+      "worst_harmonic_worsening_db": 0.0,
+      "harmonic_regions_worse_1db": 0,
+      "worst_harmonic_attenuation_db": -1.1848540306091309
+    },
+    "model": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 4,
+      "new_half": 3,
+      "max_drop": 1.327069878578186,
+      "mean_false40": 9.666666666666666,
+      "mae": 0.032739679855496986,
+      "worst_harmonic_worsening_db": 46.31792068481445,
+      "harmonic_regions_worse_1db": 31,
+      "worst_harmonic_attenuation_db": -28.6776123046875
+    },
+    "old_alpha075": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 4,
+      "new_half": 3,
+      "max_drop": 0.9953024387359619,
+      "mean_false40": 45.666666666666664,
+      "mae": 0.024616699665784836,
+      "worst_harmonic_worsening_db": 43.828731536865234,
+      "harmonic_regions_worse_1db": 46,
+      "worst_harmonic_attenuation_db": -26.18842315673828
+    },
+    "selected_protected": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 1,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "mean_false40": 130.83333333333334,
+      "mae": 0.020552160056388897,
+      "worst_harmonic_worsening_db": 18.061800003051758,
+      "harmonic_regions_worse_1db": 17,
+      "worst_harmonic_attenuation_db": -1.1848540306091309
+    },
+    "selected_linear": {
+      "frames": 12,
+      "targets": 46,
+      "below_half": 1,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "mean_false40": 129.58333333333334,
+      "mae": 0.02060813659235187,
+      "worst_harmonic_worsening_db": 0.0,
+      "harmonic_regions_worse_1db": 0,
+      "worst_harmonic_attenuation_db": -1.1848540306091309
+    }
+  },
+  "quality": {
+    "gates": {
+      "target_safety": true,
+      "all_half": false,
+      "background": false,
+      "worst_harmonics": false
+    },
+    "pass_all": false
+  },
+  "alpha": 0.0
+}

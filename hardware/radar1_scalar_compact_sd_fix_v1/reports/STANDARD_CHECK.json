@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "regression_cases": [
+    "original_stale_zero_reproduces_FR_OK_bw_0",
+    "recount_header_2MiB_readback_keeper_FAT_mirror_and_remount",
+    "already_correct_free_count",
+    "stale_nonzero_free_count",
+    "genuinely_full_refused_without_writes",
+    "insufficient_one_cluster_refused_without_writes",
+    "FAT_read_error_refused_without_writes"
+  ],
+  "original_package_and_software_unchanged": true,
+  "original_bit_reused_exactly": true,
+  "psu_init_unchanged": true,
+  "bsp_headers_and_libraries_unchanged": true,
+  "raw_store_and_readback_functions_unchanged": true,
+  "elf_aarch64": true,
+  "elf_load_end_exclusive": "0x012bc100",
+  "aq_ar_exact": true,
+  "startup_scan_before_dma_and_network": true,
+  "board_tested": false,
+  "physical_card_modified_by_agent": false
+}

@@ -1,0 +1,250 @@
+{
+  "slide_count": 22,
+  "slides": [
+    {
+      "number": 1,
+      "title": "单比特二维频谱的轻量标量恢复网络",
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/config.json"
+      ],
+      "notes": "本次汇报讨论当前冻结compact标量网络。研究任务是修正单比特I/Q经过二维FFT后的相对幅值失真。重点是信号机理、固定特征、小型MLP、训练监督和保护规则，不涉及部署。完整方法的效果由学习参数与固定保护共同形成。"
+    },
+    {
+      "number": 2,
+      "title": "研究任务与输入输出",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py",
+        "network_understanding_v1/20_理论主讲_单比特失真与恢复依据.md"
+      ],
+      "notes": "输入已经是单比特I/Q经过二维FFT后的功率，具有多个强弱等级。数字符号量化发生在FFT之前，每个I/Q分量输出正负64。网络既不输入RGB，也不把每个时域采样的恒定功率直接当作输入。输出保持原频谱坐标，以幅值增益平方修正输入功率。"
+    },
+    {
+      "number": 3,
+      "title": "单比特量化的失真来源",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/20_理论主讲_单比特失真与恢复依据.md",
+        "network_understanding_v1/figures/01_sign_harmonics.png"
+      ],
+      "notes": "I和Q分别取符号，使正弦分量变为方波。两路联合后的复数傅里叶展开含基波、负三次、正五次、负七次等分量。图是理想单目标数学演示，幅比1/3和1/5不应直接套用于所有多目标实测。多分量先相加再量化，还可能产生互调。"
+    },
+    {
+      "number": 4,
+      "title": "有损量化后的恢复空间",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/20_理论主讲_单比特失真与恢复依据.md"
+      ],
+      "notes": "正尺度不变性可以直接证明绝对幅度不可唯一恢复。另一方面，多个分量的相对强弱变化可能改变合成波形过零时刻，进而改变符号序列和FFT功率。因此学习估计仍有空间。相同观测也可能对应不同参考，统计估计无法消除这种歧义。当前模型没有输入或恢复复相位。"
+    },
+    {
+      "number": 5,
+      "title": "当前网络的整体结构",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py",
+        "scalar_restore_v3/pc_candidate_compact/config.json",
+        "network_understanding_v1/figures/08_network_architecture.png"
+      ],
+      "notes": "按图从左向右讲。输入功率一路保留，用于最后的乘法。另一路归一化并提取40维特征，MLP产生分数，有界指数头产生幅值增益，两阶段保护调整部分弱峰，最后功率乘增益平方。图按512有效chirp路径绘制。当前compact沿用冻结v2神经权重，新增紧凑保护，不是新训练出的第二套网络。"
+    },
+    {
+      "number": 6,
+      "title": "归一化与五次根编码",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py",
+        "network_understanding_v1/10_第二讲_40维特征与学习增益.md"
+      ],
+      "notes": "先按输入帧峰值将功率转换为相对幅值X，再取五次根得到z。编码单调展开弱值，便于小型网络使用较大动态范围。它本身不区分弱目标、弱伪影与弱噪声。派生项取五次方是近似逆编码，与第五谐波不是同一含义。整数近似在此省略。"
+    },
+    {
+      "number": 7,
+      "title": "固定40维特征的组成",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py",
+        "scalar_restore_v3/pc_candidate_compact/model_source.py",
+        "network_understanding_v1/10_第二讲_40维特征与学习增益.md"
+      ],
+      "notes": "前4项依次为中心编码、3×3最大值、3×3均值、9×9均值。父子关联各2项。实现先组织8项自身统计与关联，再增加24个邻居，进入MLP前插入8项派生值。24邻居保留位置排列，统计均值不保留排列。父子查询可以跨越整幅频谱，不能把5×5称为全部信息范围。"
+    },
+    {
+      "number": 8,
+      "title": "三次与五次谐波关联",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/20_理论主讲_单比特失真与恢复依据.md",
+        "network_understanding_v1/10_第二讲_40维特征与学习增益.md",
+        "network_understanding_v1/figures/02_alias_coordinates.png"
+      ],
+      "notes": "图的坐标是FFT自然索引，不是米或角度。对理想二维单音，h阶分量中心位于(hr mod1024,ha mod512)。子提示查询负三倍和正五倍位置，并用局部对比门控降低平滑底座支持。父提示反过来查询可能解释当前点的候选来源。几何相容不能证明真假目标。"
+    },
+    {
+      "number": 9,
+      "title": "8个派生项的作用",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/model_source.py",
+        "network_understanding_v1/10_第二讲_40维特征与学习增益.md"
+      ],
+      "notes": "五个五次方来自中心、两个父提示及两个门控子提示。令A=z的五次方，B3、B5为父提示解码值，关系项为限幅的3A−B3与5A−B5。最后一项是A减3×3编码均值的五次方，不是中心减真实幅值均值。扩维没有增加新的雷达观测，也没有消除量化歧义。是否优于不加派生项需要消融，当前没有充分证据断言最优。"
+    },
+    {
+      "number": 10,
+      "title": "共享MLP与逐点增益分数",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/model_source.py"
+      ],
+      "notes": "第一层40到32，第二层32到16，最后16到1。前两层使用ReLU，最后线性层保留正负分数。参数包含1808个权重与49个偏置。共享指整帧复用同一组参数，并非各神经元使用相同权重。分数是log2增益的回归量，不是目标分类概率。"
+    },
+    {
+      "number": 11,
+      "title": "有界幅值增益与功率修正",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/model_source.py",
+        "scalar_restore_v3/pc_candidate_compact/restore_power.py"
+      ],
+      "notes": "先将s限幅到负3与log2的1.5，再取2的幂。s为0时增益1，s为负1时增益0.5。增益范围0.125到1.5，给出受约束的修改。功率等于幅值平方，因此输出功率乘g平方。图是固定公式的数学曲线，不是网络性能测试。"
+    },
+    {
+      "number": 12,
+      "title": "输入驱动的弱峰保护",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/scalar_guard.py",
+        "scalar_restore_v3/pc_candidate_compact/compact_guard.py"
+      ],
+      "notes": "这页讲512有效chirp路径。软弱峰保护考虑相对弱功率、局部峰形、强父谐波解释及原增益。帧峰锚定将输入功率最大位置增益设为1。compact再考虑中心与9×9编码均值之比，从1.4到1.6逐渐增加紧凑度权重，结合第一保护后的增益撤回部分衰减。完整资格还包括相对功率范围、9×9局部最大和无强父解释。规则不读取多比特参考或物理目标标签，可能保留伪峰。"
+    },
+    {
+      "number": 13,
+      "title": "同源配对训练与监督",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/12_第三讲_训练监督与弱峰保护.md",
+        "network_understanding_v1/21_网络主讲_训练参考与证据范围.md",
+        "network_understanding_v1/figures/08_network_architecture.png"
+      ],
+      "notes": "两条支路采用对应的二维FFT数值链，并在同一频谱坐标比较。X来自单比特功率，Y来自多比特参考，各按自己的帧峰值归一化。40维特征只从输入提取。训练预测是X乘神经增益，通过损失反传更新MLP。增益头无参数但参与导数链，最终两阶段推理保护未参与所选训练。当前compact沿用冻结v2权重。"
+    },
+    {
+      "number": 14,
+      "title": "八项复合损失的分工",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v2/runs/protected_patch5/training_source.py",
+        "network_understanding_v1/12_第三讲_训练监督与弱峰保护.md"
+      ],
+      "notes": "按所选训练代码快照说明八项损失，不能仅凭当前工作目录的训练脚本推断历史。头监督目标是带防零小常数的log2(Y/X)，限幅后监督原始分数。幅值和对数损失比较预测与参考。退化惩罚还与旁路误差比较。掩码由参考支持、受控目标及低背景定义，各项的尺度与归一化不同，系数不能简单比较重要性。总损失对参数的导数由反向传播计算，Adam在批次上逐步更新。"
+    },
+    {
+      "number": 15,
+      "title": "与原CDQOB-Net的关系",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/04_原网对照与理论依据.md",
+        "cdqob_pc_online_v1/model.py"
+      ],
+      "notes": "原交付模型使用RGB输入、多尺度卷积和拼接，输出也是RGB。其修正头为clip(h乘I减h加1)，不能把h直接当作当前幅值增益。当前方法从功率提取机理特征，用共享MLP预测有界幅值增益。原网参数378575，当前1857，但变量与目标不同，不能由参数减少推出效果等价。当前不是从原网直接剪下几层，也没有完成保持其全部效果的完整蒸馏。"
+    },
+    {
+      "number": 16,
+      "title": "实验分组与评价口径",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json",
+        "network_understanding_v1/17_已有效果指标的口径核对.md"
+      ],
+      "notes": "已有冻结测试22条，包括16条合成和6条实测派生记录。实测来自同次采集的3源帧、各RX0和RX3两通道，不是6个独立场景。128有效chirp补零至512，不增加有效观测。评价参考和旁路各用自身峰值，增强沿用旁路尺度。已知目标在参考的周期5×5内选峰，所有方法在同一位置读取。NMSE是相对幅值误差，不是检测率。"
+    },
+    {
+      "number": 17,
+      "title": "同帧RD功率谱对照",
+      "appendix": false,
+      "sources": [
+        "scalar_restore_v3/results_compact/images/compact_synth_128001_512.png",
+        "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json"
+      ],
+      "notes": "这三个裁剪来自同一份已保存四路对照图，样例compact_synth_128001_512。省略的第四路是先前v2，本页只展示参考、单比特旁路和当前compact。图使用全距离自然索引，横轴为显示移位后的Doppler bin。参考和旁路分别按自身峰值，当前输出共用旁路尺度，统一负60到0dB。圈标受控已知弱目标。视觉上部分散布背景和条纹降低，但仍存在残留。单帧图片不证明跨场景有效或物理SAR聚焦。"
+    },
+    {
+      "number": 18,
+      "title": "512有效chirp组的弱目标结果",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json"
+      ],
+      "notes": "这页只报告512有效chirp组，避免把128组混入。低于参考半幅的已知目标从29降为17，新增向下跨半幅为0。这不表示全部弱目标恢复，也不表示任意参考局部峰都未下降。弱目标绝对误差之和相对旁路为0.798136，下降约20.2%。数据来自受控合成，不应叫外场检测率。"
+    },
+    {
+      "number": 19,
+      "title": "背景抑制与弱峰保留的取舍",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json",
+        "network_understanding_v1/17_已有效果指标的口径核对.md",
+        "scalar_restore_v3/RESULTS_COMPACT.json"
+      ],
+      "notes": "旧V7指早期标量网络，并非原CDQOB-Net。当前512组合的背景正误差相对V7为1.202078，旧门槛为1.10，因此原整体质量FAIL保持。弱峰专项通过不能覆盖该失败。全体数值参考局部峰另有1处新增下降，不在已知目标所选峰集合内，不能隐去也不能未经标注称为真实漏检。保护依赖输入形态，可能撤回对伪影本来有利的衰减。"
+    },
+    {
+      "number": 20,
+      "title": "方法结论与论证边界",
+      "appendix": false,
+      "sources": [
+        "network_understanding_v1/20_理论主讲_单比特失真与恢复依据.md",
+        "network_understanding_v1/04_原网对照与理论依据.md",
+        "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json"
+      ],
+      "notes": "结束时把理论、设计和实验分开。理论可解释谐波位置、尺度歧义和增益平方关系。40维、五次根、隐藏宽度及阈值包含经验选择，不是由理论唯一推出。当前实验支持已有数据条件下的幅值改善与弱峰取舍，尚不能证明绝对功率、相位恢复、跨场景普遍有效或原网等价性。整体背景门槛仍未通过，不能据弱峰专项通过宣布全部质量通过。"
+    },
+    {
+      "number": 21,
+      "title": "附录：两阶段保护的概念公式",
+      "appendix": true,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/scalar_guard.py",
+        "scalar_restore_v3/pc_candidate_compact/compact_guard.py",
+        "network_understanding_v1/12_第三讲_训练监督与弱峰保护.md"
+      ],
+      "notes": "软保护候选需要弱功率、9×9局部最大或near条件、无强父谐波解释。注意负40dB下限只属于第一层near分支，不适用于独立局部最大分支。compact候选必须达到帧峰万分之一、不高于帧峰十六分之一、是9×9最大且无强父解释。t按输入增益从0.25到0.5连续变化。c按中心与9×9编码均值的比从1.4到1.6变化。第二层使用g1而不是原gnn。帧峰锚定单独设1。"
+    },
+    {
+      "number": 22,
+      "title": "附录：训练与结果的追溯依据",
+      "appendix": true,
+      "sources": [
+        "scalar_restore_v3/pc_candidate_compact/model_source.py",
+        "scalar_restore_v3/pc_candidate_compact/config.json",
+        "scalar_restore_v2/runs/protected_patch5/training_source.py",
+        "scalar_restore_v2/runs/soft_patch5/config.json",
+        "network_understanding_v1/reports/EVIDENCE_WALKTHROUGH.json",
+        "network_understanding_v1/04_原网对照与理论依据.md"
+      ],
+      "notes": "若被问及原理依据，首先说明符号非线性与傅里叶展开是可推导的机理。若被问及模型参数，定位model_source和weights。若被问及八项损失，定位protected_patch5训练快照，其散列与所选soft_patch5配置一致。若被问及效果，定位22条已保存输出及同口径指标核对。当前训练记录62条，其中32合成30采集派生，并非62个独立场景。本文没有重新训练、推理或测试。"
+    }
+  ],
+  "owners": {
+    "tables": [
+      6,
+      7,
+      9,
+      10,
+      12,
+      14,
+      15,
+      16,
+      20,
+      22
+    ],
+    "charts": [
+      11,
+      18,
+      19
+    ]
+  }
+}

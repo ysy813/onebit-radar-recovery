@@ -1,0 +1,1056 @@
+{
+  "records": [
+    {
+      "seed": 128000,
+      "index": 0,
+      "targets": [
+        {
+          "range_bin": 61.0,
+          "doppler_bin": 0.0,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 216.75894537619075,
+          "doppler_bin": -204.95926136395263,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 421.6074074472332,
+          "doppler_bin": -102.19530427632435,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 216.83602665028715,
+          "doppler_bin": 102.13396863950311,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 216.88344464813525,
+          "doppler_bin": 204.8398547059333,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 395.09405486951874,
+          "doppler_bin": 79.04355508377961,
+          "amplitude": 0.05552364871928367,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 73.92966859009786,
+          "doppler_bin": -48.24637434576704,
+          "amplitude": 0.09209521540261253,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.025,
+      "adc_scale": 3801.944350775041,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128000_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128000_128.npz",
+      "file": "pairs\\compact_synth_128000_128.npz",
+      "sha256": "aa03d6f2baa67cf29b5d69ceaa78eba837db82dd2ca5d16e135d6d8342199c71"
+    },
+    {
+      "seed": 128001,
+      "index": 1,
+      "targets": [
+        {
+          "range_bin": 83.2,
+          "doppler_bin": 0.2300000000000182,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 221.271890714685,
+          "doppler_bin": -204.94694569173197,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 426.2510262450246,
+          "doppler_bin": -102.1104002888307,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.35690443920524,
+          "doppler_bin": 102.12789003297422,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.41737747193707,
+          "doppler_bin": 204.78685303219538,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 298.04841902436044,
+          "doppler_bin": 55.50872869599277,
+          "amplitude": 0.06484373371251405,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 296.6721945663734,
+          "doppler_bin": -84.53669580852909,
+          "amplitude": 0.09823377951660371,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 416.0,
+          "doppler_bin": 1.1499999999999773,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.05,
+      "adc_scale": 3375.486812834756,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128001_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128001_512.npz",
+      "file": "pairs\\compact_synth_128001_512.npz",
+      "sha256": "c341176a833284122301e8c9d0d0a758b7ac18c7a774508753db7ba0ee9e4d23"
+    },
+    {
+      "seed": 128002,
+      "index": 2,
+      "targets": [
+        {
+          "range_bin": 137.4,
+          "doppler_bin": -0.36000000000001364,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 232.0709775211752,
+          "doppler_bin": -205.1378787764928,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 437.17638382258724,
+          "doppler_bin": -102.26300146816845,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.15006885598928,
+          "doppler_bin": 102.2924533361986,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.32059597112536,
+          "doppler_bin": 204.81216429043832,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 175.41786174991634,
+          "doppler_bin": 31.598062324618354,
+          "amplitude": 0.11947128235419327,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 462.0938859288404,
+          "doppler_bin": -27.443902058745323,
+          "amplitude": 0.03777662266056905,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.08,
+      "adc_scale": 3614.8048017220467,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128002_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128002_128.npz",
+      "file": "pairs\\compact_synth_128002_128.npz",
+      "sha256": "16133c74becad3f906c194f2b770a03262cc912acaeda0122adbac38c7e3e335"
+    },
+    {
+      "seed": 128003,
+      "index": 3,
+      "targets": [
+        {
+          "range_bin": 260.1,
+          "doppler_bin": 0.05000000000001137,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 256.76868776400147,
+          "doppler_bin": -205.0323051530556,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 461.38630938205455,
+          "doppler_bin": -102.11192061653202,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 51.96400971222946,
+          "doppler_bin": 102.11455716824696,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 256.97557316957443,
+          "doppler_bin": 204.78333149633215,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 229.63217678926625,
+          "doppler_bin": 54.23331330079964,
+          "amplitude": 0.04885093148254413,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 266.84623837410123,
+          "doppler_bin": -49.78347993191173,
+          "amplitude": 0.08990698022001223,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 276.5,
+          "doppler_bin": 0.25,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.035,
+      "adc_scale": 3913.096387553428,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128003_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128003_512.npz",
+      "file": "pairs\\compact_synth_128003_512.npz",
+      "sha256": "3a2145540050110e8f0a33f8b3a5f8d4080ea030a5b3f1e3a8c8930694834e87"
+    },
+    {
+      "seed": 128004,
+      "index": 4,
+      "targets": [
+        {
+          "range_bin": 61.0,
+          "doppler_bin": 0.0,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 217.019384613364,
+          "doppler_bin": -204.9320368939384,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 421.8216128566178,
+          "doppler_bin": -102.24406501872517,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 217.19482906174193,
+          "doppler_bin": 102.26907028803919,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 217.17536830439352,
+          "doppler_bin": 204.73159122863206,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 115.17230107240565,
+          "doppler_bin": 79.65379503026196,
+          "amplitude": 0.04171437540642371,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 147.31036276636542,
+          "doppler_bin": -83.56756297295124,
+          "amplitude": 0.10797204286777426,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.025,
+      "adc_scale": 3533.457501533576,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128004_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128004_128.npz",
+      "file": "pairs\\compact_synth_128004_128.npz",
+      "sha256": "7cb4842cb193df2256439fc767224f2dfe6225fbcaef8a03197b4ae91a75ee0b"
+    },
+    {
+      "seed": 128005,
+      "index": 5,
+      "targets": [
+        {
+          "range_bin": 83.2,
+          "doppler_bin": 0.2300000000000182,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 221.48100159413883,
+          "doppler_bin": -204.94130731288408,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 426.106212906856,
+          "doppler_bin": -102.19656974655746,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.5241522505519,
+          "doppler_bin": 102.22971071142479,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.58407697370922,
+          "doppler_bin": 204.9266826463495,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 223.41642121326265,
+          "doppler_bin": 63.18206701692776,
+          "amplitude": 0.05600787251637193,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 148.3500741356615,
+          "doppler_bin": -81.52241224577796,
+          "amplitude": 0.03219639137118695,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 416.0,
+          "doppler_bin": 1.1499999999999773,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.05,
+      "adc_scale": 3755.5871577087737,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128005_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128005_512.npz",
+      "file": "pairs\\compact_synth_128005_512.npz",
+      "sha256": "aca3c06855d774523a1dcb4137e120316f1f80ff469dbb1c47d5bf3c4010ea26"
+    },
+    {
+      "seed": 128006,
+      "index": 6,
+      "targets": [
+        {
+          "range_bin": 137.4,
+          "doppler_bin": -0.36000000000001364,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 232.17219874332193,
+          "doppler_bin": -205.10793519629047,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 437.0315799705746,
+          "doppler_bin": -102.16382963480089,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.47808047678578,
+          "doppler_bin": 102.30799759984882,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.06089134891562,
+          "doppler_bin": 204.79176751476632,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 385.97994787325825,
+          "doppler_bin": 33.722006642775,
+          "amplitude": 0.10933075233800735,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 322.00964203323286,
+          "doppler_bin": -44.26763461123363,
+          "amplitude": 0.06865750129542572,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.08,
+      "adc_scale": 3576.637719828653,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128006_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128006_128.npz",
+      "file": "pairs\\compact_synth_128006_128.npz",
+      "sha256": "953ebcc0ba9b215103c1e69cc3b82369cfed87b79a413229ef0b5ac91170f397"
+    },
+    {
+      "seed": 128007,
+      "index": 7,
+      "targets": [
+        {
+          "range_bin": 260.1,
+          "doppler_bin": 0.05000000000001137,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 256.62005789364736,
+          "doppler_bin": -205.06921680613706,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 461.7290294341775,
+          "doppler_bin": -102.05469889014111,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 52.195516515117234,
+          "doppler_bin": 102.2500069273226,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 256.65417344198534,
+          "doppler_bin": 204.75378186858222,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 100.64789518466,
+          "doppler_bin": 38.548841319411395,
+          "amplitude": 0.06401724828154348,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 70.66343743405213,
+          "doppler_bin": -30.0430252142925,
+          "amplitude": 0.05134153418239565,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 276.5,
+          "doppler_bin": 0.25,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.035,
+      "adc_scale": 3813.0513537116112,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128007_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128007_512.npz",
+      "file": "pairs\\compact_synth_128007_512.npz",
+      "sha256": "534ffad13ecf6ce403beb1dbd8b3142a7c8af92efe98abb09cc7ed8f3d311665"
+    },
+    {
+      "seed": 128008,
+      "index": 8,
+      "targets": [
+        {
+          "range_bin": 61.0,
+          "doppler_bin": 0.0,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 216.91100105668085,
+          "doppler_bin": -205.01094524238692,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 421.9898227980622,
+          "doppler_bin": -102.1830093426791,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 216.93567003116783,
+          "doppler_bin": 102.22511836960587,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 216.7739569828004,
+          "doppler_bin": 204.76073037082278,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 417.29940264141277,
+          "doppler_bin": 33.49478027214826,
+          "amplitude": 0.11778694607404795,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 106.01367839523705,
+          "doppler_bin": -30.311056649015313,
+          "amplitude": 0.032584929448967,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.025,
+      "adc_scale": 3746.669646632764,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128008_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128008_128.npz",
+      "file": "pairs\\compact_synth_128008_128.npz",
+      "sha256": "704f4e160beb27440d87a85d5c15c65947e96581d435f41f7cbb7399a787dafd"
+    },
+    {
+      "seed": 128009,
+      "index": 9,
+      "targets": [
+        {
+          "range_bin": 83.2,
+          "doppler_bin": 0.2300000000000182,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 221.6871866302743,
+          "doppler_bin": -205.1646968477265,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 426.4873664181321,
+          "doppler_bin": -102.0749505543514,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.60608985427052,
+          "doppler_bin": 102.21864367342909,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.243721467954,
+          "doppler_bin": 204.86789727763778,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 139.7258663468508,
+          "doppler_bin": 39.85618923877536,
+          "amplitude": 0.10315414557597641,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 363.44983293480306,
+          "doppler_bin": -22.346000877448688,
+          "amplitude": 0.0766778195456384,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 416.0,
+          "doppler_bin": 1.1499999999999773,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.05,
+      "adc_scale": 3600.3252309500235,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128009_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128009_512.npz",
+      "file": "pairs\\compact_synth_128009_512.npz",
+      "sha256": "944e02228c8decf6f909185a64c39489ce3ae31a390712aac468a9622b0b0e40"
+    },
+    {
+      "seed": 128010,
+      "index": 10,
+      "targets": [
+        {
+          "range_bin": 137.4,
+          "doppler_bin": -0.36000000000001364,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 232.4011819425169,
+          "doppler_bin": -205.06016900675712,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 437.18706702695175,
+          "doppler_bin": -102.1980055340729,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.0871442809413,
+          "doppler_bin": 102.29673870696831,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.30233906342264,
+          "doppler_bin": 204.77530223396957,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 58.74766926387568,
+          "doppler_bin": 61.83429025389097,
+          "amplitude": 0.05329304420232417,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 368.5932621194083,
+          "doppler_bin": -34.6793582662514,
+          "amplitude": 0.030153946479590944,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.08,
+      "adc_scale": 3792.020841560605,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128010_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128010_128.npz",
+      "file": "pairs\\compact_synth_128010_128.npz",
+      "sha256": "046b2c4974e26ae9410e026e1e428e085ad92cb63b052c0d41b43bb6c5e1c005"
+    },
+    {
+      "seed": 128011,
+      "index": 11,
+      "targets": [
+        {
+          "range_bin": 260.1,
+          "doppler_bin": 0.05000000000001137,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 256.91892690666714,
+          "doppler_bin": -205.1142850283306,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 461.5903537893678,
+          "doppler_bin": -102.21766830698729,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 52.03063271195431,
+          "doppler_bin": 102.11075285885676,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 257.0269348098727,
+          "doppler_bin": 204.8174312238218,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 234.89909054331602,
+          "doppler_bin": 69.77810752038704,
+          "amplitude": 0.04256915526467311,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 303.38363959286653,
+          "doppler_bin": -32.0724600084244,
+          "amplitude": 0.07136004960580311,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 276.5,
+          "doppler_bin": 0.25,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.035,
+      "adc_scale": 3912.3937780385695,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128011_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128011_512.npz",
+      "file": "pairs\\compact_synth_128011_512.npz",
+      "sha256": "34710a484c87bbe62a8ee8f4d634bac09d00dc7166287704cf636dd5f2b37d94"
+    },
+    {
+      "seed": 128012,
+      "index": 12,
+      "targets": [
+        {
+          "range_bin": 61.0,
+          "doppler_bin": 0.0,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 217.10285426517842,
+          "doppler_bin": -204.94328365497935,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 421.5899099637881,
+          "doppler_bin": -102.26131673871976,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 217.10681553049048,
+          "doppler_bin": 102.20719335211481,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 216.81761353222598,
+          "doppler_bin": 204.93465589032235,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 45.489840776999536,
+          "doppler_bin": 53.20617073723594,
+          "amplitude": 0.04406809477129002,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 138.59690206663078,
+          "doppler_bin": -62.77296888407764,
+          "amplitude": 0.08559232008714612,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.025,
+      "adc_scale": 3724.5988677556206,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128012_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128012_128.npz",
+      "file": "pairs\\compact_synth_128012_128.npz",
+      "sha256": "48133fbb77b6bc0587481e5bcab69f1a09eaa754c1664406f9d699994ff64453"
+    },
+    {
+      "seed": 128013,
+      "index": 13,
+      "targets": [
+        {
+          "range_bin": 83.2,
+          "doppler_bin": 0.2300000000000182,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 221.3171936819526,
+          "doppler_bin": -204.99168953283572,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 426.37955963107584,
+          "doppler_bin": -102.09931046213427,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.26786818581772,
+          "doppler_bin": 102.13258489082591,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 221.5090401133281,
+          "doppler_bin": 204.85458505448696,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 110.21360725115551,
+          "doppler_bin": 75.83340024127307,
+          "amplitude": 0.09649646794007263,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 341.87541057577107,
+          "doppler_bin": -31.758024244623158,
+          "amplitude": 0.11920692820307087,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 416.0,
+          "doppler_bin": 1.1499999999999773,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.05,
+      "adc_scale": 3353.27894131187,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128013_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128013_512.npz",
+      "file": "pairs\\compact_synth_128013_512.npz",
+      "sha256": "a0c93deacf136821a967b0bd9a9d734cbaa653f302886437c8b9ea53c471b251"
+    },
+    {
+      "seed": 128014,
+      "index": 14,
+      "targets": [
+        {
+          "range_bin": 137.4,
+          "doppler_bin": -0.36000000000001364,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 232.1924657328037,
+          "doppler_bin": -205.05891685016928,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 436.9429622975692,
+          "doppler_bin": -102.10469373904772,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.4040016277423,
+          "doppler_bin": 102.09110586646449,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 232.18908666462062,
+          "doppler_bin": 204.80122311341114,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 197.80972190497096,
+          "doppler_bin": 77.74179863835616,
+          "amplitude": 0.04273578722394858,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 352.24197972238943,
+          "doppler_bin": -39.412187276692094,
+          "amplitude": 0.04144051803515028,
+          "kind": "ordinary_weak"
+        }
+      ],
+      "noise_amplitude": 0.08,
+      "adc_scale": 3651.0403410866966,
+      "actual_chirps": 128,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128014_128",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128014_128.npz",
+      "file": "pairs\\compact_synth_128014_128.npz",
+      "sha256": "b5d39a170c16bb7a0cb6089c2b1ada50f0399d1774215aec97f26e9fe048d237"
+    },
+    {
+      "seed": 128015,
+      "index": 15,
+      "targets": [
+        {
+          "range_bin": 260.1,
+          "doppler_bin": 0.05000000000001137,
+          "amplitude": 1.0,
+          "kind": "strong_static"
+        },
+        {
+          "range_bin": 256.7800058701234,
+          "doppler_bin": -205.09238460296103,
+          "amplitude": 0.1,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 461.5763449021198,
+          "doppler_bin": -102.13425656590152,
+          "amplitude": 0.03,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 51.80123982365408,
+          "doppler_bin": 102.26045340325578,
+          "amplitude": 0.08,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 257.0435671295549,
+          "doppler_bin": 204.7497019269378,
+          "amplitude": 0.045,
+          "kind": "alias_column_weak"
+        },
+        {
+          "range_bin": 423.6776117815956,
+          "doppler_bin": 71.89467479946325,
+          "amplitude": 0.060545284053760126,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 181.44266782674018,
+          "doppler_bin": -84.83425460303624,
+          "amplitude": 0.09701763128014658,
+          "kind": "ordinary_weak"
+        },
+        {
+          "range_bin": 276.5,
+          "doppler_bin": 0.25,
+          "amplitude": 0.06,
+          "kind": "true_harmonic_collision"
+        }
+      ],
+      "noise_amplitude": 0.035,
+      "adc_scale": 3592.3504135793796,
+      "actual_chirps": 512,
+      "split": "compact_fresh_test",
+      "group": "synthetic",
+      "id": "compact_synth_128015_512",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_synth_128015_512.npz",
+      "file": "pairs\\compact_synth_128015_512.npz",
+      "sha256": "43ef82617d453c884f928fd97e7529432ddcb76157a5a175c555d9475f605ae5"
+    },
+    {
+      "split": "compact_fresh_test",
+      "group": "field_temporal",
+      "targets": [],
+      "layout_assumed": "rx_blocks_per_chirp",
+      "rx_id": 0,
+      "source_frame_zero_based": 455,
+      "physical_layout_confirmed": false,
+      "raw_frame_sha256": "938ca73e029d9ce65df4192a17cd77dcca28c98eb2d98ed3ea1cb8f259fa44cc",
+      "id": "compact_field_rx0_0455",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_field_rx0_0455.npz",
+      "file": "pairs\\compact_field_rx0_0455.npz",
+      "sha256": "85efc1f14af219b1815f6754fb55106ca35bfdb04de91cb9eebd19d4e6e47c41",
+      "actual_chirps": 128
+    },
+    {
+      "split": "compact_fresh_test",
+      "group": "field_temporal",
+      "targets": [],
+      "layout_assumed": "rx_blocks_per_chirp",
+      "rx_id": 3,
+      "source_frame_zero_based": 455,
+      "physical_layout_confirmed": false,
+      "raw_frame_sha256": "938ca73e029d9ce65df4192a17cd77dcca28c98eb2d98ed3ea1cb8f259fa44cc",
+      "id": "compact_field_rx3_0455",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_field_rx3_0455.npz",
+      "file": "pairs\\compact_field_rx3_0455.npz",
+      "sha256": "eef93bc6a9988421e982d8e1f958bd101d8c30e373e42f0f0f790ae2e4f424ca",
+      "actual_chirps": 128
+    },
+    {
+      "split": "compact_fresh_test",
+      "group": "field_temporal",
+      "targets": [],
+      "layout_assumed": "rx_blocks_per_chirp",
+      "rx_id": 0,
+      "source_frame_zero_based": 519,
+      "physical_layout_confirmed": false,
+      "raw_frame_sha256": "71aa4ca13fb55014b94c3cb1706e950dd173f89c2b1e2470f45c5ad94bd8e3dc",
+      "id": "compact_field_rx0_0519",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_field_rx0_0519.npz",
+      "file": "pairs\\compact_field_rx0_0519.npz",
+      "sha256": "14aa55dd2af8f0926db2f405e8909ca0af037c74655a07a22908d9050e8fa12e",
+      "actual_chirps": 128
+    },
+    {
+      "split": "compact_fresh_test",
+      "group": "field_temporal",
+      "targets": [],
+      "layout_assumed": "rx_blocks_per_chirp",
+      "rx_id": 3,
+      "source_frame_zero_based": 519,
+      "physical_layout_confirmed": false,
+      "raw_frame_sha256": "71aa4ca13fb55014b94c3cb1706e950dd173f89c2b1e2470f45c5ad94bd8e3dc",
+      "id": "compact_field_rx3_0519",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_field_rx3_0519.npz",
+      "file": "pairs\\compact_field_rx3_0519.npz",
+      "sha256": "396a88cd7d40036185b9c45178d7ebbe17ff14e19e28a9dc35248288b01b252a",
+      "actual_chirps": 128
+    },
+    {
+      "split": "compact_fresh_test",
+      "group": "field_temporal",
+      "targets": [],
+      "layout_assumed": "rx_blocks_per_chirp",
+      "rx_id": 0,
+      "source_frame_zero_based": 583,
+      "physical_layout_confirmed": false,
+      "raw_frame_sha256": "2433418ca00f5288cc74f0097ede7b9b14dd7c3b717e8adabcc2a3b9e468d092",
+      "id": "compact_field_rx0_0583",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_field_rx0_0583.npz",
+      "file": "pairs\\compact_field_rx0_0583.npz",
+      "sha256": "d44bce810005b6b100e08dc18adccceba9eafd3b11c003b58e3c1f9b5afc53a6",
+      "actual_chirps": 128
+    },
+    {
+      "split": "compact_fresh_test",
+      "group": "field_temporal",
+      "targets": [],
+      "layout_assumed": "rx_blocks_per_chirp",
+      "rx_id": 3,
+      "source_frame_zero_based": 583,
+      "physical_layout_confirmed": false,
+      "raw_frame_sha256": "2433418ca00f5288cc74f0097ede7b9b14dd7c3b717e8adabcc2a3b9e468d092",
+      "id": "compact_field_rx3_0583",
+      "pair_path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_restore_v3\\pairs\\compact_field_rx3_0583.npz",
+      "file": "pairs\\compact_field_rx3_0583.npz",
+      "sha256": "aa0d9733626f09e1687b76d3144aa95a21087ed545c98728651a4f33b9d788e8",
+      "actual_chirps": 128
+    }
+  ],
+  "protocol_sha256": "772faa44039299d3523fe5b47f2dd95c70224585a21ebc27719f103bc174eb5e",
+  "frozen_sha256": "70ddab11aed668c8397e6acd42d032ee7b6d045e38aac31a2a2a4cd1bac82efe"
+}

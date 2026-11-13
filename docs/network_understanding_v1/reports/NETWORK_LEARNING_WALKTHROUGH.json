@@ -1,0 +1,640 @@
+{
+  "status": "PASS",
+  "checks": {
+    "two_existing_records_match": true,
+    "center_exactly_equal": true,
+    "all_other_features_not_equal": true,
+    "scores_and_raw_gains_differ": true,
+    "stronger_parent_hints_not_sufficient_to_order_gains": true,
+    "both_final_gains_return_to_input": true,
+    "saved_reference_stage_gains_match": true,
+    "saved_reference_error_direction_matches": true,
+    "saved_reference_used_for_evaluation_only": true,
+    "blend_weights_are_bounded": true,
+    "protecting_input_can_help_or_hurt": true,
+    "second_guard_can_reverse_a_first_guard_improvement": true,
+    "blend_is_weighted_square_minimizer": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Read-only explanation of existing records and scalar protection algebra",
+  "visual_payload": {
+    "schema": 1,
+    "source": "Two already traced points; no new model evaluation",
+    "points": [
+      {
+        "id": "A",
+        "position": [
+          25,
+          0
+        ],
+        "center": 0.406982421875,
+        "feature_values": [
+          0.406982421875,
+          0.406982421875,
+          0.325927734375,
+          0.25830078125,
+          0.470947265625,
+          0.674560546875,
+          0.446044921875,
+          0.0,
+          0.01116943359375,
+          0.023162841796875,
+          0.1396636962890625,
+          0.0176544189453125,
+          0.0,
+          0.010345458984375,
+          -0.0838165283203125,
+          0.0074920654296875,
+          0.15576171875,
+          0.289794921875,
+          0.28857421875,
+          0.38720703125,
+          0.201904296875,
+          0.260009765625,
+          0.322998046875,
+          0.30419921875,
+          0.3681640625,
+          0.239013671875,
+          0.295654296875,
+          0.25,
+          0.349853515625,
+          0.318359375,
+          0.2880859375,
+          0.26513671875,
+          0.357666015625,
+          0.30810546875,
+          0.256591796875,
+          0.2626953125,
+          0.37158203125,
+          0.375244140625,
+          0.2646484375,
+          0.24169921875
+        ],
+        "features_shown": [
+          {
+            "index": 0,
+            "label": "中心",
+            "value": 0.406982421875
+          },
+          {
+            "index": 2,
+            "label": "3×3均值",
+            "value": 0.325927734375
+          },
+          {
+            "index": 3,
+            "label": "9×9均值",
+            "value": 0.25830078125
+          },
+          {
+            "index": 4,
+            "label": "三次父",
+            "value": 0.470947265625
+          },
+          {
+            "index": 5,
+            "label": "五次父",
+            "value": 0.674560546875
+          },
+          {
+            "index": 6,
+            "label": "三次子",
+            "value": 0.446044921875
+          },
+          {
+            "index": 7,
+            "label": "五次子",
+            "value": 0.0
+          }
+        ],
+        "score": -0.515289306640625,
+        "active_neurons": [
+          18,
+          15
+        ],
+        "gains": [
+          1.0,
+          0.699462890625,
+          1.0,
+          1.0
+        ],
+        "power_ratios": [
+          1.0,
+          0.4892483353614807,
+          1.0,
+          1.0
+        ],
+        "guard_eligible": [
+          true,
+          true
+        ],
+        "compactness": 0.878173828125,
+        "first_blend_weight": 1.0,
+        "second_blend_weight": 0.878173828125,
+        "combined_blend_weight": 1.0,
+        "conceptual_real_gains": [
+          1.0,
+          1.0
+        ],
+        "source_records_match": true,
+        "physical_target_status": "Unknown",
+        "input_relative_amplitude": 0.011169507340678992,
+        "reference_relative_amplitude": 0.016635492620372224,
+        "reference_to_input_ratio": 1.489366729702239,
+        "stage_amplitudes": [
+          0.011169507340678992,
+          0.007812655891362654,
+          0.011169507340678992,
+          0.011169507340678992
+        ],
+        "stage_absolute_errors": [
+          0.005465985279693232,
+          0.00882283672900957,
+          0.005465985279693232,
+          0.005465985279693232
+        ]
+      },
+      {
+        "id": "B",
+        "position": [
+          200,
+          148
+        ],
+        "center": 0.406982421875,
+        "feature_values": [
+          0.406982421875,
+          0.406982421875,
+          0.260009765625,
+          0.206298828125,
+          0.24072265625,
+          0.271240234375,
+          0.0,
+          0.016845703125,
+          0.01116943359375,
+          0.0008087158203125,
+          0.00146484375,
+          0.0,
+          0.0,
+          0.0326995849609375,
+          0.05438232421875,
+          0.009979248046875,
+          0.24072265625,
+          0.194091796875,
+          0.24853515625,
+          0.17236328125,
+          0.17578125,
+          0.217529296875,
+          0.201904296875,
+          0.2529296875,
+          0.217529296875,
+          0.196044921875,
+          0.267578125,
+          0.276611328125,
+          0.285400390625,
+          0.235107421875,
+          0.1650390625,
+          0.242431640625,
+          0.243408203125,
+          0.2119140625,
+          0.1650390625,
+          0.189453125,
+          0.196044921875,
+          0.235107421875,
+          0.21337890625,
+          0.20361328125
+        ],
+        "features_shown": [
+          {
+            "index": 0,
+            "label": "中心",
+            "value": 0.406982421875
+          },
+          {
+            "index": 2,
+            "label": "3×3均值",
+            "value": 0.260009765625
+          },
+          {
+            "index": 3,
+            "label": "9×9均值",
+            "value": 0.206298828125
+          },
+          {
+            "index": 4,
+            "label": "三次父",
+            "value": 0.24072265625
+          },
+          {
+            "index": 5,
+            "label": "五次父",
+            "value": 0.271240234375
+          },
+          {
+            "index": 6,
+            "label": "三次子",
+            "value": 0.0
+          },
+          {
+            "index": 7,
+            "label": "五次子",
+            "value": 0.016845703125
+          }
+        ],
+        "score": -1.1974029541015625,
+        "active_neurons": [
+          18,
+          15
+        ],
+        "gains": [
+          1.0,
+          0.43609619140625,
+          0.8558349609375,
+          1.0
+        ],
+        "power_ratios": [
+          1.0,
+          0.19017988815903664,
+          0.7324534803628922,
+          1.0
+        ],
+        "guard_eligible": [
+          true,
+          true
+        ],
+        "compactness": 1.0,
+        "first_blend_weight": 0.744384765625,
+        "second_blend_weight": 1.0,
+        "combined_blend_weight": 1.0,
+        "conceptual_real_gains": [
+          0.8558575958013535,
+          1.0
+        ],
+        "source_records_match": true,
+        "physical_target_status": "Unknown",
+        "input_relative_amplitude": 0.01117227189412381,
+        "reference_relative_amplitude": 2.67328538406498e-05,
+        "reference_to_input_ratio": 0.002392785826731469,
+        "stage_amplitudes": [
+          0.01117227189412381,
+          0.004872185222352009,
+          0.009561620880096745,
+          0.01117227189412381
+        ],
+        "stage_absolute_errors": [
+          0.011145539040283162,
+          0.0048454523685113595,
+          0.009534888026256096,
+          0.011145539040283162
+        ]
+      }
+    ],
+    "feature_count": 40,
+    "architecture": [
+      40,
+      32,
+      16,
+      1
+    ],
+    "stage_labels": [
+      "输入",
+      "MLP输出",
+      "软保护后",
+      "紧凑保护后"
+    ]
+  },
+  "conceptual_scalar_examples": [
+    {
+      "label": "输入幅值恰好正确",
+      "input_amplitude": 0.01,
+      "reference_amplitude": 0.01,
+      "hypothetical_mlp_gain": 0.4,
+      "compactness": 1.0,
+      "gains": [
+        0.4,
+        0.76,
+        1.0
+      ],
+      "output_amplitudes": [
+        0.004,
+        0.0076,
+        0.01
+      ],
+      "squared_errors": [
+        3.6e-05,
+        5.760000000000001e-06,
+        0.0
+      ],
+      "soft_guard_error_change": -3.0240000000000002e-05,
+      "soft_guard_error_change_algebra": -3.0240000000000002e-05,
+      "soft_guard_improves": true,
+      "second_guard_improves_over_first": true,
+      "combined_blend_weight": 1.0,
+      "weighted_square_stationarity_residual": 0.0,
+      "scope": "Constructed scalar example, not model inference or radar evidence"
+    },
+    {
+      "label": "MLP幅值恰好正确",
+      "input_amplitude": 0.01,
+      "reference_amplitude": 0.004,
+      "hypothetical_mlp_gain": 0.4,
+      "compactness": 1.0,
+      "gains": [
+        0.4,
+        0.76,
+        1.0
+      ],
+      "output_amplitudes": [
+        0.004,
+        0.0076,
+        0.01
+      ],
+      "squared_errors": [
+        0.0,
+        1.296e-05,
+        3.6e-05
+      ],
+      "soft_guard_error_change": 1.296e-05,
+      "soft_guard_error_change_algebra": 1.296e-05,
+      "soft_guard_improves": false,
+      "second_guard_improves_over_first": false,
+      "combined_blend_weight": 1.0,
+      "weighted_square_stationarity_residual": 0.0,
+      "scope": "Constructed scalar example, not model inference or radar evidence"
+    },
+    {
+      "label": "参考位于两者之间",
+      "input_amplitude": 0.01,
+      "reference_amplitude": 0.006,
+      "hypothetical_mlp_gain": 0.4,
+      "compactness": 1.0,
+      "gains": [
+        0.4,
+        0.76,
+        1.0
+      ],
+      "output_amplitudes": [
+        0.004,
+        0.0076,
+        0.01
+      ],
+      "squared_errors": [
+        4e-06,
+        2.5599999999999996e-06,
+        1.6e-05
+      ],
+      "soft_guard_error_change": -1.4400000000000002e-06,
+      "soft_guard_error_change_algebra": -1.4399999999999998e-06,
+      "soft_guard_improves": true,
+      "second_guard_improves_over_first": false,
+      "combined_blend_weight": 1.0,
+      "weighted_square_stationarity_residual": 0.0,
+      "scope": "Constructed scalar example, not model inference or radar evidence"
+    }
+  ],
+  "blend_algebra_examples": [
+    {
+      "raw_gain": 0.125,
+      "compactness": 0.0,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.125,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.125,
+      "compactness": 0.25,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.125,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.125,
+      "compactness": 0.7,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.125,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.125,
+      "compactness": 1.0,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.125,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.25,
+      "compactness": 0.0,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.25,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.25,
+      "compactness": 0.25,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.25,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.25,
+      "compactness": 0.7,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.25,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.25,
+      "compactness": 1.0,
+      "combined_blend_weight": 0.0,
+      "final_gain": 0.25,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.3,
+      "compactness": 0.0,
+      "combined_blend_weight": 0.19999999999999996,
+      "final_gain": 0.43999999999999995,
+      "combination_residual": 0.0,
+      "stationarity_residual": -2.7755575615628914e-17
+    },
+    {
+      "raw_gain": 0.3,
+      "compactness": 0.25,
+      "combined_blend_weight": 0.35199999999999987,
+      "final_gain": 0.5464,
+      "combination_residual": -1.1102230246251565e-16,
+      "stationarity_residual": -5.551115123125783e-17
+    },
+    {
+      "raw_gain": 0.3,
+      "compactness": 0.7,
+      "combined_blend_weight": 0.6255999999999998,
+      "final_gain": 0.7379199999999999,
+      "combination_residual": 0.0,
+      "stationarity_residual": 1.1102230246251565e-16
+    },
+    {
+      "raw_gain": 0.3,
+      "compactness": 1.0,
+      "combined_blend_weight": 0.8079999999999998,
+      "final_gain": 0.8655999999999999,
+      "combination_residual": 0.0,
+      "stationarity_residual": 5.551115123125783e-17
+    },
+    {
+      "raw_gain": 0.4,
+      "compactness": 0.0,
+      "combined_blend_weight": 0.6000000000000001,
+      "final_gain": 0.76,
+      "combination_residual": 0.0,
+      "stationarity_residual": -1.1102230246251565e-16
+    },
+    {
+      "raw_gain": 0.4,
+      "compactness": 0.25,
+      "combined_blend_weight": 0.7000000000000001,
+      "final_gain": 0.8200000000000001,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.4,
+      "compactness": 0.7,
+      "combined_blend_weight": 0.88,
+      "final_gain": 0.9279999999999999,
+      "combination_residual": 1.1102230246251565e-16,
+      "stationarity_residual": 8.326672684688674e-17
+    },
+    {
+      "raw_gain": 0.4,
+      "compactness": 1.0,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.49,
+      "compactness": 0.0,
+      "combined_blend_weight": 0.96,
+      "final_gain": 0.9796,
+      "combination_residual": 0.0,
+      "stationarity_residual": 9.020562075079397e-17
+    },
+    {
+      "raw_gain": 0.49,
+      "compactness": 0.25,
+      "combined_blend_weight": 0.97,
+      "final_gain": 0.9847,
+      "combination_residual": 0.0,
+      "stationarity_residual": 6.591949208711867e-17
+    },
+    {
+      "raw_gain": 0.49,
+      "compactness": 0.7,
+      "combined_blend_weight": 0.988,
+      "final_gain": 0.99388,
+      "combination_residual": 0.0,
+      "stationarity_residual": -1.734723475976807e-17
+    },
+    {
+      "raw_gain": 0.49,
+      "compactness": 1.0,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.7,
+      "compactness": 0.0,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.7,
+      "compactness": 0.25,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.7,
+      "compactness": 0.7,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.7,
+      "compactness": 1.0,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.99,
+      "compactness": 0.0,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.99,
+      "compactness": 0.25,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.99,
+      "compactness": 0.7,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    },
+    {
+      "raw_gain": 0.99,
+      "compactness": 1.0,
+      "combined_blend_weight": 1.0,
+      "final_gain": 1.0,
+      "combination_residual": 0.0,
+      "stationarity_residual": 0.0
+    }
+  ],
+  "source_sha256": {
+    "network_understanding_v1/reports/FEATURE_WALKTHROUGH.json": "6f0372ca5fd62c1b626e26780de78f623dd1a776d03a18132e51a8a4b6364dd5",
+    "network_understanding_v1/reports/POINT_TRACE.json": "19f76ecd0d9c0ce7ac051a39e686bea8a06709ba3b2d92713bd60c084f39655f",
+    "network_understanding_v1/reports/TRAINING_GUARD_WALKTHROUGH.json": "405d0afe2b6c8d59965f30d31c663a5a90c220c24d964da0c7a6cfa967ca8e04",
+    "network_understanding_v1/reports/LEARNED_RULE_WALKTHROUGH.json": "e0e9758f3f89d3e7105bec3a5834161d2e59a4ac4d2646b483f1a584f0882b0f",
+    "network_understanding_v1/reports/POINT_REFERENCE_WALKTHROUGH.json": "fe3b1916d40b15b587cb14bd90f4228fc813ddef52d5c26f3d8d17155514aad7"
+  },
+  "visual_path": "C:\\Users\\yang\\.codex\\visualizations\\2026\\10\\31\\01a19048-6a4d-7101-874c-4be4ef20d10a\\network-gain-walkthrough.html",
+  "visual_sha256": "ac10de73ac3cfc719ce31b9ab5f10a8df106ecaa8ad45aa8b2700c1d44371f41",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_parameters_modified": false,
+  "training_run": false,
+  "fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

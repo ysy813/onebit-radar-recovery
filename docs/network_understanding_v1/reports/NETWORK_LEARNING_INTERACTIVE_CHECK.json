@@ -1,0 +1,1500 @@
+{
+  "status": "PASS",
+  "scope": "Network teaching interaction, data fidelity and responsive layout only",
+  "rows": [
+    {
+      "scheme": "light",
+      "viewport": 760,
+      "stage": 0,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 0.406982421875,
+          "point": "A"
+        },
+        {
+          "value": 0.406982421875,
+          "point": "B"
+        },
+        {
+          "value": 0.325927734375,
+          "point": "A"
+        },
+        {
+          "value": 0.260009765625,
+          "point": "B"
+        },
+        {
+          "value": 0.25830078125,
+          "point": "A"
+        },
+        {
+          "value": 0.206298828125,
+          "point": "B"
+        },
+        {
+          "value": 0.470947265625,
+          "point": "A"
+        },
+        {
+          "value": 0.24072265625,
+          "point": "B"
+        },
+        {
+          "value": 0.674560546875,
+          "point": "A"
+        },
+        {
+          "value": 0.271240234375,
+          "point": "B"
+        },
+        {
+          "value": 0.446044921875,
+          "point": "A"
+        },
+        {
+          "value": 0,
+          "point": "B"
+        },
+        {
+          "value": 0,
+          "point": "A"
+        },
+        {
+          "value": 0.016845703125,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "中心相同；局部统计与父子关联不同。",
+      "selectValue": 0,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 760,
+      "stage": 1,
+      "gainA": 0.699462890625,
+      "gainB": 0.43609619140625,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "MLP分数：A -0.515289，B -1.197403",
+      "selectValue": 1,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 760,
+      "stage": 2,
+      "gainA": 1,
+      "gainB": 0.8558349609375,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "软保护资格：A、B均满足；两点均无强谐波解释标志。",
+      "selectValue": 2,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 760,
+      "stage": 3,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "最终增益均为1：保留原输入幅值。",
+      "selectValue": 3,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 760,
+      "stage": 4,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 1.489366729702239,
+          "point": "A"
+        },
+        {
+          "value": 0.002392785826731469,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "A 绝对幅值误差：0.008823 → 0.005466（MLP→最终）；B 绝对幅值误差：0.004845 → 0.01115（MLP→最终）",
+      "selectValue": 4,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 360,
+      "stage": 0,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 0.406982421875,
+          "point": "A"
+        },
+        {
+          "value": 0.406982421875,
+          "point": "B"
+        },
+        {
+          "value": 0.325927734375,
+          "point": "A"
+        },
+        {
+          "value": 0.260009765625,
+          "point": "B"
+        },
+        {
+          "value": 0.25830078125,
+          "point": "A"
+        },
+        {
+          "value": 0.206298828125,
+          "point": "B"
+        },
+        {
+          "value": 0.470947265625,
+          "point": "A"
+        },
+        {
+          "value": 0.24072265625,
+          "point": "B"
+        },
+        {
+          "value": 0.674560546875,
+          "point": "A"
+        },
+        {
+          "value": 0.271240234375,
+          "point": "B"
+        },
+        {
+          "value": 0.446044921875,
+          "point": "A"
+        },
+        {
+          "value": 0,
+          "point": "B"
+        },
+        {
+          "value": 0,
+          "point": "A"
+        },
+        {
+          "value": 0.016845703125,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "中心相同；局部统计与父子关联不同。",
+      "selectValue": 0,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 360,
+      "stage": 1,
+      "gainA": 0.699462890625,
+      "gainB": 0.43609619140625,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "MLP分数：A -0.515289，B -1.197403",
+      "selectValue": 1,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 360,
+      "stage": 2,
+      "gainA": 1,
+      "gainB": 0.8558349609375,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "软保护资格：A、B均满足；两点均无强谐波解释标志。",
+      "selectValue": 2,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 360,
+      "stage": 3,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "最终增益均为1：保留原输入幅值。",
+      "selectValue": 3,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 360,
+      "stage": 4,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 1.489366729702239,
+          "point": "A"
+        },
+        {
+          "value": 0.002392785826731469,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "A 绝对幅值误差：0.008823 → 0.005466（MLP→最终）；B 绝对幅值误差：0.004845 → 0.01115（MLP→最终）",
+      "selectValue": 4,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 320,
+      "stage": 0,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 0.406982421875,
+          "point": "A"
+        },
+        {
+          "value": 0.406982421875,
+          "point": "B"
+        },
+        {
+          "value": 0.325927734375,
+          "point": "A"
+        },
+        {
+          "value": 0.260009765625,
+          "point": "B"
+        },
+        {
+          "value": 0.25830078125,
+          "point": "A"
+        },
+        {
+          "value": 0.206298828125,
+          "point": "B"
+        },
+        {
+          "value": 0.470947265625,
+          "point": "A"
+        },
+        {
+          "value": 0.24072265625,
+          "point": "B"
+        },
+        {
+          "value": 0.674560546875,
+          "point": "A"
+        },
+        {
+          "value": 0.271240234375,
+          "point": "B"
+        },
+        {
+          "value": 0.446044921875,
+          "point": "A"
+        },
+        {
+          "value": 0,
+          "point": "B"
+        },
+        {
+          "value": 0,
+          "point": "A"
+        },
+        {
+          "value": 0.016845703125,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "中心相同；局部统计与父子关联不同。",
+      "selectValue": 0,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 320,
+      "stage": 1,
+      "gainA": 0.699462890625,
+      "gainB": 0.43609619140625,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "MLP分数：A -0.515289，B -1.197403",
+      "selectValue": 1,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 320,
+      "stage": 2,
+      "gainA": 1,
+      "gainB": 0.8558349609375,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "软保护资格：A、B均满足；两点均无强谐波解释标志。",
+      "selectValue": 2,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 320,
+      "stage": 3,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "最终增益均为1：保留原输入幅值。",
+      "selectValue": 3,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "light",
+      "viewport": 320,
+      "stage": 4,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 1.489366729702239,
+          "point": "A"
+        },
+        {
+          "value": 0.002392785826731469,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "A 绝对幅值误差：0.008823 → 0.005466（MLP→最终）；B 绝对幅值误差：0.004845 → 0.01115（MLP→最终）",
+      "selectValue": 4,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 760,
+      "stage": 0,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 0.406982421875,
+          "point": "A"
+        },
+        {
+          "value": 0.406982421875,
+          "point": "B"
+        },
+        {
+          "value": 0.325927734375,
+          "point": "A"
+        },
+        {
+          "value": 0.260009765625,
+          "point": "B"
+        },
+        {
+          "value": 0.25830078125,
+          "point": "A"
+        },
+        {
+          "value": 0.206298828125,
+          "point": "B"
+        },
+        {
+          "value": 0.470947265625,
+          "point": "A"
+        },
+        {
+          "value": 0.24072265625,
+          "point": "B"
+        },
+        {
+          "value": 0.674560546875,
+          "point": "A"
+        },
+        {
+          "value": 0.271240234375,
+          "point": "B"
+        },
+        {
+          "value": 0.446044921875,
+          "point": "A"
+        },
+        {
+          "value": 0,
+          "point": "B"
+        },
+        {
+          "value": 0,
+          "point": "A"
+        },
+        {
+          "value": 0.016845703125,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "中心相同；局部统计与父子关联不同。",
+      "selectValue": 0,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 760,
+      "stage": 1,
+      "gainA": 0.699462890625,
+      "gainB": 0.43609619140625,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "MLP分数：A -0.515289，B -1.197403",
+      "selectValue": 1,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 760,
+      "stage": 2,
+      "gainA": 1,
+      "gainB": 0.8558349609375,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "软保护资格：A、B均满足；两点均无强谐波解释标志。",
+      "selectValue": 2,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 760,
+      "stage": 3,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "最终增益均为1：保留原输入幅值。",
+      "selectValue": 3,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 760,
+      "stage": 4,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 1.489366729702239,
+          "point": "A"
+        },
+        {
+          "value": 0.002392785826731469,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "A 绝对幅值误差：0.008823 → 0.005466（MLP→最终）；B 绝对幅值误差：0.004845 → 0.01115（MLP→最终）",
+      "selectValue": 4,
+      "rootWidth": 728,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 360,
+      "stage": 0,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 0.406982421875,
+          "point": "A"
+        },
+        {
+          "value": 0.406982421875,
+          "point": "B"
+        },
+        {
+          "value": 0.325927734375,
+          "point": "A"
+        },
+        {
+          "value": 0.260009765625,
+          "point": "B"
+        },
+        {
+          "value": 0.25830078125,
+          "point": "A"
+        },
+        {
+          "value": 0.206298828125,
+          "point": "B"
+        },
+        {
+          "value": 0.470947265625,
+          "point": "A"
+        },
+        {
+          "value": 0.24072265625,
+          "point": "B"
+        },
+        {
+          "value": 0.674560546875,
+          "point": "A"
+        },
+        {
+          "value": 0.271240234375,
+          "point": "B"
+        },
+        {
+          "value": 0.446044921875,
+          "point": "A"
+        },
+        {
+          "value": 0,
+          "point": "B"
+        },
+        {
+          "value": 0,
+          "point": "A"
+        },
+        {
+          "value": 0.016845703125,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "中心相同；局部统计与父子关联不同。",
+      "selectValue": 0,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 360,
+      "stage": 1,
+      "gainA": 0.699462890625,
+      "gainB": 0.43609619140625,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "MLP分数：A -0.515289，B -1.197403",
+      "selectValue": 1,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 360,
+      "stage": 2,
+      "gainA": 1,
+      "gainB": 0.8558349609375,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "软保护资格：A、B均满足；两点均无强谐波解释标志。",
+      "selectValue": 2,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 360,
+      "stage": 3,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "最终增益均为1：保留原输入幅值。",
+      "selectValue": 3,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 360,
+      "stage": 4,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 1.489366729702239,
+          "point": "A"
+        },
+        {
+          "value": 0.002392785826731469,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "A 绝对幅值误差：0.008823 → 0.005466（MLP→最终）；B 绝对幅值误差：0.004845 → 0.01115（MLP→最终）",
+      "selectValue": 4,
+      "rootWidth": 328,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 320,
+      "stage": 0,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 0.406982421875,
+          "point": "A"
+        },
+        {
+          "value": 0.406982421875,
+          "point": "B"
+        },
+        {
+          "value": 0.325927734375,
+          "point": "A"
+        },
+        {
+          "value": 0.260009765625,
+          "point": "B"
+        },
+        {
+          "value": 0.25830078125,
+          "point": "A"
+        },
+        {
+          "value": 0.206298828125,
+          "point": "B"
+        },
+        {
+          "value": 0.470947265625,
+          "point": "A"
+        },
+        {
+          "value": 0.24072265625,
+          "point": "B"
+        },
+        {
+          "value": 0.674560546875,
+          "point": "A"
+        },
+        {
+          "value": 0.271240234375,
+          "point": "B"
+        },
+        {
+          "value": 0.446044921875,
+          "point": "A"
+        },
+        {
+          "value": 0,
+          "point": "B"
+        },
+        {
+          "value": 0,
+          "point": "A"
+        },
+        {
+          "value": 0.016845703125,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "中心相同；局部统计与父子关联不同。",
+      "selectValue": 0,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 320,
+      "stage": 1,
+      "gainA": 0.699462890625,
+      "gainB": 0.43609619140625,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "MLP分数：A -0.515289，B -1.197403",
+      "selectValue": 1,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 320,
+      "stage": 2,
+      "gainA": 1,
+      "gainB": 0.8558349609375,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "软保护资格：A、B均满足；两点均无强谐波解释标志。",
+      "selectValue": 2,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 320,
+      "stage": 3,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "最终增益均为1：保留原输入幅值。",
+      "selectValue": 3,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    },
+    {
+      "scheme": "dark",
+      "viewport": 320,
+      "stage": 4,
+      "gainA": 1,
+      "gainB": 1,
+      "marks": [
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 0.699462890625,
+          "point": "A"
+        },
+        {
+          "value": 0.43609619140625,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 0.8558349609375,
+          "point": "B"
+        },
+        {
+          "value": 1,
+          "point": "A"
+        },
+        {
+          "value": 1,
+          "point": "B"
+        },
+        {
+          "value": 1.489366729702239,
+          "point": "A"
+        },
+        {
+          "value": 0.002392785826731469,
+          "point": "B"
+        }
+      ],
+      "horizontalOverflow": false,
+      "labelsOutside": [],
+      "minSvgTextSize": 14,
+      "detail": "A 绝对幅值误差：0.008823 → 0.005466（MLP→最终）；B 绝对幅值误差：0.004845 → 0.01115（MLP→最终）",
+      "selectValue": 4,
+      "rootWidth": 288,
+      "source": "Two previously traced records only"
+    }
+  ],
+  "browserErrors": [],
+  "savedStateRestoration": true,
+  "pairedReferenceCompared": true,
+  "modelModified": false,
+  "newNeuralInferenceRun": false,
+  "boardAccessed": false
+}

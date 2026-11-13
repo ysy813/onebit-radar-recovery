@@ -1,0 +1,23 @@
+{
+  "seed_range": [
+    128000,
+    128015
+  ],
+  "raw_frames_zero_based": [
+    455,
+    519,
+    583
+  ],
+  "primary_layout": "rx_blocks_per_chirp",
+  "rx_ids": [
+    0,
+    3
+  ],
+  "no_reselection_on_test": true,
+  "old124000_test_status": "FAIL and diagnostic only after changed design",
+  "quality_gates_unchanged": true,
+  "correction_acceptance_sha256": "fd34cc4c98a97bcc7dd1360bbf0ea7f3d41c170bcffe7dc734c97a98ad7c1521",
+  "original_v7_nmse_max": 1.05,
+  "original_v7_background_max": 1.1,
+  "per_128_and512_separate": true
+}

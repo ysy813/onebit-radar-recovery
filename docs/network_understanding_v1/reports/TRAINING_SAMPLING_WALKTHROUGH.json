@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "checks": {
+    "selected_source_hash_matches": true,
+    "source_sampler_counts_match": true,
+    "expected_probabilities_sum_to_one": true,
+    "overlapping_region_counts_add": true,
+    "weighting_is_additional": true,
+    "empty_known_falls_back_to_uniform": true,
+    "finite_batch_normalization_differs_from_population": true,
+    "large_batch_ratio_of_expectations": true,
+    "frozen_sources_unchanged": true
+  },
+  "scope": "Specified masks and exact probability algebra only, not actual training statistics or a quality experiment",
+  "source_sampler_counts": [
+    [
+      "known",
+      2048
+    ],
+    [
+      "support",
+      2048
+    ],
+    [
+      "centers",
+      2048
+    ],
+    [
+      "artifact_peaks",
+      2048
+    ],
+    [
+      "excess",
+      6144
+    ],
+    [
+      "low",
+      4096
+    ],
+    [
+      "uniform",
+      4096
+    ]
+  ],
+  "entries_per_record": 22528,
+  "probability_formula_is_expectation_over_pool_generation": true,
+  "actual_fixed_pool_probabilities_not_reconstructed": true,
+  "specified_mask_example": {
+    "positions": 100,
+    "sizes": {
+      "known": 1,
+      "support": 10,
+      "centers": 2,
+      "artifact_peaks": 5,
+      "excess": 20,
+      "low": 60,
+      "uniform": 100
+    },
+    "rows": [
+      {
+        "position": 0,
+        "memberships": [
+          "known",
+          "support",
+          "centers",
+          "uniform"
+        ],
+        "expected_pool_entries": 3317.76,
+        "expected_sampling_probability": 0.14727272727272728,
+        "loss_weight": 17,
+        "population_normalized_weight": 0.5907335907335908
+      },
+      {
+        "position": 1,
+        "memberships": [
+          "support",
+          "centers",
+          "uniform"
+        ],
+        "expected_pool_entries": 1269.76,
+        "expected_sampling_probability": 0.056363636363636366,
+        "loss_weight": 12,
+        "population_normalized_weight": 0.15958815958815958
+      },
+      {
+        "position": 3,
+        "memberships": [
+          "support",
+          "uniform"
+        ],
+        "expected_pool_entries": 245.76,
+        "expected_sampling_probability": 0.01090909090909091,
+        "loss_weight": 4,
+        "population_normalized_weight": 0.010296010296010296
+      },
+      {
+        "position": 10,
+        "memberships": [
+          "artifact_peaks",
+          "excess",
+          "uniform"
+        ],
+        "expected_pool_entries": 757.76,
+        "expected_sampling_probability": 0.03363636363636364,
+        "loss_weight": 1,
+        "population_normalized_weight": 0.007936507936507936
+      },
+      {
+        "position": 20,
+        "memberships": [
+          "excess",
+          "uniform"
+        ],
+        "expected_pool_entries": 348.16,
+        "expected_sampling_probability": 0.015454545454545455,
+        "loss_weight": 1,
+        "population_normalized_weight": 0.0036465036465036463
+      },
+      {
+        "position": 30,
+        "memberships": [
+          "low",
+          "uniform"
+        ],
+        "expected_pool_entries": 109.22666666666667,
+        "expected_sampling_probability": 0.0048484848484848485,
+        "loss_weight": 1,
+        "population_normalized_weight": 0.001144001144001144
+      },
+      {
+        "position": 90,
+        "memberships": [
+          "uniform"
+        ],
+        "expected_pool_entries": 40.96,
+        "expected_sampling_probability": 0.0018181818181818182,
+        "loss_weight": 1,
+        "population_normalized_weight": 0.000429000429000429
+      }
+    ]
+  },
+  "specified_batch_example": {
+    "rare_probability": 0.1,
+    "common_weight": 1,
+    "rare_weight": 9,
+    "common_value": 0,
+    "rare_value": 1,
+    "rows": [
+      {
+        "specified_batch_size": 1,
+        "expected_weighted_mean": 0.1
+      },
+      {
+        "specified_batch_size": 2,
+        "expected_weighted_mean": 0.172
+      },
+      {
+        "specified_batch_size": 8,
+        "expected_weighted_mean": 0.35927561125
+      },
+      {
+        "specified_batch_size": 32,
+        "expected_weighted_mean": 0.46370733392953795
+      }
+    ],
+    "ratio_of_expectations": 0.5
+  },
+  "qualifications": [
+    "Expected multiplicity is not a per-step gradient or actual target frequency",
+    "Current losses have separate masks and normalization denominators",
+    "The constructed batch example does not estimate the actual 3072-sample training batch",
+    "Training sampling does not alter inference inputs or supply inference references"
+  ],
+  "source_sha256": {
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103",
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18"
+  },
+  "script_sha256": "0359ab129527682824e875ab79002799569df2c3939f846246c48842fabd7d6c",
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "original_full_quality_status_preserved": "FAIL",
+  "exact_probability_algebra_run": true,
+  "radar_data_read": false,
+  "sampling_run": false,
+  "training_pool_built": false,
+  "model_instantiated": false,
+  "training_run": false,
+  "optimizer_run": false,
+  "neural_inference_run": false,
+  "model_parameters_modified": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

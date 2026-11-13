@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "scope": "Source-checked network architecture figure and layout only",
+  "layers": [
+    {
+      "inputs": 40,
+      "outputs": 32,
+      "weights": 1280,
+      "biases": 32,
+      "parameters": 1312,
+      "activation": "ReLU"
+    },
+    {
+      "inputs": 32,
+      "outputs": 16,
+      "weights": 512,
+      "biases": 16,
+      "parameters": 528,
+      "activation": "ReLU"
+    },
+    {
+      "inputs": 16,
+      "outputs": 1,
+      "weights": 16,
+      "biases": 1,
+      "parameters": 17,
+      "activation": "linear"
+    }
+  ],
+  "parameters": 1857,
+  "weights": 1808,
+  "biases": 49,
+  "inference_profile_valid_chirps": 512,
+  "feature_groups": {
+    "self_and_local": 4,
+    "parents": 2,
+    "gated_children": 2,
+    "derived": 8,
+    "other_neighbors": 24
+  },
+  "all_1857_parameters_in_shared_mlp": true,
+  "inference_guards_trained_end_to_end": false,
+  "target_is_relative_amplitude": true,
+  "output_is_power": true,
+  "reference_used_in_inference": false,
+  "text_bounds_outside": [],
+  "text_outside_blocks": [],
+  "text_collisions": [],
+  "labels": [
+    "当前 compact 标量网络：结构与训练关系",
+    "推理路径（512 有效 chirp）",
+    "输入功率 P1",
+    "1024 × 512",
+    "$X=\\sqrt{P_1/G_1}$",
+    "固定特征 Φ：40维",
+    "自身 / 局部统计4 + 父提示2",
+    "门控子提示2 + 派生项8",
+    "5×5其余邻居24",
+    "归一化 + 五次根表示",
+    "共享 MLP：可训练部分",
+    "40→32，ReLU：1312参数",
+    "32→16，ReLU：528参数",
+    "16→1，线性：17参数",
+    "共1857参数，整帧逐点共享",
+    "固定有界增益头",
+    "$g_{nn}=2^{\\mathrm{clip}(s)}$",
+    "范围 [0.125, 1.5]",
+    "固定保护规则",
+    "软弱峰保护＋帧峰锚定",
+    "↓",
+    "compact 紧凑弱峰保护",
+    "$g_{nn}\\to g_1\\to g_{final}$",
+    "F",
+    "s",
+    "功率输出",
+    "$P_{out}=P_1\\,g_{final}^{\\,2}$",
+    "原功率 P1 直接用于最终功率修正",
+    "训练关系：参考用于监督，不进入推理路径",
+    "同源配对数据",
+    "输入：相对幅值 X、40维特征 F",
+    "参考：多比特相对幅值 Y",
+    "两路分别按各自帧峰值归一化",
+    "预测与监督",
+    "$\\widehat{Y}=X\\,g_{nn}$",
+    "八项复合损失：增益、重建、弱峰等",
+    "两层推理保护不参与该次训练反传",
+    "仅更新 MLP 权重和偏置 θ",
+    "40→32→16→1 的1857个参数",
+    "固定特征、增益头、保护无可训练参数",
+    "最终 compact 沿用冻结 v2 神经权重",
+    "训练梯度：仅更新 θ",
+    "恢复目标：同源多比特参考的相对幅值结构；图中固定公式采用概念表达"
+  ],
+  "graph": [
+    {
+      "start": [
+        2.7,
+        8.3
+      ],
+      "end": [
+        3.25,
+        8.3
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        7.5,
+        8.3
+      ],
+      "end": [
+        8.0,
+        8.3
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        12.5,
+        8.3
+      ],
+      "end": [
+        13.0,
+        8.3
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        15.7,
+        8.3
+      ],
+      "end": [
+        16.2,
+        8.3
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        17.9,
+        6.7
+      ],
+      "end": [
+        17.9,
+        6.1
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        20.05,
+        5.15
+      ],
+      "end": [
+        19.6,
+        5.15
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        5.8,
+        2.4
+      ],
+      "end": [
+        6.6,
+        2.4
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        12.8,
+        2.4
+      ],
+      "end": [
+        13.6,
+        2.4
+      ],
+      "kind": "data"
+    },
+    {
+      "start": [
+        10.25,
+        4.0
+      ],
+      "end": [
+        10.25,
+        6.7
+      ],
+      "kind": "training-gradient"
+    }
+  ],
+  "output_files": {
+    "network_understanding_v1\\figures\\08_network_architecture.png": "499948a4d159bab9daae18df8c321cae7ac045bf0474161ee7b9c7c6c6ce420d",
+    "network_understanding_v1\\figures\\08_network_architecture.svg": "aaba420150c1672c1caa896054e0e453af45bd64ceb4c9ceb01bc12a45982ed6"
+  },
+  "source_sha256": {
+    "scalar_restore_v3/pc_candidate_compact/config.json": "43dc1446328461d1be75bad057c475f4571c63ef9434498b4de48a887a1abf95",
+    "scalar_restore_v3/pc_candidate_compact/weights.npz": "5ee3e8c1ef16dc73280988d329a7118715642321f85ab7e8d93314ed7c4e50d4",
+    "scalar_restore_v3/pc_candidate_compact/restore_power.py": "c2cf4519e7461e21fb6862d5c9364e4e6234f421e2d3517996cbcd80b806bf5a",
+    "scalar_restore_v3/pc_candidate_compact/scalar_guard.py": "ec2241b19e7e670181538adf4851d1bde686832eb2d2966191dcd24ed6a1edf3",
+    "scalar_restore_v3/pc_candidate_compact/compact_guard.py": "4a858558d9340b9f326581062b66d49e1f1cbba921ef8f20234abeb8f92d8bbd",
+    "scalar_restore_v2/runs/soft_patch5/config.json": "48bcef5fd61c8f464c87a1d0ca5a70ba9d082c3f1cfa234e4bf46610fe50fa18",
+    "scalar_restore_v2/runs/protected_patch5/training_source.py": "459eae3d7f773edae8916f35090d327c624c8353f3a0a3d7d4b4513776166103"
+  },
+  "frozen_files_checked": 26,
+  "changed_sources": [],
+  "model_instantiated": false,
+  "model_parameters_modified": false,
+  "training_run": false,
+  "radar_fft_run": false,
+  "feature_extraction_run": false,
+  "neural_inference_run": false,
+  "new_quality_test_run": false,
+  "new_holdout_opened": false,
+  "hardware_built": false,
+  "board_accessed": false
+}

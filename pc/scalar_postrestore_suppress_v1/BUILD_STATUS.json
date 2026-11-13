@@ -1,0 +1,44 @@
+{
+  "status": "PC_EXPERIMENT_COMPLETED",
+  "primary": "suppress_raw",
+  "predeclared_small_synthetic_quality_pass": true,
+  "implementation_checks": "PASS",
+  "deployment_ready": false,
+  "board_access": false,
+  "new_bit": false,
+  "main_target_half_fail": 0,
+  "weak_target_half_fail": 12,
+  "main_targets": 32,
+  "weak_targets": 14,
+  "remaining_strong_false": 0.31416797637939453,
+  "amplitude_threshold_baseline": {
+    "frames": 12,
+    "targets": 46,
+    "main_targets": 32,
+    "weak_targets": 14,
+    "main_half_fail": 0,
+    "weak_half_fail": 14,
+    "mean_false40": 0.5,
+    "worst_false": 0.6823344230651855,
+    "mean_excess": 0.11769898197705704,
+    "target_mae": 0.06127312859713894,
+    "main_min_retention": 0.7575379128950392,
+    "weak_min_retention": 1.0017528090546446e-12,
+    "full_mean_false40": 0.5
+  },
+  "limitations": [
+    "12帧同生成族新种子测试，非实测泛化证明",
+    "0–5米最终测试没有弱目标，不证明近距弱目标保护",
+    "部分强互调和负七次谐波仍未充分抑制",
+    "前端CPU迭代耗时，不是整体轻量PL实现",
+    "旧增益接口不能直接用于新权重"
+  ],
+  "entry_points": [
+    "本轮结果.md",
+    "results/index.html",
+    "数据索引.md",
+    "剩余错误与阈值对照.md",
+    "candidate/suppress/model_float.pt",
+    "infer.py"
+  ]
+}

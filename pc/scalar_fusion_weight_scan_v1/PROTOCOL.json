@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-12",
+  "purpose": "冻结40维网络与v2残差求解器，先寻找全局融合比例，再独立新场景测试",
+  "baseline_root": "scalar_sign_evidence_v2",
+  "training": "无新网络训练、无求解器调参",
+  "validation": "复用v2六帧验证，已看过，用于扫描选参，不称盲测",
+  "diagnostic": "复用v2十二帧已看过测试，仅计算选定比例及逐目标必要边界，不参与选参",
+  "alpha_grid": {"start": 0, "stop": 1, "step": 0.01, "count": 101},
+  "primary_interface": "v2受保护融合：先(1-alpha)*old+alpha*model，再在v2支持掩膜取max(融合,old,bypass)",
+  "secondary_interface": "相同网格的纯凸融合，仅隔离保护层作用，不参与主接口替换",
+  "endpoints": "受保护alpha=0是仅保护，alpha=1是带保护的恢复。真正old40/model另列，不混淆。",
+  "target_safety": {"new_half_vs_old_max": 0, "max_retention_drop": 0.05, "mae_increase_max": 0.005},
+  "selection": "先保留满足三项目标安全约束的网格点，再依次最小化参考外峰均值、相对旧网最差纯谐波增幅、目标MAE、alpha。若无安全点，冻结alpha=0作为明确失败的回退，仅继续测试诊断，不宣称选模成功。",
+  "quality": {"all_targets_at_least_half": true, "false40_ratio_max": 0.9, "worst_harmonic_worsening_db_max": 1.0, "requires_target_safety": true},
+  "threshold_origin": "沿用v2半幅/0.05/0.005/10%研究判据；新增最差纯谐波相对旧网恶化不超过1dB为助手预声明诊断要求，不是用户确认或行业标准。",
+  "test": {"seed_base": 20261112000, "templates": ["single_grid_a","single_offgrid_a","n4_spread","n4_near_pairs","n4_strong_weak","n8_spread","n8_near_pairs","n8_strong_weak","collision_minus3_grid","collision_plus5_offgrid","near_collision_plus5","n2_strong_weak_offgrid"]},
+  "frozen_test_methods": ["old40","model","old_alpha075","selected_protected","selected_linear"],
+  "interpretation": "网格最优仅对本验证集及这些判据成立；分析严格半幅阈值附近敏感性，但不事后放宽判据。所有恢复为相对幅值，不是绝对功率恢复。",
+  "deployment_ready": false
+}

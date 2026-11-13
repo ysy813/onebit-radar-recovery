@@ -1,0 +1,18 @@
+{
+  "scope": "The user-requested weak-target correction, separately from the original full quality gates",
+  "declared_before_fresh_test_generation": true,
+  "selection": "Original v2 versus guard-aware fine tuning; background-preserving run d64; conservative parameter interpolation alpha in [0.5,0.75,1.0], use the smallest change that corrects the diagnosed failure and passes development nonregression",
+  "checks": [
+    "no_new_known_target_below_half",
+    "known_weak_target_error_not_worse",
+    "each_known_target_error",
+    "each_frame_better_than_bypass",
+    "real_no_new_numeric_peak_loss",
+    "real_no_periodic_gain_stripes",
+    "v2_background_and_nmse_nonregression"
+  ],
+  "nonregression_bound_to_v2": 1.05,
+  "diagnosed_failure_requirement": "Enhanced retention at least 0.50 of multibit reference; previous v2 retention 0.461317",
+  "original_quality_gates": "All remain recorded and unchanged; a weak-correction PASS cannot turn full quality FAIL into PASS, approve FPGA deployment, or justify BIT rebuilding",
+  "prohibited": "No test-set reselection, no deleting failures, no relabeling prior observed cases as independent tests"
+}

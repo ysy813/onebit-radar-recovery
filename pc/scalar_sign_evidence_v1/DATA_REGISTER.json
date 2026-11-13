@@ -1,0 +1,1308 @@
+{
+  "records": [
+    {
+      "split": "development",
+      "metadata": {
+        "id": "000_single_offgrid_a",
+        "split": "development",
+        "seed": 2026114100,
+        "template": "single_offgrid_a",
+        "target_count": 1,
+        "grid": "offgrid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 205.73184875680113,
+            "doppler_bin": -189.91550354918195,
+            "amplitude": 1.0,
+            "initial_phase_rad": 0.15631208596373503,
+            "azimuth_deg": 52.250093607323706,
+            "velocity_direction_deg": 82.17621220672065,
+            "signed_speed_m_s": -8.441392616541776,
+            "radial_velocity_m_s": -7.315896846900311,
+            "range_m": 8.470027307879194
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\development\\000_single_offgrid_a.npz",
+        "sha256": "8392c044b7a98b737d7a52e12d54073e4cc2654dbefc47d8d458b643a2910ef6"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\development\\000_single_offgrid_a.json",
+      "report_sha256": "723f4cc94220f8d51220fa632cdfe7d863c0bd1e677c777c6a128be495b465ce",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\development\\000_single_offgrid_a.npz",
+      "output_sha256": "0d88fe80fa98602747d978793b2259088306052cf3ffada66717657038b2549d",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "development",
+      "metadata": {
+        "id": "001_collision_plus5_grid",
+        "split": "development",
+        "seed": 2026114101,
+        "template": "collision_plus5_grid",
+        "target_count": 2,
+        "grid": "grid",
+        "family": "collision_plus5",
+        "targets": [
+          {
+            "range_bin": 394.0,
+            "doppler_bin": 148.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.6236785929984354,
+            "azimuth_deg": 54.5458547757613,
+            "velocity_direction_deg": 65.28428538670069,
+            "signed_speed_m_s": 5.802853366995887,
+            "radial_velocity_m_s": 5.701234038856908,
+            "range_m": 16.221070191467284
+          },
+          {
+            "range_bin": 946.0,
+            "doppler_bin": 228.0,
+            "amplitude": 0.08463745794986978,
+            "initial_phase_rad": 3.0864401514943802,
+            "azimuth_deg": 3.7083159818026203,
+            "velocity_direction_deg": -21.23277831837244,
+            "signed_speed_m_s": 9.686309991302362,
+            "radial_velocity_m_s": 8.78298216796875,
+            "range_m": 38.94703655108643
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\development\\001_collision_plus5_grid.npz",
+        "sha256": "b683c2f23168dd766443bd689daf3ac2bd56eb738d5f839b9f26a6a951fac9bb"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\development\\001_collision_plus5_grid.json",
+      "report_sha256": "2e50b02d3df8b42f92b0049a6626c532ae2100007b27111fb74c70948c9bb46c",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\development\\001_collision_plus5_grid.npz",
+      "output_sha256": "09b774dda4d71a02b183f8cac9132bceb8856189d1c70bcdf249aa3cc648d041",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "validation",
+      "metadata": {
+        "id": "000_single_grid_a",
+        "split": "validation",
+        "seed": 2026115100,
+        "template": "single_grid_a",
+        "target_count": 1,
+        "grid": "grid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 462.0,
+            "doppler_bin": -10.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 1.561193536378794,
+            "azimuth_deg": -56.0153507574062,
+            "velocity_direction_deg": -85.37640971094592,
+            "signed_speed_m_s": -0.44199383922983626,
+            "radial_velocity_m_s": -0.3852185161389803,
+            "range_m": 19.020645757507324
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\validation\\000_single_grid_a.npz",
+        "sha256": "2bbdf7ce08bdc384f084612b151db31e3ea1bcdd4d8d32805df3c8fd52573a9f"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\validation\\000_single_grid_a.json",
+      "report_sha256": "e506b35151f99445fd8faed06543dc8c7f8da2240299086c650e298502e6bacb",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\validation\\000_single_grid_a.npz",
+      "output_sha256": "f7485f42d295c2db0b61d04814375491f9422648bd739ec2f605cf5c90a56718",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "validation",
+      "metadata": {
+        "id": "001_single_offgrid_a",
+        "split": "validation",
+        "seed": 2026115101,
+        "template": "single_offgrid_a",
+        "target_count": 1,
+        "grid": "offgrid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 443.3194757656791,
+            "doppler_bin": 139.70027450756086,
+            "amplitude": 1.0,
+            "initial_phase_rad": -2.606693656793844,
+            "azimuth_deg": 23.920296142663915,
+            "velocity_direction_deg": -25.672265445240214,
+            "signed_speed_m_s": 8.302001668674027,
+            "radial_velocity_m_s": 5.381513245001081,
+            "range_m": 18.251564298577566
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\validation\\001_single_offgrid_a.npz",
+        "sha256": "549041ff2b228283d7e5b2c646c78c86dd4d997917a4cac83d50d03dfd55c170"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\validation\\001_single_offgrid_a.json",
+      "report_sha256": "cd96c95f31f6a9fd0d6599a20dca1b997b41efc8cbef1b48ac23a9c84446defc",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\validation\\001_single_offgrid_a.npz",
+      "output_sha256": "dc5ced5e5fce073b1612ad03e74a43bc08e4b4cdb50e2ac03f97a4983e4ac23f",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "validation",
+      "metadata": {
+        "id": "002_n4_spread",
+        "split": "validation",
+        "seed": 2026115102,
+        "template": "n4_spread",
+        "target_count": 4,
+        "grid": "grid",
+        "family": "spread",
+        "targets": [
+          {
+            "range_bin": 352.0,
+            "doppler_bin": -37.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 2.9736014050993687,
+            "azimuth_deg": 33.57614787481353,
+            "velocity_direction_deg": 65.84939179243345,
+            "signed_speed_m_s": -1.6857356652974211,
+            "radial_velocity_m_s": -1.425308509714227,
+            "range_m": 14.491920577148438
+          },
+          {
+            "range_bin": 126.0,
+            "doppler_bin": 178.0,
+            "amplitude": 0.6392712636013417,
+            "initial_phase_rad": 1.509587789984554,
+            "azimuth_deg": -25.4505130435765,
+            "velocity_direction_deg": 26.451726652525416,
+            "signed_speed_m_s": 11.113181137740812,
+            "radial_velocity_m_s": 6.856889587273849,
+            "range_m": 5.187448842956543
+          },
+          {
+            "range_bin": 321.0,
+            "doppler_bin": 211.0,
+            "amplitude": 0.7910204134314959,
+            "initial_phase_rad": 0.3815727230928254,
+            "azimuth_deg": 44.037535702712916,
+            "velocity_direction_deg": 44.44292769024655,
+            "signed_speed_m_s": 8.128314148044455,
+            "radial_velocity_m_s": 8.128110690532484,
+            "range_m": 13.215643480865477
+          },
+          {
+            "range_bin": 145.0,
+            "doppler_bin": 101.0,
+            "amplitude": 0.4108075615226503,
+            "initial_phase_rad": -1.784129725997411,
+            "azimuth_deg": -27.93868411068177,
+            "velocity_direction_deg": -30.37943523870908,
+            "signed_speed_m_s": 3.8942398919896797,
+            "radial_velocity_m_s": 3.8907070130037007,
+            "range_m": 5.969683192291259
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\validation\\002_n4_spread.npz",
+        "sha256": "78133ab06f7264353127964cbade13bc066240baacd525fb4fb109e11f4a6849"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\validation\\002_n4_spread.json",
+      "report_sha256": "4b2c4f88659306132d7b942810112a919ced57314915e03e76fc504cd4dcdb70",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\validation\\002_n4_spread.npz",
+      "output_sha256": "b80b086c65baf9ab69ee438da6ee79b2f79dc2d771a1596826d06195a1ce3af8",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "validation",
+      "metadata": {
+        "id": "003_n8_near_pairs",
+        "split": "validation",
+        "seed": 2026115103,
+        "template": "n8_near_pairs",
+        "target_count": 8,
+        "grid": "offgrid",
+        "family": "near_pairs",
+        "targets": [
+          {
+            "range_bin": 309.7307054249163,
+            "doppler_bin": -198.36565247207201,
+            "amplitude": 1.0,
+            "initial_phase_rad": -2.577450705497415,
+            "azimuth_deg": 11.743293503311165,
+            "velocity_direction_deg": 54.033838948684775,
+            "signed_speed_m_s": -10.329832259678623,
+            "radial_velocity_m_s": -7.641412229823222,
+            "range_m": 12.75168404352854
+          },
+          {
+            "range_bin": 314.7307054249163,
+            "doppler_bin": -194.36565247207201,
+            "amplitude": 0.7659144061024576,
+            "initial_phase_rad": -2.900893265635026,
+            "azimuth_deg": 10.727834999267998,
+            "velocity_direction_deg": 51.95909176815243,
+            "signed_speed_m_s": -9.955814729020242,
+            "radial_velocity_m_s": -7.48732482336763,
+            "range_m": 12.957535188090306
+          },
+          {
+            "range_bin": 273.0292663134289,
+            "doppler_bin": 170.02094548682732,
+            "amplitude": 0.826742641690615,
+            "initial_phase_rad": 2.3463375760357055,
+            "azimuth_deg": 17.437681207339423,
+            "velocity_direction_deg": 9.735339360098095,
+            "signed_speed_m_s": 6.609151229885104,
+            "radial_velocity_m_s": 6.549521633298207,
+            "range_m": 11.240677393895798
+          },
+          {
+            "range_bin": 277.0292663134289,
+            "doppler_bin": 174.02094548682732,
+            "amplitude": 0.5545718216675413,
+            "initial_phase_rad": 2.525386979388128,
+            "azimuth_deg": 3.341730001267365,
+            "velocity_direction_deg": -15.215995059942706,
+            "signed_speed_m_s": 7.071291505488678,
+            "radial_velocity_m_s": 6.703609039753799,
+            "range_m": 11.405358309545212
+          },
+          {
+            "range_bin": 56.96485770291843,
+            "doppler_bin": 204.5612763999496,
+            "amplitude": 0.30563790045460615,
+            "initial_phase_rad": 1.0790686949867716,
+            "azimuth_deg": -23.83289773878022,
+            "velocity_direction_deg": 0.10953550618812358,
+            "signed_speed_m_s": 8.621967949159805,
+            "radial_velocity_m_s": 7.8800791354284385,
+            "range_m": 2.345256231588796
+          },
+          {
+            "range_bin": 59.96485770291843,
+            "doppler_bin": 208.5612763999496,
+            "amplitude": 0.8201975664279131,
+            "initial_phase_rad": -1.3455284572537594,
+            "azimuth_deg": 55.18036124977871,
+            "velocity_direction_deg": 106.17931393762429,
+            "signed_speed_m_s": 12.766128840598096,
+            "radial_velocity_m_s": 8.03416654188403,
+            "range_m": 2.468766918325857
+          },
+          {
+            "range_bin": 402.43305892024887,
+            "doppler_bin": -165.18042965706192,
+            "amplitude": 0.6023244526280058,
+            "initial_phase_rad": -2.1297144949177174,
+            "azimuth_deg": 40.27825997119652,
+            "velocity_direction_deg": 80.00679039940327,
+            "signed_speed_m_s": -8.273579522829246,
+            "radial_velocity_m_s": -6.36305600076926,
+            "range_m": 16.568261157645296
+          },
+          {
+            "range_bin": 406.43305892024887,
+            "doppler_bin": -161.18042965706192,
+            "amplitude": 0.6945358554195449,
+            "initial_phase_rad": 1.5470310344368468,
+            "azimuth_deg": -18.658530566616555,
+            "velocity_direction_deg": -31.387773884901655,
+            "signed_speed_m_s": -6.365416469274562,
+            "radial_velocity_m_s": -6.208968594313668,
+            "range_m": 16.73294207329471
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\validation\\003_n8_near_pairs.npz",
+        "sha256": "8c3304eaaeeefc6c552f91b06780c9cb3922fb0df89a0f81b3b1e0ca6ef80e21"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\validation\\003_n8_near_pairs.json",
+      "report_sha256": "91e40976304f14fdb4997e00a35bcbb68a81396217f3b68a56bc672f2e7aac3f",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\validation\\003_n8_near_pairs.npz",
+      "output_sha256": "d902782b2ddad54ed34a7e2ebdc40a5afbbd26cbb5bcb03093d5681d6b3f9f75",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "validation",
+      "metadata": {
+        "id": "004_collision_plus5_grid",
+        "split": "validation",
+        "seed": 2026115104,
+        "template": "collision_plus5_grid",
+        "target_count": 2,
+        "grid": "grid",
+        "family": "collision_plus5",
+        "targets": [
+          {
+            "range_bin": 340.0,
+            "doppler_bin": -156.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 2.4743115611143587,
+            "azimuth_deg": -29.819501757966428,
+            "velocity_direction_deg": -14.208021886372755,
+            "signed_speed_m_s": -6.239595865163387,
+            "radial_velocity_m_s": -6.009408851768092,
+            "range_m": 13.997877830200196
+          },
+          {
+            "range_bin": 676.0,
+            "doppler_bin": 244.0,
+            "amplitude": 0.1352372513380897,
+            "initial_phase_rad": 2.042676425603899,
+            "azimuth_deg": -57.61776485160513,
+            "velocity_direction_deg": -6.052209165297569,
+            "signed_speed_m_s": 15.120732863813695,
+            "radial_velocity_m_s": 9.399331793791118,
+            "range_m": 27.831074744750975
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\validation\\004_collision_plus5_grid.npz",
+        "sha256": "d9e517a2cfc5f73f57d5a12847164012b33457b00a0833105e2f03fe7ec7463e"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\validation\\004_collision_plus5_grid.json",
+      "report_sha256": "06c284914839a63b1fad5ddd958199d2889e0c6f70b57bb40667dee470c4a7b8",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\validation\\004_collision_plus5_grid.npz",
+      "output_sha256": "deac68a11cfaf0533ef6bb0c5127374ebe081d7245b25008e075766854e5af8c",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "validation",
+      "metadata": {
+        "id": "005_n2_strong_weak_offgrid",
+        "split": "validation",
+        "seed": 2026115105,
+        "template": "n2_strong_weak_offgrid",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 238.59559824155428,
+            "doppler_bin": -173.40000922637918,
+            "amplitude": 1.0,
+            "initial_phase_rad": -0.7833167440773399,
+            "azimuth_deg": -13.378844479838932,
+            "velocity_direction_deg": -11.310560075826913,
+            "signed_speed_m_s": -6.684043916169013,
+            "radial_velocity_m_s": -6.679689425267127,
+            "range_m": 9.823035397084722
+          },
+          {
+            "range_bin": 330.02271571071554,
+            "doppler_bin": 137.67980637042731,
+            "amplitude": 0.07491696373566306,
+            "initial_phase_rad": -0.12642095782997975,
+            "azimuth_deg": -39.87022841009952,
+            "velocity_direction_deg": -44.78364975832796,
+            "signed_speed_m_s": 5.323242602572462,
+            "radial_velocity_m_s": 5.303681071231813,
+            "range_m": 13.587110752086724
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\validation\\005_n2_strong_weak_offgrid.npz",
+        "sha256": "b9830c5479b1270f37ea23b0864265bd46b435353573ab06748bdb59bd177755"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\validation\\005_n2_strong_weak_offgrid.json",
+      "report_sha256": "ad0ccfe527ec50d3b0bfa902272401817f7bc9df9b3ea509a01fd7e583cb9342",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\validation\\005_n2_strong_weak_offgrid.npz",
+      "output_sha256": "bc4dddef74e3af81a72ef010f1c7aa1fd4a9aae54e028ab0bf2cb1a5e67a3e0d",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "000_single_grid_a",
+        "split": "test",
+        "seed": 2026116100,
+        "template": "single_grid_a",
+        "target_count": 1,
+        "grid": "grid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 116.0,
+            "doppler_bin": 147.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 3.0336037872766797,
+            "azimuth_deg": -21.070467364795192,
+            "velocity_direction_deg": -20.510344307858162,
+            "signed_speed_m_s": 5.66298279075161,
+            "radial_velocity_m_s": 5.6627121872430095,
+            "range_m": 4.775746553833008
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\000_single_grid_a.npz",
+        "sha256": "84679d341784710c57ae34680080198b8fb9dc7e0cd13832161f9834783bcc53"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\000_single_grid_a.json",
+      "report_sha256": "75dceb8c65fd3b39de5ae7df356c79447f599a1c5462f8d8a7f0605aae276ba6",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\000_single_grid_a.npz",
+      "output_sha256": "05a0a01c0f3c48720a31a89ef224ef512e8a2c3ff7f65b3cd82314d690bc00fb",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "001_single_offgrid_a",
+        "split": "test",
+        "seed": 2026116101,
+        "template": "single_offgrid_a",
+        "target_count": 1,
+        "grid": "offgrid",
+        "family": "single",
+        "targets": [
+          {
+            "range_bin": 107.36867091389894,
+            "doppler_bin": 101.14902909317445,
+            "amplitude": 1.0,
+            "initial_phase_rad": -0.5191322917566992,
+            "azimuth_deg": 45.91616570265565,
+            "velocity_direction_deg": -4.401927519872011,
+            "signed_speed_m_s": 6.102265360130917,
+            "radial_velocity_m_s": 3.8964478896171206,
+            "range_m": 4.4203927595403725
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\001_single_offgrid_a.npz",
+        "sha256": "8af602709f4a22f553bf5c4c0df8172d41a743642f68a85129fb3b6614161005"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\001_single_offgrid_a.json",
+      "report_sha256": "493e2f6a4e48aa9cf94ecb9445be52dade5c808f38dd441156bfa0284fea302d",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\001_single_offgrid_a.npz",
+      "output_sha256": "3e8adf151fcabce2a1785bb1c749fa9bc1cc0bb1661a973bc03a524b48ac18e3",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "002_n4_spread",
+        "split": "test",
+        "seed": 2026116102,
+        "template": "n4_spread",
+        "target_count": 4,
+        "grid": "grid",
+        "family": "spread",
+        "targets": [
+          {
+            "range_bin": 73.0,
+            "doppler_bin": 33.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.884392223946923,
+            "azimuth_deg": -33.525203880112386,
+            "velocity_direction_deg": -50.10036863621041,
+            "signed_speed_m_s": 1.3263352150181866,
+            "radial_velocity_m_s": 1.271221103258635,
+            "range_m": 3.0054267106018067
+          },
+          {
+            "range_bin": 345.0,
+            "doppler_bin": 116.0,
+            "amplitude": 0.4930452426602568,
+            "initial_phase_rad": 2.4552275425024863,
+            "azimuth_deg": -17.34476287100668,
+            "velocity_direction_deg": -16.310773917388886,
+            "signed_speed_m_s": 4.469262534537392,
+            "radial_velocity_m_s": 4.468534787212171,
+            "range_m": 14.203728974761962
+          },
+          {
+            "range_bin": 466.0,
+            "doppler_bin": 175.0,
+            "amplitude": 0.5206711170498229,
+            "initial_phase_rad": 2.320435539471525,
+            "azimuth_deg": -41.992080525748854,
+            "velocity_direction_deg": 8.334394951825992,
+            "signed_speed_m_s": 10.559515938203049,
+            "radial_velocity_m_s": 6.741324032432154,
+            "range_m": 19.185326673156737
+          },
+          {
+            "range_bin": 381.0,
+            "doppler_bin": -26.0,
+            "amplitude": 0.8340886709177875,
+            "initial_phase_rad": 0.14107102688075202,
+            "azimuth_deg": 24.36445281852785,
+            "velocity_direction_deg": -18.896434102816258,
+            "signed_speed_m_s": -1.3753255687021768,
+            "radial_velocity_m_s": -1.0015681419613487,
+            "range_m": 15.68585721560669
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\002_n4_spread.npz",
+        "sha256": "098a8574ec09c966f6b58a3b8ccedb2fd4f1d3c8cfda15a4398c150621053e92"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\002_n4_spread.json",
+      "report_sha256": "6e2518b04f705be2270974d2119bd204f8ea4116d3c9662c28be03aec0065b7c",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\002_n4_spread.npz",
+      "output_sha256": "4146661f45670ca37ef33e7b64d4cdd68bd74f0489a9c13b098188aa03d3dbec",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "003_n4_near_pairs",
+        "split": "test",
+        "seed": 2026116103,
+        "template": "n4_near_pairs",
+        "target_count": 4,
+        "grid": "offgrid",
+        "family": "near_pairs",
+        "targets": [
+          {
+            "range_bin": 151.6647895182878,
+            "doppler_bin": -145.43598344415642,
+            "amplitude": 1.0,
+            "initial_phase_rad": -0.25513046004852313,
+            "azimuth_deg": -43.77291863363884,
+            "velocity_direction_deg": -16.699822701031167,
+            "signed_speed_m_s": -6.291886702603292,
+            "radial_velocity_m_s": -5.602463373557123,
+            "range_m": 6.2440741024118225
+          },
+          {
+            "range_bin": 156.6647895182878,
+            "doppler_bin": -142.43598344415642,
+            "amplitude": 0.8137380569489725,
+            "initial_phase_rad": -1.008914561054575,
+            "azimuth_deg": 15.965110375994627,
+            "velocity_direction_deg": 10.464194527804331,
+            "signed_speed_m_s": -5.512283725341373,
+            "radial_velocity_m_s": -5.48689781871543,
+            "range_m": 6.44992524697359
+          },
+          {
+            "range_bin": 296.63651035648854,
+            "doppler_bin": 103.51881578732802,
+            "amplitude": 0.44499097041856817,
+            "initial_phase_rad": -2.0352827579605757,
+            "azimuth_deg": 55.9388575972784,
+            "velocity_direction_deg": 90.74823072445778,
+            "signed_speed_m_s": 4.856839566586779,
+            "radial_velocity_m_s": 3.9877364610058947,
+            "range_m": 12.21259303513836
+          },
+          {
+            "range_bin": 300.63651035648854,
+            "doppler_bin": 107.51881578732802,
+            "amplitude": 0.39715648863421793,
+            "initial_phase_rad": 0.5610657151262854,
+            "azimuth_deg": -35.00834363448775,
+            "velocity_direction_deg": -32.59120186470298,
+            "signed_speed_m_s": 4.145512307967974,
+            "radial_velocity_m_s": 4.141823867461487,
+            "range_m": 12.377273950787773
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\003_n4_near_pairs.npz",
+        "sha256": "b5620aeb5efcb7bdb2d61500f5e678b0cef8504701c85d3c12443e18e276e082"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\003_n4_near_pairs.json",
+      "report_sha256": "304468a45df83401489d51c577bb806b2f5157a33f8c7ab12edf8b11e74d82ed",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\003_n4_near_pairs.npz",
+      "output_sha256": "7edf7b5f4f93227eafc04cf332d86a23d2bf7c81e36234cacfe3187a9949202c",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "004_n4_strong_weak",
+        "split": "test",
+        "seed": 2026116104,
+        "template": "n4_strong_weak",
+        "target_count": 4,
+        "grid": "grid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 249.0,
+            "doppler_bin": -65.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": 2.592648436733887,
+            "azimuth_deg": 53.86813572324657,
+            "velocity_direction_deg": 76.3186297859121,
+            "signed_speed_m_s": -2.7092552373849736,
+            "radial_velocity_m_s": -2.5039203549033715,
+            "range_m": 10.251386999176026
+          },
+          {
+            "range_bin": 318.0,
+            "doppler_bin": 47.0,
+            "amplitude": 0.151343052106127,
+            "initial_phase_rad": -0.16172871998230498,
+            "azimuth_deg": -30.65359336324919,
+            "velocity_direction_deg": -78.18217732193638,
+            "signed_speed_m_s": 2.681379162994154,
+            "radial_velocity_m_s": 1.8105270258532071,
+            "range_m": 13.09213279412842
+          },
+          {
+            "range_bin": 335.0,
+            "doppler_bin": -208.0,
+            "amplitude": 0.22913577819288644,
+            "initial_phase_rad": -0.8476319662926031,
+            "azimuth_deg": 2.668003381948452,
+            "velocity_direction_deg": -34.41897511779377,
+            "signed_speed_m_s": -10.044295128826525,
+            "radial_velocity_m_s": -8.01254513569079,
+            "range_m": 13.792026685638428
+          },
+          {
+            "range_bin": 224.0,
+            "doppler_bin": 92.0,
+            "amplitude": 0.09409941547615303,
+            "initial_phase_rad": 2.2303424277594903,
+            "azimuth_deg": 21.707056128194154,
+            "velocity_direction_deg": 22.613769807496162,
+            "signed_speed_m_s": 3.544454166953335,
+            "radial_velocity_m_s": 3.5440103484786185,
+            "range_m": 9.222131276367188
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\004_n4_strong_weak.npz",
+        "sha256": "8487b3d1e3aa05618887319b8d05680b98d42963741dba759289e5dcaba84698"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\004_n4_strong_weak.json",
+      "report_sha256": "7eb2841cf7a9d0ec33d17318194bf6451220f92bd4b501fd63cffc6a9279a07d",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\004_n4_strong_weak.npz",
+      "output_sha256": "87e3aa3b735b21584e1a3bdc13630d4af35c96b455a10831f1c316d4fbc92a47",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "005_n8_spread",
+        "split": "test",
+        "seed": 2026116105,
+        "template": "n8_spread",
+        "target_count": 8,
+        "grid": "offgrid",
+        "family": "spread",
+        "targets": [
+          {
+            "range_bin": 223.21007292089465,
+            "doppler_bin": 150.6027254421164,
+            "amplitude": 1.0,
+            "initial_phase_rad": 1.9928419910152524,
+            "azimuth_deg": 2.6343032799439996,
+            "velocity_direction_deg": 23.64053310233806,
+            "signed_speed_m_s": 6.214502643846219,
+            "radial_velocity_m_s": 5.8014958421298335,
+            "range_m": 9.189609797696352
+          },
+          {
+            "range_bin": 362.47912325521816,
+            "doppler_bin": 22.012650261052908,
+            "amplitude": 0.4635606711578769,
+            "initial_phase_rad": -0.2927791929029522,
+            "azimuth_deg": -22.46254361337529,
+            "velocity_direction_deg": -34.31213726493317,
+            "signed_speed_m_s": 0.8664316925491924,
+            "radial_velocity_m_s": 0.8479680469849138,
+            "range_m": 14.923348480366535
+          },
+          {
+            "range_bin": 445.45227273205666,
+            "doppler_bin": -98.15592249540231,
+            "amplitude": 0.7781846342783434,
+            "initial_phase_rad": -1.266528170865208,
+            "azimuth_deg": 22.96161535545565,
+            "velocity_direction_deg": -22.44581410920067,
+            "signed_speed_m_s": -5.385784698560908,
+            "radial_velocity_m_s": -3.781147881393163,
+            "range_m": 18.3393720379069
+          },
+          {
+            "range_bin": 311.66998599387233,
+            "doppler_bin": 113.11314424213522,
+            "amplitude": 0.5887504640304826,
+            "initial_phase_rad": 1.838978892658245,
+            "azimuth_deg": -39.07698811108222,
+            "velocity_direction_deg": -95.04127967600326,
+            "signed_speed_m_s": 7.7849812215764285,
+            "radial_velocity_m_s": 4.357327758076977,
+            "range_m": 12.831524668477737
+          },
+          {
+            "range_bin": 334.34765620934985,
+            "doppler_bin": -85.85982851553517,
+            "amplitude": 0.3858971362132731,
+            "initial_phase_rad": -2.729797391588911,
+            "azimuth_deg": -42.452522453878544,
+            "velocity_direction_deg": -29.437930670454378,
+            "signed_speed_m_s": -3.394679577514304,
+            "radial_velocity_m_s": -3.307479573670176,
+            "range_m": 13.765169542447808
+          },
+          {
+            "range_bin": 357.2985795363249,
+            "doppler_bin": -154.3434696622608,
+            "amplitude": 0.5573056708488417,
+            "initial_phase_rad": 2.7602636607981266,
+            "azimuth_deg": -18.454856989325606,
+            "velocity_direction_deg": -68.57243258112018,
+            "signed_speed_m_s": -9.272401591185584,
+            "radial_velocity_m_s": -5.945596235903782,
+            "range_m": 14.710064309569248
+          },
+          {
+            "range_bin": 227.71052769194046,
+            "doppler_bin": 13.642526202386858,
+            "amplitude": 0.45403310249888607,
+            "initial_phase_rad": 0.22637464371668203,
+            "azimuth_deg": 59.36092848921261,
+            "velocity_direction_deg": 43.077542972029065,
+            "signed_speed_m_s": 0.5474973281809006,
+            "radial_velocity_m_s": 0.5255353700070623,
+            "range_m": 9.374894550830003
+          },
+          {
+            "range_bin": 414.20538728319667,
+            "doppler_bin": -44.18866117787423,
+            "amplitude": 0.7584741684930216,
+            "initial_phase_rad": 0.8696984116012114,
+            "azimuth_deg": -26.513946335857305,
+            "velocity_direction_deg": -42.15751963514029,
+            "signed_speed_m_s": -1.7677089196881934,
+            "radial_velocity_m_s": -1.7022290489108876,
+            "range_m": 17.052930611179246
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\005_n8_spread.npz",
+        "sha256": "a7bd746dcda62cd137e7ba0a26f62ae2c3e494dbcdb9df364d654872f9d79089"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\005_n8_spread.json",
+      "report_sha256": "a0bda1ce85f2086e0f326b765f80fa64bbc6bfeb6afa84de02101d86c1d41f9b",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\005_n8_spread.npz",
+      "output_sha256": "4651f121e25d97002f6bab08dabebd70538b3ccf1989527dabdbc471777c9162",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "006_n8_near_pairs",
+        "split": "test",
+        "seed": 2026116106,
+        "template": "n8_near_pairs",
+        "target_count": 8,
+        "grid": "grid",
+        "family": "near_pairs",
+        "targets": [
+          {
+            "range_bin": 309.0,
+            "doppler_bin": -161.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.3035456466815356,
+            "azimuth_deg": -34.18347859383914,
+            "velocity_direction_deg": -40.66267467699753,
+            "signed_speed_m_s": -6.241885695981562,
+            "radial_velocity_m_s": -6.202018109837582,
+            "range_m": 12.721600733917237
+          },
+          {
+            "range_bin": 312.0,
+            "doppler_bin": -157.0,
+            "amplitude": 0.8871699240488387,
+            "initial_phase_rad": 0.9598137634751165,
+            "azimuth_deg": -48.37667935848312,
+            "velocity_direction_deg": -37.00318202926564,
+            "signed_speed_m_s": -6.169075945186741,
+            "radial_velocity_m_s": -6.04793070338199,
+            "range_m": 12.845111420654296
+          },
+          {
+            "range_bin": 361.0,
+            "doppler_bin": -73.0,
+            "amplitude": 0.5194080690888918,
+            "initial_phase_rad": 2.984464815455188,
+            "azimuth_deg": 50.741351075016624,
+            "velocity_direction_deg": 83.90524686122284,
+            "signed_speed_m_s": -3.3592931605832344,
+            "radial_velocity_m_s": -2.812095167814556,
+            "range_m": 14.862452637359619
+          },
+          {
+            "range_bin": 364.0,
+            "doppler_bin": -70.0,
+            "amplitude": 0.7592808041934077,
+            "initial_phase_rad": -1.2368429023092093,
+            "azimuth_deg": 35.942290094933966,
+            "velocity_direction_deg": 51.77521222833094,
+            "signed_speed_m_s": -2.802866492555433,
+            "radial_velocity_m_s": -2.6965296129728618,
+            "range_m": 14.985963324096682
+          },
+          {
+            "range_bin": 380.0,
+            "doppler_bin": 131.0,
+            "amplitude": 0.34130922985014467,
+            "initial_phase_rad": -1.0778313021950412,
+            "azimuth_deg": 53.84141132938336,
+            "velocity_direction_deg": 3.4047643646320154,
+            "signed_speed_m_s": 7.922934059834305,
+            "radial_velocity_m_s": 5.046362561420642,
+            "range_m": 15.644686986694337
+          },
+          {
+            "range_bin": 384.0,
+            "doppler_bin": 136.0,
+            "amplitude": 0.4827259084168386,
+            "initial_phase_rad": -1.3903722605390594,
+            "azimuth_deg": -26.754724891806262,
+            "velocity_direction_deg": -4.1686836655213,
+            "signed_speed_m_s": 5.6741581032877555,
+            "radial_velocity_m_s": 5.238971819490132,
+            "range_m": 15.80936790234375
+          },
+          {
+            "range_bin": 214.0,
+            "doppler_bin": -159.0,
+            "amplitude": 0.6010168816764982,
+            "initial_phase_rad": 1.905568720299402,
+            "azimuth_deg": -17.42178160419199,
+            "velocity_direction_deg": -63.36533307271971,
+            "signed_speed_m_s": -8.808264891069546,
+            "radial_velocity_m_s": -6.124974406609786,
+            "range_m": 8.810428987243654
+          },
+          {
+            "range_bin": 218.0,
+            "doppler_bin": -156.0,
+            "amplitude": 0.6897391921947773,
+            "initial_phase_rad": 1.4134601616157054,
+            "azimuth_deg": -57.324509382413666,
+            "velocity_direction_deg": -83.39446566107497,
+            "signed_speed_m_s": -6.690068908663928,
+            "radial_velocity_m_s": -6.009408851768092,
+            "range_m": 8.975109902893065
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\006_n8_near_pairs.npz",
+        "sha256": "9394a8ad39f4488f7c16b45b23622b736d12cca82b48a8d711cea76132491e52"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\006_n8_near_pairs.json",
+      "report_sha256": "824245dc7fd2f3b15c95bcd5d6d6cf4d7beebbe206c2437050de17ff950f7189",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\006_n8_near_pairs.npz",
+      "output_sha256": "7de7d06a6a28dbc650101bda018bb28b890371dbe0a3f2bceff53a28c3274055",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "007_n8_strong_weak",
+        "split": "test",
+        "seed": 2026116107,
+        "template": "n8_strong_weak",
+        "target_count": 8,
+        "grid": "offgrid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 274.81480967018297,
+            "doppler_bin": -207.61239259020928,
+            "amplitude": 1.0,
+            "initial_phase_rad": 1.9455575270996928,
+            "azimuth_deg": 59.37508985730153,
+            "velocity_direction_deg": 87.85819230202061,
+            "signed_speed_m_s": -9.098973587373633,
+            "radial_velocity_m_s": -7.997613780566384,
+            "range_m": 11.314188622626295
+          },
+          {
+            "range_bin": 207.9030274850169,
+            "doppler_bin": -164.57476013573694,
+            "amplitude": 0.07162312158539959,
+            "initial_phase_rad": 2.1305073455005177,
+            "azimuth_deg": 53.52391942486402,
+            "velocity_direction_deg": 68.02466402074805,
+            "signed_speed_m_s": -6.548325413131472,
+            "radial_velocity_m_s": -6.339724489341719,
+            "range_m": 8.55941523312947
+          },
+          {
+            "range_bin": 203.54148718140155,
+            "doppler_bin": -118.46697913102743,
+            "amplitude": 0.17790130872998292,
+            "initial_phase_rad": -2.782429556699982,
+            "azimuth_deg": 21.398133285241443,
+            "velocity_direction_deg": 56.57454558976194,
+            "signed_speed_m_s": -5.583150386816489,
+            "radial_velocity_m_s": -4.563567391232192,
+            "range_m": 8.37984962041917
+          },
+          {
+            "range_bin": 435.88401529273665,
+            "doppler_bin": 55.36959683416881,
+            "amplitude": 0.13578819426917518,
+            "initial_phase_rad": -2.271226849436636,
+            "azimuth_deg": -4.108478537161844,
+            "velocity_direction_deg": -58.79304122949268,
+            "signed_speed_m_s": 3.6897118547890835,
+            "radial_velocity_m_s": 2.132939393167209,
+            "range_m": 17.945444688837767
+          },
+          {
+            "range_bin": 298.40276776198914,
+            "doppler_bin": -66.12680024955421,
+            "amplitude": 0.24947573684666444,
+            "initial_phase_rad": 1.2740382994473247,
+            "azimuth_deg": -37.3610768693208,
+            "velocity_direction_deg": -77.99668486855126,
+            "signed_speed_m_s": -3.356751219940024,
+            "radial_velocity_m_s": -2.547326786915202,
+            "range_m": 12.285310256840958
+          },
+          {
+            "range_bin": 432.1410499303478,
+            "doppler_bin": 62.06232369489522,
+            "amplitude": 0.2478077968068598,
+            "initial_phase_rad": 0.39825156352589364,
+            "azimuth_deg": -35.35052938209372,
+            "velocity_direction_deg": -43.861972161690346,
+            "signed_speed_m_s": 2.417379862758509,
+            "radial_velocity_m_s": 2.3907556241884613,
+            "range_m": 17.79134594805721
+          },
+          {
+            "range_bin": 84.61757528319812,
+            "doppler_bin": 11.674491035500358,
+            "amplitude": 0.06069900487924514,
+            "initial_phase_rad": 2.199301218122687,
+            "azimuth_deg": -24.48345524345372,
+            "velocity_direction_deg": -39.60002275476138,
+            "signed_speed_m_s": 0.4658424342692955,
+            "radial_velocity_m_s": 0.4497230113373275,
+            "range_m": 3.4837249444175735
+          },
+          {
+            "range_bin": 48.844841228638096,
+            "doppler_bin": -32.842105387790326,
+            "amplitude": 0.1544986814932237,
+            "initial_phase_rad": -1.8965516646821703,
+            "azimuth_deg": 37.77315449769013,
+            "velocity_direction_deg": 79.49715466774585,
+            "signed_speed_m_s": -1.6950796122221725,
+            "radial_velocity_m_s": -1.2651387104364598,
+            "range_m": 2.010953294570593
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\007_n8_strong_weak.npz",
+        "sha256": "c19f22744fd75019f627f8f77d3ee5d541aaedd303656937962474ac879e6218"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\007_n8_strong_weak.json",
+      "report_sha256": "d1bd2a62ee4c7bc2eaa34b32b9599bd743fdc4086874e8d32c0a5bd8a487b386",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\007_n8_strong_weak.npz",
+      "output_sha256": "be9f3c21c051df58b649c7771d6f74e51c395f0b495ed376835eef7348b317e1",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "008_collision_minus3_grid",
+        "split": "test",
+        "seed": 2026116108,
+        "template": "collision_minus3_grid",
+        "target_count": 2,
+        "grid": "grid",
+        "family": "collision_minus3",
+        "targets": [
+          {
+            "range_bin": 252.0,
+            "doppler_bin": 183.0,
+            "amplitude": 1.0,
+            "initial_phase_rad": -2.4724433683212563,
+            "azimuth_deg": -7.038303022521049,
+            "velocity_direction_deg": -16.23334932767959,
+            "signed_speed_m_s": 7.141263478050547,
+            "radial_velocity_m_s": 7.049498845343339,
+            "range_m": 10.374897685913085
+          },
+          {
+            "range_bin": 268.0,
+            "doppler_bin": -37.0,
+            "amplitude": 0.14812193109531918,
+            "initial_phase_rad": 2.0009922677613066,
+            "azimuth_deg": -35.60473965942042,
+            "velocity_direction_deg": -34.71303984255148,
+            "signed_speed_m_s": -1.4254811391312714,
+            "radial_velocity_m_s": -1.425308509714227,
+            "range_m": 11.033621348510742
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\008_collision_minus3_grid.npz",
+        "sha256": "13c46c36e43ccaa68c59eae3960af7158018a6e53370a6e869e97e6493424c5c"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\008_collision_minus3_grid.json",
+      "report_sha256": "18bbf5fa82743908c69cb2e5c74f55af6196e815450088f1f4ac1ae8c3966c6d",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\008_collision_minus3_grid.npz",
+      "output_sha256": "8fae483977cc4613de9665f9407ce3a23c5803f1efe2a5f7534a9f458ce37792",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "009_collision_plus5_offgrid",
+        "split": "test",
+        "seed": 2026116109,
+        "template": "collision_plus5_offgrid",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "collision_plus5",
+        "targets": [
+          {
+            "range_bin": 214.89453791234516,
+            "doppler_bin": 122.68790612825882,
+            "amplitude": 1.0,
+            "initial_phase_rad": 0.9595251594915588,
+            "azimuth_deg": -21.45271807201619,
+            "velocity_direction_deg": -72.30672838317804,
+            "signed_speed_m_s": 7.4864191914727245,
+            "radial_velocity_m_s": 4.726165314692636,
+            "range_m": 8.847257317865681
+          },
+          {
+            "range_bin": 50.4726895617257,
+            "doppler_bin": 101.43953064129414,
+            "amplitude": 0.11627310525051983,
+            "initial_phase_rad": -0.6456587839606045,
+            "azimuth_deg": 12.291942218595821,
+            "velocity_direction_deg": 11.140154543250063,
+            "signed_speed_m_s": 3.9084282380060937,
+            "radial_velocity_m_s": 3.907638547147395,
+            "range_m": 2.0779721830784026
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\009_collision_plus5_offgrid.npz",
+        "sha256": "94fcee42f7fb62db65976d24b305b324f9404b5e23d420826bea835781dc8825"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\009_collision_plus5_offgrid.json",
+      "report_sha256": "6a433969c201b98d2bb4b0f2b364c616adc8c98a5bc8af8314793f7c47022e30",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\009_collision_plus5_offgrid.npz",
+      "output_sha256": "dd3dc2a63b49b9f47a2d84e6b29aee56f325ed871dd6cb31d3afd080454994c6",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "010_near_collision_plus5",
+        "split": "test",
+        "seed": 2026116110,
+        "template": "near_collision_plus5",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "near_collision_plus5",
+        "targets": [
+          {
+            "range_bin": 199.56916911569837,
+            "doppler_bin": -187.36619475381144,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.081588948754058,
+            "azimuth_deg": 49.363797793810775,
+            "velocity_direction_deg": 62.158969927224646,
+            "signed_speed_m_s": -7.401486319419803,
+            "radial_velocity_m_s": -7.217692751767043,
+            "range_m": 8.216308376341495
+          },
+          {
+            "range_bin": 999.4458455784919,
+            "doppler_bin": 86.26902623094281,
+            "amplitude": 0.10442349087486888,
+            "initial_phase_rad": -3.011042166505783,
+            "azimuth_deg": 47.39017589347951,
+            "velocity_direction_deg": 17.225529614432233,
+            "signed_speed_m_s": 3.8437430091078277,
+            "radial_velocity_m_s": 3.3232426273438556,
+            "range_m": 41.147414247967234
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\010_near_collision_plus5.npz",
+        "sha256": "50c59b38bc70bbec4762982846941e33f025af4343f4ccf1fa096a414d753be4"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\010_near_collision_plus5.json",
+      "report_sha256": "3fc80490f56ccf96f71fa8987706aef1386afd3906b43de4ff0dd605794a693c",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\010_near_collision_plus5.npz",
+      "output_sha256": "d4339759e730468bc0d7580e1a9a7ea6b0b8c6952812bc0a4a0fb10ea4aa6df1",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    },
+    {
+      "split": "test",
+      "metadata": {
+        "id": "011_n2_strong_weak_offgrid",
+        "split": "test",
+        "seed": 2026116111,
+        "template": "n2_strong_weak_offgrid",
+        "target_count": 2,
+        "grid": "offgrid",
+        "family": "strong_weak",
+        "targets": [
+          {
+            "range_bin": 144.27117998566018,
+            "doppler_bin": 13.22363576531832,
+            "amplitude": 1.0,
+            "initial_phase_rad": -1.1514808361215467,
+            "azimuth_deg": 49.606595153393755,
+            "velocity_direction_deg": 60.33698461565544,
+            "signed_speed_m_s": 0.5184647146619086,
+            "radial_velocity_m_s": 0.5093989347478272,
+            "range_m": 5.939677505464985
+          },
+          {
+            "range_bin": 104.1782238394592,
+            "doppler_bin": 36.019334990622546,
+            "amplitude": 0.11672874798024283,
+            "initial_phase_rad": 0.37061496482636747,
+            "azimuth_deg": 37.7469707142246,
+            "velocity_direction_deg": -0.6007105619987456,
+            "signed_speed_m_s": 1.7692231002883612,
+            "radial_velocity_m_s": 1.3875314777400467,
+            "range_m": 4.28904132315294
+          }
+        ],
+        "actual_chirps": 512,
+        "shape": [
+          1024,
+          512
+        ],
+        "noise": false,
+        "clutter": false,
+        "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\data\\test\\011_n2_strong_weak_offgrid.npz",
+        "sha256": "b8c4ec5419b1f0db7ab268a87fe95939ed3fd0a194fadbd33d73864001e6eec1"
+      },
+      "report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\reports\\test\\011_n2_strong_weak_offgrid.json",
+      "report_sha256": "43fb15a95846d4f28b6aa4f80c10611bad6666df559f5bc11a47287f0452b094",
+      "output": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_sign_evidence_v1\\results\\test\\011_n2_strong_weak_offgrid.npz",
+      "output_sha256": "e9d31e3075d20f7834570fa1320ca79a85e67d0411d1994333540889090b7507",
+      "fit_and_evidence_indices": "逐帧报告solver.fit_indices/evidence_indices"
+    }
+  ],
+  "protocol_sha256": "567c7843bdd352004d451a9a58c6c4737dec205233770504a143466b429464bf",
+  "frozen_sha256": "d002bb1a71e6798ef8b3f0618b12ef50f9e8231bf8fb42578e1f8a9f2295128e",
+  "baseline": {
+    "path": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_multipeak48_v1\\candidate\\f40_repair\\model_float.pt",
+    "sha256": "03911b031c346915a1d82c7359a9adfc7a374a92e5895eec9553f121433b0712"
+  },
+  "no_training": true
+}

@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "id": "000_single_grid_a",
+    "split": "new_test",
+    "seed": 20261112000,
+    "template": "single_grid_a",
+    "target_count": 1,
+    "grid": "grid",
+    "family": "single",
+    "targets": [
+      {
+        "range_bin": 263.0,
+        "doppler_bin": 94.0,
+        "amplitude": 1.0,
+        "initial_phase_rad": 2.0303041774392936,
+        "azimuth_deg": 19.99217791374309,
+        "velocity_direction_deg": 26.526903599772353,
+        "signed_speed_m_s": 3.6447336556676886,
+        "radial_velocity_m_s": 3.6210540517064143,
+        "range_m": 10.827770203948974
+      }
+    ],
+    "actual_chirps": 512,
+    "shape": [
+      1024,
+      512
+    ],
+    "noise": false,
+    "clutter": false,
+    "file": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\data\\test\\000_single_grid_a.npz",
+    "sha256": "23a2450753d5e0a600cc922d3c6d967dabc673c0d08f9dd600d436c49219575a"
+  },
+  "metrics": {
+    "old40": {
+      "false40": 5,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        13.562280654907227,
+        15.225090980529785,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        17.720806121826172,
+        18.061800003051758,
+        17.635591506958008,
+        18.061800003051758,
+        17.225467681884766,
+        17.252471923828125
+      ],
+      "harmonic_worsening_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "model": {
+      "false40": 0,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        172.25607299804688,
+        167.81942749023438,
+        173.4744873046875,
+        171.29266357421875,
+        168.56277465820312,
+        167.1123046875,
+        158.5753173828125,
+        157.48980712890625,
+        171.25201416015625,
+        170.38711547851562,
+        172.01373291015625,
+        171.28997802734375,
+        164.8188018798828,
+        164.1990966796875
+      ],
+      "harmonic_worsening_db": [
+        -158.69378662109375,
+        -152.59432983398438,
+        -155.4126739501953,
+        -153.2308807373047,
+        -150.50096130371094,
+        -149.05050659179688,
+        -140.51351928710938,
+        -139.42800903320312,
+        -153.5312042236328,
+        -152.3253173828125,
+        -154.37814331054688,
+        -153.22817993164062,
+        -147.5933380126953,
+        -146.94662475585938
+      ]
+    },
+    "old_alpha075": {
+      "false40": 1,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        25.60348129272461,
+        27.26629066467285,
+        30.102998733520508,
+        30.102998733520508,
+        30.102998733520508,
+        30.102998733520508,
+        30.102998733520508,
+        30.102998733520508,
+        29.762004852294922,
+        30.102998733520508,
+        29.676790237426758,
+        30.102998733520508,
+        29.266666412353516,
+        29.293672561645508
+      ],
+      "harmonic_worsening_db": [
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.04119873046875,
+        -12.04119873046875,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383,
+        -12.041200637817383
+      ]
+    },
+    "selected_protected": {
+      "false40": 5,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        13.562280654907227,
+        15.225090980529785,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        17.720806121826172,
+        18.061800003051758,
+        17.635591506958008,
+        18.061800003051758,
+        17.225467681884766,
+        17.252471923828125
+      ],
+      "harmonic_worsening_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "selected_linear": {
+      "false40": 5,
+      "retention": [
+        1.0
+      ],
+      "target_error": [
+        0.0
+      ],
+      "below_half": 0,
+      "new_half": 0,
+      "max_drop": 0.0,
+      "harmonic_attenuation_db": [
+        13.562280654907227,
+        15.225090980529785,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        18.061800003051758,
+        17.720806121826172,
+        18.061800003051758,
+        17.635591506958008,
+        18.061800003051758,
+        17.225467681884766,
+        17.252471923828125
+      ],
+      "harmonic_worsening_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "arrays": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\results\\arrays\\000_single_grid_a.npz",
+  "arrays_sha256": "57f52117bdfe693abf7953167391429d45ccc27e22a7e437e5a3c1d7bafea86a",
+  "solver_report": "C:\\Users\\yang\\Desktop\\SAR_IMAGE\\scalar_fusion_weight_scan_v1\\reports\\test\\000_single_grid_a_solver.json",
+  "solver_sha256": "6906263b3cc32fa4c99983bae5b0c0d2578b2d7dcc80d3d7c0c95f6cc11c7f2b",
+  "support": [
+    {
+      "index": 134750,
+      "supported": true
+    },
+    {
+      "index": 120550,
+      "supported": false
+    },
+    {
+      "index": 149462,
+      "supported": false
+    },
+    {
+      "index": 106350,
+      "supported": false
+    },
+    {
+      "index": 163662,
+      "supported": false
+    },
+    {
+      "index": 92150,
+      "supported": false
+    },
+    {
+      "index": 177862,
+      "supported": false
+    },
+    {
+      "index": 77438,
+      "supported": false
+    },
+    {
+      "index": 192062,
+      "supported": false
+    },
+    {
+      "index": 63238,
+      "supported": false
+    },
+    {
+      "index": 206774,
+      "supported": false
+    },
+    {
+      "index": 49038,
+      "supported": false
+    },
+    {
+      "index": 220974,
+      "supported": false
+    },
+    {
+      "index": 34326,
+      "supported": false
+    },
+    {
+      "index": 235174,
+      "supported": false
+    },
+    {
+      "index": 20126,
+      "supported": false
+    },
+    {
+      "index": 249374,
+      "supported": false
+    },
+    {
+      "index": 5926,
+      "supported": false
+    },
+    {
+      "index": 264086,
+      "supported": false
+    },
+    {
+      "index": 516014,
+      "supported": false
+    },
+    {
+      "index": 278286,
+      "supported": false
+    },
+    {
+      "index": 501302,
+      "supported": false
+    },
+    {
+      "index": 292486,
+      "supported": false
+    },
+    {
+      "index": 487102,
+      "supported": false
+    }
+  ],
+  "harmonic_labels": [
+    {
+      "target": 0,
+      "order": -3
+    },
+    {
+      "target": 0,
+      "order": 5
+    },
+    {
+      "target": 0,
+      "order": -7
+    },
+    {
+      "target": 0,
+      "order": 9
+    },
+    {
+      "target": 0,
+      "order": -11
+    },
+    {
+      "target": 0,
+      "order": 13
+    },
+    {
+      "target": 0,
+      "order": -15
+    },
+    {
+      "target": 0,
+      "order": 17
+    },
+    {
+      "target": 0,
+      "order": -19
+    },
+    {
+      "target": 0,
+      "order": 21
+    },
+    {
+      "target": 0,
+      "order": -23
+    },
+    {
+      "target": 0,
+      "order": 25
+    },
+    {
+      "target": 0,
+      "order": -27
+    },
+    {
+      "target": 0,
+      "order": 29
+    }
+  ],
+  "target_peak_indices": [
+    134750
+  ],
+  "frozen_sha256": "d795be239af05b25eb56381d7b1abbd0c5c0912efe32c7f50cf7610af9be4242"
+}

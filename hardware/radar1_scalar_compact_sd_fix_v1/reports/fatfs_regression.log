@@ -1,0 +1,60 @@
+CASE_PASS original_stale_zero_reproduces_FR_OK_bw_0
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=512 total_clusters=70000 cached_free=0.
+
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+
+SD_SPACE: counted_free=69998 free_MiB=34 raw_blocks_available=17.
+
+SD_FSINFO_STALE: cached=0 actual=69998; using scanned count.
+
+SD_SPACE_PASS: FAT allocation verified.
+
+CASE_PASS recount_header_2MiB_readback_keeper_FAT_mirror_and_remount
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=512 total_clusters=70000 cached_free=69998.
+
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+
+SD_SPACE: counted_free=69998 free_MiB=34 raw_blocks_available=17.
+
+SD_SPACE_PASS: FAT allocation verified.
+
+CASE_PASS already_correct_free_count
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=512 total_clusters=70000 cached_free=69999.
+
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+
+SD_SPACE: counted_free=69998 free_MiB=34 raw_blocks_available=17.
+
+SD_FSINFO_STALE: cached=69999 actual=69998; using scanned count.
+
+SD_SPACE_PASS: FAT allocation verified.
+
+CASE_PASS stale_nonzero_free_count
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=512 total_clusters=70000 cached_free=0.
+
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+
+SD_SPACE: counted_free=0 free_MiB=0 raw_blocks_available=0.
+
+FAIL: SD actual free space insufficient for one raw block and metadata; capture not started.
+
+CASE_PASS genuinely_full_refused_without_writes
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=512 total_clusters=70000 cached_free=0.
+
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+
+SD_SPACE: counted_free=1 free_MiB=0 raw_blocks_available=0.
+
+SD_FSINFO_STALE: cached=0 actual=1; using scanned count.
+
+FAIL: SD actual free space insufficient for one raw block and metadata; capture not started.
+
+CASE_PASS insufficient_one_cluster_refused_without_writes
+SD_MOUNT: type=3 (3=FAT32) cluster_bytes=512 total_clusters=70000 cached_free=0.
+
+SD_SCAN: recounting actual FAT allocation before capture; please wait.
+
+FAIL: SD FAT scan result=1; capture not started.
+
+CASE_PASS FAT_read_error_refused_without_writes
+FATFS_REGRESSION_PASS cases=7

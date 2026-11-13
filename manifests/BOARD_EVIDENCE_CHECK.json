@@ -1,0 +1,14 @@
+{
+  "saved_log_sha256": "958ee9e5fb52edebc58751d3ac42f5d096f0a8486e08b6c70dffef155e5c1c41",
+  "data_sha256": "f5c0dbb6674d97eabb0067bad3c182f99d15878e42af2fecbbc99a595fcc8e25",
+  "csv_sha256": "0784d6222033b3a135f87cba9fdbe1397c064e3082ccd6a47c5623a262bd1ec0",
+  "blocks": 60,
+  "sum32_xor32": "PASS_ALL_BLOCKS",
+  "fnv32_recomputed": false,
+  "board_access_this_task": false,
+  "log_reports_readback_pass": true,
+  "network_done": 6,
+  "image_skip": 54,
+  "infer_ms": 3888,
+  "quality_certified": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "gradient_max_error": 2.559725108715327e-07,
+  "candidate_frequency_probe": [
+    44.270006304885996,
+    58.31999023277253
+  ],
+  "predict_independent_error": 0.0,
+  "protocol_sha256": "567c7843bdd352004d451a9a58c6c4737dec205233770504a143466b429464bf"
+}

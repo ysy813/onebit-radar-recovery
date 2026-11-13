@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Toy analytic counterexample, not a realistic data quality test",
+  "mathematical_family": "exp(j theta)+beta exp(j3 theta), 0<beta<1/3",
+  "real_factor": "1-3 beta+4 beta cos(theta)^2 > 0",
+  "imag_factor": "1+3 beta-4 beta sin(theta)^2 > 0",
+  "discrete_samples": 8192,
+  "base_bin": 37,
+  "phase": 0.137,
+  "examples": [
+    {
+      "beta": 0.1,
+      "multibit_weak_to_main": 0.10000000000000003,
+      "onebit_weak_to_main": 0.0,
+      "iq_component_change_fraction_vs_beta0p1": 0.0,
+      "normalized_power_same_as_beta0p1": true
+    },
+    {
+      "beta": 0.3,
+      "multibit_weak_to_main": 0.30000000000000004,
+      "onebit_weak_to_main": 0.0,
+      "iq_component_change_fraction_vs_beta0p1": 0.0,
+      "normalized_power_same_as_beta0p1": true
+    },
+    {
+      "beta": 0.6,
+      "multibit_weak_to_main": 0.6000000000000001,
+      "onebit_weak_to_main": 0.5194059464715362,
+      "iq_component_change_fraction_vs_beta0p1": 0.1959228515625,
+      "normalized_power_same_as_beta0p1": false
+    }
+  ],
+  "two_dimensional_same_quantized_input": true,
+  "two_dimensional_base": [
+    131,
+    37
+  ],
+  "two_dimensional_weak": [
+    393,
+    111
+  ],
+  "model_inference_run": false,
+  "training_run": false,
+  "board_accessed": false
+}

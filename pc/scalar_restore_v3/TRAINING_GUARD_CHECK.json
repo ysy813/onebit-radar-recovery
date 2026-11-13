@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": {
+    "integer_guard_matches_training_within_half_lsb": true
+  },
+  "rows": [
+    {
+      "id": "historical_0024",
+      "actual_chirps": 128,
+      "max_q14_lsb_difference": 0.0,
+      "mean_difference": 0.0,
+      "pass_rounding_bound": true
+    },
+    {
+      "id": "historical_0024",
+      "actual_chirps": 512,
+      "max_q14_lsb_difference": 0.4990234375,
+      "mean_difference": 0.0008506998419761658,
+      "pass_rounding_bound": true
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0351",
+      "actual_chirps": 128,
+      "max_q14_lsb_difference": 0.0,
+      "mean_difference": 0.0,
+      "pass_rounding_bound": true
+    },
+    {
+      "id": "field_rx_blocks_per_chirp_rx0_0351",
+      "actual_chirps": 512,
+      "max_q14_lsb_difference": 0.4990234375,
+      "mean_difference": 0.000663011334836483,
+      "pass_rounding_bound": true
+    }
+  ]
+}

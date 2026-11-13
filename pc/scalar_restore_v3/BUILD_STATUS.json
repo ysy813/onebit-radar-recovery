@@ -1,0 +1,15 @@
+{
+  "stage": "PC_COMPACT_WEAKFIX_PASS",
+  "weak_correction": "PASS",
+  "full_original_quality": "FAIL",
+  "numeric": "PASS",
+  "active_model": "pc_candidate_compact",
+  "active_comparison": "results_compact/index.html",
+  "ready_for_board_test": false,
+  "ip_built": false,
+  "bit_rebuilt": false,
+  "board_tested": false,
+  "failed_original_quality_checks": [
+    "each_acquisition_subgroup_background_at_most1p10_v7"
+  ]
+}

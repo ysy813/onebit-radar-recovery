@@ -1,0 +1,35 @@
+{
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "images": [
+    "test_000_single_grid_a.png",
+    "test_001_single_offgrid_a.png",
+    "test_002_n4_spread.png",
+    "test_003_n4_near_pairs.png",
+    "test_004_n4_strong_weak.png",
+    "test_004_n4_strong_weak_zoom.png",
+    "test_005_n8_spread.png",
+    "test_006_n8_near_pairs.png",
+    "test_007_n8_strong_weak.png",
+    "test_007_n8_strong_weak_zoom.png",
+    "test_008_collision_minus3_grid.png",
+    "test_009_collision_plus5_offgrid.png",
+    "test_009_collision_plus5_offgrid_zoom.png",
+    "test_010_near_collision_plus5.png",
+    "test_011_n2_strong_weak_offgrid.png",
+    "training.png"
+  ],
+  "common_scale_db": [
+    -60,
+    0
+  ],
+  "display_only_max_pool": [
+    2,
+    2
+  ],
+  "metric_shape": [
+    1024,
+    512
+  ],
+  "post_output_renormalized": false,
+  "visual_inspection_pending": false
+}
